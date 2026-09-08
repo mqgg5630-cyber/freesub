@@ -6,13 +6,23 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   type: vless
   server: 156.67.63.231
   port: 443
@@ -26,15 +36,6 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
   server: 156.67.63.231
@@ -51,20 +52,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
   type: vless
-  server: 156.67.63.231
-  port: 443
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
-  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
@@ -75,16 +62,7 @@ proxies:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
     short-id: 9bd613c48251f0db
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
-  type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,8 +73,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,7 +83,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -6,26 +6,20 @@ log-level: info
 proxies:
 - name: 🇭🇺 HU 01 - mqgg5630-cyber
   type: trojan
-  server: hu2.vpnjantit.com
+  server: 46.29.142.57
   port: 4443
   password: C0ldyfh-vpnjantit.com
   udp: true
   sni: hu2.vpnjantit.com
   skip-cert-verify: true
 - name: 🇭🇺 HU 02 - mqgg5630-cyber
-  type: vless
-  server: 2.26.139.201
-  port: 443
-  uuid: 9a829166-3da9-4445-babe-1612ee5fa9ae
+  type: trojan
+  server: 46.29.142.57
+  port: 4443
+  password: C0ldyfh-vpnjantit.com
   udp: true
-  tls: true
+  sni: hu2.vpnjantit.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -qRasoN1QIcSdRL937b6s-Y2qOb-9OFmlaHBi7UcOSM
-    short-id: e17b4d9a8c1f3526
-  servername: kukuruza.mycdn-me.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 202.155.11.249
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf2.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf2.rumedia-cdn.com
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: vless
   server: 213.21.250.193
   port: 443
   uuid: 476d23b8-ab0e-4297-aebf-2c373f7538f0
@@ -32,20 +18,34 @@ proxies:
     short-id: ''
   servername: api.sream-rutube.shop
   client-fingerprint: chrome
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
-  server: 200.169.182.57
+  server: 202.155.11.249
   port: 443
-  uuid: 7a97f64d-5fc7-4011-9028-58d2ba751595
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg
-    short-id: 7505bfa3b6b933e6
-  servername: defaultenginedimly.rivetpress.me
-  client-fingerprint: edge
+  servername: cf2.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf2.rumedia-cdn.com
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: vless
+  server: 202.155.11.249
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf2.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf2.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select

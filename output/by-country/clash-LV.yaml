@@ -30,7 +30,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 03 - mqgg5630-cyber
   type: vless
   server: 89.36.161.222
@@ -43,20 +43,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 04 - mqgg5630-cyber
   type: vless
   server: 89.36.161.222
-  port: 2096
+  port: 2053
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: laoye.in-gect.fun
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  servername: vk.ru
+  client-fingerprint: edge
 - name: 🇱🇻 LV 05 - mqgg5630-cyber
   type: vless
   server: 89.36.161.222
@@ -73,20 +74,6 @@ proxies:
 - name: 🇱🇻 LV 06 - mqgg5630-cyber
   type: vless
   server: 89.36.161.222
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
-    short-id: d26f4703cdd30f4e
-  servername: vk.ru
-  client-fingerprint: edge
-- name: 🇱🇻 LV 07 - mqgg5630-cyber
-  type: vless
-  server: 89.36.161.222
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -96,8 +83,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
-- name: 🇱🇻 LV 08 - mqgg5630-cyber
+      Host: laoye.in-gect.fun
+- name: 🇱🇻 LV 07 - mqgg5630-cyber
   type: vless
   server: 138.124.180.137
   port: 443
@@ -111,6 +98,33 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇱🇻 LV 08 - mqgg5630-cyber
+  type: vless
+  server: 89.36.161.222
+  port: 2053
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
+    short-id: d26f4703cdd30f4e
+  servername: vk.ru
+  client-fingerprint: firefox
+- name: 🇱🇻 LV 09 - mqgg5630-cyber
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.36.161.222
 proxy-groups:
 - name: PROXIES
   type: select
@@ -124,6 +138,7 @@ proxy-groups:
   - 🇱🇻 LV 06 - mqgg5630-cyber
   - 🇱🇻 LV 07 - mqgg5630-cyber
   - 🇱🇻 LV 08 - mqgg5630-cyber
+  - 🇱🇻 LV 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +152,6 @@ proxy-groups:
   - 🇱🇻 LV 06 - mqgg5630-cyber
   - 🇱🇻 LV 07 - mqgg5630-cyber
   - 🇱🇻 LV 08 - mqgg5630-cyber
+  - 🇱🇻 LV 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

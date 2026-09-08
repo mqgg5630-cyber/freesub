@@ -5,6 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
+  type: vless
+  server: 104.18.3.67
+  port: 443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in.520782.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: in.520782.xyz
+- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+    short-id: c0cb7457deebbc70
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   type: trojan
   server: 34.131.228.210
   port: 443
@@ -12,7 +39,20 @@ proxies:
   udp: true
   sni: hyfuuf6.wsone.icu
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+    short-id: c0cb7457deebbc70
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
   type: trojan
   server: 34.131.228.210
   port: 443
@@ -27,6 +67,9 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +77,8 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
