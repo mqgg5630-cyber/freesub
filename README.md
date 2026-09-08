@@ -9,7 +9,7 @@
 
 当前分支包含 Actions 模板：`docs/workflows/update.yml`。
 
-如果要让 GitHub 自动运行，请在 GitHub 网页端把它复制/新建到 `.github/workflows/update.yml`。Arena 当前 GitHub App 没有 `workflows` 写权限，不能直接推送 `.github/workflows/*` 文件。
+如果要让 GitHub 自动运行，请在 GitHub 网页端把它复制/新建到 `.github/workflows/update.yml`，并提交到 `arena/01a08039-freesub` 分支；模板带有当前分支的 `push` 触发器，提交后会立即跑一次。Arena 当前 GitHub App 没有 `workflows` 写权限，不能直接推送 `.github/workflows/*` 文件。
 
 ## 使用方式
 

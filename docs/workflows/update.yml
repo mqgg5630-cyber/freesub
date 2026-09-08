@@ -1,6 +1,10 @@
 name: Update Subscriptions
 
 on:
+  # 提交到当前 Arena 分支时会立即跑一次，方便先测试。
+  push:
+    branches:
+      - arena/01a08039-freesub
   schedule:
     # 每 6 小时自动更新一次（GitHub 使用 UTC 时间）
     - cron: '0 */6 * * *'
