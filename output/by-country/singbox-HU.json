@@ -1,0 +1,100 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇺 HU 01 - mqgg",
+        "🇭🇺 HU 02 - mqgg",
+        "🇭🇺 HU 03 - mqgg",
+        "🇭🇺 HU 04 - mqgg"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇺 HU 01 - mqgg",
+        "🇭🇺 HU 02 - mqgg",
+        "🇭🇺 HU 03 - mqgg",
+        "🇭🇺 HU 04 - mqgg"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇺 HU 01 - mqgg",
+      "server": "46.29.142.57",
+      "server_port": 4443,
+      "password": "C0ldyfh-vpnjantit.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "hu2.vpnjantit.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇺 HU 02 - mqgg",
+      "server": "46.29.142.57",
+      "server_port": 4443,
+      "password": "C0ldyfh-vpnjantit.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "hu2.vpnjantit.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇺 HU 03 - mqgg",
+      "server": "185.225.68.232",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇺 HU 04 - mqgg",
+      "server": "185.225.68.232",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇪 阿联酋 (UAE) 01 - mqgg
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 5a398cfd-f7a1-4d7a-886a-6b72377f7f4f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 39c11784-818b-4e2c-8804-8181abc9c849
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - mqgg
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: ab3b8e51-9d1b-443a-83e0-6fea6504b44b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 67018597-36a2-40f2-aa72-a253d0ad438b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg
+  type: trojan
+  server: 94.140.0.100
+  port: 8443
+  password: 5e5340e6-433d-b5f7-0062-d793046eb281
+  udp: true
+  sni: blue-queen-d517.aaj1388324.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: blue-queen-d517.aaj1388324.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 3e930211-9887-4ec3-969a-c2e7a8837da2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇪 阿联酋 (UAE) 01 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 02 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 03 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 06 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 07 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 08 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 09 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 10 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 11 - mqgg
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇪 阿联酋 (UAE) 01 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 02 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 03 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 06 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 07 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 08 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 09 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 10 - mqgg
+  - 🇦🇪 阿联酋 (UAE) 11 - mqgg
+rules:
+- MATCH,PROXIES

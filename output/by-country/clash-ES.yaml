@@ -1,0 +1,156 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇸 西班牙 (Spain) 01 - mqgg
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 02 - mqgg
+  type: vless
+  server: 93.189.94.67
+  port: 48296
+  uuid: 898537d9-ce3a-4937-bbef-c0fa61c07791
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE
+    short-id: 109657bb2dbe99
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 03 - mqgg
+  type: vless
+  server: 193.238.154.18
+  port: 443
+  uuid: 2297ea1f-2415-4a2c-be20-4a3a978283a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
+    short-id: 76132b3b39704c44
+  servername: es1.hat.onl
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - mqgg
+  type: vless
+  server: 193.238.154.18
+  port: 443
+  uuid: 2297ea1f-2415-4a2c-be20-4a3a978283a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
+    short-id: 76132b3b39704c44
+  servername: es1.hat.onl
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 05 - mqgg
+  type: vless
+  server: 185.254.205.79
+  port: 19842
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 06 - mqgg
+  type: vless
+  server: 185.254.205.79
+  port: 19842
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+  servername: www.tesla.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 07 - mqgg
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 08 - mqgg
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 09 - mqgg
+  type: vless
+  server: 193.238.154.18
+  port: 443
+  uuid: 2297ea1f-2415-4a2c-be20-4a3a978283a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
+    short-id: 76132b3b39704c44
+  servername: es1.hat.onl
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 10 - mqgg
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇸 西班牙 (Spain) 01 - mqgg
+  - 🇪🇸 西班牙 (Spain) 02 - mqgg
+  - 🇪🇸 西班牙 (Spain) 03 - mqgg
+  - 🇪🇸 西班牙 (Spain) 04 - mqgg
+  - 🇪🇸 西班牙 (Spain) 05 - mqgg
+  - 🇪🇸 西班牙 (Spain) 06 - mqgg
+  - 🇪🇸 西班牙 (Spain) 07 - mqgg
+  - 🇪🇸 西班牙 (Spain) 08 - mqgg
+  - 🇪🇸 西班牙 (Spain) 09 - mqgg
+  - 🇪🇸 西班牙 (Spain) 10 - mqgg
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇸 西班牙 (Spain) 01 - mqgg
+  - 🇪🇸 西班牙 (Spain) 02 - mqgg
+  - 🇪🇸 西班牙 (Spain) 03 - mqgg
+  - 🇪🇸 西班牙 (Spain) 04 - mqgg
+  - 🇪🇸 西班牙 (Spain) 05 - mqgg
+  - 🇪🇸 西班牙 (Spain) 06 - mqgg
+  - 🇪🇸 西班牙 (Spain) 07 - mqgg
+  - 🇪🇸 西班牙 (Spain) 08 - mqgg
+  - 🇪🇸 西班牙 (Spain) 09 - mqgg
+  - 🇪🇸 西班牙 (Spain) 10 - mqgg
+rules:
+- MATCH,PROXIES

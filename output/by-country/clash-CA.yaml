@@ -1,0 +1,511 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇦 加拿大 (Canada) 01 - mqgg
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 02 - mqgg
+  type: ss
+  server: 15.235.75.71
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 03 - mqgg
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 04 - mqgg
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: d165fa7e-fa7a-414f-8c75-15f18bce5105
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wA5Vklw2gN0kMwC7JEmudiPbsKyTeSfbZNvpLiDUBEU
+    short-id: bb437dca4f03116e
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 05 - mqgg
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 06 - mqgg
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 07 - mqgg
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 08 - mqgg
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 09 - mqgg
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 10 - mqgg
+  type: vless
+  server: maple.adaspoloandco.com
+  port: 8443
+  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: maple.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /uploader.php
+    headers:
+      Host: maple.adaspoloandco.com
+- name: 🇨🇦 加拿大 (Canada) 11 - mqgg
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 12 - mqgg
+  type: vless
+  server: maple.adaspoloandco.com
+  port: 8443
+  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: maple.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /uploader.php
+    headers:
+      Host: maple.adaspoloandco.com
+- name: 🇨🇦 加拿大 (Canada) 13 - mqgg
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 14 - mqgg
+  type: ss
+  server: 166.88.130.218
+  port: 10661
+  cipher: aes-256-gcm
+  password: fbcec76953a2d173
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 15 - mqgg
+  type: vless
+  server: 54.39.96.233
+  port: 8443
+  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: maple.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /uploader.php
+    headers:
+      Host: maple.adaspoloandco.com
+- name: 🇨🇦 加拿大 (Canada) 16 - mqgg
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 17 - mqgg
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: qq
+- name: 🇨🇦 加拿大 (Canada) 18 - mqgg
+  type: vless
+  server: 130.94.115.231
+  port: 2087
+  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /721740e567c7
+    headers:
+      Host: 130.94.115.231
+- name: 🇨🇦 加拿大 (Canada) 19 - mqgg
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 20 - mqgg
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: d165fa7e-fa7a-414f-8c75-15f18bce5105
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wA5Vklw2gN0kMwC7JEmudiPbsKyTeSfbZNvpLiDUBEU
+    short-id: bb437dca4f03116e
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 21 - mqgg
+  type: vless
+  server: 148.113.196.75
+  port: 8443
+  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ov-canada1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 148.113.196.75
+- name: 🇨🇦 加拿大 (Canada) 22 - mqgg
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 23 - mqgg
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 24 - mqgg
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 25 - mqgg
+  type: vless
+  server: 130.94.115.231
+  port: 2087
+  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /721740e567c7
+    headers:
+      Host: 130.94.115.231
+- name: 🇨🇦 加拿大 (Canada) 26 - mqgg
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 27 - mqgg
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 28 - mqgg
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 29 - mqgg
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 30 - mqgg
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 31 - mqgg
+  type: vless
+  server: 216.152.147.28
+  port: 443
+  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
+    short-id: b9f8d3f8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 32 - mqgg
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 33 - mqgg
+  type: vless
+  server: lizca2.footballfantasyforum.com
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 34 - mqgg
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 35 - mqgg
+  type: vless
+  server: 158.69.112.254
+  port: 443
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 36 - mqgg
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 37 - mqgg
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seribus.org
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🇨🇦 加拿大 (Canada) 38 - mqgg
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇦 加拿大 (Canada) 01 - mqgg
+  - 🇨🇦 加拿大 (Canada) 02 - mqgg
+  - 🇨🇦 加拿大 (Canada) 03 - mqgg
+  - 🇨🇦 加拿大 (Canada) 04 - mqgg
+  - 🇨🇦 加拿大 (Canada) 05 - mqgg
+  - 🇨🇦 加拿大 (Canada) 06 - mqgg
+  - 🇨🇦 加拿大 (Canada) 07 - mqgg
+  - 🇨🇦 加拿大 (Canada) 08 - mqgg
+  - 🇨🇦 加拿大 (Canada) 09 - mqgg
+  - 🇨🇦 加拿大 (Canada) 10 - mqgg
+  - 🇨🇦 加拿大 (Canada) 11 - mqgg
+  - 🇨🇦 加拿大 (Canada) 12 - mqgg
+  - 🇨🇦 加拿大 (Canada) 13 - mqgg
+  - 🇨🇦 加拿大 (Canada) 14 - mqgg
+  - 🇨🇦 加拿大 (Canada) 15 - mqgg
+  - 🇨🇦 加拿大 (Canada) 16 - mqgg
+  - 🇨🇦 加拿大 (Canada) 17 - mqgg
+  - 🇨🇦 加拿大 (Canada) 18 - mqgg
+  - 🇨🇦 加拿大 (Canada) 19 - mqgg
+  - 🇨🇦 加拿大 (Canada) 20 - mqgg
+  - 🇨🇦 加拿大 (Canada) 21 - mqgg
+  - 🇨🇦 加拿大 (Canada) 22 - mqgg
+  - 🇨🇦 加拿大 (Canada) 23 - mqgg
+  - 🇨🇦 加拿大 (Canada) 24 - mqgg
+  - 🇨🇦 加拿大 (Canada) 25 - mqgg
+  - 🇨🇦 加拿大 (Canada) 26 - mqgg
+  - 🇨🇦 加拿大 (Canada) 27 - mqgg
+  - 🇨🇦 加拿大 (Canada) 28 - mqgg
+  - 🇨🇦 加拿大 (Canada) 29 - mqgg
+  - 🇨🇦 加拿大 (Canada) 30 - mqgg
+  - 🇨🇦 加拿大 (Canada) 31 - mqgg
+  - 🇨🇦 加拿大 (Canada) 32 - mqgg
+  - 🇨🇦 加拿大 (Canada) 33 - mqgg
+  - 🇨🇦 加拿大 (Canada) 34 - mqgg
+  - 🇨🇦 加拿大 (Canada) 35 - mqgg
+  - 🇨🇦 加拿大 (Canada) 36 - mqgg
+  - 🇨🇦 加拿大 (Canada) 37 - mqgg
+  - 🇨🇦 加拿大 (Canada) 38 - mqgg
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 (Canada) 01 - mqgg
+  - 🇨🇦 加拿大 (Canada) 02 - mqgg
+  - 🇨🇦 加拿大 (Canada) 03 - mqgg
+  - 🇨🇦 加拿大 (Canada) 04 - mqgg
+  - 🇨🇦 加拿大 (Canada) 05 - mqgg
+  - 🇨🇦 加拿大 (Canada) 06 - mqgg
+  - 🇨🇦 加拿大 (Canada) 07 - mqgg
+  - 🇨🇦 加拿大 (Canada) 08 - mqgg
+  - 🇨🇦 加拿大 (Canada) 09 - mqgg
+  - 🇨🇦 加拿大 (Canada) 10 - mqgg
+  - 🇨🇦 加拿大 (Canada) 11 - mqgg
+  - 🇨🇦 加拿大 (Canada) 12 - mqgg
+  - 🇨🇦 加拿大 (Canada) 13 - mqgg
+  - 🇨🇦 加拿大 (Canada) 14 - mqgg
+  - 🇨🇦 加拿大 (Canada) 15 - mqgg
+  - 🇨🇦 加拿大 (Canada) 16 - mqgg
+  - 🇨🇦 加拿大 (Canada) 17 - mqgg
+  - 🇨🇦 加拿大 (Canada) 18 - mqgg
+  - 🇨🇦 加拿大 (Canada) 19 - mqgg
+  - 🇨🇦 加拿大 (Canada) 20 - mqgg
+  - 🇨🇦 加拿大 (Canada) 21 - mqgg
+  - 🇨🇦 加拿大 (Canada) 22 - mqgg
+  - 🇨🇦 加拿大 (Canada) 23 - mqgg
+  - 🇨🇦 加拿大 (Canada) 24 - mqgg
+  - 🇨🇦 加拿大 (Canada) 25 - mqgg
+  - 🇨🇦 加拿大 (Canada) 26 - mqgg
+  - 🇨🇦 加拿大 (Canada) 27 - mqgg
+  - 🇨🇦 加拿大 (Canada) 28 - mqgg
+  - 🇨🇦 加拿大 (Canada) 29 - mqgg
+  - 🇨🇦 加拿大 (Canada) 30 - mqgg
+  - 🇨🇦 加拿大 (Canada) 31 - mqgg
+  - 🇨🇦 加拿大 (Canada) 32 - mqgg
+  - 🇨🇦 加拿大 (Canada) 33 - mqgg
+  - 🇨🇦 加拿大 (Canada) 34 - mqgg
+  - 🇨🇦 加拿大 (Canada) 35 - mqgg
+  - 🇨🇦 加拿大 (Canada) 36 - mqgg
+  - 🇨🇦 加拿大 (Canada) 37 - mqgg
+  - 🇨🇦 加拿大 (Canada) 38 - mqgg
+rules:
+- MATCH,PROXIES

@@ -1,0 +1,68 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇺 HU 01 - mqgg
+  type: trojan
+  server: 46.29.142.57
+  port: 4443
+  password: C0ldyfh-vpnjantit.com
+  udp: true
+  sni: hu2.vpnjantit.com
+  skip-cert-verify: true
+- name: 🇭🇺 HU 02 - mqgg
+  type: trojan
+  server: 46.29.142.57
+  port: 4443
+  password: C0ldyfh-vpnjantit.com
+  udp: true
+  sni: hu2.vpnjantit.com
+  skip-cert-verify: true
+- name: 🇭🇺 HU 03 - mqgg
+  type: trojan
+  server: 185.225.68.232
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇭🇺 HU 04 - mqgg
+  type: trojan
+  server: 185.225.68.232
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇺 HU 01 - mqgg
+  - 🇭🇺 HU 02 - mqgg
+  - 🇭🇺 HU 03 - mqgg
+  - 🇭🇺 HU 04 - mqgg
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇺 HU 01 - mqgg
+  - 🇭🇺 HU 02 - mqgg
+  - 🇭🇺 HU 03 - mqgg
+  - 🇭🇺 HU 04 - mqgg
+rules:
+- MATCH,PROXIES

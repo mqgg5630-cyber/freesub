@@ -1,0 +1,225 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 PL 01 - mqgg
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 02 - mqgg
+  type: vless
+  server: 45.144.48.58
+  port: 8118
+  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
+    short-id: ''
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇵🇱 PL 03 - mqgg
+  type: vless
+  server: 50.7.249.178
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl2-ded.moritech.net
+- name: 🇵🇱 PL 04 - mqgg
+  type: ss
+  server: 64.176.73.160
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: VJtsgllDDJfNmaTe
+  udp: true
+- name: 🇵🇱 PL 05 - mqgg
+  type: vless
+  server: 50.7.248.234
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: viper-22.moriarty-web.com
+- name: 🇵🇱 PL 06 - mqgg
+  type: vless
+  server: 94.183.209.43
+  port: 443
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.43
+- name: 🇵🇱 PL 07 - mqgg
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 08 - mqgg
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
+- name: 🇵🇱 PL 09 - mqgg
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 10 - mqgg
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 11 - mqgg
+  type: vless
+  server: plll.banibus.ir
+  port: 8118
+  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
+    short-id: ''
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 12 - mqgg
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 13 - mqgg
+  type: vless
+  server: 50.7.249.170
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl1-ded.moritech.net
+- name: 🇵🇱 PL 14 - mqgg
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 15 - mqgg
+  type: vless
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+    short-id: f747a7a5793b5714
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 16 - mqgg
+  type: vless
+  server: 50.7.249.178
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl2-ded.moritech.net
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 PL 01 - mqgg
+  - 🇵🇱 PL 02 - mqgg
+  - 🇵🇱 PL 03 - mqgg
+  - 🇵🇱 PL 04 - mqgg
+  - 🇵🇱 PL 05 - mqgg
+  - 🇵🇱 PL 06 - mqgg
+  - 🇵🇱 PL 07 - mqgg
+  - 🇵🇱 PL 08 - mqgg
+  - 🇵🇱 PL 09 - mqgg
+  - 🇵🇱 PL 10 - mqgg
+  - 🇵🇱 PL 11 - mqgg
+  - 🇵🇱 PL 12 - mqgg
+  - 🇵🇱 PL 13 - mqgg
+  - 🇵🇱 PL 14 - mqgg
+  - 🇵🇱 PL 15 - mqgg
+  - 🇵🇱 PL 16 - mqgg
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 PL 01 - mqgg
+  - 🇵🇱 PL 02 - mqgg
+  - 🇵🇱 PL 03 - mqgg
+  - 🇵🇱 PL 04 - mqgg
+  - 🇵🇱 PL 05 - mqgg
+  - 🇵🇱 PL 06 - mqgg
+  - 🇵🇱 PL 07 - mqgg
+  - 🇵🇱 PL 08 - mqgg
+  - 🇵🇱 PL 09 - mqgg
+  - 🇵🇱 PL 10 - mqgg
+  - 🇵🇱 PL 11 - mqgg
+  - 🇵🇱 PL 12 - mqgg
+  - 🇵🇱 PL 13 - mqgg
+  - 🇵🇱 PL 14 - mqgg
+  - 🇵🇱 PL 15 - mqgg
+  - 🇵🇱 PL 16 - mqgg
+rules:
+- MATCH,PROXIES
