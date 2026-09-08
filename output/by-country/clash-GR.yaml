@@ -4,21 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - mqgg
-  type: vless
-  server: 94.241.174.157
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇬🇷 GR 02 - mqgg
+- name: 🇬🇷 GR 01 - mqgg5630-cyber
   type: vless
   server: 94.241.174.157
   port: 40443
@@ -32,7 +18,7 @@ proxies:
     short-id: beb4
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇬🇷 GR 03 - mqgg
+- name: 🇬🇷 GR 02 - mqgg5630-cyber
   type: vless
   server: 94.241.174.157
   port: 40443
@@ -46,7 +32,7 @@ proxies:
     short-id: beb4
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇬🇷 GR 04 - mqgg
+- name: 🇬🇷 GR 03 - mqgg5630-cyber
   type: vless
   server: 94.241.174.157
   port: 40443
@@ -65,18 +51,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - mqgg
-  - 🇬🇷 GR 02 - mqgg
-  - 🇬🇷 GR 03 - mqgg
-  - 🇬🇷 GR 04 - mqgg
+  - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
+  - 🇬🇷 GR 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - mqgg
-  - 🇬🇷 GR 02 - mqgg
-  - 🇬🇷 GR 03 - mqgg
-  - 🇬🇷 GR 04 - mqgg
+  - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
+  - 🇬🇷 GR 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

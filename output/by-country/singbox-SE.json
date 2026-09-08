@@ -8,23 +8,25 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg",
-        "🇸🇪 SE 02 - mqgg"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg",
-        "🇸🇪 SE 02 - mqgg"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE 01 - mqgg",
+      "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
       "server": "202.155.11.249",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -42,12 +44,47 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 SE 02 - mqgg",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "type": "vless",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "server": "213.21.250.193",
+      "server_port": 443,
+      "uuid": "476d23b8-ab0e-4297-aebf-2c373f7538f0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.sream-rutube.shop",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fn0RLpDpJr5BJvYeX8W7OgGYoW4nARJ6jZg-sWIAozA"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
+      "server": "200.169.182.57",
+      "server_port": 443,
+      "uuid": "7a97f64d-5fc7-4011-9028-58d2ba751595",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "defaultenginedimly.rivetpress.me",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg",
+          "short_id": "7505bfa3b6b933e6"
+        }
+      }
     },
     {
       "type": "direct",

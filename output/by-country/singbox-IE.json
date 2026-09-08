@@ -8,35 +8,29 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - mqgg"
+        "🇮🇪 IE 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - mqgg"
+        "🇮🇪 IE 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇱🇺 LU 01 - mqgg",
-      "server": "188.42.145.180",
+      "type": "vless",
+      "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
+      "server": "50.7.5.163",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "ir-viper.failspace.top",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
       }
     },
     {

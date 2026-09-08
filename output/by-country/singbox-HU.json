@@ -8,28 +8,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - mqgg",
-        "🇭🇺 HU 02 - mqgg",
-        "🇭🇺 HU 03 - mqgg",
-        "🇭🇺 HU 04 - mqgg"
+        "🇭🇺 HU 01 - mqgg5630-cyber",
+        "🇭🇺 HU 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - mqgg",
-        "🇭🇺 HU 02 - mqgg",
-        "🇭🇺 HU 03 - mqgg",
-        "🇭🇺 HU 04 - mqgg"
+        "🇭🇺 HU 01 - mqgg5630-cyber",
+        "🇭🇺 HU 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "trojan",
-      "tag": "🇭🇺 HU 01 - mqgg",
-      "server": "46.29.142.57",
+      "tag": "🇭🇺 HU 01 - mqgg5630-cyber",
+      "server": "hu2.vpnjantit.com",
       "server_port": 4443,
       "password": "C0ldyfh-vpnjantit.com",
       "tls": {
@@ -39,52 +35,24 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇺 HU 02 - mqgg",
-      "server": "46.29.142.57",
-      "server_port": 4443,
-      "password": "C0ldyfh-vpnjantit.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "hu2.vpnjantit.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇺 HU 03 - mqgg",
-      "server": "185.225.68.232",
+      "type": "vless",
+      "tag": "🇭🇺 HU 02 - mqgg5630-cyber",
+      "server": "2.26.139.201",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "9a829166-3da9-4445-babe-1612ee5fa9ae",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇺 HU 04 - mqgg",
-      "server": "185.225.68.232",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+        "server_name": "kukuruza.mycdn-me.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qRasoN1QIcSdRL937b6s-Y2qOb-9OFmlaHBi7UcOSM",
+          "short_id": "e17b4d9a8c1f3526"
         }
       }
     },

@@ -4,72 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 - mqgg
-  type: vless
-  server: 104.18.2.67
+- name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
+  type: trojan
+  server: 34.131.228.210
   port: 443
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  password: M7v%w11Se*
   udp: true
-  tls: true
+  sni: hyfuuf6.wsone.icu
   skip-cert-verify: true
-  servername: in.520782.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: in.520782.xyz
-- name: 🇮🇳 印度 (India) 02 - mqgg
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: trojan
+  server: 34.131.228.210
+  port: 443
+  password: M7v%w11Se*
   udp: true
-  tls: true
+  sni: hyfuuf6.wsone.icu
   skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-    short-id: c0cb7457deebbc70
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - mqgg
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 04 - mqgg
-  type: ss
-  server: 139.84.166.47
-  port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 - mqgg
-  - 🇮🇳 印度 (India) 02 - mqgg
-  - 🇮🇳 印度 (India) 03 - mqgg
-  - 🇮🇳 印度 (India) 04 - mqgg
+  - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 - mqgg
-  - 🇮🇳 印度 (India) 02 - mqgg
-  - 🇮🇳 印度 (India) 03 - mqgg
-  - 🇮🇳 印度 (India) 04 - mqgg
+  - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

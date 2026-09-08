@@ -4,30 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - mqgg
-  type: trojan
-  server: 188.42.145.180
+- name: 🇮🇪 IE 01 - mqgg5630-cyber
+  type: vless
+  server: 50.7.5.163
   port: 443
-  password: humanity
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
+  flow: xtls-rprx-vision
+  servername: ir-viper.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - mqgg
+  - 🇮🇪 IE 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - mqgg
+  - 🇮🇪 IE 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

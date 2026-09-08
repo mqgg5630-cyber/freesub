@@ -4,65 +4,41 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - mqgg
+- name: 🇭🇺 HU 01 - mqgg5630-cyber
   type: trojan
-  server: 46.29.142.57
+  server: hu2.vpnjantit.com
   port: 4443
   password: C0ldyfh-vpnjantit.com
   udp: true
   sni: hu2.vpnjantit.com
   skip-cert-verify: true
-- name: 🇭🇺 HU 02 - mqgg
-  type: trojan
-  server: 46.29.142.57
-  port: 4443
-  password: C0ldyfh-vpnjantit.com
-  udp: true
-  sni: hu2.vpnjantit.com
-  skip-cert-verify: true
-- name: 🇭🇺 HU 03 - mqgg
-  type: trojan
-  server: 185.225.68.232
+- name: 🇭🇺 HU 02 - mqgg5630-cyber
+  type: vless
+  server: 2.26.139.201
   port: 443
-  password: humanity
+  uuid: 9a829166-3da9-4445-babe-1612ee5fa9ae
   udp: true
-  sni: www.calmlunch.com
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇭🇺 HU 04 - mqgg
-  type: trojan
-  server: 185.225.68.232
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -qRasoN1QIcSdRL937b6s-Y2qOb-9OFmlaHBi7UcOSM
+    short-id: e17b4d9a8c1f3526
+  servername: kukuruza.mycdn-me.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - mqgg
-  - 🇭🇺 HU 02 - mqgg
-  - 🇭🇺 HU 03 - mqgg
-  - 🇭🇺 HU 04 - mqgg
+  - 🇭🇺 HU 01 - mqgg5630-cyber
+  - 🇭🇺 HU 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - mqgg
-  - 🇭🇺 HU 02 - mqgg
-  - 🇭🇺 HU 03 - mqgg
-  - 🇭🇺 HU 04 - mqgg
+  - 🇭🇺 HU 01 - mqgg5630-cyber
+  - 🇭🇺 HU 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -4,35 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - mqgg
-  type: vless
-  server: 185.95.231.156
-  port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇱 IL 02 - mqgg
-  type: vless
-  server: 185.95.231.156
-  port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇱 IL 03 - mqgg
+- name: 🇮🇱 IL 01 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
   port: 443
@@ -46,21 +18,65 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇮🇱 IL 02 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 03 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 04 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - mqgg
-  - 🇮🇱 IL 02 - mqgg
-  - 🇮🇱 IL 03 - mqgg
+  - 🇮🇱 IL 01 - mqgg5630-cyber
+  - 🇮🇱 IL 02 - mqgg5630-cyber
+  - 🇮🇱 IL 03 - mqgg5630-cyber
+  - 🇮🇱 IL 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - mqgg
-  - 🇮🇱 IL 02 - mqgg
-  - 🇮🇱 IL 03 - mqgg
+  - 🇮🇱 IL 01 - mqgg5630-cyber
+  - 🇮🇱 IL 02 - mqgg5630-cyber
+  - 🇮🇱 IL 03 - mqgg5630-cyber
+  - 🇮🇱 IL 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
