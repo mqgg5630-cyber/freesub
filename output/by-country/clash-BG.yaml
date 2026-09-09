@@ -6,37 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
-  server: 94.156.155.27
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
-    short-id: 8f892fa1
-  servername: www.telekom.de
-  client-fingerprint: firefox
-- name: 🇧🇬 BG 02 - mqgg5630-cyber
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 03 - mqgg5630-cyber
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - mqgg5630-cyber
-  type: vless
   server: 193.148.59.178
   port: 443
   uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
@@ -49,6 +18,56 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇧🇬 BG 02 - mqgg5630-cyber
+  type: vless
+  server: 144.31.50.236
+  port: 443
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇧🇬 BG 03 - mqgg5630-cyber
+  type: vless
+  server: 144.31.50.236
+  port: 443
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: firefox
+- name: 🇧🇬 BG 04 - mqgg5630-cyber
+  type: vless
+  server: 94.156.155.27
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
+    short-id: 8f892fa1
+  servername: www.telekom.de
+  client-fingerprint: firefox
+- name: 🇧🇬 BG 05 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +77,7 @@ proxy-groups:
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
+  - 🇧🇬 BG 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +87,6 @@ proxy-groups:
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
+  - 🇧🇬 BG 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

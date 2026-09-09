@@ -13,7 +13,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
         "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
         "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
-        "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber"
+        "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -25,38 +27,102 @@
         "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
         "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
         "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
-        "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber"
+        "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "05819bb1-2975-473c-a51f-0fbccf8d2cfa",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc"
-        }
-      }
+      "server": "188.208.110.58",
+      "server_port": 8444,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tunnel-astrovpn_official"
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
+      "server": "94.140.0.100",
+      "server_port": 8443,
+      "password": "5e5340e6-433d-b5f7-0062-d793046eb281",
+      "tls": {
+        "enabled": true,
+        "server_name": "blue-queen-d517.aaj1388324.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "blue-queen-d517.aaj1388324.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "05819bb1-2975-473c-a51f-0fbccf8d2cfa",
+      "uuid": "cc422436-e0e9-4f15-bfe8-db3d816e5527",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -74,7 +140,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber",
       "server": "31.58.181.88",
       "server_port": 8443,
       "uuid": "0817a3bb-c8fb-4ddf-a05e-321565b39cd8",
@@ -90,60 +156,6 @@
         "reality": {
           "enabled": true,
           "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "05819bb1-2975-473c-a51f-0fbccf8d2cfa",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber",
-      "server": "185.112.249.201",
-      "server_port": 8443,
-      "uuid": "9b18ccef-b9e0-41d1-8990-9d970569e142",
-      "tls": {
-        "enabled": true,
-        "server_name": "web-socket.tgdaosheng.ggff.net",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "web-socket.tgdaosheng.ggff.net"
         }
       }
     },

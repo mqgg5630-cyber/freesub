@@ -15,15 +15,6 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
   server: 156.67.63.231
   port: 443
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
@@ -36,6 +27,16 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+  type: vmess
+  server: pori.cjlife.ir
+  port: 110
+  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
   server: 156.67.63.231
@@ -52,17 +53,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-    short-id: 9bd613c48251f0db
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

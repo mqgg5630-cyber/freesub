@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 58.153.148.126
+  server: 5fca3221-tl4g00-tpkh0c-1r7od.hk3.hyhuawei.com
   port: 443
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -16,22 +16,22 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
     short-id: ''
   servername: updates.cdn-apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
   type: trojan
   server: hk04.qianmoip.win
   port: 52224
   password: d742752c-4231-4695-801e-f06d77f0f277
   udp: true
   sni: taobao.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: 119.246.1.143
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES

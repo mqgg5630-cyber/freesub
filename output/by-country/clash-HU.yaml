@@ -12,27 +12,17 @@ proxies:
   udp: true
   sni: hu2.vpnjantit.com
   skip-cert-verify: true
-- name: 🇭🇺 HU 02 - mqgg5630-cyber
-  type: trojan
-  server: 46.29.142.57
-  port: 4443
-  password: C0ldyfh-vpnjantit.com
-  udp: true
-  sni: hu2.vpnjantit.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇺 HU 01 - mqgg5630-cyber
-  - 🇭🇺 HU 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇺 HU 01 - mqgg5630-cyber
-  - 🇭🇺 HU 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
