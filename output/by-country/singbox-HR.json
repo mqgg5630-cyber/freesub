@@ -8,28 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇷 HR 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇷 HR 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
-      "server": "64.20.209.125",
+      "tag": "🇭🇷 HR 01 - mqgg5630-cyber",
+      "server": "213.182.199.137",
       "server_port": 443,
-      "password": "UQfj7bdfjibTjpUHfg72aew51S7fB32g",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "64.20.209.125",
+        "server_name": "www.pleadcourt.org",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
       }
     },
     {

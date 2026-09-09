@@ -6,32 +6,26 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
-  server: 95.85.224.51
-  port: 443
-  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: max.ru
-  client-fingerprint: qq
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
-  server: 95.85.224.51
+  server: 94.183.170.135
   port: 443
-  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: max.ru
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 03 - mqgg5630-cyber
   type: vless
   server: 95.85.224.51
@@ -47,40 +41,35 @@ proxies:
   servername: max.ru
   client-fingerprint: chrome
 - name: 🇪🇪 EE 04 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  tls: false
+  sni: 109.206.241.10
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 EE 05 - mqgg5630-cyber
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 95.85.224.51
+  port: 443
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: qq
 - name: 🇪🇪 EE 06 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  tls: false
+  sni: 109.206.241.10
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 EE 07 - mqgg5630-cyber
   type: vless
   server: 95.85.224.51
@@ -101,8 +90,47 @@ proxies:
   port: 449
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  sni: 109.206.241.10
+  sni: russiapower.accesscam.org
   skip-cert-verify: true
+- name: 🇪🇪 EE 09 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 EE 10 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 94.183.170.135
+- name: 🇪🇪 EE 11 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 12 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,6 +144,10 @@ proxy-groups:
   - 🇪🇪 EE 06 - mqgg5630-cyber
   - 🇪🇪 EE 07 - mqgg5630-cyber
   - 🇪🇪 EE 08 - mqgg5630-cyber
+  - 🇪🇪 EE 09 - mqgg5630-cyber
+  - 🇪🇪 EE 10 - mqgg5630-cyber
+  - 🇪🇪 EE 11 - mqgg5630-cyber
+  - 🇪🇪 EE 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,5 +161,9 @@ proxy-groups:
   - 🇪🇪 EE 06 - mqgg5630-cyber
   - 🇪🇪 EE 07 - mqgg5630-cyber
   - 🇪🇪 EE 08 - mqgg5630-cyber
+  - 🇪🇪 EE 09 - mqgg5630-cyber
+  - 🇪🇪 EE 10 - mqgg5630-cyber
+  - 🇪🇪 EE 11 - mqgg5630-cyber
+  - 🇪🇪 EE 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

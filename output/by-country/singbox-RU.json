@@ -29,27 +29,8 @@
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "ru05.abvpn.ru",
-      "server_port": 443,
-      "uuid": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru05.abvpn.ru",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/websocket",
-        "headers": {
-          "Host": "ru05.abvpn.ru"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
@@ -57,26 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-      "server": "ru05.abvpn.ru",
-      "server_port": 443,
-      "uuid": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru05.abvpn.ru",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/websocket",
-        "headers": {
-          "Host": "ru05.abvpn.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
       "server": "45.9.15.206",
       "server_port": 443,
       "uuid": "a289a3d3-5833-4b28-8809-ae72898a98d0",
@@ -95,7 +57,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "45.131.212.30",
+      "server_port": 443,
+      "uuid": "db9da8fb-c528-42ec-9b9e-e578cf934c04",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sellflow.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
       "server": "45.9.15.206",
       "server_port": 443,
       "uuid": "a289a3d3-5833-4b28-8809-ae72898a98d0",
@@ -109,6 +92,27 @@
         "path": "/websocket",
         "headers": {
           "Host": "ru05.abvpn.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+      "server": "193.233.255.50",
+      "server_port": 443,
+      "uuid": "db9da8fb-c528-42ec-9b9e-e578cf934c04",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sellflow.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       }
     },

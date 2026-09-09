@@ -10,7 +10,9 @@
         "auto",
         "🇰🇿 KZ 01 - mqgg5630-cyber",
         "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber"
+        "🇰🇿 KZ 03 - mqgg5630-cyber",
+        "🇰🇿 KZ 04 - mqgg5630-cyber",
+        "🇰🇿 KZ 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +21,9 @@
       "outbounds": [
         "🇰🇿 KZ 01 - mqgg5630-cyber",
         "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber"
+        "🇰🇿 KZ 03 - mqgg5630-cyber",
+        "🇰🇿 KZ 04 - mqgg5630-cyber",
+        "🇰🇿 KZ 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -48,6 +52,27 @@
     {
       "type": "vless",
       "tag": "🇰🇿 KZ 02 - mqgg5630-cyber",
+      "server": "178.236.16.98",
+      "server_port": 35728,
+      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+          "short_id": "69a2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 KZ 03 - mqgg5630-cyber",
       "server": "77.73.232.61",
       "server_port": 19747,
       "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
@@ -68,10 +93,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 KZ 03 - mqgg5630-cyber",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+      "tag": "🇰🇿 KZ 04 - mqgg5630-cyber",
+      "server": "77.73.232.61",
+      "server_port": 19747,
+      "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
@@ -82,10 +107,18 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
+          "public_key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
+          "short_id": "2001"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇿 KZ 05 - mqgg5630-cyber",
+      "server": "94.198.220.183",
+      "server_port": 64674,
+      "method": "chacha20-ietf-poly1305",
+      "password": "s8LbJCgUiGXeCKVc63tHJP"
     },
     {
       "type": "direct",

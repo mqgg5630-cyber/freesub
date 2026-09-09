@@ -4,25 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
+- name: 🇦🇹 AT 01 - mqgg5630-cyber
   type: trojan
-  server: 64.20.209.125
+  server: 212.183.88.136
   port: 443
-  password: UQfj7bdfjibTjpUHfg72aew51S7fB32g
+  password: humanity
   udp: true
-  sni: 64.20.209.125
+  sni: www.calmlunch.com
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
