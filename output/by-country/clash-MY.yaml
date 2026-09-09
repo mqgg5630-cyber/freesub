@@ -6,33 +6,25 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
   type: vless
-  server: 43.217.16.8
-  port: 21874
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  servername: www.amd.com
-  client-fingerprint: random
-- name: 🇲🇾 MY 02 - mqgg5630-cyber
-  type: vmess
-  server: 47.250.45.234
-  port: 43063
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-  alterId: 0
-  cipher: auto
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki?ed=2048
+    path: /db55c40bbc75
     headers:
-      Host: ''
+      Host: 38.60.168.98
+- name: 🇲🇾 MY 02 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
 - name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: vless
   server: 56.69.159.191
@@ -46,48 +38,16 @@ proxies:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇲🇾 MY 04 - mqgg5630-cyber
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
   udp: true
-  tls: false
+  sni: 47.250.84.25
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
 - name: 🇲🇾 MY 05 - mqgg5630-cyber
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
-- name: 🇲🇾 MY 06 - mqgg5630-cyber
-  type: vless
-  server: 56.69.159.191
-  port: 53271
-  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
-    short-id: 0a9bd9db19578964
-  servername: www.tesla.com
-  client-fingerprint: random
-- name: 🇲🇾 MY 07 - mqgg5630-cyber
   type: vless
   server: 56.69.159.191
   port: 53271
@@ -101,7 +61,7 @@ proxies:
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇲🇾 MY 08 - mqgg5630-cyber
+- name: 🇲🇾 MY 06 - mqgg5630-cyber
   type: vless
   server: 43.217.16.8
   port: 21874
@@ -114,28 +74,7 @@ proxies:
     public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
     short-id: 42e853a5559e1032
   servername: www.amd.com
-  client-fingerprint: chrome
-- name: 🇲🇾 MY 09 - mqgg5630-cyber
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
-- name: 🇲🇾 MY 10 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: moltbot.doctoroyy.net
-  skip-cert-verify: true
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,10 +86,6 @@ proxy-groups:
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
   - 🇲🇾 MY 06 - mqgg5630-cyber
-  - 🇲🇾 MY 07 - mqgg5630-cyber
-  - 🇲🇾 MY 08 - mqgg5630-cyber
-  - 🇲🇾 MY 09 - mqgg5630-cyber
-  - 🇲🇾 MY 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -162,9 +97,5 @@ proxy-groups:
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
   - 🇲🇾 MY 06 - mqgg5630-cyber
-  - 🇲🇾 MY 07 - mqgg5630-cyber
-  - 🇲🇾 MY 08 - mqgg5630-cyber
-  - 🇲🇾 MY 09 - mqgg5630-cyber
-  - 🇲🇾 MY 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

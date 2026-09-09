@@ -6,12 +6,17 @@ log-level: info
 proxies:
 - name: 🇭🇺 HU 01 - mqgg5630-cyber
   type: trojan
-  server: 46.29.142.57
-  port: 4443
-  password: C0ldyfh-vpnjantit.com
+  server: 185.225.68.232
+  port: 443
+  password: humanity
   udp: true
-  sni: hu2.vpnjantit.com
+  sni: www.calmlunch.com
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - mqgg5630-cyber
   type: vless
+  server: 111.88.143.139
+  port: 8443
+  uuid: 2b8c0574-ff6f-4975-8a06-e24ebefa1d1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
+    short-id: ac4b582e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+  type: vless
   server: 83.222.23.81
   port: 38065
   uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
@@ -15,19 +29,6 @@ proxies:
   reality-opts:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
     short-id: fa
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - mqgg5630-cyber
-  type: vless
-  server: 178.236.16.98
-  port: 35728
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 03 - mqgg5630-cyber
@@ -45,24 +46,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 04 - mqgg5630-cyber
   type: vless
-  server: 77.73.232.61
-  port: 19747
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 05 - mqgg5630-cyber
-  type: ss
-  server: 94.198.220.183
-  port: 64674
-  cipher: chacha20-ietf-poly1305
-  password: s8LbJCgUiGXeCKVc63tHJP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +66,6 @@ proxy-groups:
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
   - 🇰🇿 KZ 04 - mqgg5630-cyber
-  - 🇰🇿 KZ 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,6 +75,5 @@ proxy-groups:
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
   - 🇰🇿 KZ 04 - mqgg5630-cyber
-  - 🇰🇿 KZ 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
