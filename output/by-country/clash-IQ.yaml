@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - mqgg5630-cyber
+- name: 🇮🇶 IQ 01 - mqgg5630-cyber
   type: vless
-  server: 94.241.174.157
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  server: eu-central-de-3.hanvpn.biz
+  port: 443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: chrome
+    public-key: evZScHEcyRLcHnrN8fzp3HtC5hQ_smUHdmCRpCqlwkY
+    short-id: 0183b7681806bc97
+  servername: eu-central-de-3.hanvpn.biz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇮🇶 IQ 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇮🇶 IQ 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

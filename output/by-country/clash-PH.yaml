@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - mqgg5630-cyber
+- name: 🇵🇭 PH 01 - mqgg5630-cyber
   type: vless
-  server: 172.67.155.136
-  port: 2086
-  uuid: 73796e63-0000-4000-8000-000000000007
+  server: 149.104.109.17
+  port: 2087
+  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sync
+    path: /04461917b179
     headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      Host: 149.104.109.17
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - mqgg5630-cyber
+  - 🇵🇭 PH 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - mqgg5630-cyber
+  - 🇵🇭 PH 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
