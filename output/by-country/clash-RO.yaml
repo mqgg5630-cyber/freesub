@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
   type: vless
-  server: 46.28.67.55
-  port: 443
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇴 RO 02 - mqgg5630-cyber
-  type: vless
   server: 193.163.203.253
   port: 443
   uuid: 441afe11-a180-4516-bb80-80a8a6b38705
@@ -32,7 +18,7 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: firefox
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
+- name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: vless
   server: 82.152.141.30
   port: 443
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
-  - 🇷🇴 RO 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
-  - 🇷🇴 RO 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 PH 01 - mqgg5630-cyber
-  type: vless
-  server: 149.104.109.17
-  port: 2087
-  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
+- name: 🇦🇹 AT 01 - mqgg5630-cyber
+  type: trojan
+  server: 46.102.156.144
+  port: 2053
+  password: humanity
   udp: true
-  tls: false
+  sni: www.calmlunch.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /04461917b179
+    path: /assignment
     headers:
-      Host: 149.104.109.17
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 PH 01 - mqgg5630-cyber
+  - 🇦🇹 AT 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 PH 01 - mqgg5630-cyber
+  - 🇦🇹 AT 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

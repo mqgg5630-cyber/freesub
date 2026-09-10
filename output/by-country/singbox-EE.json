@@ -16,7 +16,8 @@
         "🇪🇪 EE 06 - mqgg5630-cyber",
         "🇪🇪 EE 07 - mqgg5630-cyber",
         "🇪🇪 EE 08 - mqgg5630-cyber",
-        "🇪🇪 EE 09 - mqgg5630-cyber"
+        "🇪🇪 EE 09 - mqgg5630-cyber",
+        "🇪🇪 EE 10 - mqgg5630-cyber"
       ]
     },
     {
@@ -31,7 +32,8 @@
         "🇪🇪 EE 06 - mqgg5630-cyber",
         "🇪🇪 EE 07 - mqgg5630-cyber",
         "🇪🇪 EE 08 - mqgg5630-cyber",
-        "🇪🇪 EE 09 - mqgg5630-cyber"
+        "🇪🇪 EE 09 - mqgg5630-cyber",
+        "🇪🇪 EE 10 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -40,36 +42,24 @@
       "type": "vless",
       "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
       "server": "94.183.170.135",
-      "server_port": 443,
+      "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "94.183.170.135"
-        }
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
-      "server": "95.85.224.51",
-      "server_port": 443,
-      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
-      "flow": "xtls-rprx-vision",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "max.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
+        "server_name": "109.206.241.10",
+        "insecure": true
       }
     },
     {
@@ -87,30 +77,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 EE 04 - mqgg5630-cyber",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇪 EE 05 - mqgg5630-cyber",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE 06 - mqgg5630-cyber",
       "server": "95.85.224.51",
       "server_port": 443,
       "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
@@ -132,7 +98,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE 07 - mqgg5630-cyber",
+      "tag": "🇪🇪 EE 05 - mqgg5630-cyber",
       "server": "95.85.224.51",
       "server_port": 443,
       "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
@@ -154,7 +120,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE 08 - mqgg5630-cyber",
+      "tag": "🇪🇪 EE 06 - mqgg5630-cyber",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -168,7 +134,45 @@
     },
     {
       "type": "vless",
+      "tag": "🇪🇪 EE 07 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 08 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇪🇪 EE 09 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.170.135"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 10 - mqgg5630-cyber",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
