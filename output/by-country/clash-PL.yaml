@@ -6,18 +6,28 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 94.183.209.43
+  server: 144.31.5.64
   port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.43
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+    short-id: f747a7a5793b5714
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
   server: 144.31.5.3
   port: 443
@@ -27,53 +37,54 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl4.moritech.net
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
-  server: 50.7.248.234
+  server: 82.118.22.161
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: viper-22.moriarty-web.com
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-  udp: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
+  server: 144.31.2.33
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl6.moritech.net
+  servername: pl3.moritech.net
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: vless
-  server: 50.7.249.170
+  server: eu-central-pl-1.hanvpn.biz
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl1-ded.moritech.net
+  reality-opts:
+    public-key: NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY
+    short-id: 12e3b7681806bc97
+  servername: eu-central-pl-1.hanvpn.biz
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
+  server: 144.31.5.3
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl6.moritech.net
+  servername: pl4.moritech.net
 - name: 🇵🇱 PL 08 - mqgg5630-cyber
   type: vless
   server: 94.183.209.59
@@ -89,6 +100,16 @@ proxies:
       Host: 94.183.209.59
 - name: 🇵🇱 PL 09 - mqgg5630-cyber
   type: vless
+  server: 50.7.248.234
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: viper-22.moriarty-web.com
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
+  type: vless
   server: 144.31.5.64
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -97,7 +118,7 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl6.moritech.net
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
+- name: 🇵🇱 PL 11 - mqgg5630-cyber
   type: vless
   server: 94.183.209.58
   port: 443
@@ -110,7 +131,17 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
+- name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 13 - mqgg5630-cyber
   type: vless
   server: 144.31.2.33
   port: 443
@@ -120,31 +151,22 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl3.moritech.net
-- name: 🇵🇱 PL 12 - mqgg5630-cyber
-  type: vless
-  server: 50.7.248.234
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: viper-22.moriarty-web.com
-- name: 🇵🇱 PL 13 - mqgg5630-cyber
-  type: vless
-  server: 94.183.209.59
-  port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.59
 - name: 🇵🇱 PL 14 - mqgg5630-cyber
   type: vless
+  server: 191.44.113.220
+  port: 443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY
+    short-id: 12e3b7681806bc97
+  servername: eu-central-pl-1.hanvpn.biz
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 15 - mqgg5630-cyber
+  type: vless
   server: 144.31.5.64
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -153,40 +175,65 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl6.moritech.net
-- name: 🇵🇱 PL 15 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.170
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl1-ded.moritech.net
 - name: 🇵🇱 PL 16 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.170
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl1-ded.moritech.net
 - name: 🇵🇱 PL 17 - mqgg5630-cyber
   type: vless
-  server: 2.26.224.233
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  server: 94.183.209.43
+  port: 443
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.43
+- name: 🇵🇱 PL 18 - mqgg5630-cyber
+  type: vless
+  server: 50.7.248.234
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-    short-id: f747a7a5793b5714
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 18 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  servername: viper-22.moriarty-web.com
+- name: 🇵🇱 PL 19 - mqgg5630-cyber
+  type: vless
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 20 - mqgg5630-cyber
+  type: vless
+  server: 104.25.146.77
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 21 - mqgg5630-cyber
   type: vless
   server: 94.183.209.58
   port: 443
@@ -199,17 +246,7 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 19 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.64
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl6.moritech.net
-- name: 🇵🇱 PL 20 - mqgg5630-cyber
+- name: 🇵🇱 PL 22 - mqgg5630-cyber
   type: vless
   server: 94.183.209.59
   port: 443
@@ -222,17 +259,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 21 - mqgg5630-cyber
-  type: vless
-  server: 50.7.248.234
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: viper-22.moriarty-web.com
-- name: 🇵🇱 PL 22 - mqgg5630-cyber
+- name: 🇵🇱 PL 23 - mqgg5630-cyber
   type: vless
   server: 50.7.249.170
   port: 443
@@ -242,43 +269,61 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl1-ded.moritech.net
-- name: 🇵🇱 PL 23 - mqgg5630-cyber
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 24 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
+  server: 50.7.249.170
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl6.moritech.net
+  servername: pl1-ded.moritech.net
 - name: 🇵🇱 PL 25 - mqgg5630-cyber
   type: vless
-  server: 94.183.209.58
+  server: 50.7.249.170
   port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl1-ded.moritech.net
+- name: 🇵🇱 PL 26 - mqgg5630-cyber
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 27 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 28 - mqgg5630-cyber
+  type: vless
+  server: 104.24.31.89
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.58
-- name: 🇵🇱 PL 26 - mqgg5630-cyber
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇵🇱 PL 29 - mqgg5630-cyber
   type: vless
   server: 144.31.5.64
   port: 443
@@ -288,14 +333,48 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl6.moritech.net
-- name: 🇵🇱 PL 27 - mqgg5630-cyber
+- name: 🇵🇱 PL 30 - mqgg5630-cyber
+  type: vless
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 31 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 32 - mqgg5630-cyber
+  type: vless
+  server: 50.7.248.234
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: viper-22.moriarty-web.com
+- name: 🇵🇱 PL 33 - mqgg5630-cyber
   type: ss
   server: 64.176.73.160
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: VJtsgllDDJfNmaTe
   udp: true
-- name: 🇵🇱 PL 28 - mqgg5630-cyber
+- name: 🇵🇱 PL 34 - mqgg5630-cyber
   type: vless
   server: 50.7.248.234
   port: 443
@@ -305,7 +384,17 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: viper-22.moriarty-web.com
-- name: 🇵🇱 PL 29 - mqgg5630-cyber
+- name: 🇵🇱 PL 35 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 36 - mqgg5630-cyber
   type: vless
   server: 50.7.248.234
   port: 443
@@ -315,6 +404,19 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: viper-22.moriarty-web.com
+- name: 🇵🇱 PL 37 - mqgg5630-cyber
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
 proxy-groups:
 - name: PROXIES
   type: select
@@ -349,6 +451,14 @@ proxy-groups:
   - 🇵🇱 PL 27 - mqgg5630-cyber
   - 🇵🇱 PL 28 - mqgg5630-cyber
   - 🇵🇱 PL 29 - mqgg5630-cyber
+  - 🇵🇱 PL 30 - mqgg5630-cyber
+  - 🇵🇱 PL 31 - mqgg5630-cyber
+  - 🇵🇱 PL 32 - mqgg5630-cyber
+  - 🇵🇱 PL 33 - mqgg5630-cyber
+  - 🇵🇱 PL 34 - mqgg5630-cyber
+  - 🇵🇱 PL 35 - mqgg5630-cyber
+  - 🇵🇱 PL 36 - mqgg5630-cyber
+  - 🇵🇱 PL 37 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -383,5 +493,13 @@ proxy-groups:
   - 🇵🇱 PL 27 - mqgg5630-cyber
   - 🇵🇱 PL 28 - mqgg5630-cyber
   - 🇵🇱 PL 29 - mqgg5630-cyber
+  - 🇵🇱 PL 30 - mqgg5630-cyber
+  - 🇵🇱 PL 31 - mqgg5630-cyber
+  - 🇵🇱 PL 32 - mqgg5630-cyber
+  - 🇵🇱 PL 33 - mqgg5630-cyber
+  - 🇵🇱 PL 34 - mqgg5630-cyber
+  - 🇵🇱 PL 35 - mqgg5630-cyber
+  - 🇵🇱 PL 36 - mqgg5630-cyber
+  - 🇵🇱 PL 37 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - mqgg5630-cyber
   type: vless
-  server: 31.59.150.174
-  port: 9443
-  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  server: 172.67.192.84
+  port: 2095
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-    short-id: a1b2c3d4
-  servername: hotcoals.aeternavpn.space
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /juvsrnmgdu8i0179k5
+    headers:
+      Host: index.harmonica02.workers.dev
 - name: 🇲🇩 MD 02 - mqgg5630-cyber
   type: vless
   server: 31.59.150.174
@@ -31,7 +30,35 @@ proxies:
     public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
     short-id: a1b2c3d4
   servername: hotcoals.aeternavpn.space
+  client-fingerprint: firefox
+- name: 🇲🇩 MD 03 - mqgg5630-cyber
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  servername: hotcoals.aeternavpn.space
   client-fingerprint: chrome
+- name: 🇲🇩 MD 04 - mqgg5630-cyber
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  servername: hotcoals.aeternavpn.space
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +66,8 @@ proxy-groups:
   - AUTO
   - 🇲🇩 MD 01 - mqgg5630-cyber
   - 🇲🇩 MD 02 - mqgg5630-cyber
+  - 🇲🇩 MD 03 - mqgg5630-cyber
+  - 🇲🇩 MD 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +75,7 @@ proxy-groups:
   proxies:
   - 🇲🇩 MD 01 - mqgg5630-cyber
   - 🇲🇩 MD 02 - mqgg5630-cyber
+  - 🇲🇩 MD 03 - mqgg5630-cyber
+  - 🇲🇩 MD 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

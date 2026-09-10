@@ -6,32 +6,31 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
   type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  server: 172.67.137.223
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: ios
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
 - name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  type: trojan
+  server: 172.67.187.87
+  port: 443
+  password: Telegram_healer_config
   udp: true
-  tls: true
+  sni: bKtF381b04NcHTXkN8TidEzQgF.TCNTH9s31mg1j4TNxLAD62O1s2o.wOrKErS.DEV
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /tr/JIPAVWGHbaGJWIcEUAFGZIxrVCPW?ed=2560
+    headers:
+      Host: bktf381b04nchtxkn8tidezqgf.tcnth9s31mg1j4tnxlad62o1s2o.workers.dev
 - name: 🇸🇨 SC 03 - mqgg5630-cyber
   type: vless
   server: 156.226.168.221
@@ -45,8 +44,50 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇸🇨 SC 04 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.1
+  port: 2053
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
+- name: 🇸🇨 SC 05 - mqgg5630-cyber
+  type: vless
+  server: 156.226.168.221
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: safari
+- name: 🇸🇨 SC 06 - mqgg5630-cyber
+  type: vless
+  server: 172.67.148.26
+  port: 443
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restless-boat-ebf2.moha102030.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
+- name: 🇸🇨 SC 07 - mqgg5630-cyber
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -56,6 +97,72 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 08 - mqgg5630-cyber
+  type: vless
+  server: 104.18.32.47
+  port: 2087
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  network: ws
+  ws-opts:
+    path: /game
+    headers:
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+- name: 🇸🇨 SC 09 - mqgg5630-cyber
+  type: vless
+  server: 156.226.168.221
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇸🇨 SC 10 - mqgg5630-cyber
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 11 - mqgg5630-cyber
+  type: vless
+  server: 104.16.72.30
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xstack.mahanfixe.workers.dev
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
+- name: 🇸🇨 SC 12 - mqgg5630-cyber
+  type: vless
+  server: 45.130.125.96
+  port: 443
+  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +172,14 @@ proxy-groups:
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
   - 🇸🇨 SC 04 - mqgg5630-cyber
+  - 🇸🇨 SC 05 - mqgg5630-cyber
+  - 🇸🇨 SC 06 - mqgg5630-cyber
+  - 🇸🇨 SC 07 - mqgg5630-cyber
+  - 🇸🇨 SC 08 - mqgg5630-cyber
+  - 🇸🇨 SC 09 - mqgg5630-cyber
+  - 🇸🇨 SC 10 - mqgg5630-cyber
+  - 🇸🇨 SC 11 - mqgg5630-cyber
+  - 🇸🇨 SC 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +189,13 @@ proxy-groups:
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
   - 🇸🇨 SC 04 - mqgg5630-cyber
+  - 🇸🇨 SC 05 - mqgg5630-cyber
+  - 🇸🇨 SC 06 - mqgg5630-cyber
+  - 🇸🇨 SC 07 - mqgg5630-cyber
+  - 🇸🇨 SC 08 - mqgg5630-cyber
+  - 🇸🇨 SC 09 - mqgg5630-cyber
+  - 🇸🇨 SC 10 - mqgg5630-cyber
+  - 🇸🇨 SC 11 - mqgg5630-cyber
+  - 🇸🇨 SC 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

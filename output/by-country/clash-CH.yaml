@@ -18,17 +18,33 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: chrome
+- name: 🇨🇭 CH 02 - mqgg5630-cyber
+  type: vless
+  server: 104.18.28.234
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - mqgg5630-cyber
+  - 🇨🇭 CH 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - mqgg5630-cyber
+  - 🇨🇭 CH 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

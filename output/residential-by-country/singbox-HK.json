@@ -25,18 +25,30 @@
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-      "server": "ac35c80b-tla000-tpmc23-1s3lb.hk3.hyhuawei.com",
+      "server": "119.246.1.143",
       "server_port": 443,
-      "uuid": "fbf91120-50ba-11ef-a203-f23c91cfbbc9",
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%2fripaojiedian",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "server": "9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9",
       "tls": {
         "enabled": true,
         "server_name": "updates.cdn-apple.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,25 +58,13 @@
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
       "server": "hk04.qianmoip.win",
       "server_port": 52224,
       "password": "d742752c-4231-4695-801e-f06d77f0f277",
       "tls": {
         "enabled": true,
         "server_name": "taobao.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "119.246.1.143",
         "insecure": true
       }
     },

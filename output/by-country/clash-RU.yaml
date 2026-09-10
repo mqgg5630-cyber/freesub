@@ -6,14 +6,21 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  server: 194.87.196.13
+  port: 20111
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: ss
+  server: 195.133.5.102
+  port: 20111
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
-  server: 45.131.212.30
+  server: 193.233.255.50
   port: 443
   uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
   udp: true
@@ -25,34 +32,41 @@ proxies:
     short-id: ''
   servername: sellflow.org
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: vless
-  server: 45.9.15.206
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  type: ss
+  server: 195.133.23.200
+  port: 20111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
   udp: true
-  tls: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: 193.233.217.22
+  port: 4100
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: ru05.abvpn.ru
   network: ws
   ws-opts:
-    path: /websocket
+    path: /v1
     headers:
-      Host: 45.9.15.206
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+      Host: 193.233.217.22
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: ss
+  server: 195.58.48.137
+  port: 20111
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: ss
+  server: 46.17.42.166
+  port: 10661
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   type: vless
   server: 78.159.247.166
   port: 7444
@@ -66,35 +80,49 @@ proxies:
     short-id: ''
   servername: akamai.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  type: ss
+  server: 46.17.40.234
+  port: 2011
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
   type: vless
-  server: 45.9.15.206
+  server: 45.131.212.30
   port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  servername: sellflow.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   type: vless
-  server: ru05.abvpn.ru
+  server: 104.21.22.180
   port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  uuid: 33918b20-9e02-4dc6-8b30-79b2d4b2e0e6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ru05.abvpn.ru
+  servername: auto-scale-238b2b.infra-core-1630dd.workers.dev
   network: ws
   ws-opts:
-    path: /websocket
+    path: /eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0
     headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+      Host: auto-scale-238b2b.infra-core-1630dd.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
   type: vless
   server: 78.159.247.123
   port: 7444
@@ -107,20 +135,6 @@ proxies:
     public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
     short-id: ''
   servername: akamai.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
-  type: vless
-  server: 193.233.255.50
-  port: 443
-  uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  servername: sellflow.org
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -136,6 +150,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,5 +168,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

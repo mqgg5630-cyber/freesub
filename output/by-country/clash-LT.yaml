@@ -31,7 +31,7 @@ proxies:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
   servername: lit9.helper-internet.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇱🇹 LT 03 - mqgg5630-cyber
   type: vless
   server: 88.119.176.24
@@ -59,7 +59,21 @@ proxies:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
   servername: lit9.helper-internet.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇱🇹 LT 05 - mqgg5630-cyber
+  type: vless
+  server: 88.119.176.24
+  port: 443
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: lit9.helper-internet.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +83,7 @@ proxy-groups:
   - 🇱🇹 LT 02 - mqgg5630-cyber
   - 🇱🇹 LT 03 - mqgg5630-cyber
   - 🇱🇹 LT 04 - mqgg5630-cyber
+  - 🇱🇹 LT 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +93,6 @@ proxy-groups:
   - 🇱🇹 LT 02 - mqgg5630-cyber
   - 🇱🇹 LT 03 - mqgg5630-cyber
   - 🇱🇹 LT 04 - mqgg5630-cyber
+  - 🇱🇹 LT 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

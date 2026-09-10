@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - mqgg5630-cyber"
+        "🇨🇭 CH 01 - mqgg5630-cyber",
+        "🇨🇭 CH 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - mqgg5630-cyber"
+        "🇨🇭 CH 01 - mqgg5630-cyber",
+        "🇨🇭 CH 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -39,6 +41,25 @@
           "enabled": true,
           "public_key": "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo",
           "short_id": "84be686ea1d16478"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "server": "104.18.28.234",
+      "server_port": 443,
+      "uuid": "f6b5a6a3-f3e1-63ca-bb68-bdc400000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn5505.ffffdsaaa.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "netlivpn5505.ffffdsaaa.workers.dev"
         }
       }
     },
