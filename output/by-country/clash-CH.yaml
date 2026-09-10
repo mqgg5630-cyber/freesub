@@ -19,20 +19,6 @@ proxies:
       Host: www.calmlunch.com
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
-  server: 45.90.59.15
-  port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 03 - mqgg5630-cyber
-  type: vless
   server: 131.123.34.42
   port: 443
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
@@ -45,6 +31,34 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: chrome
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +67,7 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +76,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

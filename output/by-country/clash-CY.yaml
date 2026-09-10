@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - mqgg5630-cyber
   type: vless
-  server: 5.253.30.99
+  server: preview.netraidly.ru
   port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇾 CY 02 - mqgg5630-cyber
   type: vless
   server: 5.253.42.163
@@ -45,23 +45,24 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 CY 04 - mqgg5630-cyber
   type: vless
-  server: 194.76.154.31
+  server: 5.253.42.163
   port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇨🇾 CY 05 - mqgg5630-cyber
   type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -75,7 +76,7 @@ proxies:
   client-fingerprint: qq
 - name: 🇨🇾 CY 06 - mqgg5630-cyber
   type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -86,8 +87,22 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 07 - mqgg5630-cyber
+  type: vless
+  server: 5.253.30.99
+  port: 40443
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 08 - mqgg5630-cyber
   type: vless
   server: 5.253.42.163
   port: 40443
@@ -101,7 +116,21 @@ proxies:
     short-id: 84fc
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 08 - mqgg5630-cyber
+- name: 🇨🇾 CY 09 - mqgg5630-cyber
+  type: vless
+  server: 5.253.42.163
+  port: 40443
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 CY 10 - mqgg5630-cyber
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -114,43 +143,20 @@ proxies:
     short-id: a8ae
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 09 - mqgg5630-cyber
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
-- name: 🇨🇾 CY 10 - mqgg5630-cyber
-  type: vless
-  server: 5.253.42.163
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: chrome
 - name: 🇨🇾 CY 11 - mqgg5630-cyber
   type: vless
-  server: 5.253.42.163
+  server: 5.253.42.164
   port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 12 - mqgg5630-cyber
   type: vless
   server: 5.253.42.163
@@ -164,10 +170,10 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: 🇨🇾 CY 13 - mqgg5630-cyber
   type: vless
-  server: preview.netraidly.ru
+  server: 5.253.42.163
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -178,35 +184,25 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 14 - mqgg5630-cyber
   type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: chrome
+  servername: torr.wlrus.cfd
 - name: 🇨🇾 CY 15 - mqgg5630-cyber
   type: vless
-  server: 5.253.42.164
-  port: 40443
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: random
+  servername: torr.wlrus.cfd
 - name: 🇨🇾 CY 16 - mqgg5630-cyber
   type: vless
   server: preview.netraidly.ru
@@ -220,7 +216,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 17 - mqgg5630-cyber
   type: vless
   server: 5.253.42.163
@@ -234,10 +230,10 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 18 - mqgg5630-cyber
   type: vless
-  server: preview.netraidly.ru
+  server: 5.253.42.163
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -248,7 +244,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇾 CY 19 - mqgg5630-cyber
   type: vless
   server: 5.253.42.163
@@ -265,7 +261,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇾 CY 20 - mqgg5630-cyber
   type: vless
-  server: 5.253.42.163
+  server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
@@ -276,7 +272,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: edge
 - name: 🇨🇾 CY 21 - mqgg5630-cyber
   type: vless
   server: 194.76.154.31
@@ -289,7 +285,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 CY 22 - mqgg5630-cyber
   type: vless
   server: 5.253.42.163
@@ -303,36 +299,23 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 23 - mqgg5630-cyber
   type: vless
-  server: 194.76.154.31
+  server: 5.253.42.163
   port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 24 - mqgg5630-cyber
   type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 CY 25 - mqgg5630-cyber
-  type: vless
   server: preview.netraidly.ru
   port: 40443
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
@@ -345,35 +328,7 @@ proxies:
     short-id: 84fc
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 26 - mqgg5630-cyber
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 CY 27 - mqgg5630-cyber
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 CY 28 - mqgg5630-cyber
+- name: 🇨🇾 CY 25 - mqgg5630-cyber
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -385,30 +340,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 CY 29 - mqgg5630-cyber
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
-- name: 🇨🇾 CY 30 - mqgg5630-cyber
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -439,11 +371,6 @@ proxy-groups:
   - 🇨🇾 CY 23 - mqgg5630-cyber
   - 🇨🇾 CY 24 - mqgg5630-cyber
   - 🇨🇾 CY 25 - mqgg5630-cyber
-  - 🇨🇾 CY 26 - mqgg5630-cyber
-  - 🇨🇾 CY 27 - mqgg5630-cyber
-  - 🇨🇾 CY 28 - mqgg5630-cyber
-  - 🇨🇾 CY 29 - mqgg5630-cyber
-  - 🇨🇾 CY 30 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -474,10 +401,5 @@ proxy-groups:
   - 🇨🇾 CY 23 - mqgg5630-cyber
   - 🇨🇾 CY 24 - mqgg5630-cyber
   - 🇨🇾 CY 25 - mqgg5630-cyber
-  - 🇨🇾 CY 26 - mqgg5630-cyber
-  - 🇨🇾 CY 27 - mqgg5630-cyber
-  - 🇨🇾 CY 28 - mqgg5630-cyber
-  - 🇨🇾 CY 29 - mqgg5630-cyber
-  - 🇨🇾 CY 30 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

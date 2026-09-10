@@ -8,108 +8,25 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - mqgg5630-cyber",
-        "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber",
-        "🇰🇿 KZ 04 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - mqgg5630-cyber",
-        "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber",
-        "🇰🇿 KZ 04 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇿 KZ 01 - mqgg5630-cyber",
-      "server": "111.88.143.139",
-      "server_port": 51940,
-      "uuid": "03464802-b517-404b-b15c-7750ffc5e78f",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y",
-          "short_id": "fd7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ 02 - mqgg5630-cyber",
-      "server": "83.222.23.81",
-      "server_port": 38065,
-      "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo",
-          "short_id": "fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ 03 - mqgg5630-cyber",
-      "server": "111.88.143.139",
-      "server_port": 8443,
-      "uuid": "2b8c0574-ff6f-4975-8a06-e24ebefa1d1c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0",
-          "short_id": "ac4b582e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ 04 - mqgg5630-cyber",
-      "server": "77.73.232.61",
-      "server_port": 19747,
-      "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
-          "short_id": "2001"
-        }
-      }
+      "server": "94.198.220.183",
+      "server_port": 64674,
+      "method": "chacha20-ietf-poly1305",
+      "password": "s8LbJCgUiGXeCKVc63tHJP"
     },
     {
       "type": "direct",
