@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -45,21 +47,40 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
-      "server": "104.18.28.234",
+      "server": "185.18.250.245",
       "server_port": 443,
-      "uuid": "f6b5a6a3-f3e1-63ca-bb68-bdc400000000",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "netlivpn5505.ffffdsaaa.workers.dev",
+        "server_name": "www.calmlunch.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/assignment",
         "headers": {
-          "Host": "netlivpn5505.ffffdsaaa.workers.dev"
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
+      "server": "91.245.225.79",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },

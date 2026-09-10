@@ -34,36 +34,19 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇬 BG 03 - mqgg5630-cyber
   type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - mqgg5630-cyber
-  type: vless
-  server: 192.145.31.5
+  server: 144.31.50.236
   port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 05 - mqgg5630-cyber
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: firefox
+- name: 🇧🇬 BG 04 - mqgg5630-cyber
   type: vless
   server: 144.31.50.236
   port: 443
@@ -77,6 +60,24 @@ proxies:
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
   client-fingerprint: firefox
+- name: 🇧🇬 BG 05 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 192.145.31.5
+- name: 🇧🇬 BG 06 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 07 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
@@ -92,23 +93,19 @@ proxies:
       Host: 192.145.31.5
 - name: 🇧🇬 BG 08 - mqgg5630-cyber
   type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  server: 144.31.50.236
+  port: 443
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 192.145.31.5
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: randomized
 - name: 🇧🇬 BG 09 - mqgg5630-cyber
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 10 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
   port: 443
@@ -121,7 +118,43 @@ proxies:
     path: /
     headers:
       Host: 192.145.31.5
+- name: 🇧🇬 BG 10 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 11 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 192.145.31.5
+- name: 🇧🇬 BG 12 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 13 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 14 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
   port: 443
@@ -133,16 +166,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: neth9.lunariai.ru
-- name: 🇧🇬 BG 12 - mqgg5630-cyber
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
+      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
@@ -160,6 +184,8 @@ proxy-groups:
   - 🇧🇬 BG 10 - mqgg5630-cyber
   - 🇧🇬 BG 11 - mqgg5630-cyber
   - 🇧🇬 BG 12 - mqgg5630-cyber
+  - 🇧🇬 BG 13 - mqgg5630-cyber
+  - 🇧🇬 BG 14 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -177,5 +203,7 @@ proxy-groups:
   - 🇧🇬 BG 10 - mqgg5630-cyber
   - 🇧🇬 BG 11 - mqgg5630-cyber
   - 🇧🇬 BG 12 - mqgg5630-cyber
+  - 🇧🇬 BG 13 - mqgg5630-cyber
+  - 🇧🇬 BG 14 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

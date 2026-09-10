@@ -19,19 +19,31 @@ proxies:
   servername: sheetpeek.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
-  type: vless
-  server: 104.18.28.234
+  type: trojan
+  server: 185.18.250.245
   port: 443
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
+      Host: www.calmlunch.com
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: trojan
+  server: 91.245.225.79
+  port: 2053
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
+  - 🇨🇭 CH 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
+  - 🇨🇭 CH 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
