@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 156.226.168.221
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: safari
 - name: 🇸🇨 SC 02 - mqgg5630-cyber
   type: vless
   server: 156.226.168.221
@@ -29,20 +33,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: ios
 - name: 🇸🇨 SC 03 - mqgg5630-cyber
-  type: vless
-  server: 195.66.24.169
-  port: 1932
-  uuid: ea8eb632-7d56-4bfb-8195-dc34268b5844
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  servername: www.vk.com
-  client-fingerprint: firefox
-- name: 🇸🇨 SC 04 - mqgg5630-cyber
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -52,103 +42,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 05 - mqgg5630-cyber
-  type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇸🇨 SC 06 - mqgg5630-cyber
-  type: vless
-  server: hk3n.wxgqlfx.vip
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇨 SC 07 - mqgg5630-cyber
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: calm-silence-d4a1.217.workers.dev
-- name: 🇸🇨 SC 08 - mqgg5630-cyber
-  type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇨 SC 09 - mqgg5630-cyber
-  type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇸🇨 SC 10 - mqgg5630-cyber
-  type: vless
-  server: 172.67.130.187
-  port: 2053
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: FaNs.livErpoOl.qZZ.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇸🇨 SC 11 - mqgg5630-cyber
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,14 +50,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
-  - 🇸🇨 SC 04 - mqgg5630-cyber
-  - 🇸🇨 SC 05 - mqgg5630-cyber
-  - 🇸🇨 SC 06 - mqgg5630-cyber
-  - 🇸🇨 SC 07 - mqgg5630-cyber
-  - 🇸🇨 SC 08 - mqgg5630-cyber
-  - 🇸🇨 SC 09 - mqgg5630-cyber
-  - 🇸🇨 SC 10 - mqgg5630-cyber
-  - 🇸🇨 SC 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,13 +58,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
-  - 🇸🇨 SC 04 - mqgg5630-cyber
-  - 🇸🇨 SC 05 - mqgg5630-cyber
-  - 🇸🇨 SC 06 - mqgg5630-cyber
-  - 🇸🇨 SC 07 - mqgg5630-cyber
-  - 🇸🇨 SC 08 - mqgg5630-cyber
-  - 🇸🇨 SC 09 - mqgg5630-cyber
-  - 🇸🇨 SC 10 - mqgg5630-cyber
-  - 🇸🇨 SC 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

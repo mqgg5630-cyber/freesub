@@ -42,12 +42,17 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server": "194.5.248.47",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "abvro2.moritech.net",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -65,23 +70,14 @@
     {
       "type": "vless",
       "tag": "🇷🇴 RO 04 - mqgg5630-cyber",
-      "server": "46.28.67.55",
+      "server": "194.5.248.252",
       "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
+        "server_name": "abvro.moritech.net",
+        "insecure": true
       }
     },
     {

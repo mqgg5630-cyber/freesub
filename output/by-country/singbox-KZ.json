@@ -8,18 +8,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - mqgg5630-cyber",
-        "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - mqgg5630-cyber",
-        "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -31,48 +27,6 @@
       "server_port": 64674,
       "method": "chacha20-ietf-poly1305",
       "password": "s8LbJCgUiGXeCKVc63tHJP"
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ 02 - mqgg5630-cyber",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ 03 - mqgg5630-cyber",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
-        }
-      }
     },
     {
       "type": "direct",

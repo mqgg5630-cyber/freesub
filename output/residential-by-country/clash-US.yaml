@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 104.21.78.225
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
-  type: vless
   server: 216.36.124.176
   port: 29513
   uuid: f618d6e9-c6af-40b8-bc7a-bbf450586784
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

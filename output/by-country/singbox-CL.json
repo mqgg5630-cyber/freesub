@@ -8,31 +8,25 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT 01 - mqgg5630-cyber"
+        "🇨🇱 CL 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT 01 - mqgg5630-cyber"
+        "🇨🇱 CL 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 LT 01 - mqgg5630-cyber",
-      "server": "88.216.66.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime04.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇱 CL 01 - mqgg5630-cyber",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
     },
     {
       "type": "direct",
