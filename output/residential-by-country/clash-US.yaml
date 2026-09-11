@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
   type: vless
+  server: 108.162.198.178
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
+  type: vless
   server: 216.36.124.176
   port: 29513
   uuid: f618d6e9-c6af-40b8-bc7a-bbf450586784
@@ -24,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
+  - 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
+  - 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

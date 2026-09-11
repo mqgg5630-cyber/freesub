@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 NO 01 - mqgg5630-cyber
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+- name: 🇳🇴 NO 02 - mqgg5630-cyber
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+- name: 🇳🇴 NO 03 - mqgg5630-cyber
   type: vless
   server: 151.242.168.125
   port: 390
@@ -17,21 +31,7 @@ proxies:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
     short-id: b545fe8c5e22f92d
   servername: bowandbead.com
-  client-fingerprint: chrome
-- name: 🇳🇴 NO 02 - mqgg5630-cyber
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: 🇳🇴 NO 03 - mqgg5630-cyber
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
