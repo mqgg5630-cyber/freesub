@@ -7,12 +7,16 @@ proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
-  port: 8443
+  port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 BG 02 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
@@ -24,33 +28,14 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 03 - mqgg5630-cyber
   type: vless
-  server: 193.148.59.178
-  port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 04 - mqgg5630-cyber
-  type: vless
-  server: 193.148.59.178
-  port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇧🇬 BG 05 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -58,8 +43,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 06 - mqgg5630-cyber
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 05 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -78,7 +63,6 @@ proxy-groups:
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
   - 🇧🇬 BG 05 - mqgg5630-cyber
-  - 🇧🇬 BG 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,6 +73,5 @@ proxy-groups:
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
   - 🇧🇬 BG 05 - mqgg5630-cyber
-  - 🇧🇬 BG 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

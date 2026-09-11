@@ -25,16 +25,6 @@ proxies:
     short-id: ''
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
-  type: vmess
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

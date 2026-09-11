@@ -6,70 +6,48 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - mqgg5630-cyber
   type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 - name: 🇱🇻 LV 02 - mqgg5630-cyber
   type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 03 - mqgg5630-cyber
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.36.161.222
-- name: 🇱🇻 LV 04 - mqgg5630-cyber
-  type: vless
-  server: 195.123.213.28
+  server: 138.124.180.137
   port: 443
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 LV 05 - mqgg5630-cyber
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+- name: 🇱🇻 LV 03 - mqgg5630-cyber
+  type: vmess
+  server: 178.248.75.57
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: 89.36.161.222
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,8 +56,6 @@ proxy-groups:
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
   - 🇱🇻 LV 03 - mqgg5630-cyber
-  - 🇱🇻 LV 04 - mqgg5630-cyber
-  - 🇱🇻 LV 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,7 +64,5 @@ proxy-groups:
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
   - 🇱🇻 LV 03 - mqgg5630-cyber
-  - 🇱🇻 LV 04 - mqgg5630-cyber
-  - 🇱🇻 LV 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

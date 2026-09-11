@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -39,6 +41,25 @@
           "enabled": true,
           "public_key": "_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo",
           "short_id": "f93c9d5127e622e4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
+      "server": "104.21.64.250",
+      "server_port": 2053,
+      "uuid": "ef23616d-8a9d-4b22-b2f5-9bda864de179",
+      "tls": {
+        "enabled": true,
+        "server_name": "INDEX.Arcane509.Workers.DEV",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "index.arcane509.workers.dev"
         }
       }
     },
