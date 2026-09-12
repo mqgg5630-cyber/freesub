@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -28,8 +30,28 @@
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "t.me/ripaojiedian",
+        "server_name": "t.me%252fripaojiedian",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "server": "22f60053-tlheo0-tzxeoy-hns7.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "6857f1bc-f27b-11ea-87ad-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "updates.cdn-apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        }
       }
     },
     {

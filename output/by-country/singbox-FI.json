@@ -8,14 +8,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - mqgg5630-cyber"
+        "🇫🇮 FI 01 - mqgg5630-cyber",
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - mqgg5630-cyber"
+        "🇫🇮 FI 01 - mqgg5630-cyber",
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +29,47 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "uuid": "88b44962-7f99-4846-9113-6b0624b5a6a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
       "server": "fin.pinkmoon.pro",
       "server_port": 443,
       "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
@@ -39,6 +86,27 @@
           "enabled": true,
           "public_key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
           "short_id": "8ffa160e608bf539"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
         }
       }
     },

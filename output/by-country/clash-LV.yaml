@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - mqgg5630-cyber
   type: vless
+  server: 195.123.213.28
+  port: 443
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇱🇻 LV 02 - mqgg5630-cyber
+  type: vless
   server: 138.124.180.137
   port: 443
   uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
@@ -17,27 +31,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇱🇻 LV 02 - mqgg5630-cyber
-  type: vless
-  server: 169.40.1.62
-  port: 1443
-  uuid: 773251ef-4691-453e-b062-27e3ed3ed784
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: lv.pawnet.ink
-- name: 🇱🇻 LV 03 - mqgg5630-cyber
-  type: vless
-  server: 169.40.1.62
-  port: 1443
-  uuid: 773251ef-4691-453e-b062-27e3ed3ed784
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: lv.pawnet.ink
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
-  - 🇱🇻 LV 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
-  - 🇱🇻 LV 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

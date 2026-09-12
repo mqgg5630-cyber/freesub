@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 88b44962-7f99-4846-9113-6b0624b5a6a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 31.77.199.182
+  port: 443
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
   server: fin.pinkmoon.pro
   port: 443
   uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
@@ -18,17 +46,36 @@ proxies:
     short-id: 8ffa160e608bf539
   servername: fin.pinkmoon.pro
   client-fingerprint: qq
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
