@@ -22,12 +22,35 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 03 - mqgg5630-cyber
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇦🇹 AT 04 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 AT 05 - mqgg5630-cyber
+  type: vless
+  server: 50.7.184.187
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: at-new-ded5.moritech.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +59,8 @@ proxy-groups:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
+  - 🇦🇹 AT 04 - mqgg5630-cyber
+  - 🇦🇹 AT 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +69,7 @@ proxy-groups:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
+  - 🇦🇹 AT 04 - mqgg5630-cyber
+  - 🇦🇹 AT 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

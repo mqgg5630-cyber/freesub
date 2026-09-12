@@ -16,27 +16,24 @@ proxies:
   servername: pl6.moritech.net
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
-  server: 144.31.2.33
+  server: 144.31.5.64
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl3.moritech.net
+  servername: pl6.moritech.net
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
-  server: 94.183.209.58
+  server: 144.31.5.3
   port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
   server: 144.31.5.3
@@ -58,20 +55,16 @@ proxies:
   flow: xtls-rprx-vision
   servername: pl-new-ded2.moritech.net
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
 - name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-  udp: true
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
   type: vless
   server: 94.183.209.58
   port: 443
@@ -84,20 +77,26 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
   type: vless
-  server: 104.24.30.89
+  server: pl3.moritech.net
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
 - name: 🇵🇱 PL 10 - mqgg5630-cyber
   type: vless
   server: 144.31.5.3
@@ -110,29 +109,43 @@ proxies:
   servername: pl4.moritech.net
 - name: 🇵🇱 PL 11 - mqgg5630-cyber
   type: vless
-  server: pl3.moritech.net
+  server: 144.31.5.3
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl3.moritech.net
+  servername: pl4.moritech.net
 - name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: trojan
+  server: arianet.on1a.com
+  port: 65535
+  password: o1917llwd2gqcowc
+  udp: true
+  sni: arianet.on1a.com
+  skip-cert-verify: true
+- name: 🇵🇱 PL 13 - mqgg5630-cyber
   type: vless
-  server: 104.24.31.89
+  server: 144.31.5.64
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇵🇱 PL 13 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 14 - mqgg5630-cyber
+  type: vless
+  server: 50.7.248.234
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: viper-22.moriarty-web.com
+- name: 🇵🇱 PL 15 - mqgg5630-cyber
   type: vless
   server: 94.183.209.59
   port: 443
@@ -145,16 +158,23 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 14 - mqgg5630-cyber
+- name: 🇵🇱 PL 16 - mqgg5630-cyber
   type: vless
-  server: 50.7.248.234
+  server: 144.31.2.33
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: viper-22.moriarty-web.com
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 17 - mqgg5630-cyber
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,6 +194,9 @@ proxy-groups:
   - 🇵🇱 PL 12 - mqgg5630-cyber
   - 🇵🇱 PL 13 - mqgg5630-cyber
   - 🇵🇱 PL 14 - mqgg5630-cyber
+  - 🇵🇱 PL 15 - mqgg5630-cyber
+  - 🇵🇱 PL 16 - mqgg5630-cyber
+  - 🇵🇱 PL 17 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -193,5 +216,8 @@ proxy-groups:
   - 🇵🇱 PL 12 - mqgg5630-cyber
   - 🇵🇱 PL 13 - mqgg5630-cyber
   - 🇵🇱 PL 14 - mqgg5630-cyber
+  - 🇵🇱 PL 15 - mqgg5630-cyber
+  - 🇵🇱 PL 16 - mqgg5630-cyber
+  - 🇵🇱 PL 17 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

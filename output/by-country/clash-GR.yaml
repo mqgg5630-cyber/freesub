@@ -18,17 +18,97 @@ proxies:
     short-id: beb4
   servername: deepl.com
   client-fingerprint: qq
+- name: 🇬🇷 GR 02 - mqgg5630-cyber
+  type: vless
+  server: edge.netraidly.ru
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇬🇷 GR 03 - mqgg5630-cyber
+  type: vless
+  server: edge.netraidly.ru
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇬🇷 GR 04 - mqgg5630-cyber
+  type: vless
+  server: 94.241.174.157
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  servername: deepl.com
+  client-fingerprint: edge
+- name: 🇬🇷 GR 05 - mqgg5630-cyber
+  type: vless
+  server: 94.241.174.157
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇬🇷 GR 06 - mqgg5630-cyber
+  type: vless
+  server: 94.241.174.157
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  servername: deepl.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
+  - 🇬🇷 GR 03 - mqgg5630-cyber
+  - 🇬🇷 GR 04 - mqgg5630-cyber
+  - 🇬🇷 GR 05 - mqgg5630-cyber
+  - 🇬🇷 GR 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
+  - 🇬🇷 GR 03 - mqgg5630-cyber
+  - 🇬🇷 GR 04 - mqgg5630-cyber
+  - 🇬🇷 GR 05 - mqgg5630-cyber
+  - 🇬🇷 GR 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

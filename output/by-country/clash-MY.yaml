@@ -18,6 +18,14 @@ proxies:
     headers:
       Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: 47.250.84.25
+  skip-cert-verify: true
+- name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: vless
   server: 56.69.159.191
   port: 53271
@@ -31,15 +39,22 @@ proxies:
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
   client-fingerprint: random
-- name: 🇲🇾 MY 03 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: moltbot.doctoroyy.net
-  skip-cert-verify: true
 - name: 🇲🇾 MY 04 - mqgg5630-cyber
+  type: vmess
+  server: 47.250.45.234
+  port: 43063
+  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: 🇲🇾 MY 05 - mqgg5630-cyber
   type: vless
   server: 56.69.159.191
   port: 53271
@@ -53,7 +68,15 @@ proxies:
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇲🇾 MY 05 - mqgg5630-cyber
+- name: 🇲🇾 MY 06 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
+- name: 🇲🇾 MY 07 - mqgg5630-cyber
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -66,21 +89,6 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 MY 06 - mqgg5630-cyber
-  type: vmess
-  server: 47.250.45.234
-  port: 43063
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.250.45.234
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +100,7 @@ proxy-groups:
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
   - 🇲🇾 MY 06 - mqgg5630-cyber
+  - 🇲🇾 MY 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,5 +112,6 @@ proxy-groups:
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
   - 🇲🇾 MY 06 - mqgg5630-cyber
+  - 🇲🇾 MY 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
