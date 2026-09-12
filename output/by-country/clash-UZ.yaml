@@ -17,17 +17,48 @@ proxies:
     path: /755276b33b6f
     headers:
       Host: 189.74.97.47
+- name: 🇺🇿 UZ 02 - mqgg5630-cyber
+  type: vless
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇺🇿 UZ 03 - mqgg5630-cyber
+  type: trojan
+  server: 172.67.238.241
+  port: 443
+  password: 50414e45-4c5f-5a45-5553-565221666bd1
+  udp: true
+  sni: mczrh5e3u5ps.shoameny.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/565221666bd1/loc-5
+    headers:
+      Host: mczrh5e3u5ps.shoameny.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇿 UZ 01 - mqgg5630-cyber
+  - 🇺🇿 UZ 02 - mqgg5630-cyber
+  - 🇺🇿 UZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇿 UZ 01 - mqgg5630-cyber
+  - 🇺🇿 UZ 02 - mqgg5630-cyber
+  - 🇺🇿 UZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

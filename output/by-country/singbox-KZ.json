@@ -8,33 +8,48 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber",
+        "🇰🇿 KZ 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber",
+        "🇰🇿 KZ 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 KZ 01 - mqgg5630-cyber",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+      "server": "111.88.143.139",
+      "server_port": 51940,
+      "uuid": "03464802-b517-404b-b15c-7750ffc5e78f",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y",
+          "short_id": "fd7f"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇿 KZ 02 - mqgg5630-cyber",
+      "server": "94.198.220.183",
+      "server_port": 64674,
+      "method": "chacha20-ietf-poly1305",
+      "password": "s8LbJCgUiGXeCKVc63tHJP"
     },
     {
       "type": "direct",

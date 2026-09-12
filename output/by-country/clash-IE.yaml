@@ -12,23 +12,9 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   servername: ir.failspace.top
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: ss
-  server: 20.234.82.250
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: kYhF4RWqohTpbVau
-  udp: true
-- name: 🇮🇪 IE 03 - mqgg5630-cyber
-  type: ss
-  server: 20.234.82.250
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: D1VXfiP9b9VeX9ZD
-  udp: true
-- name: 🇮🇪 IE 04 - mqgg5630-cyber
   type: vless
   server: 50.7.5.164
   port: 443
@@ -36,16 +22,9 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision-udp443
+  flow: xtls-rprx-vision
   servername: ir.failspace.top
-- name: 🇮🇪 IE 05 - mqgg5630-cyber
-  type: ss
-  server: 20.234.82.250
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: R2QvJ9exeq61wfSV
-  udp: true
-- name: 🇮🇪 IE 06 - mqgg5630-cyber
+- name: 🇮🇪 IE 03 - mqgg5630-cyber
   type: vless
   server: 50.7.5.163
   port: 443
@@ -63,9 +42,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
-  - 🇮🇪 IE 04 - mqgg5630-cyber
-  - 🇮🇪 IE 05 - mqgg5630-cyber
-  - 🇮🇪 IE 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,8 +50,5 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
-  - 🇮🇪 IE 04 - mqgg5630-cyber
-  - 🇮🇪 IE 05 - mqgg5630-cyber
-  - 🇮🇪 IE 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
