@@ -8,21 +8,41 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - mqgg5630-cyber"
+        "🇮🇳 印度 (India) 01 - mqgg5630-cyber",
+        "🇮🇳 印度 (India) 02 - mqgg5630-cyber",
+        "🇮🇳 印度 (India) 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - mqgg5630-cyber"
+        "🇮🇳 印度 (India) 01 - mqgg5630-cyber",
+        "🇮🇳 印度 (India) 02 - mqgg5630-cyber",
+        "🇮🇳 印度 (India) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 01 - mqgg5630-cyber",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - mqgg5630-cyber",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -40,6 +60,14 @@
           "short_id": "9980e0609b0d3891"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 03 - mqgg5630-cyber",
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "direct",
