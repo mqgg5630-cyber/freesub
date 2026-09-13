@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
   type: vless
-  server: 194.5.248.88
+  server: 194.5.248.70
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: roma2.moritech.net
+  servername: roma3.moritech.net
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: vless
   server: 194.5.248.70
@@ -26,6 +26,16 @@ proxies:
   servername: roma3.moritech.net
 - name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: vless
+  server: 194.5.248.88
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: roma2.moritech.net
+- name: 🇷🇴 RO 04 - mqgg5630-cyber
+  type: vless
   server: 194.5.248.93
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -34,16 +44,6 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: roma1.moritech.net
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
-  type: vless
-  server: 194.5.248.70
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: roma3.moritech.net
 proxy-groups:
 - name: PROXIES
   type: select
