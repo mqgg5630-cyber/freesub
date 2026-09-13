@@ -6,12 +6,40 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   type: ss
-  server: 139.84.166.47
-  port: 8388
+  server: 172.105.39.124
+  port: 7002
   cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  password: RexnBgU7EV5ADxG
   udp: true
 - name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: vless
+  server: 104.21.69.118
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  type: vless
+  server: 172.67.208.1
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -23,10 +51,25 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 06 - mqgg5630-cyber
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -47,6 +90,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +101,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

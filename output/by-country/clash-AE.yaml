@@ -6,6 +6,102 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
+  type: vless
+  server: 83.147.216.223
+  port: 4433
+  uuid: 55889b09-e315-4640-9404-e10834e7728e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  type: vless
+  server: 57.129.130.57
+  port: 52014
+  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
+  type: vless
+  server: upload.tbotapi.ru
+  port: 443
+  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
+    short-id: ''
+  servername: upload.tbotapi.ru
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
+  type: vless
+  server: upload.tbotapi.ru
+  port: 443
+  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
+    short-id: ''
+  servername: upload.tbotapi.ru
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  type: vless
   server: 31.58.181.88
   port: 8443
   uuid: d0da19f1-fb05-488e-99c2-262389b3537b
@@ -18,21 +114,7 @@ proxies:
     short-id: ''
   servername: tradingview.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-    short-id: ''
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
   type: vless
   server: 31.56.189.27
   port: 8765
@@ -46,6 +128,20 @@ proxies:
     short-id: 1bcc9177f3124b25
   servername: srv-21bac9.vless.monster
   client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
+  type: vless
+  server: 172.237.12.208
+  port: 18836
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +150,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +165,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

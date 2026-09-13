@@ -8,57 +8,21 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT 01 - mqgg5630-cyber",
-        "🇦🇹 AT 02 - mqgg5630-cyber",
-        "🇦🇹 AT 03 - mqgg5630-cyber"
+        "🇦🇹 AT 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT 01 - mqgg5630-cyber",
-        "🇦🇹 AT 02 - mqgg5630-cyber",
-        "🇦🇹 AT 03 - mqgg5630-cyber"
+        "🇦🇹 AT 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇹 AT 01 - mqgg5630-cyber",
-      "server": "212.183.88.136",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 AT 02 - mqgg5630-cyber",
-      "server": "50.7.184.122",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at3.moritech.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇦🇹 AT 03 - mqgg5630-cyber",
+      "tag": "🇦🇹 AT 01 - mqgg5630-cyber",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",

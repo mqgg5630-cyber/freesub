@@ -18,65 +18,17 @@ proxies:
     short-id: ''
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: vless
-  server: 143.246.193.215
-  port: 443
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-    short-id: ''
-  servername: www.blocket.se
-  client-fingerprint: randomized
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
-  type: vless
-  server: 143.246.193.215
-  port: 443
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-    short-id: ''
-  servername: www.blocket.se
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: vless
-  server: 143.246.193.215
-  port: 443
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-    short-id: ''
-  servername: www.blocket.se
-  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
-  - 🇸🇪 SE 02 - mqgg5630-cyber
-  - 🇸🇪 SE 03 - mqgg5630-cyber
-  - 🇸🇪 SE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
-  - 🇸🇪 SE 02 - mqgg5630-cyber
-  - 🇸🇪 SE 03 - mqgg5630-cyber
-  - 🇸🇪 SE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

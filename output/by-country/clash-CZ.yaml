@@ -5,31 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MiTiVPN
+  type: vless
+  server: 172.67.133.170
+  port: 2096
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
   udp: true
-  sni: ssl.fastly.com
+  tls: true
   skip-cert-verify: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
+      Host: peekconfigg.vipserver1-39d.workers.dev
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: vless
-  server: 104.18.46.46
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.22.180
+  port: 443
+  uuid: 33918b20-9e02-4dc6-8b30-79b2d4b2e0e6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV
 proxy-groups:
 - name: PROXIES
   type: select

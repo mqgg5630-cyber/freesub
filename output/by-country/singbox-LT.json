@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT 01 - mqgg5630-cyber"
+        "🇱🇹 LT 01 - mqgg5630-cyber",
+        "🇱🇹 LT 02 - mqgg5630-cyber",
+        "🇱🇹 LT 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT 01 - mqgg5630-cyber"
+        "🇱🇹 LT 01 - mqgg5630-cyber",
+        "🇱🇹 LT 02 - mqgg5630-cyber",
+        "🇱🇹 LT 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -39,6 +43,41 @@
           "enabled": true,
           "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
           "short_id": "ff776ff77be48b88"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT 02 - mqgg5630-cyber",
+      "server": "lith.2clash.ru",
+      "server_port": 443,
+      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lith.2clash.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT 03 - mqgg5630-cyber",
+      "server": "89.117.112.40",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime11.workers.dev"
         }
       }
     },

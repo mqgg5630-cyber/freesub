@@ -18,17 +18,48 @@ proxies:
     short-id: ff776ff77be48b88
   servername: lit9.helper-internet.com
   client-fingerprint: firefox
+- name: 🇱🇹 LT 02 - mqgg5630-cyber
+  type: vless
+  server: lith.2clash.ru
+  port: 443
+  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk
+    short-id: ''
+  servername: lith.2clash.ru
+  client-fingerprint: firefox
+- name: 🇱🇹 LT 03 - mqgg5630-cyber
+  type: vless
+  server: 89.117.112.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - mqgg5630-cyber
+  - 🇱🇹 LT 02 - mqgg5630-cyber
+  - 🇱🇹 LT 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - mqgg5630-cyber
+  - 🇱🇹 LT 02 - mqgg5630-cyber
+  - 🇱🇹 LT 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
