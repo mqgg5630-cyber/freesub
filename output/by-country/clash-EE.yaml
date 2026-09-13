@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
+  server: 95.85.224.51
+  port: 443
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: qq
+- name: 🇪🇪 EE 02 - mqgg5630-cyber
+  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -13,7 +27,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 02 - mqgg5630-cyber
+- name: 🇪🇪 EE 03 - mqgg5630-cyber
+  type: vless
+  server: 95.85.224.51
+  port: 443
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+- name: 🇪🇪 EE 04 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 443
@@ -26,6 +54,15 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 EE 05 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +70,9 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
+  - 🇪🇪 EE 04 - mqgg5630-cyber
+  - 🇪🇪 EE 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +80,8 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
+  - 🇪🇪 EE 04 - mqgg5630-cyber
+  - 🇪🇪 EE 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

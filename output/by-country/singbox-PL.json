@@ -25,15 +25,7 @@
         "🇵🇱 PL 15 - mqgg5630-cyber",
         "🇵🇱 PL 16 - mqgg5630-cyber",
         "🇵🇱 PL 17 - mqgg5630-cyber",
-        "🇵🇱 PL 18 - mqgg5630-cyber",
-        "🇵🇱 PL 19 - mqgg5630-cyber",
-        "🇵🇱 PL 20 - mqgg5630-cyber",
-        "🇵🇱 PL 21 - mqgg5630-cyber",
-        "🇵🇱 PL 22 - mqgg5630-cyber",
-        "🇵🇱 PL 23 - mqgg5630-cyber",
-        "🇵🇱 PL 24 - mqgg5630-cyber",
-        "🇵🇱 PL 25 - mqgg5630-cyber",
-        "🇵🇱 PL 26 - mqgg5630-cyber"
+        "🇵🇱 PL 18 - mqgg5630-cyber"
       ]
     },
     {
@@ -57,22 +49,28 @@
         "🇵🇱 PL 15 - mqgg5630-cyber",
         "🇵🇱 PL 16 - mqgg5630-cyber",
         "🇵🇱 PL 17 - mqgg5630-cyber",
-        "🇵🇱 PL 18 - mqgg5630-cyber",
-        "🇵🇱 PL 19 - mqgg5630-cyber",
-        "🇵🇱 PL 20 - mqgg5630-cyber",
-        "🇵🇱 PL 21 - mqgg5630-cyber",
-        "🇵🇱 PL 22 - mqgg5630-cyber",
-        "🇵🇱 PL 23 - mqgg5630-cyber",
-        "🇵🇱 PL 24 - mqgg5630-cyber",
-        "🇵🇱 PL 25 - mqgg5630-cyber",
-        "🇵🇱 PL 26 - mqgg5630-cyber"
+        "🇵🇱 PL 18 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
+      "server": "178.95.170.115",
+      "server_port": 2087,
+      "uuid": "bf443e4a-aa9e-4509-abf0-d0f6828d57be",
+      "transport": {
+        "type": "ws",
+        "path": "/4bc027a44532",
+        "headers": {
+          "Host": "178.95.170.115"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
       "server": "194.61.121.93",
       "server_port": 7538,
       "method": "chacha20-ietf-poly1305",
@@ -80,7 +78,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
+      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "server": "94.183.209.59",
+      "server_port": 443,
+      "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.209.59"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
       "server": "144.31.5.3",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -93,91 +105,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
-      "server": "104.17.247.68",
+      "tag": "🇵🇱 PL 05 - mqgg5630-cyber",
+      "server": "94.183.209.58",
       "server_port": 443,
-      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "khoda.ak-khoda.workers.dev",
-        "insecure": true
-      },
+      "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6",
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/",
         "headers": {
-          "Host": "khoda.ak-khoda.workers.dev"
+          "Host": "pl2.lckdwn.ru"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
-      "server": "poland-new-ded.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "poland-new-ded.failspace.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 05 - mqgg5630-cyber",
-      "server": "poland-viper.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "poland-viper.moritech.net",
-        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 PL 06 - mqgg5630-cyber",
-      "server": "104.25.146.77",
-      "server_port": 443,
-      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "khoda.ak-khoda.workers.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "khoda.ak-khoda.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 07 - mqgg5630-cyber",
-      "server": "poland-new-ded.failspace.top",
+      "server": "144.31.5.3",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "poland-new-ded.failspace.top",
+        "server_name": "pl4.moritech.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 07 - mqgg5630-cyber",
+      "server": "144.31.5.64",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 PL 08 - mqgg5630-cyber",
-      "server": "50.7.248.234",
+      "server": "144.31.2.33",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "viper-22.moriarty-web.com",
+        "server_name": "pl3.moritech.net",
         "insecure": true
       }
     },
@@ -197,13 +172,13 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL 10 - mqgg5630-cyber",
-      "server": "poland-viper.moritech.net",
+      "server": "144.31.2.33",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "poland-viper.moritech.net",
+        "server_name": "pl3.moritech.net",
         "insecure": true
       }
     },
@@ -223,53 +198,65 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL 12 - mqgg5630-cyber",
-      "server": "144.31.5.3",
+      "server": "82.118.22.161",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl4.moritech.net",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 PL 13 - mqgg5630-cyber",
-      "server": "144.31.5.64",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true
+      "server": "178.95.170.98",
+      "server_port": 2087,
+      "uuid": "bf443e4a-aa9e-4509-abf0-d0f6828d57be",
+      "transport": {
+        "type": "ws",
+        "path": "/4bc027a44532",
+        "headers": {
+          "Host": "178.95.170.98"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 PL 14 - mqgg5630-cyber",
-      "server": "144.31.5.64",
+      "server": "94.183.209.58",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true
+      "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.209.58"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 PL 15 - mqgg5630-cyber",
-      "server": "50.7.249.66",
+      "server": "94.183.209.58",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl-new-ded2.moritech.net",
-        "insecure": true
+      "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pl2.lckdwn.ru"
+        }
       }
     },
     {
@@ -288,113 +275,6 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL 17 - mqgg5630-cyber",
-      "server": "144.31.5.3",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl4.moritech.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 18 - mqgg5630-cyber",
-      "server": "144.31.2.33",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.moritech.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 19 - mqgg5630-cyber",
-      "server": "222.167.245.124",
-      "server_port": 443,
-      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "datpol.2clash.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QOT8VdR2idgWURLucBQrAMtWtsEx1gfO8AcPEj7xhCU",
-          "short_id": "32445654"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 20 - mqgg5630-cyber",
-      "server": "poland-new-ded.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision-udp443",
-      "tls": {
-        "enabled": true,
-        "server_name": "poland-new-ded.failspace.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 21 - mqgg5630-cyber",
-      "server": "144.31.2.33",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.moritech.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 22 - mqgg5630-cyber",
-      "server": "94.183.209.59",
-      "server_port": 443,
-      "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "94.183.209.59"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 23 - mqgg5630-cyber",
-      "server": "104.25.22.24",
-      "server_port": 443,
-      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "khoda.ak-khoda.workers.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "khoda.ak-khoda.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 24 - mqgg5630-cyber",
       "server": "144.31.5.64",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -407,28 +287,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 25 - mqgg5630-cyber",
-      "server": "94.183.209.58",
-      "server_port": 443,
-      "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "pl2.lckdwn.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 26 - mqgg5630-cyber",
-      "server": "poland-new-ded-2.failspace.top",
+      "tag": "🇵🇱 PL 18 - mqgg5630-cyber",
+      "server": "50.7.249.66",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "poland-new-ded-2.failspace.top",
+        "server_name": "pl-new-ded2.moritech.net",
         "insecure": true
       }
     },
