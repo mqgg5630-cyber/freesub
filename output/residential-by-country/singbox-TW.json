@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -17,22 +18,15 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "36.224.152.189",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
       "server": "59.125.69.19",
       "server_port": 443,
       "uuid": "f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4",
@@ -46,6 +40,36 @@
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
           "Host": "59.125.69.19"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "36.224.152.189",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
+      "server": "wwbqwqqnlyydssc.cfooov.xyz",
+      "server_port": 39817,
+      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4",
+          "short_id": "0044d4f490e795b8"
         }
       }
     },

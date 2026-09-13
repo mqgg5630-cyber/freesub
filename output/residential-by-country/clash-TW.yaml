@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  type: ss
-  server: 36.224.152.189
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
   type: vless
   server: 59.125.69.19
   port: 443
@@ -25,6 +18,27 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.19
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  type: ss
+  server: 36.224.152.189
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
+  type: vless
+  server: wwbqwqqnlyydssc.cfooov.xyz
+  port: 39817
+  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4
+    short-id: 0044d4f490e795b8
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

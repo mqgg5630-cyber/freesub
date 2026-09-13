@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber
   type: vless
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+    headers:
+      Host: 103.75.119.126
+- name: 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
+  type: vless
   server: 51.161.204.242
   port: 443
   uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
@@ -18,7 +31,7 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
+- name: 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   type: vless
   server: 103.75.119.126
   port: 2087
@@ -38,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
+  - 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
+  - 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
