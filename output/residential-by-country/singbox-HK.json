@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -31,6 +33,15 @@
         "server_name": "t.me%252fripaojiedian",
         "insecure": true
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",

@@ -8,21 +8,42 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - mqgg5630-cyber"
+        "🇫🇮 FI 01 - mqgg5630-cyber",
+        "🇫🇮 FI 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - mqgg5630-cyber"
+        "🇫🇮 FI 01 - mqgg5630-cyber",
+        "🇫🇮 FI 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
+      "server": "172.67.217.240",
+      "server_port": 443,
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "fx3h2kf8xn.fx6hsv0.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "fx3h2kf8xn.fx6hsv0.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
       "server": "65.109.215.118",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",

@@ -9,11 +9,13 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -21,26 +23,47 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+      "server": "60.248.219.78",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "60.248.219.78"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
       "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
@@ -52,7 +75,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - mqgg5630-cyber",
       "server": "172.67.217.240",
       "server_port": 443,
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
@@ -66,25 +89,6 @@
         "path": "/?ed=2560",
         "headers": {
           "Host": "fx3h2kf8xn.fx6hsv0.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
-      "server": "59.125.69.19",
-      "server_port": 443,
-      "uuid": "f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-        "headers": {
-          "Host": "59.125.69.19"
         }
       }
     },
@@ -109,7 +113,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - mqgg5630-cyber",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber",
       "server": "172.67.217.240",
       "server_port": 443,
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
