@@ -1,0 +1,120 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber",
+        "🇨🇿 CZ 04 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber",
+        "🇨🇿 CZ 04 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
+      "server": "edge-cz1.lovely.ceo",
+      "server_port": 443,
+      "uuid": "08b6dd4b-08df-4aa2-9580-92a3360cf07c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge-cz1.lovely.ceo",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x_sc52Wgwr7bsogvKRA5hHHS5PJpdocqZNW_Up1mty8",
+          "short_id": "59ab2fc39ec55bc7"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "---@mehrosaboran",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-22.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 03 - mqgg5630-cyber",
+      "server": "188.130.208.210",
+      "server_port": 443,
+      "uuid": "08b6dd4b-08df-4aa2-9580-92a3360cf07c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge-cz1.lovely.ceo",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x_sc52Wgwr7bsogvKRA5hHHS5PJpdocqZNW_Up1mty8",
+          "short_id": "59ab2fc39ec55bc7"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 CZ 04 - mqgg5630-cyber",
+      "server": "167.82.76.7",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
