@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - mqgg5630-cyber
-  type: trojan
-  server: 151.101.56.101
-  port: 443
-  password: MiTiVPN
+  type: vless
+  server: 81.208.170.142
+  port: 1500
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   udp: true
-  sni: ssl.fastly.com
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '@mehrosaboran'
-    headers:
-      Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+  reality-opts:
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+    short-id: 775eb6408888248e
+  servername: www.ebay.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

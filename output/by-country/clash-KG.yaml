@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - mqgg5630-cyber
-  type: trojan
-  server: 167.82.76.7
+- name: 🇰🇬 KG 01 - mqgg5630-cyber
+  type: vless
+  server: 104.24.31.89
   port: 443
-  password: MiTiVPN
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  sni: ssl.fastly.com
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - mqgg5630-cyber
+  - 🇰🇬 KG 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - mqgg5630-cyber
+  - 🇰🇬 KG 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
