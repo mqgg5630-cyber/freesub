@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
-  type: vless
-  server: 152.53.1.40
+  type: trojan
+  server: 212.183.88.136
   port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  servername: at.quattro-tech.ru
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: 🇦🇹 AT 02 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
