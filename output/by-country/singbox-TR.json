@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,6 +27,13 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+      "server": "144.225.65.173",
+      "server_port": 443,
+      "uuid": "35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -35,7 +44,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -45,25 +54,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-      "server": "107.161.174.26",
-      "server_port": 443,
-      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "books.blackbigdog.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+      "server": "144.225.65.173",
+      "server_port": 29199,
+      "uuid": "de2afab2-344b-413f-93a9-5e62c8e219d5",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",

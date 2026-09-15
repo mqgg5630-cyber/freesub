@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
+  server: 144.225.65.173
+  port: 443
+  uuid: 35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  type: vless
   server: 156.67.63.231
   port: 443
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
@@ -17,21 +25,17 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  type: vless
-  server: 107.161.174.26
-  port: 443
-  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
-    short-id: ''
-  servername: books.blackbigdog.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+  type: vmess
+  server: 144.225.65.173
+  port: 29199
+  uuid: de2afab2-344b-413f-93a9-5e62c8e219d5
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

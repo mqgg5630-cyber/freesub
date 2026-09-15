@@ -5,54 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: ss
   server: 65.109.215.118
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 31.77.199.182
-  port: 443
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: fl.windconnect.pro
-  port: 443
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
-    short-id: 3c6ec7b2d73a28b6
-  servername: fl.windconnect.pro
-  client-fingerprint: safari
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
-  - 🇫🇮 FI 03 - mqgg5630-cyber
-  - 🇫🇮 FI 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
-  - 🇫🇮 FI 03 - mqgg5630-cyber
-  - 🇫🇮 FI 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

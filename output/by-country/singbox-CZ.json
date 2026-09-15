@@ -8,28 +8,37 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
-      "server": "bright.bitgas.org",
+      "type": "vmess",
+      "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
+      "server": "195.85.23.225",
       "server_port": 443,
-      "password": "UQfj7bdfjibTjpUHfg72aew51S7fB32g",
+      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "bright.bitgas.org",
+        "server_name": "renderer-stream-2-62.mirra.now",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/gpu-stream/socket",
+        "headers": {
+          "Host": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {

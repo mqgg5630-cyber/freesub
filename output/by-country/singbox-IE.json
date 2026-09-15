@@ -11,7 +11,8 @@
         "🇮🇪 IE 01 - mqgg5630-cyber",
         "🇮🇪 IE 02 - mqgg5630-cyber",
         "🇮🇪 IE 03 - mqgg5630-cyber",
-        "🇮🇪 IE 04 - mqgg5630-cyber"
+        "🇮🇪 IE 04 - mqgg5630-cyber",
+        "🇮🇪 IE 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -21,7 +22,8 @@
         "🇮🇪 IE 01 - mqgg5630-cyber",
         "🇮🇪 IE 02 - mqgg5630-cyber",
         "🇮🇪 IE 03 - mqgg5630-cyber",
-        "🇮🇪 IE 04 - mqgg5630-cyber"
+        "🇮🇪 IE 04 - mqgg5630-cyber",
+        "🇮🇪 IE 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -42,23 +44,14 @@
     {
       "type": "vless",
       "tag": "🇮🇪 IE 02 - mqgg5630-cyber",
-      "server": "82c0f.tornadonext.com",
+      "server": "50.7.5.164",
       "server_port": 443,
-      "uuid": "aea9e420-de22-4dcb-93b8-af1f71a3c264",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "82c0f.tornadonext.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "R_ax16JLUFGtv5quE08v6l35O7B_-3j5C31ejUBElRU",
-          "short_id": "6bcd199b"
-        }
+        "server_name": "ir.failspace.top",
+        "insecure": true
       }
     },
     {
@@ -67,7 +60,7 @@
       "server": "50.7.5.164",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "flow": "xtls-rprx-vision-udp443",
       "tls": {
         "enabled": true,
         "server_name": "ir.failspace.top",
@@ -80,12 +73,20 @@
       "server": "50.7.5.164",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision-udp443",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "ir.failspace.top",
         "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE 05 - mqgg5630-cyber",
+      "server": "20.107.184.151",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "zziXHDOFXc4qRjoj"
     },
     {
       "type": "direct",
