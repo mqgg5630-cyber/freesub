@@ -6,18 +6,47 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 31.77.199.182
+  port: 443
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 37.143.129.244
+  port: 443
+  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
+    short-id: 48fd192dc4e46bc0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: ss
   server: 65.109.215.118
   port: 1080
@@ -31,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

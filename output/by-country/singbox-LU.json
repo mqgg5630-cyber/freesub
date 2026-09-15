@@ -8,36 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
-      "server": "195.85.23.225",
+      "type": "trojan",
+      "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
+      "server": "188.42.145.180",
       "server_port": 443,
-      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-      "security": "auto",
-      "alter_id": 0,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "renderer-stream-2-62.mirra.now",
+        "server_name": "www.volumeroot.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v1/gpu-stream/socket",
+        "path": "/assignment",
         "headers": {
-          "Host": "renderer-stream-2-62.mirra.now"
+          "Host": "www.volumeroot.com"
         }
       }
     },
