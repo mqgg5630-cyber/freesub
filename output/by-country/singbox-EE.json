@@ -9,7 +9,10 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber",
+        "🇪🇪 EE 04 - mqgg5630-cyber",
+        "🇪🇪 EE 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,14 +20,41 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber",
+        "🇪🇪 EE 04 - mqgg5630-cyber",
+        "🇪🇪 EE 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "109.206.241.10",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -36,14 +66,33 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "tag": "🇪🇪 EE 04 - mqgg5630-cyber",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
+        "server_name": "109.206.241.10",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 05 - mqgg5630-cyber",
+      "server": "104.24.30.89",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
       }
     },
     {

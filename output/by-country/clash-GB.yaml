@@ -5,13 +5,128 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - mqgg5630-cyber
+  type: vless
+  server: 51.89.194.151
+  port: 2053
+  uuid: 1fd1b8b1-5080-43c6-8564-b825cd783f06
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Erxh845BlP6uy97CL7ferXX3IsEQ-my7EOLI2mZMBHM
+    short-id: b3f7e7bbf581f6fc
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 02 - mqgg5630-cyber
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 03 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 04 - mqgg5630-cyber
   type: ss
   server: 149.102.149.207
   port: 443
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 02 - mqgg5630-cyber
+- name: 🇬🇧 英国 (United Kingdom) 05 - mqgg5630-cyber
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 06 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - mqgg5630-cyber
+  type: vless
+  server: 46.33.8.20
+  port: 443
+  uuid: 6806dc9a-8f5c-4981-b64d-3527b9522b62
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+    short-id: a61d99e920140145
+  servername: filesconvert.org
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 08 - mqgg5630-cyber
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇬🇧 英国 (United Kingdom) 09 - mqgg5630-cyber
+  type: ss
+  server: 129.151.69.214
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5Mugk0D+By809yuKRT7iJbLeu37gwDKouQWai+3oCYk=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - mqgg5630-cyber
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 11 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 2db92da9-8ffb-491b-81d6-6e8d50876020
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiWlFRWlMwRDdLakVqMyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: bpb-01c11365.hjdbcvdbkv.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 12 - mqgg5630-cyber
   type: vless
   server: 51.38.70.192
   port: 443
@@ -24,216 +139,49 @@ proxies:
     short-id: 98fa0b00d09419f7
   servername: play.google.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 03 - mqgg5630-cyber
-  type: vless
-  server: 45.152.64.9
-  port: 11763
-  uuid: fe564b09-1fd8-4053-934b-3106350e4272
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ
-    short-id: ''
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04 - mqgg5630-cyber
-  type: vless
-  server: staging.lastilhame.monster
-  port: 443
-  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5a018643df03
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05 - mqgg5630-cyber
+- name: 🇬🇧 英国 (United Kingdom) 13 - mqgg5630-cyber
   type: ss
   server: 149.102.149.207
   port: 80
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - mqgg5630-cyber
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 129.121.95.159
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 07 - mqgg5630-cyber
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - mqgg5630-cyber
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - mqgg5630-cyber
+- name: 🇬🇧 英国 (United Kingdom) 14 - mqgg5630-cyber
   type: ss
   server: 149.102.132.184
   port: 80
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - mqgg5630-cyber
-  type: vless
-  server: 87.239.249.137
-  port: 443
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - mqgg5630-cyber
-  type: vless
-  server: 138.124.125.211
-  port: 443
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: 72cceb78
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 12 - mqgg5630-cyber
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - mqgg5630-cyber
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - mqgg5630-cyber
-  type: vless
-  server: 138.124.125.211
-  port: 443
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: 72cceb78
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 15 - mqgg5630-cyber
   type: vless
-  server: 129.121.95.159
+  server: 91.193.58.93
   port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 129.121.95.159
+  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /connect
+    path: /Telegram-WangCai2🇨🇳
     headers:
-      Host: 129.121.95.159
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 16 - mqgg5630-cyber
   type: vless
-  server: 45.152.64.9
-  port: 11763
-  uuid: fe564b09-1fd8-4053-934b-3106350e4272
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ
-    short-id: ''
-  servername: www.amazon.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 17 - mqgg5630-cyber
-  type: vless
-  server: 45.152.65.157
-  port: 30521
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-    short-id: ''
-  servername: aws.amazon.com
-  client-fingerprint: ios
-- name: 🇬🇧 英国 (United Kingdom) 18 - mqgg5630-cyber
-  type: vless
-  server: 45.152.65.157
-  port: 30521
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-    short-id: ''
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber
-  type: vless
-  server: 138.124.125.211
+  server: 139.59.189.127
   port: 443
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: 72cceb78
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber
+  servername: shy-fog-af06.alvlirm333.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shy-fog-af06.alvlirm333.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 17 - mqgg5630-cyber
   type: vless
   server: 95.154.196.61
   port: 443
@@ -245,61 +193,81 @@ proxies:
   reality-opts:
     public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
     short-id: e4a1b53b03eff60d
+  servername: strapi.io
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 18 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: qq
+- name: 🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
   servername: strapi.io
   client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber
   type: vless
-  server: ys6n-mveg4s.truvexel.com
+  server: 51.38.70.192
   port: 443
-  uuid: a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ys6n-mveg4s.truvexel.com
-  network: ws
-  ws-opts:
-    path: /a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
-    headers:
-      Host: ys6n-mveg4s.truvexel.com
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: 98fa0b00d09419f7
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber
-  type: vless
-  server: 5.152.223.97
-  port: 443
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber
-  type: vless
-  server: 95.154.196.61
-  port: 443
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: e4a1b53b03eff60d
-  servername: strapi.io
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber
   type: vless
   server: 138.124.125.211
   port: 443
@@ -312,31 +280,106 @@ proxies:
     public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
     short-id: 72cceb78
   servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 28 - mqgg5630-cyber
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber
   type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  server: 3.9.135.156
+  port: 51847
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber
+  type: vless
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 129.121.95.159
   network: ws
   ws-opts:
-    path: /vless/
+    path: /connect
     headers:
-      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 28 - mqgg5630-cyber
+  type: vless
+  server: 172.67.131.112
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 29 - mqgg5630-cyber
+  type: vless
+  server: 91.193.58.117
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 30 - mqgg5630-cyber
+  type: vless
+  server: 78.129.208.44
+  port: 421
+  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+    short-id: a1facbc8575701ae
+  servername: chistomat.dry.care
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 31 - mqgg5630-cyber
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 32 - mqgg5630-cyber
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -351,70 +394,21 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 30 - mqgg5630-cyber
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 31 - mqgg5630-cyber
-  type: vless
-  server: 46.33.8.20
-  port: 443
-  uuid: 6806dc9a-8f5c-4981-b64d-3527b9522b62
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
-    short-id: a61d99e920140145
-  servername: filesconvert.org
-  client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 32 - mqgg5630-cyber
-  type: vless
-  server: 45.152.65.157
-  port: 30521
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-    short-id: ''
-  servername: aws.amazon.com
-  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 33 - mqgg5630-cyber
   type: vless
-  server: 45.152.65.157
-  port: 30521
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
+  server: 138.124.125.211
+  port: 443
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-    short-id: ''
-  servername: aws.amazon.com
-  client-fingerprint: chrome
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: 72cceb78
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 34 - mqgg5630-cyber
-  type: vless
-  server: 45.152.65.157
-  port: 30521
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-    short-id: ''
-  servername: aws.amazon.com
-  client-fingerprint: edge
-- name: 🇬🇧 英国 (United Kingdom) 35 - mqgg5630-cyber
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -424,7 +418,54 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 35 - mqgg5630-cyber
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 36 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 37 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 38 - mqgg5630-cyber
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 39 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 40 - mqgg5630-cyber
   type: vless
   server: 51.89.194.151
   port: 2053
@@ -436,21 +477,7 @@ proxies:
     public-key: Erxh845BlP6uy97CL7ferXX3IsEQ-my7EOLI2mZMBHM
     short-id: b3f7e7bbf581f6fc
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 37 - mqgg5630-cyber
-  type: vless
-  server: 45.152.65.157
-  port: 30521
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-    short-id: ''
-  servername: aws.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -493,6 +520,9 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 35 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 36 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 37 - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 38 - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 39 - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 40 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -535,5 +565,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 35 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 36 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 37 - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 38 - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 39 - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 40 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

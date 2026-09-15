@@ -9,7 +9,13 @@
       "outbounds": [
         "auto",
         "🇷🇴 RO 01 - mqgg5630-cyber",
-        "🇷🇴 RO 02 - mqgg5630-cyber"
+        "🇷🇴 RO 02 - mqgg5630-cyber",
+        "🇷🇴 RO 03 - mqgg5630-cyber",
+        "🇷🇴 RO 04 - mqgg5630-cyber",
+        "🇷🇴 RO 05 - mqgg5630-cyber",
+        "🇷🇴 RO 06 - mqgg5630-cyber",
+        "🇷🇴 RO 07 - mqgg5630-cyber",
+        "🇷🇴 RO 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,14 +23,64 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 RO 01 - mqgg5630-cyber",
-        "🇷🇴 RO 02 - mqgg5630-cyber"
+        "🇷🇴 RO 02 - mqgg5630-cyber",
+        "🇷🇴 RO 03 - mqgg5630-cyber",
+        "🇷🇴 RO 04 - mqgg5630-cyber",
+        "🇷🇴 RO 05 - mqgg5630-cyber",
+        "🇷🇴 RO 06 - mqgg5630-cyber",
+        "🇷🇴 RO 07 - mqgg5630-cyber",
+        "🇷🇴 RO 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇴 RO 01 - mqgg5630-cyber",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 03 - mqgg5630-cyber",
+      "server": "45.12.30.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime28.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 04 - mqgg5630-cyber",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -45,12 +101,92 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
-      "server": "154.46.31.106",
+      "type": "vless",
+      "tag": "🇷🇴 RO 05 - mqgg5630-cyber",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 06 - mqgg5630-cyber",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 07 - mqgg5630-cyber",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 08 - mqgg5630-cyber",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
     },
     {
       "type": "direct",

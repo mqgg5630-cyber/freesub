@@ -8,36 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇭🇺 HU 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇭🇺 HU 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "143.246.193.215",
+      "tag": "🇭🇺 HU 01 - mqgg5630-cyber",
+      "server": "104.24.31.89",
       "server_port": 443,
-      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
-      "flow": "xtls-rprx-vision",
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
       "tls": {
         "enabled": true,
-        "server_name": "www.blocket.se",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
         }
       }
     },

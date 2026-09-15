@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇷 土耳其 (Turkey) 01 (家宽) - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇷 土耳其 (Turkey) 01 (家宽) - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (家宽) - mqgg5630-cyber",
+      "server": "104.17.169.13",
+      "server_port": 2053,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "tls": {
+        "enabled": true,
+        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/axch1mttbxz2k55y01",
+        "headers": {
+          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

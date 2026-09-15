@@ -9,7 +9,11 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber",
+        "🇫🇮 FI 05 - mqgg5630-cyber",
+        "🇫🇮 FI 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +21,11 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber",
+        "🇫🇮 FI 05 - mqgg5630-cyber",
+        "🇫🇮 FI 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,25 +33,112 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "172.67.217.240",
+      "server": "fl.windconnect.pro",
       "server_port": 443,
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
+      "uuid": "af00e0c4-decf-48f2-9013-56abe9c9efcd",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fx3h2kf8xn.fx6hsv0.ccwu.cc",
+        "server_name": "fl.windconnect.pro",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI",
+          "short_id": "3c6ec7b2d73a28b6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "k2.cloud--vpn.site",
+      "server_port": 443,
+      "uuid": "bdaf42dd-f75b-4594-d5f8-51c0feeb8406",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/",
         "headers": {
-          "Host": "fx3h2kf8xn.fx6hsv0.ccwu.cc"
+          "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 06 - mqgg5630-cyber",
       "server": "65.109.215.118",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",

@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇩 MD 01 - mqgg5630-cyber
+  type: vless
+  server: 131.123.25.4
+  port: 443
+  uuid: 4360f941-b541-43d4-8507-2de3763e0cfd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: fr.convert-flow.net
+  client-fingerprint: qq
+- name: 🇲🇩 MD 02 - mqgg5630-cyber
+  type: vless
+  server: 131.123.25.4
+  port: 443
+  uuid: 4360f941-b541-43d4-8507-2de3763e0cfd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: fr.convert-flow.net
+  client-fingerprint: qq
+- name: 🇲🇩 MD 03 - mqgg5630-cyber
+  type: vless
+  server: 131.123.25.4
+  port: 443
+  uuid: 4360f941-b541-43d4-8507-2de3763e0cfd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: fr.convert-flow.net
+  client-fingerprint: random
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇩 MD 01 - mqgg5630-cyber
+  - 🇲🇩 MD 02 - mqgg5630-cyber
+  - 🇲🇩 MD 03 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇩 MD 01 - mqgg5630-cyber
+  - 🇲🇩 MD 02 - mqgg5630-cyber
+  - 🇲🇩 MD 03 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

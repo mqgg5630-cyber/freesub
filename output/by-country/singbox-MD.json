@@ -1,0 +1,102 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - mqgg5630-cyber",
+        "🇲🇩 MD 02 - mqgg5630-cyber",
+        "🇲🇩 MD 03 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - mqgg5630-cyber",
+        "🇲🇩 MD 02 - mqgg5630-cyber",
+        "🇲🇩 MD 03 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD 01 - mqgg5630-cyber",
+      "server": "131.123.25.4",
+      "server_port": 443,
+      "uuid": "4360f941-b541-43d4-8507-2de3763e0cfd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr.convert-flow.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD 02 - mqgg5630-cyber",
+      "server": "131.123.25.4",
+      "server_port": 443,
+      "uuid": "4360f941-b541-43d4-8507-2de3763e0cfd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr.convert-flow.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD 03 - mqgg5630-cyber",
+      "server": "131.123.25.4",
+      "server_port": 443,
+      "uuid": "4360f941-b541-43d4-8507-2de3763e0cfd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr.convert-flow.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
