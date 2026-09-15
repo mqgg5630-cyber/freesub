@@ -13,7 +13,10 @@
         "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber"
       ]
     },
     {
@@ -25,7 +28,10 @@
         "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -33,96 +39,96 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "46.8.200.91",
+      "server": "78.159.247.246",
       "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "uuid": "1852b02c-1828-40eb-81ff-4de3d097cb35",
       "tls": {
         "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
+        "server_name": "sb2.hat.onl",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/casc",
+        "path": "/ws",
         "headers": {
-          "Host": "cf3.rumedia-cdn.com"
+          "Host": "sb2.hat.onl"
         }
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "renderer-stream-2-62.mirra.now",
+      "server": "78.159.247.246",
       "server_port": 443,
-      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-      "security": "auto",
-      "alter_id": 0,
+      "uuid": "1852b02c-1828-40eb-81ff-4de3d097cb35",
       "tls": {
         "enabled": true,
-        "server_name": "renderer-stream-2-62.mirra.now",
+        "server_name": "sb2.hat.onl",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v1/gpu-stream/socket",
+        "path": "/ws",
         "headers": {
-          "Host": ""
+          "Host": "sb2.hat.onl"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+      "server": "46.17.40.234",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "bdb313adf74c2ede"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
-      "server": "78.159.247.246",
-      "server_port": 443,
-      "uuid": "1852b02c-1828-40eb-81ff-4de3d097cb35",
-      "tls": {
-        "enabled": true,
-        "server_name": "sb2.hat.onl",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "sb2.hat.onl"
-        }
-      }
+      "server": "194.87.196.13",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "4938e975724d0ed1"
     },
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+      "server": "195.133.5.102",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "895b4b796a357570"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
       "server": "46.17.42.166",
       "server_port": 50111,
       "method": "aes-256-gcm",
       "password": "6b39ae3234dfd68b"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
-      "server": "78.159.247.246",
-      "server_port": 443,
-      "uuid": "1852b02c-1828-40eb-81ff-4de3d097cb35",
-      "tls": {
-        "enabled": true,
-        "server_name": "sb2.hat.onl",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "sb2.hat.onl"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+      "server": "195.133.23.200",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
+      "server": "195.58.48.137",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
       "type": "direct",
