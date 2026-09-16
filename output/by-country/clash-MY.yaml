@@ -5,28 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: 47.250.84.25
-  skip-cert-verify: true
-- name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: vless
-  server: my2.miyazono-kaori.com
-  port: 443
-  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
+  server: 56.69.159.191
+  port: 53271
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
-    short-id: ed77ac35a310
-  servername: www.setel.com
-  client-fingerprint: chrome
-- name: 🇲🇾 MY 03 - mqgg5630-cyber
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  servername: www.tesla.com
+  client-fingerprint: random
+- name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: trojan
   server: 47.250.84.25
   port: 443
@@ -41,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
-  - 🇲🇾 MY 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
-  - 🇲🇾 MY 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

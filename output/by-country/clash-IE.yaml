@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
+  type: ss
+  server: 94.245.88.26
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: p20Y6AFEN1pS7LJX
+  udp: true
+- name: 🇮🇪 IE 02 - mqgg5630-cyber
   type: vless
   server: ir-new.failspace.top
   port: 443
@@ -14,16 +21,16 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: ir-new.failspace.top
-- name: 🇮🇪 IE 02 - mqgg5630-cyber
+- name: 🇮🇪 IE 03 - mqgg5630-cyber
   type: vless
-  server: 50.7.5.163
+  server: ir-new.failspace.top
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: ir-viper.failspace.top
+  servername: ir-new.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
+  - 🇮🇪 IE 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
+  - 🇮🇪 IE 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

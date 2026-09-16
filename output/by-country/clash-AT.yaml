@@ -5,30 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
-  type: vless
-  server: 50.7.184.122
+  type: trojan
+  server: 212.183.88.136
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: at3.moritech.net
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: 🇦🇹 AT 02 - mqgg5630-cyber
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
-- name: 🇦🇹 AT 03 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -42,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
-  - 🇦🇹 AT 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
-  - 🇦🇹 AT 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
