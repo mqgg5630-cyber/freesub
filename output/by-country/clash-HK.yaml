@@ -8,21 +8,7 @@ proxies:
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
-  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
   udp: true
   tls: true
   skip-cert-verify: true
@@ -32,25 +18,33 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+  type: trojan
+  server: 47.240.80.220
+  port: 2052
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  udp: true
+  sni: vpn.12169.top
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   type: vless
-  server: 34.92.123.152
-  port: 443
-  uuid: 5d77df4a-0b55-4597-b0e6-ae3ef70a72c0
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: 8da6f662-e36b-4eff-99f9-43a842911707
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0
-    short-id: 56c35a22730a22e5
-  servername: www.cloudflare.com
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
-  uuid: bd0b6458-917b-4b84-9c21-66b8699f4795
+  uuid: 8da6f662-e36b-4eff-99f9-43a842911707
   udp: true
   tls: true
   skip-cert-verify: true
@@ -64,6 +58,76 @@ proxies:
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
+  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
+  type: vless
+  server: 45.202.247.198
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-8oc.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-8oc.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
+  type: vless
+  server: vj37-1936vtw.fincore.top
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
   uuid: bd0b6458-917b-4b84-9c21-66b8699f4795
   udp: true
   tls: true
@@ -74,7 +138,78 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+  type: vless
+  server: vj37-1936vtw.fincore.top
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
+  type: vless
+  server: vj37-1936vtw.fincore.top
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
@@ -88,147 +223,21 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  type: vless
-  server: vj37-1936vtw.fincore.top
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  type: vless
-  server: vj37-1936vtw.fincore.top
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: vless
-  server: 162.128.157.164
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  type: vless
-  server: 162.128.157.164
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 8da6f662-e36b-4eff-99f9-43a842911707
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
-  type: vless
-  server: 162.128.157.164
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
-  type: vless
-  server: vj37-1936vtw.fincore.top
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 17 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
@@ -242,71 +251,7 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: e0755aab-3f9c-4d27-a643-645a4d2753d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 1803e6f6-9da1-4b31-8cc5-ffa155771a14
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 22 - mqgg5630-cyber
-  type: vless
-  server: vj37-1936vtw.fincore.top
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 23 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
@@ -320,25 +265,11 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 24 - mqgg5630-cyber
-  type: vless
-  server: 162.128.157.164
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 25 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
-  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
   udp: true
   tls: true
   skip-cert-verify: true
@@ -348,7 +279,21 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 26 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 22 - mqgg5630-cyber
   type: vless
   server: vj37-1936vtw.fincore.top
   port: 443
@@ -361,12 +306,34 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 27 - mqgg5630-cyber
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 23 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 24 - mqgg5630-cyber
+  type: vless
+  server: 101.96.234.244
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-8oc.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-8oc.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
-  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
   udp: true
   tls: true
   skip-cert-verify: true
@@ -375,22 +342,22 @@ proxies:
     public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 28 - mqgg5630-cyber
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 26 - mqgg5630-cyber
   type: vless
-  server: 162.128.157.164
+  server: 34.92.123.152
   port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  uuid: 5d77df4a-0b55-4597-b0e6-ae3ef70a72c0
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 29 - mqgg5630-cyber
+    public-key: aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0
+    short-id: 56c35a22730a22e5
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 27 - mqgg5630-cyber
   type: vless
   server: 162.128.157.164
   port: 443
@@ -404,6 +371,28 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 28 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 29 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 30 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
@@ -417,12 +406,12 @@ proxies:
     public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 31 - mqgg5630-cyber
   type: vless
   server: hk-1.gsafevpnapi.com
   port: 20270
-  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -432,6 +421,220 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 32 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: bd0b6458-917b-4b84-9c21-66b8699f4795
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 33 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 34 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 35 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: e0755aab-3f9c-4d27-a643-645a4d2753d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 36 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 37 - mqgg5630-cyber
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 38 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 39 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 40 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me%252fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 41 - mqgg5630-cyber
+  type: vless
+  server: 47.83.4.146
+  port: 443
+  uuid: 8952ecb7-4b85-4aa5-8b22-adc9aa4d3591
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ID53PilNajhqBP3PTJJxurZOFnZfKVs-CU5buNOaKBQ
+    short-id: e40b98d40e53b8b9
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 42 - mqgg5630-cyber
+  type: vless
+  server: vj37-1936vtw.fincore.top
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 43 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 44 - mqgg5630-cyber
+  type: vless
+  server: www.wto.org
+  port: 443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 45 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: 1803e6f6-9da1-4b31-8cc5-ffa155771a14
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 46 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: 119.246.1.143
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 47 - mqgg5630-cyber
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -468,6 +671,22 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 29 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 30 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 31 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 32 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 33 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 34 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 35 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 36 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 37 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 38 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 39 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 40 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 41 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 42 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 43 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 44 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 45 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 46 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 47 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -504,5 +723,21 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 29 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 30 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 31 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 32 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 33 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 34 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 35 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 36 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 37 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 38 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 39 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 40 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 41 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 42 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 43 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 44 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 45 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 46 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 47 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

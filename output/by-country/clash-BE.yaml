@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
+- name: 🇧🇪 BE 01 - mqgg5630-cyber
+  type: vless
+  server: 141.227.137.177
+  port: 2053
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
+  servername: kkkk-xcd.pages.dev
   network: ws
   ws-opts:
-    path: /assignment
+    path: /?ed=2048
     headers:
-      Host: www.volumeroot.com
+      Host: kkkk-xcd.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - mqgg5630-cyber
+  - 🇧🇪 BE 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - mqgg5630-cyber
+  - 🇧🇪 BE 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

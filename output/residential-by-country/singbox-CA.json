@@ -8,29 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
-      "server": "188.114.97.6",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - mqgg5630-cyber",
+      "server": "104.21.14.116",
+      "server_port": 443,
+      "uuid": "566c0473-382e-aabb-c62a-f5bb00000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-4b5fd4.appelidmymat.workers.dev",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/sync",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "ez-4b5fd4.appelidmymat.workers.dev"
         }
       }
     },

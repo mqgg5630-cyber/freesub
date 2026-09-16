@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - mqgg5630-cyber
   type: vless
-  server: lt.aether-runet.top
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  servername: lt.aether-runet.top
-  client-fingerprint: chrome
-- name: 🇱🇹 LT 02 - mqgg5630-cyber
-  type: vless
   server: 181.214.147.216
   port: 443
   uuid: 8e403675-d020-4801-9520-9cba4bbfda0e
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - mqgg5630-cyber
-  - 🇱🇹 LT 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - mqgg5630-cyber
-  - 🇱🇹 LT 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

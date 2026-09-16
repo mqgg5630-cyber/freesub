@@ -5,20 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
+  type: vless
+  server: 56.69.159.191
+  port: 53271
+  uuid: e8358eb5-7210-4cf8-982f-68af141b7694
   udp: true
-  sni: moltbot.doctoroyy.net
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
+    short-id: 0a9bd9db19578964
+  servername: www.tesla.com
+  client-fingerprint: random
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: trojan
   server: 47.250.84.25
   port: 443
   password: 5931134d1cde66bf83a54acdfebe7ab2
   udp: true
-  sni: 47.250.84.25
+  sni: moltbot.doctoroyy.net
   skip-cert-verify: true
 - name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: trojan
@@ -26,9 +32,17 @@ proxies:
   port: 443
   password: 5931134d1cde66bf83a54acdfebe7ab2
   udp: true
-  sni: moltbot.doctoroyy.net
+  sni: 47.250.84.25
   skip-cert-verify: true
 - name: 🇲🇾 MY 04 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
+- name: 🇲🇾 MY 05 - mqgg5630-cyber
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -47,6 +61,7 @@ proxy-groups:
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +71,6 @@ proxy-groups:
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

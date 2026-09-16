@@ -14,26 +14,17 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision-udp443
   servername: ir.failspace.top
-- name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: ss
-  server: 20.107.184.151
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zziXHDOFXc4qRjoj
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - mqgg5630-cyber
-  - 🇮🇪 IE 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - mqgg5630-cyber
-  - 🇮🇪 IE 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

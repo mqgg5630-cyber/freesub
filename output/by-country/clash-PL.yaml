@@ -15,62 +15,66 @@ proxies:
   flow: xtls-rprx-vision
   servername: pl6.moritech.net
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
+  server: 103.167.234.26
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-8oc.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-8oc.pages.dev
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.181
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision-udp443
-  servername: pl-dedic-2.failspace.top
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.172
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision-udp443
-  servername: pl-dedic-3.failspace.top
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
+  type: vless
   server: 50.7.249.172
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl-dedic-3.failspace.top
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 50.7.248.237
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
   flow: xtls-rprx-vision-udp443
-  servername: pl-new-dedic.failspace.top
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.181
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl-dedic-2.failspace.top
+  servername: pl-dedic-3.failspace.top
 - name: 🇵🇱 PL 08 - mqgg5630-cyber
   type: vless
   server: 144.31.5.3
@@ -83,55 +87,33 @@ proxies:
   servername: pl4.moritech.net
 - name: 🇵🇱 PL 09 - mqgg5630-cyber
   type: vless
-  server: 50.7.249.181
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  server: 94.183.157.223
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl-dedic-2.failspace.top
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
 - name: 🇵🇱 PL 10 - mqgg5630-cyber
   type: vless
-  server: 144.31.2.33
+  server: 104.25.146.77
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 11 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-- name: 🇵🇱 PL 12 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.64
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl6.moritech.net
-- name: 🇵🇱 PL 13 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-- name: 🇵🇱 PL 14 - mqgg5630-cyber
   type: vless
   server: 50.7.249.66
   port: 443
@@ -141,6 +123,40 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl-new-ded2.moritech.net
+- name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: vless
+  server: 94.183.157.174
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
+- name: 🇵🇱 PL 13 - mqgg5630-cyber
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 14 - mqgg5630-cyber
+  type: vless
+  server: 50.7.249.181
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision-udp443
+  servername: pl-dedic-2.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select
