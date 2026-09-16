@@ -5,29 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - mqgg5630-cyber
-  type: vless
-  server: 88.216.69.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vmess/
     headers:
-      Host: vms.lifetime06.workers.dev
+      Host: ''
+- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+  type: vless
+  server: kz3.zuoai.cf
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -6,47 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /snob-ws
     headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: a85d3eb0-c71e-4086-8139-6ac7c9120389
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-    short-id: ''
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 5059a06c-ed43-48d8-a276-b202c55019e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-    short-id: ''
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
   server: 89.125.147.199
   port: 443
@@ -58,7 +29,34 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
     short-id: f6c7c139b9c938db
   servername: maps.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  type: vless
+  server: 151.242.160.148
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
 - name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   type: vless
   server: 89.125.147.199
@@ -74,77 +72,23 @@ proxies:
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   type: vless
-  server: 104.21.67.122
-  port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  server: 151.242.160.148
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: novantunnel.tech
+  servername: askuhgfdsg.space.coupons
   network: ws
   ws-opts:
-    path: /Novan-AE9
+    path: /ws
     headers:
-      Host: novantunnel.tech
+      Host: askuhgfdsg.space.coupons
 - name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
-  type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-  servername: srv-21bac9.vless.monster
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
-  type: vless
-  server: 172.67.221.230
-  port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
   type: vless
   server: 89.125.147.199
   port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
@@ -152,20 +96,7 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
     short-id: f6c7c139b9c938db
   servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -178,11 +109,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -195,10 +121,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

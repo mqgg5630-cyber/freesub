@@ -8,30 +8,30 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
-      "server": "45.90.59.15",
+      "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
+      "server": "143.246.193.215",
       "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.blocket.se",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -39,30 +39,28 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
-      "server": "45.90.59.15",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "server": "143.246.193.215",
       "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.blocket.se",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "randomized"
         },
         "reality": {
           "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
         }
       }
     },

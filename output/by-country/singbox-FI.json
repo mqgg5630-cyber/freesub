@@ -52,12 +52,26 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "65.109.215.118",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
+      "server": "37.143.129.244",
+      "server_port": 443,
+      "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY",
+          "short_id": "48fd192dc4e46bc0"
+        }
+      }
     },
     {
       "type": "vless",
@@ -81,22 +95,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "37.143.129.244",
-      "server_port": 443,
-      "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
-      "flow": "xtls-rprx-vision",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "www.samsung.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY",
-          "short_id": "48fd192dc4e46bc0"
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
         }
       }
     },
@@ -122,40 +135,29 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 06 - mqgg5630-cyber",
-      "server": "172.64.52.182",
-      "server_port": 2087,
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "uuid": "f570779f-bbf7-4ef9-e657-8ebbdef2609b",
       "tls": {
         "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc",
+        "server_name": "ssl.fastly.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "?ed=2560",
+        "path": "//---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI",
         "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+          "Host": "c12.com"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 FI 07 - mqgg5630-cyber",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "kayko.global.ssl.fastly.net"
-        }
-      }
+      "server": "65.109.215.118",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "direct",
