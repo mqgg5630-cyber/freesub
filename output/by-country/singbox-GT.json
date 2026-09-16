@@ -8,61 +8,61 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇬🇹 GT 01 - mqgg5630-cyber",
+        "🇬🇹 GT 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇬🇹 GT 01 - mqgg5630-cyber",
+        "🇬🇹 GT 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
-      "server": "45.90.59.15",
+      "tag": "🇬🇹 GT 01 - mqgg5630-cyber",
+      "server": "185.47.254.251",
       "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "gateway.icloud.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
+          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
+          "short_id": "6c059ecfddf9b179"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
-      "server": "45.90.59.15",
+      "tag": "🇬🇹 GT 02 - mqgg5630-cyber",
+      "server": "185.47.254.251",
       "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "gateway.icloud.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
+          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
+          "short_id": "6c059ecfddf9b179"
         }
       }
     },
