@@ -16,14 +16,14 @@ proxies:
   servername: ir-new.failspace.top
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
   type: vless
-  server: 50.7.5.163
+  server: 50.7.5.166
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: ir-viper.failspace.top
+  servername: ir-new.failspace.top
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
   type: vless
   server: ir-new.failspace.top
@@ -36,37 +36,17 @@ proxies:
   servername: ir-new.failspace.top
 - name: 🇮🇪 IE 04 - mqgg5630-cyber
   type: vless
-  server: 50.7.5.166
+  server: 50.7.5.163
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: ir-new.failspace.top
+  servername: ir-viper.failspace.top
 - name: 🇮🇪 IE 05 - mqgg5630-cyber
   type: vless
   server: ir-new.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ir-new.failspace.top
-- name: 🇮🇪 IE 06 - mqgg5630-cyber
-  type: vless
-  server: 50.7.5.166
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ir-new.failspace.top
-- name: 🇮🇪 IE 07 - mqgg5630-cyber
-  type: vless
-  server: 50.7.5.166
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
@@ -84,8 +64,6 @@ proxy-groups:
   - 🇮🇪 IE 03 - mqgg5630-cyber
   - 🇮🇪 IE 04 - mqgg5630-cyber
   - 🇮🇪 IE 05 - mqgg5630-cyber
-  - 🇮🇪 IE 06 - mqgg5630-cyber
-  - 🇮🇪 IE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,7 +74,5 @@ proxy-groups:
   - 🇮🇪 IE 03 - mqgg5630-cyber
   - 🇮🇪 IE 04 - mqgg5630-cyber
   - 🇮🇪 IE 05 - mqgg5630-cyber
-  - 🇮🇪 IE 06 - mqgg5630-cyber
-  - 🇮🇪 IE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

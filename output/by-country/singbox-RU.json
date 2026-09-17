@@ -8,18 +8,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -31,36 +27,6 @@
       "server_port": 50111,
       "method": "aes-256-gcm",
       "password": "6b39ae3234dfd68b"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "deutch.snappycore.com",
-      "server_port": 443,
-      "uuid": "8f9c5260-9456-472b-8ee2-444500ba6cab",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deutch.snappycore.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SCuasCPva4lPGu-QRP955zZB8f6i7ydHBQh6bsSlrgo",
-          "short_id": "3d87c490ddd41305"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     },
     {
       "type": "direct",

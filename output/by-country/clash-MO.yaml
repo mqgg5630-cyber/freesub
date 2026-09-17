@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.70.21
+- name: 🇲🇴 MO 01 - mqgg5630-cyber
+  type: vless
+  server: 45.202.247.152
   port: 443
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  sni: id1.nathaya.web.id
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /trojan
+    path: /jump.html/star
     headers:
-      Host: id1.nathaya.web.id
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 - mqgg5630-cyber
+  - 🇲🇴 MO 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 - mqgg5630-cyber
+  - 🇲🇴 MO 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

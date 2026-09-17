@@ -5,40 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  type: vless
-  server: max.karmatel.ir
-  port: 55519
-  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play-apps-features.googleusercontent.com
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: ss
   server: 153.52.92.81
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
   udp: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
   server: 156.67.63.231
   port: 443
@@ -51,7 +24,7 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

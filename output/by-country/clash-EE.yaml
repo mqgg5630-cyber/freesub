@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
+  server: est1313.ggisopi.su
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: est1313.ggisopi.su
+  client-fingerprint: edge
+- name: 🇪🇪 EE 02 - mqgg5630-cyber
+  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -13,7 +27,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 02 - mqgg5630-cyber
+- name: 🇪🇪 EE 03 - mqgg5630-cyber
   type: trojan
   server: 109.206.241.10
   port: 449
@@ -28,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -35,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

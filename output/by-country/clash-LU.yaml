@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+- name: 🇱🇺 LU 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
   udp: true
-  tls: false
+  sni: www.volumeroot.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /7586c69d3dc9
+    path: /assignment
     headers:
-      Host: 103.75.119.126
+      Host: www.volumeroot.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
