@@ -13,7 +13,8 @@
         "🇮🇪 IE 03 - mqgg5630-cyber",
         "🇮🇪 IE 04 - mqgg5630-cyber",
         "🇮🇪 IE 05 - mqgg5630-cyber",
-        "🇮🇪 IE 06 - mqgg5630-cyber"
+        "🇮🇪 IE 06 - mqgg5630-cyber",
+        "🇮🇪 IE 07 - mqgg5630-cyber"
       ]
     },
     {
@@ -25,7 +26,8 @@
         "🇮🇪 IE 03 - mqgg5630-cyber",
         "🇮🇪 IE 04 - mqgg5630-cyber",
         "🇮🇪 IE 05 - mqgg5630-cyber",
-        "🇮🇪 IE 06 - mqgg5630-cyber"
+        "🇮🇪 IE 06 - mqgg5630-cyber",
+        "🇮🇪 IE 07 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -33,7 +35,7 @@
     {
       "type": "vless",
       "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
-      "server": "50.7.5.166",
+      "server": "ir-new.failspace.top",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
@@ -57,12 +59,17 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇪 IE 03 - mqgg5630-cyber",
-      "server": "94.245.88.26",
+      "server": "ir-new.failspace.top",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "p20Y6AFEN1pS7LJX"
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ir-new.failspace.top",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -93,7 +100,20 @@
     {
       "type": "vless",
       "tag": "🇮🇪 IE 06 - mqgg5630-cyber",
-      "server": "ir-new.failspace.top",
+      "server": "50.7.5.166",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ir-new.failspace.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 IE 07 - mqgg5630-cyber",
+      "server": "50.7.5.166",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",

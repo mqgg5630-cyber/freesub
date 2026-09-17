@@ -16,24 +16,63 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
     short-id: f6c7c139b9c938db
   servername: maps.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   type: vless
-  server: sa-18cf795a50985ad9.sr-fa525e02d0951c2f.r.vpvpn.club
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  type: vless
+  server: 89.125.147.199
   port: 443
-  uuid: 0c597b0d-99d7-4c27-befe-6c5d339d7dbe
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
-    short-id: ''
-  servername: baeb.edge-static.space
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+    short-id: f6c7c139b9c938db
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  type: vless
+  server: apicdn.4subnodes.com
+  port: 443
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apicdn.4subnodes.com
+  network: ws
+  ws-opts:
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
+    headers:
+      Host: apicdn.4subnodes.com
+- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   type: vless
   server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -52,6 +91,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +102,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

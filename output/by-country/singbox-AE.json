@@ -10,7 +10,10 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber",
         "🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber",
-        "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber"
+        "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +22,10 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber",
         "🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber",
-        "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber"
+        "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
+        "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,6 +33,41 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber",
+      "server": "89.125.147.199",
+      "server_port": 443,
+      "uuid": "cabd9303-ae32-4d25-86b9-26b312d0f044",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
+          "short_id": "f6c7c139b9c938db"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
       "server": "89.125.147.199",
       "server_port": 443,
       "uuid": "cabd9303-ae32-4d25-86b9-26b312d0f044",
@@ -47,29 +88,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber",
-      "server": "sa-18cf795a50985ad9.sr-fa525e02d0951c2f.r.vpvpn.club",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber",
+      "server": "apicdn.4subnodes.com",
       "server_port": 443,
-      "uuid": "0c597b0d-99d7-4c27-befe-6c5d339d7dbe",
-      "flow": "xtls-rprx-vision",
+      "uuid": "1f959100-a98b-47fb-84fa-359246dc458a",
       "tls": {
         "enabled": true,
-        "server_name": "baeb.edge-static.space",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA"
+        "server_name": "apicdn.4subnodes.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad",
+        "headers": {
+          "Host": "apicdn.4subnodes.com"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
       "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {

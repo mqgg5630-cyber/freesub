@@ -11,9 +11,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -23,16 +21,33 @@
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+      "server": "60.248.219.78",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "60.248.219.78"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
       "server": "7dba81fc3a0b.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -52,80 +67,20 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-      "server": "82259754d625.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "82259754d625.oylfmxz.cn",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-      "server": "60.248.219.78",
-      "server_port": 443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-        "headers": {
-          "Host": "60.248.219.78"
-        }
-      }
+      "server": "36.224.185.143",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
-      "server": "r3mrcg00129437x.cybervena.com",
+      "server": "36.224.185.173",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mqgg5630-cyber",
-      "server": "118.167.212.163",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "direct",

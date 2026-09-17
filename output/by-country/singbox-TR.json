@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,6 +29,47 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+      "server": "max.karmatel.ir",
+      "server_port": 55519,
+      "uuid": "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play-apps-features.googleusercontent.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+      "server": "153.52.92.81",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+      "server": "shop.neexbyte.ir",
+      "server_port": 8443,
+      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
+      "tls": {
+        "enabled": true,
+        "server_name": "shop.neexbyte.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shop.neexbyte.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -43,14 +88,6 @@
           "short_id": "5606d4a25c99e7af"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-      "server": "206.1.97.61",
-      "server_port": 13323,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XyodFtypR0xCFHyWW9gxqp15oU78njiX"
     },
     {
       "type": "direct",
