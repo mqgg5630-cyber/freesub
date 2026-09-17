@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,40 +29,71 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "a2.arshia-nova.ir",
+      "server": "212.104.128.244",
       "server_port": 443,
-      "uuid": "bd5bbbac-adc3-4b23-d3ac-8506694c0ef9",
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "xi.tbv.ccwu.cc",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "c12.com"
+          "Host": "xi.tbv.ccwu.cc"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "uuid": "bd5bbbac-adc3-4b23-d3ac-8506694c0ef9",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS",
-        "headers": {
-          "Host": "c12.com"
+        "server_name": "www.samsung.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "82.47.186.18",
+      "server_port": 19290,
+      "method": "aes-128-gcm",
+      "password": "o2rw2hICwu1blrr_gZAl2Q"
     },
     {
       "type": "direct",

@@ -6,32 +6,51 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: a2.arshia-nova.ir
+  server: 212.104.128.244
   port: 443
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: c12.com
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
-    headers:
-      Host: c12.com
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
+  type: ss
+  server: 82.47.186.18
+  port: 19290
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +58,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +67,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

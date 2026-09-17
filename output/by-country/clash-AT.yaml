@@ -11,17 +11,29 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 AT 02 - mqgg5630-cyber
+  type: vless
+  server: 50.7.184.122
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: at3.moritech.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇹 AT 01 - mqgg5630-cyber
+  - 🇦🇹 AT 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 AT 01 - mqgg5630-cyber
+  - 🇦🇹 AT 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
