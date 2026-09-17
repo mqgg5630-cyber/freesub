@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
+- name: 🇦🇲 AM 01 - mqgg5630-cyber
+  type: vless
+  server: 104.24.30.89
   port: 443
-  password: humanity
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /assignment
+    path: /?ed=2560
     headers:
-      Host: www.volumeroot.com
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - mqgg5630-cyber
+  - 🇦🇲 AM 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - mqgg5630-cyber
+  - 🇦🇲 AM 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

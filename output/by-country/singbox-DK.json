@@ -8,31 +8,25 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - mqgg5630-cyber"
+        "🇩🇰 DK 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - mqgg5630-cyber"
+        "🇩🇰 DK 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 LV 01 - mqgg5630-cyber",
-      "server": "atomic-prase23893.my-vm.work",
-      "server_port": 8088,
-      "uuid": "tmp_user",
-      "transport": {
-        "type": "ws",
-        "path": "/api",
-        "headers": {
-          "Host": "queuev4.vk.com"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇩🇰 DK 01 - mqgg5630-cyber",
+      "server": "38.180.214.110",
+      "server_port": 5600,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "direct",

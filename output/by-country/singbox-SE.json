@@ -1,0 +1,40 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇪 SE 01 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇪 SE 01 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
+      "server": "51.170.179.166",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU="
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

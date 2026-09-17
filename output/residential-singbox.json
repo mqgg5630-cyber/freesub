@@ -9,13 +9,19 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 07 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - mqgg5630-cyber"
+        "🇺🇸 美国 (United States) 07 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 10 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 11 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 12 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 13 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 14 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -23,23 +29,57 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 07 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - mqgg5630-cyber"
+        "🇺🇸 美国 (United States) 07 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 10 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 11 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 12 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 13 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 14 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "60.248.219.53",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
+      "server": "60.248.219.52",
       "server_port": 443,
-      "uuid": "f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4",
+      "uuid": "f265b49a-70a3-407a-b17b-e45dfb9f255c",
       "tls": {
         "enabled": true,
         "server_name": "ty986gfazs.cainiaohub.xyz",
@@ -49,13 +89,34 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "60.248.219.53"
+          "Host": "60.248.219.52"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "7dba81fc3a0b.oylfmxz.cn"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
@@ -66,30 +127,9 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-      "server": "82259754d625.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "82259754d625.oylfmxz.cn",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "82259754d625.oylfmxz.cn"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - mqgg5630-cyber",
-      "server": "104.19.215.97",
+      "tag": "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber",
+      "server": "172.64.53.60",
       "server_port": 2087,
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
       "tls": {
@@ -106,8 +146,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 07 (家宽) - mqgg5630-cyber",
+      "server": "23.252.104.131",
+      "server_port": 54321,
+      "method": "aes-256-gcm",
+      "password": "Proxy2024"
+    },
+    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber",
+      "tag": "🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber",
       "server": "104.18.42.54",
       "server_port": 2087,
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
@@ -125,8 +173,56 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - mqgg5630-cyber",
+      "server": "82259754d625.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "82259754d625.oylfmxz.cn",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber",
+      "tag": "🇰🇷 韩国 (South Korea) 10 (家宽) - mqgg5630-cyber",
+      "server": "104.19.215.97",
+      "server_port": 2087,
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "?ed=2560",
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 11 (家宽) - mqgg5630-cyber",
+      "server": "r3mrcg00129437x.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 12 (家宽) - mqgg5630-cyber",
       "server": "104.18.38.47",
       "server_port": 2087,
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
@@ -145,7 +241,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 07 (家宽) - mqgg5630-cyber",
+      "tag": "🇰🇷 韩国 (South Korea) 13 (家宽) - mqgg5630-cyber",
       "server": "172.64.53.87",
       "server_port": 2087,
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2",
@@ -163,24 +259,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - mqgg5630-cyber",
-      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 14 (家宽) - mqgg5630-cyber",
+      "server": "64.20.209.125",
       "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "alter_id": 0,
+      "password": "UQfj7bdfjibTjpUHfg72aew51S7fB32g",
       "tls": {
         "enabled": true,
-        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "server_name": "bright.bitgas.org",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
       }
     },
     {

@@ -9,7 +9,10 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber",
+        "🇪🇪 EE 04 - mqgg5630-cyber",
+        "🇪🇪 EE 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +20,10 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber",
+        "🇪🇪 EE 04 - mqgg5630-cyber",
+        "🇪🇪 EE 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,6 +31,39 @@
     {
       "type": "vless",
       "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
+      "server": "172.67.67.178",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "185.159.247.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime59.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -36,23 +75,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
-      "server": "95.85.224.51",
+      "tag": "🇪🇪 EE 04 - mqgg5630-cyber",
+      "server": "45.80.110.50",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "vms.lifetime51.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 05 - mqgg5630-cyber",
+      "server": "94.183.170.135",
       "server_port": 443,
-      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.170.135"
         }
       }
     },
