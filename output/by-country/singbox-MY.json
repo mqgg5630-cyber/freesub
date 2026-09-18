@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇲🇾 MY 01 - mqgg5630-cyber",
-        "🇲🇾 MY 02 - mqgg5630-cyber"
+        "🇲🇾 MY 02 - mqgg5630-cyber",
+        "🇲🇾 MY 03 - mqgg5630-cyber",
+        "🇲🇾 MY 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇾 MY 01 - mqgg5630-cyber",
-        "🇲🇾 MY 02 - mqgg5630-cyber"
+        "🇲🇾 MY 02 - mqgg5630-cyber",
+        "🇲🇾 MY 03 - mqgg5630-cyber",
+        "🇲🇾 MY 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -35,13 +39,40 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇲🇾 MY 02 - mqgg5630-cyber",
-      "server": "47.250.135.244",
-      "server_port": 10000,
-      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
-      "security": "auto",
-      "alter_id": 0
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "tls": {
+        "enabled": true,
+        "server_name": "47.250.84.25",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇾 MY 03 - mqgg5630-cyber",
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "tls": {
+        "enabled": true,
+        "server_name": "moltbot.doctoroyy.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇾 MY 04 - mqgg5630-cyber",
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "tls": {
+        "enabled": true,
+        "server_name": "47.250.84.25",
+        "insecure": true
+      }
     },
     {
       "type": "direct",
