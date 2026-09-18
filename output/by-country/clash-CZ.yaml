@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - mqgg5630-cyber
+- name: 🇨🇿 CZ 01 - mqgg5630-cyber
   type: vless
-  server: 91.209.253.229
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,23 +18,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 02 - mqgg5630-cyber
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: vless
-  server: 91.209.253.250
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 03 - mqgg5630-cyber
-  type: vless
-  server: 91.209.253.250
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,9 +32,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 04 - mqgg5630-cyber
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
   type: vless
-  server: 91.209.253.68
+  server: 195.85.23.217
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -57,12 +43,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - mqgg5630-cyber
+- name: 🇨🇿 CZ 04 - mqgg5630-cyber
   type: vless
-  server: 91.209.253.216
+  server: 195.85.23.248
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -79,20 +65,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - mqgg5630-cyber
-  - 🇸🇦 SA 02 - mqgg5630-cyber
-  - 🇸🇦 SA 03 - mqgg5630-cyber
-  - 🇸🇦 SA 04 - mqgg5630-cyber
-  - 🇸🇦 SA 05 - mqgg5630-cyber
+  - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
+  - 🇨🇿 CZ 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - mqgg5630-cyber
-  - 🇸🇦 SA 02 - mqgg5630-cyber
-  - 🇸🇦 SA 03 - mqgg5630-cyber
-  - 🇸🇦 SA 04 - mqgg5630-cyber
-  - 🇸🇦 SA 05 - mqgg5630-cyber
+  - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
+  - 🇨🇿 CZ 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
