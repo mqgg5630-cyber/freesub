@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇺 LU 01 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
+  type: vless
+  server: 188.42.145.123
   port: 443
-  password: humanity
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.volumeroot.com
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select

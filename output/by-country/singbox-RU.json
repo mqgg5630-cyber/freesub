@@ -8,21 +8,69 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+      "server": "108.162.198.178",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+      "server": "162.159.0.169",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "172.67.209.127",
+      "server_port": 8880,
+      "uuid": "1b3ad465-d37e-48a2-bb53-d7fddfc97b11",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "calm-silence-d4a1.217.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
       "server": "176.32.35.44",
       "server_port": 50111,
       "method": "aes-256-gcm",
