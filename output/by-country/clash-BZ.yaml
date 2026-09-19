@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 AT 01 - mqgg5630-cyber
-  type: trojan
-  server: 212.183.88.136
-  port: 443
-  password: humanity
+- name: 🇧🇿 BZ 01 - mqgg5630-cyber
+  type: vless
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  sni: www.calmlunch.com
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /assignment
+    path: /channels/act
     headers:
-      Host: www.calmlunch.com
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 AT 01 - mqgg5630-cyber
+  - 🇧🇿 BZ 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 AT 01 - mqgg5630-cyber
+  - 🇧🇿 BZ 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
