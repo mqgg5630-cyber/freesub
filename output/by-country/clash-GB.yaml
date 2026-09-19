@@ -5,29 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - mqgg5630-cyber
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 02 - mqgg5630-cyber
   type: vless
-  server: 104.21.3.133
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  server: 14ang88.snusoed.baby
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: 14ang88.snusoed.baby
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 02 - mqgg5630-cyber
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /Telegram-WangCai2🇨🇳
     headers:
-      Host: fans.liverpool.qzz.io
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 03 - mqgg5630-cyber
   type: vless
   server: 91.193.58.117
@@ -39,59 +43,54 @@ proxies:
   servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 04 - mqgg5630-cyber
+  type: vless
+  server: 95.154.196.61
+  port: 443
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  servername: strapi.io
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 05 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 06 - mqgg5630-cyber
   type: ss
   server: 51.38.71.51
   port: 2083
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - mqgg5630-cyber
-  type: vless
-  server: 104.21.94.230
-  port: 443
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv
-  network: ws
-  ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
-    headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 06 - mqgg5630-cyber
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
 - name: 🇬🇧 英国 (United Kingdom) 07 - mqgg5630-cyber
   type: vless
-  server: 5.152.223.97
+  server: 91.193.58.195
   port: 443
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: firefox
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 08 - mqgg5630-cyber
   type: vless
   server: 46.250.250.149
@@ -107,131 +106,6 @@ proxies:
   client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 09 - mqgg5630-cyber
   type: vless
-  server: 5.152.223.97
-  port: 443
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: ios
-- name: 🇬🇧 英国 (United Kingdom) 10 - mqgg5630-cyber
-  type: vless
-  server: 5.152.223.97
-  port: 443
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: edge
-- name: 🇬🇧 英国 (United Kingdom) 11 - mqgg5630-cyber
-  type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 12 - mqgg5630-cyber
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 13 - mqgg5630-cyber
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇬🇧 英国 (United Kingdom) 14 - mqgg5630-cyber
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 15 - mqgg5630-cyber
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 16 - mqgg5630-cyber
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 17 - mqgg5630-cyber
-  type: vless
-  server: 91.193.58.217
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso200.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888
-    headers:
-      Host: vlso200.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 18 - mqgg5630-cyber
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber
-  type: vless
   server: 129.121.95.159
   port: 443
   uuid: f6190ff2-864c-46cf-ac16-93908c069b75
@@ -244,14 +118,31 @@ proxies:
     path: /connect
     headers:
       Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 10 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 11 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - mqgg5630-cyber
   type: vless
   server: 3.9.135.156
   port: 51847
@@ -265,44 +156,57 @@ proxies:
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber
-  type: vless
-  server: 5.152.223.97
+- name: 🇬🇧 英国 (United Kingdom) 13 - mqgg5630-cyber
+  type: ss
+  server: 149.102.132.184
   port: 443
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - mqgg5630-cyber
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - mqgg5630-cyber
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - mqgg5630-cyber
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 17 - mqgg5630-cyber
   type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
   alterId: 0
   cipher: auto
   udp: true
   tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.4.176
-  port: 443
-  password: Telegram_healer_config
-  udp: true
-  sni: 5Er0m2I2eNS2ULPg7Sjd45UGQs.87FCVt2K11501YnO2txm6yw-MiPJ2KR.worKERs.dEV
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tr/VCf8OF27gyXfyS3GNQ1ejyY7sy4?ed=2560
+    path: /vmess/
     headers:
-      Host: 5Er0m2I2eNS2ULPg7Sjd45UGQs.87FCVt2K11501YnO2txm6yw-MiPJ2KR.worKERs.dEV
-- name: 🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 18 - mqgg5630-cyber
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -312,47 +216,72 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber
   type: vless
-  server: 5.152.223.97
+  server: 95.154.196.61
   port: 443
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
   servername: strapi.io
-  client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 28 - mqgg5630-cyber
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 29 - mqgg5630-cyber
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: qq
+- name: 🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber
+  type: vless
+  server: 87.117.234.19
+  port: 443
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -382,11 +311,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 28 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 29 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -416,10 +340,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber
   - 🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 28 - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 29 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
