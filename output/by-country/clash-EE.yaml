@@ -20,12 +20,13 @@ proxies:
   client-fingerprint: firefox
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
-  server: 212.87.190.124
-  port: 3
-  uuid: 6049e972-419e-43bc-932c-4032be6d1b5b
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
@@ -36,6 +37,22 @@ proxies:
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 EE 05 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 EE 06 - mqgg5630-cyber
   type: vless
   server: 95.85.224.17
   port: 443
@@ -49,23 +66,20 @@ proxies:
     short-id: ''
   servername: est1313.ggisopi.su
   client-fingerprint: firefox
-- name: 🇪🇪 EE 05 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  udp: true
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 EE 06 - mqgg5630-cyber
+- name: 🇪🇪 EE 07 - mqgg5630-cyber
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 95.85.224.17
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: est1313.ggisopi.su
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +91,7 @@ proxy-groups:
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
   - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +103,6 @@ proxy-groups:
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
   - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
