@@ -8,34 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇿 BZ 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇿 BZ 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇧🇿 BZ 01 - mqgg5630-cyber",
-      "server": "202.181.177.8",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "trojan",
+      "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "www.volumeroot.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/channels/act",
+        "path": "/assignment",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "www.volumeroot.com"
         }
       }
     },

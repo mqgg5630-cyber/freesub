@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
-  type: vless
-  server: 162.128.157.164
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   type: trojan
   server: 47.240.80.220
   port: 2052
@@ -26,44 +12,7 @@ proxies:
   udp: true
   sni: vpn.12169.top
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: 119.246.1.143
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: vmess
-  server: 47.83.19.148
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   type: vless
   server: vj37-1936vtw.fincore.top
   port: 443
@@ -77,7 +26,35 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  type: vless
+  server: vj37-1936vtw.fincore.top
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   type: vless
   server: vj37-1936vtw.fincore.top
   port: 443
@@ -91,67 +68,20 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   type: vless
-  server: 43.159.4.80
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /episode/files?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: vmess
-  server: 8.218.184.4
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  type: vless
-  server: vj37-1936vtw.fincore.top
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: 119.246.1.143
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: t.me%2fripaojiedian
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
   type: vless
   server: 162.128.157.164
   port: 443
@@ -165,9 +95,27 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
   type: vless
-  server: vj37-1936vtw.fincore.top
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
   port: 443
   uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
   udp: true
@@ -178,7 +126,61 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
   client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
+  type: vless
+  server: 162.128.157.164
+  port: 443
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  servername: www.bing.com
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
   type: vless
   server: vj37-1936vtw.fincore.top
@@ -192,8 +194,16 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 (Hong Kong) 16 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me%2fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - mqgg5630-cyber
   type: trojan
   server: 119.246.1.143
   port: 443
@@ -201,7 +211,16 @@ proxies:
   udp: true
   sni: t.me/ripaojiedian
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
   type: vless
   server: 162.128.157.164
   port: 443
@@ -215,61 +234,9 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
-  type: vless
-  server: 104.16.60.10
-  port: 443
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk1.69lover.my
-  network: ws
-  ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
-    headers:
-      Host: hk1.69lover.my
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: t.me%252fripaojiedian
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
   type: vless
-  server: 162.128.157.164
-  port: 443
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
-  type: vmess
-  server: 8.218.184.4
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 22 - mqgg5630-cyber
-  type: vless
-  server: 162.128.157.164
+  server: vj37-1936vtw.fincore.top
   port: 443
   uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
   udp: true
@@ -306,8 +273,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 22 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -333,7 +298,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 22 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

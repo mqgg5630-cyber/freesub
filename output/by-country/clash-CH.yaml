@@ -19,17 +19,32 @@ proxies:
       Host: www.calmlunch.com
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
-  server: helvetica.pelmexo.ir
-  port: 7911
-  uuid: 23ddda0f-6333-493a-839d-f9c8e561f7e4
+  server: 138.124.60.146
+  port: 443
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
     short-id: ''
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: edge
+  servername: usa.oblaco.bet
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
+  - 🇨🇭 CH 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
+  - 🇨🇭 CH 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

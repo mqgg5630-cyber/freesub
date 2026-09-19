@@ -31,28 +31,42 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
+      "server": "31.58.181.88",
+      "server_port": 8443,
+      "uuid": "382bd1ec-1ba8-44fd-8df4-53e251c467c7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber",
-      "server": "cdn.snobvpn.online",
-      "server_port": 80,
+      "server": "89.125.147.199",
+      "server_port": 443,
       "uuid": "cabd9303-ae32-4d25-86b9-26b312d0f044",
-      "transport": {
-        "type": "ws",
-        "path": "/snob-ws",
-        "headers": {
-          "Host": "cdn.snobvpn.online"
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
+          "short_id": "f6c7c139b9c938db"
         }
       }
     },
@@ -61,7 +75,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "4a64b0c2-de7e-4e32-b931-247be6dc4488",
+      "uuid": "ce57910d-b7a9-4eaa-9a94-a1dda0d08026",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -94,21 +108,19 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber",
-      "server": "89.125.147.199",
+      "server": "188.72.103.4",
       "server_port": 443,
-      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "uuid": "1f959100-a98b-47fb-84fa-359246dc458a",
       "tls": {
         "enabled": true,
-        "server_name": "maps.apple.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
-          "short_id": "f6c7c139b9c938db"
+        "server_name": "apicdn.4subnodes.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad",
+        "headers": {
+          "Host": "apicdn.4subnodes.com"
         }
       }
     },

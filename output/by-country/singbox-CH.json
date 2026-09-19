@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -44,20 +46,43 @@
     {
       "type": "vless",
       "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
-      "server": "helvetica.pelmexo.ir",
-      "server_port": 7911,
-      "uuid": "23ddda0f-6333-493a-839d-f9c8e561f7e4",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
+        "server_name": "usa.oblaco.bet",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY"
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
         }
       }
     },
