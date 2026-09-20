@@ -21,15 +21,17 @@
       "interval": "5m"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "46.229.243.154",
-      "server_port": 4443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-turbo-fr.roxa.org",
-        "insecure": true
+      "server": "143.246.195.98",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test",
+        "headers": {
+          "Host": "143.246.195.98"
+        }
       }
     },
     {

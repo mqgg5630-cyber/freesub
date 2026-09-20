@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - mqgg5630-cyber"
+        "🇮🇪 IE 01 - mqgg5630-cyber",
+        "🇮🇪 IE 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - mqgg5630-cyber"
+        "🇮🇪 IE 01 - mqgg5630-cyber",
+        "🇮🇪 IE 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,25 @@
     {
       "type": "vless",
       "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
+      "server": "162.159.160.139",
+      "server_port": 2083,
+      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfvvv-ev1.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cfvvv-ev1.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 IE 02 - mqgg5630-cyber",
       "server": "162.159.160.139",
       "server_port": 2083,
       "uuid": "44eae030-290b-4083-8102-6f8bab05701b",

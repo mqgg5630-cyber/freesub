@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
-  server: prep.wwwinternetvideo.click
-  port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  server: 131.123.41.177
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.41.177
 - name: 🇧🇬 BG 02 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
@@ -28,6 +27,20 @@ proxies:
   skip-cert-verify: true
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 03 - mqgg5630-cyber
+  type: vless
+  server: 193.148.59.178
+  port: 443
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇧🇬 BG 04 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -44,6 +57,7 @@ proxy-groups:
   - 🇧🇬 BG 01 - mqgg5630-cyber
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
+  - 🇧🇬 BG 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +66,6 @@ proxy-groups:
   - 🇧🇬 BG 01 - mqgg5630-cyber
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
+  - 🇧🇬 BG 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
