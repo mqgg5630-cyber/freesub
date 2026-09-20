@@ -6,14 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
   type: vless
-  server: 50.7.5.166
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  server: 162.159.160.139
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ir-new.failspace.top
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select

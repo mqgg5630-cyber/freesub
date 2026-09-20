@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
-  server: estomin1.vodniki.monster
+  server: 94.183.170.135
   port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: estomin1.vodniki.monster
-  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135

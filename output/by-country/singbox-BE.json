@@ -8,29 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 (家宽) - mqgg5630-cyber"
+        "🇧🇪 BE 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 (家宽) - mqgg5630-cyber"
+        "🇧🇪 BE 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇲🇽 MX 01 (家宽) - mqgg5630-cyber",
-      "server": "23.227.39.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tag": "🇧🇪 BE 01 - mqgg5630-cyber",
+      "server": "95.85.89.70",
+      "server_port": 81,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/trade?ed=2560fp=chrome",
         "headers": {
-          "Host": "vms.lifetime17.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
