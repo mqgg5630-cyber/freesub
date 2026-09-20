@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,14 +18,23 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
@@ -43,11 +53,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "46.17.44.112",
+      "server_port": 10301,
+      "method": "aes-256-gcm",
+      "password": "bdb313adf74c2ede"
     },
     {
       "type": "direct",

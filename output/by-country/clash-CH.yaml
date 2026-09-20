@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
-  type: vless
-  server: 138.124.60.146
+  type: trojan
+  server: 185.18.250.245
   port: 443
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-    short-id: ''
-  servername: usa.oblaco.bet
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
   server: 138.124.60.146
