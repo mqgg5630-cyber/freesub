@@ -6,27 +6,31 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
-  server: 193.148.59.178
-  port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  server: 131.123.37.199
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.37.199
 - name: 🇧🇬 BG 02 - mqgg5630-cyber
   type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  server: 108.165.233.223
+  port: 443
+  uuid: 2388e166-3890-33ae-f77e-efac00000001
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  servername: netlivpn4813.ddhshhshs.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
 - name: 🇧🇬 BG 03 - mqgg5630-cyber
   type: vless
   server: 192.145.31.5
@@ -45,6 +49,29 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 05 - mqgg5630-cyber
+  type: vless
+  server: 45.9.156.103
+  port: 443
+  uuid: e633de28-bfc0-4aca-aa67-e2e12e2c9e58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+    short-id: ''
+  servername: mzone.bg.3cloudhost.com
+  client-fingerprint: chrome
+- name: 🇧🇬 BG 06 - mqgg5630-cyber
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +81,8 @@ proxy-groups:
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
+  - 🇧🇬 BG 05 - mqgg5630-cyber
+  - 🇧🇬 BG 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,5 +92,7 @@ proxy-groups:
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
+  - 🇧🇬 BG 05 - mqgg5630-cyber
+  - 🇧🇬 BG 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber",
+        "🇪🇪 EE 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber",
+        "🇪🇪 EE 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -37,6 +41,28 @@
     {
       "type": "vless",
       "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "132.243.65.161",
+      "server_port": 443,
+      "uuid": "4d08aa81-f729-4857-a2e9-06e48b8b9556",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee.global-cdn.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
+          "short_id": "7a3f9e2b1c8d4f6a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -44,6 +70,28 @@
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 04 - mqgg5630-cyber",
+      "server": "estomin1.vodniki.monster",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "estomin1.vodniki.monster",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
+          "short_id": "d98e7afec9c0c359"
+        }
       }
     },
     {

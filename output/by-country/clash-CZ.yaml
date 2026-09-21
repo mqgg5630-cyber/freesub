@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.219
+  server: 195.85.23.217
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.88
+  server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -34,18 +34,18 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.29
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  server: 104.19.164.155
+  port: 2083
+  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
 - name: 🇨🇿 CZ 04 - mqgg5630-cyber
   type: vless
   server: 195.85.23.88
@@ -57,12 +57,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 05 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.111
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -71,12 +71,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 06 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -90,34 +90,6 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 07 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.248
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - mqgg5630-cyber
-  type: vless
-  server: cz1.zuoai.cf
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - mqgg5630-cyber
-  type: vless
   server: 95.85.230.35
   port: 443
   uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
@@ -130,23 +102,9 @@ proxies:
     short-id: ''
   servername: de.oblaco.bet
   client-fingerprint: chrome
-- name: 🇨🇿 CZ 10 - mqgg5630-cyber
+- name: 🇨🇿 CZ 08 - mqgg5630-cyber
   type: vless
-  server: 195.85.23.47
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 11 - mqgg5630-cyber
-  type: vless
-  server: 195.85.23.29
+  server: cz1.zuoai.cf
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -171,9 +129,6 @@ proxy-groups:
   - 🇨🇿 CZ 06 - mqgg5630-cyber
   - 🇨🇿 CZ 07 - mqgg5630-cyber
   - 🇨🇿 CZ 08 - mqgg5630-cyber
-  - 🇨🇿 CZ 09 - mqgg5630-cyber
-  - 🇨🇿 CZ 10 - mqgg5630-cyber
-  - 🇨🇿 CZ 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -187,8 +142,5 @@ proxy-groups:
   - 🇨🇿 CZ 06 - mqgg5630-cyber
   - 🇨🇿 CZ 07 - mqgg5630-cyber
   - 🇨🇿 CZ 08 - mqgg5630-cyber
-  - 🇨🇿 CZ 09 - mqgg5630-cyber
-  - 🇨🇿 CZ 10 - mqgg5630-cyber
-  - 🇨🇿 CZ 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

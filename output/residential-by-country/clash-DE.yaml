@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - mqgg5630-cyber
   type: vless
   server: 188.166.49.168
   port: 2083
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 01 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 01 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
