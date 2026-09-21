@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: ss
-  server: 51.170.185.165
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
-  udp: true
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: svvedko.nxxzxaw.beer
   port: 443
@@ -24,20 +17,18 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
-  client-fingerprint: random
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
-  - 🇸🇪 SE 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
-  - 🇸🇪 SE 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

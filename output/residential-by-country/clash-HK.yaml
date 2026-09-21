@@ -5,26 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
-  type: vless
-  server: sczznmbbbzgwlwzdhsql.jiedddym.com
-  port: 43142
-  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY
-    short-id: b93f2026953855c5
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
   type: trojan
   server: 119.246.1.143
   port: 443
   password: BxceQaOe
   udp: true
-  sni: t.me/ripaojiedian
+  sni: t.me
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -32,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

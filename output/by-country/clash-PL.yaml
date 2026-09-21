@@ -16,26 +16,6 @@ proxies:
   servername: pl6.moritech.net
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl6.moritech.net
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: 144.31.2.33
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
   server: 144.31.131.38
   port: 443
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
@@ -48,6 +28,29 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 34.118.70.195
+  port: 443
+  uuid: d518b4e2-bd6e-4d4e-a26e-238154d8d60c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: t_ql5pn5MG1bkVQoteCXoKkSTzUzOs_yXMllmsyiqXY
+    short-id: 7445870d4c2bdcb0
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
   server: 144.31.2.33
@@ -60,24 +63,24 @@ proxies:
   servername: pl3.moritech.net
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
+  server: 144.31.5.3
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl6.moritech.net
+  servername: pl4.moritech.net
 - name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
+  server: pl4.moritech.net
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl6.moritech.net
+  servername: pl4.moritech.net
 - name: 🇵🇱 PL 08 - mqgg5630-cyber
   type: vless
   server: pl-new-ded2.moritech.net
@@ -90,7 +93,7 @@ proxies:
   servername: pl-new-ded2.moritech.net
 - name: 🇵🇱 PL 09 - mqgg5630-cyber
   type: vless
-  server: pl4.moritech.net
+  server: 144.31.5.3
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
@@ -110,14 +113,34 @@ proxies:
   servername: pl3.moritech.net
 - name: 🇵🇱 PL 11 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.3
+  server: 144.31.5.64
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl4.moritech.net
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 13 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,6 +157,8 @@ proxy-groups:
   - 🇵🇱 PL 09 - mqgg5630-cyber
   - 🇵🇱 PL 10 - mqgg5630-cyber
   - 🇵🇱 PL 11 - mqgg5630-cyber
+  - 🇵🇱 PL 12 - mqgg5630-cyber
+  - 🇵🇱 PL 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,5 +175,7 @@ proxy-groups:
   - 🇵🇱 PL 09 - mqgg5630-cyber
   - 🇵🇱 PL 10 - mqgg5630-cyber
   - 🇵🇱 PL 11 - mqgg5630-cyber
+  - 🇵🇱 PL 12 - mqgg5630-cyber
+  - 🇵🇱 PL 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
