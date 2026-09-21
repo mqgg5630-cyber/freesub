@@ -31,48 +31,25 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - mqgg5630-cyber",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "server": "13.200.106.232",
+      "server_port": 443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+        "server_name": "shuma.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - mqgg5630-cyber",
-      "server": "34.93.188.70",
-      "server_port": 443,
-      "uuid": "5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU",
-          "short_id": "b9299afa0dcac824"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - mqgg5630-cyber",
       "server": "34.47.245.203",
       "server_port": 443,
       "uuid": "3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc",
@@ -93,7 +70,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 04 - mqgg5630-cyber",
+      "tag": "🇮🇳 印度 (India) 03 - mqgg5630-cyber",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
@@ -108,18 +85,42 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 05 - mqgg5630-cyber",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04 - mqgg5630-cyber",
+      "server": "13.200.106.232",
+      "server_port": 443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "tls": {
+        "enabled": true,
+        "server_name": "shuma.ccwu.cc",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "",
+        "path": "/fp=chrome",
         "headers": {
-          "Host": ""
+          "Host": "shuma.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - mqgg5630-cyber",
+      "server": "34.93.188.70",
+      "server_port": 443,
+      "uuid": "5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU",
+          "short_id": "b9299afa0dcac824"
         }
       }
     },

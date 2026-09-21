@@ -34,18 +34,46 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - mqgg5630-cyber
   type: vless
-  server: ch.cache-4d8a.com
+  server: 138.124.60.146
   port: 443
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY
-    short-id: 9d84de9d9f7b85e9
-  servername: ch.cache-4d8a.com
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+    short-id: ''
+  servername: usa.oblaco.bet
   client-fingerprint: chrome
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
+  type: vless
+  server: 138.124.60.146
+  port: 443
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+    short-id: ''
+  servername: usa.oblaco.bet
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 05 - mqgg5630-cyber
+  type: vless
+  server: 107.189.2.206
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +82,8 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
+  - 🇨🇭 CH 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +92,7 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
+  - 🇨🇭 CH 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

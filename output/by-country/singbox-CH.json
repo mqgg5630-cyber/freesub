@@ -10,7 +10,9 @@
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
         "🇨🇭 CH 02 - mqgg5630-cyber",
-        "🇨🇭 CH 03 - mqgg5630-cyber"
+        "🇨🇭 CH 03 - mqgg5630-cyber",
+        "🇨🇭 CH 04 - mqgg5630-cyber",
+        "🇨🇭 CH 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +21,9 @@
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
         "🇨🇭 CH 02 - mqgg5630-cyber",
-        "🇨🇭 CH 03 - mqgg5630-cyber"
+        "🇨🇭 CH 03 - mqgg5630-cyber",
+        "🇨🇭 CH 04 - mqgg5630-cyber",
+        "🇨🇭 CH 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -69,13 +73,13 @@
     {
       "type": "vless",
       "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
-      "server": "ch.cache-4d8a.com",
+      "server": "138.124.60.146",
       "server_port": 443,
-      "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ch.cache-4d8a.com",
+        "server_name": "usa.oblaco.bet",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -83,8 +87,47 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY",
-          "short_id": "9d84de9d9f7b85e9"
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 04 - mqgg5630-cyber",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.oblaco.bet",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 05 - mqgg5630-cyber",
+      "server": "107.189.2.206",
+      "server_port": 8443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "tls": {
+        "enabled": true,
+        "server_name": "shuma.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
         }
       }
     },
