@@ -6,18 +6,14 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
   type: vless
-  server: 162.159.160.139
-  port: 2083
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  server: 50.7.5.163
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
+  flow: xtls-rprx-vision
+  servername: ir-viper.failspace.top
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
   type: vless
   server: 50.7.5.166
@@ -30,14 +26,28 @@ proxies:
   servername: ir-new.failspace.top
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
   type: vless
-  server: 50.7.5.163
+  server: 50.7.5.186
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: ir-viper.failspace.top
+  servername: ireland-new.failspace.top
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
+  type: vless
+  server: 162.159.160.139
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +56,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +65,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

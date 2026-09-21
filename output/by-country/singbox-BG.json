@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - mqgg5630-cyber"
+        "🇧🇬 BG 01 - mqgg5630-cyber",
+        "🇧🇬 BG 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - mqgg5630-cyber"
+        "🇧🇬 BG 01 - mqgg5630-cyber",
+        "🇧🇬 BG 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -32,6 +34,18 @@
         "headers": {
           "Host": "192.145.31.5"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 02 - mqgg5630-cyber",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": true
       }
     },
     {

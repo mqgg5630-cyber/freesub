@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 NO 01 - mqgg5630-cyber
+- name: 🇱🇹 LT 01 - mqgg5630-cyber
   type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  server: 84.32.215.94
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-    short-id: f7b2
-  servername: deepl.com
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.aether-runet.top
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 NO 01 - mqgg5630-cyber
+  - 🇱🇹 LT 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 NO 01 - mqgg5630-cyber
+  - 🇱🇹 LT 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

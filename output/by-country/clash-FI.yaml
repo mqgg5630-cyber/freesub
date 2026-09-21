@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.244
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -15,12 +15,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.244
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.68
+  server: 212.104.128.244
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.217
+  server: 212.104.128.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -62,7 +62,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.45
+  server: 212.104.128.0
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -75,15 +75,22 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
-  type: ss
-  server: 87.58.148.70
+  type: vless
+  server: 212.104.128.0
   port: 443
-  cipher: aes-256-gcm
-  password: rg0g3xp9rk9nk9o0
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 07 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.106
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -111,7 +118,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.45
+  server: 212.104.128.139
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -125,21 +132,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 10 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.68
+  server: 202.166.187.132
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: f.yoptybla.ru
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: f.yoptybla.ru
 - name: 🇫🇮 FI 11 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.0
+  server: 212.104.128.45
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -153,7 +160,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 12 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.206
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -167,7 +174,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 13 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.27
+  server: 212.104.128.152
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -209,47 +216,19 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 16 - mqgg5630-cyber
   type: vless
-  server: 65.108.3.59
+  server: est1313.ggisopi.su
   port: 443
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: firefox
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 17 - mqgg5630-cyber
-  type: vless
-  server: 31.77.199.182
-  port: 443
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 18 - mqgg5630-cyber
-  type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 19 - mqgg5630-cyber
   type: vless
   server: 212.104.128.45
   port: 443
@@ -263,36 +242,58 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 20 - mqgg5630-cyber
+- name: 🇫🇮 FI 18 - mqgg5630-cyber
+  type: ss
+  server: 87.58.148.70
+  port: 443
+  cipher: aes-256-gcm
+  password: rg0g3xp9rk9nk9o0
+  udp: true
+- name: 🇫🇮 FI 19 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 212.104.128.139
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 21 - mqgg5630-cyber
-  type: vless
-  server: 109.107.155.76
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 20 - mqgg5630-cyber
+  type: vless
+  server: 212.104.128.244
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 21 - mqgg5630-cyber
+  type: vless
+  server: 212.104.128.217
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 22 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.152
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -306,7 +307,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 23 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.45
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -320,7 +321,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 24 - mqgg5630-cyber
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -334,33 +335,19 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 25 - mqgg5630-cyber
   type: vless
-  server: 202.166.187.132
+  server: k2.cloud--vpn.site
   port: 443
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: f.yoptybla.ru
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: f.yoptybla.ru
+      Host: c12.com
 - name: 🇫🇮 FI 26 - mqgg5630-cyber
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 27 - mqgg5630-cyber
   type: vless
   server: 212.104.128.217
   port: 443
@@ -374,35 +361,21 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 28 - mqgg5630-cyber
+- name: 🇫🇮 FI 27 - mqgg5630-cyber
   type: vless
-  server: k2.cloud--vpn.site
+  server: 212.104.128.106
   port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: c12.com
-- name: 🇫🇮 FI 29 - mqgg5630-cyber
-  type: vless
-  server: est1313.ggisopi.su
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 30 - mqgg5630-cyber
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 28 - mqgg5630-cyber
   type: vless
   server: 185.79.138.71
   port: 448
@@ -448,8 +421,6 @@ proxy-groups:
   - 🇫🇮 FI 26 - mqgg5630-cyber
   - 🇫🇮 FI 27 - mqgg5630-cyber
   - 🇫🇮 FI 28 - mqgg5630-cyber
-  - 🇫🇮 FI 29 - mqgg5630-cyber
-  - 🇫🇮 FI 30 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -483,7 +454,5 @@ proxy-groups:
   - 🇫🇮 FI 26 - mqgg5630-cyber
   - 🇫🇮 FI 27 - mqgg5630-cyber
   - 🇫🇮 FI 28 - mqgg5630-cyber
-  - 🇫🇮 FI 29 - mqgg5630-cyber
-  - 🇫🇮 FI 30 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

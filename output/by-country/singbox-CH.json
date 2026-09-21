@@ -31,21 +31,19 @@
     {
       "type": "vless",
       "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
-      "server": "138.124.60.146",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
+      "server": "107.189.2.206",
+      "server_port": 8443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
       "tls": {
         "enabled": true,
-        "server_name": "usa.oblaco.bet",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0"
+        "server_name": "shuma.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
         }
       }
     },
@@ -115,19 +113,21 @@
     {
       "type": "vless",
       "tag": "🇨🇭 CH 05 - mqgg5630-cyber",
-      "server": "107.189.2.206",
-      "server_port": 8443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
+        "server_name": "usa.oblaco.bet",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0"
         }
       }
     },
