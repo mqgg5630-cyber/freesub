@@ -29,12 +29,7 @@
         "🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber",
         "🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber",
         "🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber"
+        "🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber"
       ]
     },
     {
@@ -62,32 +57,34 @@
         "🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber",
         "🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber",
         "🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber",
-        "🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber"
+        "🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - mqgg5630-cyber",
-      "server": "66.163.117.58",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - mqgg5630-cyber",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
     },
     {
       "type": "vless",
@@ -111,26 +108,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - mqgg5630-cyber",
-      "server": "91.193.59.191",
-      "server_port": 2087,
-      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
-      "tls": {
-        "enabled": true,
-        "server_name": "vlso5.1d.mom",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/socks5=888:888@hkip.1d.mom:1080",
-        "headers": {
-          "Host": "vlso5.1d.mom"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - mqgg5630-cyber",
-      "server": "91.193.58.195",
+      "server": "91.193.58.93",
       "server_port": 443,
       "uuid": "9419f782-b18e-4c4b-ae95-a7a279fd021f",
       "tls": {
@@ -147,8 +125,137 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - mqgg5630-cyber",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "vmess",
       "tag": "🇬🇧 英国 (United Kingdom) 06 - mqgg5630-cyber",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - mqgg5630-cyber",
+      "server": "144.24.229.97",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - mqgg5630-cyber",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - mqgg5630-cyber",
+      "server": "91.193.58.195",
+      "server_port": 443,
+      "uuid": "9419f782-b18e-4c4b-ae95-a7a279fd021f",
+      "tls": {
+        "enabled": true,
+        "server_name": "jamph131-1228.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "jamph131-1228.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - mqgg5630-cyber",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - mqgg5630-cyber",
+      "server": "82.38.31.198",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - mqgg5630-cyber",
+      "server": "129.121.95.159",
+      "server_port": 443,
+      "uuid": "f6190ff2-864c-46cf-ac16-93908c069b75",
+      "tls": {
+        "enabled": true,
+        "server_name": "129.121.95.159",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/connect",
+        "headers": {
+          "Host": "129.121.95.159"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - mqgg5630-cyber",
+      "server": "91.193.58.141",
+      "server_port": 443,
+      "uuid": "9419f782-b18e-4c4b-ae95-a7a279fd021f",
+      "tls": {
+        "enabled": true,
+        "server_name": "jamph131-1228.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "jamph131-1228.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - mqgg5630-cyber",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - mqgg5630-cyber",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -170,203 +277,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - mqgg5630-cyber",
-      "server": "91.193.58.93",
-      "server_port": 443,
-      "uuid": "9419f782-b18e-4c4b-ae95-a7a279fd021f",
-      "tls": {
-        "enabled": true,
-        "server_name": "jamph131-1228.pages.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram-WangCai2🇨🇳",
-        "headers": {
-          "Host": "jamph131-1228.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - mqgg5630-cyber",
-      "server": "66.163.117.58",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - mqgg5630-cyber",
-      "server": "172.67.155.231",
-      "server_port": 2053,
-      "uuid": "ef23616d-8a9d-4b22-b2f5-9bda864de179",
-      "tls": {
-        "enabled": true,
-        "server_name": "INDEX.Arcane509.Workers.DEV",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "index.arcane509.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - mqgg5630-cyber",
-      "server": "139.59.189.127",
-      "server_port": 443,
-      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384",
-      "tls": {
-        "enabled": true,
-        "server_name": "shy-fog-af06.alvlirm333.workers.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shy-fog-af06.alvlirm333.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - mqgg5630-cyber",
-      "server": "162.159.153.4",
-      "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
-      "tls": {
-        "enabled": true,
-        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - mqgg5630-cyber",
-      "server": "104.21.51.145",
-      "server_port": 8443,
-      "uuid": "ef23616d-8a9d-4b22-b2f5-9bda864de179",
-      "tls": {
-        "enabled": true,
-        "server_name": "INDEX.Arcane509.Workers.DEV",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "index.arcane509.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - mqgg5630-cyber",
-      "server": "158.173.221.214",
-      "server_port": 11001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c58d16e593d44f42"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - mqgg5630-cyber",
-      "server": "172.67.158.158",
-      "server_port": 443,
-      "uuid": "7fc7f295-b80e-4235-bb17-61e3ddc0744a",
-      "tls": {
-        "enabled": true,
-        "server_name": "4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/AV21Gwm6013FI8fP?ed=2560",
-        "headers": {
-          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - mqgg5630-cyber",
-      "server": "66.163.117.58",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 16 - mqgg5630-cyber",
-      "server": "186.190.211.188",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "186.190.211.188",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 - mqgg5630-cyber",
-      "server": "51.77.225.200",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zRZNBszYyWo5"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 18 - mqgg5630-cyber",
-      "server": "66.163.117.58",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber",
-      "server": "129.121.95.159",
-      "server_port": 443,
-      "uuid": "f6190ff2-864c-46cf-ac16-93908c069b75",
-      "tls": {
-        "enabled": true,
-        "server_name": "129.121.95.159",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/connect",
-        "headers": {
-          "Host": "129.121.95.159"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber",
-      "server": "144.24.229.97",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU="
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber",
       "server": "91.193.58.117",
       "server_port": 443,
       "uuid": "9419f782-b18e-4c4b-ae95-a7a279fd021f",
@@ -377,7 +288,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Telegram-WangCai2🇨🇳",
+        "path": "Telegram-WangCai2🇨🇳",
         "headers": {
           "Host": "jamph131-1228.pages.dev"
         }
@@ -385,26 +296,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber",
-      "server": "57.128.177.198",
-      "server_port": 443,
-      "uuid": "7b102311-43fd-4e8f-877e-8090623c101d",
+      "tag": "🇬🇧 英国 (United Kingdom) 17 - mqgg5630-cyber",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
       "tls": {
         "enabled": true,
-        "server_name": "vp58.cc.cd",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram🇨🇳 fp=chrome",
-        "headers": {
-          "Host": "vp58.cc.cd"
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 18 - mqgg5630-cyber",
+      "server": "134.65.59.212",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "Pd3wPrQChdIKBVDeZ9In4vIj5Lq1w4lygpl82gPp4po="
+    },
+    {
       "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 23 - mqgg5630-cyber",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 - mqgg5630-cyber",
       "server": "pahobac.org",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -424,56 +345,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 24 - mqgg5630-cyber",
-      "server": "104.21.79.199",
-      "server_port": 443,
-      "uuid": "38d6b629-64c2-4c31-a10d-26eb3a2a053d",
-      "tls": {
-        "enabled": true,
-        "server_name": "lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/cxl8Wn1ylnsk63nJ0",
-        "headers": {
-          "Host": "lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 25 - mqgg5630-cyber",
-      "server": "66.163.117.58",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
       "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 26 - mqgg5630-cyber",
-      "server": "104.21.56.225",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
-      "tls": {
-        "enabled": true,
-        "server_name": "IJM8X9UgwPIQRmN-Lo-s.ZTl55ltkpuB38y36MCTGM.wOrKERs.deV",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/MyONKU8UND5ZRBBUz6C?ed=2560",
-        "headers": {
-          "Host": "IJM8X9UgwPIQRmN-Lo-s.ZTl55ltkpuB38y36MCTGM.wOrKERs.deV"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 27 - mqgg5630-cyber",
-      "server": "172.67.135.88",
+      "tag": "🇬🇧 英国 (United Kingdom) 20 - mqgg5630-cyber",
+      "server": "172.64.80.1",
       "server_port": 443,
       "password": "bpb-trojan",
       "tls": {
@@ -486,6 +360,35 @@
         "path": "/tr?ed=2560",
         "headers": {
           "Host": "vless.herogoing.top"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 21 - mqgg5630-cyber",
+      "server": "51.77.225.200",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "zRZNBszYyWo5"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 22 - mqgg5630-cyber",
+      "server": "pahobac.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
         }
       }
     },

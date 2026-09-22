@@ -8,32 +8,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇱🇰 LK 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇱🇰 LK 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-      "server": "78.135.77.91",
-      "server_port": 25020,
-      "uuid": "nitro_teeam@",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+      "type": "vless",
+      "tag": "🇱🇰 LK 01 - mqgg5630-cyber",
+      "server": "140.245.102.107",
+      "server_port": 119,
+      "uuid": "a5da154b-4632-4fc4-8fcb-9495fe195b1b",
+      "tls": {
+        "enabled": true,
+        "server_name": "wom.co",
+        "insecure": true
       }
     },
     {

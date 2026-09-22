@@ -13,7 +13,9 @@
         "🇸🇨 SC 03 - mqgg5630-cyber",
         "🇸🇨 SC 04 - mqgg5630-cyber",
         "🇸🇨 SC 05 - mqgg5630-cyber",
-        "🇸🇨 SC 06 - mqgg5630-cyber"
+        "🇸🇨 SC 06 - mqgg5630-cyber",
+        "🇸🇨 SC 07 - mqgg5630-cyber",
+        "🇸🇨 SC 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -25,7 +27,9 @@
         "🇸🇨 SC 03 - mqgg5630-cyber",
         "🇸🇨 SC 04 - mqgg5630-cyber",
         "🇸🇨 SC 05 - mqgg5630-cyber",
-        "🇸🇨 SC 06 - mqgg5630-cyber"
+        "🇸🇨 SC 06 - mqgg5630-cyber",
+        "🇸🇨 SC 07 - mqgg5630-cyber",
+        "🇸🇨 SC 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -33,19 +37,14 @@
     {
       "type": "vless",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "154.218.15.250",
-      "server_port": 2083,
-      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy-1cu.pages.dev",
-        "insecure": true
-      },
+      "server": "154.197.75.40",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "proxy-1cu.pages.dev"
+          "Host": "vms.lifetime37.workers.dev"
         }
       }
     },
@@ -74,33 +73,41 @@
     {
       "type": "vless",
       "tag": "🇸🇨 SC 03 - mqgg5630-cyber",
-      "server": "45.130.125.73",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-cea58e4acf49",
+      "server": "154.218.15.250",
+      "server_port": 2083,
+      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
       "tls": {
         "enabled": true,
-        "server_name": "web-app-aug8yr.app-f1qsy1.workers.dev",
+        "server_name": "proxy-1cu.pages.dev",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/api/ws",
+        "path": "/",
         "headers": {
-          "Host": "web-app-aug8yr.app-f1qsy1.workers.dev"
+          "Host": "proxy-1cu.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇨 SC 04 - mqgg5630-cyber",
-      "server": "45.130.125.201",
-      "server_port": 80,
-      "uuid": "dc8a9493-c54a-459e-d060-81a700000001",
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "nahan-core.netizo09.workers.dev"
+      "server": "156.226.168.221",
+      "server_port": 35193,
+      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+          "short_id": "e8daed2d"
         }
       }
     },
@@ -108,6 +115,28 @@
       "type": "vless",
       "tag": "🇸🇨 SC 05 - mqgg5630-cyber",
       "server": "156.226.168.221",
+      "server_port": 35193,
+      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+          "short_id": "e8daed2d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC 06 - mqgg5630-cyber",
+      "server": "hk3n.wxgqlfx.vip",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -127,16 +156,43 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇨 SC 06 - mqgg5630-cyber",
-      "server": "154.197.75.40",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "type": "trojan",
+      "tag": "🇸🇨 SC 07 - mqgg5630-cyber",
+      "server": "45.205.0.6",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/assignment",
         "headers": {
-          "Host": "vms.lifetime37.workers.dev"
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC 08 - mqgg5630-cyber",
+      "server": "hk3n.wxgqlfx.vip",
+      "server_port": 35193,
+      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+          "short_id": "e8daed2d"
         }
       }
     },

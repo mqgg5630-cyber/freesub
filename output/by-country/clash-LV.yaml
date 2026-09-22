@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 BR 01 - mqgg5630-cyber
+- name: 🇱🇻 LV 01 - mqgg5630-cyber
   type: vless
-  server: 35.199.90.53
+  server: 138.124.180.137
   port: 443
-  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
-    short-id: 4b414f69a06e1e81
-  servername: www.cloudflare.com
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 BR 01 - mqgg5630-cyber
+  - 🇱🇻 LV 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 BR 01 - mqgg5630-cyber
+  - 🇱🇻 LV 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

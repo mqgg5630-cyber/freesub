@@ -9,9 +9,7 @@
       "outbounds": [
         "auto",
         "🇮🇪 IE 01 - mqgg5630-cyber",
-        "🇮🇪 IE 02 - mqgg5630-cyber",
-        "🇮🇪 IE 03 - mqgg5630-cyber",
-        "🇮🇪 IE 04 - mqgg5630-cyber"
+        "🇮🇪 IE 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,9 +17,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇪 IE 01 - mqgg5630-cyber",
-        "🇮🇪 IE 02 - mqgg5630-cyber",
-        "🇮🇪 IE 03 - mqgg5630-cyber",
-        "🇮🇪 IE 04 - mqgg5630-cyber"
+        "🇮🇪 IE 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,53 +25,39 @@
     {
       "type": "vless",
       "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
-      "server": "50.7.5.166",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "server": "107.150.20.112",
+      "server_port": 8443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
       "tls": {
         "enabled": true,
-        "server_name": "ir-new.failspace.top",
+        "server_name": "shuma.ccwu.cc",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇪 IE 02 - mqgg5630-cyber",
-      "server": "50.7.5.165",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "server": "198.55.102.68",
+      "server_port": 2083,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
       "tls": {
         "enabled": true,
-        "server_name": "ir-new1.failspace.top",
+        "server_name": "shuma.ccwu.cc",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 IE 03 - mqgg5630-cyber",
-      "server": "50.7.5.165",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ir-new1.failspace.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 IE 04 - mqgg5630-cyber",
-      "server": "ireland-new.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ireland-new.failspace.top",
-        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
+        }
       }
     },
     {
