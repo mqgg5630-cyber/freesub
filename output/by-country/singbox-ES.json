@@ -33,42 +33,21 @@
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-      "server": "195.133.92.20",
-      "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        }
-      }
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
-      "server": "152.114.195.163",
-      "server_port": 8443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        }
-      }
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "shadowsocks",
@@ -98,8 +77,29 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 05 - mqgg5630-cyber",
+      "server": "mygptagent.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - mqgg5630-cyber",
       "server": "152.114.195.163",
       "server_port": 8443,
       "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
@@ -110,19 +110,11 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome",
+        "path": "/",
         "headers": {
           "Host": "shuma.ccwu.cc"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - mqgg5630-cyber",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "vless",

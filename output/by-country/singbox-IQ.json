@@ -8,28 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - mqgg5630-cyber"
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - mqgg5630-cyber"
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇱🇰 LK 01 - mqgg5630-cyber",
-      "server": "140.245.102.107",
-      "server_port": 119,
-      "uuid": "a5da154b-4632-4fc4-8fcb-9495fe195b1b",
+      "tag": "🇮🇶 IQ 01 - mqgg5630-cyber",
+      "server": "185.255.179.11",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
-        "server_name": "wom.co",
+        "server_name": "hub-de-03.hanvpn.cc",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de03-ws-8e47a",
+        "headers": {
+          "Host": "hub-de-03.hanvpn.cc"
+        }
       }
     },
     {

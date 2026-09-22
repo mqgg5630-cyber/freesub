@@ -19,6 +19,32 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇭 TH 02 - mqgg5630-cyber
   type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇹🇭 TH 03 - mqgg5630-cyber
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇹🇭 TH 04 - mqgg5630-cyber
+  type: vless
   server: 43.133.110.81
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -31,32 +57,6 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 03 - mqgg5630-cyber
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 04 - mqgg5630-cyber
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇹🇭 TH 05 - mqgg5630-cyber
   type: vless
   server: 34.15.162.1
@@ -69,8 +69,21 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 06 - mqgg5630-cyber
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 07 - mqgg5630-cyber
   type: vless
   server: 34.15.162.1
   port: 443
@@ -94,6 +107,7 @@ proxy-groups:
   - 🇹🇭 TH 04 - mqgg5630-cyber
   - 🇹🇭 TH 05 - mqgg5630-cyber
   - 🇹🇭 TH 06 - mqgg5630-cyber
+  - 🇹🇭 TH 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +119,6 @@ proxy-groups:
   - 🇹🇭 TH 04 - mqgg5630-cyber
   - 🇹🇭 TH 05 - mqgg5630-cyber
   - 🇹🇭 TH 06 - mqgg5630-cyber
+  - 🇹🇭 TH 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

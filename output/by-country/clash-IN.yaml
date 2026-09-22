@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   type: vless
+  server: 13.200.106.232
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: vless
   server: 194.61.31.126
   port: 2053
   uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
@@ -16,8 +30,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   type: vless
   server: 34.47.245.203
   port: 443
@@ -30,23 +44,22 @@ proxies:
     short-id: 50440423703c945f
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
   type: vless
-  server: 139.84.135.130
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
   type: vless
-  server: 13.200.106.232
+  server: 139.84.135.130
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -67,6 +80,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +90,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

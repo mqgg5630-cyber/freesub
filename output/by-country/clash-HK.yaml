@@ -5,108 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: r6tptrwvddxap6al
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-hk.skyvora.app
+  network: ws
+  ws-opts:
+    path: /f7i3lo6xbs
+    headers:
+      Host: cdn-hk.skyvora.app
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: uez5t2b4575tgkoi
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: wwj19enpp68px8t7
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-hk.skyvora.app
-  network: ws
-  ws-opts:
-    path: /f7i3lo6xbs
-    headers:
-      Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  type: vmess
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-hk.skyvora.app
-  network: ws
-  ws-opts:
-    path: /f7i3lo6xbs
-    headers:
-      Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   type: vless
   server: 103.101.0.73
   port: 443
@@ -120,22 +32,116 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  type: vmess
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: 119.246.1.143
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me%2fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
+  type: trojan
+  server: 47.240.80.220
+  port: 2052
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  udp: true
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
+  type: trojan
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
+  udp: true
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: uez5t2b4575tgkoi
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+  type: vless
+  server: 104.21.8.201
+  port: 2096
+  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-hk.skyvora.app
   network: ws
   ws-opts:
-    path: ''
+    path: /f7i3lo6xbs
     headers:
-      Host: ''
+      Host: cdn-hk.skyvora.app
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: r6tptrwvddxap6al
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,6 +158,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -168,5 +176,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
