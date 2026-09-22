@@ -8,31 +8,25 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇮🇷 IR 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇮🇷 IR 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "143.246.195.98",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test",
-        "headers": {
-          "Host": "143.246.195.98"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
+      "server": "p1tun3.greewebservices.ir",
+      "server_port": 2070,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ao5znrhEwVqoJy-l7AVvgw"
     },
     {
       "type": "direct",

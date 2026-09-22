@@ -6,86 +6,33 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  server: 31.58.181.88
+  port: 8443
+  uuid: 39c11784-818b-4e2c-8804-8181abc9c849
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: f6c7c139b9c938db
-  servername: maps.apple.com
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.58.181.88
+  port: 8443
+  uuid: 1e3b5752-e720-4347-b8e9-384697d0ce38
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: cc81171e-c70e-45fb-be7d-1bf0afd1258e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-    short-id: ''
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: e45762cb-9cd1-4e69-8638-9126456b79bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-    short-id: ''
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 7c97de67-9586-4aa5-8adf-ff3ce469149e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-    short-id: ''
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   type: vless
   server: 31.58.181.88
   port: 8443
@@ -99,11 +46,11 @@ proxies:
     short-id: ''
   servername: tradingview.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 1423f399-74d3-4d99-90b9-bc7cae1af706
+  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
   udp: true
   tls: true
   skip-cert-verify: true
@@ -113,7 +60,20 @@ proxies:
     short-id: ''
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -126,11 +86,52 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: ce55737c-243b-497f-9d9a-38700f327894
+  uuid: beed721d-73b6-47fc-a7b0-cac10e624b98
   udp: true
   tls: true
   skip-cert-verify: true
@@ -155,6 +156,46 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
   type: vless
+  server: 94.183.224.45
+  port: 443
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - mqgg5630-cyber
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 15 - mqgg5630-cyber
+  type: vless
   server: 31.58.181.88
   port: 8443
   uuid: fabd51c7-89f5-4a4b-8af7-09a515b64f2d
@@ -167,6 +208,46 @@ proxies:
     short-id: ''
   servername: tradingview.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 16 - mqgg5630-cyber
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 17 - mqgg5630-cyber
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 0cfc5fac-1d0d-4d66-a099-5f6802d3243b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+    short-id: ''
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 18 - mqgg5630-cyber
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -184,6 +265,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 14 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 15 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 16 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 17 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 18 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -201,5 +288,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 14 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 15 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 16 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 17 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 18 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
