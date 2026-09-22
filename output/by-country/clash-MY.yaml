@@ -15,27 +15,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: 47.250.84.25
+  tls: false
   skip-cert-verify: true
 - name: 🇲🇾 MY 03 - mqgg5630-cyber
-  type: vless
-  server: 43.159.4.80
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /episode/files?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇲🇾 MY 04 - mqgg5630-cyber
   type: trojan
   server: 47.250.84.25
@@ -52,14 +50,6 @@ proxies:
   udp: true
   sni: 47.250.84.25
   skip-cert-verify: true
-- name: 🇲🇾 MY 06 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: moltbot.doctoroyy.net
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +60,6 @@ proxy-groups:
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
-  - 🇲🇾 MY 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,6 +70,5 @@ proxy-groups:
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
-  - 🇲🇾 MY 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

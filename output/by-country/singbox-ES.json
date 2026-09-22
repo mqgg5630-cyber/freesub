@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,18 +19,31 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "server": "152.114.195.163",
+      "server_port": 8443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "tls": {
+        "enabled": true,
+        "server_name": "shuma.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
+        }
+      }
     },
     {
       "type": "vless",
@@ -43,9 +58,50 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/fp=chrome",
         "headers": {
           "Host": "shuma.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
+      "server": "195.133.92.20",
+      "server_port": 443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "tls": {
+        "enabled": true,
+        "server_name": "shuma.ccwu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber",
+      "server": "92.118.127.16",
+      "server_port": 443,
+      "uuid": "72f8e59f-7a0d-44f2-a8db-b4c3e1e36716",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sp1.extremumnews.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg",
+          "short_id": "908563a721d9bdcd"
         }
       }
     },

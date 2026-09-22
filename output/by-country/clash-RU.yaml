@@ -6,32 +6,112 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: 5.104.107.80
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /
+    path: /cdn/v3/live
     headers:
-      Host: cdn8848.776676.xyz
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
-  server: 5.101.115.117
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 104.21.14.100
+  port: 443
+  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: 4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev
+  network: ws
+  ws-opts:
+    path: /vl/AV21Gwm6013FI8fP?ed=2560
+    headers:
+      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
+  server: 172.64.80.1
+  port: 443
+  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-541f9d.ezaccess1d3db24.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-541f9d.ezaccess1d3db24.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  type: vless
+  server: 172.64.158.146
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: 104.18.34.14
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  type: vless
+  server: 172.66.44.211
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +119,12 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +132,11 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

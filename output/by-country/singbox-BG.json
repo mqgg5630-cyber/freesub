@@ -9,7 +9,10 @@
       "outbounds": [
         "auto",
         "🇧🇬 BG 01 - mqgg5630-cyber",
-        "🇧🇬 BG 02 - mqgg5630-cyber"
+        "🇧🇬 BG 02 - mqgg5630-cyber",
+        "🇧🇬 BG 03 - mqgg5630-cyber",
+        "🇧🇬 BG 04 - mqgg5630-cyber",
+        "🇧🇬 BG 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +20,10 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 BG 01 - mqgg5630-cyber",
-        "🇧🇬 BG 02 - mqgg5630-cyber"
+        "🇧🇬 BG 02 - mqgg5630-cyber",
+        "🇧🇬 BG 03 - mqgg5630-cyber",
+        "🇧🇬 BG 04 - mqgg5630-cyber",
+        "🇧🇬 BG 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,15 +31,13 @@
     {
       "type": "vless",
       "tag": "🇧🇬 BG 01 - mqgg5630-cyber",
-      "server": "192.145.31.5",
-      "server_port": 443,
+      "server": "neth9.lunariai.ru",
+      "server_port": 8443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "192.145.31.5"
-        }
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": true
       }
     },
     {
@@ -46,6 +50,44 @@
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 03 - mqgg5630-cyber",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 04 - mqgg5630-cyber",
+      "server": "neth9.lunariai.ru",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 05 - mqgg5630-cyber",
+      "server": "192.145.31.5",
+      "server_port": 443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "192.145.31.5"
+        }
       }
     },
     {

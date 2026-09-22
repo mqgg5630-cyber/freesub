@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
   type: vless
   server: 152.114.195.163
   port: 8443
@@ -25,6 +18,48 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
+  type: vless
+  server: 152.114.195.163
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
+  type: vless
+  server: 195.133.92.20
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
+  type: vless
+  server: 92.118.127.16
+  port: 443
+  uuid: 72f8e59f-7a0d-44f2-a8db-b4c3e1e36716
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg
+    short-id: 908563a721d9bdcd
+  servername: sp1.extremumnews.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
+  - 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
+  - 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
+  - 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
+  - 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
