@@ -17,6 +17,20 @@ proxies:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
     short-id: ''
   servername: www.ikea.com
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: vless
+  server: 143.246.194.213
+  port: 443
+  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+    short-id: ''
+  servername: www.ikea.com
   client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
+  - 🇸🇪 SE 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
+  - 🇸🇪 SE 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

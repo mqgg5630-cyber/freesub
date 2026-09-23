@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - mqgg5630-cyber
-  type: trojan
-  server: 185.225.68.232
-  port: 443
-  password: humanity
+- name: 🇷🇴 RO 01 - mqgg5630-cyber
+  type: vless
+  server: 167.82.101.251
+  port: 80
+  uuid: 0e9f7d2a-2f92-475e-b484-e79568a8a1a2
   udp: true
-  sni: www.calmlunch.com
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.calmlunch.com
+      Host: Mankiamtr.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - mqgg5630-cyber
+  - 🇷🇴 RO 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - mqgg5630-cyber
+  - 🇷🇴 RO 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

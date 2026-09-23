@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - mqgg5630-cyber
   type: vless
-  server: 80.96.109.15
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: moldova.failspace.top
-- name: 🇲🇩 MD 02 - mqgg5630-cyber
-  type: vless
   server: 185.103.167.76
   port: 4443
   uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
@@ -28,6 +18,16 @@ proxies:
     short-id: 694ee64512cfcbef
   servername: moldova.cdn-europe.org
   client-fingerprint: random
+- name: 🇲🇩 MD 02 - mqgg5630-cyber
+  type: vless
+  server: 80.96.109.15
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: moldova.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select
