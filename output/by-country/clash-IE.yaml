@@ -6,6 +6,16 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
   type: vless
+  server: 50.7.5.165
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ir-new1.failspace.top
+- name: 🇮🇪 IE 02 - mqgg5630-cyber
+  type: vless
   server: 50.7.5.166
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -14,48 +24,13 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: ir-new.failspace.top
-- name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: vless
-  server: 107.150.20.112
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
-  type: vless
-  server: 198.55.102.68
-  port: 2083
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  type: ss
+  server: 74.234.59.81
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: znEtjgHLXH4FBLic
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇮🇪 IE 04 - mqgg5630-cyber
-  type: vless
-  server: 167.160.177.68
-  port: 2096
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +39,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
-  - 🇮🇪 IE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +47,5 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
-  - 🇮🇪 IE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

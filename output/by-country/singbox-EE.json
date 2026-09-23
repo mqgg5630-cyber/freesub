@@ -8,18 +8,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber",
-        "🇪🇪 EE 03 - mqgg5630-cyber"
+        "🇪🇪 EE 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber",
-        "🇪🇪 EE 03 - mqgg5630-cyber"
+        "🇪🇪 EE 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -35,44 +31,6 @@
         "path": "/",
         "headers": {
           "Host": "94.183.170.135"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
-      "server": "93.123.39.203",
-      "server_port": 8443,
-      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
-      "tls": {
-        "enabled": true,
-        "server_name": "est.luxes.network",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assets",
-        "headers": {
-          "Host": "93.123.39.203"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
-      "server": "93.123.39.203",
-      "server_port": 8443,
-      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
-      "tls": {
-        "enabled": true,
-        "server_name": "est.luxes.network",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assets",
-        "headers": {
-          "Host": "93.123.39.203"
         }
       }
     },

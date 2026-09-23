@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - mqgg5630-cyber
+- name: 🇮🇶 IQ 01 - mqgg5630-cyber
   type: vless
-  server: my1.miyazono-kaori.com
-  port: 443
-  uuid: ff8d05b5-4aec-40cc-86a1-ccfbcf811fea
+  server: 193.56.135.137
+  port: 9543
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc
-    short-id: 99f8972e3dd5ed
-  servername: www.setel.com
-  client-fingerprint: chrome
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - mqgg5630-cyber
+  - 🇮🇶 IQ 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - mqgg5630-cyber
+  - 🇮🇶 IQ 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

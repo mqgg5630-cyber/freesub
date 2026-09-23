@@ -8,75 +8,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-      "server": "152.114.195.163",
-      "server_port": 8443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber",
-      "server": "195.133.92.20",
+      "server": "mygptagent.org",
       "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "shuma.ccwu.cc",
+        "server_name": "mygptagent.org",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/linkvws",
         "headers": {
-          "Host": "shuma.ccwu.cc"
+          "Host": ""
         }
       }
     },

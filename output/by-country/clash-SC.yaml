@@ -18,17 +18,33 @@ proxies:
     path: /
     headers:
       Host: proxy-1cu.pages.dev
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: vless
+  server: gesmankos.sadiepinki.com
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

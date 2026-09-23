@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - mqgg5630-cyber
+- name: 🇱🇹 LT 01 - mqgg5630-cyber
   type: vless
-  server: my1.miyazono-kaori.com
+  server: 84.32.215.94
   port: 443
-  uuid: ff8d05b5-4aec-40cc-86a1-ccfbcf811fea
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc
-    short-id: 99f8972e3dd5ed
-  servername: www.setel.com
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.aether-runet.top
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - mqgg5630-cyber
+  - 🇱🇹 LT 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - mqgg5630-cyber
+  - 🇱🇹 LT 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
