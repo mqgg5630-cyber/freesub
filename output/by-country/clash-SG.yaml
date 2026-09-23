@@ -7,7 +7,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
-  port: 12972
+  port: 17623
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -17,78 +17,83 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 02 - mqgg5630-cyber
   type: vless
-  server: 103.101.0.73
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: www.gov.ua
+  port: 8880
+  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: shuma.ccwu.cc
+      Host: rapid-base-6c9e.45-d79.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 03 - mqgg5630-cyber
   type: vless
-  server: 206.206.76.75
-  port: 443
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  server: www.gov.ua
+  port: 8880
+  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: rapid-base-6c9e.45-d79.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 04 - mqgg5630-cyber
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 05 - mqgg5630-cyber
   type: vless
-  server: 206.206.76.75
-  port: 443
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  server: 172.67.65.56
+  port: 2053
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 06 - mqgg5630-cyber
-  type: ss
-  server: 134.185.89.83
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 07 - mqgg5630-cyber
-  type: vless
-  server: 103.195.188.206
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
+  servername: whitecreeper.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
     headers:
-      Host: shuma.ccwu.cc
+      Host: whitecreeper.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 06 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: polished-meadow-2ac5.228-76d.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 07 - mqgg5630-cyber
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 08 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
@@ -102,53 +107,95 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇸🇬 新加坡 (Singapore) 09 - mqgg5630-cyber
+  type: vless
+  server: 172.66.214.247
+  port: 8880
+  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: sweet-sun-c70f.317-ba5.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 10 - mqgg5630-cyber
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 11 - mqgg5630-cyber
+  type: vless
+  server: 172.66.140.62
+  port: 8880
+  uuid: 160ca353-676d-4b7f-a041-0289e388b865
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proud-cloud-7bdd.208-a52.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 12 - mqgg5630-cyber
+  type: vless
+  server: 103.143.81.178
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 13 - mqgg5630-cyber
   type: vmess
-  server: 172.237.70.226
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - mqgg5630-cyber
+- name: 🇸🇬 新加坡 (Singapore) 14 - mqgg5630-cyber
   type: vless
-  server: 146.235.16.130
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  server: 206.206.76.75
+  port: 443
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11 - mqgg5630-cyber
-  type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 15 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 12 - mqgg5630-cyber
-  type: vless
-  server: sg-1.gsafevpnapi.com
-  port: 20270
-  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
-  udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - mqgg5630-cyber
+- name: 🇸🇬 新加坡 (Singapore) 16 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
   port: 10574
@@ -162,247 +209,29 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 - mqgg5630-cyber
-  type: vless
-  server: 103.195.188.206
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 15 - mqgg5630-cyber
-  type: vless
-  server: 103.195.188.192
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 16 - mqgg5630-cyber
-  type: vless
-  server: 146.235.16.130
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 17 - mqgg5630-cyber
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 18 - mqgg5630-cyber
   type: vless
-  server: sg-1.gsafevpnapi.com
-  port: 20270
-  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
+  server: 3.0.111.82
+  port: 12972
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 19 - mqgg5630-cyber
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 20 - mqgg5630-cyber
-  type: vless
-  server: 43.161.254.71
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 21 - mqgg5630-cyber
-  type: ss
-  server: 129.150.45.119
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - mqgg5630-cyber
-  type: vless
-  server: 122.10.119.252
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 23 - mqgg5630-cyber
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-sg.skyvora.app
-  network: ws
-  ws-opts:
-    path: /78bc8
-    headers:
-      Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 24 - mqgg5630-cyber
-  type: vless
-  server: 5.223.74.174
-  port: 2053
-  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
-    short-id: 36151c48e28cfb65
-  servername: 5.223.74.174
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 25 - mqgg5630-cyber
-  type: vmess
-  server: 172.237.70.226
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 26 - mqgg5630-cyber
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - mqgg5630-cyber
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 28 - mqgg5630-cyber
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 29 - mqgg5630-cyber
-  type: vless
-  server: 140.235.39.19
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 30 - mqgg5630-cyber
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 31 - mqgg5630-cyber
-  type: vless
-  server: 103.195.188.192
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 32 - mqgg5630-cyber
-  type: vless
-  server: 43.161.254.71
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 33 - mqgg5630-cyber
   type: vless
   server: 103.101.0.73
   port: 443
@@ -416,6 +245,171 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 20 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - mqgg5630-cyber
+  type: vless
+  server: yellow-sky-38b3.154-d73.workers.dev
+  port: 8880
+  uuid: 220046c3-0081-4c22-a648-83a52bc3a0d5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: yellow-sky-38b3.154-d73.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 22 - mqgg5630-cyber
+  type: vmess
+  server: 172.237.70.226
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - mqgg5630-cyber
+  type: ss
+  server: 167.150.100.93
+  port: 29824
+  cipher: 2022-blake3-aes-256-gcm
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - mqgg5630-cyber
+  type: vless
+  server: 206.206.76.75
+  port: 443
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 25 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: Telegram_healer_config
+  udp: true
+  sni: cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/3F3fUAGJks9doKvjt8AREH4QR?ed=2560
+    headers:
+      Host: cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 26 - mqgg5630-cyber
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 27 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 17623
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 (Singapore) 28 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 17623
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 29 - mqgg5630-cyber
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 30 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 31 - mqgg5630-cyber
+  type: vless
+  server: 122.10.119.252
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 32 - mqgg5630-cyber
+  type: vless
+  server: 35.198.230.134
+  port: 443
+  uuid: 50cbda48-00ce-4688-8b3d-0177ab8f177c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GqyMciP_v8rJZKLJd-EgzQmWbi_Qx_c_n1f-nlPkaEA
+    short-id: b1fef7a9181ea31d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 33 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 34 - mqgg5630-cyber
   type: vless
   server: 146.235.16.130
@@ -431,16 +425,6 @@ proxies:
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 35 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.120.173
-  port: 443
-  uuid: XEXEVIL
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 36 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
   port: 10574
@@ -453,22 +437,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 37 - mqgg5630-cyber
-  type: vless
-  server: 3.0.111.82
-  port: 12972
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 38 - mqgg5630-cyber
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 36 - mqgg5630-cyber
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -478,7 +448,99 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 37 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 38 - mqgg5630-cyber
+  type: vless
+  server: 103.195.188.192
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇸🇬 新加坡 (Singapore) 39 - mqgg5630-cyber
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 40 - mqgg5630-cyber
+  type: vless
+  server: 46.137.202.178
+  port: 12512
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  servername: www.intel.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 41 - mqgg5630-cyber
+  type: vless
+  server: 46.137.202.178
+  port: 12512
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 42 - mqgg5630-cyber
+  type: vless
+  server: 35.198.230.134
+  port: 443
+  uuid: 50cbda48-00ce-4688-8b3d-0177ab8f177c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GqyMciP_v8rJZKLJd-EgzQmWbi_Qx_c_n1f-nlPkaEA
+    short-id: b1fef7a9181ea31d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 43 - mqgg5630-cyber
+  type: vless
+  server: sg-1.gsafevpnapi.com
+  port: 20270
+  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  servername: www.yahoo.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 44 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
   port: 12972
@@ -491,10 +553,10 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 40 - mqgg5630-cyber
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 (Singapore) 45 - mqgg5630-cyber
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -502,9 +564,54 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 41 - mqgg5630-cyber
+- name: 🇸🇬 新加坡 (Singapore) 46 - mqgg5630-cyber
   type: vless
-  server: 103.143.81.178
+  server: 27.50.49.154
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-34l.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-34l.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 47 - mqgg5630-cyber
+  type: vless
+  server: sg-1.gsafevpnapi.com
+  port: 20270
+  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 48 - mqgg5630-cyber
+  type: ss
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 49 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 50 - mqgg5630-cyber
+  type: vless
+  server: 103.195.188.206
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -516,145 +623,32 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 42 - mqgg5630-cyber
-  type: vless
-  server: 54.251.9.130
-  port: 24146
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  servername: www.intel.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 43 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.120.173
-  port: 443
-  uuid: XEXEVIL
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 44 - mqgg5630-cyber
-  type: vless
-  server: 206.206.76.75
-  port: 443
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 45 - mqgg5630-cyber
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 46 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.120.173
-  port: 443
-  uuid: XEXEVIL
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 47 - mqgg5630-cyber
-  type: vless
-  server: 3.0.111.82
-  port: 17623
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 48 - mqgg5630-cyber
-  type: ss
-  server: 194.233.74.160
-  port: 2342
-  cipher: chacha20-ietf-poly1305
-  password: XV4bvaJIWoxl3IYEC1e6W7
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 49 - mqgg5630-cyber
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 50 - mqgg5630-cyber
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 51 - mqgg5630-cyber
-  type: vless
-  server: 140.235.39.19
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  type: vmess
+  server: 172.237.70.226
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
 - name: 🇸🇬 新加坡 (Singapore) 52 - mqgg5630-cyber
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 53 - mqgg5630-cyber
-  type: ss
-  server: 167.150.100.93
-  port: 29824
-  cipher: 2022-blake3-aes-256-gcm
-  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 54 - mqgg5630-cyber
   type: vless
-  server: 103.170.217.60
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 53 - mqgg5630-cyber
+  type: vless
+  server: 43.161.254.71
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -666,71 +660,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 55 - mqgg5630-cyber
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 56 - mqgg5630-cyber
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 57 - mqgg5630-cyber
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 58 - mqgg5630-cyber
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-sg.skyvora.app
-  network: ws
-  ws-opts:
-    path: /78bc8
-    headers:
-      Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 59 - mqgg5630-cyber
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-sg.skyvora.app
-  network: ws
-  ws-opts:
-    path: /78bc8
-    headers:
-      Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 60 - mqgg5630-cyber
+- name: 🇸🇬 新加坡 (Singapore) 54 - mqgg5630-cyber
   type: vless
   server: 146.235.16.130
   port: 19825
@@ -744,7 +674,69 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 61 - mqgg5630-cyber
+- name: 🇸🇬 新加坡 (Singapore) 55 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 17623
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 56 - mqgg5630-cyber
+  type: ss
+  server: 194.233.74.160
+  port: 2342
+  cipher: chacha20-ietf-poly1305
+  password: XV4bvaJIWoxl3IYEC1e6W7
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 57 - mqgg5630-cyber
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 58 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 17623
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 59 - mqgg5630-cyber
+  type: vless
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: ''
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 60 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
   port: 12972
@@ -758,7 +750,78 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 61 - mqgg5630-cyber
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 62 - mqgg5630-cyber
+  type: vless
+  server: 206.206.76.75
+  port: 443
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 63 - mqgg5630-cyber
+  type: vmess
+  server: 172.237.70.226
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 64 - mqgg5630-cyber
+  type: vless
+  server: 5.223.74.174
+  port: 2053
+  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
+    short-id: 36151c48e28cfb65
+  servername: 5.223.74.174
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 65 - mqgg5630-cyber
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 66 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 67 - mqgg5630-cyber
   type: vless
   server: sg2-8sb.6121999.dpdns.org
   port: 19825
@@ -771,8 +834,91 @@ proxies:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 63 - mqgg5630-cyber
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 68 - mqgg5630-cyber
+  type: vless
+  server: 162.159.48.32
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 69 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 70 - mqgg5630-cyber
+  type: vless
+  server: 162.159.156.214
+  port: 8880
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 71 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 72 - mqgg5630-cyber
+  type: vless
+  server: 104.21.96.1
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 73 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 74 - mqgg5630-cyber
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 75 - mqgg5630-cyber
   type: vless
   server: 3.0.111.82
   port: 10574
@@ -785,7 +931,205 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 76 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 12972
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 77 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 10574
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 78 - mqgg5630-cyber
+  type: vless
+  server: 146.235.16.130
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 79 - mqgg5630-cyber
+  type: vless
+  server: 103.195.188.192
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 80 - mqgg5630-cyber
+  type: vless
+  server: sg-1.gsafevpnapi.com
+  port: 20270
+  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 81 - mqgg5630-cyber
+  type: vless
+  server: 103.118.254.37
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 82 - mqgg5630-cyber
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: ad85a1ce-3519-4634-9ea1-66c60d3694ba
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: little-pond-8731.81-68e.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 83 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 17623
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 84 - mqgg5630-cyber
+  type: ss
+  server: 134.185.89.83
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 85 - mqgg5630-cyber
+  type: vless
+  server: 172.67.170.140
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 86 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 12972
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 87 - mqgg5630-cyber
+  type: vless
+  server: 3.0.111.82
+  port: 12972
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 88 - mqgg5630-cyber
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 89 - mqgg5630-cyber
+  type: vless
+  server: 54.251.9.130
+  port: 24146
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  servername: www.intel.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 90 - mqgg5630-cyber
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-sg.skyvora.app
+  network: ws
+  ws-opts:
+    path: /78bc8
+    headers:
+      Host: cdn-sg.skyvora.app
 proxy-groups:
 - name: PROXIES
   type: select
@@ -854,6 +1198,33 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 61 - mqgg5630-cyber
   - 🇸🇬 新加坡 (Singapore) 62 - mqgg5630-cyber
   - 🇸🇬 新加坡 (Singapore) 63 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 64 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 65 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 66 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 67 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 68 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 69 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 70 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 71 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 72 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 73 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 74 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 75 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 76 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 77 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 78 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 79 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 80 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 81 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 82 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 83 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 84 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 85 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 86 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 87 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 88 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 89 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 90 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -922,5 +1293,32 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 61 - mqgg5630-cyber
   - 🇸🇬 新加坡 (Singapore) 62 - mqgg5630-cyber
   - 🇸🇬 新加坡 (Singapore) 63 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 64 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 65 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 66 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 67 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 68 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 69 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 70 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 71 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 72 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 73 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 74 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 75 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 76 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 77 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 78 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 79 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 80 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 81 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 82 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 83 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 84 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 85 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 86 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 87 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 88 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 89 - mqgg5630-cyber
+  - 🇸🇬 新加坡 (Singapore) 90 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

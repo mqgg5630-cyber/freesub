@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - mqgg5630-cyber
   type: vless
-  server: 185.153.198.86
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: moldova.cdn-europe.org
+  port: 4443
+  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+    short-id: 694ee64512cfcbef
+  servername: moldova.cdn-europe.org
+  client-fingerprint: random
 - name: 🇲🇩 MD 02 - mqgg5630-cyber
   type: vless
-  server: moldova.cdn-europe.org
+  server: 185.103.167.76
   port: 4443
   uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
   udp: true
@@ -48,20 +48,6 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇲🇩 MD 04 - mqgg5630-cyber
   type: vless
-  server: moldova.cdn-europe.org
-  port: 4443
-  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
-    short-id: 694ee64512cfcbef
-  servername: moldova.cdn-europe.org
-  client-fingerprint: random
-- name: 🇲🇩 MD 05 - mqgg5630-cyber
-  type: vless
   server: 143.246.219.51
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
@@ -73,20 +59,30 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.219.51
-- name: 🇲🇩 MD 06 - mqgg5630-cyber
+- name: 🇲🇩 MD 05 - mqgg5630-cyber
   type: vless
-  server: 185.153.198.86
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: moldova.cdn-europe.org
+  port: 4443
+  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+    short-id: 694ee64512cfcbef
+  servername: moldova.cdn-europe.org
+  client-fingerprint: chrome
+- name: 🇲🇩 MD 06 - mqgg5630-cyber
+  type: vless
+  server: moldova.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: moldova.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select

@@ -10,12 +10,7 @@
         "auto",
         "🇦🇹 AT 01 - mqgg5630-cyber",
         "🇦🇹 AT 02 - mqgg5630-cyber",
-        "🇦🇹 AT 03 - mqgg5630-cyber",
-        "🇦🇹 AT 04 - mqgg5630-cyber",
-        "🇦🇹 AT 05 - mqgg5630-cyber",
-        "🇦🇹 AT 06 - mqgg5630-cyber",
-        "🇦🇹 AT 07 - mqgg5630-cyber",
-        "🇦🇹 AT 08 - mqgg5630-cyber"
+        "🇦🇹 AT 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -24,98 +19,34 @@
       "outbounds": [
         "🇦🇹 AT 01 - mqgg5630-cyber",
         "🇦🇹 AT 02 - mqgg5630-cyber",
-        "🇦🇹 AT 03 - mqgg5630-cyber",
-        "🇦🇹 AT 04 - mqgg5630-cyber",
-        "🇦🇹 AT 05 - mqgg5630-cyber",
-        "🇦🇹 AT 06 - mqgg5630-cyber",
-        "🇦🇹 AT 07 - mqgg5630-cyber",
-        "🇦🇹 AT 08 - mqgg5630-cyber"
+        "🇦🇹 AT 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇹 AT 01 - mqgg5630-cyber",
-      "server": "213.111.148.137",
+      "server": "86.106.119.23",
       "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
       "tls": {
         "enabled": true,
-        "server_name": "shuma.ccwu.cc",
+        "server_name": "gr.freeguard.org",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 AT 02 - mqgg5630-cyber",
-      "server": "152.53.1.40",
-      "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at.quattro-tech.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
-        }
-      }
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
       "tag": "🇦🇹 AT 03 - mqgg5630-cyber",
-      "server": "213.111.148.137",
-      "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇹 AT 04 - mqgg5630-cyber",
-      "server": "212.183.88.136",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 AT 05 - mqgg5630-cyber",
       "server": "132.243.203.202",
       "server_port": 8443,
       "uuid": "b2593749-691c-428c-9481-14979cba3446",
@@ -129,58 +60,6 @@
         "path": "/",
         "headers": {
           "Host": "xi.tbv.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 AT 06 - mqgg5630-cyber",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 AT 07 - mqgg5630-cyber",
-      "server": "152.53.1.40",
-      "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at.quattro-tech.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 AT 08 - mqgg5630-cyber",
-      "server": "152.53.1.40",
-      "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at.quattro-tech.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
         }
       }
     },

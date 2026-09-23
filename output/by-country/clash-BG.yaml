@@ -6,45 +6,29 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
-  server: 193.148.59.178
+  server: 2.56.204.183
   port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇧🇬 BG 02 - mqgg5630-cyber
-  type: vless
-  server: 193.148.59.178
-  port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - mqgg5630-cyber
-  - 🇧🇬 BG 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - mqgg5630-cyber
-  - 🇧🇬 BG 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

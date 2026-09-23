@@ -8,36 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - mqgg5630-cyber"
+        "🇺🇿 UZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - mqgg5630-cyber"
+        "🇺🇿 UZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇸🇦 SA 01 - mqgg5630-cyber",
-      "server": "213.165.56.169",
+      "tag": "🇺🇿 UZ 01 - mqgg5630-cyber",
+      "server": "104.25.155.45",
       "server_port": 443,
-      "uuid": "974f2c7e-a292-4207-8315-ef4151bdca41",
-      "flow": "xtls-rprx-vision",
+      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
       "tls": {
         "enabled": true,
-        "server_name": "fl-api.bachidze.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo"
+        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "headers": {
+          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
         }
       }
     },

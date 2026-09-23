@@ -8,25 +8,29 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
-      "server": "p1tun3.greewebservices.ir",
-      "server_port": 2070,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ao5znrhEwVqoJy-l7AVvgw"
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+      "server": "119.246.1.143",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me/ripaojiedian",
+        "insecure": true
+      }
     },
     {
       "type": "direct",

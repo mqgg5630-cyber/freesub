@@ -1,0 +1,52 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇷 BR 01 - mqgg5630-cyber",
+        "🇧🇷 BR 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇷 BR 01 - mqgg5630-cyber",
+        "🇧🇷 BR 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 BR 01 - mqgg5630-cyber",
+      "server": "172.233.14.17",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 BR 02 - mqgg5630-cyber",
+      "server": "172.233.14.17",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
