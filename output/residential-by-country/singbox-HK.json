@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -28,8 +30,29 @@
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "t.me/ripaojiedian",
+        "server_name": "t.me",
         "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "server": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
       }
     },
     {
