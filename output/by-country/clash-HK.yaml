@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
+  type: trojan
+  server: 47.240.80.220
+  port: 2052
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  udp: true
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   type: vmess
   server: 89.223.95.77
   port: 22324
@@ -14,56 +22,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: vless
-  server: hk04.ccdn3.work
-  port: 793
-  uuid: d09c4ed0-a8bf-11f0-b155-cb2d176add19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dhwO3fomENJoBQO-T4NPxmTDgTOsUsTpG3NsaJdxsWw
-    short-id: bf92e87fff488bd3
-  servername: i1.hdslb.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: vless
-  server: hk04.ccdn3.work
-  port: 793
-  uuid: d09c4ed0-a8bf-11f0-b155-cb2d176add19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dhwO3fomENJoBQO-T4NPxmTDgTOsUsTpG3NsaJdxsWw
-    short-id: bf92e87fff488bd3
-  servername: i1.hdslb.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: trojan
-  server: 47.240.80.220
-  port: 2052
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  udp: true
-  sni: vpn.12169.top
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: vless
-  server: champion.xn--kivt58h.lol
-  port: 80
-  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -78,73 +55,30 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
   udp: true
-  sni: t.me/ripaojiedian
+  sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  type: ss
-  server: ehwn62tnx5g8.cdn000.com
-  port: 30003
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
   type: vmess
-  server: 47.243.65.243
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: ''
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: 119.246.1.143
-  skip-cert-verify: true
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,11 +91,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -174,10 +103,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

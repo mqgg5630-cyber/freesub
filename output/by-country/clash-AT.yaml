@@ -5,38 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
-  type: vless
-  server: g2.haxat.bestvbest.ir
-  port: 20610
-  uuid: 8ec5d86b-d895-477d-bc96-21fa01049f2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
-    short-id: 1d1a8f9fefeff5e6
-  servername: cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇦🇹 AT 02 - mqgg5630-cyber
-  type: vless
-  server: g2.haxat.bestvbest.ir
-  port: 20610
-  uuid: 8ec5d86b-d895-477d-bc96-21fa01049f2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
-    short-id: 1d1a8f9fefeff5e6
-  servername: cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇦🇹 AT 03 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 AT 02 - mqgg5630-cyber
+  type: vless
+  server: 50.7.184.122
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: at3.moritech.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +28,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
-  - 🇦🇹 AT 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,6 +35,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
-  - 🇦🇹 AT 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

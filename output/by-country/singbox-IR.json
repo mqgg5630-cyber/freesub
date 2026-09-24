@@ -21,12 +21,26 @@
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
-      "server": "p1tun2.greewebservices.ir",
-      "server_port": 2060,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cVvgP0Bz69hsErPBvqKbwQ"
+      "server": "62.60.152.1",
+      "server_port": 56328,
+      "uuid": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "table.vkroom-it-service.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M",
+          "short_id": "f3a9c21e8b6d4571"
+        }
+      }
     },
     {
       "type": "direct",
