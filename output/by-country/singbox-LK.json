@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - mqgg5630-cyber"
+        "🇱🇰 LK 01 - mqgg5630-cyber",
+        "🇱🇰 LK 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - mqgg5630-cyber"
+        "🇱🇰 LK 01 - mqgg5630-cyber",
+        "🇱🇰 LK 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -32,6 +34,18 @@
         "headers": {
           "Host": "free.sahanwickramasinghe.me"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 LK 02 - mqgg5630-cyber",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 443,
+      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "aka.ms",
+        "insecure": true
       }
     },
     {

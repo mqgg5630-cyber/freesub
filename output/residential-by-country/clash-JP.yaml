@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 167.82.101.251
-  port: 80
-  uuid: 0e9f7d2a-2f92-475e-b484-e79568a8a1a2
+  server: 104.26.7.214
+  port: 8880
+  uuid: 4bf6fee9-d3c4-4a98-b83b-170bf37c669c
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: Mankiamtr.global.ssl.fastly.net
+      Host: cold-water-945c.43-bc5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 01 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 01 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

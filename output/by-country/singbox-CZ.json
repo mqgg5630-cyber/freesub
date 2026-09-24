@@ -8,29 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 RO 01 - mqgg5630-cyber",
-      "server": "167.82.101.251",
-      "server_port": 80,
-      "uuid": "0e9f7d2a-2f92-475e-b484-e79568a8a1a2",
+      "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
+      "server": "172.67.203.158",
+      "server_port": 443,
+      "uuid": "911b84e1-d046-4fbf-bfc0-c168791115ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR",
         "headers": {
-          "Host": "Mankiamtr.global.ssl.fastly.net"
+          "Host": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev"
         }
       }
     },
