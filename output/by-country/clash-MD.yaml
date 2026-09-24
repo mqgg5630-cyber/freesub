@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - mqgg5630-cyber
   type: vless
-  server: 185.103.167.76
+  server: 185.103.167.223
+  port: 4443
+  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+    short-id: 694ee64512cfcbef
+  servername: moldova.cdn-europe.org
+  client-fingerprint: random
+- name: 🇲🇩 MD 02 - mqgg5630-cyber
+  type: vless
+  server: moldova.cdn-europe.org
   port: 4443
   uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
   udp: true
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇩 MD 01 - mqgg5630-cyber
+  - 🇲🇩 MD 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 MD 01 - mqgg5630-cyber
+  - 🇲🇩 MD 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

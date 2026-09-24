@@ -8,43 +8,43 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - mqgg5630-cyber",
-        "🇱🇰 LK 02 - mqgg5630-cyber"
+        "🇪🇪 EE 01 - mqgg5630-cyber",
+        "🇪🇪 EE 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - mqgg5630-cyber",
-        "🇱🇰 LK 02 - mqgg5630-cyber"
+        "🇪🇪 EE 01 - mqgg5630-cyber",
+        "🇪🇪 EE 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇱🇰 LK 01 - mqgg5630-cyber",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 443,
-      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
+      "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "tls": {
         "enabled": true,
-        "server_name": "aka.ms",
+        "server_name": "estproxy4.lockdwn.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇰 LK 02 - mqgg5630-cyber",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+          "Host": "94.183.170.135"
         }
       }
     },

@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - mqgg5630-cyber
   type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 CY 02 - mqgg5630-cyber
+  type: vless
   server: 5.253.42.164
   port: 40443
   uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
@@ -18,7 +31,72 @@ proxies:
     short-id: 68a8
   servername: deepl.com
   client-fingerprint: firefox
-- name: 🇨🇾 CY 02 - mqgg5630-cyber
+- name: 🇨🇾 CY 03 - mqgg5630-cyber
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 CY 04 - mqgg5630-cyber
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: random
+- name: 🇨🇾 CY 05 - mqgg5630-cyber
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 06 - mqgg5630-cyber
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 07 - mqgg5630-cyber
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 08 - mqgg5630-cyber
   type: vless
   server: 5.253.28.242
   port: 40443
@@ -39,6 +117,12 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - mqgg5630-cyber
   - 🇨🇾 CY 02 - mqgg5630-cyber
+  - 🇨🇾 CY 03 - mqgg5630-cyber
+  - 🇨🇾 CY 04 - mqgg5630-cyber
+  - 🇨🇾 CY 05 - mqgg5630-cyber
+  - 🇨🇾 CY 06 - mqgg5630-cyber
+  - 🇨🇾 CY 07 - mqgg5630-cyber
+  - 🇨🇾 CY 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +130,11 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - mqgg5630-cyber
   - 🇨🇾 CY 02 - mqgg5630-cyber
+  - 🇨🇾 CY 03 - mqgg5630-cyber
+  - 🇨🇾 CY 04 - mqgg5630-cyber
+  - 🇨🇾 CY 05 - mqgg5630-cyber
+  - 🇨🇾 CY 06 - mqgg5630-cyber
+  - 🇨🇾 CY 07 - mqgg5630-cyber
+  - 🇨🇾 CY 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
