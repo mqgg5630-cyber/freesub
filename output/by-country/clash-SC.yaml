@@ -6,33 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
   type: vless
-  server: 154.218.15.250
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
-- name: 🇸🇨 SC 03 - mqgg5630-cyber
-  type: vless
   server: 154.211.8.227
   port: 2087
   uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
@@ -45,6 +18,62 @@ proxies:
     path: /
     headers:
       Host: proxy-34l.pages.dev
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: vless
+  server: 156.226.168.221
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇸🇨 SC 03 - mqgg5630-cyber
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: firefox
+- name: 🇸🇨 SC 04 - mqgg5630-cyber
+  type: vless
+  server: 154.218.15.250
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
+- name: 🇸🇨 SC 05 - mqgg5630-cyber
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +82,8 @@ proxy-groups:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
+  - 🇸🇨 SC 04 - mqgg5630-cyber
+  - 🇸🇨 SC 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +92,7 @@ proxy-groups:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
+  - 🇸🇨 SC 04 - mqgg5630-cyber
+  - 🇸🇨 SC 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

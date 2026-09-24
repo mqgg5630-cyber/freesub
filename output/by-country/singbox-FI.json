@@ -31,44 +31,13 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "193.23.201.65",
-      "server_port": 5432,
-      "uuid": "e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee",
+      "server": "est1313.ggisopi.su",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "193.23.201.65",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "kayko.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "est1313.ggisopi.su",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -76,14 +45,32 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
       "server": "151.101.56.6",
       "server_port": 443,
       "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
@@ -102,7 +89,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
       "server": "k2.cloud--vpn.site",
       "server_port": 443,
       "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
@@ -116,6 +103,27 @@
         "path": "/",
         "headers": {
           "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
         }
       }
     },

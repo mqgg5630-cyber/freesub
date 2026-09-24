@@ -8,24 +8,25 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇴 CO 01 - mqgg5630-cyber"
+        "🇿🇦 ZA 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇴 CO 01 - mqgg5630-cyber"
+        "🇿🇦 ZA 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇨🇴 CO 01 - mqgg5630-cyber",
-      "server": "157.137.219.244",
-      "server_port": 62145,
-      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+      "type": "shadowsocks",
+      "tag": "🇿🇦 ZA 01 - mqgg5630-cyber",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
       "type": "direct",

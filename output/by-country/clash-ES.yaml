@@ -6,24 +6,21 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   type: ss
-  server: 140.174.184.5
+  server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
-  type: vless
-  server: 196.245.52.147
-  port: 25535
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-    short-id: 7642ce57308852e7
-  servername: www.microsoft.com
-  client-fingerprint: qq
 - name: 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
   type: vmess
   server: 66.163.118.73
@@ -34,6 +31,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +46,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
+  - 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +55,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
+  - 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
