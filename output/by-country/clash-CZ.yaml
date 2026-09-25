@@ -18,17 +18,48 @@ proxies:
     short-id: 0c13e8822e7f58aa
   servername: gerwai1488.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: vless
+  server: 87.120.216.144
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
+  type: trojan
+  server: 104.21.76.194
+  port: 443
+  password: Telegram_healer_config
+  udp: true
+  sni: X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed
+    headers:
+      Host: x8xus4x7utzmdozv2.bzuh25lzinnetwtocxyicx.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

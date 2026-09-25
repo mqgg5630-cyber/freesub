@@ -6,38 +6,29 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
   type: vless
-  server: 45.90.59.15
+  server: 185.18.250.245
   port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 02 - mqgg5630-cyber
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - mqgg5630-cyber
-  - 🇨🇭 CH 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - mqgg5630-cyber
-  - 🇨🇭 CH 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
