@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - mqgg5630-cyber
-  type: vless
-  server: 185.18.250.245
+- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber
+  type: trojan
+  server: 151.101.56.255
   port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  password: MiTiVPN
   udp: true
-  tls: true
+  sni: ssl.fastly.com
   skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /nl-tw
+    path: /
     headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
+      Host: mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - mqgg5630-cyber
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - mqgg5630-cyber
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
