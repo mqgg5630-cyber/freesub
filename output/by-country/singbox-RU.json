@@ -8,34 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber",
-      "server": "151.101.56.255",
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+      "server": "46.8.200.91",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "cf3.rumedia-cdn.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/cdn/v3/live",
         "headers": {
-          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
+          "Host": "cf3.rumedia-cdn.com"
         }
       }
     },

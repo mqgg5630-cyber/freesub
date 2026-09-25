@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
-  server: 94.183.224.45
-  port: 443
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: a1b2c3d4e5f67890
-  servername: dzen.ru
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
-  type: vless
   server: cdn.snobvpn.online
   port: 80
   uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
@@ -31,6 +17,20 @@ proxies:
     path: /snob-ws
     headers:
       Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
+  type: vless
+  server: 146.70.102.82
+  port: 443
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
@@ -46,7 +46,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -57,6 +57,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+    short-id: f6c7c139b9c938db
+  servername: maps.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +79,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +89,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

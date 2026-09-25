@@ -22,7 +22,21 @@ proxies:
   type: vless
   server: au1.gsafevpnapi.com
   port: 20270
-  uuid: 52e89791-cc65-4cdb-9d3a-7c06df9f6ebd
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
+  type: vless
+  server: au1.gsafevpnapi.com
+  port: 20270
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
   udp: true
   tls: true
   skip-cert-verify: true
@@ -32,20 +46,6 @@ proxies:
     short-id: e6a5a4a9115456de
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
-  type: vless
-  server: 51.161.204.244
-  port: 443
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
   type: vless
   server: 51.161.204.244
@@ -59,7 +59,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
   type: vless
   server: 51.161.204.244
@@ -87,20 +87,20 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
   type: vless
-  server: au1.gsafevpnapi.com
-  port: 20270
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  server: 51.161.204.244
+  port: 443
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
   type: vless
@@ -129,7 +129,30 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 (Australia) 10 - mqgg5630-cyber
+  type: vless
+  server: 172.105.169.70
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 11 - mqgg5630-cyber
+  type: vless
+  server: au1.gsafevpnapi.com
+  port: 20270
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +167,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 09 - mqgg5630-cyber
+  - 🇦🇺 澳大利亚 (Australia) 10 - mqgg5630-cyber
+  - 🇦🇺 澳大利亚 (Australia) 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +183,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 09 - mqgg5630-cyber
+  - 🇦🇺 澳大利亚 (Australia) 10 - mqgg5630-cyber
+  - 🇦🇺 澳大利亚 (Australia) 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

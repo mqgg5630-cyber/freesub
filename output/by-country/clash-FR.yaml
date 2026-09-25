@@ -6,12 +6,79 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - mqgg5630-cyber
   type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 02 - mqgg5630-cyber
+  type: vless
+  server: 51.68.215.88
+  port: 443
+  uuid: 0774160b-be44-4781-aad7-1a1745a36659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
+    short-id: 6337fd42719a0912
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 03 - mqgg5630-cyber
+  type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 02 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 04 - mqgg5630-cyber
+  type: ss
+  server: 141.227.134.63
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
+- name: 🇫🇷 法国 (France) 05 - mqgg5630-cyber
+  type: vless
+  server: fra2.loozerp.wiki
+  port: 443
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: fra2.loozerp.wiki
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 06 - mqgg5630-cyber
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 07 - mqgg5630-cyber
+  type: vless
+  server: 35.157.240.237
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 08 - mqgg5630-cyber
   type: vless
   server: 62.210.91.2
   port: 23576
@@ -25,129 +92,9 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - mqgg5630-cyber
-  type: vless
-  server: 185.171.202.106
-  port: 443
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: fra2.loozerp.wiki
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 04 - mqgg5630-cyber
-  type: ss
-  server: 141.227.134.63
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - mqgg5630-cyber
-  type: trojan
-  server: 185.114.72.31
-  port: 2053
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 06 - mqgg5630-cyber
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - mqgg5630-cyber
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 08 - mqgg5630-cyber
-  type: vless
-  server: 185.171.202.105
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: fra.loozerp.wiki
-  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 09 - mqgg5630-cyber
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 10 - mqgg5630-cyber
   type: vless
-  server: 45.95.96.236
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  servername: gesmankos.sadiepinki.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 11 - mqgg5630-cyber
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 12 - mqgg5630-cyber
-  type: vless
-  server: 45.95.96.236
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  servername: gesmankos.sadiepinki.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 13 - mqgg5630-cyber
-  type: vless
-  server: 81.95.4.189
+  server: 149.202.58.99
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -158,8 +105,8 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 14 - mqgg5630-cyber
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 10 - mqgg5630-cyber
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -170,19 +117,58 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 11 - mqgg5630-cyber
+  type: vless
+  server: 162.19.10.99
+  port: 443
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: nasnet-162191099-direct.mbghalibaf.com
+- name: 🇫🇷 法国 (France) 12 - mqgg5630-cyber
+  type: vless
+  server: 172.64.32.108
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 13 - mqgg5630-cyber
+  type: vless
+  server: 52.47.71.76
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 14 - mqgg5630-cyber
+  type: vless
+  server: 15.188.130.104
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 15 - mqgg5630-cyber
   type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  server: 51.68.215.88
+  port: 443
+  uuid: 0774160b-be44-4781-aad7-1a1745a36659
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: ''
-  servername: fuck.rkn
+    public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
+    short-id: 6337fd42719a0912
+  servername: www.icloud.com
   client-fingerprint: random
 - name: 🇫🇷 法国 (France) 16 - mqgg5630-cyber
   type: vless
@@ -200,7 +186,7 @@ proxies:
       Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 17 - mqgg5630-cyber
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -210,16 +196,6 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 18 - mqgg5630-cyber
-  type: vless
-  server: 162.19.10.99
-  port: 443
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: nasnet-162191099-direct.mbghalibaf.com
-- name: 🇫🇷 法国 (France) 19 - mqgg5630-cyber
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -230,148 +206,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 20 - mqgg5630-cyber
-  type: vless
-  server: 162.19.10.99
-  port: 443
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: nasnet-162191099-direct.mbghalibaf.com
-- name: 🇫🇷 法国 (France) 21 - mqgg5630-cyber
-  type: vless
-  server: 104.18.80.149
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
-    headers:
-      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
-- name: 🇫🇷 法国 (France) 22 - mqgg5630-cyber
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 23 - mqgg5630-cyber
-  type: vless
-  server: 62.210.91.10
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 24 - mqgg5630-cyber
-  type: trojan
-  server: 104.16.72.50
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 25 - mqgg5630-cyber
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 26 - mqgg5630-cyber
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 27 - mqgg5630-cyber
-  type: vless
-  server: 137.74.16.237
-  port: 443
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 28 - mqgg5630-cyber
-  type: vless
-  server: 51.68.215.88
-  port: 443
-  uuid: 0774160b-be44-4781-aad7-1a1745a36659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
-    short-id: 6337fd42719a0912
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 29 - mqgg5630-cyber
-  type: ss
-  server: 141.227.134.63
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇫🇷 法国 (France) 30 - mqgg5630-cyber
-  type: vless
-  server: 162.19.10.99
-  port: 443
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: nasnet-162191099-direct.mbghalibaf.com
-- name: 🇫🇷 法国 (France) 31 - mqgg5630-cyber
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 32 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 19 - mqgg5630-cyber
   type: vless
   server: 81.95.4.189
   port: 443
@@ -385,6 +220,340 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
+- name: 🇫🇷 法国 (France) 20 - mqgg5630-cyber
+  type: vless
+  server: fra.loozerp.wiki
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: fra.loozerp.wiki
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 21 - mqgg5630-cyber
+  type: vless
+  server: 162.159.0.53
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 22 - mqgg5630-cyber
+  type: vless
+  server: 62.210.91.10
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 23 - mqgg5630-cyber
+  type: vless
+  server: 108.162.198.178
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 24 - mqgg5630-cyber
+  type: vless
+  server: 62.210.91.10
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: ''
+  servername: fuck.rkn
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 25 - mqgg5630-cyber
+  type: vless
+  server: 15.188.130.104
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 26 - mqgg5630-cyber
+  type: trojan
+  server: 104.18.9.83
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 27 - mqgg5630-cyber
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 28 - mqgg5630-cyber
+  type: vless
+  server: 52.47.71.76
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 29 - mqgg5630-cyber
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 30 - mqgg5630-cyber
+  type: vless
+  server: 172.64.154.8
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 31 - mqgg5630-cyber
+  type: vless
+  server: 137.74.16.237
+  port: 443
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 32 - mqgg5630-cyber
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 33 - mqgg5630-cyber
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 34 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 35 - mqgg5630-cyber
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 36 - mqgg5630-cyber
+  type: vless
+  server: 15.188.130.104
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 37 - mqgg5630-cyber
+  type: vless
+  server: 51.68.215.88
+  port: 443
+  uuid: 0774160b-be44-4781-aad7-1a1745a36659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg
+    short-id: 6337fd42719a0912
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 38 - mqgg5630-cyber
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 39 - mqgg5630-cyber
+  type: vless
+  server: 52.47.71.76
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 40 - mqgg5630-cyber
+  type: vless
+  server: 104.18.46.46
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 41 - mqgg5630-cyber
+  type: vless
+  server: 172.64.32.108
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 42 - mqgg5630-cyber
+  type: vless
+  server: 162.19.10.99
+  port: 443
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: nasnet-162191099-direct.mbghalibaf.com
+- name: 🇫🇷 法国 (France) 43 - mqgg5630-cyber
+  type: vless
+  server: 108.162.198.178
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 44 - mqgg5630-cyber
+  type: vless
+  server: 172.64.154.8
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 45 - mqgg5630-cyber
+  type: vless
+  server: 104.18.34.14
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 46 - mqgg5630-cyber
+  type: vless
+  server: 104.18.46.46
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -422,6 +591,20 @@ proxy-groups:
   - 🇫🇷 法国 (France) 30 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 31 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 32 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 33 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 34 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 35 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 36 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 37 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 38 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 39 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 40 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 41 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 42 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 43 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 44 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 45 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 46 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -459,5 +642,19 @@ proxy-groups:
   - 🇫🇷 法国 (France) 30 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 31 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 32 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 33 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 34 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 35 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 36 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 37 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 38 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 39 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 40 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 41 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 42 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 43 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 44 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 45 - mqgg5630-cyber
+  - 🇫🇷 法国 (France) 46 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
