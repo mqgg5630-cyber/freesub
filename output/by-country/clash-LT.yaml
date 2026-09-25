@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - mqgg5630-cyber
+- name: 🇱🇹 LT 01 - mqgg5630-cyber
   type: vless
-  server: 45.90.59.15
+  server: 94.176.234.161
   port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+  servername: www.intel.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - mqgg5630-cyber
+  - 🇱🇹 LT 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - mqgg5630-cyber
+  - 🇱🇹 LT 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
