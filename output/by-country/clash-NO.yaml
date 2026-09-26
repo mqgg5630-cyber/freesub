@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 NO 01 - mqgg5630-cyber
-  type: vless
-  server: 89.185.81.95
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  type: ss
+  server: 139.100.236.74
+  port: 1
+  cipher: chacha20-ietf-poly1305
+  password: WxYpOK1iPSJySbVNMMJDtw
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
-    short-id: 7bf47eabf939728b
-  servername: r-b8a34c.vless.monster
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

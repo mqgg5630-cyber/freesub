@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 9ccf8612-5e16-4b16-834e-4df5fe3611cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA--/@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
   server: est1313.ggisopi.su
   port: 443
   uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
@@ -32,19 +18,34 @@ proxies:
     short-id: ''
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 78.17.85.30
+  port: 443
+  uuid: 482514e8-2979-4628-acf3-d04f607c4f12
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zsHnZqOsCsD1-WFxqIsQZAuS9KNyGLmFD7KFHf7PRF8
+    short-id: 04f1c6d2
+  servername: flo.ufogame.tech
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 9b97afca-888a-4506-9e6b-7506e677dba0
+  server: 78.17.85.30
+  port: 443
+  uuid: 482514e8-2979-4628-acf3-d04f607c4f12
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zsHnZqOsCsD1-WFxqIsQZAuS9KNyGLmFD7KFHf7PRF8
+    short-id: 04f1c6d2
+  servername: flo.ufogame.tech
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 83.219.97.26
@@ -61,7 +62,33 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: a2.arshia-nova.ir
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: 151.101.56.6
   port: 443
   uuid: 9ccf8612-5e16-4b16-834e-4df5fe3611cd
   udp: true
@@ -70,10 +97,10 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--BYA--/@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: vless
   server: 83.219.97.26
   port: 443
@@ -87,34 +114,6 @@ proxies:
     short-id: ''
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
-  type: vless
-  server: est1313.ggisopi.su
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
-  type: vless
-  server: 78.17.85.30
-  port: 443
-  uuid: 482514e8-2979-4628-acf3-d04f607c4f12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zsHnZqOsCsD1-WFxqIsQZAuS9KNyGLmFD7KFHf7PRF8
-    short-id: 04f1c6d2
-  servername: flo.ufogame.tech
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: vless
   server: est1313.ggisopi.su
@@ -129,43 +128,6 @@ proxies:
     short-id: ''
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
-- name: 🇫🇮 FI 10 - mqgg5630-cyber
-  type: vless
-  server: 78.17.85.30
-  port: 443
-  uuid: 482514e8-2979-4628-acf3-d04f607c4f12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zsHnZqOsCsD1-WFxqIsQZAuS9KNyGLmFD7KFHf7PRF8
-    short-id: 04f1c6d2
-  servername: flo.ufogame.tech
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 11 - mqgg5630-cyber
-  type: vmess
-  server: 65.109.178.91
-  port: 8443
-  uuid: e845df14-639d-40ca-844e-32ccd83afb61
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 12 - mqgg5630-cyber
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -180,9 +142,6 @@ proxy-groups:
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
   - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
-  - 🇫🇮 FI 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -197,8 +156,5 @@ proxy-groups:
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
   - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
-  - 🇫🇮 FI 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
