@@ -6,14 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 144.31.2.33
+  server: 104.17.247.68
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
   server: 144.31.5.3
@@ -26,15 +30,45 @@ proxies:
   servername: pl4.moritech.net
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
-  server: 144.31.5.64
+  server: 144.31.2.33
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: pl6.moritech.net
+  servername: pl3.moritech.net
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: vless
+  server: pl3.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
   server: 144.31.5.64
   port: 443
@@ -44,7 +78,69 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl6.moritech.net
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: vless
+  server: 151.241.138.151
+  port: 8444
+  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
+    short-id: a3f509aa7a4b41cc
+  servername: pl1.gursub.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
+  type: vless
+  server: 151.241.138.151
+  port: 8444
+  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
+    short-id: a3f509aa7a4b41cc
+  servername: pl1.gursub.com
+  client-fingerprint: safari
+- name: 🇵🇱 PL 11 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl6.moritech.net
+- name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: vless
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 13 - mqgg5630-cyber
   type: vless
   server: 144.31.131.38
   port: 443
@@ -58,21 +154,7 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 144.31.131.38
-  port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
+- name: 🇵🇱 PL 14 - mqgg5630-cyber
   type: vless
   server: 144.31.5.64
   port: 443
@@ -82,36 +164,20 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl6.moritech.net
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
+- name: 🇵🇱 PL 15 - mqgg5630-cyber
   type: vless
-  server: pl3.moritech.net
+  server: 104.25.146.77
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: vless
-  server: pl3.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -127,6 +193,11 @@ proxy-groups:
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
   - 🇵🇱 PL 10 - mqgg5630-cyber
+  - 🇵🇱 PL 11 - mqgg5630-cyber
+  - 🇵🇱 PL 12 - mqgg5630-cyber
+  - 🇵🇱 PL 13 - mqgg5630-cyber
+  - 🇵🇱 PL 14 - mqgg5630-cyber
+  - 🇵🇱 PL 15 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +213,10 @@ proxy-groups:
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
   - 🇵🇱 PL 10 - mqgg5630-cyber
+  - 🇵🇱 PL 11 - mqgg5630-cyber
+  - 🇵🇱 PL 12 - mqgg5630-cyber
+  - 🇵🇱 PL 13 - mqgg5630-cyber
+  - 🇵🇱 PL 14 - mqgg5630-cyber
+  - 🇵🇱 PL 15 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

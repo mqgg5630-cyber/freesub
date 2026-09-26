@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: vless
-  server: 146.70.124.85
+  type: ss
+  server: 154.46.31.106
   port: 443
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

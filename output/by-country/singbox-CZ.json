@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,27 @@
     {
       "type": "vless",
       "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
+      "server": "13.143.181.220",
+      "server_port": 443,
+      "uuid": "7a8d2c3f-d6dd-0004-81d8-cff23d8364ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "msk1.maxtelemost.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
       "server": "13.143.181.220",
       "server_port": 443,
       "uuid": "7a8d2c3f-d6dd-0004-81d8-cff23d8364ee",

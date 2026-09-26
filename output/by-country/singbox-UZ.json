@@ -1,0 +1,93 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇿 UZ 01 - mqgg5630-cyber",
+        "🇺🇿 UZ 02 - mqgg5630-cyber",
+        "🇺🇿 UZ 03 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇿 UZ 01 - mqgg5630-cyber",
+        "🇺🇿 UZ 02 - mqgg5630-cyber",
+        "🇺🇿 UZ 03 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇿 UZ 01 - mqgg5630-cyber",
+      "server": "104.24.143.217",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "tls": {
+        "enabled": true,
+        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "headers": {
+          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇿 UZ 02 - mqgg5630-cyber",
+      "server": "172.67.210.146",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "tls": {
+        "enabled": true,
+        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "headers": {
+          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇿 UZ 03 - mqgg5630-cyber",
+      "server": "104.25.155.45",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "tls": {
+        "enabled": true,
+        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "headers": {
+          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

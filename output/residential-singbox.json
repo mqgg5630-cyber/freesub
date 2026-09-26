@@ -9,8 +9,15 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 08 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 09 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 10 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -18,8 +25,15 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 08 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 09 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 10 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,7 +41,27 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "59.125.69.24",
+      "server": "118.167.230.191",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "60.248.219.54",
       "server_port": 443,
       "uuid": "06e177f7-240d-4687-bd85-235505801a5e",
       "tls": {
@@ -39,13 +73,21 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "59.125.69.24"
+          "Host": "60.248.219.54"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+      "server": "ce1fc2d8.krkt.hkssip.com",
+      "server_port": 49642,
+      "method": "aes-256-gcm",
+      "password": "ac9c0a7b"
+    },
+    {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
@@ -57,21 +99,83 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-      "server": "118.167.230.191",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber",
+      "server": "104.18.39.218",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber",
+      "server": "36.224.141.124",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - mqgg5630-cyber",
+      "server": "namrcg001640lrm.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 08 (家宽) - mqgg5630-cyber",
+      "server": "116.204.164.60",
+      "server_port": 7443,
+      "uuid": "c676be7d-b481-4bba-88d0-65855e09dc67",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 09 (家宽) - mqgg5630-cyber",
+      "server": "162.159.91.222",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-723a643df685",
+      "tls": {
+        "enabled": true,
+        "server_name": "n3zaxce7u0es.crzl48eiuses.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/723a643df685/loc-0",
+        "headers": {
+          "Host": "n3zaxce7u0es.crzl48eiuses.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 10 (家宽) - mqgg5630-cyber",
+      "server": "172.64.42.85",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
