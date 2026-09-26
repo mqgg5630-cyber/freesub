@@ -31,7 +31,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   type: vless
   server: 51.161.204.244
@@ -60,20 +60,6 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
-  type: vless
-  server: 51.161.204.244
-  port: 443
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +69,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +78,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

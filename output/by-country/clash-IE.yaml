@@ -25,8 +25,86 @@ proxies:
   flow: xtls-rprx-vision
   servername: ireland-new-ded1.failspace.top
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: C8QhmBLJzhKo2JHR
+  udp: true
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r732TlgjWIjfRcok
+  udp: true
+- name: 🇮🇪 IE 05 - mqgg5630-cyber
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: C8QhmBLJzhKo2JHR
+  udp: true
+- name: 🇮🇪 IE 06 - mqgg5630-cyber
+  type: vless
+  server: 50.7.5.187
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ireland-new-ded1.failspace.top
+- name: 🇮🇪 IE 07 - mqgg5630-cyber
   type: vless
   server: ireland-new-ded1.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ireland-new-ded1.failspace.top
+- name: 🇮🇪 IE 08 - mqgg5630-cyber
+  type: vless
+  server: ireland-new-ded1.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ireland-new-ded1.failspace.top
+- name: 🇮🇪 IE 09 - mqgg5630-cyber
+  type: vless
+  server: ireland-new-ded1.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ireland-new-ded1.failspace.top
+- name: 🇮🇪 IE 10 - mqgg5630-cyber
+  type: vless
+  server: ir-new.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ir-new.failspace.top
+- name: 🇮🇪 IE 11 - mqgg5630-cyber
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V3WiGKNQiqOCsT60
+  udp: true
+- name: 🇮🇪 IE 12 - mqgg5630-cyber
+  type: vless
+  server: 50.7.5.187
   port: 443
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
@@ -42,6 +120,15 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
+  - 🇮🇪 IE 05 - mqgg5630-cyber
+  - 🇮🇪 IE 06 - mqgg5630-cyber
+  - 🇮🇪 IE 07 - mqgg5630-cyber
+  - 🇮🇪 IE 08 - mqgg5630-cyber
+  - 🇮🇪 IE 09 - mqgg5630-cyber
+  - 🇮🇪 IE 10 - mqgg5630-cyber
+  - 🇮🇪 IE 11 - mqgg5630-cyber
+  - 🇮🇪 IE 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +137,14 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
+  - 🇮🇪 IE 05 - mqgg5630-cyber
+  - 🇮🇪 IE 06 - mqgg5630-cyber
+  - 🇮🇪 IE 07 - mqgg5630-cyber
+  - 🇮🇪 IE 08 - mqgg5630-cyber
+  - 🇮🇪 IE 09 - mqgg5630-cyber
+  - 🇮🇪 IE 10 - mqgg5630-cyber
+  - 🇮🇪 IE 11 - mqgg5630-cyber
+  - 🇮🇪 IE 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -24,16 +24,6 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: md-new.failspace.top
-- name: 🇲🇩 MD 03 - mqgg5630-cyber
-  type: vless
-  server: md-new.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: md-new.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇲🇩 MD 01 - mqgg5630-cyber
   - 🇲🇩 MD 02 - mqgg5630-cyber
-  - 🇲🇩 MD 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇲🇩 MD 01 - mqgg5630-cyber
   - 🇲🇩 MD 02 - mqgg5630-cyber
-  - 🇲🇩 MD 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
