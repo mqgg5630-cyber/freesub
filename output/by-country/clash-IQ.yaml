@@ -17,22 +17,8 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇮🇶 IQ 02 - mqgg5630-cyber
-  type: vless
-  server: 193.56.135.233
-  port: 9543
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
   client-fingerprint: safari
-- name: 🇮🇶 IQ 03 - mqgg5630-cyber
+- name: 🇮🇶 IQ 02 - mqgg5630-cyber
   type: vless
   server: 193.56.135.212
   port: 9543
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇶 IQ 01 - mqgg5630-cyber
   - 🇮🇶 IQ 02 - mqgg5630-cyber
-  - 🇮🇶 IQ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇶 IQ 01 - mqgg5630-cyber
   - 🇮🇶 IQ 02 - mqgg5630-cyber
-  - 🇮🇶 IQ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

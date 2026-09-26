@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber",
+        "🇲🇩 MD 02 - mqgg5630-cyber",
+        "🇲🇩 MD 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber",
+        "🇲🇩 MD 02 - mqgg5630-cyber",
+        "🇲🇩 MD 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +27,32 @@
     {
       "type": "vless",
       "tag": "🇲🇩 MD 01 - mqgg5630-cyber",
+      "server": "80.96.109.8",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision-udp443",
+      "tls": {
+        "enabled": true,
+        "server_name": "md-new.failspace.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD 02 - mqgg5630-cyber",
+      "server": "md-new.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "md-new.failspace.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD 03 - mqgg5630-cyber",
       "server": "md-new.failspace.top",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",

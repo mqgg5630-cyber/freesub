@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - mqgg5630-cyber"
+        "🇨🇭 CH 01 - mqgg5630-cyber",
+        "🇨🇭 CH 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - mqgg5630-cyber"
+        "🇨🇭 CH 01 - mqgg5630-cyber",
+        "🇨🇭 CH 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,19 +25,38 @@
     {
       "type": "vless",
       "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
-      "server": "185.18.250.245",
-      "server_port": 443,
-      "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
+      "server": "104.21.200.243",
+      "server_port": 2053,
+      "uuid": "7074b9d7-2183-8919-fc11-ca5e00000000",
       "tls": {
         "enabled": true,
-        "server_name": "edu.ruangguru.com.r3xxe.eu.cc",
+        "server_name": "netlivpn2584.vjvdgbc.workers.dev",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/nl-tw",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
         "headers": {
-          "Host": "edu.ruangguru.com.r3xxe.eu.cc"
+          "Host": "netlivpn2584.vjvdgbc.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "server": "185.18.250.245",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
