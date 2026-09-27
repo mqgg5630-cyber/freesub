@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
+  type: trojan
+  server: 45.130.125.75
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇸🇨 SC 03 - mqgg5630-cyber
   type: vless
   server: 144.31.50.236
   port: 443
@@ -18,61 +44,6 @@ proxies:
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: vless
-  server: 45.130.125.126
-  port: 443
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇸🇨 SC 03 - mqgg5630-cyber
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 04 - mqgg5630-cyber
-  type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
-- name: 🇸🇨 SC 05 - mqgg5630-cyber
-  type: vless
-  server: 154.218.15.250
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,8 +52,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
-  - 🇸🇨 SC 04 - mqgg5630-cyber
-  - 🇸🇨 SC 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,7 +60,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
   - 🇸🇨 SC 03 - mqgg5630-cyber
-  - 🇸🇨 SC 04 - mqgg5630-cyber
-  - 🇸🇨 SC 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

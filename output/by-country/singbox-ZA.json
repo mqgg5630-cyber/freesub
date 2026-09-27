@@ -10,7 +10,8 @@
         "auto",
         "🇿🇦 ZA 01 - mqgg5630-cyber",
         "🇿🇦 ZA 02 - mqgg5630-cyber",
-        "🇿🇦 ZA 03 - mqgg5630-cyber"
+        "🇿🇦 ZA 03 - mqgg5630-cyber",
+        "🇿🇦 ZA 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,24 +20,19 @@
       "outbounds": [
         "🇿🇦 ZA 01 - mqgg5630-cyber",
         "🇿🇦 ZA 02 - mqgg5630-cyber",
-        "🇿🇦 ZA 03 - mqgg5630-cyber"
+        "🇿🇦 ZA 03 - mqgg5630-cyber",
+        "🇿🇦 ZA 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇿🇦 ZA 01 - mqgg5630-cyber",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
-        }
-      }
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
       "type": "shadowsocks",
@@ -53,6 +49,20 @@
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
       "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 ZA 04 - mqgg5630-cyber",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
     },
     {
       "type": "direct",

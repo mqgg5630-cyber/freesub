@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - mqgg5630-cyber
   type: vless
-  server: kazartip.thewalkingded.life
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  server: 89.218.15.90
+  port: 10002
+  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
+  servername: kz1.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: kz1.vpnjantit.com
 - name: 🇰🇿 KZ 02 - mqgg5630-cyber
   type: vless
   server: 89.218.15.90
@@ -32,20 +32,6 @@ proxies:
     path: /vpnjantit
     headers:
       Host: kz1.vpnjantit.com
-- name: 🇰🇿 KZ 03 - mqgg5630-cyber
-  type: vless
-  server: kazartip.thewalkingded.life
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
-  - 🇰🇿 KZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
-  - 🇰🇿 KZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

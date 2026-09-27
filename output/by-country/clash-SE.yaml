@@ -5,26 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: vless
-  server: 143.246.195.98
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.195.98
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: 5.157.10.148
   port: 443
@@ -38,20 +25,6 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: random
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: vless
-  server: 31.207.7.246
-  port: 443
-  uuid: 206234ff-0e18-4b95-923b-90f60d846d7d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
-    short-id: 2d6d073dc88f22a8
-  servername: nordic.global-cdn.org
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
-  - 🇸🇪 SE 03 - mqgg5630-cyber
-  - 🇸🇪 SE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
-  - 🇸🇪 SE 03 - mqgg5630-cyber
-  - 🇸🇪 SE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
