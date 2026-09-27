@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇶 IQ 01 - mqgg5630-cyber",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
+      "tls": {
+        "enabled": true,
+        "server_name": "6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/N61UxT346epoPVmA9xFM6H00?ed=2560",
+        "headers": {
+          "Host": "6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
