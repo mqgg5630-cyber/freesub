@@ -9,7 +9,10 @@
       "outbounds": [
         "auto",
         "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber",
+        "🇸🇪 SE 04 - mqgg5630-cyber",
+        "🇸🇪 SE 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +20,10 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber",
+        "🇸🇪 SE 04 - mqgg5630-cyber",
+        "🇸🇪 SE 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -43,7 +49,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -51,6 +57,54 @@
           "short_id": "fb442438e2223836"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
+      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "surstreming.vvzzkontaktezzvv.garden",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
+      "server": "103.177.249.40",
+      "server_port": 2083,
+      "uuid": "97532b08-357e-4140-a6f0-8e07f2ed3327",
+      "tls": {
+        "enabled": true,
+        "server_name": "yf.962456.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=kr.william.us.ci",
+        "headers": {
+          "Host": "yf.962456.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 05 - mqgg5630-cyber",
+      "server": "51.170.176.145",
+      "server_port": 62145,
+      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
     },
     {
       "type": "direct",

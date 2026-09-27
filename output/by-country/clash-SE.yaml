@@ -24,7 +24,43 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: vless
+  server: surstreming.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
+  type: vless
+  server: 103.177.249.40
+  port: 2083
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: yf.962456.xyz
+  network: ws
+  ws-opts:
+    path: /proxyip=kr.william.us.ci
+    headers:
+      Host: yf.962456.xyz
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vless
+  server: 51.170.176.145
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +68,9 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
+  - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +78,8 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
+  - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

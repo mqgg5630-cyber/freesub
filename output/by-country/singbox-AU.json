@@ -13,9 +13,7 @@
         "🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber",
         "🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber",
         "🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber",
-        "🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber",
-        "🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber",
-        "🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber"
+        "🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -27,9 +25,7 @@
         "🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber",
         "🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber",
         "🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber",
-        "🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber",
-        "🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber",
-        "🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber"
+        "🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -37,19 +33,22 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - mqgg5630-cyber",
-      "server": "208.103.161.5",
+      "server": "51.161.204.244",
       "server_port": 443,
-      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
         }
       }
     },
@@ -88,7 +87,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -132,7 +131,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -161,40 +160,6 @@
           "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
           "short_id": "0ad08b47f498efd2"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber",
-      "server": "51.161.204.244",
-      "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber",
-      "server": "172.105.169.70",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "172.105.169.70",
-        "insecure": true
       }
     },
     {
