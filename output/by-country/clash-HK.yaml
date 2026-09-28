@@ -6,43 +6,57 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   type: trojan
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
+  udp: true
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+  type: vless
+  server: 45.207.157.8
+  port: 9443
+  uuid: 966990b5-5868-4af1-add6-011c72b4a443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  type: trojan
   server: 47.240.80.220
   port: 2052
   password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
   udp: true
   sni: 47.240.80.220
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: t.me%2fripaojiedian
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: t.me
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   type: vless
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
+  server: 45.207.157.8
+  port: 9443
+  uuid: 966990b5-5868-4af1-add6-011c72b4a443
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
+  type: trojan
+  server: 47.240.80.220
+  port: 2052
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  udp: true
+  sni: 47.240.80.220
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   type: trojan
   server: 2.27.109.179
   port: 45464
@@ -50,21 +64,20 @@ proxies:
   udp: true
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: v7qnj9jvxtnpmj4l
-  udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
+  type: vless
+  server: 45.207.157.8
+  port: 9443
+  uuid: 966990b5-5868-4af1-add6-011c72b4a443
   udp: true
-  sni: t.me/ripaojiedian
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
   type: vmess
   server: 156.245.232.239
@@ -81,13 +94,19 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
+  type: vless
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
   udp: true
-  sni: t.me%252fripaojiedian
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   type: vless
   server: 45.207.157.8
@@ -101,24 +120,8 @@ proxies:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
     short-id: b390142456517acc
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  type: vmess
-  server: kbondxw9lifci4h4.v.3dns.vip
-  port: 443
-  uuid: f0b7bbd66aad458aaec0e9acaab768b6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kbondxw9lifci4h4.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: kbondxw9lifci4h4.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
   type: vless
   server: 45.207.157.8
   port: 9443
@@ -131,30 +134,7 @@ proxies:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
     short-id: b390142456517acc
   servername: www.amazon.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
-  type: vmess
-  server: syj2ggugmwbwqwqx.v.3dns.vip
-  port: 443
-  uuid: f0b7bbd66aad458aaec0e9acaab768b6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: syj2ggugmwbwqwqx.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: syj2ggugmwbwqwqx.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: ac2jdpwv1zl10jim
-  udp: true
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,9 +151,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -190,8 +167,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

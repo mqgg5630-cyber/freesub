@@ -12,7 +12,12 @@
         "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber"
       ]
     },
     {
@@ -23,14 +28,27 @@
         "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+      "server": "176.32.35.2",
+      "server_port": 10090,
+      "method": "aes-256-gcm",
+      "password": "895b4b796a357570"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
       "server": "fbsv6.guardora.pro",
       "server_port": 443,
       "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
@@ -48,16 +66,126 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "176.32.35.2",
-      "server_port": 10090,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "162.159.24.131",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
+      "server": "151.101.56.255",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+      "server": "162.159.39.218",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
+      "server": "95.163.232.171",
+      "server_port": 14443,
+      "uuid": "365de9e9-ba29-4819-af2d-766f9638e3be",
+      "tls": {
+        "enabled": true,
+        "server_name": "media-se.compressor.work",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "95.163.232.171"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+      "server": "217.19.122.200",
+      "server_port": 443,
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+      "tls": {
+        "enabled": true,
+        "server_name": "fbsv6.guardora.pro",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "fbsv6.guardora.pro"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+      "server": "172.64.42.85",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
+      "server": "151.101.56.255",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber",
       "server": "185.255.114.91",
       "server_port": 8443,
       "uuid": "7faa65a6-b43b-413e-9480-a81fae3d0c49",
@@ -74,34 +202,6 @@
           "enabled": true,
           "public_key": "VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U",
           "short_id": "1be482b8e08aa0ef"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
-      "server": "172.64.42.85",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
-      "server": "172.64.158.146",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },

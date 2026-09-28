@@ -5,34 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: vless
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
-  type: ss
-  server: 51.170.191.141
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f/NpUKMY1ik7lr86dtH+rKX7U12gqCzzzdJYv7QZXk0=
-  udp: true
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: 5.157.10.148
   port: 443
@@ -46,9 +25,23 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
   server: 5.157.10.148
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
+  type: vless
+  server: surstreming.vvzzkontaktezzvv.garden
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
@@ -69,7 +62,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,6 +71,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
