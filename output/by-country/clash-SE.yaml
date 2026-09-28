@@ -6,12 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: surstreming.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: ss
   server: 70.34.212.124
@@ -20,19 +26,12 @@ proxies:
   password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
-  type: vless
-  server: 2.27.14.218
-  port: 2096
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  type: ss
+  server: 51.170.191.141
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: f/NpUKMY1ik7lr86dtH+rKX7U12gqCzzzdJYv7QZXk0=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf7697.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf7697.rumedia-cdn.com
 - name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: vless
   server: 5.157.10.148
@@ -60,34 +59,6 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: random
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
-  type: vless
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: random
-- name: 🇸🇪 SE 07 - mqgg5630-cyber
-  type: vless
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -99,8 +70,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
   - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
-  - 🇸🇪 SE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,7 +80,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
   - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
-  - 🇸🇪 SE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

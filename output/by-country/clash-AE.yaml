@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
-  server: 146.70.102.82
-  port: 443
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
@@ -44,6 +43,33 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  type: vless
+  server: 146.70.102.82
+  port: 443
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +78,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +88,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
