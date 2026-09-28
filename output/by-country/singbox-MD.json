@@ -8,35 +8,29 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - mqgg5630-cyber",
-      "server": "199.232.78.188",
+      "type": "vless",
+      "tag": "🇲🇩 MD 01 - mqgg5630-cyber",
+      "server": "80.96.109.8",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision-udp443",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "md-new.failspace.top",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?DailyConfigs--DailyConfigs",
-        "headers": {
-          "Host": "mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net"
-        }
       }
     },
     {
