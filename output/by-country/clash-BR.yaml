@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
-  type: vless
-  server: 43.174.192.1
+  type: trojan
+  server: 199.232.78.170
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  password: mitivpn
   udp: true
-  tls: true
+  sni: ssl.fastly.com
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: '@VPNine1'
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
 - name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: vless
   server: 43.174.192.1

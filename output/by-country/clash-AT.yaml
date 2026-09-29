@@ -6,19 +6,26 @@ log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: 132.243.203.214
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /?Telegram---mtmvpn---mtmvpn---mtmvpn---mtmvpn
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: shephe.dpdns.org
 - name: 🇦🇹 AT 02 - mqgg5630-cyber
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 03 - mqgg5630-cyber
   type: vless
   server: 132.243.203.214
   port: 8443
@@ -32,13 +39,6 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇦🇹 AT 03 - mqgg5630-cyber
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇦🇹 AT 04 - mqgg5630-cyber
   type: vless
   server: 31.77.227.6
@@ -51,32 +51,34 @@ proxies:
   servername: bigdick.gamegrow.ru
 - name: 🇦🇹 AT 05 - mqgg5630-cyber
   type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  server: 31.77.227.6
+  port: 52006
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  servername: at.quattro-tech.ru
-  client-fingerprint: random
+  servername: bigdick.gamegrow.ru
 - name: 🇦🇹 AT 06 - mqgg5630-cyber
   type: vless
-  server: 132.243.203.214
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 31.77.227.6
+  port: 52006
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: shephe.dpdns.org
+  flow: xtls-rprx-vision-udp443
+  servername: bigdick.gamegrow.ru
+- name: 🇦🇹 AT 07 - mqgg5630-cyber
+  type: vless
+  server: 31.77.227.6
+  port: 52006
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: bigdick.gamegrow.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +90,7 @@ proxy-groups:
   - 🇦🇹 AT 04 - mqgg5630-cyber
   - 🇦🇹 AT 05 - mqgg5630-cyber
   - 🇦🇹 AT 06 - mqgg5630-cyber
+  - 🇦🇹 AT 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +102,6 @@ proxy-groups:
   - 🇦🇹 AT 04 - mqgg5630-cyber
   - 🇦🇹 AT 05 - mqgg5630-cyber
   - 🇦🇹 AT 06 - mqgg5630-cyber
+  - 🇦🇹 AT 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

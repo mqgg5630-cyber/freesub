@@ -17,7 +17,7 @@ proxies:
     public-key: d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc
     short-id: 7a18a196e730e1d5
   servername: download-cdn.jetbrains.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇱🇻 LV 02 - mqgg5630-cyber
   type: vless
   server: 193.163.203.170
@@ -32,34 +32,6 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇱🇻 LV 03 - mqgg5630-cyber
-  type: vless
-  server: 31.57.28.147
-  port: 443
-  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc
-    short-id: 7a18a196e730e1d5
-  servername: download-cdn.jetbrains.com
-  client-fingerprint: firefox
-- name: 🇱🇻 LV 04 - mqgg5630-cyber
-  type: vless
-  server: latvia-3.kochvpn.pw
-  port: 443
-  uuid: 8de0e6f4-d365-fa64-d5ba-eed9ea513e06
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: latvia-3.kochvpn.pw
-  network: ws
-  ws-opts:
-    path: /stream/ws
-    headers:
-      Host: latvia-3.kochvpn.pw
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
-  - 🇱🇻 LV 03 - mqgg5630-cyber
-  - 🇱🇻 LV 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
-  - 🇱🇻 LV 03 - mqgg5630-cyber
-  - 🇱🇻 LV 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -8,35 +8,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 DK 01 - mqgg5630-cyber"
+        "🇷🇴 RO 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 DK 01 - mqgg5630-cyber"
+        "🇷🇴 RO 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇩🇰 DK 01 - mqgg5630-cyber",
-      "server": "2.26.17.128",
+      "type": "trojan",
+      "tag": "🇷🇴 RO 01 - mqgg5630-cyber",
+      "server": "38.180.35.145",
       "server_port": 443,
-      "uuid": "9e3132b8-b595-444a-833a-2de44789f9d7",
+      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
       "tls": {
         "enabled": true,
-        "server_name": "shephe.dpdns.org",
+        "server_name": "bu2.freeguard.org",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shephe.dpdns.org"
-        }
       }
     },
     {
