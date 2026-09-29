@@ -5,14 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  tls: true
+  sni: 109.206.241.10
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
@@ -21,16 +20,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: 94.183.170.135
 - name: 🇪🇪 EE 03 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  udp: true
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 EE 04 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -39,7 +30,43 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 04 - mqgg5630-cyber
+  type: vless
+  server: 46.36.216.119
+  port: 443
+  uuid: 44680084-c9dc-48ca-9db7-cb0c26bfc99e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nf9hAhB_OqveSsgdqqx7EW0FSoT4XNN_EzfD8lXVDVo
+    short-id: a1b2c3d4e5f6
+  servername: shop119.aktanow.shop
+  client-fingerprint: random
 - name: 🇪🇪 EE 05 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 06 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -58,6 +85,8 @@ proxy-groups:
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +97,7 @@ proxy-groups:
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
