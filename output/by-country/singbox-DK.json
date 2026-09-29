@@ -8,36 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - mqgg5630-cyber"
+        "🇩🇰 DK 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - mqgg5630-cyber"
+        "🇩🇰 DK 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - mqgg5630-cyber",
-      "server": "85.155.228.185",
+      "tag": "🇩🇰 DK 01 - mqgg5630-cyber",
+      "server": "2.26.17.128",
       "server_port": 443,
-      "uuid": "ca5ffe64-81e0-42f0-a136-03cc4f662a4f",
+      "uuid": "9e3132b8-b595-444a-833a-2de44789f9d7",
       "tls": {
         "enabled": true,
-        "server_name": "avsal.krusofiya.fun",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9M294WArTUZ9m1fMmvlHauSb5wZo68SkCW_lEgBVAF8",
-          "short_id": "4d5faa03b738bd3b"
+        "server_name": "shephe.dpdns.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shephe.dpdns.org"
         }
       }
     },

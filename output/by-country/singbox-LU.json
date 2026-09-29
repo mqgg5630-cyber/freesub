@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber",
+        "🇱🇺 LU 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber",
+        "🇱🇺 LU 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,25 @@
     {
       "type": "trojan",
       "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumeroot.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇺 LU 02 - mqgg5630-cyber",
       "server": "188.42.145.180",
       "server_port": 443,
       "password": "humanity",

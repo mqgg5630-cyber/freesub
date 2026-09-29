@@ -8,34 +8,29 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - mqgg5630-cyber"
+        "🇩🇪 德国 (Germany) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - mqgg5630-cyber"
+        "🇩🇪 德国 (Germany) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
-      "server": "185.18.250.245",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 01 (家宽) - mqgg5630-cyber",
+      "server": "188.114.97.6",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
         }
       }
     },
