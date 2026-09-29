@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - mqgg5630-cyber
   type: vless
+  server: 94.176.234.161
+  port: 443
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇱🇹 LT 02 - mqgg5630-cyber
+  type: vless
+  server: 213.183.55.153
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇱🇹 LT 03 - mqgg5630-cyber
+  type: vless
   server: 62.77.158.1
   port: 443
   uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
@@ -24,11 +52,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - mqgg5630-cyber
+  - 🇱🇹 LT 02 - mqgg5630-cyber
+  - 🇱🇹 LT 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - mqgg5630-cyber
+  - 🇱🇹 LT 02 - mqgg5630-cyber
+  - 🇱🇹 LT 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

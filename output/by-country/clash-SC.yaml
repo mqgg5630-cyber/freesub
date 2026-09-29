@@ -5,30 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-  tls: true
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: proxy-34l.pages.dev
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

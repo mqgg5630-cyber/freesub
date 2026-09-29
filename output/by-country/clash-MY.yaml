@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
   type: vless
-  server: platform128.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,43 +14,22 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform128
+    path: /platform107
     headers:
-      Host: platform128.halalkhor.info
+      Host: platform107.golnamakcert.top
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: vless
-  server: 23.175.201.2
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /platform117
     headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇲🇾 MY 03 - mqgg5630-cyber
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 04 - mqgg5630-cyber
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: platform117.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
-  - 🇲🇾 MY 03 - mqgg5630-cyber
-  - 🇲🇾 MY 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
-  - 🇲🇾 MY 03 - mqgg5630-cyber
-  - 🇲🇾 MY 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

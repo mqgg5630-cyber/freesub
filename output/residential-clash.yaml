@@ -4,11 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
+- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 60.248.219.54
+  server: 87.192.47.10
+  port: 52006
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: grok.setlisting.ru
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 60.248.219.78
   port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
@@ -17,8 +27,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.54
-- name: 🇦🇹 AT 02 (家宽) - mqgg5630-cyber
+      Host: 60.248.219.78
+- name: 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
   type: vless
   server: 31.77.227.6
   port: 52006
@@ -28,35 +38,21 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: bigdick.gamegrow.ru
-- name: 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇦🇹 AT 02 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇦🇹 AT 02 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

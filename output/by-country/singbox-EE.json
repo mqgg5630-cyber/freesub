@@ -14,7 +14,8 @@
         "🇪🇪 EE 04 - mqgg5630-cyber",
         "🇪🇪 EE 05 - mqgg5630-cyber",
         "🇪🇪 EE 06 - mqgg5630-cyber",
-        "🇪🇪 EE 07 - mqgg5630-cyber"
+        "🇪🇪 EE 07 - mqgg5630-cyber",
+        "🇪🇪 EE 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -27,14 +28,41 @@
         "🇪🇪 EE 04 - mqgg5630-cyber",
         "🇪🇪 EE 05 - mqgg5630-cyber",
         "🇪🇪 EE 06 - mqgg5630-cyber",
-        "🇪🇪 EE 07 - mqgg5630-cyber"
+        "🇪🇪 EE 07 - mqgg5630-cyber",
+        "🇪🇪 EE 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.170.135"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
@@ -46,47 +74,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "94.183.170.135",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇪🇪 EE 04 - mqgg5630-cyber",
-      "server": "46.36.216.119",
+      "server": "94.183.170.135",
       "server_port": 443,
-      "uuid": "44680084-c9dc-48ca-9db7-cb0c26bfc99e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "shop119.aktanow.shop",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nf9hAhB_OqveSsgdqqx7EW0FSoT4XNN_EzfD8lXVDVo",
-          "short_id": "a1b2c3d4e5f6"
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.170.135"
         }
       }
     },
@@ -106,19 +102,29 @@
       "type": "vless",
       "tag": "🇪🇪 EE 06 - mqgg5630-cyber",
       "server": "94.183.170.135",
-      "server_port": 443,
+      "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
-        }
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 EE 07 - mqgg5630-cyber",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 08 - mqgg5630-cyber",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
