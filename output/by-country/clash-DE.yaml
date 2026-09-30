@@ -5,187 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - mqgg5630-cyber
-  type: vless
-  server: 109.122.198.83
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
-  type: vless
-  server: ewylr.smartorbitbox-bekhabdg.site
-  port: 443
-  uuid: bcf89786-1b01-47dc-9a36-a7db03626e53
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ewylr.smartorbitbox-bekhabdg.site
-  network: ws
-  ws-opts:
-    path: /tigerjoon
-    headers:
-      Host: ewylr.smartorbitbox-bekhabdg.site
-- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
-  type: vless
-  server: 37.148.204.142
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
-  type: vless
-  server: 2.26.125.147
-  port: 2096
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf94fd.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf94fd.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
-  type: vless
-  server: 37.148.204.142
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: edge
-- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
   type: trojan
-  server: actual-squid.rooster465.autos
+  server: alive-flea.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
-  sni: actual-squid.rooster465.autos
+  sni: alive-flea.rooster465.autos
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
-  type: vless
-  server: 2.26.125.224
-  port: 2096
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf4f33.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf4f33.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
-  type: trojan
-  server: 199.232.78.170
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '@mehrosabiran'
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
-  type: vless
-  server: 85.234.100.9
-  port: 40443
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
   type: vless
   server: arcturus.yokkastars.com
   port: 40443
@@ -199,9 +26,55 @@ proxies:
     short-id: db46e2946fc466fd
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
+  type: trojan
+  server: alive-flea.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: alive-flea.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
   type: vless
-  server: 82.39.171.12
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
+  type: trojan
+  server: alive-flea.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: alive-flea.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
+  type: trojan
+  server: actual-squid.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: actual-squid.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
+  type: trojan
+  server: actual-squid.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: actual-squid.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.212
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
@@ -213,7 +86,27 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.170
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
   type: trojan
   server: 199.232.78.170
   port: 443
@@ -226,49 +119,20 @@ proxies:
     path: '@mehrosabiran'
     headers:
       Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.90
+- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.101
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  password: mitivpn
   udp: true
-  tls: true
+  sni: ssl.fastly.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
-  type: ss
-  server: 31.76.11.83
-  port: 11950
-  cipher: chacha20-ietf-poly1305
-  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
-  type: ss
-  server: 130.61.228.41
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
+  network: ws
+  ws-opts:
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
   type: vless
   server: 109.122.198.83
   port: 8443
@@ -282,21 +146,103 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
   type: vless
-  server: Site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
+  type: vless
+  server: 37.148.204.142
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: Site.check-looks.space
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: Site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
+      Host: shephe.dpdns.org
+- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
+  type: vless
+  server: 199.247.23.162
+  port: 80
+  uuid: 306dcb21-d02d-49dd-8ec7-0005b972b47a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 199.247.23.162
+- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
+  type: vless
+  server: 109.122.198.83
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
+  type: ss
+  server: 130.61.228.41
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
+  type: vless
+  server: 213.178.141.33
+  port: 443
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: germa12.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
+  type: ss
+  server: 31.76.11.83
+  port: 11950
+  cipher: chacha20-ietf-poly1305
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
   type: trojan
   server: 199.232.78.101
   port: 443
@@ -309,31 +255,82 @@ proxies:
     path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
     headers:
       Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
-  type: ss
-  server: 2.58.81.221
+- name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.101
   port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  password: mitivpn
   udp: true
-- name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
-  type: vmess
-  server: 31.76.11.83
-  port: 23226
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
-  alterId: 0
-  cipher: auto
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
+  type: vless
+  server: 82.39.171.12
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
+  type: vless
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.179
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.170
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
 - name: 🇩🇪 德国 (Germany) 29 - mqgg5630-cyber
+  type: vless
+  server: pinterest.com
+  port: 80
+  uuid: 6f791d88-899d-4740-8bb2-0cf2790f9b00
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /De-Fast?ed=2048
+    headers:
+      Host: parsoijji.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
   type: vless
   server: 57.129.96.67
   port: 443
@@ -343,7 +340,105 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: nasnet-571299667-direct.mbghalibaf.com
-- name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.168
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
+  type: ss
+  server: 130.61.183.247
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: XiznHqnfpN5coXauKLkZsUJwNHbUHG9ITdbSn64+UZQ=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
+  type: vless
+  server: kvm1.avenone.ir
+  port: 8402
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
+  type: vless
+  server: id-nl-01.mintrocket.org
+  port: 443
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
+  type: vless
+  server: kvm1.avenone.ir
+  port: 8402
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
   type: vmess
   server: 185.177.229.129
   port: 22324
@@ -353,21 +448,107 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
   type: vless
-  server: germa12.ggisopi.su
+  server: 2.26.30.216
   port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
+  type: trojan
+  server: alive-flea.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: alive-flea.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: germa12.ggisopi.su
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+  type: ss
+  server: p2tun3.greewebservices.ir
+  port: 1030
+  cipher: chacha20-ietf-poly1305
+  password: DUAd_9d2osCSYDNCWNJngw
+  udp: true
+- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
+  type: vmess
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
   type: vless
   server: 130.12.242.106
   port: 443
@@ -381,134 +562,29 @@ proxies:
     short-id: 15affa0af66dfc79
   servername: deepl.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
-  type: vless
-  server: 155.117.234.158
-  port: 8082
-  uuid: 27d33906-3501-4c13-a81d-7ccdd7bfdbda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.168
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
-  type: trojan
-  server: 199.232.78.170
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '@VPNine1'
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
   type: ss
-  server: 185.226.172.8
-  port: 8008
+  server: 2.58.81.221
+  port: 443
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  password: kKEd0rBrd56Furjz
   udp: true
-- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
   type: trojan
-  server: 199.232.78.170
+  server: actual-squid.rooster465.autos
   port: 443
-  password: mitivpn
+  password: UX82473651
   udp: true
-  sni: ssl.fastly.com
+  sni: actual-squid.rooster465.autos
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '@mehrosabiran'
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
   type: ss
   server: 2.58.81.221
   port: 80
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
-- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
   type: trojan
   server: 199.232.78.101
   port: 443
@@ -521,6 +597,20 @@ proxies:
     path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
     headers:
       Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.52
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -570,6 +660,17 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -619,5 +720,16 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
+  - 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

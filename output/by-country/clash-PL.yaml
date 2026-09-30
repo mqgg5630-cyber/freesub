@@ -6,54 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: pl4.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: pl-irancell7.xelfona.ir
-  port: 2095
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: pl3.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: 144.31.2.33
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
   uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
@@ -66,27 +18,7 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl4.moritech.net
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
   server: 144.31.131.38
   port: 443
@@ -100,7 +32,37 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: vless
+  server: pl4.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: vless
+  server: 144.31.5.3
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl4.moritech.net
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: vless
   server: 144.31.2.33
   port: 443
@@ -110,7 +72,25 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl3.moritech.net
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
+  type: trojan
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
   type: vless
   server: 144.31.2.33
   port: 443
@@ -134,8 +114,6 @@ proxy-groups:
   - 🇵🇱 PL 07 - mqgg5630-cyber
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,7 +128,5 @@ proxy-groups:
   - 🇵🇱 PL 07 - mqgg5630-cyber
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
