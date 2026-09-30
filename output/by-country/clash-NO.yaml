@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - mqgg5630-cyber
+- name: 🇳🇴 NO 01 - mqgg5630-cyber
   type: vless
-  server: 193.148.59.178
-  port: 443
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  server: 89.185.81.95
+  port: 8765
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
+    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
+    short-id: 7bf47eabf939728b
+  servername: r-b8a34c.vless.monster
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - mqgg5630-cyber
+  - 🇳🇴 NO 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - mqgg5630-cyber
+  - 🇳🇴 NO 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

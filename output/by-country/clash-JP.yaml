@@ -6,61 +6,46 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - mqgg5630-cyber
   type: vless
-  server: 43.133.11.187
+  server: jp2.miyazono-kaori.com
   port: 443
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  uuid: a266761e-a42a-4be2-b1af-804062e91ef7
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: firefox
+    public-key: 3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es
+    short-id: 21fa8a1ebf
+  servername: www.capcom.co.jp
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 02 - mqgg5630-cyber
   type: vless
-  server: 45.8.173.250
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: '/ '
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: random
 - name: 🇯🇵 日本 (Japan) 03 - mqgg5630-cyber
   type: vless
-  server: 43.133.11.187
-  port: 443
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: random
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 04 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 05 - mqgg5630-cyber
   type: vless
   server: abctest.8rm.net
   port: 443
@@ -74,496 +59,7 @@ proxies:
     path: /
     headers:
       Host: abctest.8rm.net
-- name: 🇯🇵 日本 (Japan) 06 - mqgg5630-cyber
-  type: vless
-  server: bgroup.jp1.ilovegairport.com
-  port: 443
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BJihKW3qLbtwFO_WAZ3htkU5VpWcMoFYX9tqlLmKiUY
-    short-id: f3f3bbfe1c
-  servername: ap-northeast-1.console.aws.amazon.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 07 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 08 - mqgg5630-cyber
-  type: trojan
-  server: 161.34.39.108
-  port: 443
-  password: tsuchiya
-  udp: true
-  sni: aa.ccmusic.jp
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - mqgg5630-cyber
-  type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 11 - mqgg5630-cyber
-  type: vless
-  server: 43.133.11.187
-  port: 443
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 12 - mqgg5630-cyber
-  type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 13 - mqgg5630-cyber
-  type: vless
-  server: 43.133.11.187
-  port: 443
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 14 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 19645
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 15 - mqgg5630-cyber
-  type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 16 - mqgg5630-cyber
-  type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 17 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - mqgg5630-cyber
-  type: vless
-  server: bgroup.jp1.ilovegairport.com
-  port: 443
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BJihKW3qLbtwFO_WAZ3htkU5VpWcMoFYX9tqlLmKiUY
-    short-id: f3f3bbfe1c
-  servername: ap-northeast-1.console.aws.amazon.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 19 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 20 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 21 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 22 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - mqgg5630-cyber
-  type: vless
-  server: 43.133.11.187
-  port: 443
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 25 - mqgg5630-cyber
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 26 - mqgg5630-cyber
-  type: vless
-  server: 43.133.11.187
-  port: 443
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 27 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 28 - mqgg5630-cyber
-  type: vless
-  server: 13.231.19.51
-  port: 11690
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  servername: www.tesla.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 29 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 30 - mqgg5630-cyber
-  type: vless
-  server: 13.231.19.51
-  port: 11690
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  servername: www.tesla.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 31 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 32 - mqgg5630-cyber
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 33 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 34 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 35 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 36 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 37 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 38 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 19645
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 39 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 19645
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 40 - mqgg5630-cyber
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 41 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 42 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 43 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 05 - mqgg5630-cyber
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -578,7 +74,21 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: none
-- name: 🇯🇵 日本 (Japan) 44 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 06 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 07 - mqgg5630-cyber
   type: vless
   server: 45.76.215.91
   port: 52226
@@ -590,39 +100,8 @@ proxies:
     public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
     short-id: d6
   servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 45 - mqgg5630-cyber
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 46 - mqgg5630-cyber
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 47 - mqgg5630-cyber
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 48 - mqgg5630-cyber
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 08 - mqgg5630-cyber
   type: vless
   server: 3.114.220.22
   port: 10583
@@ -636,7 +115,84 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 49 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 09 - mqgg5630-cyber
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 10 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 11 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 13 - mqgg5630-cyber
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 14 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 15 - mqgg5630-cyber
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -646,7 +202,70 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 50 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 16 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 17 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 18 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 19 - mqgg5630-cyber
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 20 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 21 - mqgg5630-cyber
   type: vless
   server: 3.114.220.22
   port: 19645
@@ -660,27 +279,84 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 51 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+- name: 🇯🇵 日本 (Japan) 22 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 52 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 23 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 53 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 24 - mqgg5630-cyber
+  type: vless
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 25 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 26 - mqgg5630-cyber
+  type: trojan
+  server: 161.34.39.108
+  port: 443
+  password: tsuchiya
+  udp: true
+  sni: 161.34.39.108
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 27 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 28 - mqgg5630-cyber
   type: vless
   server: 18.183.215.124
   port: 28573
@@ -694,56 +370,17 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 54 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- name: 🇯🇵 日本 (Japan) 29 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 55 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 56 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 57 - mqgg5630-cyber
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 58 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 30 - mqgg5630-cyber
   type: vless
   server: 45.8.173.250
   port: 443
@@ -757,121 +394,7 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇯🇵 日本 (Japan) 59 - mqgg5630-cyber
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 60 - mqgg5630-cyber
-  type: vless
-  server: bgroup.jp1.ilovegairport.com
-  port: 443
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BJihKW3qLbtwFO_WAZ3htkU5VpWcMoFYX9tqlLmKiUY
-    short-id: f3f3bbfe1c
-  servername: ap-northeast-1.console.aws.amazon.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 61 - mqgg5630-cyber
-  type: vless
-  server: 45.192.202.199
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇯🇵 日本 (Japan) 62 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 63 - mqgg5630-cyber
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 64 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 65 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 66 - mqgg5630-cyber
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 67 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 31 - mqgg5630-cyber
   type: vless
   server: 137.220.221.179
   port: 443
@@ -879,15 +402,35 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 68 - mqgg5630-cyber
-  type: trojan
-  server: aa.ccmusic.jp
-  port: 443
-  password: tsuchiya
+- name: 🇯🇵 日本 (Japan) 32 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  sni: aa.ccmusic.jp
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 69 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 33 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 34 - mqgg5630-cyber
   type: vless
   server: 18.183.215.124
   port: 28573
@@ -901,20 +444,43 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 70 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 35 - mqgg5630-cyber
   type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 71 - mqgg5630-cyber
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 36 - mqgg5630-cyber
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 37 - mqgg5630-cyber
+  type: ss
+  server: 103.115.18.145
+  port: 20999
+  cipher: aes-256-gcm
+  password: 9cfaa78d51ac366f
+  udp: true
+- name: 🇯🇵 日本 (Japan) 38 - mqgg5630-cyber
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -924,20 +490,69 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 72 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 39 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 40 - mqgg5630-cyber
   type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 73 - mqgg5630-cyber
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 41 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 42 - mqgg5630-cyber
+  type: vless
+  server: 43.133.11.187
+  port: 443
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 43 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 44 - mqgg5630-cyber
   type: vless
   server: 154.31.114.248
   port: 50159
@@ -951,17 +566,209 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 74 - mqgg5630-cyber
-  type: ss
-  server: 149.22.87.204
+- name: 🇯🇵 日本 (Japan) 45 - mqgg5630-cyber
+  type: vless
+  server: 45.192.202.199
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-- name: 🇯🇵 日本 (Japan) 75 - mqgg5630-cyber
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: '/ '
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇯🇵 日本 (Japan) 46 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 47 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 48 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 49 - mqgg5630-cyber
+  type: vless
+  server: abctest.8rm.net
+  port: 443
+  uuid: 351c9981-04b6-4103-aa4b-864aa9c91469
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: abctest.8rm.net
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: abctest.8rm.net
+- name: 🇯🇵 日本 (Japan) 50 - mqgg5630-cyber
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 51 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 52 - mqgg5630-cyber
+  type: vless
+  server: 45.8.173.250
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇯🇵 日本 (Japan) 53 - mqgg5630-cyber
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 54 - mqgg5630-cyber
+  type: vless
+  server: 43.133.11.187
+  port: 443
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 55 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 56 - mqgg5630-cyber
+  type: vless
+  server: jp1.miyazono-kaori.com
+  port: 443
+  uuid: a266761e-a42a-4be2-b1af-804062e91ef7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0gYZJnHAz7yMRQjZH5Twd9ETHfKjzQimUgbzb1yLlhM
+    short-id: df9232eff6
+  servername: www.capcom.co.jp
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 57 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 58 - mqgg5630-cyber
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 59 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 60 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 61 - mqgg5630-cyber
   type: vless
   server: 3.114.220.22
-  port: 10583
+  port: 18007
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -971,15 +778,22 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 76 - mqgg5630-cyber
-  type: ss
-  server: 149.22.87.241
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 62 - mqgg5630-cyber
+  type: vless
+  server: 43.133.11.187
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   udp: true
-- name: 🇯🇵 日本 (Japan) 77 - mqgg5630-cyber
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 63 - mqgg5630-cyber
   type: vless
   server: 3.114.220.22
   port: 10583
@@ -993,7 +807,168 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 78 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 64 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 65 - mqgg5630-cyber
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 66 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 67 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 68 - mqgg5630-cyber
+  type: vless
+  server: 45.192.202.199
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇯🇵 日本 (Japan) 69 - mqgg5630-cyber
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 70 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 71 - mqgg5630-cyber
+  type: vless
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 72 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 73 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 74 - mqgg5630-cyber
+  type: vless
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 75 - mqgg5630-cyber
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 76 - mqgg5630-cyber
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 77 - mqgg5630-cyber
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -1008,18 +983,24 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 79 - mqgg5630-cyber
-  type: trojan
-  server: 161.34.39.108
-  port: 443
-  password: tsuchiya
-  udp: true
-  sni: 161.34.39.108
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 80 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 78 - mqgg5630-cyber
   type: vless
   server: 3.114.220.22
-  port: 19645
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 79 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 18007
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -1030,14 +1011,17 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 81 - mqgg5630-cyber
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 80 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇯🇵 日本 (Japan) 82 - mqgg5630-cyber
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 81 - mqgg5630-cyber
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -1051,71 +1035,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 83 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 84 - mqgg5630-cyber
-  type: ss
-  server: 185.141.219.33
-  port: 8388
-  cipher: aes-256-gcm
-  password: AIe2aNsA6KVQ6Ok0
-  udp: true
-- name: 🇯🇵 日本 (Japan) 85 - mqgg5630-cyber
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 86 - mqgg5630-cyber
-  type: vless
-  server: bgroup.jp1.ilovegairport.com
-  port: 443
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BJihKW3qLbtwFO_WAZ3htkU5VpWcMoFYX9tqlLmKiUY
-    short-id: f3f3bbfe1c
-  servername: ap-northeast-1.console.aws.amazon.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 87 - mqgg5630-cyber
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 88 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 89 - mqgg5630-cyber
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 82 - mqgg5630-cyber
   type: vless
   server: 18.183.215.124
   port: 28573
@@ -1129,49 +1050,45 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 90 - mqgg5630-cyber
-  type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- name: 🇯🇵 日本 (Japan) 83 - mqgg5630-cyber
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 91 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 84 - mqgg5630-cyber
   type: vless
-  server: 45.8.173.250
+  server: 43.133.11.187
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇯🇵 日本 (Japan) 92 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
   client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 93 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 85 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 86 - mqgg5630-cyber
   type: vless
   server: abctest.8rm.net
   port: 443
@@ -1185,84 +1102,36 @@ proxies:
     path: /
     headers:
       Host: abctest.8rm.net
-- name: 🇯🇵 日本 (Japan) 94 - mqgg5630-cyber
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 87 - mqgg5630-cyber
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 95 - mqgg5630-cyber
-  type: vless
-  server: 45.8.173.250
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: '/ '
+    path: /cctv13.m3u8
     headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇯🇵 日本 (Japan) 96 - mqgg5630-cyber
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 88 - mqgg5630-cyber
   type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 97 - mqgg5630-cyber
-  type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 98 - mqgg5630-cyber
-  type: vless
-  server: 45.76.215.91
-  port: 52226
-  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
-    short-id: d6
-  servername: www.intel.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 99 - mqgg5630-cyber
-  type: vless
-  server: 45.192.202.199
+  server: 188.114.97.6
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇯🇵 日本 (Japan) 100 - mqgg5630-cyber
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 89 - mqgg5630-cyber
   type: vless
   server: 43.133.11.187
   port: 443
@@ -1275,8 +1144,54 @@ proxies:
     public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
     short-id: 913e9b95fbc71278
   servername: cloudflare.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 101 - mqgg5630-cyber
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 90 - mqgg5630-cyber
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 91 - mqgg5630-cyber
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 92 - mqgg5630-cyber
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 93 - mqgg5630-cyber
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 94 - mqgg5630-cyber
   type: vless
   server: 3.114.220.22
   port: 10583
@@ -1290,7 +1205,208 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 95 - mqgg5630-cyber
+  type: vless
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 96 - mqgg5630-cyber
+  type: vless
+  server: 13.231.19.51
+  port: 11690
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 97 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 98 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 99 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 18007
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 100 - mqgg5630-cyber
+  type: vless
+  server: 13.231.19.51
+  port: 11690
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 101 - mqgg5630-cyber
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 102 - mqgg5630-cyber
+  type: vless
+  server: 154.31.114.248
+  port: 50159
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 103 - mqgg5630-cyber
+  type: vless
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 104 - mqgg5630-cyber
+  type: vless
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 105 - mqgg5630-cyber
+  type: trojan
+  server: aa.ccmusic.jp
+  port: 443
+  password: tsuchiya
+  udp: true
+  sni: aa.ccmusic.jp
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 106 - mqgg5630-cyber
+  type: vless
+  server: 43.133.11.187
+  port: 443
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 107 - mqgg5630-cyber
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 108 - mqgg5630-cyber
+  type: vless
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 109 - mqgg5630-cyber
+  type: vless
+  server: 43.133.11.187
+  port: 443
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 110 - mqgg5630-cyber
   type: vless
   server: 18.183.215.124
   port: 28573
@@ -1304,30 +1420,41 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 103 - mqgg5630-cyber
+- name: 🇯🇵 日本 (Japan) 111 - mqgg5630-cyber
   type: vless
-  server: 3.114.220.22
-  port: 10583
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  server: 45.76.215.91
+  port: 52226
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 112 - mqgg5630-cyber
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 113 - mqgg5630-cyber
+  type: vless
+  server: jp3.miyazono-kaori.com
+  port: 443
+  uuid: a266761e-a42a-4be2-b1af-804062e91ef7
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 104 - mqgg5630-cyber
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+    public-key: HtrHyKJvjeh9xNVlNXidqFra8n_DhlL8EGu4ERst8QI
+    short-id: 912d2b581f59fb
+  servername: www.bandainamcoent.co.jp
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1437,6 +1564,15 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 102 - mqgg5630-cyber
   - 🇯🇵 日本 (Japan) 103 - mqgg5630-cyber
   - 🇯🇵 日本 (Japan) 104 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 105 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 106 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 107 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 108 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 109 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 110 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 111 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 112 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 113 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1546,5 +1682,14 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 102 - mqgg5630-cyber
   - 🇯🇵 日本 (Japan) 103 - mqgg5630-cyber
   - 🇯🇵 日本 (Japan) 104 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 105 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 106 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 107 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 108 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 109 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 110 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 111 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 112 - mqgg5630-cyber
+  - 🇯🇵 日本 (Japan) 113 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

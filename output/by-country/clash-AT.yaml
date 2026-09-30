@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇹 AT 02 - mqgg5630-cyber
-  type: vless
   server: 31.77.227.6
   port: 52006
   uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
@@ -28,14 +14,14 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: bigdick.gamegrow.ru
-- name: 🇦🇹 AT 03 - mqgg5630-cyber
+- name: 🇦🇹 AT 02 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 04 - mqgg5630-cyber
+- name: 🇦🇹 AT 03 - mqgg5630-cyber
   type: vless
   server: 31.77.227.6
   port: 52006
@@ -53,7 +39,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
-  - 🇦🇹 AT 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +47,5 @@ proxy-groups:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
-  - 🇦🇹 AT 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

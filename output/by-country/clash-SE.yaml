@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 34.51.240.236
-  port: 443
-  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
-    short-id: b4a6faed784ff461
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: vless
   server: 34.51.187.118
   port: 443
   uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
@@ -30,6 +17,33 @@ proxies:
     short-id: 79ff7d51e3c56323
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: vless
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+    short-id: b4a6faed784ff461
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: vless
+  server: 103.71.22.234
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
