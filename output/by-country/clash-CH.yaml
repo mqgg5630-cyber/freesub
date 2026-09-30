@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
-  type: vless
-  server: 185.18.250.245
+  type: trojan
+  server: 185.18.250.252
   port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /nl-tw
+    path: /assignment
     headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select
