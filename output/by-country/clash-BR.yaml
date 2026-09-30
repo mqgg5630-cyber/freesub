@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
-  type: trojan
-  server: 199.232.78.170
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '@VPNine1'
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: vless
   server: 43.174.192.1
   port: 443
@@ -37,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - mqgg5630-cyber
-  - 🇧🇷 BR 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - mqgg5630-cyber
-  - 🇧🇷 BR 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

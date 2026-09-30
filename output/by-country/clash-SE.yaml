@@ -15,7 +15,7 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
@@ -34,34 +34,6 @@ proxies:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: vless
-  server: sw-01.vacvps.com
-  port: 443
-  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
-    short-id: ''
-  servername: sw-01.vacvps.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
-  type: vless
   server: 31.207.7.74
   port: 443
   uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
@@ -74,7 +46,7 @@ proxies:
     short-id: 457ae5b8bef4d1b3
   servername: pkg.go.dev
   client-fingerprint: firefox
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: vless
   server: 2.26.17.128
   port: 443
@@ -88,7 +60,7 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 07 - mqgg5630-cyber
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
   type: vless
   server: 103.71.22.26
   port: 443
@@ -99,9 +71,51 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /
     headers:
       Host: shephe.dpdns.org
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇪 SE 07 - mqgg5630-cyber
+  type: vless
+  server: surstreming.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 08 - mqgg5630-cyber
+  type: vless
+  server: sw-01.vacvps.com
+  port: 443
+  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
+    short-id: ''
+  servername: sw-01.vacvps.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +128,7 @@ proxy-groups:
   - 🇸🇪 SE 05 - mqgg5630-cyber
   - 🇸🇪 SE 06 - mqgg5630-cyber
   - 🇸🇪 SE 07 - mqgg5630-cyber
+  - 🇸🇪 SE 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +141,6 @@ proxy-groups:
   - 🇸🇪 SE 05 - mqgg5630-cyber
   - 🇸🇪 SE 06 - mqgg5630-cyber
   - 🇸🇪 SE 07 - mqgg5630-cyber
+  - 🇸🇪 SE 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

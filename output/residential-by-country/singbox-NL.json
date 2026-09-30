@@ -8,28 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - mqgg5630-cyber"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - mqgg5630-cyber"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇷🇴 RO 01 - mqgg5630-cyber",
-      "server": "38.180.35.145",
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber",
+      "server": "162.159.153.4",
       "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "bu2.freeguard.org",
+        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
+        }
       }
     },
     {
