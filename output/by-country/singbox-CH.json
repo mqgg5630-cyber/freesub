@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,33 +18,55 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
       "server": "185.18.250.245",
       "server_port": 443,
-      "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "edu.ruangguru.com.r3xxe.eu.cc",
+        "server_name": "www.calmlunch.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/nl-tw",
+        "path": "/assignment",
         "headers": {
-          "Host": "edu.ruangguru.com.r3xxe.eu.cc"
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",

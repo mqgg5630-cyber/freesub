@@ -31,8 +31,22 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 IL 03 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.233
+  port: 443
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 04 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
   port: 443
@@ -45,6 +59,48 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 05 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 06 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.156
+  port: 443
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 07 - mqgg5630-cyber
+  type: vless
+  server: 185.95.231.233
+  port: 443
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -54,6 +110,10 @@ proxy-groups:
   - 🇮🇱 IL 01 - mqgg5630-cyber
   - 🇮🇱 IL 02 - mqgg5630-cyber
   - 🇮🇱 IL 03 - mqgg5630-cyber
+  - 🇮🇱 IL 04 - mqgg5630-cyber
+  - 🇮🇱 IL 05 - mqgg5630-cyber
+  - 🇮🇱 IL 06 - mqgg5630-cyber
+  - 🇮🇱 IL 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +122,9 @@ proxy-groups:
   - 🇮🇱 IL 01 - mqgg5630-cyber
   - 🇮🇱 IL 02 - mqgg5630-cyber
   - 🇮🇱 IL 03 - mqgg5630-cyber
+  - 🇮🇱 IL 04 - mqgg5630-cyber
+  - 🇮🇱 IL 05 - mqgg5630-cyber
+  - 🇮🇱 IL 06 - mqgg5630-cyber
+  - 🇮🇱 IL 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
