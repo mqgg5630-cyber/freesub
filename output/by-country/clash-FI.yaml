@@ -12,17 +12,43 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 144.31.27.215
+  port: 43000
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

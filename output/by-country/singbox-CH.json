@@ -9,8 +9,7 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber",
-        "🇨🇭 CH 03 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -18,34 +17,14 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber",
-        "🇨🇭 CH 03 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
-      "server": "185.18.250.245",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -55,7 +34,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -65,12 +44,26 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "type": "vless",
+      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "server": "176.65.144.84",
+      "server_port": 443,
+      "uuid": "0f4081e7-612b-425f-8def-eebf144aedba",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "indigo.clouderiux.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
+          "short_id": "9e15546f267baa64"
+        }
+      }
     },
     {
       "type": "direct",

@@ -8,34 +8,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - mqgg5630-cyber"
+        "🇨🇱 CL 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - mqgg5630-cyber"
+        "🇨🇱 CL 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇧🇷 BR 01 - mqgg5630-cyber",
-      "server": "43.174.192.1",
+      "tag": "🇨🇱 CL 01 - mqgg5630-cyber",
+      "server": "34.176.187.219",
       "server_port": 443,
-      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048",
+      "uuid": "ad5325f8-f0b3-41c4-a561-113529b60e70",
       "tls": {
         "enabled": true,
-        "server_name": "edgetunnel-4uw.pages.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "edgetunnel-4uw.pages.dev"
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc",
+          "short_id": "2c2d919f5183d0b7"
         }
       }
     },

@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
-  type: vless
-  server: 50.7.5.164
+  type: ss
+  server: 20.166.59.119
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ekb.eg
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
   type: vless
   server: 50.7.5.166
@@ -25,6 +22,13 @@ proxies:
   flow: xtls-rprx-vision
   servername: ekb.eg
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
+  type: ss
+  server: 20.166.59.119
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
+  udp: true
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
   type: vless
   server: 50.7.5.164
   port: 443
@@ -34,30 +38,6 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: ekb.eg
-- name: 🇮🇪 IE 04 - mqgg5630-cyber
-  type: vless
-  server: 50.7.5.166
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ekb.eg
-- name: 🇮🇪 IE 05 - mqgg5630-cyber
-  type: vless
-  server: 45.141.234.138
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +47,6 @@ proxy-groups:
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
   - 🇮🇪 IE 04 - mqgg5630-cyber
-  - 🇮🇪 IE 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +56,5 @@ proxy-groups:
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
   - 🇮🇪 IE 04 - mqgg5630-cyber
-  - 🇮🇪 IE 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
