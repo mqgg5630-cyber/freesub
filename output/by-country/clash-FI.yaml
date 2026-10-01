@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 FI 01 - mqgg5630-cyber
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 65.109.28.164
+  port: 443
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

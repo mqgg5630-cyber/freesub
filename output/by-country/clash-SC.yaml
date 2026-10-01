@@ -11,17 +11,49 @@ proxies:
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: vless
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-34l.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-34l.pages.dev
+- name: 🇸🇨 SC 03 - mqgg5630-cyber
+  type: vless
+  server: 154.84.56.198
+  port: 443
+  uuid: 9c44b1db-9b38-4d77-adec-7f549c1770a9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EHQEopoNqm2q8R2uu8ffAIpI-k2q-9Z5RUWafETWVGs
+    short-id: b7e4a1c9d3f60528
+  servername: www.universityofcalifornia.edu
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
+  - 🇸🇨 SC 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
+  - 🇸🇨 SC 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

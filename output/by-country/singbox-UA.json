@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇦 UA 01 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇦 UA 01 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 UA 01 - mqgg5630-cyber",
+      "server": "173.242.63.235",
+      "server_port": 8443,
+      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048",
+      "tls": {
+        "enabled": true,
+        "server_name": "edgetunnel-4uw.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "edgetunnel-4uw.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

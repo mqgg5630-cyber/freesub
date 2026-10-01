@@ -5,40 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -51,11 +27,35 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
   type: vless
-  server: 123.111.169.70
-  port: 2083
+  server: 158.247.253.111
+  port: 2087
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
@@ -67,76 +67,16 @@ proxies:
     headers:
       Host: shephe.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
-  type: vless
-  server: kr1.miyazono-kaori.com
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  uuid: a266761e-a42a-4be2-b1af-804062e91ef7
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
-    short-id: f554f56d31
-  servername: www.coway.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 18967
@@ -150,21 +90,20 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 12 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
   type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 172.66.170.53
+  port: 8880
+  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 13 - mqgg5630-cyber
+      Host: summer-hat-ba5c.430.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 18967
@@ -177,30 +116,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 14 - mqgg5630-cyber
-  type: trojan
-  server: 154.90.62.70
-  port: 56127
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  udp: true
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15 - mqgg5630-cyber
-  type: vless
-  server: kr2.miyazono-kaori.com
-  port: 443
-  uuid: a266761e-a42a-4be2-b1af-804062e91ef7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
-    short-id: c8af1462debbc1
-  servername: www.coway.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 16 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -212,7 +129,84 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 12 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 13 - mqgg5630-cyber
+  type: trojan
+  server: 154.90.62.70
+  port: 56127
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  udp: true
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 14 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 15 - mqgg5630-cyber
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: patient-cake-39c7.44-e7a.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 16 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 17 - mqgg5630-cyber
   type: vless
   server: 158.247.253.111
@@ -230,7 +224,7 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 18 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
-  port: 18967
+  port: 13672
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -242,6 +236,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 19 - mqgg5630-cyber
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 20 - mqgg5630-cyber
   type: vless
   server: 158.247.253.111
   port: 2087
@@ -252,19 +253,9 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: '/ '
+    path: /fp=chrome
     headers:
       Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 20 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 21 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
@@ -278,10 +269,24 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 22 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 23 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
   port: 13672
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
@@ -292,38 +297,25 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 23 - mqgg5630-cyber
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 24 - mqgg5630-cyber
   type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  server: 158.247.253.111
+  port: 2087
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 25 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
-  port: 13672
+  port: 18967
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -333,14 +325,21 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 26 - mqgg5630-cyber
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  type: vless
+  server: 123.111.169.70
+  port: 2083
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: '/ '
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 27 - mqgg5630-cyber
   type: vmess
   server: 140.238.2.250
@@ -352,19 +351,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 28 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

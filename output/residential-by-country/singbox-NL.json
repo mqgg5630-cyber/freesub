@@ -8,36 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 CL 01 - mqgg5630-cyber"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 CL 01 - mqgg5630-cyber"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 CL 01 - mqgg5630-cyber",
-      "server": "34.176.187.219",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber",
+      "server": "162.159.153.4",
       "server_port": 443,
-      "uuid": "ad5325f8-f0b3-41c4-a561-113529b60e70",
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc",
-          "short_id": "2c2d919f5183d0b7"
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
         }
       }
     },

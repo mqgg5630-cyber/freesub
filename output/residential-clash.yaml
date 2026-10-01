@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 AT 01 (家宽) - mqgg5630-cyber
+- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇦🇹 AT 02 (家宽) - mqgg5630-cyber
   type: vless
   server: 31.77.227.6
   port: 52006
@@ -14,11 +28,24 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision-udp443
   servername: bigdick.gamegrow.ru
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber
   type: vless
-  server: 60.248.219.78
+  server: 104.21.89.181
+  port: 8880
+  uuid: 91c7ea79-9187-4f07-ab97-68c584186843
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nameless-dust-1a36.207-b50.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 60.248.219.54
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -27,8 +54,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
+      Host: 60.248.219.54
+- name: 🇬🇧 英国 (United Kingdom) 05 (家宽) - mqgg5630-cyber
   type: vless
   server: 87.192.47.10
   port: 52006
@@ -38,7 +65,41 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: grok.setlisting.ru
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber
+  type: vless
+  server: x-tw01.xueshan168.cc
+  port: 16000
+  uuid: cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8
+    short-id: ''
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - mqgg5630-cyber
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dry-credit-fc26.203-d8c.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - mqgg5630-cyber
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -56,18 +117,28 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 AT 01 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 02 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 05 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 AT 01 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 02 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 05 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

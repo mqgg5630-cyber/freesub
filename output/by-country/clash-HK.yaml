@@ -6,35 +6,18 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   type: vless
-  server: 139.162.41.109
-  port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  server: champion.xn--kivt58h.lol
+  port: 80
+  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hk.152568.xyz
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
+    path: /
     headers:
-      Host: hk.152568.xyz
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: vmess
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: I2PSm3Knof5qjjix.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: I2PSm3Knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   type: trojan
   server: 2.27.109.179
   port: 45464
@@ -42,7 +25,7 @@ proxies:
   udp: true
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   type: vless
   server: 85.149.211.28
   port: 8443
@@ -56,38 +39,31 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: trojan
+  server: 47.240.80.220
+  port: 2052
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  udp: true
+  sni: vpn.12169.top
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
+  servername: 195.58.144.56
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: trojan
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
   udp: true
-  tls: true
+  sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
   type: vmess
   server: 194.99.79.26
@@ -105,6 +81,14 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
+  type: trojan
+  server: 47.240.80.220
+  port: 2052
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  udp: true
+  sni: 47.240.80.220
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -118,45 +102,37 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
+      Host: 156.245.232.239
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
   type: vmess
-  server: 8.218.195.61
+  server: 194.99.79.26
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /linkvws
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  type: trojan
-  server: 2.27.109.179
-  port: 45464
-  password: XuMweB2PWs
-  udp: true
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: true
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
   type: vless
-  server: bgroup.hk1.ilovegairport.com
+  server: 5.223.51.84
   port: 443
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Z0sxSuzxnWYa5FNTZ-W4ImxQd674VG4KfmOBqlcudjU
-    short-id: 7c7ad24684
-  servername: ap-east-1.console.aws.amazon.com
-  client-fingerprint: firefox
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
   type: ss
   server: 212.192.13.143
