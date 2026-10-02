@@ -6,47 +6,8 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - mqgg5630-cyber
   type: vless
-  server: 172.64.158.146
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 02 - mqgg5630-cyber
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 03 - mqgg5630-cyber
-  type: vless
-  server: 172.64.154.8
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 04 - mqgg5630-cyber
-  type: vless
-  server: 162.159.24.131
-  port: 2086
+  server: 162.159.48.32
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -56,7 +17,61 @@ proxies:
     path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 02 - mqgg5630-cyber
+  type: vless
+  server: v2ray.aizgl.com
+  port: 443
+  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.aizgl.com
+  network: ws
+  ws-opts:
+    path: /xray-ws
+    headers:
+      Host: v2ray.aizgl.com
+- name: 🌐 其他地区 (Other) 03 - mqgg5630-cyber
+  type: vless
+  server: 104.19.164.155
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 04 - mqgg5630-cyber
+  type: trojan
+  server: 104.21.57.25
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
 - name: 🌐 其他地区 (Other) 05 - mqgg5630-cyber
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 06 - mqgg5630-cyber
   type: vless
   server: 104.19.33.237
   port: 443
@@ -70,241 +85,36 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 06 - mqgg5630-cyber
-  type: trojan
-  server: 104.18.8.83
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 - name: 🌐 其他地区 (Other) 07 - mqgg5630-cyber
-  type: trojan
-  server: 8.47.69.0
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 🌐 其他地区 (Other) 08 - mqgg5630-cyber
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 09 - mqgg5630-cyber
-  type: vless
-  server: 162.159.43.187
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 10 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.37.56
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🌐 其他地区 (Other) 11 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 12 - mqgg5630-cyber
-  type: vless
-  server: 172.64.158.146
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 13 - mqgg5630-cyber
-  type: vless
-  server: 172.64.154.8
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 14 - mqgg5630-cyber
-  type: vless
-  server: 162.159.0.53
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 15 - mqgg5630-cyber
-  type: trojan
-  server: 172.67.139.14
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: www.volumeroot.com
-- name: 🌐 其他地区 (Other) 16 - mqgg5630-cyber
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 17 - mqgg5630-cyber
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 172.67.161.144
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🌐 其他地区 (Other) 19 - mqgg5630-cyber
-  type: trojan
-  server: 104.16.71.213
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🌐 其他地区 (Other) 20 - mqgg5630-cyber
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 08 - mqgg5630-cyber
   type: vless
-  server: 172.64.154.8
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 21 - mqgg5630-cyber
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 22 - mqgg5630-cyber
-  type: vless
-  server: 104.18.0.181
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 23 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
+  server: geo.shkola112.site
   port: 443
-  password: humanity
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   udp: true
-  sni: www.pleadcourt.org
+  tls: true
   skip-cert-verify: true
+  servername: geo.shkola112.site
   network: ws
   ws-opts:
-    path: /assignment
+    path: /api-vless
     headers:
-      Host: www.pleadcourt.org
+      Host: geo.shkola112.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -318,21 +128,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 06 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 07 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 08 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 09 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 10 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 11 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 12 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 13 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 14 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 15 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 16 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 17 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 18 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 19 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 20 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 21 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 22 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 23 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -346,20 +141,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 06 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 07 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 08 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 09 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 10 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 11 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 12 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 13 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 14 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 15 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 16 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 17 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 18 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 19 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 20 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 21 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 22 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 23 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
