@@ -1,0 +1,72 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇽 MX 01 - mqgg5630-cyber",
+        "🇲🇽 MX 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇽 MX 01 - mqgg5630-cyber",
+        "🇲🇽 MX 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇽 MX 01 - mqgg5630-cyber",
+      "server": "131.196.252.97",
+      "server_port": 443,
+      "uuid": "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nihaoyun.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "www.nihaoyun.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇽 MX 02 - mqgg5630-cyber",
+      "server": "131.196.252.66",
+      "server_port": 443,
+      "uuid": "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nihaoyun.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "www.nihaoyun.top"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

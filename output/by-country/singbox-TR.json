@@ -8,25 +8,105 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-      "server": "bale.xv98.ir",
-      "server_port": 5051,
-      "method": "chacha20-ietf-poly1305",
-      "password": "68mL2QkZEBlxWa3hcslGDw"
+      "server": "176.96.131.251",
+      "server_port": 1280,
+      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "176.96.131.251"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+      "server": "188.132.192.145",
+      "server_port": 2087,
+      "uuid": "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nihaoyun.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "www.nihaoyun.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+      "server": "130.94.1.177",
+      "server_port": 443,
+      "uuid": "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nihaoyun.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "www.nihaoyun.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
+      "server": "49.13.231.249",
+      "server_port": 33483,
+      "uuid": "758a691a-45d2-4462-a0e8-991248a6994e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "49.13.231.249"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber",
+      "server": "apadana.gamingnet.ir",
+      "server_port": 33483,
+      "uuid": "758a691a-45d2-4462-a0e8-991248a6994e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "apadana.gamingnet.ir"
+        }
+      }
     },
     {
       "type": "direct",

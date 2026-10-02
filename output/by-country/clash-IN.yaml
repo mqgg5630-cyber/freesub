@@ -16,32 +16,48 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 194.195.119.26
+  port: 443
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+    short-id: ''
+  servername: googleapis.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 194.195.119.26
+  port: 443
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+    short-id: ''
+  servername: googleapis.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  type: vless
+  server: 194.195.119.26
+  port: 443
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+    short-id: ''
+  servername: googleapis.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -51,6 +67,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +76,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

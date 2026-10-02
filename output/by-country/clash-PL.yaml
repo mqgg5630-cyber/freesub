@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: 83.168.95.145
-  port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: trojan
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -48,101 +18,9 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
-  server: pl3.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: vless
-  server: 95.85.253.202
-  port: 443
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-    short-id: ''
-  servername: pl0001.kubservice.icu
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: vless
-  server: 95.85.253.202
-  port: 443
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-    short-id: ''
-  servername: pl0001.kubservice.icu
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: 149.86.227.200
-  port: 443
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: waypoint.connectserverix.com
-  client-fingerprint: safari
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
-  type: vless
-  server: 144.31.2.33
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pl3.moritech.net
-- name: 🇵🇱 PL 12 - mqgg5630-cyber
-  type: vless
-  server: 31.77.13.19
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 13 - mqgg5630-cyber
-  type: vless
-  server: pl.srv.vbuste-bot.com
+  server: 144.31.4.193
   port: 444
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
@@ -152,7 +30,92 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
     short-id: 4be4110078ebed4a
   servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: trojan
+  server: 202.78.163.237
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: trojan
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: trojan
+  server: 202.78.163.237
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
+  type: vless
+  server: 77.83.246.202
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    short-id: ''
+  servername: example.org
   client-fingerprint: firefox
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
+  type: vless
+  server: pl3.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
+  type: vless
+  server: 144.31.2.33
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl3.moritech.net
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: vless
+  server: 83.168.95.145
+  port: 443
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
+  type: vless
+  server: 95.85.253.202
+  port: 443
+  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+    short-id: ''
+  servername: pl0001.kubservice.icu
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -168,9 +131,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
   - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
-  - 🇵🇱 PL 12 - mqgg5630-cyber
-  - 🇵🇱 PL 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -186,8 +146,5 @@ proxy-groups:
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
   - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
-  - 🇵🇱 PL 12 - mqgg5630-cyber
-  - 🇵🇱 PL 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
+        "🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -31,6 +33,25 @@
         "enabled": true,
         "server_name": "pl.setlisting.ru",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber",
+      "server": "154.17.228.81",
+      "server_port": 59686,
+      "uuid": "88ee0e1e-a2a2-477e-88ce-4875c058aeba",
+      "tls": {
+        "enabled": true,
+        "server_name": "123.714541.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Ra-vl",
+        "headers": {
+          "Host": "123.714541.xyz"
+        }
       }
     },
     {

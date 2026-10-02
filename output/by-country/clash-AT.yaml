@@ -5,32 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
+  type: vless
+  server: 50.7.184.122
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: at3.moritech.net
+- name: 🇦🇹 AT 02 - mqgg5630-cyber
+  type: vless
+  server: 109.172.8.48
+  port: 8443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇦🇹 AT 03 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 02 - mqgg5630-cyber
+- name: 🇦🇹 AT 04 - mqgg5630-cyber
   type: vless
-  server: 31.77.227.6
-  port: 52006
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision-udp443
-  servername: bigdick.gamegrow.ru
-- name: 🇦🇹 AT 03 - mqgg5630-cyber
-  type: vless
-  server: 31.77.227.6
-  port: 52006
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: bigdick.gamegrow.ru
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  servername: at.quattro-tech.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +57,7 @@ proxy-groups:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
+  - 🇦🇹 AT 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +66,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
+  - 🇦🇹 AT 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
