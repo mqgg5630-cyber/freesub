@@ -1,0 +1,28 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇻🇳 VN 01 - mqgg5630-cyber
+  type: trojan
+  server: 109.110.162.40
+  port: 23005
+  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
+  udp: true
+  sni: 82.yuanul.com
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇻🇳 VN 01 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇻🇳 VN 01 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

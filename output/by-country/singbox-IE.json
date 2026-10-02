@@ -10,8 +10,7 @@
         "auto",
         "🇮🇪 IE 01 - mqgg5630-cyber",
         "🇮🇪 IE 02 - mqgg5630-cyber",
-        "🇮🇪 IE 03 - mqgg5630-cyber",
-        "🇮🇪 IE 04 - mqgg5630-cyber"
+        "🇮🇪 IE 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,24 +19,28 @@
       "outbounds": [
         "🇮🇪 IE 01 - mqgg5630-cyber",
         "🇮🇪 IE 02 - mqgg5630-cyber",
-        "🇮🇪 IE 03 - mqgg5630-cyber",
-        "🇮🇪 IE 04 - mqgg5630-cyber"
+        "🇮🇪 IE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
-      "server": "20.166.59.119",
+      "server": "50.7.5.165",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "gJe7umStIck5Mieg"
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ir-new1.failspace.top",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
       "tag": "🇮🇪 IE 02 - mqgg5630-cyber",
-      "server": "50.7.5.166",
+      "server": "50.7.5.164",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
@@ -48,17 +51,9 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE 03 - mqgg5630-cyber",
-      "server": "20.166.59.119",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "gJe7umStIck5Mieg"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇪 IE 04 - mqgg5630-cyber",
-      "server": "50.7.5.164",
+      "tag": "🇮🇪 IE 03 - mqgg5630-cyber",
+      "server": "50.7.5.166",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
