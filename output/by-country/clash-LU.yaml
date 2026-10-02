@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - mqgg5630-cyber
-  type: vless
-  server: 172.67.215.39
+- name: 🇱🇺 LU 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.42.145.180
   port: 443
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  password: humanity
   udp: true
-  tls: true
+  sni: www.volumeroot.com
   skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+      Host: www.volumeroot.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

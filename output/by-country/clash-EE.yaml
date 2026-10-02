@@ -6,22 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: crt.dodopanel.biz
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 141.0.187.16
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  udp: true
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 EE 03 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -30,6 +27,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 EE 04 - mqgg5630-cyber
   type: vless
   server: 141.0.187.16
@@ -45,6 +50,14 @@ proxies:
     headers:
       Host: 141.0.187.16
 - name: 🇪🇪 EE 05 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 EE 06 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -53,6 +66,57 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 08 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 09 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 10 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 EE 11 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: 109.206.241.10
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +127,12 @@ proxy-groups:
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
+  - 🇪🇪 EE 08 - mqgg5630-cyber
+  - 🇪🇪 EE 09 - mqgg5630-cyber
+  - 🇪🇪 EE 10 - mqgg5630-cyber
+  - 🇪🇪 EE 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +143,11 @@ proxy-groups:
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
+  - 🇪🇪 EE 08 - mqgg5630-cyber
+  - 🇪🇪 EE 09 - mqgg5630-cyber
+  - 🇪🇪 EE 10 - mqgg5630-cyber
+  - 🇪🇪 EE 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
+- name: 🇧🇷 BR 01 - mqgg5630-cyber
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
+    path: /linkvws
     headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - mqgg5630-cyber
+  - 🇧🇷 BR 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - mqgg5630-cyber
+  - 🇧🇷 BR 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

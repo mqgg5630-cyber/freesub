@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: 139.28.168.201
-  port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vless
   server: china.letsconnectpoint.com
   port: 443
   uuid: a368752a-32fc-42f3-980a-6b049218b23f
@@ -32,76 +18,7 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
-  server: 104.18.34.14
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: vless
-  server: 108.162.198.178
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: ss
-  server: 195.133.23.200
-  port: 20998
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: vless
-  server: hk1.xt-game.top
-  port: 443
-  uuid: 49c8e76e-7e52-426a-8669-51d93c7a6d12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: hk1.xt-game.top
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: blue-rice-7142.30-346.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  type: vless
-  server: 172.64.42.85
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
   server: china.letsconnectpoint.com
   port: 443
@@ -114,8 +31,71 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
+  server: 217.19.122.200
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  type: vless
+  server: china.letsconnectpoint.com
+  port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: china.letsconnectpoint.com
+  port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: vless
+  server: 46.243.232.125
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   type: vless
   server: 139.28.168.201
   port: 443
@@ -129,19 +109,48 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: vless
+  server: 139.28.168.201
+  port: 443
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  type: vless
+  server: 139.28.168.201
+  port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
   type: vless
-  server: 172.64.229.170
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: ?ed=2560security=tls
+    path: /ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   type: vless
   server: china.letsconnectpoint.com
@@ -155,7 +164,7 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: random
+  client-fingerprint: ios
 - name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
   type: vless
   server: china.letsconnectpoint.com
@@ -169,36 +178,8 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: ios
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
-  type: vless
-  server: 104.18.34.21
-  port: 8443
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: socks5.revil-time3.workers.dev
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
-  type: vless
-  server: 63.141.128.22
-  port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-- name: 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
   type: vless
   server: china.letsconnectpoint.com
   port: 443
@@ -211,35 +192,22 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
   type: vless
-  server: 104.18.34.14
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 18 - mqgg5630-cyber
-  type: vless
-  server: germany.tofreedom.ru
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  server: 139.28.168.201
+  port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇷🇺 俄罗斯 (Russia) 19 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
   type: vless
   server: china.letsconnectpoint.com
   port: 443
@@ -252,20 +220,21 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 20 - mqgg5630-cyber
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
   type: vless
-  server: 104.18.34.14
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 84.38.183.237
+  port: 443
+  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ws.nightproducts.ru
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vless#/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 84.38.183.237
 proxy-groups:
 - name: PROXIES
   type: select
@@ -288,9 +257,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 18 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 19 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 20 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -313,8 +279,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 18 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 19 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 20 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
