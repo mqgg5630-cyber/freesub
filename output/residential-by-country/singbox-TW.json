@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -35,7 +37,26 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "60.248.219.78"
+          "Host": "ty986gfazs.cainiaohub.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "argo6.5671234.xyz",
+      "server_port": 443,
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "argo6.5671234.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e8e2cecb6188f7fb",
+        "headers": {
+          "Host": "argo6.5671234.xyz"
         }
       }
     },

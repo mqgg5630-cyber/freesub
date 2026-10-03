@@ -6,33 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: fi1.rovilo.ir
-  port: 443
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: i_cD6qpNHvE-j2vFGxEBmXNvX5U8PE4-lBkxcti8Ry8
-    short-id: 714369014b7679bf
-  servername: store.steampowered.com
-  client-fingerprint: firefox
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 179.254.109.69
-  port: 443
-  uuid: 61bd5829-a243-4548-97f0-a210c2069fec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: u9_Ta0DYmqruY94DwuZv4g_gnvY1xGMF1iT1SdV3cT8
-    short-id: d3a09fd1
-  servername: m.swegg.daxaryx.fun
-  client-fingerprint: safari
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -45,19 +30,47 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 2.27.207.30
+  port: 443
+  uuid: a5dd2dd9-0995-449e-be67-4a409890dc42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: nG28Y1q-Ul2oBH-FegAkzGtvY6IRCIwras1k8CLwdGo
+    short-id: da4d87fa
+  servername: jdbdb.huinaduok.fans
+  client-fingerprint: random
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: cd679b4b-95f2-4788-831b-1ad672bbe06b
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 05 - mqgg5630-cyber
+  type: vless
+  server: 151.241.137.132
+  port: 443
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: finland.ali-bard.online
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +80,7 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
+  - 🇫🇮 FI 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +90,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
+  - 🇫🇮 FI 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
