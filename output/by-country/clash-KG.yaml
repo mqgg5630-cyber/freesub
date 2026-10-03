@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇰🇬 KG 01 - mqgg5630-cyber
   type: vless
-  server: 162.159.43.187
-  port: 2086
+  server: 162.159.38.127
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -19,8 +19,8 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 02 - mqgg5630-cyber
   type: vless
-  server: 172.64.154.8
-  port: 80
+  server: 104.18.39.218
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -32,21 +32,21 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 03 - mqgg5630-cyber
   type: vless
-  server: 104.18.46.234
-  port: 2082
+  server: 162.159.38.127
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=…
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 04 - mqgg5630-cyber
   type: vless
-  server: 172.64.154.8
-  port: 8080
+  server: 172.64.53.55
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -58,60 +58,22 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 05 - mqgg5630-cyber
   type: vless
-  server: 172.64.52.6
-  port: 80
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 06 - mqgg5630-cyber
   type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇰🇬 KG 07 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇰🇬 KG 08 - mqgg5630-cyber
-  type: vless
-  server: 172.64.42.85
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇬 KG 09 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 2086
+  server: 108.162.198.178
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -120,11 +82,11 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇰🇬 KG 10 - mqgg5630-cyber
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇬 KG 07 - mqgg5630-cyber
   type: vless
-  server: 172.64.32.108
-  port: 8880
+  server: 172.64.53.55
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -134,6 +96,20 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇬 KG 08 - mqgg5630-cyber
+  type: vless
+  server: time.is
+  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,8 +123,6 @@ proxy-groups:
   - 🇰🇬 KG 06 - mqgg5630-cyber
   - 🇰🇬 KG 07 - mqgg5630-cyber
   - 🇰🇬 KG 08 - mqgg5630-cyber
-  - 🇰🇬 KG 09 - mqgg5630-cyber
-  - 🇰🇬 KG 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -162,7 +136,5 @@ proxy-groups:
   - 🇰🇬 KG 06 - mqgg5630-cyber
   - 🇰🇬 KG 07 - mqgg5630-cyber
   - 🇰🇬 KG 08 - mqgg5630-cyber
-  - 🇰🇬 KG 09 - mqgg5630-cyber
-  - 🇰🇬 KG 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -10,7 +10,8 @@
         "auto",
         "🇱🇰 LK 01 - mqgg5630-cyber",
         "🇱🇰 LK 02 - mqgg5630-cyber",
-        "🇱🇰 LK 03 - mqgg5630-cyber"
+        "🇱🇰 LK 03 - mqgg5630-cyber",
+        "🇱🇰 LK 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +20,8 @@
       "outbounds": [
         "🇱🇰 LK 01 - mqgg5630-cyber",
         "🇱🇰 LK 02 - mqgg5630-cyber",
-        "🇱🇰 LK 03 - mqgg5630-cyber"
+        "🇱🇰 LK 03 - mqgg5630-cyber",
+        "🇱🇰 LK 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -46,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇱🇰 LK 02 - mqgg5630-cyber",
-      "server": "trackydev.site",
+      "server": "140.245.120.16",
       "server_port": 443,
       "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
       "tls": {
@@ -65,6 +67,25 @@
     {
       "type": "vless",
       "tag": "🇱🇰 LK 03 - mqgg5630-cyber",
+      "server": "trackydev.site",
+      "server_port": 443,
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
+      "tls": {
+        "enabled": true,
+        "server_name": "trackydev.site",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "trackydev.site"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 LK 04 - mqgg5630-cyber",
       "server": "trackydev.site",
       "server_port": 443,
       "uuid": "92d67828-4c56-4795-af5a-f387651380dc",

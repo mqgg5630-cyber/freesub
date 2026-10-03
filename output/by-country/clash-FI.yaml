@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 170.168.4.52
-  port: 443
-  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: finl11.ali-bard.online
-  client-fingerprint: qq
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 144.31.27.215
-  port: 43000
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: 81.94.148.120
-  port: 7449
-  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c
-    short-id: c0c41dc21cf7c18e
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -59,6 +17,33 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: finl11.ali-bard.online
+  port: 443
+  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: finl11.ali-bard.online
+  client-fingerprint: qq
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +52,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
-  - 🇫🇮 FI 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +60,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
-  - 🇫🇮 FI 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

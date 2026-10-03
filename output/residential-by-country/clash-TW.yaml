@@ -18,6 +18,19 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  type: trojan
+  server: ttww11.bpca2026.top
+  port: 443
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  udp: true
+  sni: ttww11.bpca2026.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttww11.bpca2026.top
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
   type: vless
   server: 60.248.219.78
   port: 443
@@ -38,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

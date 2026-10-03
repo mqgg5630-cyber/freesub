@@ -12,11 +12,7 @@
         "🇨🇭 CH 02 - mqgg5630-cyber",
         "🇨🇭 CH 03 - mqgg5630-cyber",
         "🇨🇭 CH 04 - mqgg5630-cyber",
-        "🇨🇭 CH 05 - mqgg5630-cyber",
-        "🇨🇭 CH 06 - mqgg5630-cyber",
-        "🇨🇭 CH 07 - mqgg5630-cyber",
-        "🇨🇭 CH 08 - mqgg5630-cyber",
-        "🇨🇭 CH 09 - mqgg5630-cyber"
+        "🇨🇭 CH 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -27,11 +23,7 @@
         "🇨🇭 CH 02 - mqgg5630-cyber",
         "🇨🇭 CH 03 - mqgg5630-cyber",
         "🇨🇭 CH 04 - mqgg5630-cyber",
-        "🇨🇭 CH 05 - mqgg5630-cyber",
-        "🇨🇭 CH 06 - mqgg5630-cyber",
-        "🇨🇭 CH 07 - mqgg5630-cyber",
-        "🇨🇭 CH 08 - mqgg5630-cyber",
-        "🇨🇭 CH 09 - mqgg5630-cyber"
+        "🇨🇭 CH 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -59,12 +51,25 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
+        }
+      }
     },
     {
       "type": "vless",
@@ -89,133 +94,29 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇭 CH 04 - mqgg5630-cyber",
-      "server": "208.69.78.217",
-      "server_port": 2053,
-      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
-          "short_id": "ad86e2d52ff40ebd"
-        }
-      }
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "vless",
       "tag": "🇨🇭 CH 05 - mqgg5630-cyber",
-      "server": "179.237.103.152",
+      "server": "185.18.250.245",
       "server_port": 443,
-      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
-      "flow": "xtls-rprx-vision",
+      "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
-          "short_id": "9de8ae53dabf1dc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH 06 - mqgg5630-cyber",
-      "server": "179.237.103.152",
-      "server_port": 443,
-      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
-          "short_id": "9de8ae53dabf1dc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH 07 - mqgg5630-cyber",
-      "server": "179.237.103.152",
-      "server_port": 443,
-      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
-          "short_id": "9de8ae53dabf1dc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH 08 - mqgg5630-cyber",
-      "server": "179.237.103.152",
-      "server_port": 443,
-      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
-          "short_id": "9de8ae53dabf1dc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH 09 - mqgg5630-cyber",
-      "server": "176.65.144.84",
-      "server_port": 443,
-      "uuid": "0f4081e7-612b-425f-8def-eebf144aedba",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "indigo.clouderiux.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
-          "short_id": "9e15546f267baa64"
+        "server_name": "edu.ruangguru.com.r3xxe.eu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nl-tw",
+        "headers": {
+          "Host": "edu.ruangguru.com.r3xxe.eu.cc"
         }
       }
     },

@@ -10,7 +10,8 @@
         "auto",
         "🇿🇦 ZA 01 - mqgg5630-cyber",
         "🇿🇦 ZA 02 - mqgg5630-cyber",
-        "🇿🇦 ZA 03 - mqgg5630-cyber"
+        "🇿🇦 ZA 03 - mqgg5630-cyber",
+        "🇿🇦 ZA 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +20,8 @@
       "outbounds": [
         "🇿🇦 ZA 01 - mqgg5630-cyber",
         "🇿🇦 ZA 02 - mqgg5630-cyber",
-        "🇿🇦 ZA 03 - mqgg5630-cyber"
+        "🇿🇦 ZA 03 - mqgg5630-cyber",
+        "🇿🇦 ZA 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,14 +29,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 ZA 01 - mqgg5630-cyber",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 ZA 02 - mqgg5630-cyber",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
@@ -42,7 +36,36 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇿🇦 ZA 02 - mqgg5630-cyber",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "vless",
       "tag": "🇿🇦 ZA 03 - mqgg5630-cyber",
+      "server": "34.35.174.143",
+      "server_port": 443,
+      "uuid": "4758aee6-6d1a-4306-b460-2398b5af4e35",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4",
+          "short_id": "5ced03e42cc31aab"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 ZA 04 - mqgg5630-cyber",
       "server": "139.84.247.164",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",

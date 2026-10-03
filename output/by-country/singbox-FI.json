@@ -10,8 +10,7 @@
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,8 +19,7 @@
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,7 +27,28 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "170.168.4.52",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "finl11.ali-bard.online",
       "server_port": 443,
       "uuid": "4643976f-85fa-40cf-9e58-ea28b50f253b",
       "flow": "xtls-rprx-vision",
@@ -49,66 +68,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "144.31.27.215",
-      "server_port": 43000,
-      "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "144.31.27.215",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg",
-          "short_id": "568d87a47271344e"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "81.94.148.120",
-      "server_port": 7449,
-      "uuid": "2690c11f-7258-43fe-aeb9-d90f93a3c317",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c",
-          "short_id": "c0c41dc21cf7c18e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
+      "server": "77.42.28.120",
+      "server_port": 1280,
+      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "is1-ssl.mzstatic.com"
         }
       }
     },
