@@ -8,35 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - mqgg5630-cyber"
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - mqgg5630-cyber"
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇧🇷 BR 01 - mqgg5630-cyber",
-      "server": "147.45.116.19",
-      "server_port": 443,
-      "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
+      "tag": "🇮🇶 IQ 01 - mqgg5630-cyber",
+      "server": "188.114.97.1",
+      "server_port": 2053,
+      "uuid": "0b3e7958-e5c4-498f-ab21-b49686f95d2d",
       "tls": {
         "enabled": true,
-        "server_name": "br.monkora.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+        "server_name": "bold-term-4edd.mbigspot.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "bold-term-4edd.mbigspot.workers.dev"
         }
       }
     },

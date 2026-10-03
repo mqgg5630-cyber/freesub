@@ -6,32 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 77.42.28.120
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: finl11.ali-bard.online
-  port: 443
-  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: finl11.ali-bard.online
-  client-fingerprint: qq
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 77.42.28.120
   port: 1280
@@ -44,6 +30,19 @@ proxies:
     path: /
     headers:
       Host: is1-ssl.mzstatic.com
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 77.42.28.120
 proxy-groups:
 - name: PROXIES
   type: select

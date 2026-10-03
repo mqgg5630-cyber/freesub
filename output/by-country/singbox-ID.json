@@ -15,7 +15,9 @@
         "🇮🇩 ID 05 - mqgg5630-cyber",
         "🇮🇩 ID 06 - mqgg5630-cyber",
         "🇮🇩 ID 07 - mqgg5630-cyber",
-        "🇮🇩 ID 08 - mqgg5630-cyber"
+        "🇮🇩 ID 08 - mqgg5630-cyber",
+        "🇮🇩 ID 09 - mqgg5630-cyber",
+        "🇮🇩 ID 10 - mqgg5630-cyber"
       ]
     },
     {
@@ -29,7 +31,9 @@
         "🇮🇩 ID 05 - mqgg5630-cyber",
         "🇮🇩 ID 06 - mqgg5630-cyber",
         "🇮🇩 ID 07 - mqgg5630-cyber",
-        "🇮🇩 ID 08 - mqgg5630-cyber"
+        "🇮🇩 ID 08 - mqgg5630-cyber",
+        "🇮🇩 ID 09 - mqgg5630-cyber",
+        "🇮🇩 ID 10 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -37,7 +41,7 @@
     {
       "type": "trojan",
       "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
-      "server": "188.114.97.6",
+      "server": "104.18.32.87",
       "server_port": 443,
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
@@ -64,25 +68,6 @@
     {
       "type": "trojan",
       "tag": "🇮🇩 ID 03 - mqgg5630-cyber",
-      "server": "104.18.32.87",
-      "server_port": 443,
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "tls": {
-        "enabled": true,
-        "server_name": "id1.nathaya.web.id",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/trojan",
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇩 ID 04 - mqgg5630-cyber",
       "server": "104.21.70.21",
       "server_port": 443,
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
@@ -101,7 +86,49 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇩 ID 04 - mqgg5630-cyber",
+      "server": "103.172.197.2",
+      "server_port": 29172,
+      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇩 ID 05 - mqgg5630-cyber",
+      "server": "103.172.197.3",
+      "server_port": 16006,
+      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 06 - mqgg5630-cyber",
       "server": "103.172.197.3",
       "server_port": 16006,
       "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
@@ -121,8 +148,50 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇩 ID 07 - mqgg5630-cyber",
+      "server": "103.172.197.2",
+      "server_port": 29172,
+      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 08 - mqgg5630-cyber",
+      "server": "103.172.197.3",
+      "server_port": 16006,
+      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇮🇩 ID 06 - mqgg5630-cyber",
+      "tag": "🇮🇩 ID 09 - mqgg5630-cyber",
       "server": "104.18.32.87",
       "server_port": 443,
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
@@ -141,8 +210,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇩 ID 07 - mqgg5630-cyber",
-      "server": "104.21.70.21",
+      "tag": "🇮🇩 ID 10 - mqgg5630-cyber",
+      "server": "188.114.97.6",
       "server_port": 443,
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
@@ -155,27 +224,6 @@
         "path": "/trojan",
         "headers": {
           "Host": "id1.nathaya.web.id"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇩 ID 08 - mqgg5630-cyber",
-      "server": "103.172.197.3",
-      "server_port": 16006,
-      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU"
         }
       }
     },

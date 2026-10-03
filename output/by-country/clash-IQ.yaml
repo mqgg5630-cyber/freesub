@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
+- name: 🇮🇶 IQ 01 - mqgg5630-cyber
   type: vless
-  server: 176.96.131.251
-  port: 1280
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  server: 188.114.97.1
+  port: 2053
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bold-term-4edd.mbigspot.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 176.96.131.251
+      Host: bold-term-4edd.mbigspot.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
+  - 🇮🇶 IQ 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
+  - 🇮🇶 IQ 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

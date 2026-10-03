@@ -6,33 +6,19 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 5.157.10.148
+  server: 94.143.231.146
   port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: vless
-  server: swed4.o4ka-internet.com
-  port: 443
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: swed4.o4ka-internet.com
-  client-fingerprint: random
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
   server: 143.246.196.207
   port: 443
@@ -46,22 +32,23 @@ proxies:
     short-id: ''
   servername: www.blocket.se
   client-fingerprint: firefox
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
-  server: 199.68.198.13
+  server: surstreming.vvzzkontaktezzvv.garden
   port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-    short-id: ''
-  servername: example.org
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: vless
-  server: surstreming.vvzzkontaktezzvv.garden
+  server: 5.157.10.148
   port: 443
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
@@ -82,7 +69,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +78,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

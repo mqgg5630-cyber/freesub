@@ -23,19 +23,22 @@
     {
       "type": "vless",
       "tag": "🇰🇿 KZ 01 - mqgg5630-cyber",
-      "server": "89.218.15.90",
-      "server_port": 10002,
-      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
+      "server": "50.7.157.234",
+      "server_port": 443,
+      "uuid": "75c4c6b1-dc9a-4c59-9985-df8af6e9c707",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kz1.vpnjantit.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpnjantit",
-        "headers": {
-          "Host": "kz1.vpnjantit.com"
+        "server_name": "edge-fr.extazy.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY",
+          "short_id": "ba4b2afa9e7193ea"
         }
       }
     },
