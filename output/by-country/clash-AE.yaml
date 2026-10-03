@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -45,7 +45,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,7 +58,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -84,6 +84,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   type: vless
+  server: nl3.freekeysh110.online
+  port: 443
+  uuid: 9b13807b-93e0-43c3-bd31-d0b0ed0c1d6b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg
+    short-id: b664d93e9d7a04f1
+  servername: nl3.freekeysh110.online
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -95,9 +109,9 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -121,6 +135,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,5 +149,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

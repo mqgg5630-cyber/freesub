@@ -11,7 +11,8 @@
         "🇸🇪 SE 01 - mqgg5630-cyber",
         "🇸🇪 SE 02 - mqgg5630-cyber",
         "🇸🇪 SE 03 - mqgg5630-cyber",
-        "🇸🇪 SE 04 - mqgg5630-cyber"
+        "🇸🇪 SE 04 - mqgg5630-cyber",
+        "🇸🇪 SE 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -21,7 +22,8 @@
         "🇸🇪 SE 01 - mqgg5630-cyber",
         "🇸🇪 SE 02 - mqgg5630-cyber",
         "🇸🇪 SE 03 - mqgg5630-cyber",
-        "🇸🇪 SE 04 - mqgg5630-cyber"
+        "🇸🇪 SE 04 - mqgg5630-cyber",
+        "🇸🇪 SE 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,19 +31,22 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "94.143.231.146",
+      "server": "132.243.231.4",
       "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
+        "server_name": "d3-se1.cloud-cdn.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
+          "short_id": "5efa80b939612291"
         }
       }
     },
@@ -69,35 +74,32 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
-      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "server": "94.143.231.146",
       "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
         "enabled": true,
-        "server_name": "surstreming.vvzzkontaktezzvv.garden",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-          "short_id": "fb442438e2223836"
+        "server_name": "sub.merky.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
-      "server": "5.157.10.148",
+      "server": "132.243.231.4",
       "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "surstreming.vvzzkontaktezzvv.garden",
+        "server_name": "d3-se1.cloud-cdn.xyz",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -105,8 +107,30 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-          "short_id": "fb442438e2223836"
+          "public_key": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
+          "short_id": "5efa80b939612291"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 05 - mqgg5630-cyber",
+      "server": "177.3.209.165",
+      "server_port": 443,
+      "uuid": "a5dd2dd9-0995-449e-be67-4a409890dc42",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "owkd.pashalloh.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mYtQrGiR9EkOpUsvsI7E18AWnFZZqfOPXUdpzE3luz8",
+          "short_id": "da4d87fa"
         }
       }
     },

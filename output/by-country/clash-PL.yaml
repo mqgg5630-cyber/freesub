@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
+  type: trojan
+  server: 202.78.163.237
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
   server: 83.168.95.145
   port: 443
@@ -18,7 +26,21 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: chrome
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 83.168.95.145
+  port: 443
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: safari
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: trojan
   server: 202.78.163.237
   port: 443
@@ -26,7 +48,7 @@ proxies:
   udp: true
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
   server: 95.85.227.241
   port: 443
@@ -39,27 +61,6 @@ proxies:
     public-key: dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo
     short-id: 25934afbedc65791
   servername: proxy3d.h1guro.ovh
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: pl.srv.vbuste-bot.com
   client-fingerprint: chrome
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: trojan
@@ -78,50 +79,6 @@ proxies:
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
 - name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: trojan
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: vless
-  server: 31.77.13.19
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: 83.168.95.145
-  port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 12 - mqgg5630-cyber
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -135,6 +92,48 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: trojan
+  server: 202.78.163.237
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
+  type: vless
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
+- name: 🇵🇱 PL 11 - mqgg5630-cyber
+  type: vless
+  server: 144.31.4.193
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: trojan
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
