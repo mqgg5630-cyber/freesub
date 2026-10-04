@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   type: vless
+  server: 59.125.69.24
+  port: 443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 59.125.69.24
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  type: vless
   server: argo6.5671234.xyz
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
@@ -18,27 +32,7 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇬🇧 英国 (United Kingdom) 02 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 87.192.47.10
-  port: 52006
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: grok.setlisting.ru
-- name: 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 31.77.227.6
-  port: 52006
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: bigdick.gamegrow.ru
-- name: 🇺🇸 美国 (United States) 04 (家宽) - mqgg5630-cyber
+- name: 🇺🇸 美国 (United States) 03 (家宽) - mqgg5630-cyber
   type: vless
   server: 179.254.71.20
   port: 52006
@@ -48,7 +42,27 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl.setlisting.ru
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber
+- name: 🇬🇧 英国 (United Kingdom) 04 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 87.192.47.10
+  port: 52006
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: grok.setlisting.ru
+- name: 🇦🇹 AT 05 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 31.77.227.6
+  port: 52006
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: bigdick.gamegrow.ru
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - mqgg5630-cyber
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -62,34 +76,27 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - mqgg5630-cyber
-  - 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 04 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇺🇸 美国 (United States) 03 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 04 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 05 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - mqgg5630-cyber
-  - 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 04 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇺🇸 美国 (United States) 03 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 04 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 05 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

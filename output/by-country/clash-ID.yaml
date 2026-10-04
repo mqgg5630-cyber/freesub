@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - mqgg5630-cyber
   type: vless
+  server: 43.255.157.118
+  port: 31094
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ
+    short-id: c761f990d786f2
+  servername: www.lamer.com.sg
+  client-fingerprint: safari
+- name: 🇮🇩 ID 02 - mqgg5630-cyber
+  type: vless
   server: 39.109.110.12
   port: 31094
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -18,20 +32,6 @@ proxies:
     short-id: c761f990d786f2
   servername: www.lamer.com.sg
   client-fingerprint: firefox
-- name: 🇮🇩 ID 02 - mqgg5630-cyber
-  type: vless
-  server: 43.255.156.166
-  port: 31094
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ
-    short-id: c761f990d786f2
-  servername: www.lamer.com.sg
-  client-fingerprint: chrome
 - name: 🇮🇩 ID 03 - mqgg5630-cyber
   type: ss
   server: 103.160.63.199
@@ -52,7 +52,7 @@ proxies:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
     short-id: ''
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇮🇩 ID 05 - mqgg5630-cyber
   type: vless
   server: 103.172.197.3
@@ -66,20 +66,20 @@ proxies:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
     short-id: ''
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇮🇩 ID 06 - mqgg5630-cyber
   type: vless
-  server: 103.172.197.2
-  port: 29172
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  server: 103.214.173.198
+  port: 31094
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-    short-id: ''
-  servername: aws.amazon.com
+    public-key: BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ
+    short-id: c761f990d786f2
+  servername: www.lamer.com.sg
   client-fingerprint: random
 - name: 🇮🇩 ID 07 - mqgg5630-cyber
   type: vless
@@ -94,6 +94,48 @@ proxies:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
     short-id: ''
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇩 ID 08 - mqgg5630-cyber
+  type: vless
+  server: 103.172.197.3
+  port: 16006
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    short-id: ''
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇩 ID 09 - mqgg5630-cyber
+  type: vless
+  server: 103.172.197.2
+  port: 29172
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇮🇩 ID 10 - mqgg5630-cyber
+  type: vless
+  server: 103.172.197.2
+  port: 29172
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+    short-id: ''
+  servername: aws.amazon.com
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
@@ -107,6 +149,9 @@ proxy-groups:
   - 🇮🇩 ID 05 - mqgg5630-cyber
   - 🇮🇩 ID 06 - mqgg5630-cyber
   - 🇮🇩 ID 07 - mqgg5630-cyber
+  - 🇮🇩 ID 08 - mqgg5630-cyber
+  - 🇮🇩 ID 09 - mqgg5630-cyber
+  - 🇮🇩 ID 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +164,8 @@ proxy-groups:
   - 🇮🇩 ID 05 - mqgg5630-cyber
   - 🇮🇩 ID 06 - mqgg5630-cyber
   - 🇮🇩 ID 07 - mqgg5630-cyber
+  - 🇮🇩 ID 08 - mqgg5630-cyber
+  - 🇮🇩 ID 09 - mqgg5630-cyber
+  - 🇮🇩 ID 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
