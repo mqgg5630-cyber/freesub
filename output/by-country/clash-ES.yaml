@@ -6,31 +6,25 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
+  type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
+- name: 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
   type: ss
   server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
-  type: trojan
-  server: 212.227.144.37
-  port: 8443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select

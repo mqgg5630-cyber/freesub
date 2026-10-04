@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  type: vless
-  server: test.keoplentuio.xyz
+  type: trojan
+  server: nimm.mpd.cc.cd
   port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  password: e309e031-991e-4656-9934-44d10deb8fd8
   udp: true
-  tls: false
+  sni: nimm.mpd.cc.cd
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /0962
+    headers:
+      Host: nimm.mpd.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
