@@ -17,8 +17,15 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 IL 02 - mqgg5630-cyber
+  type: ss
+  server: 45.144.172.123
+  port: 20998
+  cipher: aes-256-gcm
+  password: 78235e7dc55e9ad1
+  udp: true
+- name: 🇮🇱 IL 03 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
   port: 443
@@ -31,20 +38,6 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇱 IL 03 - mqgg5630-cyber
-  type: vless
-  server: 185.95.231.233
-  port: 443
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  servername: store.steampowered.com
   client-fingerprint: chrome
 - name: 🇮🇱 IL 04 - mqgg5630-cyber
   type: vless
@@ -59,7 +52,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -35,16 +35,22 @@ proxies:
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: trojan
-  server: cheerful-swan.rooster465.autos
+  type: vless
+  server: 83.168.95.145
   port: 443
-  password: UX82473651
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
   udp: true
-  sni: cheerful-swan.rooster465.autos
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: trojan
-  server: 202.78.163.237
+  server: cheerful-swan.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
@@ -64,73 +70,6 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: safari
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: vless
-  server: 83.168.95.145
-  port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: vless
-  server: 31.77.59.163
-  port: 443
-  uuid: ff35ca20-2304-4b3a-80e5-2c82953cf2ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
-  servername: pl37.mech-pro.online
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
-  type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,11 +81,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
   - 🇵🇱 PL 06 - mqgg5630-cyber
-  - 🇵🇱 PL 07 - mqgg5630-cyber
-  - 🇵🇱 PL 08 - mqgg5630-cyber
-  - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,10 +92,5 @@ proxy-groups:
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
   - 🇵🇱 PL 06 - mqgg5630-cyber
-  - 🇵🇱 PL 07 - mqgg5630-cyber
-  - 🇵🇱 PL 08 - mqgg5630-cyber
-  - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

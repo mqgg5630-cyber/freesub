@@ -13,12 +13,7 @@
         "🇵🇱 PL 03 - mqgg5630-cyber",
         "🇵🇱 PL 04 - mqgg5630-cyber",
         "🇵🇱 PL 05 - mqgg5630-cyber",
-        "🇵🇱 PL 06 - mqgg5630-cyber",
-        "🇵🇱 PL 07 - mqgg5630-cyber",
-        "🇵🇱 PL 08 - mqgg5630-cyber",
-        "🇵🇱 PL 09 - mqgg5630-cyber",
-        "🇵🇱 PL 10 - mqgg5630-cyber",
-        "🇵🇱 PL 11 - mqgg5630-cyber"
+        "🇵🇱 PL 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -30,12 +25,7 @@
         "🇵🇱 PL 03 - mqgg5630-cyber",
         "🇵🇱 PL 04 - mqgg5630-cyber",
         "🇵🇱 PL 05 - mqgg5630-cyber",
-        "🇵🇱 PL 06 - mqgg5630-cyber",
-        "🇵🇱 PL 07 - mqgg5630-cyber",
-        "🇵🇱 PL 08 - mqgg5630-cyber",
-        "🇵🇱 PL 09 - mqgg5630-cyber",
-        "🇵🇱 PL 10 - mqgg5630-cyber",
-        "🇵🇱 PL 11 - mqgg5630-cyber"
+        "🇵🇱 PL 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -86,21 +76,31 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
-      "server": "cheerful-swan.rooster465.autos",
+      "server": "83.168.95.145",
       "server_port": 443,
-      "password": "UX82473651",
+      "uuid": "82f37352-85e5-49bb-9edc-a80997065659",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cheerful-swan.rooster465.autos",
-        "insecure": true
+        "server_name": "google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
+          "short_id": "d345ad4657adeef9"
+        }
       }
     },
     {
       "type": "trojan",
       "tag": "🇵🇱 PL 05 - mqgg5630-cyber",
-      "server": "202.78.163.237",
+      "server": "cheerful-swan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -128,99 +128,6 @@
           "enabled": true,
           "public_key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
           "short_id": "d345ad4657adeef9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 07 - mqgg5630-cyber",
-      "server": "83.168.95.145",
-      "server_port": 443,
-      "uuid": "82f37352-85e5-49bb-9edc-a80997065659",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
-          "short_id": "d345ad4657adeef9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 08 - mqgg5630-cyber",
-      "server": "31.77.59.163",
-      "server_port": 443,
-      "uuid": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl37.mech-pro.online",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-          "short_id": "16e0f049"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 09 - mqgg5630-cyber",
-      "server": "70.34.255.101",
-      "server_port": 80,
-      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "70.34.255.101"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 10 - mqgg5630-cyber",
-      "server": "70.34.255.101",
-      "server_port": 80,
-      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "70.34.255.101"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 11 - mqgg5630-cyber",
-      "server": "144.31.4.193",
-      "server_port": 444,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.srv.vbuste-bot.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
         }
       }
     },

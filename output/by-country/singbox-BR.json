@@ -25,14 +25,14 @@
     {
       "type": "vmess",
       "tag": "🇧🇷 BR 01 - mqgg5630-cyber",
-      "server": "89.39.161.157",
+      "server": "aksai.org",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "89.39.161.157",
+        "server_name": "aksai.org",
         "insecure": true
       },
       "transport": {
@@ -44,23 +44,23 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇧🇷 BR 02 - mqgg5630-cyber",
-      "server": "35.247.243.231",
+      "server": "89.39.161.157",
       "server_port": 443,
-      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
-          "short_id": "b62a4da6cd1c4dd6"
+        "server_name": "aksai.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aksai.org"
         }
       }
     },
