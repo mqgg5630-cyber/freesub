@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
   type: trojan
-  server: 3.253.106.233
+  server: loved-shark.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
@@ -22,7 +22,15 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
   type: trojan
-  server: loved-shark.rooster465.autos
+  server: 3.253.106.233
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
+  type: trojan
+  server: 3.253.106.233
   port: 443
   password: UX82473651
   udp: true
@@ -36,6 +44,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +53,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

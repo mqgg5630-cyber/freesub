@@ -6,21 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  server: 50.7.249.98
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  servername: rusbid.de
-  client-fingerprint: firefox
+  servername: pol-pol-poland.failspace.top
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: trojan
-  server: 202.78.163.237
+  server: cheerful-swan.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
@@ -36,40 +32,32 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
-  server: 83.168.95.145
+  server: 50.7.249.155
   port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
+  servername: poland-good.failspace.top
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: vless
+  server: 50.7.249.138
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: polkadotnewone.failspace.top
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: trojan
-  server: cheerful-swan.rooster465.autos
+  server: 202.78.163.237
   port: 443
   password: UX82473651
   udp: true
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 83.168.95.145
-  port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
