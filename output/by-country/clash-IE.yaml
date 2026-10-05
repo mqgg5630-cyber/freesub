@@ -6,20 +6,41 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
   type: trojan
-  server: sacred-anemone.rooster465.autos
+  server: loved-shark.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
-  sni: sacred-anemone.rooster465.autos
+  sni: loved-shark.rooster465.autos
   skip-cert-verify: true
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: ss
-  server: 20.107.219.181
+  type: vless
+  server: ir-new.failspace.top
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 2fGnKgP8k8EHFuvj
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ir-new.failspace.top
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
+  type: vless
+  server: 50.7.5.164
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ir.failspace.top
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
+  type: trojan
+  server: loved-shark.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 05 - mqgg5630-cyber
   type: vless
   server: 50.7.5.163
   port: 443
@@ -29,7 +50,63 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: ir-viper.failspace.top
-- name: 🇮🇪 IE 04 - mqgg5630-cyber
+- name: 🇮🇪 IE 06 - mqgg5630-cyber
+  type: vless
+  server: ir-new.failspace.top
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: ir-new.failspace.top
+- name: 🇮🇪 IE 07 - mqgg5630-cyber
+  type: trojan
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 08 - mqgg5630-cyber
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 09 - mqgg5630-cyber
+  type: trojan
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 10 - mqgg5630-cyber
+  type: trojan
+  server: loved-shark.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 11 - mqgg5630-cyber
+  type: trojan
+  server: loved-shark.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 12 - mqgg5630-cyber
   type: trojan
   server: 3.253.106.233
   port: 443
@@ -37,47 +114,13 @@ proxies:
   udp: true
   sni: loved-shark.rooster465.autos
   skip-cert-verify: true
-- name: 🇮🇪 IE 05 - mqgg5630-cyber
-  type: vless
-  server: 50.7.5.165
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ir-new1.failspace.top
-- name: 🇮🇪 IE 06 - mqgg5630-cyber
+- name: 🇮🇪 IE 13 - mqgg5630-cyber
   type: trojan
   server: sacred-anemone.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
   sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 07 - mqgg5630-cyber
-  type: trojan
-  server: loved-shark.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 08 - mqgg5630-cyber
-  type: trojan
-  server: sacred-anemone.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 09 - mqgg5630-cyber
-  type: trojan
-  server: loved-shark.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: loved-shark.rooster465.autos
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -93,6 +136,10 @@ proxy-groups:
   - 🇮🇪 IE 07 - mqgg5630-cyber
   - 🇮🇪 IE 08 - mqgg5630-cyber
   - 🇮🇪 IE 09 - mqgg5630-cyber
+  - 🇮🇪 IE 10 - mqgg5630-cyber
+  - 🇮🇪 IE 11 - mqgg5630-cyber
+  - 🇮🇪 IE 12 - mqgg5630-cyber
+  - 🇮🇪 IE 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,5 +154,9 @@ proxy-groups:
   - 🇮🇪 IE 07 - mqgg5630-cyber
   - 🇮🇪 IE 08 - mqgg5630-cyber
   - 🇮🇪 IE 09 - mqgg5630-cyber
+  - 🇮🇪 IE 10 - mqgg5630-cyber
+  - 🇮🇪 IE 11 - mqgg5630-cyber
+  - 🇮🇪 IE 12 - mqgg5630-cyber
+  - 🇮🇪 IE 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

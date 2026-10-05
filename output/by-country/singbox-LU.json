@@ -8,76 +8,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - mqgg5630-cyber",
-        "🇱🇺 LU 02 - mqgg5630-cyber",
-        "🇱🇺 LU 03 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - mqgg5630-cyber",
-        "🇱🇺 LU 02 - mqgg5630-cyber",
-        "🇱🇺 LU 03 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
+      "server": "107.189.7.176",
+      "server_port": 32752,
+      "uuid": "d72045ad-9c37-4768-89c1-88fe6ae7f9fc",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇺 LU 02 - mqgg5630-cyber",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇺 LU 03 - mqgg5630-cyber",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA",
+          "short_id": "d758a643034ad90e"
         }
       }
     },

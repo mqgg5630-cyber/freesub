@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber",
+        "🇰🇿 KZ 02 - mqgg5630-cyber",
+        "🇰🇿 KZ 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber",
+        "🇰🇿 KZ 02 - mqgg5630-cyber",
+        "🇰🇿 KZ 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -34,6 +38,47 @@
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U",
+          "short_id": "1be482b8e08aa0ef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 KZ 02 - mqgg5630-cyber",
+      "server": "104.238.24.139",
+      "server_port": 8443,
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.cndyw.ggff.net",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "pyip=bpb.yousef.isegaro.comfp=random",
+        "headers": {
+          "Host": "free.cndyw.ggff.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 KZ 03 - mqgg5630-cyber",
+      "server": "172.93.122.4",
+      "server_port": 8443,
+      "uuid": "b812a4e0-c90a-4864-8ffb-2af71d69d4f4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.reddotcorp.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

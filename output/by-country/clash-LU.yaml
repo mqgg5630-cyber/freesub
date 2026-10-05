@@ -5,59 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇺 LU 01 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
+  type: vless
+  server: 107.189.7.176
+  port: 32752
+  uuid: d72045ad-9c37-4768-89c1-88fe6ae7f9fc
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🇱🇺 LU 02 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🇱🇺 LU 03 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+    short-id: d758a643034ad90e
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇺 LU 01 - mqgg5630-cyber
-  - 🇱🇺 LU 02 - mqgg5630-cyber
-  - 🇱🇺 LU 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 LU 01 - mqgg5630-cyber
-  - 🇱🇺 LU 02 - mqgg5630-cyber
-  - 🇱🇺 LU 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

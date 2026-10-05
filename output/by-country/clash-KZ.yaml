@@ -18,17 +18,49 @@ proxies:
     short-id: 1be482b8e08aa0ef
   servername: nl2.reddotcorp.org
   client-fingerprint: safari
+- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+  type: vless
+  server: 104.238.24.139
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
+- name: 🇰🇿 KZ 03 - mqgg5630-cyber
+  type: vless
+  server: 172.93.122.4
+  port: 8443
+  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
+    short-id: 1be482b8e08aa0ef
+  servername: nl2.reddotcorp.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
+  - 🇰🇿 KZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
+  - 🇰🇿 KZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
