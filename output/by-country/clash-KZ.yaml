@@ -17,12 +17,12 @@ proxies:
     public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
     short-id: 1be482b8e08aa0ef
   servername: nl2.reddotcorp.org
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇰🇿 KZ 02 - mqgg5630-cyber
   type: vless
-  server: 50.7.157.235
+  server: 50.7.87.122
   port: 443
-  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  uuid: 9c104116-b231-4626-94cb-6d8fc4d2b000
   udp: true
   tls: true
   skip-cert-verify: true
@@ -30,9 +30,37 @@ proxies:
   reality-opts:
     public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
     short-id: ba4b2afa9e7193ea
-  servername: edge-fr.extazy.org
-  client-fingerprint: safari
+  servername: edge-fr.extazy.net
+  client-fingerprint: qq
 - name: 🇰🇿 KZ 03 - mqgg5630-cyber
+  type: vless
+  server: 172.93.122.4
+  port: 8443
+  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
+    short-id: 1be482b8e08aa0ef
+  servername: nl2.reddotcorp.org
+  client-fingerprint: safari
+- name: 🇰🇿 KZ 04 - mqgg5630-cyber
+  type: vless
+  server: 172.93.122.4
+  port: 8443
+  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
+    short-id: 1be482b8e08aa0ef
+  servername: nl2.reddotcorp.org
+  client-fingerprint: safari
+- name: 🇰🇿 KZ 05 - mqgg5630-cyber
   type: vless
   server: 172.93.122.4
   port: 8443
@@ -54,6 +82,8 @@ proxy-groups:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
+  - 🇰🇿 KZ 04 - mqgg5630-cyber
+  - 🇰🇿 KZ 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +92,7 @@ proxy-groups:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
+  - 🇰🇿 KZ 04 - mqgg5630-cyber
+  - 🇰🇿 KZ 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

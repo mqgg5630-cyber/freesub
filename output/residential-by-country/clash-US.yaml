@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 104.18.46.234
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 162.159.48.32
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 03 (家宽) - mqgg5630-cyber
-  type: vless
   server: 179.254.71.20
   port: 52006
   uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
@@ -40,6 +14,19 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl.setlisting.ru
+- name: 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 162.159.24.131
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
   - 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber
   - 🇺🇸 美国 (United States) 02 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

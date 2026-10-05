@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 172.66.152.4
+  server: argo6.5671234.xyz
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -18,7 +18,21 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇬🇧 英国 (United Kingdom) 02 (家宽) - mqgg5630-cyber
+- name: 🇧🇬 BG 02 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 136.175.82.85
+  port: 18775
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
   type: vless
   server: 87.192.47.10
   port: 52006
@@ -28,43 +42,7 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: grok.setlisting.ru
-- name: 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 31.77.227.6
-  port: 52006
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: bigdick.gamegrow.ru
 - name: 🇺🇸 美国 (United States) 04 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 104.18.46.234
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 162.159.48.32
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 06 (家宽) - mqgg5630-cyber
   type: vless
   server: 179.254.71.20
   port: 52006
@@ -74,20 +52,42 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: pl.setlisting.ru
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - mqgg5630-cyber
+- name: 🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber
   type: vless
-  server: 103.180.20.108
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  server: 162.159.24.131
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇦🇹 AT 06 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 31.77.227.6
+  port: 52006
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 103.180.20.108
+  flow: xtls-rprx-vision
+  servername: bigdick.gamegrow.ru
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - mqgg5630-cyber
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+    short-id: ''
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - mqgg5630-cyber
   type: vless
   server: 59.125.69.23
@@ -102,31 +102,47 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 103.180.20.108
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 103.180.20.108
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - mqgg5630-cyber
-  - 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
+  - 🇧🇬 BG 02 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
   - 🇺🇸 美国 (United States) 04 (家宽) - mqgg5630-cyber
   - 🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 06 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 06 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - mqgg5630-cyber
-  - 🇦🇹 AT 03 (家宽) - mqgg5630-cyber
+  - 🇧🇬 BG 02 (家宽) - mqgg5630-cyber
+  - 🇬🇧 英国 (United Kingdom) 03 (家宽) - mqgg5630-cyber
   - 🇺🇸 美国 (United States) 04 (家宽) - mqgg5630-cyber
   - 🇺🇸 美国 (United States) 05 (家宽) - mqgg5630-cyber
-  - 🇺🇸 美国 (United States) 06 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - mqgg5630-cyber
+  - 🇦🇹 AT 06 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
