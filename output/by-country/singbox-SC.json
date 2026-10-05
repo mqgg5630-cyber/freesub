@@ -8,84 +8,21 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber",
-        "🇸🇨 SC 03 - mqgg5630-cyber",
-        "🇸🇨 SC 04 - mqgg5630-cyber",
-        "🇸🇨 SC 05 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber",
-        "🇸🇨 SC 03 - mqgg5630-cyber",
-        "🇸🇨 SC 04 - mqgg5630-cyber",
-        "🇸🇨 SC 05 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "45.205.26.194",
-      "server_port": 443,
-      "password": "66974838-ee71-481c-b9dd-172edbccece7",
-      "tls": {
-        "enabled": true,
-        "server_name": "node5.luoye.ee",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇨 SC 02 - mqgg5630-cyber",
-      "server": "node5.luoye.ee",
-      "server_port": 443,
-      "password": "53210e66-b1a6-484d-85e9-4e0e8432c47c",
-      "tls": {
-        "enabled": true,
-        "server_name": "node5.luoye.ee",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇨 SC 03 - mqgg5630-cyber",
-      "server": "45.205.26.194",
-      "server_port": 443,
-      "password": "53210e66-b1a6-484d-85e9-4e0e8432c47c",
-      "tls": {
-        "enabled": true,
-        "server_name": "node5.luoye.ee",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC 04 - mqgg5630-cyber",
-      "server": "154.211.8.227",
-      "server_port": 2087,
-      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy-34l.pages.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "proxy-34l.pages.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇸🇨 SC 05 - mqgg5630-cyber",
+      "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
       "server": "45.207.207.25",
       "server_port": 443,
       "method": "aes-256-gcm",

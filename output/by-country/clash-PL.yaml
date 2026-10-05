@@ -6,64 +6,74 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: poland-good.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  servername: rusbid.de
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: pol-pol-poland.failspace.top
+  type: trojan
+  server: 202.78.163.237
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  password: UX82473651
   udp: true
-  tls: true
+  sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pol-pol-poland.failspace.top
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
-  server: polkadotnewone.failspace.top
+  server: 83.168.95.145
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: polkadotnewone.failspace.top
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: safari
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
-  server: 50.7.249.155
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.252.154
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.98
+  type: trojan
+  server: 202.78.163.237
   port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  password: UX82473651
   udp: true
-  tls: true
+  sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pol-pol-poland.failspace.top
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: vless
-  server: poland-good.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.252.154
 - name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
   server: 70.34.252.154
@@ -78,180 +88,6 @@ proxies:
     headers:
       Host: 70.34.252.154
 - name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: vless
-  server: 70.34.252.154
-  port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.252.154
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: polkadotnewone.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: polkadotnewone.failspace.top
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
-  type: vless
-  server: iiproxy8.iiproxy.com
-  port: 8443
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: iiproxy8.iiproxy.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: iiproxy8.iiproxy.com
-- name: 🇵🇱 PL 12 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.155
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
-- name: 🇵🇱 PL 13 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.138
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: polkadotnewone.failspace.top
-- name: 🇵🇱 PL 14 - mqgg5630-cyber
-  type: vless
-  server: 83.168.95.145
-  port: 443
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: random
-- name: 🇵🇱 PL 15 - mqgg5630-cyber
-  type: vless
-  server: pol-pol-poland.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pol-pol-poland.failspace.top
-- name: 🇵🇱 PL 16 - mqgg5630-cyber
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
-- name: 🇵🇱 PL 17 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 18 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.138
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: polkadotnewone.failspace.top
-- name: 🇵🇱 PL 19 - mqgg5630-cyber
-  type: vless
-  server: poland-good.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
-- name: 🇵🇱 PL 20 - mqgg5630-cyber
-  type: vless
-  server: polkadotnewone.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: polkadotnewone.failspace.top
-- name: 🇵🇱 PL 21 - mqgg5630-cyber
-  type: vless
-  server: pol-pol-poland.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pol-pol-poland.failspace.top
-- name: 🇵🇱 PL 22 - mqgg5630-cyber
-  type: vless
-  server: poland-good.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
-- name: 🇵🇱 PL 23 - mqgg5630-cyber
-  type: vless
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 24 - mqgg5630-cyber
   type: vless
   server: 83.168.107.220
   port: 443
@@ -265,56 +101,6 @@ proxies:
     short-id: c56d4f1c
   servername: google.com
   client-fingerprint: safari
-- name: 🇵🇱 PL 25 - mqgg5630-cyber
-  type: vless
-  server: poland-good.failspace.top
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
-- name: 🇵🇱 PL 26 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.98
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pol-pol-poland.failspace.top
-- name: 🇵🇱 PL 27 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.155
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: poland-good.failspace.top
-- name: 🇵🇱 PL 28 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.138
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: polkadotnewone.failspace.top
-- name: 🇵🇱 PL 29 - mqgg5630-cyber
-  type: vless
-  server: 50.7.249.98
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: pol-pol-poland.failspace.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -328,27 +114,6 @@ proxy-groups:
   - 🇵🇱 PL 06 - mqgg5630-cyber
   - 🇵🇱 PL 07 - mqgg5630-cyber
   - 🇵🇱 PL 08 - mqgg5630-cyber
-  - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
-  - 🇵🇱 PL 12 - mqgg5630-cyber
-  - 🇵🇱 PL 13 - mqgg5630-cyber
-  - 🇵🇱 PL 14 - mqgg5630-cyber
-  - 🇵🇱 PL 15 - mqgg5630-cyber
-  - 🇵🇱 PL 16 - mqgg5630-cyber
-  - 🇵🇱 PL 17 - mqgg5630-cyber
-  - 🇵🇱 PL 18 - mqgg5630-cyber
-  - 🇵🇱 PL 19 - mqgg5630-cyber
-  - 🇵🇱 PL 20 - mqgg5630-cyber
-  - 🇵🇱 PL 21 - mqgg5630-cyber
-  - 🇵🇱 PL 22 - mqgg5630-cyber
-  - 🇵🇱 PL 23 - mqgg5630-cyber
-  - 🇵🇱 PL 24 - mqgg5630-cyber
-  - 🇵🇱 PL 25 - mqgg5630-cyber
-  - 🇵🇱 PL 26 - mqgg5630-cyber
-  - 🇵🇱 PL 27 - mqgg5630-cyber
-  - 🇵🇱 PL 28 - mqgg5630-cyber
-  - 🇵🇱 PL 29 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -362,26 +127,5 @@ proxy-groups:
   - 🇵🇱 PL 06 - mqgg5630-cyber
   - 🇵🇱 PL 07 - mqgg5630-cyber
   - 🇵🇱 PL 08 - mqgg5630-cyber
-  - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
-  - 🇵🇱 PL 12 - mqgg5630-cyber
-  - 🇵🇱 PL 13 - mqgg5630-cyber
-  - 🇵🇱 PL 14 - mqgg5630-cyber
-  - 🇵🇱 PL 15 - mqgg5630-cyber
-  - 🇵🇱 PL 16 - mqgg5630-cyber
-  - 🇵🇱 PL 17 - mqgg5630-cyber
-  - 🇵🇱 PL 18 - mqgg5630-cyber
-  - 🇵🇱 PL 19 - mqgg5630-cyber
-  - 🇵🇱 PL 20 - mqgg5630-cyber
-  - 🇵🇱 PL 21 - mqgg5630-cyber
-  - 🇵🇱 PL 22 - mqgg5630-cyber
-  - 🇵🇱 PL 23 - mqgg5630-cyber
-  - 🇵🇱 PL 24 - mqgg5630-cyber
-  - 🇵🇱 PL 25 - mqgg5630-cyber
-  - 🇵🇱 PL 26 - mqgg5630-cyber
-  - 🇵🇱 PL 27 - mqgg5630-cyber
-  - 🇵🇱 PL 28 - mqgg5630-cyber
-  - 🇵🇱 PL 29 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
