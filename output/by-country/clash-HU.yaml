@@ -4,27 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 AT 01 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 31.77.227.6
-  port: 52006
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+- name: 🇭🇺 HU 01 - mqgg5630-cyber
+  type: trojan
+  server: 77.74.123.106
+  port: 4443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   udp: true
-  tls: true
+  sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: bigdick.gamegrow.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 AT 01 (家宽) - mqgg5630-cyber
+  - 🇭🇺 HU 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 AT 01 (家宽) - mqgg5630-cyber
+  - 🇭🇺 HU 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

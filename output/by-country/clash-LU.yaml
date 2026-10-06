@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - mqgg5630-cyber
-  type: vless
-  server: 146.56.221.148
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+- name: 🇱🇺 LU 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
   udp: true
-  tls: true
+  sni: wWw.Volumeroot.cOm.
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: ccc.010304.xyz
+      Host: www.volumerOot.coM.
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

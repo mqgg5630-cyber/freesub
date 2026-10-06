@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - mqgg5630-cyber
   type: vless
-  server: 45.153.130.161
+  server: 103.30.76.197
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
@@ -20,7 +20,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇻🇳 VN 02 - mqgg5630-cyber
   type: vless
-  server: 103.30.76.197
+  server: 45.153.130.119
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
@@ -31,10 +31,10 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇻🇳 VN 03 - mqgg5630-cyber
   type: vless
-  server: 43.255.156.57
+  server: 43.255.157.118
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
@@ -45,10 +45,10 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇻🇳 VN 04 - mqgg5630-cyber
   type: vless
-  server: 45.153.130.140
+  server: 43.255.157.118
   port: 44988
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
@@ -61,6 +61,20 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: random
 - name: 🇻🇳 VN 05 - mqgg5630-cyber
+  type: vless
+  server: 45.153.130.119
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: safari
+- name: 🇻🇳 VN 06 - mqgg5630-cyber
   type: vless
   server: 43.255.157.118
   port: 44988
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇻🇳 VN 03 - mqgg5630-cyber
   - 🇻🇳 VN 04 - mqgg5630-cyber
   - 🇻🇳 VN 05 - mqgg5630-cyber
+  - 🇻🇳 VN 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇻🇳 VN 03 - mqgg5630-cyber
   - 🇻🇳 VN 04 - mqgg5630-cyber
   - 🇻🇳 VN 05 - mqgg5630-cyber
+  - 🇻🇳 VN 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
