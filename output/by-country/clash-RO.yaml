@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- name: 🇷🇴 RO 02 - mqgg5630-cyber
+  type: vless
+  server: 46.28.67.55
+  port: 443
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: vless
   server: 109.104.106.149
   port: 443
@@ -18,20 +39,48 @@ proxies:
     short-id: 87709fed663228e5
   servername: d3-ro.cloud-cdn.xyz
   client-fingerprint: chrome
-- name: 🇷🇴 RO 02 - mqgg5630-cyber
+- name: 🇷🇴 RO 04 - mqgg5630-cyber
   type: vless
-  server: 193.163.203.253
+  server: 146.70.124.85
   port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-  servername: yandex.ru
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
   client-fingerprint: chrome
+- name: 🇷🇴 RO 05 - mqgg5630-cyber
+  type: vless
+  server: 109.104.106.15
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇷🇴 RO 06 - mqgg5630-cyber
+  type: vless
+  server: 109.104.106.15
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +88,10 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
+  - 🇷🇴 RO 03 - mqgg5630-cyber
+  - 🇷🇴 RO 04 - mqgg5630-cyber
+  - 🇷🇴 RO 05 - mqgg5630-cyber
+  - 🇷🇴 RO 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +99,9 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
+  - 🇷🇴 RO 03 - mqgg5630-cyber
+  - 🇷🇴 RO 04 - mqgg5630-cyber
+  - 🇷🇴 RO 05 - mqgg5630-cyber
+  - 🇷🇴 RO 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

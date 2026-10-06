@@ -5,6 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
+  type: vmess
+  server: finla2.povrak.ir
+  port: 58179
+  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
   server: 13.143.129.45
   port: 443
@@ -18,21 +55,7 @@ proxies:
     short-id: 7dd08043
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 131.123.13.93
-  port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA
-    short-id: 29455a3a790acbd0
-  servername: 1mcfn.67resserv67.info
-  client-fingerprint: safari
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
   server: 188.130.209.216
   port: 443
@@ -46,13 +69,20 @@ proxies:
     short-id: 170ab9ced015571f
   servername: emaar.ru
   client-fingerprint: safari
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: 188.130.209.216
+  port: 443
+  uuid: 444623e9-f27d-487c-b7cc-436931967e79
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho
+    short-id: 170ab9ced015571f
+  servername: emaar.ru
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +92,9 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
+  - 🇫🇮 FI 05 - mqgg5630-cyber
+  - 🇫🇮 FI 06 - mqgg5630-cyber
+  - 🇫🇮 FI 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +104,8 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
+  - 🇫🇮 FI 05 - mqgg5630-cyber
+  - 🇫🇮 FI 06 - mqgg5630-cyber
+  - 🇫🇮 FI 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

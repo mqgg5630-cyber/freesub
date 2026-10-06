@@ -8,34 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇮🇷 IR 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇮🇷 IR 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
-      "server": "95.182.95.178",
+      "type": "trojan",
+      "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
+      "server": "167.82.76.27",
       "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
+        "server_name": "ssl.fastly.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome",
+        "path": "/",
         "headers": {
-          "Host": "ccc.010304.xyz"
+          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
         }
       }
     },

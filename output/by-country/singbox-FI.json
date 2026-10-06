@@ -11,7 +11,10 @@
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
         "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 04 - mqgg5630-cyber",
+        "🇫🇮 FI 05 - mqgg5630-cyber",
+        "🇫🇮 FI 06 - mqgg5630-cyber",
+        "🇫🇮 FI 07 - mqgg5630-cyber"
       ]
     },
     {
@@ -21,14 +24,63 @@
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
         "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 04 - mqgg5630-cyber",
+        "🇫🇮 FI 05 - mqgg5630-cyber",
+        "🇫🇮 FI 06 - mqgg5630-cyber",
+        "🇫🇮 FI 07 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
+      "server": "finla2.povrak.ir",
+      "server_port": 58179,
+      "uuid": "ce0bcb75-baa7-41a7-833e-eb54a8f6a08e",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
       "server": "13.143.129.45",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -50,29 +102,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "131.123.13.93",
-      "server_port": 443,
-      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "1mcfn.67resserv67.info",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA",
-          "short_id": "29455a3a790acbd0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 06 - mqgg5630-cyber",
       "server": "188.130.209.216",
       "server_port": 443,
       "uuid": "444623e9-f27d-487c-b7cc-436931967e79",
@@ -93,12 +123,26 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
+      "type": "vless",
+      "tag": "🇫🇮 FI 07 - mqgg5630-cyber",
+      "server": "188.130.209.216",
+      "server_port": 443,
+      "uuid": "444623e9-f27d-487c-b7cc-436931967e79",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "emaar.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho",
+          "short_id": "170ab9ced015571f"
+        }
+      }
     },
     {
       "type": "direct",

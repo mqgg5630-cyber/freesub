@@ -32,18 +32,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   type: vless
-  server: 157.228.155.185
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
-    short-id: 5ea112e8
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
   server: eu86.vaultberry.cloud
@@ -59,7 +58,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   type: vless
-  server: 157.228.128.59
+  server: 157.228.155.185
   port: 443
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
@@ -67,10 +66,10 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
+    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
+    short-id: 5ea112e8
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: randomized
 - name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
@@ -112,7 +111,47 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
   type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
+  type: vless
   server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
+  type: vless
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -137,6 +176,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,5 +193,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
+  - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

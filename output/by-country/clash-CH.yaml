@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
@@ -26,6 +32,20 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - mqgg5630-cyber
   type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
+  type: vless
   server: 208.69.78.217
   port: 2053
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
@@ -37,6 +57,40 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇭 CH 05 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 06 - mqgg5630-cyber
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 07 - mqgg5630-cyber
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +99,10 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
+  - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
+  - 🇨🇭 CH 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +111,9 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
+  - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
+  - 🇨🇭 CH 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
