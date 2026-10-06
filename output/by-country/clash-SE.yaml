@@ -48,6 +48,48 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: vless
+  server: 132.243.231.4
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: edge
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vless
+  server: 132.243.231.12
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
+  type: vless
+  server: 132.243.231.4
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 07 - mqgg5630-cyber
+  type: vless
   server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -69,6 +111,9 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
+  - 🇸🇪 SE 06 - mqgg5630-cyber
+  - 🇸🇪 SE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +123,8 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
+  - 🇸🇪 SE 06 - mqgg5630-cyber
+  - 🇸🇪 SE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   type: vmess
   server: aksai.org
   port: 443
@@ -20,7 +46,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -33,22 +59,9 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
   type: vmess
-  server: aksai.org
+  server: 185.67.125.90
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -56,13 +69,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+      Host: aksai.org
+- name: 🇮🇳 印度 (India) 06 - mqgg5630-cyber
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -74,7 +87,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +98,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,5 +109,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
