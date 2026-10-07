@@ -6,37 +6,43 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   type: trojan
-  server: 2.27.109.179
-  port: 45464
-  password: XuMweB2PWs
+  server: 185.244.208.69
+  port: 443
+  password: UX82473651
   udp: true
-  sni: 2.27.109.179.sslip.io
+  sni: strong-haddock.rooster465.autos
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   type: trojan
-  server: 185.244.208.69
+  server: strong-haddock.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: trojan
+  server: 2.27.109.179
+  port: 45464
+  password: XuMweB2PWs
+  udp: true
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /tyxyws
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+      Host: jp3.yohototo.top
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   type: trojan
   server: 185.244.208.69
   port: 443
@@ -44,22 +50,6 @@ proxies:
   udp: true
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   type: vless
   server: 43.129.80.179
@@ -76,63 +66,58 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
   type: trojan
-  server: 185.244.208.69
+  server: strong-haddock.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  type: trojan
-  server: 2.27.109.179
-  port: 45464
-  password: XuMweB2PWs
+  type: vless
+  server: 45.153.130.119
+  port: 44988
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  sni: 2.27.109.179.sslip.io
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: vmess
-  server: 194.99.79.26
+  type: trojan
+  server: 185.244.208.69
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  password: UX82473651
+  udp: true
+  sni: strong-haddock.rooster465.autos
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+  type: vmess
+  server: 47.243.153.153
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
+      Host: i2psm3knof5qjjix.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: UX82473651
   udp: true
-  tls: true
+  sni: strong-haddock.rooster465.autos
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
   type: trojan
   server: strong-haddock.rooster465.autos
@@ -143,60 +128,21 @@ proxies:
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
   type: vmess
-  server: 194.99.79.26
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
-  type: trojan
-  server: strong-haddock.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - mqgg5630-cyber
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jmp1.907737.xyz
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - mqgg5630-cyber
   type: trojan
   server: 2.27.109.179
   port: 45464
@@ -204,53 +150,22 @@ proxies:
   udp: true
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
-  type: trojan
-  server: strong-haddock.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
-  type: vmess
-  server: 194.99.79.26
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
-  type: trojan
-  server: strong-haddock.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -271,12 +186,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 16 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 17 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -297,11 +206,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 14 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 15 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 16 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 17 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 18 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 19 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 20 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 21 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

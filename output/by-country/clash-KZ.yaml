@@ -4,14 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+- name: 🇰🇿 KZ 01 - mqgg5630-cyber
   type: vless
   server: 193.202.113.5
   port: 443
@@ -24,20 +17,18 @@ proxies:
     public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
     short-id: ee169e93d3c277a1
   servername: edge-uk2.mystatic-cdn.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  - 🇰🇿 KZ 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  - 🇰🇿 KZ 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

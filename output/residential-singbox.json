@@ -10,9 +10,7 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -21,19 +19,36 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "60.248.219.54",
+      "server": "youxuan.cf.090227.xyz",
       "server_port": 443,
-      "uuid": "06e177f7-240d-4687-bd85-235505801a5e",
+      "password": "d6ee952a-90a2-447e-8668-b4f926f3607a",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw6f.i5x.hh2333.vavava.kdns.fr",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tw6f.i5x.hh2333.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "60.248.219.78",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
         "server_name": "ty986gfazs.cainiaohub.xyz",
@@ -43,26 +58,7 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "60.248.219.54"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
-      "tls": {
-        "enabled": true,
-        "server_name": "argo6.5671234.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/e8e2cecb6188f7fb",
-        "headers": {
-          "Host": "argo6.5671234.xyz"
+          "Host": "ty986gfazs.cainiaohub.xyz"
         }
       }
     },
@@ -82,32 +78,6 @@
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
           "Host": "103.180.20.108"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
-      "server": "77.74.123.106",
-      "server_port": 4443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - mqgg5630-cyber",
-      "server": "172.64.88.251",
-      "server_port": 8880,
-      "uuid": "7e3cd2f1-0de5-4717-9002-64d8597bc577",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
-        "headers": {
-          "Host": "dry-credit-fc26.203-d8c.workers.dev"
         }
       }
     },
