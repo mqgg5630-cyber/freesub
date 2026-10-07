@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
+  type: trojan
+  server: 46.8.100.93
+  port: 443
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  udp: true
+  sni: nl.zhabulik.ru
+  skip-cert-verify: true
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: trojan
+  server: 46.8.100.93
+  port: 443
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  udp: true
+  sni: nl.zhabulik.ru
+  skip-cert-verify: true
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
   type: vless
   server: 95.182.95.178
   port: 443
@@ -18,7 +34,15 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+- name: 🇨🇿 CZ 04 - mqgg5630-cyber
+  type: trojan
+  server: 46.8.100.93
+  port: 443
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  udp: true
+  sni: nl.zhabulik.ru
+  skip-cert-verify: true
+- name: 🇨🇿 CZ 05 - mqgg5630-cyber
   type: vless
   server: 95.182.95.178
   port: 443
@@ -39,6 +63,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
+  - 🇨🇿 CZ 04 - mqgg5630-cyber
+  - 🇨🇿 CZ 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +73,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
+  - 🇨🇿 CZ 04 - mqgg5630-cyber
+  - 🇨🇿 CZ 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -17,7 +17,9 @@
         "🇵🇱 PL 07 - mqgg5630-cyber",
         "🇵🇱 PL 08 - mqgg5630-cyber",
         "🇵🇱 PL 09 - mqgg5630-cyber",
-        "🇵🇱 PL 10 - mqgg5630-cyber"
+        "🇵🇱 PL 10 - mqgg5630-cyber",
+        "🇵🇱 PL 11 - mqgg5630-cyber",
+        "🇵🇱 PL 12 - mqgg5630-cyber"
       ]
     },
     {
@@ -33,47 +35,16 @@
         "🇵🇱 PL 07 - mqgg5630-cyber",
         "🇵🇱 PL 08 - mqgg5630-cyber",
         "🇵🇱 PL 09 - mqgg5630-cyber",
-        "🇵🇱 PL 10 - mqgg5630-cyber"
+        "🇵🇱 PL 10 - mqgg5630-cyber",
+        "🇵🇱 PL 11 - mqgg5630-cyber",
+        "🇵🇱 PL 12 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
-      "server": "202.78.163.237",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "cheerful-swan.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
-      "server": "78.17.109.97",
-      "server_port": 6443,
-      "uuid": "dfe8ea9e-fd77-48e6-86ee-7bc1019de1e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "ok.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NP5_ymQeqYr_EP7aAPIl3YBRghX60zLq6m74Ht4bFUI",
-          "short_id": "2c043ed8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
       "server": "70.34.252.154",
       "server_port": 80,
       "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
@@ -86,9 +57,44 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
+      "server": "70.34.255.101",
+      "server_port": 80,
+      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "70.34.255.101"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "server": "31.77.13.19",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
-      "server": "cheerful-swan.rooster465.autos",
+      "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -100,7 +106,7 @@
     {
       "type": "trojan",
       "tag": "🇵🇱 PL 05 - mqgg5630-cyber",
-      "server": "202.78.163.237",
+      "server": "cheerful-swan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -110,17 +116,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇵🇱 PL 06 - mqgg5630-cyber",
-      "server": "70.34.252.154",
-      "server_port": 80,
-      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "70.34.252.154"
-        }
+      "server": "202.78.163.237",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": true
       }
     },
     {
@@ -138,29 +142,35 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇵🇱 PL 08 - mqgg5630-cyber",
-      "server": "81.90.20.200",
+      "server": "202.78.163.237",
       "server_port": 443,
-      "uuid": "51c14658-8873-4454-9383-c41fc80bde4b",
-      "flow": "xtls-rprx-vision",
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "pl.pupoe.sbs",
+        "server_name": "cheerful-swan.rooster465.autos",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 PL 09 - mqgg5630-cyber",
-      "server": "70.34.255.101",
-      "server_port": 80,
-      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "70.34.255.101"
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
         }
       }
     },
@@ -183,6 +193,39 @@
           "enabled": true,
           "public_key": "iwHKqXfMtE61bupFq0qdpc8_uGwQswGc3JpLvDVB9Wo",
           "short_id": "088b263ae349cc97"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 PL 11 - mqgg5630-cyber",
+      "server": "202.78.163.237",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 12 - mqgg5630-cyber",
+      "server": "2.26.231.218",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
         }
       }
     },

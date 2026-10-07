@@ -18,17 +18,33 @@ proxies:
     short-id: 3cef317b
   servername: addons.mozilla.org
   client-fingerprint: randomized
+- name: 🇬🇷 GR 02 - mqgg5630-cyber
+  type: vless
+  server: 157.228.160.166
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

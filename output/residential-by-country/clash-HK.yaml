@@ -18,17 +18,27 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  type: trojan
+  server: 77.74.123.106
+  port: 4443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  udp: true
+  sni: grape-test-italy.dynuddns.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

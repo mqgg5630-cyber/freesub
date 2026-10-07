@@ -34,35 +34,35 @@ proxies:
   client-fingerprint: firefox
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
-  server: 132.243.231.4
+  server: 94.143.231.146
   port: 443
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: chrome
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: vless
-  server: 132.243.231.4
+  server: 109.120.134.243
   port: 443
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: edge
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 - name: 🇸🇪 SE 05 - mqgg5630-cyber
   type: vless
-  server: 132.243.231.12
+  server: 132.243.231.4
   port: 443
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
   udp: true
@@ -76,7 +76,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇪 SE 06 - mqgg5630-cyber
   type: vless
-  server: 132.243.231.4
+  server: 132.243.231.12
   port: 443
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
   udp: true
@@ -90,18 +90,32 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇪 SE 07 - mqgg5630-cyber
   type: vless
-  server: 94.143.231.146
+  server: 132.243.231.4
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 08 - mqgg5630-cyber
+  type: vless
+  server: 132.243.231.4
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +128,7 @@ proxy-groups:
   - 🇸🇪 SE 05 - mqgg5630-cyber
   - 🇸🇪 SE 06 - mqgg5630-cyber
   - 🇸🇪 SE 07 - mqgg5630-cyber
+  - 🇸🇪 SE 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +141,6 @@ proxy-groups:
   - 🇸🇪 SE 05 - mqgg5630-cyber
   - 🇸🇪 SE 06 - mqgg5630-cyber
   - 🇸🇪 SE 07 - mqgg5630-cyber
+  - 🇸🇪 SE 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
