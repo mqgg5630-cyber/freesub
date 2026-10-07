@@ -6,71 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: trojan
-  server: fi.zhabulik.ru
-  port: 443
-  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
-  udp: true
-  sni: fi.zhabulik.ru
-  skip-cert-verify: true
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: trojan
-  server: 31.76.103.140
-  port: 443
-  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
-  udp: true
-  sni: fi.zhabulik.ru
-  skip-cert-verify: true
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
-  type: trojan
-  server: 31.76.103.140
-  port: 443
-  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
-  udp: true
-  sni: fi.zhabulik.ru
-  skip-cert-verify: true
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
-  type: vless
-  server: 65.108.3.59
-  port: 443
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
-  type: vless
   server: 159.194.250.154
   port: 443
   uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
@@ -83,7 +18,27 @@ proxies:
     short-id: ''
   servername: api-maps.yandex.ru
   client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - mqgg5630-cyber
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 144.31.99.252
   port: 443
@@ -97,14 +52,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇫🇮 FI 10 - mqgg5630-cyber
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 11 - mqgg5630-cyber
+- name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -117,6 +65,27 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
+  type: vless
+  server: 159.194.250.154
+  port: 443
+  uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
+    short-id: ''
+  servername: api-maps.yandex.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,10 +98,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
-  - 🇫🇮 FI 08 - mqgg5630-cyber
-  - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -145,9 +110,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
-  - 🇫🇮 FI 08 - mqgg5630-cyber
-  - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
