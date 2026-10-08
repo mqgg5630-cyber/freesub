@@ -13,34 +13,6 @@ proxies:
   udp: true
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 159.194.250.154
-  port: 443
-  uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
-    short-id: ''
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: 65.108.3.59
-  port: 443
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
   server: 144.31.99.252
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -53,7 +25,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: van2.ragnarok-it.xyz
   port: 8446
@@ -67,7 +39,7 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: ss
   server: 45.149.114.171
   port: 777
@@ -83,8 +55,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
-  - 🇫🇮 FI 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,7 +64,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
-  - 🇫🇮 FI 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
