@@ -18,29 +18,17 @@ proxies:
     short-id: ee169e93d3c277a1
   servername: edge-uk2.mystatic-cdn.ru
   client-fingerprint: safari
-- name: 🇰🇿 KZ 02 - mqgg5630-cyber
-  type: vless
-  server: 199.189.254.16
-  port: 443
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: panel.surfweb.club
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - mqgg5630-cyber
-  - 🇰🇿 KZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
-  - 🇰🇿 KZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

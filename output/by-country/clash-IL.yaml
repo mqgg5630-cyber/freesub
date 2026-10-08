@@ -31,50 +31,22 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 IL 03 - mqgg5630-cyber
   type: vless
-  server: 185.95.231.156
+  server: es.srv.dvzh.net
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e4e77e76e6e49da7
+  servername: es.srv.dvzh.net
+  client-fingerprint: firefox
 - name: 🇮🇱 IL 04 - mqgg5630-cyber
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 05 - mqgg5630-cyber
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 06 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
   port: 443
@@ -88,20 +60,20 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇱 IL 07 - mqgg5630-cyber
+- name: 🇮🇱 IL 05 - mqgg5630-cyber
   type: vless
-  server: 185.95.231.156
+  server: 185.253.75.119
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,8 +84,6 @@ proxy-groups:
   - 🇮🇱 IL 03 - mqgg5630-cyber
   - 🇮🇱 IL 04 - mqgg5630-cyber
   - 🇮🇱 IL 05 - mqgg5630-cyber
-  - 🇮🇱 IL 06 - mqgg5630-cyber
-  - 🇮🇱 IL 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,7 +94,5 @@ proxy-groups:
   - 🇮🇱 IL 03 - mqgg5630-cyber
   - 🇮🇱 IL 04 - mqgg5630-cyber
   - 🇮🇱 IL 05 - mqgg5630-cyber
-  - 🇮🇱 IL 06 - mqgg5630-cyber
-  - 🇮🇱 IL 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

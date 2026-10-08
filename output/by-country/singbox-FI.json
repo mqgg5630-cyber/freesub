@@ -13,8 +13,7 @@
         "🇫🇮 FI 03 - mqgg5630-cyber",
         "🇫🇮 FI 04 - mqgg5630-cyber",
         "🇫🇮 FI 05 - mqgg5630-cyber",
-        "🇫🇮 FI 06 - mqgg5630-cyber",
-        "🇫🇮 FI 07 - mqgg5630-cyber"
+        "🇫🇮 FI 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -26,15 +25,22 @@
         "🇫🇮 FI 03 - mqgg5630-cyber",
         "🇫🇮 FI 04 - mqgg5630-cyber",
         "🇫🇮 FI 05 - mqgg5630-cyber",
-        "🇫🇮 FI 06 - mqgg5630-cyber",
-        "🇫🇮 FI 07 - mqgg5630-cyber"
+        "🇫🇮 FI 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
       "server": "159.194.250.154",
       "server_port": 443,
       "uuid": "f0482c9d-ff67-4a43-af8e-76fc5d55c250",
@@ -45,7 +51,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -54,31 +60,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
-    },
-    {
       "type": "vless",
       "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "web.eitaa.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
         }
       }
     },
@@ -104,48 +103,28 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 06 - mqgg5630-cyber",
-      "server": "159.194.250.154",
-      "server_port": 443,
-      "uuid": "f0482c9d-ff67-4a43-af8e-76fc5d55c250",
+      "server": "van2.ragnarok-it.xyz",
+      "server_port": 8446,
+      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api-maps.yandex.ru",
+        "server_name": "amd.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es"
+          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
+          "short_id": "7bac4b112d30d1"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI 07 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 06 - mqgg5630-cyber",
       "server": "45.149.114.171",
       "server_port": 777,
       "method": "chacha20-ietf-poly1305",

@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - mqgg5630-cyber"
+        "🇧🇾 BY 01 - mqgg5630-cyber",
+        "🇧🇾 BY 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - mqgg5630-cyber"
+        "🇧🇾 BY 01 - mqgg5630-cyber",
+        "🇧🇾 BY 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -36,6 +38,25 @@
         "path": "/vpn-wss/fluxor/59011/",
         "headers": {
           "Host": "wss.zazazuza.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 BY 02 - mqgg5630-cyber",
+      "server": "62.182.102.93",
+      "server_port": 443,
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.cndyw.ggff.net",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "pyip=bpb.yousef.isegaro.comfp=random",
+        "headers": {
+          "Host": "free.cndyw.ggff.net"
         }
       }
     },

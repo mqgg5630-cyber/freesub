@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
   server: 159.194.250.154
   port: 443
@@ -17,27 +24,21 @@ proxies:
     public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
     short-id: ''
   servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 65.108.3.59
+  port: 443
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 144.31.99.252
@@ -54,32 +55,19 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
-  type: vless
-  server: 159.194.250.154
-  port: 443
-  uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
+  server: van2.ragnarok-it.xyz
+  port: 8446
+  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
-    short-id: ''
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
+    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
+    short-id: 7bac4b112d30d1
+  servername: amd.com
+  client-fingerprint: edge
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: ss
   server: 45.149.114.171
   port: 777
@@ -97,7 +85,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - mqgg5630-cyber
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
-  - 🇫🇮 FI 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,6 +96,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - mqgg5630-cyber
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
-  - 🇫🇮 FI 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
