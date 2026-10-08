@@ -43,21 +43,7 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
-    short-id: ee169e93d3c277a1
-  servername: edge-uk2.mystatic-cdn.ru
-  client-fingerprint: firefox
-- name: 🇰🇿 KZ 04 - mqgg5630-cyber
-  type: vless
-  server: 193.202.113.5
-  port: 443
-  uuid: 6f756511-7fc3-41ba-874b-8cdc8e1b225f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
-    short-id: ee169e93d3c277a1
+    short-id: ''
   servername: edge-uk2.mystatic-cdn.ru
   client-fingerprint: firefox
 proxy-groups:
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
-  - 🇰🇿 KZ 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
-  - 🇰🇿 KZ 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

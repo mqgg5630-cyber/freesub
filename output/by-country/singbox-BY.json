@@ -8,34 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇧🇾 BY 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇧🇾 BY 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "vless",
+      "tag": "🇧🇾 BY 01 - mqgg5630-cyber",
+      "server": "89.125.96.76",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "wss.zazazuza.ru",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vpn-wss/fluxor/59011/",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "wss.zazazuza.ru"
         }
       }
     },

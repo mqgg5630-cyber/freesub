@@ -10,8 +10,7 @@
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,8 +19,7 @@
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -37,51 +35,44 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "144.31.99.252",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ccc.010304.xyz"
+        "server_name": "www.google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "van2.ragnarok-it.xyz",
-      "server_port": 8446,
-      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
-      "flow": "xtls-rprx-vision",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "amd.com",
+        "server_name": "www.google.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
-          "short_id": "7bac4b112d30d1"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "direct",

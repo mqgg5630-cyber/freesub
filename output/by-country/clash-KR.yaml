@@ -6,21 +6,57 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - mqgg5630-cyber
   type: trojan
-  server: 52.78.203.191
-  port: 443
-  password: UX82473651
+  server: 154.90.62.70
+  port: 56127
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   udp: true
-  sni: delicate-buck.rooster465.autos
+  sni: 154.90.62.70
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
   type: trojan
-  server: main-fawn.rooster465.autos
+  server: optimum-snapper.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
-  sni: main-fawn.rooster465.autos
+  sni: optimum-snapper.rooster465.autos
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
+  type: trojan
+  server: kind-stork.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -34,7 +70,15 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
+  type: trojan
+  server: 52.78.203.191
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
   type: trojan
   server: noted-cougar.rooster465.autos
   port: 443
@@ -42,15 +86,7 @@ proxies:
   udp: true
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
-  type: trojan
-  server: main-fawn.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 18967
@@ -63,38 +99,14 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  type: trojan
-  server: 3.35.207.188
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  type: trojan
-  server: 3.35.207.188
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  type: trojan
-  server: kind-stork.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
   type: trojan
-  server: 154.90.62.70
-  port: 56127
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  server: 43.201.100.203
+  port: 443
+  password: UX82473651
   udp: true
-  sni: 154.90.62.70
+  sni: optimum-snapper.rooster465.autos
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
   type: vless
@@ -111,63 +123,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 12 - mqgg5630-cyber
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 13 - mqgg5630-cyber
-  type: trojan
-  server: 13.125.69.162
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 - mqgg5630-cyber
-  type: trojan
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15 - mqgg5630-cyber
-  type: trojan
-  server: 43.201.100.203
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 16 - mqgg5630-cyber
-  type: trojan
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 17 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 18 - mqgg5630-cyber
   type: trojan
   server: 3.35.207.188
   port: 443
@@ -175,7 +130,7 @@ proxies:
   udp: true
   sni: main-fawn.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 19 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 13 - mqgg5630-cyber
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -188,7 +143,31 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 20 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 14 - mqgg5630-cyber
+  type: trojan
+  server: 3.34.131.153
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 - mqgg5630-cyber
+  type: trojan
+  server: kind-stork.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 16 - mqgg5630-cyber
+  type: trojan
+  server: 43.201.100.203
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 17 - mqgg5630-cyber
   type: trojan
   server: pretty-rat.rooster465.autos
   port: 443
@@ -196,7 +175,7 @@ proxies:
   udp: true
   sni: pretty-rat.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 21 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 18 - mqgg5630-cyber
   type: trojan
   server: 3.35.168.225
   port: 443
@@ -204,15 +183,23 @@ proxies:
   udp: true
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 22 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 19 - mqgg5630-cyber
   type: trojan
-  server: noted-cougar.rooster465.autos
+  server: delicate-buck.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
-  sni: noted-cougar.rooster465.autos
+  sni: delicate-buck.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 23 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 20 - mqgg5630-cyber
+  type: trojan
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 21 - mqgg5630-cyber
   type: trojan
   server: 3.39.225.215
   port: 443
@@ -220,44 +207,47 @@ proxies:
   udp: true
   sni: kind-stork.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 24 - mqgg5630-cyber
-  type: trojan
-  server: 52.78.203.191
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 25 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 22 - mqgg5630-cyber
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 26 - mqgg5630-cyber
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 23 - mqgg5630-cyber
   type: trojan
-  server: 154.90.62.70
-  port: 56127
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  udp: true
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 27 - mqgg5630-cyber
-  type: trojan
-  server: engaging-toucan.rooster465.autos
+  server: 3.35.207.188
   port: 443
   password: UX82473651
   udp: true
-  sni: engaging-toucan.rooster465.autos
+  sni: main-fawn.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 28 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 24 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 25 - mqgg5630-cyber
+  type: trojan
+  server: pretty-rat.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 26 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -270,24 +260,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 29 - mqgg5630-cyber
-  type: trojan
-  server: 43.201.100.203
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 30 - mqgg5630-cyber
-  type: trojan
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 31 - mqgg5630-cyber
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 27 - mqgg5630-cyber
   type: trojan
   server: pretty-rat.rooster465.autos
   port: 443
@@ -295,29 +269,61 @@ proxies:
   udp: true
   sni: pretty-rat.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 32 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 28 - mqgg5630-cyber
   type: trojan
-  server: main-fawn.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 33 - mqgg5630-cyber
-  type: trojan
-  server: main-fawn.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 34 - mqgg5630-cyber
-  type: trojan
-  server: 52.78.203.191
+  server: delicate-buck.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
   sni: delicate-buck.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 29 - mqgg5630-cyber
+  type: trojan
+  server: 3.34.131.153
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 30 - mqgg5630-cyber
+  type: trojan
+  server: main-fawn.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 31 - mqgg5630-cyber
+  type: trojan
+  server: noted-cougar.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 32 - mqgg5630-cyber
+  type: trojan
+  server: 13.125.69.162
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 33 - mqgg5630-cyber
+  type: trojan
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 34 - mqgg5630-cyber
+  type: trojan
+  server: noted-cougar.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 35 - mqgg5630-cyber
   type: vless
@@ -332,24 +338,22 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 36 - mqgg5630-cyber
-  type: trojan
-  server: 3.34.131.153
-  port: 443
-  password: UX82473651
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
-  sni: pretty-rat.rooster465.autos
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 37 - mqgg5630-cyber
-  type: trojan
-  server: 43.201.100.203
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 38 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -362,7 +366,15 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 38 - mqgg5630-cyber
+  type: trojan
+  server: 52.78.203.191
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 39 - mqgg5630-cyber
   type: trojan
   server: optimum-snapper.rooster465.autos
@@ -372,12 +384,14 @@ proxies:
   sni: optimum-snapper.rooster465.autos
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 40 - mqgg5630-cyber
-  type: trojan
-  server: kind-stork.rooster465.autos
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  password: UX82473651
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: kind-stork.rooster465.autos
+  tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 41 - mqgg5630-cyber
   type: vless
@@ -395,292 +409,13 @@ proxies:
   client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 42 - mqgg5630-cyber
   type: trojan
-  server: 3.35.217.113
+  server: 3.35.168.225
   port: 443
   password: UX82473651
   udp: true
-  sni: amazing-peacock.rooster465.autos
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 43 - mqgg5630-cyber
-  type: trojan
-  server: delicate-buck.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 44 - mqgg5630-cyber
-  type: trojan
-  server: pretty-rat.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 45 - mqgg5630-cyber
-  type: trojan
-  server: 3.39.225.215
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 46 - mqgg5630-cyber
-  type: trojan
-  server: noted-cougar.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 47 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 48 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 49 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 50 - mqgg5630-cyber
-  type: trojan
-  server: amazing-peacock.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: amazing-peacock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 51 - mqgg5630-cyber
-  type: trojan
-  server: 3.35.168.225
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 52 - mqgg5630-cyber
-  type: trojan
-  server: pretty-rat.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 53 - mqgg5630-cyber
-  type: trojan
-  server: kind-stork.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 54 - mqgg5630-cyber
-  type: trojan
-  server: 3.34.131.153
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 55 - mqgg5630-cyber
-  type: trojan
-  server: main-fawn.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 56 - mqgg5630-cyber
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 57 - mqgg5630-cyber
-  type: trojan
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 58 - mqgg5630-cyber
-  type: trojan
-  server: 3.34.131.153
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 59 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 60 - mqgg5630-cyber
-  type: trojan
-  server: 13.125.69.162
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 61 - mqgg5630-cyber
-  type: trojan
-  server: 3.35.168.225
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 62 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 63 - mqgg5630-cyber
-  type: trojan
-  server: 13.125.69.162
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 64 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 65 - mqgg5630-cyber
-  type: trojan
-  server: 3.39.225.215
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 66 - mqgg5630-cyber
-  type: trojan
-  server: delicate-buck.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 67 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 68 - mqgg5630-cyber
-  type: trojan
-  server: pretty-rat.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 69 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 70 - mqgg5630-cyber
-  type: trojan
-  server: noted-cougar.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 71 - mqgg5630-cyber
-  type: trojan
-  server: delicate-buck.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 72 - mqgg5630-cyber
-  type: trojan
-  server: amazing-peacock.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: amazing-peacock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 73 - mqgg5630-cyber
   type: trojan
   server: 52.78.203.191
   port: 443
@@ -688,7 +423,20 @@ proxies:
   udp: true
   sni: delicate-buck.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 74 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 44 - mqgg5630-cyber
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 45 - mqgg5630-cyber
   type: trojan
   server: delicate-buck.rooster465.autos
   port: 443
@@ -696,47 +444,7 @@ proxies:
   udp: true
   sni: delicate-buck.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 75 - mqgg5630-cyber
-  type: trojan
-  server: amazing-peacock.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: amazing-peacock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 76 - mqgg5630-cyber
-  type: trojan
-  server: 3.35.217.113
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: amazing-peacock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 77 - mqgg5630-cyber
-  type: trojan
-  server: engaging-toucan.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 78 - mqgg5630-cyber
-  type: trojan
-  server: engaging-toucan.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 79 - mqgg5630-cyber
-  type: trojan
-  server: kind-stork.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 80 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 46 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -750,6 +458,170 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 47 - mqgg5630-cyber
+  type: trojan
+  server: kind-stork.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 48 - mqgg5630-cyber
+  type: trojan
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 49 - mqgg5630-cyber
+  type: trojan
+  server: 3.34.131.153
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 50 - mqgg5630-cyber
+  type: trojan
+  server: delicate-buck.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 51 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 52 - mqgg5630-cyber
+  type: trojan
+  server: 43.201.100.203
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 53 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 54 - mqgg5630-cyber
+  type: trojan
+  server: 13.125.69.162
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 55 - mqgg5630-cyber
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 56 - mqgg5630-cyber
+  type: trojan
+  server: 3.35.207.188
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 57 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 58 - mqgg5630-cyber
+  type: trojan
+  server: 52.78.203.191
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 59 - mqgg5630-cyber
+  type: trojan
+  server: 3.35.168.225
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 60 - mqgg5630-cyber
+  type: trojan
+  server: 13.125.69.162
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 61 - mqgg5630-cyber
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 62 - mqgg5630-cyber
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 63 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 64 - mqgg5630-cyber
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -819,22 +691,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 62 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 63 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 64 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 65 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 66 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 67 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 68 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 69 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 70 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 71 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 72 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 73 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 74 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 75 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 76 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 77 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 78 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 79 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 80 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -904,21 +760,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 62 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 63 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 64 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 65 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 66 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 67 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 68 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 69 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 70 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 71 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 72 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 73 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 74 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 75 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 76 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 77 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 78 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 79 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 80 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

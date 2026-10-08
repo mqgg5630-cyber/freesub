@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - mqgg5630-cyber
   type: ss
-  server: 139.84.247.164
-  port: 8388
+  server: 20.164.212.146
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: e6UqAb4130ycM7qM
   udp: true
 - name: 🇿🇦 ZA 02 - mqgg5630-cyber
   type: ss
@@ -20,10 +20,24 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - mqgg5630-cyber
   type: ss
+  server: 20.164.212.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e6UqAb4130ycM7qM
+  udp: true
+- name: 🇿🇦 ZA 04 - mqgg5630-cyber
+  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 05 - mqgg5630-cyber
+  type: ss
+  server: 20.164.212.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e6UqAb4130ycM7qM
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -33,6 +47,8 @@ proxy-groups:
   - 🇿🇦 ZA 01 - mqgg5630-cyber
   - 🇿🇦 ZA 02 - mqgg5630-cyber
   - 🇿🇦 ZA 03 - mqgg5630-cyber
+  - 🇿🇦 ZA 04 - mqgg5630-cyber
+  - 🇿🇦 ZA 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +57,7 @@ proxy-groups:
   - 🇿🇦 ZA 01 - mqgg5630-cyber
   - 🇿🇦 ZA 02 - mqgg5630-cyber
   - 🇿🇦 ZA 03 - mqgg5630-cyber
+  - 🇿🇦 ZA 04 - mqgg5630-cyber
+  - 🇿🇦 ZA 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
