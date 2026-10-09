@@ -18,17 +18,49 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  type: vless
+  server: t4.qifei.app
+  port: 443
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: ''
+  servername: s3.ap-east-1.amazonaws.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 61.18.134.10
+  port: 443
+  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mswo-gy191m.zhiyuantech.cloud
+  network: ws
+  ws-opts:
+    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+    headers:
+      Host: mswo-gy191m.zhiyuantech.cloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

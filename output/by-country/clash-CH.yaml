@@ -16,22 +16,61 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
-  server: 185.237.225.47
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: x.m-90.xyz
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 05 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇨🇭 CH 06 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -52,6 +91,9 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
+  - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +102,8 @@ proxy-groups:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
   - 🇨🇭 CH 03 - mqgg5630-cyber
+  - 🇨🇭 CH 04 - mqgg5630-cyber
+  - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
