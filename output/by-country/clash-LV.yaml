@@ -18,17 +18,27 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: lv.nztvpn.com
   client-fingerprint: firefox
+- name: 🇱🇻 LV 02 - mqgg5630-cyber
+  type: trojan
+  server: lit.fytpn.com
+  port: 2097
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  udp: true
+  sni: lit.fytpn.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - mqgg5630-cyber
+  - 🇱🇻 LV 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - mqgg5630-cyber
+  - 🇱🇻 LV 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -9,9 +9,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
-        "🇧🇬 BG 04 (家宽) - mqgg5630-cyber"
+        "🇧🇬 BG 02 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -19,9 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
-        "🇧🇬 BG 04 (家宽) - mqgg5630-cyber"
+        "🇧🇬 BG 02 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "60.248.219.78",
+      "server": "60.248.219.53",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
@@ -41,46 +39,13 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "ty986gfazs.cainiaohub.xyz"
+          "Host": "60.248.219.53"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-      "server": "103.180.20.108",
-      "server_port": 8443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-        "headers": {
-          "Host": "103.180.20.108"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
-      "server": "172.64.88.251",
-      "server_port": 8880,
-      "uuid": "7e3cd2f1-0de5-4717-9002-64d8597bc577",
-      "transport": {
-        "type": "ws",
-        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
-        "headers": {
-          "Host": "dry-credit-fc26.203-d8c.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG 04 (家宽) - mqgg5630-cyber",
+      "tag": "🇧🇬 BG 02 (家宽) - mqgg5630-cyber",
       "server": "136.175.82.85",
       "server_port": 18775,
       "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
@@ -97,6 +62,25 @@
           "enabled": true,
           "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
           "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
+      "server": "103.180.20.108",
+      "server_port": 8443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "103.180.20.108"
         }
       }
     },

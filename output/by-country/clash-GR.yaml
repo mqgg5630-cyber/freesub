@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - mqgg5630-cyber
+- name: 🇬🇷 GR 01 - mqgg5630-cyber
   type: vless
-  server: 193.202.113.5
+  server: 157.228.160.166
   port: 443
-  uuid: 6f756511-7fc3-41ba-874b-8cdc8e1b225f
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
-    short-id: ee169e93d3c277a1
-  servername: edge-uk2.mystatic-cdn.ru
-  client-fingerprint: random
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇬🇷 GR 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇬🇷 GR 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

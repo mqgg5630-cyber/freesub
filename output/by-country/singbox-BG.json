@@ -8,21 +8,43 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - mqgg5630-cyber"
+        "🇧🇬 BG 01 - mqgg5630-cyber",
+        "🇧🇬 BG 02 - mqgg5630-cyber",
+        "🇧🇬 BG 03 - mqgg5630-cyber",
+        "🇧🇬 BG 04 - mqgg5630-cyber",
+        "🇧🇬 BG 05 - mqgg5630-cyber",
+        "🇧🇬 BG 06 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - mqgg5630-cyber"
+        "🇧🇬 BG 01 - mqgg5630-cyber",
+        "🇧🇬 BG 02 - mqgg5630-cyber",
+        "🇧🇬 BG 03 - mqgg5630-cyber",
+        "🇧🇬 BG 04 - mqgg5630-cyber",
+        "🇧🇬 BG 05 - mqgg5630-cyber",
+        "🇧🇬 BG 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇬 BG 01 - mqgg5630-cyber",
+      "server": "ger2.fytpn.com",
+      "server_port": 443,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "ger2.fytpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 02 - mqgg5630-cyber",
       "server": "31.40.204.131",
       "server_port": 443,
       "uuid": "86b6c7ba-d613-4567-962a-acfdad5c22db",
@@ -37,6 +59,68 @@
         "headers": {
           "Host": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 03 - mqgg5630-cyber",
+      "server": "31.40.204.131",
+      "server_port": 443,
+      "uuid": "86b6c7ba-d613-4567-962a-acfdad5c22db",
+      "tls": {
+        "enabled": true,
+        "server_name": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 04 - mqgg5630-cyber",
+      "server": "31.40.204.131",
+      "server_port": 443,
+      "uuid": "86b6c7ba-d613-4567-962a-acfdad5c22db",
+      "tls": {
+        "enabled": true,
+        "server_name": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇬 BG 05 - mqgg5630-cyber",
+      "server": "93.152.223.201",
+      "server_port": 443,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "ger2.fytpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇬 BG 06 - mqgg5630-cyber",
+      "server": "93.152.223.201",
+      "server_port": 443,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "ger2.fytpn.com",
+        "insecure": true
       }
     },
     {

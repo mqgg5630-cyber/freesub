@@ -9,8 +9,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -18,47 +17,36 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "185.103.110.66",
-      "server_port": 18280,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+      "server": "vpn.cyrionflare.xyz",
+      "server_port": 2087,
+      "uuid": "15f434b8-aaec-4306-98c9-dd8f5ef608d4"
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "web.eitaa.com",
+        "server_name": "www.google.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
     },
