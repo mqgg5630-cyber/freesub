@@ -8,50 +8,27 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-        "🇧🇬 BG 03 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+        "🇧🇬 BG 04 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-        "🇧🇬 BG 03 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+        "🇧🇬 BG 04 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-      "server": "t4.qifei.app",
-      "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.ap-east-1.amazonaws.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -70,29 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG 03 (家宽) - mqgg5630-cyber",
-      "server": "136.175.82.85",
-      "server_port": 18775,
-      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
       "server": "103.180.20.108",
       "server_port": 8443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -111,21 +66,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mqgg5630-cyber",
-      "server": "61.230.162.88",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - mqgg5630-cyber",
+      "server": "172.64.88.251",
+      "server_port": 8880,
+      "uuid": "7e3cd2f1-0de5-4717-9002-64d8597bc577",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
+        "headers": {
+          "Host": "dry-credit-fc26.203-d8c.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG 04 (家宽) - mqgg5630-cyber",
+      "server": "136.175.82.85",
+      "server_port": 18775,
+      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "addons.mozilla.org",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
+          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },

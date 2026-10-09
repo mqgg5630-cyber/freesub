@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: vless
-  server: 46.183.16.4
-  port: 2087
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+- name: 🇱🇺 LU 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
   udp: true
-  tls: true
+  sni: mfyousheng.nl.eu.org
   skip-cert-verify: true
-  servername: ro1.b0w.ir
   network: ws
   ws-opts:
-    path: /
+    path: /tjwsLhx0SFASG4l9FERJ1g?ed#Telegram---mehrosaboran
     headers:
-      Host: 46.183.16.4
+      Host: mfyousheng.nl.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - mqgg5630-cyber
+  - 🇱🇺 LU 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

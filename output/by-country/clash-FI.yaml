@@ -12,30 +12,25 @@ proxies:
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 65.108.3.59
+  port: 443
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

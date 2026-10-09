@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
+  server: 77.72.85.247
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 02 - mqgg5630-cyber
+  type: vless
   server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -16,33 +30,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 02 - mqgg5630-cyber
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - mqgg5630-cyber
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - mqgg5630-cyber
-  type: vless
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -54,9 +45,23 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 04 - mqgg5630-cyber
+  type: vless
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: crt.dodopanel.biz
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 141.0.187.16
 - name: 🇪🇪 EE 05 - mqgg5630-cyber
   type: vless
-  server: 77.72.85.247
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -84,28 +89,6 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 07 - mqgg5630-cyber
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 08 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 09 - mqgg5630-cyber
-  type: vless
   server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -118,6 +101,29 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 08 - mqgg5630-cyber
+  type: vless
+  server: 194.26.141.148
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 09 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 10 - mqgg5630-cyber
   type: vless
   server: 77.72.85.247
@@ -143,42 +149,6 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 12 - mqgg5630-cyber
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 13 - mqgg5630-cyber
-  type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.16
-- name: 🇪🇪 EE 14 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 15 - mqgg5630-cyber
-  type: vless
   server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -191,16 +161,7 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 16 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 17 - mqgg5630-cyber
+- name: 🇪🇪 EE 13 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 443
@@ -212,34 +173,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 18 - mqgg5630-cyber
-  type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 19 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+      Host: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -258,12 +192,6 @@ proxy-groups:
   - 🇪🇪 EE 11 - mqgg5630-cyber
   - 🇪🇪 EE 12 - mqgg5630-cyber
   - 🇪🇪 EE 13 - mqgg5630-cyber
-  - 🇪🇪 EE 14 - mqgg5630-cyber
-  - 🇪🇪 EE 15 - mqgg5630-cyber
-  - 🇪🇪 EE 16 - mqgg5630-cyber
-  - 🇪🇪 EE 17 - mqgg5630-cyber
-  - 🇪🇪 EE 18 - mqgg5630-cyber
-  - 🇪🇪 EE 19 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -282,11 +210,5 @@ proxy-groups:
   - 🇪🇪 EE 11 - mqgg5630-cyber
   - 🇪🇪 EE 12 - mqgg5630-cyber
   - 🇪🇪 EE 13 - mqgg5630-cyber
-  - 🇪🇪 EE 14 - mqgg5630-cyber
-  - 🇪🇪 EE 15 - mqgg5630-cyber
-  - 🇪🇪 EE 16 - mqgg5630-cyber
-  - 🇪🇪 EE 17 - mqgg5630-cyber
-  - 🇪🇪 EE 18 - mqgg5630-cyber
-  - 🇪🇪 EE 19 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
