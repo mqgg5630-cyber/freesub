@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 78.135.73.47
-  port: 443
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  type: vless
   server: 203.202.232.211
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -32,7 +18,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: trojan
   server: 172.67.176.3
   port: 2053
@@ -45,7 +31,7 @@ proxies:
     path: /0962
     headers:
       Host: nimm.mpd.cc.cd
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   type: vless
   server: 130.94.1.150
   port: 443
@@ -59,19 +45,14 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
-  type: trojan
-  server: 203.202.232.211
-  port: 443
-  password: humanity
+- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  sni: www.volumeroot.com
+  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +62,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,6 +71,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

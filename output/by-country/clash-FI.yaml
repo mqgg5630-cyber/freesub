@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 83324aab-2981-4036-a7a4-1692d732d82b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    headers:
+      Host: rb24.ir
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
   server: 65.108.3.59
   port: 443
   uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
@@ -18,60 +31,27 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 87.242.94.135
+  port: 8443
+  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ
+    short-id: 55e5751182be6e90
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: ss
   server: 185.103.110.68
   port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
-  server: 144.31.27.215
-  port: 43000
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: random
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,8 +61,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
-  - 🇫🇮 FI 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +70,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
-  - 🇫🇮 FI 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
