@@ -19,13 +19,19 @@ proxies:
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 02 - mqgg5630-cyber
-  type: trojan
-  server: 93.152.223.201
+  type: vless
+  server: 194.226.121.119
   port: 443
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
   udp: true
-  sni: ger2.fytpn.com
+  tls: true
   skip-cert-verify: true
+  servername: drive.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: drive.korroh.com
 proxy-groups:
 - name: PROXIES
   type: select

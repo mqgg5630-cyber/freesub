@@ -10,8 +10,7 @@
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,8 +19,7 @@
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber",
-        "🇫🇮 FI 04 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,14 +27,22 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "146.75.119.82",
-      "server_port": 80,
-      "uuid": "83324aab-2981-4036-a7a4-1692d732d82b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048",
-        "headers": {
-          "Host": "rb24.ir"
+      "server": "87.242.94.135",
+      "server_port": 8443,
+      "uuid": "f23bc4f1-cc71-4003-ae6c-d6abe21d8191",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "passport.yandex.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ",
+          "short_id": "55e5751182be6e90"
         }
       }
     },
@@ -63,32 +69,10 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "87.242.94.135",
-      "server_port": 8443,
-      "uuid": "f23bc4f1-cc71-4003-ae6c-d6abe21d8191",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ",
-          "short_id": "55e5751182be6e90"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "185.103.110.68",
-      "server_port": 18283,
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "server": "185.103.110.66",
+      "server_port": 18280,
       "method": "aes-128-gcm",
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },

@@ -4,34 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
-- name: 🇨🇦 加拿大 (Canada) 02 (家宽) - mqgg5630-cyber
-  type: trojan
-  server: 162.159.152.81
-  port: 443
-  password: '123456'
-  udp: true
-  sni: now-pages-sub-em4.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: now-pages-sub-em4.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
   type: vless
   server: t4.qifei.app
   port: 443
@@ -45,6 +18,33 @@ proxies:
     short-id: ''
   servername: s3.ap-east-1.amazonaws.com
   client-fingerprint: random
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 60.248.219.54
+  port: 443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.54
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 61.230.162.88
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+    short-id: ''
+  servername: addons.mozilla.org
+  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber
   type: vless
   server: 103.180.20.108
@@ -61,68 +61,53 @@ proxies:
       Host: 103.180.20.108
 - name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber
   type: vless
-  server: 61.18.134.10
-  port: 443
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  server: 103.148.73.173
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mswo-gy191m.zhiyuantech.cloud
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber
+      Host: 103.148.73.173
+- name: 🇧🇬 BG 06 (家宽) - mqgg5630-cyber
   type: vless
-  server: 61.230.162.88
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  server: 136.175.82.85
+  port: 18775
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
     short-id: ''
   servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 07 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 172.67.152.162
-  port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
-  network: ws
-  ws-opts:
-    path: /cmh
-    headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 02 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 07 (家宽) - mqgg5630-cyber
+  - 🇧🇬 BG 06 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 02 (家宽) - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 07 (家宽) - mqgg5630-cyber
+  - 🇧🇬 BG 06 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

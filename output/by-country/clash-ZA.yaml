@@ -12,27 +12,6 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 02 - mqgg5630-cyber
-  type: ss
-  server: 20.87.212.24
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zlHMpI7N5dkZOHdH
-  udp: true
-- name: 🇿🇦 ZA 03 - mqgg5630-cyber
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 04 - mqgg5630-cyber
-  type: ss
-  server: 20.87.212.24
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zlHMpI7N5dkZOHdH
-  udp: true
-- name: 🇿🇦 ZA 05 - mqgg5630-cyber
   type: vless
   server: 34.35.186.228
   port: 443
@@ -45,6 +24,20 @@ proxies:
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇿🇦 ZA 03 - mqgg5630-cyber
+  type: ss
+  server: 20.87.212.24
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: zlHMpI7N5dkZOHdH
+  udp: true
+- name: 🇿🇦 ZA 04 - mqgg5630-cyber
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +47,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - mqgg5630-cyber
   - 🇿🇦 ZA 03 - mqgg5630-cyber
   - 🇿🇦 ZA 04 - mqgg5630-cyber
-  - 🇿🇦 ZA 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +56,5 @@ proxy-groups:
   - 🇿🇦 ZA 02 - mqgg5630-cyber
   - 🇿🇦 ZA 03 - mqgg5630-cyber
   - 🇿🇦 ZA 04 - mqgg5630-cyber
-  - 🇿🇦 ZA 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
