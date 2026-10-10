@@ -20,18 +20,18 @@ proxies:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 02 - mqgg5630-cyber
   type: vless
-  server: 31.40.204.131
-  port: 443
-  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  server: 136.175.82.85
+  port: 18775
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: ''
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
 - name: 🇧🇬 BG 03 - mqgg5630-cyber
   type: vless
   server: 31.40.204.131
@@ -48,18 +48,32 @@ proxies:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 04 - mqgg5630-cyber
   type: vless
-  server: cloud.korroh.com
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 05 - mqgg5630-cyber
+  type: vless
+  server: 194.226.121.119
   port: 443
   uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cloud.korroh.com
+  servername: drive.korroh.com
   network: ws
   ws-opts:
     path: /remote.php/dav/89f7661a0011ce46
     headers:
-      Host: cloud.korroh.com
+      Host: drive.korroh.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +83,7 @@ proxy-groups:
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
+  - 🇧🇬 BG 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +93,6 @@ proxy-groups:
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
   - 🇧🇬 BG 04 - mqgg5630-cyber
+  - 🇧🇬 BG 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
