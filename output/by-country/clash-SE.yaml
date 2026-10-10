@@ -6,32 +6,46 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
-  server: 216.24.57.73
-  port: 2087
-  uuid: b5ba2130-42d2-433f-953e-fca1c60cbc28
+  server: 31.207.7.74
+  port: 443
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: azsobhekhran.ticklitickli.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: azsobhekhran.ticklitickli.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s
+    short-id: 457ae5b8bef4d1b3
+  servername: pkg.go.dev
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

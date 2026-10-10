@@ -8,69 +8,21 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber"
+        "🇫🇮 FI 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber"
+        "🇫🇮 FI 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "87.242.94.135",
-      "server_port": 8443,
-      "uuid": "f23bc4f1-cc71-4003-ae6c-d6abe21d8191",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ",
-          "short_id": "55e5751182be6e90"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
       "server": "185.103.110.66",
       "server_port": 18280,
       "method": "aes-128-gcm",
