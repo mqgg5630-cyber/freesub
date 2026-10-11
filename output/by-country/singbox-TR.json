@@ -9,10 +9,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,17 +17,33 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+      "server": "172.67.176.3",
+      "server_port": 2053,
+      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nimm.mpd.cc.cd",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0962",
+        "headers": {
+          "Host": "nimm.mpd.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
       "server": "203.202.232.211",
       "server_port": 443,
       "uuid": "d342d11e-d224-4463-b982-532309285094",
@@ -44,82 +57,6 @@
         "path": "/fp#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
         "headers": {
           "Host": "ccc.010304.xyz"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
-      "server": "203.202.232.211",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
         }
       }
     },

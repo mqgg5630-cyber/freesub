@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
+  type: trojan
+  server: 172.67.176.3
+  port: 2053
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  udp: true
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /0962
+    headers:
+      Host: nimm.mpd.cc.cd
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
   server: 203.202.232.211
   port: 443
@@ -18,59 +31,6 @@ proxies:
     path: /fp#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.48.18
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  udp: true
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /0962
-    headers:
-      Host: nimm.mpd.cc.cd
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.48.18
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  udp: true
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /0962
-    headers:
-      Host: nimm.mpd.cc.cd
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.48.18
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  udp: true
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /0962
-    headers:
-      Host: nimm.mpd.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,9 +38,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,8 +45,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
