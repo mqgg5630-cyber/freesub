@@ -25,18 +25,32 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇴 RO 01 - mqgg5630-cyber",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
       "server": "194.68.44.42",
       "server_port": 64546,
       "method": "chacha20-ietf-poly1305",
       "password": "U83u9OGpvSatIUW7LsWffr"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
+      "server": "82.152.132.120",
+      "server_port": 443,
+      "uuid": "3e0c1fbf-467a-49d7-abd2-3a158628f3d0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ro1.gigobingo.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ",
+          "short_id": "ef7c4e4302bd52d7"
+        }
+      }
     },
     {
       "type": "direct",

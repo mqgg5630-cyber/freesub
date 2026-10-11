@@ -6,40 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 177.1.192.74
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: 31.77.59.95
-  port: 443
-  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: u6.luxcloud.space
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: u6.luxcloud.space
-  port: 443
-  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: u6.luxcloud.space
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
   server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -47,7 +13,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
+  server: pl.golangwikito.cfd
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
+    short-id: f8b695e5c59d028c
+  servername: pl.golangwikito.cfd
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
   server: 31.77.13.19
   port: 2063
@@ -61,16 +41,80 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: 177.1.192.74
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
+  type: trojan
+  server: 202.78.163.237
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
 - name: 🇵🇱 PL 07 - mqgg5630-cyber
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
+  type: vless
+  server: 177.1.192.72
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: vless
+  server: 177.1.192.72
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -84,38 +128,6 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: vless
-  server: 77.110.105.122
-  port: 443
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: co-pl.speedtec.ru
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: trojan
-  server: enabling-snipe.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: enabling-snipe.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: 144.31.101.196
-  port: 33891
-  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
-    short-id: 5bd7b68ca4c04443
-  servername: browser.yandex.com
-  client-fingerprint: chrome
 - name: 🇵🇱 PL 11 - mqgg5630-cyber
   type: vless
   server: pl-1-1.unturned-rust-dead.lol
@@ -131,54 +143,27 @@ proxies:
   client-fingerprint: random
 - name: 🇵🇱 PL 12 - mqgg5630-cyber
   type: vless
-  server: pl.illusion-vpn.ru
-  port: 8443
-  uuid: b6492f9d-491a-5a05-bbfd-5e3630f94d00
+  server: pl-1-1.unturned-rust-dead.lol
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: CrczD7yTgleZrusuQSxwWtW9UB6xdwLbz-36XUsIf3A
-    short-id: 52c92aac1925af3b
-  servername: pl.illusion-vpn.ru
-  client-fingerprint: firefox
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+    short-id: ''
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
 - name: 🇵🇱 PL 13 - mqgg5630-cyber
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 14 - mqgg5630-cyber
-  type: vless
-  server: 77.110.105.122
+  server: u6.luxcloud.space
   port: 443
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: co-pl.speedtec.ru
-- name: 🇵🇱 PL 15 - mqgg5630-cyber
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 16 - mqgg5630-cyber
-  type: trojan
-  server: 202.78.163.237
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
+  servername: u6.luxcloud.space
 proxy-groups:
 - name: PROXIES
   type: select
@@ -197,9 +182,6 @@ proxy-groups:
   - 🇵🇱 PL 11 - mqgg5630-cyber
   - 🇵🇱 PL 12 - mqgg5630-cyber
   - 🇵🇱 PL 13 - mqgg5630-cyber
-  - 🇵🇱 PL 14 - mqgg5630-cyber
-  - 🇵🇱 PL 15 - mqgg5630-cyber
-  - 🇵🇱 PL 16 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -218,8 +200,5 @@ proxy-groups:
   - 🇵🇱 PL 11 - mqgg5630-cyber
   - 🇵🇱 PL 12 - mqgg5630-cyber
   - 🇵🇱 PL 13 - mqgg5630-cyber
-  - 🇵🇱 PL 14 - mqgg5630-cyber
-  - 🇵🇱 PL 15 - mqgg5630-cyber
-  - 🇵🇱 PL 16 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

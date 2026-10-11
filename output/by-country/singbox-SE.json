@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +27,46 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
+      "server": "2.26.55.163",
+      "server_port": 443,
+      "uuid": "621bcb9e-7df5-427b-a9d4-6e87223c8bca",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "specific3.kandnet.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
       "server": "sw.golangwikito.cfd",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",

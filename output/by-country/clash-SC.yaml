@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇨 SC 01 - mqgg5630-cyber
+  type: vless
+  server: hk3n.wxgqlfx.vip
+  port: 35193
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  servername: www.apple.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇨 SC 01 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇨 SC 01 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES
