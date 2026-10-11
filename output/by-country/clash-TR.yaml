@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.48.18
-  port: 2053
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  udp: true
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /0962
-    headers:
-      Host: nimm.mpd.cc.cd
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
   server: 203.202.232.211
   port: 443
@@ -37,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

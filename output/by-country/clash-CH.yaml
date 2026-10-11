@@ -13,34 +13,6 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
-  server: 179.255.191.86
-  port: 443
-  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: dobro.ali-bard.online
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 03 - mqgg5630-cyber
-  type: vless
-  server: dobro.ali-bard.online
-  port: 443
-  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-    short-id: ''
-  servername: dobro.ali-bard.online
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 04 - mqgg5630-cyber
-  type: vless
   server: 208.69.78.217
   port: 2053
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
@@ -52,20 +24,7 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 05 - mqgg5630-cyber
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 06 - mqgg5630-cyber
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -78,60 +37,34 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇨🇭 CH 07 - mqgg5630-cyber
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 08 - mqgg5630-cyber
-  type: vless
-  server: 45.90.59.15
+  server: dobro.ali-bard.online
   port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  servername: dobro.ali-bard.online
   client-fingerprint: chrome
-- name: 🇨🇭 CH 09 - mqgg5630-cyber
+- name: 🇨🇭 CH 05 - mqgg5630-cyber
   type: vless
-  server: 45.90.59.15
+  server: 185.18.250.245
   port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 10 - mqgg5630-cyber
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,11 +75,6 @@ proxy-groups:
   - 🇨🇭 CH 03 - mqgg5630-cyber
   - 🇨🇭 CH 04 - mqgg5630-cyber
   - 🇨🇭 CH 05 - mqgg5630-cyber
-  - 🇨🇭 CH 06 - mqgg5630-cyber
-  - 🇨🇭 CH 07 - mqgg5630-cyber
-  - 🇨🇭 CH 08 - mqgg5630-cyber
-  - 🇨🇭 CH 09 - mqgg5630-cyber
-  - 🇨🇭 CH 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -157,10 +85,5 @@ proxy-groups:
   - 🇨🇭 CH 03 - mqgg5630-cyber
   - 🇨🇭 CH 04 - mqgg5630-cyber
   - 🇨🇭 CH 05 - mqgg5630-cyber
-  - 🇨🇭 CH 06 - mqgg5630-cyber
-  - 🇨🇭 CH 07 - mqgg5630-cyber
-  - 🇨🇭 CH 08 - mqgg5630-cyber
-  - 🇨🇭 CH 09 - mqgg5630-cyber
-  - 🇨🇭 CH 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

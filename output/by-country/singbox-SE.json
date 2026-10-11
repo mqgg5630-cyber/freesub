@@ -8,16 +8,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,44 +23,19 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "se3.h1cloud.net",
-      "server_port": 25119,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
-          "short_id": "10f517"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
-      "server": "31.207.7.74",
+      "server": "94.143.231.146",
       "server_port": 443,
-      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
         "enabled": true,
-        "server_name": "pkg.go.dev",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s",
-          "short_id": "457ae5b8bef4d1b3"
+        "server_name": "sub.merky.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
         }
       }
     },
