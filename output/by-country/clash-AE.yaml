@@ -19,20 +19,6 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
   type: vless
-  server: 57.129.130.63
-  port: 52014
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -44,6 +30,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
+  type: vless
+  server: 157.228.155.238
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
   server: 157.228.155.185
@@ -71,59 +71,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  type: vless
-  server: 147.78.0.186
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
-  type: vless
-  server: anydesk.com
-  port: 8880
-  uuid: b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: young-dust-b8d9.31-8ba.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,10 +81,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -148,9 +91,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -18,17 +18,32 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: lv.nztvpn.com
   client-fingerprint: firefox
+- name: 🇱🇻 LV 02 - mqgg5630-cyber
+  type: trojan
+  server: 94.158.219.126
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - mqgg5630-cyber
+  - 🇱🇻 LV 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - mqgg5630-cyber
+  - 🇱🇻 LV 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
