@@ -5,6 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
+  type: trojan
+  server: adapting-basilisk.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: adapting-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 02 - mqgg5630-cyber
+  type: trojan
+  server: 3.253.106.233
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 03 - mqgg5630-cyber
+  type: trojan
+  server: 3.253.106.233
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
+  type: trojan
+  server: adapting-basilisk.rooster465.autos
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: adapting-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 05 - mqgg5630-cyber
+  type: trojan
+  server: 34.242.77.118
+  port: 443
+  password: UX82473651
+  udp: true
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 IE 06 - mqgg5630-cyber
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: GayYa2V7pUbJBfKu
+  udp: true
+- name: 🇮🇪 IE 07 - mqgg5630-cyber
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -18,37 +65,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 03 - mqgg5630-cyber
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 04 - mqgg5630-cyber
-  type: trojan
-  server: sacred-anemone.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 05 - mqgg5630-cyber
-  type: trojan
-  server: adapting-basilisk.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 06 - mqgg5630-cyber
+- name: 🇮🇪 IE 08 - mqgg5630-cyber
   type: trojan
   server: 3.253.106.233
   port: 443
@@ -56,21 +73,13 @@ proxies:
   udp: true
   sni: loved-shark.rooster465.autos
   skip-cert-verify: true
-- name: 🇮🇪 IE 07 - mqgg5630-cyber
+- name: 🇮🇪 IE 09 - mqgg5630-cyber
   type: trojan
-  server: 34.242.77.118
+  server: sacred-anemone.rooster465.autos
   port: 443
   password: UX82473651
   udp: true
   sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 08 - mqgg5630-cyber
-  type: trojan
-  server: master-possum.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: master-possum.rooster465.autos
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -85,6 +94,7 @@ proxy-groups:
   - 🇮🇪 IE 06 - mqgg5630-cyber
   - 🇮🇪 IE 07 - mqgg5630-cyber
   - 🇮🇪 IE 08 - mqgg5630-cyber
+  - 🇮🇪 IE 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +108,6 @@ proxy-groups:
   - 🇮🇪 IE 06 - mqgg5630-cyber
   - 🇮🇪 IE 07 - mqgg5630-cyber
   - 🇮🇪 IE 08 - mqgg5630-cyber
+  - 🇮🇪 IE 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

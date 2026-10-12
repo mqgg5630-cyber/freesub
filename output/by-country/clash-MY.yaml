@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
   type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /platform118
+    path: /fp=chrome
     headers:
-      Host: platform118.halalkhor.info
+      Host: ccc.010304.xyz
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: vless
   server: platform102.golnamakcert.top
@@ -32,7 +33,7 @@ proxies:
       Host: platform102.halalkhor.info
 - name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: vless
-  server: platform103.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -40,10 +41,18 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform101
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 04 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
+- name: 🇲🇾 MY 05 - mqgg5630-cyber
   type: vless
   server: 216.173.67.59
   port: 443
@@ -57,67 +66,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 05 - mqgg5630-cyber
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 06 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: 47.250.84.25
-  skip-cert-verify: true
-- name: 🇲🇾 MY 07 - mqgg5630-cyber
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 08 - mqgg5630-cyber
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 09 - mqgg5630-cyber
-  type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,10 +76,6 @@ proxy-groups:
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
-  - 🇲🇾 MY 06 - mqgg5630-cyber
-  - 🇲🇾 MY 07 - mqgg5630-cyber
-  - 🇲🇾 MY 08 - mqgg5630-cyber
-  - 🇲🇾 MY 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,9 +86,5 @@ proxy-groups:
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
   - 🇲🇾 MY 05 - mqgg5630-cyber
-  - 🇲🇾 MY 06 - mqgg5630-cyber
-  - 🇲🇾 MY 07 - mqgg5630-cyber
-  - 🇲🇾 MY 08 - mqgg5630-cyber
-  - 🇲🇾 MY 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

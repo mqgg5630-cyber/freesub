@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 95.111.212.241
+  server: 199.232.239.239
   port: 443
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  uuid: 2968eb62-dd97-4c8f-fbca-d69388f1b572
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  servername: www.samsung.com
-  client-fingerprint: firefox
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?ed=2056/؟/@v2ray_configs_pools
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -59,7 +59,7 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -76,13 +76,26 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: random
 - name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -95,13 +108,35 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
+- name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: ss
-  server: 185.103.110.66
-  port: 18280
+  server: 185.103.110.68
+  port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 10 - mqgg5630-cyber
+  type: vless
+  server: ansooyefilter-telegram.arshia-nova.ir
+  port: 443
+  uuid: 2968eb62-dd97-4c8f-fbca-d69388f1b572
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?ed=2056
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 11 - mqgg5630-cyber
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,6 +150,9 @@ proxy-groups:
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
+  - 🇫🇮 FI 09 - mqgg5630-cyber
+  - 🇫🇮 FI 10 - mqgg5630-cyber
+  - 🇫🇮 FI 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -128,5 +166,8 @@ proxy-groups:
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
+  - 🇫🇮 FI 09 - mqgg5630-cyber
+  - 🇫🇮 FI 10 - mqgg5630-cyber
+  - 🇫🇮 FI 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

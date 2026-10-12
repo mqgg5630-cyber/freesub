@@ -6,26 +6,26 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  type: vless
   server: test.keoplentuio.xyz
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  type: vless
+  server: 155.103.70.53
+  port: 30303
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
+    headers:
+      Host: wzs.echo.net.eu.org
 - name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   type: vless
   server: 78.135.73.47
@@ -42,17 +42,32 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
-  server: best.valaiqm.ir
-  port: 3035
-  uuid: a1fb63f7-a942-4010-a830-bc395703a9a4
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Pi3B8-R1-lj8ScFPOTRRER709y9hJ0varDPpMzWhtAo
-    short-id: f2fda64d24c4
-  servername: telewebion.ir
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  type: vless
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +77,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +87,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
