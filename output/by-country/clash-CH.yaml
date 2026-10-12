@@ -12,19 +12,25 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
-  type: vless
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: trojan
   server: 185.18.250.245
   port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /nl-tw
+    path: /assignment
     headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
+  - 🇨🇭 CH 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - mqgg5630-cyber
   - 🇨🇭 CH 02 - mqgg5630-cyber
+  - 🇨🇭 CH 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

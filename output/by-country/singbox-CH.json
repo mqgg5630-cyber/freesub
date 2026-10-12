@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
-        "🇨🇭 CH 02 - mqgg5630-cyber"
+        "🇨🇭 CH 02 - mqgg5630-cyber",
+        "🇨🇭 CH 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -31,21 +33,29 @@
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
       "server": "185.18.250.245",
       "server_port": 443,
-      "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "edu.ruangguru.com.r3xxe.eu.cc",
+        "server_name": "www.calmlunch.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/nl-tw",
+        "path": "/assignment",
         "headers": {
-          "Host": "edu.ruangguru.com.r3xxe.eu.cc"
+          "Host": "www.calmlunch.com"
         }
       }
     },

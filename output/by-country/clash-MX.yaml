@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - mqgg5630-cyber
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+- name: 🇲🇽 MX 01 - mqgg5630-cyber
+  type: trojan
+  server: 131.196.254.151
+  port: 443
+  password: humanity
   udp: true
-  tls: true
+  sni: www.volumeroot.com
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: proxy-34l.pages.dev
+      Host: www.volumeroot.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇲🇽 MX 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇲🇽 MX 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
