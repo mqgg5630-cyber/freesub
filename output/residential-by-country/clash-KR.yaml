@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vless
+  server: 188.114.97.0
+  port: 8880
+  uuid: 6b89f475-913c-4381-a102-f5e06a129685
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proud-dawn-56f1.125-85b.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

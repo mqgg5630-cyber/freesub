@@ -5,22 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: user-6a917f32.noooo.win
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
   server: freede.aiage.work
@@ -35,6 +39,76 @@ proxies:
     short-id: 57e7977c9011061c
   servername: freede.aiage.work
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  type: vless
+  server: freede.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: cape.flowzari.info
+  port: 443
+  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc
+    short-id: 693e339ad3613446
+  servername: cape.flowzari.info
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: cape.flowzari.info
+  port: 443
+  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc
+    short-id: 693e339ad3613446
+  servername: cape.flowzari.info
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: vless
+  server: 193.233.202.250
+  port: 9443
+  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g
+    short-id: 649ab61e575fdbc9
+  servername: usa.edgeses.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.1
+  port: 2053
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +117,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +130,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

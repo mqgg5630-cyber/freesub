@@ -6,33 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: vless
-  server: 732051t.se1.h1clayd.click
-  port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-    short-id: 0983a448f995e806
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
-  type: vless
   server: swe.wizard.select
   port: 443
   uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
@@ -45,21 +18,7 @@ proxies:
     short-id: 3b20e438da99
   servername: swe.wizard.select
   client-fingerprint: chrome
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: vless
-  server: 109.120.134.243
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: 94.143.231.146
   port: 443
@@ -73,34 +32,20 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
-  server: cape.flowzari.info
+  server: 77.110.97.245
   port: 443
-  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc
-    short-id: 693e339ad3613446
-  servername: cape.flowzari.info
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 07 - mqgg5630-cyber
-  type: vless
-  server: 136.148.211.209
-  port: 25119
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,10 +54,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
-  - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
-  - 🇸🇪 SE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,9 +62,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
-  - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
-  - 🇸🇪 SE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
