@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,39 +29,56 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-      "server": "203.202.232.211",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "server": "googol.wookshop.ir",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
+        "server_name": "googol.wookshop.ir",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-      "server": "155.103.71.142",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "server": "206.1.102.81",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
+        "server_name": "googol.wookshop.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+      "server": "203.202.232.211",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chromefp=chrome",
+        "path": "/assignment",
         "headers": {
-          "Host": "ccc.010304.xyz"
+          "Host": "www.volumeroot.com"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
+      "server": "206.1.102.81",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "googol.wookshop.ir",
+        "insecure": true
       }
     },
     {

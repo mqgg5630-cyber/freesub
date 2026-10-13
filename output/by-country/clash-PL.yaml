@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
+  server: 2.26.231.218
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    short-id: ''
+  servername: rusbid.de
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
   server: 177.1.192.72
   port: 443
   uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
@@ -18,7 +32,7 @@ proxies:
     short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
   server: 31.77.13.19
   port: 2063
@@ -32,21 +46,16 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
-  server: 177.1.192.72
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -60,30 +69,7 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: 2.26.231.218
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    short-id: ''
-  servername: rusbid.de
-  client-fingerprint: chrome
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
   server: 177.1.192.74
   port: 443
@@ -97,7 +83,7 @@ proxies:
     short-id: 770618b6
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -111,19 +97,29 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
   type: vless
-  server: 80.47.12.94
-  port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: vless
+  server: 177.1.192.72
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-    short-id: ''
-  servername: pl-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
