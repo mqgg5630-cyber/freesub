@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: trojan
-  server: 51.20.202.203
+  type: vless
+  server: 77.110.97.245
   port: 443
-  password: humanity
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /assignment
+    path: /fp=chrome
     headers:
-      Host: www.volumeroot.com
+      Host: ccc.010304.xyz
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: 732051t.se1.h1clayd.click
@@ -32,6 +33,34 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
+  server: swe.wizard.select
+  port: 443
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
+  type: vless
+  server: 109.120.134.243
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vless
   server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -44,9 +73,23 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
   type: vless
-  server: 45.133.151.164
+  server: cape.flowzari.info
+  port: 443
+  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc
+    short-id: 693e339ad3613446
+  servername: cape.flowzari.info
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 07 - mqgg5630-cyber
+  type: vless
+  server: 136.148.211.209
   port: 25119
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
@@ -67,6 +110,9 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
+  - 🇸🇪 SE 06 - mqgg5630-cyber
+  - 🇸🇪 SE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +122,8 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
+  - 🇸🇪 SE 06 - mqgg5630-cyber
+  - 🇸🇪 SE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

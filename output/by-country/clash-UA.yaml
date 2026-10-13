@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 MX 01 - mqgg5630-cyber
-  type: trojan
-  server: 131.196.254.151
+- name: 🇺🇦 UA 01 - mqgg5630-cyber
+  type: vless
+  server: 213.111.148.137
   port: 443
-  password: humanity
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
   network: ws
   ws-opts:
-    path: /assignment
+    path: /fp=android
     headers:
-      Host: www.volumeroot.com
+      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 MX 01 - mqgg5630-cyber
+  - 🇺🇦 UA 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 MX 01 - mqgg5630-cyber
+  - 🇺🇦 UA 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
