@@ -5,30 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - mqgg5630-cyber
-  type: trojan
-  server: master-possum.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: master-possum.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: trojan
-  server: 54.72.130.222
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 03 - mqgg5630-cyber
-  type: trojan
-  server: adapting-basilisk.rooster465.autos
-  port: 443
-  password: UX82473651
-  udp: true
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 IE 04 - mqgg5630-cyber
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -48,17 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - mqgg5630-cyber
-  - 🇮🇪 IE 02 - mqgg5630-cyber
-  - 🇮🇪 IE 03 - mqgg5630-cyber
-  - 🇮🇪 IE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - mqgg5630-cyber
-  - 🇮🇪 IE 02 - mqgg5630-cyber
-  - 🇮🇪 IE 03 - mqgg5630-cyber
-  - 🇮🇪 IE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

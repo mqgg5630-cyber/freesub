@@ -10,7 +10,8 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +20,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,7 +29,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "60.248.219.53",
+      "server": "59.125.69.23",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
@@ -39,7 +41,7 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "60.248.219.53"
+          "Host": "59.125.69.23"
         }
       }
     },
@@ -63,8 +65,29 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fujrdt.d6f54hd1j.cc"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
       "server": "103.180.20.108",
       "server_port": 8443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",

@@ -5,14 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  tls: true
+  sni: russiapower.accesscam.org
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
@@ -23,20 +22,6 @@ proxies:
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - mqgg5630-cyber
-  type: vless
-  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-  port: 443
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
-- name: 🇪🇪 EE 04 - mqgg5630-cyber
   type: vless
   server: 185.31.242.61
   port: 443
@@ -50,14 +35,42 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: est.nztvpn.com
   client-fingerprint: random
-- name: 🇪🇪 EE 05 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+- name: 🇪🇪 EE 04 - mqgg5630-cyber
+  type: vless
+  server: 179.254.126.20
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
-  sni: 109.206.241.10
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: random
+- name: 🇪🇪 EE 05 - mqgg5630-cyber
+  type: vless
+  server: 95.85.224.51
+  port: 443
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+- name: 🇪🇪 EE 06 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +81,7 @@ proxy-groups:
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +92,6 @@ proxy-groups:
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

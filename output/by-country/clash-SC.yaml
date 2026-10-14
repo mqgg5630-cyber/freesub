@@ -5,30 +5,64 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  type: trojan
+  server: 45.205.27.78
+  port: 10443
+  password: 64bbb86a-d95b-47e2-9779-494062c84c8c
   udp: true
-  tls: true
+  sni: 45.205.27.78
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: trojan
+  server: 45.205.27.78
+  port: 10443
+  password: f6c76e16-fef4-4dfd-a0e2-b45972dd3347
+  udp: true
+  sni: 45.205.27.78
+  skip-cert-verify: true
+- name: 🇸🇨 SC 03 - mqgg5630-cyber
+  type: trojan
+  server: 45.205.27.78
+  port: 10443
+  password: cb3f0384-05e1-433f-bde3-43cb973f2c42
+  udp: true
+  sni: 45.205.27.78
+  skip-cert-verify: true
+- name: 🇸🇨 SC 04 - mqgg5630-cyber
+  type: trojan
+  server: 45.205.27.78
+  port: 10443
+  password: 8c3db80a-0aba-4c22-84e5-e8b7539db6f7
+  udp: true
+  sni: 45.205.27.78
+  skip-cert-verify: true
+- name: 🇸🇨 SC 05 - mqgg5630-cyber
+  type: trojan
+  server: 45.205.27.78
+  port: 10443
+  password: 7e42df19-de94-45a6-bdb1-20b45080c3e5
+  udp: true
+  sni: 45.205.27.78
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
+  - 🇸🇨 SC 03 - mqgg5630-cyber
+  - 🇸🇨 SC 04 - mqgg5630-cyber
+  - 🇸🇨 SC 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
+  - 🇸🇨 SC 03 - mqgg5630-cyber
+  - 🇸🇨 SC 04 - mqgg5630-cyber
+  - 🇸🇨 SC 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

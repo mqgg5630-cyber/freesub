@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
-  type: vless
-  server: 5.39.202.125
+  type: trojan
+  server: 146.75.57.238
   port: 443
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  password: mitivpn
   udp: true
-  tls: true
+  sni: google.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
-    short-id: f19e02a2fb573c18
-  servername: czekkk.loknietotop.digital
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /+mehrosaboran
+    headers:
+      Host: mitivpn-s1.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select

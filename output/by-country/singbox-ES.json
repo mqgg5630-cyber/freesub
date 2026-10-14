@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
-        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -44,8 +46,27 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
       "server": "83.147.18.3",
       "server_port": 443,
       "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",

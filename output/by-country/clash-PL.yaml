@@ -17,8 +17,22 @@ proxies:
     public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
     short-id: 46455ff0
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: randomized
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
+  server: 177.1.192.74
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
   server: 31.77.13.19
   port: 2063
@@ -32,30 +46,7 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: 177.1.192.72
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
   server: pl.golangwikito.cfd
   port: 443
@@ -69,6 +60,19 @@ proxies:
     short-id: f8b695e5c59d028c
   servername: pl.golangwikito.cfd
   client-fingerprint: chrome
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: vless
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+    short-id: 103d1dc5ed8eaf4c
+  servername: www.ceneo.pl
+  client-fingerprint: random
 - name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: vless
   server: 177.1.192.74
@@ -85,27 +89,15 @@ proxies:
   client-fingerprint: chrome
 - name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  server: 31.59.211.71
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-    short-id: 103d1dc5ed8eaf4c
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: pl9.aiage.work
 - name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
   type: vless
   server: 177.1.192.72
   port: 443
@@ -119,6 +111,52 @@ proxies:
     short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: vless
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+    short-id: 103d1dc5ed8eaf4c
+  servername: www.ceneo.pl
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 11 - mqgg5630-cyber
+  type: vless
+  server: 177.1.192.72
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 12 - mqgg5630-cyber
+  type: vless
+  server: pl9.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: pl9.aiage.work
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,6 +171,9 @@ proxy-groups:
   - 🇵🇱 PL 07 - mqgg5630-cyber
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
+  - 🇵🇱 PL 10 - mqgg5630-cyber
+  - 🇵🇱 PL 11 - mqgg5630-cyber
+  - 🇵🇱 PL 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,5 +188,8 @@ proxy-groups:
   - 🇵🇱 PL 07 - mqgg5630-cyber
   - 🇵🇱 PL 08 - mqgg5630-cyber
   - 🇵🇱 PL 09 - mqgg5630-cyber
+  - 🇵🇱 PL 10 - mqgg5630-cyber
+  - 🇵🇱 PL 11 - mqgg5630-cyber
+  - 🇵🇱 PL 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -15,80 +15,15 @@ proxies:
   flow: xtls-rprx-vision
   servername: e3k67dwms3-51255166202-direct.tavafog.com
 - name: 🇫🇷 法国 (France) 02 - mqgg5630-cyber
-  type: vless
-  server: 62.210.91.10
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 03 - mqgg5630-cyber
-  type: vless
-  server: 51.255.166.202
-  port: 443
-  uuid: e3k67dwms3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 04 - mqgg5630-cyber
   type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 05 - mqgg5630-cyber
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - mqgg5630-cyber
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07 - mqgg5630-cyber
-  type: vless
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  uuid: e3k67dwms3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 08 - mqgg5630-cyber
-  type: trojan
-  server: 104.18.8.83
+  server: 172.64.152.23
   port: 443
   password: humanity
   udp: true
@@ -99,7 +34,20 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 09 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 04 - mqgg5630-cyber
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 05 - mqgg5630-cyber
   type: trojan
   server: 104.16.122.175
   port: 443
@@ -112,31 +60,33 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 10 - mqgg5630-cyber
-  type: vless
-  server: 140.248.186.45
+- name: 🇫🇷 法国 (France) 06 - mqgg5630-cyber
+  type: trojan
+  server: 141.193.213.172
   port: 443
-  uuid: XpnTeam-2
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 11 - mqgg5630-cyber
-  type: vless
-  server: e3k67dwms3-51255166202-direct.tavafog.com
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 07 - mqgg5630-cyber
+  type: trojan
+  server: 104.17.148.22
   port: 443
-  uuid: e3k67dwms3
+  password: humanity
   udp: true
-  tls: true
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 12 - mqgg5630-cyber
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 08 - mqgg5630-cyber
   type: trojan
   server: 45.87.41.18
   port: 443
@@ -149,132 +99,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 13 - mqgg5630-cyber
-  type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 14 - mqgg5630-cyber
-  type: vless
-  server: 149.202.57.89
-  port: 443
-  uuid: rgiw5k0gg5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
-- name: 🇫🇷 法国 (France) 15 - mqgg5630-cyber
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 16 - mqgg5630-cyber
-  type: vless
-  server: 51.255.165.170
-  port: 443
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-- name: 🇫🇷 法国 (France) 17 - mqgg5630-cyber
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 18 - mqgg5630-cyber
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 19 - mqgg5630-cyber
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 20 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 21 - mqgg5630-cyber
-  type: trojan
-  server: 212.183.88.136
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 22 - mqgg5630-cyber
-  type: vless
-  server: 51.255.165.170
-  port: 443
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-- name: 🇫🇷 法国 (France) 23 - mqgg5630-cyber
-  type: vless
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 24 - mqgg5630-cyber
-  type: vless
-  server: 51.255.166.202
-  port: 443
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 25 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 09 - mqgg5630-cyber
   type: trojan
   server: 104.17.147.22
   port: 443
@@ -287,57 +112,36 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 26 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 10 - mqgg5630-cyber
   type: vless
-  server: 7q4eiwcseu-193708596-direct.rahbarii.com
+  server: 51.255.166.202
   port: 443
-  uuid: 7q4eiwcseu
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
-- name: 🇫🇷 法国 (France) 27 - mqgg5630-cyber
-  type: trojan
-  server: 185.220.100.168
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 11 - mqgg5630-cyber
+  type: ss
+  server: 54.36.174.134
   port: 443
-  password: humanity
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 28 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 12 - mqgg5630-cyber
   type: vless
-  server: 193.70.85.96
+  server: 51.255.165.170
   port: 443
-  uuid: 58756a39-0472-5f8a-89e3-a80fa94af59e
+  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
-- name: 🇫🇷 法国 (France) 29 - mqgg5630-cyber
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 30 - mqgg5630-cyber
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+- name: 🇫🇷 法国 (France) 13 - mqgg5630-cyber
   type: trojan
-  server: 45.80.111.7
+  server: 104.18.9.83
   port: 443
   password: humanity
   udp: true
@@ -348,33 +152,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 31 - mqgg5630-cyber
-  type: trojan
-  server: 185.18.250.245
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 32 - mqgg5630-cyber
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 33 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 14 - mqgg5630-cyber
   type: vless
   server: e3k67dwms3-51255166202-direct.tavafog.com
   port: 443
@@ -384,22 +162,7 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 34 - mqgg5630-cyber
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 35 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 15 - mqgg5630-cyber
   type: vmess
   server: 54.37.131.126
   port: 80
@@ -414,9 +177,9 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 36 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 16 - mqgg5630-cyber
   type: trojan
-  server: 172.64.152.23
+  server: 162.159.91.211
   port: 443
   password: humanity
   udp: true
@@ -427,20 +190,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 37 - mqgg5630-cyber
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 38 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 17 - mqgg5630-cyber
   type: trojan
   server: 104.19.229.21
   port: 443
@@ -453,75 +203,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 39 - mqgg5630-cyber
-  type: vless
-  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
-  port: 443
-  uuid: rgiw5k0gg5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
-- name: 🇫🇷 法国 (France) 40 - mqgg5630-cyber
-  type: vless
-  server: 51.255.166.202
-  port: 443
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 41 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 18 - mqgg5630-cyber
   type: vless
   server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 42 - mqgg5630-cyber
-  type: vless
-  server: 51.255.165.170
-  port: 443
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-- name: 🇫🇷 法国 (France) 43 - mqgg5630-cyber
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 44 - mqgg5630-cyber
-  type: trojan
-  server: 141.193.213.172
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 45 - mqgg5630-cyber
-  type: vless
-  server: 51.255.166.202
   port: 443
   uuid: e3k67dwms3
   udp: true
@@ -529,23 +213,9 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 46 - mqgg5630-cyber
-  type: vless
-  server: 199.232.78.170
-  port: 443
-  uuid: XpnTeam-1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 47 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 19 - mqgg5630-cyber
   type: trojan
-  server: 104.18.9.83
+  server: 45.80.111.7
   port: 443
   password: humanity
   udp: true
@@ -556,55 +226,23 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 48 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 20 - mqgg5630-cyber
   type: vless
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  server: 62.210.91.2
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 49 - mqgg5630-cyber
-  type: trojan
-  server: 104.17.148.22
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 50 - mqgg5630-cyber
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 51 - mqgg5630-cyber
-  type: vless
-  server: 51.255.165.170
-  port: 443
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-- name: 🇫🇷 法国 (France) 52 - mqgg5630-cyber
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 21 - mqgg5630-cyber
   type: trojan
-  server: 104.16.71.213
+  server: 45.87.41.18
   port: 443
   password: humanity
   udp: true
@@ -615,7 +253,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 53 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 22 - mqgg5630-cyber
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -630,9 +268,74 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 54 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 23 - mqgg5630-cyber
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 24 - mqgg5630-cyber
+  type: vless
+  server: 149.202.57.89
+  port: 443
+  uuid: rgiw5k0gg5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+- name: 🇫🇷 法国 (France) 25 - mqgg5630-cyber
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 26 - mqgg5630-cyber
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 27 - mqgg5630-cyber
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 28 - mqgg5630-cyber
   type: trojan
-  server: 212.183.88.136
+  server: 104.18.9.83
   port: 443
   password: humanity
   udp: true
@@ -640,20 +343,23 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: //assignment
+    path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 55 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 29 - mqgg5630-cyber
   type: vless
-  server: 193.70.85.96
+  server: 79.174.92.222
   port: 443
-  uuid: 58756a39-0472-5f8a-89e3-a80fa94af59e
+  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
-- name: 🇫🇷 法国 (France) 56 - mqgg5630-cyber
+  reality-opts:
+    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
+    short-id: a1b2c3d4
+  servername: m.vk.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 30 - mqgg5630-cyber
   type: vless
   server: 51.255.166.202
   port: 443
@@ -663,30 +369,22 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: e3k67dwms3-51255166202-direct.tavafog.com
-- name: 🇫🇷 法国 (France) 57 - mqgg5630-cyber
-  type: vless
-  server: 51.255.165.170
-  port: 443
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
+- name: 🇫🇷 法国 (France) 31 - mqgg5630-cyber
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-- name: 🇫🇷 法国 (France) 58 - mqgg5630-cyber
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: //assignment
+    path: /
     headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 59 - mqgg5630-cyber
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 32 - mqgg5630-cyber
   type: vless
   server: 62.210.91.10
   port: 23576
@@ -700,48 +398,29 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 60 - mqgg5630-cyber
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 61 - mqgg5630-cyber
-  type: trojan
-  server: 104.18.9.83
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🇫🇷 法国 (France) 62 - mqgg5630-cyber
+- name: 🇫🇷 法国 (France) 33 - mqgg5630-cyber
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  server: 149.202.57.89
+  port: 443
+  uuid: rgiw5k0gg5
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 63 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+- name: 🇫🇷 法国 (France) 34 - mqgg5630-cyber
+  type: vless
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  port: 443
+  uuid: rgiw5k0gg5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+- name: 🇫🇷 法国 (France) 35 - mqgg5630-cyber
   type: trojan
-  server: 162.159.91.211
+  server: 212.183.88.136
   port: 443
   password: humanity
   udp: true
@@ -752,6 +431,227 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 36 - mqgg5630-cyber
+  type: vless
+  server: 51.255.166.202
+  port: 443
+  uuid: e3k67dwms3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 37 - mqgg5630-cyber
+  type: trojan
+  server: 185.18.250.245
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 38 - mqgg5630-cyber
+  type: vless
+  server: 51.255.166.202
+  port: 443
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 39 - mqgg5630-cyber
+  type: trojan
+  server: 104.16.71.213
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 40 - mqgg5630-cyber
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 41 - mqgg5630-cyber
+  type: vless
+  server: 51.255.165.170
+  port: 443
+  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+- name: 🇫🇷 法国 (France) 42 - mqgg5630-cyber
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 43 - mqgg5630-cyber
+  type: vless
+  server: 51.255.166.202
+  port: 443
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 44 - mqgg5630-cyber
+  type: vless
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
+  uuid: e3k67dwms3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 45 - mqgg5630-cyber
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 46 - mqgg5630-cyber
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: //assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 47 - mqgg5630-cyber
+  type: vless
+  server: 62.210.91.10
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: ''
+  servername: fuck.rkn
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 48 - mqgg5630-cyber
+  type: vless
+  server: 51.255.166.202
+  port: 443
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 49 - mqgg5630-cyber
+  type: vless
+  server: 31.57.190.17
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 50 - mqgg5630-cyber
+  type: vless
+  server: 62.210.91.2
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 51 - mqgg5630-cyber
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 52 - mqgg5630-cyber
+  type: vless
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
+  uuid: e3k67dwms3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+- name: 🇫🇷 法国 (France) 53 - mqgg5630-cyber
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 54 - mqgg5630-cyber
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 55 - mqgg5630-cyber
+  type: vless
+  server: 51.255.165.170
+  port: 443
+  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -812,14 +712,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 53 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 54 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 55 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 56 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 57 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 58 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 59 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 60 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 61 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 62 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 63 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -880,13 +772,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 53 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 54 - mqgg5630-cyber
   - 🇫🇷 法国 (France) 55 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 56 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 57 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 58 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 59 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 60 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 61 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 62 - mqgg5630-cyber
-  - 🇫🇷 法国 (France) 63 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
