@@ -17,22 +17,8 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: c0331b33-4a3a-4320-bacb-78601f9795bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
   port: 443
@@ -46,6 +32,19 @@ proxies:
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -59,22 +58,8 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: c0331b33-4a3a-4320-bacb-78601f9795bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
   port: 443
@@ -87,7 +72,14 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 - name: 🇫🇮 FI 07 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -101,15 +93,8 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇫🇮 FI 08 - mqgg5630-cyber
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
   port: 443
@@ -122,8 +107,8 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 10 - mqgg5630-cyber
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -131,7 +116,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 FI 10 - mqgg5630-cyber
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: safari
 - name: 🇫🇮 FI 11 - mqgg5630-cyber
+  type: trojan
+  server: 46.62.204.134
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🇫🇮 FI 12 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
   port: 443
@@ -145,20 +157,6 @@ proxies:
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 12 - mqgg5630-cyber
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: b3f3f34c-cbcd-427d-9894-5330738ac0da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speedtest.net
-  network: ws
-  ws-opts:
-    path: /?ed=2056?/TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: mr_anonoijji.global.ssl.fastly.net
 - name: 🇫🇮 FI 13 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -174,6 +172,19 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 14 - mqgg5630-cyber
+  type: trojan
+  server: 46.62.204.134
+  port: 443
+  password: humanity
+  udp: true
+  sni: wWw.Volumeroot.cOm.
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumerOot.coM.
+- name: 🇫🇮 FI 15 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -186,20 +197,6 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 15 - mqgg5630-cyber
-  type: vless
-  server: 95.111.212.241
-  port: 443
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  servername: www.samsung.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 16 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -213,8 +210,62 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 17 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 18 - mqgg5630-cyber
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: c0331b33-4a3a-4320-bacb-78601f9795bd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
+- name: 🇫🇮 FI 19 - mqgg5630-cyber
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: b3f3f34c-cbcd-427d-9894-5330738ac0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?ed=2056?/TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 20 - mqgg5630-cyber
+  type: trojan
+  server: 46.62.204.134
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🇫🇮 FI 21 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
   port: 443
@@ -228,53 +279,20 @@ proxies:
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 18 - mqgg5630-cyber
+- name: 🇫🇮 FI 22 - mqgg5630-cyber
   type: vless
-  server: 79.175.136.238
-  port: 7879
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
+  server: 199.232.78.159
+  port: 443
+  uuid: c0331b33-4a3a-4320-bacb-78601f9795bd
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-    short-id: 63ca289314edc51b
-  servername: account.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 19 - mqgg5630-cyber
-  type: trojan
-  server: 46.62.204.134
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
+  servername: google.com
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.pleadcourt.org
-- name: 🇫🇮 FI 20 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 21 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+      Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -301,6 +319,7 @@ proxy-groups:
   - 🇫🇮 FI 19 - mqgg5630-cyber
   - 🇫🇮 FI 20 - mqgg5630-cyber
   - 🇫🇮 FI 21 - mqgg5630-cyber
+  - 🇫🇮 FI 22 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -327,5 +346,6 @@ proxy-groups:
   - 🇫🇮 FI 19 - mqgg5630-cyber
   - 🇫🇮 FI 20 - mqgg5630-cyber
   - 🇫🇮 FI 21 - mqgg5630-cyber
+  - 🇫🇮 FI 22 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

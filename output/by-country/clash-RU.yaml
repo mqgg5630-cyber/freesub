@@ -6,30 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: 77.110.105.122
-  port: 443
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: co-pl.speedtec.ru
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vless
-  server: 87.242.127.176
-  port: 4510
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
-    short-id: 2d0c188798bae174
-  servername: 9c99da.usecache.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
   server: 193.233.202.250
   port: 9443
   uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
@@ -41,22 +17,18 @@ proxies:
     public-key: ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g
     short-id: 649ab61e575fdbc9
   servername: usa.edgeses.org
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
