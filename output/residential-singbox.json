@@ -9,9 +9,10 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+        "🇳🇱 荷兰 (Netherlands) 02 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber"
       ]
     },
     {
@@ -19,9 +20,10 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
+        "🇳🇱 荷兰 (Netherlands) 02 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,7 +31,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
-      "server": "59.125.69.23",
+      "server": "60.248.219.53",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
@@ -41,26 +43,29 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "59.125.69.23"
+          "Host": "60.248.219.53"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber",
-      "server": "103.148.73.173",
-      "server_port": 8443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 (家宽) - mqgg5630-cyber",
+      "server": "meowgenicslab.net",
+      "server_port": 443,
+      "uuid": "f580778d-8e05-4d88-8724-802eccf4ceff",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-        "headers": {
-          "Host": "103.148.73.173"
+        "server_name": "meowgenicslab.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F7enjoJVna8sj4M9KPqNkN1ATXeflVNx9SHnn4lpAkY",
+          "short_id": "5f37b7c5e2cc31a3"
         }
       }
     },
@@ -79,15 +84,34 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "",
         "headers": {
-          "Host": "fujrdt.d6f54hd1j.cc"
+          "Host": ""
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - mqgg5630-cyber",
+      "server": "103.148.73.173",
+      "server_port": 8443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "103.148.73.173"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - mqgg5630-cyber",
       "server": "103.180.20.108",
       "server_port": 8443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",

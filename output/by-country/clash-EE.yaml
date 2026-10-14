@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  sni: russiapower.accesscam.org
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
@@ -23,46 +28,48 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - mqgg5630-cyber
   type: vless
-  server: 185.31.242.61
+  server: 94.183.170.135
   port: 443
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
-    short-id: 0da7e14db353e7d0
-  servername: est.nztvpn.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 04 - mqgg5630-cyber
-  type: vless
-  server: 179.254.126.20
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  tls: true
+  sni: 109.206.241.10
   skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
-  client-fingerprint: random
 - name: 🇪🇪 EE 05 - mqgg5630-cyber
   type: vless
-  server: 95.85.224.51
+  server: 94.183.170.135
   port: 443
-  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 06 - mqgg5630-cyber
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: max.ru
-  client-fingerprint: chrome
-- name: 🇪🇪 EE 06 - mqgg5630-cyber
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - mqgg5630-cyber
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -82,6 +89,7 @@ proxy-groups:
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
   - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,5 +101,6 @@ proxy-groups:
   - 🇪🇪 EE 04 - mqgg5630-cyber
   - 🇪🇪 EE 05 - mqgg5630-cyber
   - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
