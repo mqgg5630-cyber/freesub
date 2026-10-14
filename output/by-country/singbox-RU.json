@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,29 +18,43 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
+      "server": "renderer-stream-2-114.mirra.now",
+      "server_port": 443,
+      "uuid": "8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "renderer-stream-2-114.mirra.now",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/gpu-stream/socket",
+        "headers": {
+          "Host": "renderer-stream-2-114.mirra.now"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "193.233.202.250",
-      "server_port": 9443,
-      "uuid": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+      "server": "213.165.56.102",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "usa.edgeses.org",
+        "server_name": "freede.aiage.work",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -47,10 +62,18 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g",
-          "short_id": "649ab61e575fdbc9"
+          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
+          "short_id": "57e7977c9011061c"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
     },
     {
       "type": "direct",

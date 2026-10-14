@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber",
+        "🇸🇪 SE 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber",
+        "🇸🇪 SE 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,6 +29,36 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
+      "server": "193.27.200.200",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.wizard.select",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
       "server": "94.143.231.146",
       "server_port": 443,
       "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
@@ -43,7 +77,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
       "server": "77.110.97.245",
       "server_port": 443,
       "uuid": "d342d11e-d224-4463-b982-532309285094",
