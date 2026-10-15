@@ -6,211 +6,46 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: se3.h1cloud.net
-  port: 25119
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
-  server: 193.188.21.253
-  port: 10444
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: edge
 - name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
-  type: vless
-  server: 46.246.125.153
-  port: 443
-  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
-    short-id: a83b77e064761e3c
-  servername: res.cdn.office.net
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 07 - mqgg5630-cyber
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 08 - mqgg5630-cyber
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 09 - mqgg5630-cyber
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 10 - mqgg5630-cyber
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 11 - mqgg5630-cyber
-  type: vless
-  server: se3.h1cloud.net
-  port: 25119
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 12 - mqgg5630-cyber
-  type: vless
-  server: 46.246.125.153
-  port: 443
-  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
-    short-id: a83b77e064761e3c
-  servername: res.cdn.office.net
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 13 - mqgg5630-cyber
-  type: vless
-  server: 46.246.125.153
-  port: 443
-  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
-    short-id: a83b77e064761e3c
-  servername: res.cdn.office.net
-  client-fingerprint: random
-- name: 🇸🇪 SE 14 - mqgg5630-cyber
-  type: vless
-  server: se3.h1cloud.net
-  port: 25119
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 15 - mqgg5630-cyber
-  type: vless
-  server: se3.h1cloud.net
-  port: 25119
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 16 - mqgg5630-cyber
-  type: vless
-  server: 732051t.se1.h1clayd.click
-  port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-    short-id: 0983a448f995e806
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 17 - mqgg5630-cyber
   type: vless
   server: sub.merky.top
   port: 443
@@ -224,7 +59,101 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 18 - mqgg5630-cyber
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vless
+  server: 46.246.125.153
+  port: 443
+  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
+    short-id: a83b77e064761e3c
+  servername: res.cdn.office.net
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
+  type: vless
+  server: 732051t.se1.h1clayd.click
+  port: 443
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
+    short-id: 0983a448f995e806
+  servername: 732051t.se1.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 07 - mqgg5630-cyber
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 08 - mqgg5630-cyber
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 09 - mqgg5630-cyber
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 10 - mqgg5630-cyber
+  type: vless
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 11 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 12 - mqgg5630-cyber
   type: vless
   server: se3.h1cloud.net
   port: 25119
@@ -238,6 +167,228 @@ proxies:
     short-id: 10f517
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇸🇪 SE 13 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: edge
+- name: 🇸🇪 SE 14 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: random
+- name: 🇸🇪 SE 15 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 16 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25643
+  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NBKdM5Q5Tiue7YkxEldtShCCHi1GJ0WKCizyhPXQTy4
+    short-id: 20672f0333e23e84
+  servername: ru1.boutique-hotel1108.ru
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 17 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 18 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: ios
+- name: 🇸🇪 SE 19 - mqgg5630-cyber
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 20 - mqgg5630-cyber
+  type: vless
+  server: 193.188.21.253
+  port: 10444
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇸🇪 SE 21 - mqgg5630-cyber
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+    short-id: 8045087bda646f1b
+  servername: www.icloud.com
+  client-fingerprint: edge
+- name: 🇸🇪 SE 22 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 23 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: safari
+- name: 🇸🇪 SE 24 - mqgg5630-cyber
+  type: vless
+  server: 46.246.125.153
+  port: 443
+  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
+    short-id: a83b77e064761e3c
+  servername: res.cdn.office.net
+  client-fingerprint: random
+- name: 🇸🇪 SE 25 - mqgg5630-cyber
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 26 - mqgg5630-cyber
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+    short-id: 8045087bda646f1b
+  servername: www.icloud.com
+  client-fingerprint: qq
+- name: 🇸🇪 SE 27 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: edge
+- name: 🇸🇪 SE 28 - mqgg5630-cyber
+  type: vless
+  server: se3.h1cloud.net
+  port: 25119
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -261,6 +412,16 @@ proxy-groups:
   - 🇸🇪 SE 16 - mqgg5630-cyber
   - 🇸🇪 SE 17 - mqgg5630-cyber
   - 🇸🇪 SE 18 - mqgg5630-cyber
+  - 🇸🇪 SE 19 - mqgg5630-cyber
+  - 🇸🇪 SE 20 - mqgg5630-cyber
+  - 🇸🇪 SE 21 - mqgg5630-cyber
+  - 🇸🇪 SE 22 - mqgg5630-cyber
+  - 🇸🇪 SE 23 - mqgg5630-cyber
+  - 🇸🇪 SE 24 - mqgg5630-cyber
+  - 🇸🇪 SE 25 - mqgg5630-cyber
+  - 🇸🇪 SE 26 - mqgg5630-cyber
+  - 🇸🇪 SE 27 - mqgg5630-cyber
+  - 🇸🇪 SE 28 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -284,5 +445,15 @@ proxy-groups:
   - 🇸🇪 SE 16 - mqgg5630-cyber
   - 🇸🇪 SE 17 - mqgg5630-cyber
   - 🇸🇪 SE 18 - mqgg5630-cyber
+  - 🇸🇪 SE 19 - mqgg5630-cyber
+  - 🇸🇪 SE 20 - mqgg5630-cyber
+  - 🇸🇪 SE 21 - mqgg5630-cyber
+  - 🇸🇪 SE 22 - mqgg5630-cyber
+  - 🇸🇪 SE 23 - mqgg5630-cyber
+  - 🇸🇪 SE 24 - mqgg5630-cyber
+  - 🇸🇪 SE 25 - mqgg5630-cyber
+  - 🇸🇪 SE 26 - mqgg5630-cyber
+  - 🇸🇪 SE 27 - mqgg5630-cyber
+  - 🇸🇪 SE 28 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

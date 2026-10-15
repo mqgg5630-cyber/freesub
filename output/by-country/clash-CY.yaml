@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - mqgg5630-cyber
   type: vless
-  server: hydra.yokkastars.com
-  port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 CY 02 - mqgg5630-cyber
-  type: vless
   server: 5.253.30.99
   port: 40443
   uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
@@ -32,6 +18,20 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇨🇾 CY 02 - mqgg5630-cyber
+  type: vless
+  server: hydra.yokkastars.com
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: qq
 - name: 🇨🇾 CY 03 - mqgg5630-cyber
   type: vless
   server: 5.253.42.164
@@ -45,8 +45,36 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 04 - mqgg5630-cyber
+  type: vless
+  server: 5.253.30.99
+  port: 40443
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 05 - mqgg5630-cyber
+  type: vless
+  server: 5.253.28.240
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 06 - mqgg5630-cyber
   type: vless
   server: dorado.yokkastars.com
   port: 40443
@@ -60,77 +88,7 @@ proxies:
     short-id: 68a8
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 05 - mqgg5630-cyber
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 CY 06 - mqgg5630-cyber
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
 - name: 🇨🇾 CY 07 - mqgg5630-cyber
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 CY 08 - mqgg5630-cyber
-  type: vless
-  server: hydra.yokkastars.com
-  port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 CY 09 - mqgg5630-cyber
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 CY 10 - mqgg5630-cyber
   type: vless
   server: 5.253.42.164
   port: 40443
@@ -142,6 +100,44 @@ proxies:
   reality-opts:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 08 - mqgg5630-cyber
+  type: vless
+  server: 5.253.28.224
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 09 - mqgg5630-cyber
+  type: vless
+  server: 77.110.105.122
+  port: 443
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: co-pl.speedtec.ru
+- name: 🇨🇾 CY 10 - mqgg5630-cyber
+  type: vless
+  server: hydra.yokkastars.com
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 CY 11 - mqgg5630-cyber
@@ -157,26 +153,26 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 12 - mqgg5630-cyber
   type: vless
-  server: dorado.yokkastars.com
+  server: 5.253.30.99
   port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 13 - mqgg5630-cyber
   type: vless
-  server: 5.253.28.240
+  server: 5.253.30.99
   port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   udp: true
   tls: true
   skip-cert-verify: true
@@ -188,18 +184,14 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇾 CY 14 - mqgg5630-cyber
   type: vless
-  server: 5.253.28.224
-  port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  server: 77.110.105.122
+  port: 443
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: qq
+  servername: co-pl.speedtec.ru
 - name: 🇨🇾 CY 15 - mqgg5630-cyber
   type: vless
   server: dorado.yokkastars.com
@@ -216,18 +208,38 @@ proxies:
   client-fingerprint: qq
 - name: 🇨🇾 CY 16 - mqgg5630-cyber
   type: vless
-  server: dorado.yokkastars.com
+  server: 5.253.30.99
   port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇨🇾 CY 17 - mqgg5630-cyber
+  type: vless
+  server: 77.110.105.122
+  port: 443
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: co-pl.speedtec.ru
+- name: 🇨🇾 CY 18 - mqgg5630-cyber
+  type: vless
+  server: 77.110.105.122
+  port: 443
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: co-pl.speedtec.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -249,6 +261,8 @@ proxy-groups:
   - 🇨🇾 CY 14 - mqgg5630-cyber
   - 🇨🇾 CY 15 - mqgg5630-cyber
   - 🇨🇾 CY 16 - mqgg5630-cyber
+  - 🇨🇾 CY 17 - mqgg5630-cyber
+  - 🇨🇾 CY 18 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -270,5 +284,7 @@ proxy-groups:
   - 🇨🇾 CY 14 - mqgg5630-cyber
   - 🇨🇾 CY 15 - mqgg5630-cyber
   - 🇨🇾 CY 16 - mqgg5630-cyber
+  - 🇨🇾 CY 17 - mqgg5630-cyber
+  - 🇨🇾 CY 18 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

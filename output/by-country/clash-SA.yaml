@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - mqgg5630-cyber
+- name: 🇸🇦 SA 01 - mqgg5630-cyber
   type: vless
-  server: 188.241.54.208
+  server: freede.aiage.work
   port: 443
-  uuid: fbaa413d-2ffb-4e36-8444-e1b1ab829fe1
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: qlVZ2ehdXHCxIADkf5swgXT2ZHrpSP7HM6SKTBMQXRU
-    short-id: 456bf62e2b728b97
-  servername: www.samsung.com
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - mqgg5630-cyber
+  - 🇸🇦 SA 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - mqgg5630-cyber
+  - 🇸🇦 SA 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

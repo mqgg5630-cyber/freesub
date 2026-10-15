@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber",
+        "🇲🇩 MD 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber",
+        "🇲🇩 MD 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,28 @@
     {
       "type": "vless",
       "tag": "🇲🇩 MD 01 - mqgg5630-cyber",
+      "server": "md1.aiage.work",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "md1.aiage.work",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo",
+          "short_id": "e829f50f0a3f416b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD 02 - mqgg5630-cyber",
       "server": "ro2.aiage.work",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
