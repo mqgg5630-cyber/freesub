@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
-  type: vmess
-  server: 172.67.205.213
+  type: vless
+  server: 23.27.113.251
   port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
+  uuid: a51af616-47c0-47ae-8a98-d2788609c3d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: my.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /KualaLumpur1
-    headers:
-      Host: my.lovehk.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: xmunCFTAvibeDVEU4VncLcYWVvZ4qYsbGZDwIJf-qTA
+    short-id: 11a83ddefd
+  servername: malaysiavisa.imi.gov.my
+  client-fingerprint: chrome
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: trojan
   server: 47.250.84.25
@@ -29,6 +27,40 @@ proxies:
   sni: 47.250.84.25
   skip-cert-verify: true
 - name: 🇲🇾 MY 03 - mqgg5630-cyber
+  type: vless
+  server: zs.giannaycs.com
+  port: 12958
+  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: zs.giannaycs.com
+- name: 🇲🇾 MY 04 - mqgg5630-cyber
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 05 - mqgg5630-cyber
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 06 - mqgg5630-cyber
   type: trojan
   server: 47.250.84.25
   port: 443
@@ -44,6 +76,9 @@ proxy-groups:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
+  - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
+  - 🇲🇾 MY 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +87,8 @@ proxy-groups:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
+  - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
+  - 🇲🇾 MY 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
