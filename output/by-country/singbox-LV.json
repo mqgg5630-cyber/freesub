@@ -31,24 +31,21 @@
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇱🇻 LV 01 - mqgg5630-cyber",
-      "server": "31.57.106.241",
+      "server": "46.8.228.165",
       "server_port": 443,
-      "uuid": "a4801105-c0c7-4cab-87c6-f257ff2afc09",
-      "flow": "xtls-rprx-vision",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "www.lmt.lv",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o",
-          "short_id": "44f7c5615039ae1b"
+        "server_name": "www.volumeroot.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumeroot.com"
         }
       }
     },
@@ -75,27 +72,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇱🇻 LV 03 - mqgg5630-cyber",
-      "server": "46.8.228.165",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 LV 04 - mqgg5630-cyber",
+      "tag": "🇱🇻 LV 03 - mqgg5630-cyber",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -112,6 +90,25 @@
           "enabled": true,
           "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
           "short_id": "33acba1b"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇻 LV 04 - mqgg5630-cyber",
+      "server": "185.22.172.249",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
         }
       }
     },

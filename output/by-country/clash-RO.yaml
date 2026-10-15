@@ -5,27 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: vless
-  server: 46.28.67.55
-  port: 443
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: ss
-  server: 154.46.31.106
-  port: 443
+  server: 194.68.44.42
+  port: 64546
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: U83u9OGpvSatIUW7LsWffr
   udp: true
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
+- name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: vless
   server: 82.117.255.174
   port: 443
@@ -39,12 +25,12 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
+- name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: ss
-  server: 194.68.44.42
-  port: 64546
+  server: 154.46.31.106
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -54,7 +40,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
   - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +48,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
   - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
