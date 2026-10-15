@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - mqgg5630-cyber
+- name: 🇪🇬 EG 01 - mqgg5630-cyber
   type: ss
-  server: 64.176.2.21
-  port: 8388
+  server: 38.54.59.102
+  port: 443
   cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
+  password: pKEW8JPByTVTLtM
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - mqgg5630-cyber
+  - 🇪🇬 EG 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - mqgg5630-cyber
+  - 🇪🇬 EG 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

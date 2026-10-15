@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - mqgg5630-cyber"
+        "🇧🇾 BY 01 - mqgg5630-cyber",
+        "🇧🇾 BY 02 - mqgg5630-cyber",
+        "🇧🇾 BY 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - mqgg5630-cyber"
+        "🇧🇾 BY 01 - mqgg5630-cyber",
+        "🇧🇾 BY 02 - mqgg5630-cyber",
+        "🇧🇾 BY 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -31,6 +35,42 @@
         "path": "/vless",
         "headers": {
           "Host": "178.172.227.124"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 BY 02 - mqgg5630-cyber",
+      "server": "178.172.227.228",
+      "server_port": 10444,
+      "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 BY 03 - mqgg5630-cyber",
+      "server": "178.172.227.228",
+      "server_port": 14430,
+      "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "178.172.227.228"
         }
       }
     },

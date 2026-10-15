@@ -6,41 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
   type: vless
-  server: 45.137.43.168
-  port: 10444
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 03 - mqgg5630-cyber
-  type: vless
-  server: 45.137.43.168
-  port: 14430
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
-- name: 🇸🇨 SC 04 - mqgg5630-cyber
-  type: vless
   server: 156.226.168.221
   port: 35193
   uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
@@ -53,7 +18,20 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇸🇨 SC 05 - mqgg5630-cyber
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: vless
+  server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+- name: 🇸🇨 SC 03 - mqgg5630-cyber
   type: vless
   server: 45.137.43.168
   port: 10443
@@ -61,6 +39,41 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 04 - mqgg5630-cyber
+  type: vless
+  server: 45.137.43.168
+  port: 10443
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 05 - mqgg5630-cyber
+  type: vless
+  server: 45.137.43.168
+  port: 10444
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇸🇨 SC 06 - mqgg5630-cyber
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +84,7 @@ proxy-groups:
   - 🇸🇨 SC 03 - mqgg5630-cyber
   - 🇸🇨 SC 04 - mqgg5630-cyber
   - 🇸🇨 SC 05 - mqgg5630-cyber
+  - 🇸🇨 SC 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,5 +95,6 @@ proxy-groups:
   - 🇸🇨 SC 03 - mqgg5630-cyber
   - 🇸🇨 SC 04 - mqgg5630-cyber
   - 🇸🇨 SC 05 - mqgg5630-cyber
+  - 🇸🇨 SC 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

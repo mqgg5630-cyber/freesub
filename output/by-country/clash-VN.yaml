@@ -17,7 +17,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇻🇳 VN 02 - mqgg5630-cyber
   type: vless
   server: 154.21.203.106
@@ -31,21 +31,7 @@ proxies:
     public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
     short-id: bb82c8
   servername: www.tesla.com
-  client-fingerprint: random
-- name: 🇻🇳 VN 03 - mqgg5630-cyber
-  type: vless
-  server: 154.21.203.106
-  port: 51279
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-    short-id: bb82c8
-  servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇻🇳 VN 01 - mqgg5630-cyber
   - 🇻🇳 VN 02 - mqgg5630-cyber
-  - 🇻🇳 VN 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇻🇳 VN 01 - mqgg5630-cyber
   - 🇻🇳 VN 02 - mqgg5630-cyber
-  - 🇻🇳 VN 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
