@@ -10,40 +10,14 @@ proxies:
   port: 443
   password: humanity
   udp: true
-  sni: www.volumeroot.com
+  sni: wWw.Volumeroot.cOm.
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.volumeroot.com
+      Host: www.volumerOot.coM.
 - name: 🇱🇺 LU 02 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: wWw.Volumeroot.cOm.
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumerOot.coM.
-- name: 🇱🇺 LU 03 - mqgg5630-cyber
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: wWw.Volumeroot.cOm.
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumerOot.coM.
-- name: 🇱🇺 LU 04 - mqgg5630-cyber
   type: trojan
   server: 188.42.145.180
   port: 443
@@ -63,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇺 LU 01 - mqgg5630-cyber
   - 🇱🇺 LU 02 - mqgg5630-cyber
-  - 🇱🇺 LU 03 - mqgg5630-cyber
-  - 🇱🇺 LU 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇺 LU 01 - mqgg5630-cyber
   - 🇱🇺 LU 02 - mqgg5630-cyber
-  - 🇱🇺 LU 03 - mqgg5630-cyber
-  - 🇱🇺 LU 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -48,6 +48,20 @@ proxies:
     short-id: a8
   servername: api.mediapereval.cc
   client-fingerprint: qq
+- name: 🇦🇹 AT 06 - mqgg5630-cyber
+  type: vless
+  server: api.mediapereval.cc
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediapereval.cc
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +72,7 @@ proxy-groups:
   - 🇦🇹 AT 03 - mqgg5630-cyber
   - 🇦🇹 AT 04 - mqgg5630-cyber
   - 🇦🇹 AT 05 - mqgg5630-cyber
+  - 🇦🇹 AT 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +83,6 @@ proxy-groups:
   - 🇦🇹 AT 03 - mqgg5630-cyber
   - 🇦🇹 AT 04 - mqgg5630-cyber
   - 🇦🇹 AT 05 - mqgg5630-cyber
+  - 🇦🇹 AT 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - mqgg5630-cyber
   type: vless
-  server: 213.165.56.102
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
-    short-id: 57e7977c9011061c
-  servername: freede.aiage.work
-  client-fingerprint: random
-- name: 🇸🇦 SA 02 - mqgg5630-cyber
-  type: vless
   server: freede.aiage.work
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇦 SA 01 - mqgg5630-cyber
-  - 🇸🇦 SA 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇦 SA 01 - mqgg5630-cyber
-  - 🇸🇦 SA 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

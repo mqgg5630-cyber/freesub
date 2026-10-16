@@ -17,7 +17,7 @@ proxies:
     public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇱🇹 LT 02 - mqgg5630-cyber
   type: vless
   server: 84.32.109.20
@@ -46,6 +46,20 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
   client-fingerprint: chrome
+- name: 🇱🇹 LT 04 - mqgg5630-cyber
+  type: vless
+  server: 84.32.109.20
+  port: 443
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
+    short-id: 0da7e14db353e7d0
+  servername: litv.nztvpn.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇱🇹 LT 01 - mqgg5630-cyber
   - 🇱🇹 LT 02 - mqgg5630-cyber
   - 🇱🇹 LT 03 - mqgg5630-cyber
+  - 🇱🇹 LT 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇱🇹 LT 01 - mqgg5630-cyber
   - 🇱🇹 LT 02 - mqgg5630-cyber
   - 🇱🇹 LT 03 - mqgg5630-cyber
+  - 🇱🇹 LT 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
