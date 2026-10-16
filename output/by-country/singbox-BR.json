@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇧🇷 BR 01 - mqgg5630-cyber",
-        "🇧🇷 BR 02 - mqgg5630-cyber"
+        "🇧🇷 BR 02 - mqgg5630-cyber",
+        "🇧🇷 BR 03 - mqgg5630-cyber",
+        "🇧🇷 BR 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 BR 01 - mqgg5630-cyber",
-        "🇧🇷 BR 02 - mqgg5630-cyber"
+        "🇧🇷 BR 02 - mqgg5630-cyber",
+        "🇧🇷 BR 03 - mqgg5630-cyber",
+        "🇧🇷 BR 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,21 +29,19 @@
     {
       "type": "vless",
       "tag": "🇧🇷 BR 01 - mqgg5630-cyber",
-      "server": "35.199.90.53",
+      "server": "64.176.9.246",
       "server_port": 443,
-      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "uuid": "51a0af77-a60c-4d9b-81a4-f50e1b38d90b",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
-          "short_id": "b62a4da6cd1c4dd6"
+        "server_name": "cf3.schzyc.cc.cd",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=ProxyIP.CMLiussss.net",
+        "headers": {
+          "Host": "cf3.schzyc.cc.cd"
         }
       }
     },
@@ -61,6 +63,41 @@
           "enabled": true,
           "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
           "short_id": "b62a4da6cd1c4dd6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 BR 03 - mqgg5630-cyber",
+      "server": "35.199.90.53",
+      "server_port": 443,
+      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
+          "short_id": "b62a4da6cd1c4dd6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 BR 04 - mqgg5630-cyber",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
         }
       }
     },

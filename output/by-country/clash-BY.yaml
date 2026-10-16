@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇾 BY 01 - mqgg5630-cyber
   type: vless
-  server: 178.172.227.124
-  port: 14430
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  server: 178.172.227.228
+  port: 10444
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: ios
 - name: 🇧🇾 BY 02 - mqgg5630-cyber
   type: vless
   server: 178.172.227.228
@@ -30,7 +31,7 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇧🇾 BY 03 - mqgg5630-cyber
   type: vless
   server: 178.172.227.228
@@ -44,6 +45,19 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.228
+- name: 🇧🇾 BY 04 - mqgg5630-cyber
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +66,7 @@ proxy-groups:
   - 🇧🇾 BY 01 - mqgg5630-cyber
   - 🇧🇾 BY 02 - mqgg5630-cyber
   - 🇧🇾 BY 03 - mqgg5630-cyber
+  - 🇧🇾 BY 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +75,6 @@ proxy-groups:
   - 🇧🇾 BY 01 - mqgg5630-cyber
   - 🇧🇾 BY 02 - mqgg5630-cyber
   - 🇧🇾 BY 03 - mqgg5630-cyber
+  - 🇧🇾 BY 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

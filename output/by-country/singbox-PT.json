@@ -1,0 +1,72 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇹 PT 01 - mqgg5630-cyber",
+        "🇵🇹 PT 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇹 PT 01 - mqgg5630-cyber",
+        "🇵🇹 PT 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇹 PT 01 - mqgg5630-cyber",
+      "server": "31.192.237.186",
+      "server_port": 2053,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇹 PT 02 - mqgg5630-cyber",
+      "server": "89.125.27.97",
+      "server_port": 2053,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

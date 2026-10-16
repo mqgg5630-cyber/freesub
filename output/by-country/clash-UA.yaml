@@ -17,21 +17,21 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇺🇦 UA 02 - mqgg5630-cyber
   type: vless
-  server: 83.147.18.75
+  server: 213.111.148.137
   port: 443
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=android
+    headers:
+      Host: proxy-1cu.pages.dev
 - name: 🇺🇦 UA 03 - mqgg5630-cyber
   type: vless
   server: 83.147.18.75
@@ -60,6 +60,20 @@ proxies:
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
   client-fingerprint: qq
+- name: 🇺🇦 UA 05 - mqgg5630-cyber
+  type: vless
+  server: 83.147.18.75
+  port: 443
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +83,7 @@ proxy-groups:
   - 🇺🇦 UA 02 - mqgg5630-cyber
   - 🇺🇦 UA 03 - mqgg5630-cyber
   - 🇺🇦 UA 04 - mqgg5630-cyber
+  - 🇺🇦 UA 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +93,6 @@ proxy-groups:
   - 🇺🇦 UA 02 - mqgg5630-cyber
   - 🇺🇦 UA 03 - mqgg5630-cyber
   - 🇺🇦 UA 04 - mqgg5630-cyber
+  - 🇺🇦 UA 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
