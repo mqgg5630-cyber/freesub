@@ -13,6 +13,14 @@ proxies:
   sni: moltbot.doctoroyy.net
   skip-cert-verify: true
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
+- name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: vmess
   server: 104.21.23.80
   port: 443
@@ -28,7 +36,7 @@ proxies:
     path: /KualaLumpur1
     headers:
       Host: my.lovehk.xyz
-- name: 🇲🇾 MY 03 - mqgg5630-cyber
+- name: 🇲🇾 MY 04 - mqgg5630-cyber
   type: vless
   server: 216.173.67.59
   port: 443
@@ -42,6 +50,38 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇲🇾 MY 05 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: 47.250.84.25
+  skip-cert-verify: true
+- name: 🇲🇾 MY 06 - mqgg5630-cyber
+  type: vmess
+  server: 104.21.23.80
+  port: 443
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.lovehk.xyz
+  network: ws
+  ws-opts:
+    path: /KualaLumpur1
+    headers:
+      Host: my.lovehk.xyz
+- name: 🇲🇾 MY 07 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: 47.250.84.25
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +90,10 @@ proxy-groups:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
+  - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
+  - 🇲🇾 MY 06 - mqgg5630-cyber
+  - 🇲🇾 MY 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +102,9 @@ proxy-groups:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
+  - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
+  - 🇲🇾 MY 06 - mqgg5630-cyber
+  - 🇲🇾 MY 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

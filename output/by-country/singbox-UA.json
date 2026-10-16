@@ -11,7 +11,9 @@
         "🇺🇦 UA 01 - mqgg5630-cyber",
         "🇺🇦 UA 02 - mqgg5630-cyber",
         "🇺🇦 UA 03 - mqgg5630-cyber",
-        "🇺🇦 UA 04 - mqgg5630-cyber"
+        "🇺🇦 UA 04 - mqgg5630-cyber",
+        "🇺🇦 UA 05 - mqgg5630-cyber",
+        "🇺🇦 UA 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -21,7 +23,9 @@
         "🇺🇦 UA 01 - mqgg5630-cyber",
         "🇺🇦 UA 02 - mqgg5630-cyber",
         "🇺🇦 UA 03 - mqgg5630-cyber",
-        "🇺🇦 UA 04 - mqgg5630-cyber"
+        "🇺🇦 UA 04 - mqgg5630-cyber",
+        "🇺🇦 UA 05 - mqgg5630-cyber",
+        "🇺🇦 UA 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -95,6 +99,28 @@
     {
       "type": "vless",
       "tag": "🇺🇦 UA 04 - mqgg5630-cyber",
+      "server": "91.196.163.140",
+      "server_port": 10444,
+      "uuid": "e86a3662-9b31-4d59-bc80-9e8644749b95",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 UA 05 - mqgg5630-cyber",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -111,6 +137,20 @@
           "enabled": true,
           "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
           "short_id": "7f1e29593aa94ad1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 UA 06 - mqgg5630-cyber",
+      "server": "91.196.163.140",
+      "server_port": 14430,
+      "uuid": "e86a3662-9b31-4d59-bc80-9e8644749b95",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "91.196.163.140"
         }
       }
     },

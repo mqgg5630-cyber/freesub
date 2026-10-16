@@ -18,6 +18,16 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - mqgg5630-cyber
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - mqgg5630-cyber
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -29,17 +39,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
     short-id: ''
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - mqgg5630-cyber
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: qq
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - mqgg5630-cyber
   type: vmess
   server: 165.154.195.38
@@ -74,6 +74,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - mqgg5630-cyber
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - mqgg5630-cyber
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +105,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 04 - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 05 - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 06 - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 07 - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,5 +118,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 04 - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 05 - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 06 - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 07 - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

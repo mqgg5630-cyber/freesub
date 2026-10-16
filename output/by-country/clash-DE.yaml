@@ -6,61 +6,19 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - mqgg5630-cyber
   type: vless
-  server: 146.75.59.186
+  server: 31.70.111.146
   port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.75
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
-  type: vless
-  server: 179.61.145.245
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
   type: vless
   server: cdn.topingr.ir
   port: 443
@@ -74,35 +32,21 @@ proxies:
     path: /gropcdn
     headers:
       Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
   type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
   type: vless
   server: 2.27.69.128
   port: 443
@@ -115,8 +59,8 @@ proxies:
     public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
     short-id: e696e744
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
   type: vless
   server: 31.70.111.146
   port: 443
@@ -130,168 +74,9 @@ proxies:
     short-id: d7de3a6ff4018957
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: google.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn--s2.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
-  type: vless
-  server: 31.70.111.146
-  port: 443
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
-  type: trojan
-  server: 188.245.161.141
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
-  type: vless
-  server: 82.118.19.153
-  port: 443
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
-  type: vless
-  server: 199.232.78.128
+  server: wwww.qarvian.ir
   port: 443
   uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
   udp: true
@@ -303,18 +88,39 @@ proxies:
     path: /?TELEGRAM----------TOOTFFARANGI
     headers:
       Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
   udp: true
-- name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
   type: vless
   server: 57.129.41.216
   port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
   tls: false
   skip-cert-verify: true
@@ -322,36 +128,15 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
-  type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
-  type: vless
-  server: 2.27.35.55
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
   type: vless
   server: wwww.qarvian.ir
   port: 443
@@ -365,20 +150,77 @@ proxies:
     path: /
     headers:
       Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 29 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
   type: vless
-  server: 179.254.115.245
-  port: 25208
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: t7Ja5Wnzg5-vtS2ebmyBZzPI7-CbiGRjny1sNZ9WdV4
-    short-id: 3974c4eacd299c12
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
+- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
+  type: vless
+  server: 89.169.53.176
+  port: 4443
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
+  type: vless
+  server: cdn.topingr.ir
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.topingr.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: cdn.topingr.ir
+- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
   type: vless
   server: 77.110.105.122
   port: 443
@@ -392,51 +234,9 @@ proxies:
     short-id: 226509f017e4c36d
   servername: co-de.speedtec.ru
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
   type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
-  type: vless
-  server: 46.28.69.123
-  port: 443
-  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
-    short-id: 238e23c5150f02e4
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
-  type: vless
-  server: 212.100.171.154
-  port: 443
-  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
-    short-id: aa6582cf25e243ce
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.182
+  server: 169.40.42.231
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
@@ -447,106 +247,42 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
-  type: vless
-  server: 31.70.111.146
-  port: 443
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
   type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
-  type: vless
-  server: cdn.topingr.ir
+  server: 77.110.105.122
   port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  servername: co-de.speedtec.ru
+- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
-  type: vless
-  server: 199.232.78.159
+  server: 147.45.222.137
   port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM------TOOTFFARANGI
-    headers:
-      Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
-  type: vless
-  server: 31.70.111.146
-  port: 443
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  uuid: f9cb2991-ad4a-4a54-aeb3-55d56ac02a8e
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
+    public-key: dZl5iJJCMOXR6cJY4M_PbyV2bFp15dhAkz95NCGLsCc
+    short-id: ''
+  servername: ger01.deflink.net
   client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
   type: vless
   server: 146.75.59.186
   port: 443
@@ -560,107 +296,42 @@ proxies:
     path: /
     headers:
       Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
   type: vless
-  server: 130.12.242.106
+  server: seal-de1.bypassme.online
   port: 443
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
-  type: vless
-  server: 31.76.35.27
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
-    short-id: b76a6309
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
-  type: vless
-  server: de2.balancer.vbuste-bot.com
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.balancer.vbuste-bot.com
+    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
+    short-id: 6b69118a7847c4c3
+  servername: seal-de1.bypassme.online
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
   type: ss
   server: 213.202.208.199
   port: 5000
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  server: 199.232.78.159
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: google.com
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.128
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
-  type: vless
-  server: de2.balancer.vbuste-bot.com
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.balancer.vbuste-bot.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
-  type: vless
-  server: 77.110.105.122
-  port: 443
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: co-de.speedtec.ru
-- name: 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
+      Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
   type: vless
   server: 2.27.35.55
   port: 443
@@ -674,35 +345,7 @@ proxies:
     short-id: e696e744
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
-  type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
-  type: vless
-  server: 89.169.53.176
-  port: 4443
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: ''
-  servername: de.wvpn.one
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
   type: vless
   server: sino.bestsellers1.site
   port: 2083
@@ -716,6 +359,361 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
+  type: vless
+  server: 31.70.111.146
+  port: 443
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 29 - mqgg5630-cyber
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
+  type: vless
+  server: 82.118.19.153
+  port: 443
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
+  type: vless
+  server: 212.100.171.154
+  port: 443
+  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
+    short-id: aa6582cf25e243ce
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.52
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
+  type: vless
+  server: 144.31.125.60
+  port: 443
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
+  type: vless
+  server: 31.70.111.146
+  port: 443
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
+  type: vless
+  server: 89.169.53.176
+  port: 4443
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.128
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+  type: vless
+  server: 31.76.35.27
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
+    short-id: b76a6309
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
+  type: trojan
+  server: 157.230.29.88
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
+  type: vless
+  server: 37.46.199.138
+  port: 443
+  uuid: 741809be-e44e-0004-b411-bf66f0ae3860
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: ''
+  servername: key-master-saver.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
+  type: vless
+  server: wwww.qarvian.ir
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
+  type: vless
+  server: de2.balancer.vbuste-bot.com
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.balancer.vbuste-bot.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
+  type: vless
+  server: 104.18.0.181
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.173
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
+  type: vless
+  server: 31.76.11.243
+  port: 443
+  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
+    short-id: 6b69118a7847c4c3
+  servername: seal-de1.bypassme.online
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 56 - mqgg5630-cyber
   type: vless
   server: 2.27.35.55
@@ -732,111 +730,21 @@ proxies:
   client-fingerprint: randomized
 - name: 🇩🇪 德国 (Germany) 57 - mqgg5630-cyber
   type: vless
-  server: 169.40.42.75
+  server: 2.27.69.117
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 58 - mqgg5630-cyber
   type: vless
-  server: 130.17.25.67
-  port: 443
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
-  type: vless
-  server: 5.252.179.15
-  port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
-  type: vless
-  server: 104.18.0.181
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
-  type: vless
-  server: 77.110.105.122
-  port: 443
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
-    short-id: 226509f017e4c36d
-  servername: co-de.speedtec.ru
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
-  type: vless
-  server: 31.70.111.146
-  port: 443
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
-  type: vless
-  server: 31.76.35.27
-  port: 443
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
-    short-id: b76a6309
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 64 - mqgg5630-cyber
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 65 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.15
+  server: 169.40.42.224
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
@@ -848,29 +756,7 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 66 - mqgg5630-cyber
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 67 - mqgg5630-cyber
-  type: vless
-  server: 31.77.126.2
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 68 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
   type: vless
   server: 2.27.69.117
   port: 443
@@ -883,91 +769,22 @@ proxies:
     public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
     short-id: 123c2bff
   servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 69 - mqgg5630-cyber
-  type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 70 - mqgg5630-cyber
-  type: vless
-  server: cdn.topingr.ir
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.topingr.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 71 - mqgg5630-cyber
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM----------TOOTFFARANGI
-    headers:
-      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 72 - mqgg5630-cyber
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-    short-id: 4d14da19b19cfc8c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 73 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.128
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 74 - mqgg5630-cyber
-  type: vless
-  server: 212.100.171.154
-  port: 443
-  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
-    short-id: aa6582cf25e243ce
-  servername: www.google.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 75 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
+  type: vless
+  server: 179.61.145.245
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
   type: vless
   server: sino.bestsellers1.site
   port: 2083
@@ -981,7 +798,259 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
+  type: vless
+  server: 130.12.242.106
+  port: 443
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 64 - mqgg5630-cyber
+  type: vless
+  server: 31.76.35.27
+  port: 443
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
+    short-id: b76a6309
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 65 - mqgg5630-cyber
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 66 - mqgg5630-cyber
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 67 - mqgg5630-cyber
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--------TOOTFFARANGI
+    headers:
+      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 68 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 69 - mqgg5630-cyber
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇩🇪 德国 (Germany) 70 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.224
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 71 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 72 - mqgg5630-cyber
+  type: vless
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 73 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 74 - mqgg5630-cyber
+  type: ss
+  server: 31.76.11.83
+  port: 15731
+  cipher: chacha20-ietf-poly1305
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 75 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 - name: 🇩🇪 德国 (Germany) 76 - mqgg5630-cyber
+  type: vless
+  server: 37.46.199.138
+  port: 443
+  uuid: 741809be-e44e-0004-b411-bf66f0ae3860
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: ''
+  servername: key-master-saver.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 77 - mqgg5630-cyber
+  type: vless
+  server: cdn.topingr.ir
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.topingr.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: cdn.topingr.ir
+- name: 🇩🇪 德国 (Germany) 78 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 79 - mqgg5630-cyber
+  type: vless
+  server: 179.61.145.245
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 80 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 81 - mqgg5630-cyber
   type: vless
   server: 89.169.53.176
   port: 4443
@@ -992,71 +1061,9 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
+    short-id: ''
   servername: de.wvpn.one
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 77 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 78 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 79 - mqgg5630-cyber
-  type: vless
-  server: 82.118.19.153
-  port: 443
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 80 - mqgg5630-cyber
-  type: vless
-  server: eu02.123450908.xyz
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 81 - mqgg5630-cyber
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
 - name: 🇩🇪 德国 (Germany) 82 - mqgg5630-cyber
   type: vless
   server: sino.bestsellers1.site
@@ -1073,46 +1080,19 @@ proxies:
       Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 83 - mqgg5630-cyber
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 84 - mqgg5630-cyber
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 85 - mqgg5630-cyber
-  type: vless
-  server: 212.100.171.154
+  server: 94.143.231.146
   port: 443
-  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
-    short-id: aa6582cf25e243ce
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 86 - mqgg5630-cyber
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
+- name: 🇩🇪 德国 (Germany) 84 - mqgg5630-cyber
   type: vless
   server: 5.252.179.15
   port: 443
@@ -1125,10 +1105,10 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 87 - mqgg5630-cyber
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 85 - mqgg5630-cyber
   type: vless
-  server: 188.114.98.0
+  server: cdn.topingr.ir
   port: 443
   uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
   udp: true
@@ -1140,78 +1120,23 @@ proxies:
     path: /gropcdn
     headers:
       Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 88 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 86 - mqgg5630-cyber
   type: vless
-  server: 84.32.100.149
+  server: 31.76.11.243
   port: 443
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: tcpde7.figurapn.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 89 - mqgg5630-cyber
-  type: vless
-  server: 212.100.171.154
-  port: 443
-  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
+  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
-    short-id: aa6582cf25e243ce
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 90 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.163
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 91 - mqgg5630-cyber
-  type: vless
-  server: 5.252.179.15
-  port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 92 - mqgg5630-cyber
-  type: vless
-  server: 37.46.199.138
-  port: 443
-  uuid: 741809be-e44e-0004-b411-bf66f0ae3860
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
     short-id: ''
-  servername: key-master-saver.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 93 - mqgg5630-cyber
+  servername: seal-de1.bypassme.online
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 87 - mqgg5630-cyber
   type: vless
-  server: 146.75.59.186
+  server: 199.232.78.128
   port: 443
   uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
   udp: true
@@ -1220,102 +1145,10 @@ proxies:
   servername: google.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--------TOOTFFARANGI
+    path: /?TELEGRAM----------TOOTFFARANGI
     headers:
-      Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 94 - mqgg5630-cyber
-  type: vless
-  server: 144.31.125.60
-  port: 443
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: 85c86a9863
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 95 - mqgg5630-cyber
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 96 - mqgg5630-cyber
-  type: vless
-  server: 212.100.171.154
-  port: 443
-  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
-    short-id: aa6582cf25e243ce
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 97 - mqgg5630-cyber
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 98 - mqgg5630-cyber
-  type: vless
-  server: 2.27.35.55
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 99 - mqgg5630-cyber
-  type: trojan
-  server: 151.101.38.6
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: www.firefox.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn--s3.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 100 - mqgg5630-cyber
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 101 - mqgg5630-cyber
+      Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 88 - mqgg5630-cyber
   type: vless
   server: 31.70.111.146
   port: 443
@@ -1329,22 +1162,71 @@ proxies:
     short-id: d7de3a6ff4018957
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 102 - mqgg5630-cyber
-  type: trojan
-  server: 146.75.57.238
-  port: 443
-  password: mitivpn
+- name: 🇩🇪 德国 (Germany) 89 - mqgg5630-cyber
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
   udp: true
-  sni: www.google.com
+- name: 🇩🇪 德国 (Germany) 90 - mqgg5630-cyber
+  type: vless
+  server: 82.118.19.153
+  port: 443
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 91 - mqgg5630-cyber
+  type: vless
+  server: cdn.topingr.ir
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.topingr.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: cdn.topingr.ir
+- name: 🇩🇪 德国 (Germany) 92 - mqgg5630-cyber
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /vless/
     headers:
-      Host: mitivpn--s3.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 103 - mqgg5630-cyber
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 93 - mqgg5630-cyber
   type: vless
-  server: 172.64.229.129
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 94 - mqgg5630-cyber
+  type: vless
+  server: 104.18.0.181
   port: 2052
   uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   udp: true
@@ -1355,74 +1237,146 @@ proxies:
     path: /rain1226
     headers:
       Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 95 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 96 - mqgg5630-cyber
+  type: vless
+  server: 212.100.171.154
+  port: 443
+  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
+    short-id: aa6582cf25e243ce
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 97 - mqgg5630-cyber
+  type: vless
+  server: 46.28.69.123
+  port: 443
+  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
+    short-id: 238e23c5150f02e4
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 98 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 99 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.182
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 100 - mqgg5630-cyber
+  type: vless
+  server: 212.100.171.154
+  port: 443
+  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
+    short-id: aa6582cf25e243ce
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 101 - mqgg5630-cyber
+  type: vless
+  server: 2.27.35.55
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 102 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.128
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 103 - mqgg5630-cyber
+  type: vless
+  server: 130.17.25.67
+  port: 443
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 104 - mqgg5630-cyber
   type: vless
-  server: 5.252.179.15
+  server: 31.70.111.146
   port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 105 - mqgg5630-cyber
-  type: trojan
-  server: 151.101.38.6
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: www.firefox.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@@MetiVIP/---@@MetiVIP---@MetiVIP
-    headers:
-      Host: mitivpn--s3.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 106 - mqgg5630-cyber
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: 94.143.231.146
-- name: 🇩🇪 德国 (Germany) 107 - mqgg5630-cyber
-  type: vless
-  server: 89.169.53.176
-  port: 4443
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: de.wvpn.one
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 108 - mqgg5630-cyber
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: google.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@@MetiVIP/---@@MetiVIP---@MetiVIP
-    headers:
-      Host: mitivpn--s2.global.ssl.fastly.net
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1532,10 +1486,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 102 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 103 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 104 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 105 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 106 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 107 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 108 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1645,9 +1595,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 102 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 103 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 104 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 105 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 106 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 107 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 108 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
