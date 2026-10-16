@@ -17,7 +17,7 @@ proxies:
     public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
     short-id: 3cef317b
   servername: addons.mozilla.org
-  client-fingerprint: randomized
+  client-fingerprint: chrome
 - name: 🇬🇷 GR 02 - mqgg5630-cyber
   type: vless
   server: 157.228.150.34
@@ -34,7 +34,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇬🇷 GR 03 - mqgg5630-cyber
   type: vless
-  server: 157.228.150.34
+  server: 157.228.160.166
   port: 443
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
@@ -48,7 +48,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇬🇷 GR 04 - mqgg5630-cyber
   type: vless
-  server: 157.228.150.34
+  server: 157.228.160.166
   port: 443
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
@@ -59,7 +59,7 @@ proxies:
     public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
     short-id: 3cef317b
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇬🇷 GR 05 - mqgg5630-cyber
   type: vless
   server: 157.228.150.34
@@ -76,7 +76,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇬🇷 GR 06 - mqgg5630-cyber
   type: vless
-  server: 157.228.160.166
+  server: 157.228.150.34
   port: 443
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
@@ -90,21 +90,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇬🇷 GR 07 - mqgg5630-cyber
   type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇬🇷 GR 08 - mqgg5630-cyber
-  type: vless
-  server: 157.228.160.166
+  server: 157.228.150.34
   port: 443
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
@@ -116,34 +102,6 @@ proxies:
     short-id: 3cef317b
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇬🇷 GR 09 - mqgg5630-cyber
-  type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇬🇷 GR 10 - mqgg5630-cyber
-  type: vless
-  server: 85.90.197.156
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,9 +114,6 @@ proxy-groups:
   - 🇬🇷 GR 05 - mqgg5630-cyber
   - 🇬🇷 GR 06 - mqgg5630-cyber
   - 🇬🇷 GR 07 - mqgg5630-cyber
-  - 🇬🇷 GR 08 - mqgg5630-cyber
-  - 🇬🇷 GR 09 - mqgg5630-cyber
-  - 🇬🇷 GR 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -171,8 +126,5 @@ proxy-groups:
   - 🇬🇷 GR 05 - mqgg5630-cyber
   - 🇬🇷 GR 06 - mqgg5630-cyber
   - 🇬🇷 GR 07 - mqgg5630-cyber
-  - 🇬🇷 GR 08 - mqgg5630-cyber
-  - 🇬🇷 GR 09 - mqgg5630-cyber
-  - 🇬🇷 GR 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

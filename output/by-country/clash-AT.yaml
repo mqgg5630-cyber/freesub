@@ -18,6 +18,36 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 AT 03 - mqgg5630-cyber
+  type: vless
+  server: 138.124.90.177
+  port: 10443
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇹 AT 04 - mqgg5630-cyber
+  type: vless
+  server: 138.124.90.177
+  port: 10443
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇹 AT 05 - mqgg5630-cyber
+  type: vless
+  server: api.mediapereval.cc
+  port: 443
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediapereval.cc
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +55,9 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
+  - 🇦🇹 AT 03 - mqgg5630-cyber
+  - 🇦🇹 AT 04 - mqgg5630-cyber
+  - 🇦🇹 AT 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +65,8 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
+  - 🇦🇹 AT 03 - mqgg5630-cyber
+  - 🇦🇹 AT 04 - mqgg5630-cyber
+  - 🇦🇹 AT 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

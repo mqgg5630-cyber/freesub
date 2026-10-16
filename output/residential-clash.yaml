@@ -4,20 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   type: vless
-  server: 131.186.24.124
-  port: 587
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: cf3.schzyc.cc.cd
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+    short-id: ''
+  servername: addons.mozilla.org
+  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
   type: vless
   server: 60.248.219.78
@@ -32,66 +31,19 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇩🇪 德国 (Germany) 03 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 209.38.238.229
-  port: 20202
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-    short-id: ''
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 05 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 157.173.27.138
-  port: 5443
-  uuid: f6dadd84-7d7b-4e67-9577-7ede6300368a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 7pr2qWG1_3TjBDCidQWJ2lnbEf72lOcse4Gca8anwEo
-    short-id: 57f0eca7ae6be8
-  servername: travel.yandex.ru
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 03 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 05 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 03 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 05 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

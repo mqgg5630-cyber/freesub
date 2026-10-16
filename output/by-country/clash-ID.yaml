@@ -20,20 +20,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇩 ID 02 - mqgg5630-cyber
   type: vless
-  server: 103.172.197.3
-  port: 16006
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
-    short-id: ''
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇩 ID 03 - mqgg5630-cyber
-  type: vless
   server: 103.172.197.2
   port: 29172
   uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
@@ -46,7 +32,7 @@ proxies:
     short-id: ''
   servername: aws.amazon.com
   client-fingerprint: chrome
-- name: 🇮🇩 ID 04 - mqgg5630-cyber
+- name: 🇮🇩 ID 03 - mqgg5630-cyber
   type: vless
   server: 103.172.197.3
   port: 16006
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇮🇩 ID 01 - mqgg5630-cyber
   - 🇮🇩 ID 02 - mqgg5630-cyber
   - 🇮🇩 ID 03 - mqgg5630-cyber
-  - 🇮🇩 ID 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇮🇩 ID 01 - mqgg5630-cyber
   - 🇮🇩 ID 02 - mqgg5630-cyber
   - 🇮🇩 ID 03 - mqgg5630-cyber
-  - 🇮🇩 ID 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
