@@ -5,33 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - mqgg5630-cyber
-  type: trojan
-  server: 185.22.172.249
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 🇱🇻 LV 02 - mqgg5630-cyber
-  type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇻 LV 03 - mqgg5630-cyber
   type: vless
   server: lv.aiage.work
   port: 443
@@ -45,21 +18,7 @@ proxies:
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
   client-fingerprint: chrome
-- name: 🇱🇻 LV 04 - mqgg5630-cyber
-  type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇻 LV 05 - mqgg5630-cyber
+- name: 🇱🇻 LV 02 - mqgg5630-cyber
   type: vless
   server: 138.124.180.137
   port: 443
@@ -73,6 +32,88 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇱🇻 LV 03 - mqgg5630-cyber
+  type: trojan
+  server: 46.8.228.165
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🇱🇻 LV 04 - mqgg5630-cyber
+  type: vless
+  server: lv.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
+    short-id: 3c6afdc4124d0560
+  servername: lv.aiage.work
+  client-fingerprint: firefox
+- name: 🇱🇻 LV 05 - mqgg5630-cyber
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇱🇻 LV 06 - mqgg5630-cyber
+  type: trojan
+  server: 46.8.228.165
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🇱🇻 LV 07 - mqgg5630-cyber
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇱🇻 LV 08 - mqgg5630-cyber
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +124,9 @@ proxy-groups:
   - 🇱🇻 LV 03 - mqgg5630-cyber
   - 🇱🇻 LV 04 - mqgg5630-cyber
   - 🇱🇻 LV 05 - mqgg5630-cyber
+  - 🇱🇻 LV 06 - mqgg5630-cyber
+  - 🇱🇻 LV 07 - mqgg5630-cyber
+  - 🇱🇻 LV 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,5 +137,8 @@ proxy-groups:
   - 🇱🇻 LV 03 - mqgg5630-cyber
   - 🇱🇻 LV 04 - mqgg5630-cyber
   - 🇱🇻 LV 05 - mqgg5630-cyber
+  - 🇱🇻 LV 06 - mqgg5630-cyber
+  - 🇱🇻 LV 07 - mqgg5630-cyber
+  - 🇱🇻 LV 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

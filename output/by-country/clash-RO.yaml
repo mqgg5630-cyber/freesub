@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
   type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 02 - mqgg5630-cyber
+  type: vless
   server: 82.117.255.174
   port: 443
   uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
@@ -18,7 +26,7 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇷🇴 RO 02 - mqgg5630-cyber
+- name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -26,7 +34,22 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
+- name: 🇷🇴 RO 04 - mqgg5630-cyber
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 05 - mqgg5630-cyber
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- name: 🇷🇴 RO 06 - mqgg5630-cyber
   type: vless
   server: 146.70.124.85
   port: 443
@@ -40,36 +63,6 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: random
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: 🇷🇴 RO 05 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 06 - mqgg5630-cyber
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 07 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +74,6 @@ proxy-groups:
   - 🇷🇴 RO 04 - mqgg5630-cyber
   - 🇷🇴 RO 05 - mqgg5630-cyber
   - 🇷🇴 RO 06 - mqgg5630-cyber
-  - 🇷🇴 RO 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +85,5 @@ proxy-groups:
   - 🇷🇴 RO 04 - mqgg5630-cyber
   - 🇷🇴 RO 05 - mqgg5630-cyber
   - 🇷🇴 RO 06 - mqgg5630-cyber
-  - 🇷🇴 RO 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
