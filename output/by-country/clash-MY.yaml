@@ -5,13 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
+  type: vless
+  server: 216.173.67.59
   port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  sni: 47.250.84.25
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: vmess
   server: 104.21.23.80
@@ -34,31 +40,9 @@ proxies:
   port: 443
   password: 5931134d1cde66bf83a54acdfebe7ab2
   udp: true
-  sni: 47.250.84.25
-  skip-cert-verify: true
-- name: 🇲🇾 MY 04 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
   sni: moltbot.doctoroyy.net
   skip-cert-verify: true
-- name: 🇲🇾 MY 05 - mqgg5630-cyber
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 06 - mqgg5630-cyber
+- name: 🇲🇾 MY 04 - mqgg5630-cyber
   type: vmess
   server: 104.21.23.80
   port: 443
@@ -83,8 +67,6 @@ proxy-groups:
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
-  - 🇲🇾 MY 05 - mqgg5630-cyber
-  - 🇲🇾 MY 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,7 +76,5 @@ proxy-groups:
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
-  - 🇲🇾 MY 05 - mqgg5630-cyber
-  - 🇲🇾 MY 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -19,13 +19,6 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -33,7 +26,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
+- name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: vless
   server: 146.70.124.85
   port: 443
@@ -47,21 +40,14 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: random
-- name: 🇷🇴 RO 05 - mqgg5630-cyber
-  type: vless
-  server: 31.76.11.243
-  port: 443
-  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
+- name: 🇷🇴 RO 04 - mqgg5630-cyber
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
   udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
-    short-id: 6b69118a7847c4c3
-  servername: seal-ro.bypassme.online
-  client-fingerprint: firefox
-- name: 🇷🇴 RO 06 - mqgg5630-cyber
+- name: 🇷🇴 RO 05 - mqgg5630-cyber
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -69,6 +55,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 06 - mqgg5630-cyber
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 - name: 🇷🇴 RO 07 - mqgg5630-cyber
   type: vless
   server: edge10.cyrionflare.com

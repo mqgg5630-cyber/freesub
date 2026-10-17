@@ -6,12 +6,13 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - mqgg5630-cyber
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: 104.17.72.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -19,12 +20,13 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 02 - mqgg5630-cyber
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: centurylink.es
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -32,12 +34,13 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 03 - mqgg5630-cyber
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: 104.17.71.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -58,7 +61,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 05 - mqgg5630-cyber
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: centurylink.es
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -72,13 +75,12 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 06 - mqgg5630-cyber
   type: vless
-  server: centurylink.es
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -86,6 +88,46 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 07 - mqgg5630-cyber
   type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 08 - mqgg5630-cyber
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 09 - mqgg5630-cyber
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 10 - mqgg5630-cyber
+  type: vless
   server: centurylink.es
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
@@ -98,7 +140,20 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 08 - mqgg5630-cyber
+- name: 🇱🇰 LK 11 - mqgg5630-cyber
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 12 - mqgg5630-cyber
   type: vless
   server: free.sahanwickramasinghe.me
   port: 80
@@ -106,6 +161,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 13 - mqgg5630-cyber
+  type: vless
+  server: 104.17.73.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 14 - mqgg5630-cyber
+  type: vless
+  server: 104.17.74.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -124,6 +207,12 @@ proxy-groups:
   - 🇱🇰 LK 06 - mqgg5630-cyber
   - 🇱🇰 LK 07 - mqgg5630-cyber
   - 🇱🇰 LK 08 - mqgg5630-cyber
+  - 🇱🇰 LK 09 - mqgg5630-cyber
+  - 🇱🇰 LK 10 - mqgg5630-cyber
+  - 🇱🇰 LK 11 - mqgg5630-cyber
+  - 🇱🇰 LK 12 - mqgg5630-cyber
+  - 🇱🇰 LK 13 - mqgg5630-cyber
+  - 🇱🇰 LK 14 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +226,11 @@ proxy-groups:
   - 🇱🇰 LK 06 - mqgg5630-cyber
   - 🇱🇰 LK 07 - mqgg5630-cyber
   - 🇱🇰 LK 08 - mqgg5630-cyber
+  - 🇱🇰 LK 09 - mqgg5630-cyber
+  - 🇱🇰 LK 10 - mqgg5630-cyber
+  - 🇱🇰 LK 11 - mqgg5630-cyber
+  - 🇱🇰 LK 12 - mqgg5630-cyber
+  - 🇱🇰 LK 13 - mqgg5630-cyber
+  - 🇱🇰 LK 14 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

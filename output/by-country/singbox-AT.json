@@ -12,7 +12,8 @@
         "🇦🇹 AT 02 - mqgg5630-cyber",
         "🇦🇹 AT 03 - mqgg5630-cyber",
         "🇦🇹 AT 04 - mqgg5630-cyber",
-        "🇦🇹 AT 05 - mqgg5630-cyber"
+        "🇦🇹 AT 05 - mqgg5630-cyber",
+        "🇦🇹 AT 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -23,18 +24,33 @@
         "🇦🇹 AT 02 - mqgg5630-cyber",
         "🇦🇹 AT 03 - mqgg5630-cyber",
         "🇦🇹 AT 04 - mqgg5630-cyber",
-        "🇦🇹 AT 05 - mqgg5630-cyber"
+        "🇦🇹 AT 05 - mqgg5630-cyber",
+        "🇦🇹 AT 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇦🇹 AT 01 - mqgg5630-cyber",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -47,35 +63,76 @@
     {
       "type": "vless",
       "tag": "🇦🇹 AT 03 - mqgg5630-cyber",
-      "server": "141.101.90.108",
-      "server_port": 2053,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=fp=chrome",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
+        "server_name": "api.mediakaskad.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 AT 04 - mqgg5630-cyber",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 AT 05 - mqgg5630-cyber",
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 AT 04 - mqgg5630-cyber",
-      "server": "138.124.90.177",
-      "server_port": 10443,
-      "uuid": "3a0e4040-67cc-43e0-a9fb-98e15ddb0526"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 AT 05 - mqgg5630-cyber",
-      "server": "138.124.90.177",
-      "server_port": 10443,
-      "uuid": "3a0e4040-67cc-43e0-a9fb-98e15ddb0526"
+      "tag": "🇦🇹 AT 06 - mqgg5630-cyber",
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
     },
     {
       "type": "direct",
