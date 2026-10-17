@@ -5,27 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
   server: 168.113.135.90
   port: 443
@@ -39,41 +25,62 @@ proxies:
     short-id: 11ac376e18d20343
   servername: m-vruvc.mvpstr.com
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
-  server: api.mediakaskad.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
-  client-fingerprint: safari
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   type: vless
-  server: api.mediakaskad.cc
+  server: 213.165.56.102
   port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  type: vless
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   type: vless
   server: 139.28.168.75
@@ -87,35 +94,7 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
   client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
-  type: vless
-  server: api.mediakaskad.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,8 +107,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,7 +119,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

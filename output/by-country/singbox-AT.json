@@ -12,7 +12,10 @@
         "🇦🇹 AT 02 - mqgg5630-cyber",
         "🇦🇹 AT 03 - mqgg5630-cyber",
         "🇦🇹 AT 04 - mqgg5630-cyber",
-        "🇦🇹 AT 05 - mqgg5630-cyber"
+        "🇦🇹 AT 05 - mqgg5630-cyber",
+        "🇦🇹 AT 06 - mqgg5630-cyber",
+        "🇦🇹 AT 07 - mqgg5630-cyber",
+        "🇦🇹 AT 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -23,14 +26,25 @@
         "🇦🇹 AT 02 - mqgg5630-cyber",
         "🇦🇹 AT 03 - mqgg5630-cyber",
         "🇦🇹 AT 04 - mqgg5630-cyber",
-        "🇦🇹 AT 05 - mqgg5630-cyber"
+        "🇦🇹 AT 05 - mqgg5630-cyber",
+        "🇦🇹 AT 06 - mqgg5630-cyber",
+        "🇦🇹 AT 07 - mqgg5630-cyber",
+        "🇦🇹 AT 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 AT 01 - mqgg5630-cyber",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 AT 02 - mqgg5630-cyber",
       "server": "api.mediakaskad.cc",
       "server_port": 443,
       "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
@@ -52,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 AT 02 - mqgg5630-cyber",
+      "tag": "🇦🇹 AT 03 - mqgg5630-cyber",
       "server": "api.mediakaskad.cc",
       "server_port": 443,
       "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
@@ -73,16 +87,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 AT 03 - mqgg5630-cyber",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "type": "trojan",
+      "tag": "🇦🇹 AT 04 - mqgg5630-cyber",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 AT 04 - mqgg5630-cyber",
+      "tag": "🇦🇹 AT 05 - mqgg5630-cyber",
       "server": "api.mediakaskad.cc",
       "server_port": 443,
       "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
@@ -93,7 +118,29 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 AT 06 - mqgg5630-cyber",
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -104,11 +151,33 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 AT 05 - mqgg5630-cyber",
+      "tag": "🇦🇹 AT 07 - mqgg5630-cyber",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 AT 08 - mqgg5630-cyber",
+      "server": "189.74.115.16",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
     },
     {
       "type": "direct",

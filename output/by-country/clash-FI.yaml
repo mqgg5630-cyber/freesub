@@ -6,6 +6,47 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
+  server: 152.233.71.81
+  port: 443
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server8.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /fdtiouasopeiyre0r95y8?ed=2560
+    headers:
+      Host: server8.9966338.xyz
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -16,49 +57,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 152.233.71.81
-  port: 443
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: 152.233.71.81
-  port: 443
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
-  server: 95.111.212.241
-  port: 443
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
   server: 152.233.71.81
@@ -72,21 +71,21 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
-  server: 95.111.212.241
+  server: 152.233.71.81
   port: 443
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
+  client-fingerprint: random
 - name: 🇫🇮 FI 07 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
@@ -99,7 +98,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
@@ -128,19 +127,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 10 - mqgg5630-cyber
   type: vless
-  server: mci.amir12.ir
-  port: 2112
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 11 - mqgg5630-cyber
-  type: vless
   server: 152.233.71.81
   port: 443
   uuid: 741809be-e44e-000b-b411-bf66f0ae3860
@@ -153,6 +139,19 @@ proxies:
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
   client-fingerprint: random
+- name: 🇫🇮 FI 11 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 12 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
@@ -166,35 +165,8 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 13 - mqgg5630-cyber
-  type: trojan
-  server: 46.62.204.134
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 🇫🇮 FI 14 - mqgg5630-cyber
-  type: vless
-  server: 152.233.71.81
-  port: 443
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 15 - mqgg5630-cyber
+- name: 🇫🇮 FI 13 - mqgg5630-cyber
   type: vless
   server: 152.233.71.81
   port: 443
@@ -208,7 +180,7 @@ proxies:
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
   client-fingerprint: random
-- name: 🇫🇮 FI 16 - mqgg5630-cyber
+- name: 🇫🇮 FI 14 - mqgg5630-cyber
   type: vless
   server: 95.111.212.241
   port: 443
@@ -221,6 +193,34 @@ proxies:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
     short-id: 3a697adb4c58d495
   servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 15 - mqgg5630-cyber
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 16 - mqgg5630-cyber
+  type: vless
+  server: 152.233.71.81
+  port: 443
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 17 - mqgg5630-cyber
   type: vless
@@ -238,19 +238,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 18 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 19 - mqgg5630-cyber
-  type: vless
   server: 152.233.71.81
   port: 443
   uuid: 741809be-e44e-000b-b411-bf66f0ae3860
@@ -262,6 +249,20 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 19 - mqgg5630-cyber
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
   client-fingerprint: random
 - name: 🇫🇮 FI 20 - mqgg5630-cyber
   type: vless
@@ -276,20 +277,7 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 21 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -315,7 +303,6 @@ proxy-groups:
   - 🇫🇮 FI 18 - mqgg5630-cyber
   - 🇫🇮 FI 19 - mqgg5630-cyber
   - 🇫🇮 FI 20 - mqgg5630-cyber
-  - 🇫🇮 FI 21 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -341,6 +328,5 @@ proxy-groups:
   - 🇫🇮 FI 18 - mqgg5630-cyber
   - 🇫🇮 FI 19 - mqgg5630-cyber
   - 🇫🇮 FI 20 - mqgg5630-cyber
-  - 🇫🇮 FI 21 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
