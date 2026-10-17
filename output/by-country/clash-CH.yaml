@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
   server: 45.90.59.15
@@ -39,20 +33,20 @@ proxies:
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 - name: 🇨🇭 CH 04 - mqgg5630-cyber
-  type: ss
-  server: 86.106.84.194
-  port: 13261
-  cipher: aes-128-gcm
-  password: 2bf536a4bd6008511734a505d248de2c
+  type: vless
+  server: freefl.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 05 - mqgg5630-cyber
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 06 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -65,7 +59,56 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇨🇭 CH 06 - mqgg5630-cyber
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
 - name: 🇨🇭 CH 07 - mqgg5630-cyber
+  type: vless
+  server: freefl.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - mqgg5630-cyber
+  type: vless
+  server: freefl.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 09 - mqgg5630-cyber
+  type: ss
+  server: 86.106.84.194
+  port: 13261
+  cipher: aes-128-gcm
+  password: 2bf536a4bd6008511734a505d248de2c
+  udp: true
+- name: 🇨🇭 CH 10 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -90,6 +133,9 @@ proxy-groups:
   - 🇨🇭 CH 05 - mqgg5630-cyber
   - 🇨🇭 CH 06 - mqgg5630-cyber
   - 🇨🇭 CH 07 - mqgg5630-cyber
+  - 🇨🇭 CH 08 - mqgg5630-cyber
+  - 🇨🇭 CH 09 - mqgg5630-cyber
+  - 🇨🇭 CH 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,5 +148,8 @@ proxy-groups:
   - 🇨🇭 CH 05 - mqgg5630-cyber
   - 🇨🇭 CH 06 - mqgg5630-cyber
   - 🇨🇭 CH 07 - mqgg5630-cyber
+  - 🇨🇭 CH 08 - mqgg5630-cyber
+  - 🇨🇭 CH 09 - mqgg5630-cyber
+  - 🇨🇭 CH 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
