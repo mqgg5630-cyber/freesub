@@ -23,22 +23,19 @@
     {
       "type": "vless",
       "tag": "🇻🇳 VN 01 - mqgg5630-cyber",
-      "server": "154.21.203.106",
-      "server_port": 51279,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "server": "172.67.168.158",
+      "server_port": 2087,
+      "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A",
-          "short_id": "bb82c8"
+        "server_name": "vn11vina.210z.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessvina",
+        "headers": {
+          "Host": "vn11vina.210z.dev"
         }
       }
     },

@@ -5,24 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 196.198.111.138
+  port: 8443
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
+  flow: xtls-rprx-vision
+  servername: api-6ad3c751.adhil.uk
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
-  server: 143.246.41.31
+  server: one.alpheratzz.org
+  port: 8443
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: api-6ad3c751.adhil.uk
+- name: 🇪🇪 EE 03 - mqgg5630-cyber
+  type: vless
+  server: 196.198.111.138
+  port: 8443
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: api-6ad3c751.adhil.uk
+- name: 🇪🇪 EE 04 - mqgg5630-cyber
+  type: vless
+  server: ees92.shhflow.xyz
   port: 443
   uuid: 43212c32-01f2-4356-b216-67dc1c178262
   udp: true
@@ -33,22 +47,30 @@ proxies:
     public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
     short-id: 7f3a91c2d8e640ab
   servername: ees92.shhflow.xyz
-  client-fingerprint: firefox
-- name: 🇪🇪 EE 03 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  udp: true
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 EE 04 - mqgg5630-cyber
+  client-fingerprint: random
+- name: 🇪🇪 EE 05 - mqgg5630-cyber
   type: trojan
   server: 109.206.241.10
   port: 449
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
   sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 EE 06 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 EE 07 - mqgg5630-cyber
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  udp: true
+  sni: russiapower.accesscam.org
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -59,6 +81,9 @@ proxy-groups:
   - 🇪🇪 EE 02 - mqgg5630-cyber
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
+  - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +93,8 @@ proxy-groups:
   - 🇪🇪 EE 02 - mqgg5630-cyber
   - 🇪🇪 EE 03 - mqgg5630-cyber
   - 🇪🇪 EE 04 - mqgg5630-cyber
+  - 🇪🇪 EE 05 - mqgg5630-cyber
+  - 🇪🇪 EE 06 - mqgg5630-cyber
+  - 🇪🇪 EE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

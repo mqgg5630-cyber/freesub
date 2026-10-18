@@ -17,39 +17,26 @@ proxies:
     short-id: ''
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  type: vless
-  server: leml9vt5.zf-all.9999231.xyz
-  port: 1003
-  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - mqgg5630-cyber
+  type: vmess
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VNxeZH2-AUjHiZ3NpQpG54DN-0WFk9Rej1s9Zu_IYQk
-    short-id: 661613a7
-  servername: thtrjhtyjjfd.weebly.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 (家宽) - mqgg5630-cyber
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
   type: vless
-  server: 212.87.222.10
-  port: 8443
-  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
-    short-id: ''
-  servername: www.nokia.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
-  type: vless
-  server: 60.248.219.78
+  server: 60.248.219.54
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -58,24 +45,22 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: 60.248.219.54
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  - 🇫🇮 FI 03 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
-  - 🇫🇮 FI 03 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

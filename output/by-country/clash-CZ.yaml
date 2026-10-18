@@ -12,8 +12,15 @@ proxies:
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: ss
+  server: 67.159.18.34
+  port: 17001
+  cipher: aes-256-gcm
+  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
+  udp: true
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
   type: vless
-  server: 81.28.12.12
+  server: cl-glb6e059ee.gcdn.co
   port: 443
   uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
   udp: true
@@ -25,30 +32,9 @@ proxies:
     path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
     headers:
       Host: node-3.wt419.site
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: vless
-  server: 81.90.31.111
-  port: 443
-  uuid: d78d6815-5f00-4fe3-8aae-3344aeb7783f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 1f0c1c7297521d51.wgse.info
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 1f0c1c7297521d51.wgse.info
 - name: 🇨🇿 CZ 04 - mqgg5630-cyber
-  type: ss
-  server: 67.159.18.34
-  port: 17001
-  cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
-  udp: true
-- name: 🇨🇿 CZ 05 - mqgg5630-cyber
   type: vless
-  server: cl-glb6e059ee.gcdn.co
+  server: 81.28.12.12
   port: 443
   uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
   udp: true
@@ -69,7 +55,6 @@ proxy-groups:
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
   - 🇨🇿 CZ 04 - mqgg5630-cyber
-  - 🇨🇿 CZ 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,6 +64,5 @@ proxy-groups:
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
   - 🇨🇿 CZ 04 - mqgg5630-cyber
-  - 🇨🇿 CZ 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

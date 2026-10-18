@@ -17,34 +17,18 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: random
-- name: 🇺🇦 UA 02 - mqgg5630-cyber
-  type: vless
-  server: 213.111.148.137
-  port: 443
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=android
-    headers:
-      Host: proxy-1cu.pages.dev
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 UA 01 - mqgg5630-cyber
-  - 🇺🇦 UA 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 UA 01 - mqgg5630-cyber
-  - 🇺🇦 UA 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
