@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - mqgg5630-cyber
   type: vless
+  server: dorado.yokkastars.com
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 02 - mqgg5630-cyber
+  type: vless
+  server: 5.253.28.224
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 03 - mqgg5630-cyber
+  type: vless
   server: 5.253.29.254
   port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
@@ -17,14 +45,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 02 - mqgg5630-cyber
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - mqgg5630-cyber
   - 🇨🇾 CY 02 - mqgg5630-cyber
+  - 🇨🇾 CY 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - mqgg5630-cyber
   - 🇨🇾 CY 02 - mqgg5630-cyber
+  - 🇨🇾 CY 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
