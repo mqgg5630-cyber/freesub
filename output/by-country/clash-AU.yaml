@@ -20,17 +20,18 @@ proxies:
   client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
   type: vless
-  server: 212.81.47.99
-  port: 51106
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  server: 51.161.204.244
+  port: 443
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
-    short-id: abcd1234
-  servername: apple.com
-  client-fingerprint: chrome
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   type: vless
   server: 51.161.204.244
@@ -44,19 +45,20 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
   type: vless
-  server: 212.81.47.99
-  port: 51106
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  server: 51.161.204.244
+  port: 443
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
-    short-id: abcd1234
-  servername: apple.com
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
   type: vless
@@ -72,38 +74,6 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber
-  type: vmess
-  server: 172.67.195.146
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aus.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /Sydney3
-    headers:
-      Host: aus.lovehk.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
-  type: vmess
-  server: 172.67.195.146
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aus.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /Sydney3
-    headers:
-      Host: aus.lovehk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,8 +84,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,7 +94,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

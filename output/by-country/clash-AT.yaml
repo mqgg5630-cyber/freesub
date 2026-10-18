@@ -5,61 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
   udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: 🇦🇹 AT 02 - mqgg5630-cyber
-  type: vless
-  server: api.mediakaskad.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
-  client-fingerprint: edge
-- name: 🇦🇹 AT 03 - mqgg5630-cyber
-  type: vless
-  server: 189.74.115.16
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
-  client-fingerprint: firefox
-- name: 🇦🇹 AT 04 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 05 - mqgg5630-cyber
-  type: vless
-  server: api.mediakaskad.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediakaskad.cc
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,9 +31,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
-  - 🇦🇹 AT 03 - mqgg5630-cyber
-  - 🇦🇹 AT 04 - mqgg5630-cyber
-  - 🇦🇹 AT 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,8 +38,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - mqgg5630-cyber
   - 🇦🇹 AT 02 - mqgg5630-cyber
-  - 🇦🇹 AT 03 - mqgg5630-cyber
-  - 🇦🇹 AT 04 - mqgg5630-cyber
-  - 🇦🇹 AT 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
