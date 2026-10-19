@@ -9,7 +9,11 @@
       "outbounds": [
         "auto",
         "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber",
+        "🇸🇪 SE 04 - mqgg5630-cyber",
+        "🇸🇪 SE 05 - mqgg5630-cyber",
+        "🇸🇪 SE 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,22 +21,106 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 SE 01 - mqgg5630-cyber",
-        "🇸🇪 SE 02 - mqgg5630-cyber"
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber",
+        "🇸🇪 SE 04 - mqgg5630-cyber",
+        "🇸🇪 SE 05 - mqgg5630-cyber",
+        "🇸🇪 SE 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "94.143.231.146"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
+      "server": "193.188.21.253",
+      "server_port": 14430,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "193.188.21.253"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 05 - mqgg5630-cyber",
+      "server": "84.32.106.243",
+      "server_port": 443,
+      "uuid": "1ab9e166-5a54-48b9-a07f-79d1d840ae21",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.nurcloud.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AepHS1WcdKNVjau3-RYZ4PefoPAw-i07pqrl66RPD2s",
+          "short_id": "b09535a0ea97b4ed"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 06 - mqgg5630-cyber",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",

@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 213.165.56.102
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 5f5e74dfd296b28d
+  servername: freede.aiage.work
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: vless
+  server: 185.141.227.223
   port: 443
   uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
@@ -18,23 +32,20 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: user-6a917f32.noooo.win
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
-  udp: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
   server: m-vruvc.mvpstr.com
@@ -49,6 +60,34 @@ proxies:
     short-id: 11ac376e18d20343
   servername: m-vruvc.mvpstr.com
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: ru.msk.nurcloud.org
+  port: 443
+  uuid: 1ab9e166-5a54-48b9-a07f-79d1d840ae21
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: j1p0hmghXQkpoamrREgYJMcK7D_y3I2gxqy9RzjOD2I
+    short-id: d2cf64ff98c7c4ca
+  servername: ru.msk.nurcloud.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: freede.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 5f5e74dfd296b28d
+  servername: freede.aiage.work
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +97,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +108,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
