@@ -1,0 +1,40 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇪 IE 01 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇪 IE 01 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
+      "server": "20.223.172.81",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "UUjphkQAh5BkOdbf"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

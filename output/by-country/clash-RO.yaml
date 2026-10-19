@@ -5,58 +5,63 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: trojan
+  server: de1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  tls: false
+  sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  type: trojan
+  server: de1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
+  sni: de1.dedushka.top
+  skip-cert-verify: true
 - name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 82.117.255.174
+  port: 443
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 - name: 🇷🇴 RO 04 - mqgg5630-cyber
-  type: ss
-  server: 154.46.31.106
+  type: vless
+  server: 46.28.67.55
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇷🇴 RO 05 - mqgg5630-cyber
-  type: trojan
-  server: de1.dedushka.top
+  type: vless
+  server: 146.70.124.85
   port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
   udp: true
-  sni: de1.dedushka.top
+  tls: true
   skip-cert-verify: true
-- name: 🇷🇴 RO 06 - mqgg5630-cyber
-  type: trojan
-  server: de1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de1.dedushka.top
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - mqgg5630-cyber
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +72,6 @@ proxy-groups:
   - 🇷🇴 RO 03 - mqgg5630-cyber
   - 🇷🇴 RO 04 - mqgg5630-cyber
   - 🇷🇴 RO 05 - mqgg5630-cyber
-  - 🇷🇴 RO 06 - mqgg5630-cyber
-  - 🇷🇴 RO 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,7 +82,5 @@ proxy-groups:
   - 🇷🇴 RO 03 - mqgg5630-cyber
   - 🇷🇴 RO 04 - mqgg5630-cyber
   - 🇷🇴 RO 05 - mqgg5630-cyber
-  - 🇷🇴 RO 06 - mqgg5630-cyber
-  - 🇷🇴 RO 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

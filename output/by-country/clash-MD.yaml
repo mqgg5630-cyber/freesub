@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - mqgg5630-cyber
   type: vless
-  server: md1.aiage.work
+  server: 85.120.144.27
   port: 443
   uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   udp: true
@@ -15,9 +15,9 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
+    short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
-  client-fingerprint: qq
+  client-fingerprint: random
 - name: 🇲🇩 MD 02 - mqgg5630-cyber
   type: vless
   server: md1.aiage.work
@@ -29,9 +29,9 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
+    short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇲🇩 MD 03 - mqgg5630-cyber
   type: vless
   server: 85.120.144.27
@@ -46,20 +46,6 @@ proxies:
     short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
   client-fingerprint: firefox
-- name: 🇲🇩 MD 04 - mqgg5630-cyber
-  type: vless
-  server: md1.aiage.work
-  port: 443
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
-  servername: md1.aiage.work
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇲🇩 MD 01 - mqgg5630-cyber
   - 🇲🇩 MD 02 - mqgg5630-cyber
   - 🇲🇩 MD 03 - mqgg5630-cyber
-  - 🇲🇩 MD 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇲🇩 MD 01 - mqgg5630-cyber
   - 🇲🇩 MD 02 - mqgg5630-cyber
   - 🇲🇩 MD 03 - mqgg5630-cyber
-  - 🇲🇩 MD 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

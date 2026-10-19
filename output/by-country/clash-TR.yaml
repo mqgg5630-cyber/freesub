@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  type: trojan
-  server: 143.246.136.99
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -30,49 +17,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
-  type: vless
-  server: 78.135.73.47
-  port: 443
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
   server: 78.135.73.47
   port: 443
@@ -86,6 +31,55 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+  type: ss
+  server: tutua.azad0namah.ir
+  port: 5566
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:yPBUkgz9Y6Ad20RTktufkQ==
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  type: vless
+  server: tutua.azad0namah.ir
+  port: 8080
+  uuid: f079a440-e5f6-46cc-bcaf-273c8cf4417d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+  type: trojan
+  server: 107.181.155.237
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
+  type: ss
+  server: 185.223.77.118
+  port: 5566
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:yPBUkgz9Y6Ad20RTktufkQ==
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +91,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,5 +103,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

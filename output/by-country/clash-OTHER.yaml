@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.5
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🌐 其他地区 (Other) 02 - mqgg5630-cyber
   type: vless
   server: 188.114.97.6
   port: 443
@@ -15,12 +28,12 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=chrome
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 02 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 03 - mqgg5630-cyber
   type: vless
-  server: 104.16.111.102
+  server: 104.16.10.234
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -32,23 +45,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - mqgg5630-cyber
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 04 - mqgg5630-cyber
   type: vless
-  server: 104.21.6.186
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -62,21 +61,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 05 - mqgg5630-cyber
   type: vless
-  server: 172.67.172.155
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 06 - mqgg5630-cyber
-  type: vless
-  server: 172.64.158.170
+  server: 104.26.4.2
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -88,105 +73,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 07 - mqgg5630-cyber
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 08 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 09 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 10 - mqgg5630-cyber
-  type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 11 - mqgg5630-cyber
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: '/cart/docs/www/proxyip=108.160.132.132 '
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 12 - mqgg5630-cyber
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 13 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 14 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 06 - mqgg5630-cyber
   type: vless
   server: 188.114.97.6
   port: 443
@@ -200,36 +87,38 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 15 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.5
-  port: 443
-  password: humanity
+- name: 🌐 其他地区 (Other) 07 - mqgg5630-cyber
+  type: vless
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  sni: www.volumeroot.com
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /sg-melbi?ed#Telegram---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN
     headers:
-      Host: www.volumeroot.com
-- name: 🌐 其他地区 (Other) 16 - mqgg5630-cyber
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 08 - mqgg5630-cyber
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ex3r.qzz.io
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /sg-orcl
+    path: /lMnsZUN4/
     headers:
-      Host: ex3r.qzz.io
-- name: 🌐 其他地区 (Other) 17 - mqgg5630-cyber
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 09 - mqgg5630-cyber
   type: vless
-  server: 104.21.91.244
+  server: 188.114.97.6
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -238,26 +127,12 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---mehrosaboran
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 18 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 10 - mqgg5630-cyber
   type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 19 - mqgg5630-cyber
-  type: vless
-  server: 104.16.111.202
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -269,46 +144,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 20 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.57.25
+- name: 🌐 其他地区 (Other) 11 - mqgg5630-cyber
+  type: vless
+  server: 104.17.50.227
   port: 443
-  password: humanity
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  sni: www.volumeroot.com
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /assignment
+    path: /tyxyws
     headers:
-      Host: www.volumeroot.com
-- name: 🌐 其他地区 (Other) 21 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 🌐 其他地区 (Other) 22 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🌐 其他地区 (Other) 23 - mqgg5630-cyber
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 12 - mqgg5630-cyber
   type: vless
   server: 104.18.37.247
   port: 443
@@ -322,353 +172,9 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 24 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 13 - mqgg5630-cyber
   type: vless
   server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 25 - mqgg5630-cyber
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 26 - mqgg5630-cyber
-  type: vless
-  server: 104.21.93.182
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 27 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 28 - mqgg5630-cyber
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 29 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.3
-  port: 443
-  password: humanity
-  udp: true
-  sni: wWw.Volumeroot.cOm.
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumerOot.coM.
-- name: 🌐 其他地区 (Other) 30 - mqgg5630-cyber
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server5.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /drsukitgreiusweqa9otrh983
-    headers:
-      Host: server5.9966338.xyz
-- name: 🌐 其他地区 (Other) 31 - mqgg5630-cyber
-  type: vless
-  server: 104.18.47.73
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 32 - mqgg5630-cyber
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 33 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  udp: true
-  sni: nat11.outsidemyheart.space
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /w4e5yh0p945y3?ed=2560
-    headers:
-      Host: nat11.outsidemyheart.space
-- name: 🌐 其他地区 (Other) 34 - mqgg5630-cyber
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🌐 其他地区 (Other) 35 - mqgg5630-cyber
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 36 - mqgg5630-cyber
-  type: vless
-  server: 104.26.4.2
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 37 - mqgg5630-cyber
-  type: vless
-  server: 162.159.250.29
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 38 - mqgg5630-cyber
-  type: vless
-  server: b2n.ir
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 39 - mqgg5630-cyber
-  type: trojan
-  server: 104.21.37.56
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 🌐 其他地区 (Other) 40 - mqgg5630-cyber
-  type: vless
-  server: 162.159.192.125
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 41 - mqgg5630-cyber
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 42 - mqgg5630-cyber
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 43 - mqgg5630-cyber
-  type: vless
-  server: b2n.ir
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 44 - mqgg5630-cyber
-  type: vless
-  server: 172.67.168.158
-  port: 2087
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vn11vina.210z.dev
-  network: ws
-  ws-opts:
-    path: /vlessvina
-    headers:
-      Host: vn11vina.210z.dev
-- name: 🌐 其他地区 (Other) 45 - mqgg5630-cyber
-  type: trojan
-  server: 104.18.35.86
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumerOot.coM.
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumerOot.coM.
-- name: 🌐 其他地区 (Other) 46 - mqgg5630-cyber
-  type: trojan
-  server: 104.18.9.83
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🌐 其他地区 (Other) 47 - mqgg5630-cyber
-  type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex3r.qzz.io
-  network: ws
-  ws-opts:
-    path: /sg-orcl
-    headers:
-      Host: ex3r.qzz.io
-- name: 🌐 其他地区 (Other) 48 - mqgg5630-cyber
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 49 - mqgg5630-cyber
-  type: vless
-  server: 162.159.250.29
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -680,78 +186,25 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 50 - mqgg5630-cyber
-  type: vless
-  server: 104.18.40.100
+- name: 🌐 其他地区 (Other) 14 - mqgg5630-cyber
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: jmp1.907737.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 51 - mqgg5630-cyber
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 🌐 其他地区 (Other) 52 - mqgg5630-cyber
+      Host: jmp1.907737.xyz
+- name: 🌐 其他地区 (Other) 15 - mqgg5630-cyber
   type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🌐 其他地区 (Other) 53 - mqgg5630-cyber
-  type: vless
-  server: 104.21.93.182
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 54 - mqgg5630-cyber
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFFARANGI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 55 - mqgg5630-cyber
-  type: vless
-  server: 104.18.42.98
+  server: 104.16.10.48
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -763,21 +216,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 56 - mqgg5630-cyber
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws#/?----?ed=512
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 57 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 16 - mqgg5630-cyber
   type: vless
   server: 172.64.152.241
   port: 443
@@ -791,9 +230,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 58 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 17 - mqgg5630-cyber
   type: vless
-  server: 172.66.47.10
+  server: b2n.ir
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -802,26 +241,26 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 59 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 18 - mqgg5630-cyber
   type: vless
-  server: 104.18.37.247
+  server: 188.114.97.6
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
     headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 60 - mqgg5630-cyber
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 19 - mqgg5630-cyber
   type: vless
-  server: 104.16.10.2
+  server: 104.16.10.22
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -833,64 +272,49 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 61 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 20 - mqgg5630-cyber
   type: vless
-  server: 172.67.155.65
-  port: 8443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 104.18.41.190
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /fp
     headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 62 - mqgg5630-cyber
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 21 - mqgg5630-cyber
   type: trojan
-  server: 188.114.97.6
+  server: 104.18.35.86
   port: 443
   password: humanity
   udp: true
-  sni: www.calmlunch.com
+  sni: www.volumerOot.coM.
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment?ed#Telegram---bored_vpn
+    path: /assignment
     headers:
-      Host: www.calmlunch.com
-- name: 🌐 其他地区 (Other) 63 - mqgg5630-cyber
+      Host: www.volumerOot.coM.
+- name: 🌐 其他地区 (Other) 22 - mqgg5630-cyber
   type: vless
-  server: 172.64.153.153
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 64 - mqgg5630-cyber
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 23 - mqgg5630-cyber
   type: vless
-  server: 104.18.42.98
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 65 - mqgg5630-cyber
-  type: vless
-  server: 104.18.35.86
+  server: 104.18.0.181
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -898,24 +322,24 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 66 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 24 - mqgg5630-cyber
   type: vless
-  server: cf.877774.xyz
+  server: 188.114.97.6
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: '/cart/docs/www/proxyip=108.160.132.132 '
+    path: /ws
     headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 67 - mqgg5630-cyber
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 25 - mqgg5630-cyber
   type: vless
   server: 104.19.4.149
   port: 443
@@ -929,9 +353,63 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 68 - mqgg5630-cyber
+- name: 🌐 其他地区 (Other) 26 - mqgg5630-cyber
   type: vless
-  server: 104.18.41.190
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 27 - mqgg5630-cyber
+  type: trojan
+  server: 8.47.69.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🌐 其他地区 (Other) 28 - mqgg5630-cyber
+  type: vless
+  server: 104.18.47.73
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 29 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🌐 其他地区 (Other) 30 - mqgg5630-cyber
+  type: vless
+  server: 172.64.146.66
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -941,6 +419,252 @@ proxies:
   network: ws
   ws-opts:
     path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 31 - mqgg5630-cyber
+  type: trojan
+  server: 104.17.44.17
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🌐 其他地区 (Other) 32 - mqgg5630-cyber
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 33 - mqgg5630-cyber
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 34 - mqgg5630-cyber
+  type: vless
+  server: b2n.ir
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 35 - mqgg5630-cyber
+  type: trojan
+  server: 104.18.24.120
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🌐 其他地区 (Other) 36 - mqgg5630-cyber
+  type: vless
+  server: 104.18.40.100
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 37 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: 🌐 其他地区 (Other) 38 - mqgg5630-cyber
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 39 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.4
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🌐 其他地区 (Other) 40 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 41 - mqgg5630-cyber
+  type: vless
+  server: 162.159.250.29
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 42 - mqgg5630-cyber
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---DailyConfigs
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 43 - mqgg5630-cyber
+  type: vless
+  server: 172.67.172.155
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 44 - mqgg5630-cyber
+  type: vless
+  server: 162.159.192.125
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 45 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🌐 其他地区 (Other) 46 - mqgg5630-cyber
+  type: trojan
+  server: 8.47.69.0
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🌐 其他地区 (Other) 47 - mqgg5630-cyber
+  type: vless
+  server: 172.64.153.153
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 48 - mqgg5630-cyber
+  type: vless
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -996,26 +720,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 46 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 47 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 48 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 49 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 50 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 51 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 52 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 53 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 54 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 55 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 56 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 57 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 58 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 59 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 60 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 61 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 62 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 63 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 64 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 65 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 66 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 67 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 68 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1069,25 +773,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 46 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 47 - mqgg5630-cyber
   - 🌐 其他地区 (Other) 48 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 49 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 50 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 51 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 52 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 53 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 54 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 55 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 56 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 57 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 58 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 59 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 60 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 61 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 62 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 63 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 64 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 65 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 66 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 67 - mqgg5630-cyber
-  - 🌐 其他地区 (Other) 68 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

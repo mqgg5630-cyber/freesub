@@ -10,8 +10,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,8 +19,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,19 +27,22 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "185.141.227.223",
-      "server_port": 443,
-      "uuid": "c720cb74-4c84-4fce-b8ae-637dbaa16199",
+      "server": "139.28.168.75",
+      "server_port": 10444,
+      "uuid": "154bd388-4968-4900-a088-18676f428a20",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "z1q3pv4g78.rucdncomp.pro",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/useraction/events/b892639b7195/",
-        "headers": {
-          "Host": "z1q3pv4g78.rucdncomp.pro"
+        "server_name": "video.yandex.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
         }
       }
     },
@@ -68,30 +69,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-      "server": "139.28.168.75",
-      "server_port": 10444,
-      "uuid": "154bd388-4968-4900-a088-18676f428a20",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "video.yandex.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
