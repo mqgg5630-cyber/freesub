@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
-  type: vmess
-  server: 47.243.153.153
+  type: trojan
+  server: 219.76.13.177
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  password: humanity
   udp: true
-  tls: true
+  sni: www.pleadcourt.org
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /assignment
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+      Host: www.pleadcourt.org
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   type: trojan
   server: 2.27.109.179
@@ -29,104 +26,74 @@ proxies:
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+  type: vless
+  server: 207.56.137.51
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: vless
+  server: 207.56.137.51
+  port: 443
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   type: vless
-  server: 82.29.36.250
+  server: 207.56.137.51
   port: 443
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
-  client-fingerprint: random
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
   type: vless
-  server: 82.29.36.250
-  port: 443
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
   type: trojan
-  server: 2.27.109.179
-  port: 45464
-  password: XuMweB2PWs
-  udp: true
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  type: vmess
-  server: 47.243.153.153
+  server: 219.76.13.177
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  password: humanity
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  sni: www.volumeroot.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+      Host: www.volumeroot.com
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
   type: vless
   server: 207.56.137.51
   port: 443
@@ -140,7 +107,7 @@ proxies:
     short-id: f713561d
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
   type: trojan
   server: 2.27.109.179
   port: 45464
@@ -148,6 +115,34 @@ proxies:
   udp: true
   sni: 2.27.109.179
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+  type: vless
+  server: 39.109.110.80
+  port: 27916
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ztQ8VYq_dVDc3x-QM8LXjup2161CirYrIBE1F7loVzQ
+    short-id: 6772eb2b7a
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
+  type: vless
+  server: 82.29.36.250
+  port: 443
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  servername: aws.amazon.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

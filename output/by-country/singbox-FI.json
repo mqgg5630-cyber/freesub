@@ -10,7 +10,9 @@
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber",
+        "🇫🇮 FI 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +21,9 @@
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
         "🇫🇮 FI 02 - mqgg5630-cyber",
-        "🇫🇮 FI 03 - mqgg5630-cyber"
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber",
+        "🇫🇮 FI 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,41 +31,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -77,6 +46,77 @@
           "enabled": true,
           "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
           "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "angelmh.cv",
+      "server_port": 443,
+      "uuid": "6e517227-c561-4d2d-9368-ca914b3fb3f2",
+      "tls": {
+        "enabled": true,
+        "server_name": "c.mhzedir.qzz.io",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mhzedir.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "server": "144.31.34.146",
+      "server_port": 2096,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.merky.one",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/mky-ws-4f19c8a7",
+        "headers": {
+          "Host": "fi1.merky.one"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "199.232.239.239",
+      "server_port": 443,
+      "uuid": "05355ffb-a8f3-473b-cb9c-c8401897b03f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.firefox.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2056#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "headers": {
+          "Host": "mpkoe7ypcibr80p102020.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
         }
       }
     },

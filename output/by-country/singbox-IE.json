@@ -8,21 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - mqgg5630-cyber"
+        "🇮🇪 IE 01 - mqgg5630-cyber",
+        "🇮🇪 IE 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - mqgg5630-cyber"
+        "🇮🇪 IE 01 - mqgg5630-cyber",
+        "🇮🇪 IE 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇮🇪 IE 01 - mqgg5630-cyber",
+      "server": "ie1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "ie1.dedushka.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE 02 - mqgg5630-cyber",
       "server": "4.210.68.244",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",

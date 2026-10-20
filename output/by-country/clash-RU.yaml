@@ -5,39 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  type: ss
-  server: 176.32.33.143
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 81.177.215.156
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: 9ab9291e-fd72-4af9-b227-93419e90ff2e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VNinTQ6vwOujTkrJgK_NPV4SpSBU6B7xG2tpM7prITQ
+    short-id: fd5b0def0660cdb1
+  servername: tr-4vps.yourzloy.site
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
