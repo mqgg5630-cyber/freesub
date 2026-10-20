@@ -32,33 +32,31 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 78.135.73.47
+  type: trojan
+  server: 188.114.98.0
   port: 443
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  password: e309e031-991e-4656-9934-44d10deb8fd8
   udp: true
-  tls: true
+  sni: nimm.mpd.cc.cd
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /0962
+    headers:
+      Host: nimm.mpd.cc.cd
 - name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  type: vless
-  server: 78.135.73.47
-  port: 443
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  type: trojan
+  server: 172.67.74.2
+  port: 2053
+  password: e309e031-991e-4656-9934-44d10deb8fd8
   udp: true
-  tls: true
+  sni: nimm.mpd.cc.cd.
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /0962
+    headers:
+      Host: nimm.mpd.cc.cd.
 proxy-groups:
 - name: PROXIES
   type: select

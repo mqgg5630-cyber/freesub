@@ -5,54 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
-  type: vless
-  server: server.slavkiti.monster
-  port: 443
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
-  client-fingerprint: chrome
-- name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: ss
   server: 67.159.18.34
   port: 17001
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: vless
-  server: 153.76.190.31
-  port: 2083
-  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
   udp: true
-  tls: true
+  sni: de.mitivpn.in.net
   skip-cert-verify: true
-  servername: speedtestmark.com
   network: ws
   ws-opts:
-    path: /vless-ws
+    path: /
     headers:
-      Host: 153.76.190.31
-- name: 🇨🇿 CZ 04 - mqgg5630-cyber
-  type: vless
-  server: 195.123.245.241
+      Host: de.mitivpn.in.net
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.98.0
   port: 443
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
+  password: mitivpn
   udp: true
-  tls: true
+  sni: de.mitivpn.in.net
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: de.mitivpn.in.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +45,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
-  - 🇨🇿 CZ 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,6 +53,5 @@ proxy-groups:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
-  - 🇨🇿 CZ 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
