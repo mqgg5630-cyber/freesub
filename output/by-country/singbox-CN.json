@@ -8,34 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇨🇳 CN 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇨🇳 CN 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
-      "server": "188.42.145.180",
+      "type": "vless",
+      "tag": "🇨🇳 CN 01 - mqgg5630-cyber",
+      "server": "188.114.98.0",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "vpn.cintaku.qzz.io",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vlessws",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "vpn.cintaku.qzz.io"
         }
       }
     },

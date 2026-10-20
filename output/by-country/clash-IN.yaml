@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   type: vmess
   server: 152.67.8.205
@@ -44,10 +44,40 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: 152.67.8.205
+      Host: in-152.67.8.205-0202
 - name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 06 - mqgg5630-cyber
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -60,7 +90,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 07 - mqgg5630-cyber
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -73,34 +103,178 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 06 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 08 - mqgg5630-cyber
   type: vless
-  server: 148.113.5.44
-  port: 443
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 07 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 09 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 10 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 11 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0184
+- name: 🇮🇳 印度 (India) 12 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0200
+- name: 🇮🇳 印度 (India) 13 - mqgg5630-cyber
   type: vless
-  server: 148.113.5.44
-  port: 443
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
-  client-fingerprint: random
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 14 - mqgg5630-cyber
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 15 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 16 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 17 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 18 - mqgg5630-cyber
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 19 - mqgg5630-cyber
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,6 +287,18 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 06 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 07 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 08 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 09 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 10 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 11 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 12 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 13 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 14 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 15 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 16 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 17 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 18 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 19 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -125,5 +311,17 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 06 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 07 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 08 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 09 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 10 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 11 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 12 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 13 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 14 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 15 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 16 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 17 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 18 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 19 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
