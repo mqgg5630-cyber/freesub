@@ -6,20 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
-  type: vless
-  server: 31.57.190.89
+  server: 31.57.190.15
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -28,63 +15,78 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 02 - mqgg5630-cyber
+  type: vless
+  server: 31.57.190.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 03 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 04 - mqgg5630-cyber
   type: vless
-  server: 31.57.190.50
+  server: 45.59.120.217
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+    short-id: 29c2dd1e3ef7c4d4
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   type: vless
-  server: 31.57.190.50
+  server: 157.228.155.184
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc
+    short-id: e022bfea
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 157.228.155.184
+  port: 443
+  uuid: c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc
+    short-id: e022bfea
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
@@ -99,6 +101,19 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
+  type: trojan
+  server: 31.57.190.34
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
   type: vless
   server: 31.57.190.89
   port: 443
@@ -112,7 +127,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -125,7 +140,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
+  type: vless
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
   type: vless
   server: 31.57.190.89
   port: 443
@@ -136,38 +165,12 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -193,7 +196,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 15 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -206,6 +209,60 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 16 - mqgg5630-cyber
   type: vless
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 17 - mqgg5630-cyber
+  type: vless
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+    short-id: 29c2dd1e3ef7c4d4
+  servername: strm.yandex.net
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 18 - mqgg5630-cyber
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 19 - mqgg5630-cyber
+  type: trojan
+  server: 31.57.190.71
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 🇦🇪 阿联酋 (UAE) 20 - mqgg5630-cyber
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -217,49 +274,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - mqgg5630-cyber
-  type: vless
-  server: 31.57.190.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 18 - mqgg5630-cyber
-  type: vless
-  server: 31.57.190.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 19 - mqgg5630-cyber
-  type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 20 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 21 - mqgg5630-cyber
   type: vless
   server: 157.228.155.184
   port: 443
@@ -273,19 +288,6 @@ proxies:
     short-id: e022bfea
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 21 - mqgg5630-cyber
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 22 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
@@ -301,18 +303,18 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 23 - mqgg5630-cyber
   type: vless
-  server: 162.159.153.4
+  server: 31.57.190.89
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
