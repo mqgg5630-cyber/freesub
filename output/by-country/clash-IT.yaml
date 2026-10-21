@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - mqgg5630-cyber
   type: ss
-  server: 202.50.253.72
+  server: 185.164.175.81
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -21,40 +21,26 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 03 - mqgg5630-cyber
   type: ss
-  server: 202.50.253.54
+  server: 202.50.253.99
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - mqgg5630-cyber
   type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 05 - mqgg5630-cyber
+  type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 05 - mqgg5630-cyber
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇮🇹 意大利 (Italy) 06 - mqgg5630-cyber
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 07 - mqgg5630-cyber
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 08 - mqgg5630-cyber
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -67,33 +53,12 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 09 - mqgg5630-cyber
+- name: 🇮🇹 意大利 (Italy) 07 - mqgg5630-cyber
   type: ss
-  server: 202.50.253.90
-  port: 19999
+  server: 57.131.48.45
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 10 - mqgg5630-cyber
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 11 - mqgg5630-cyber
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 12 - mqgg5630-cyber
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: itzvpn@321
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -107,11 +72,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - mqgg5630-cyber
   - 🇮🇹 意大利 (Italy) 06 - mqgg5630-cyber
   - 🇮🇹 意大利 (Italy) 07 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 08 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 09 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 10 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 11 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,10 +84,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - mqgg5630-cyber
   - 🇮🇹 意大利 (Italy) 06 - mqgg5630-cyber
   - 🇮🇹 意大利 (Italy) 07 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 08 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 09 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 10 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 11 - mqgg5630-cyber
-  - 🇮🇹 意大利 (Italy) 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

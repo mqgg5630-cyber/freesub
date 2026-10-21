@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 212.87.222.10
+  port: 8443
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
+    short-id: ''
+  servername: www.nokia.com
+  client-fingerprint: safari
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

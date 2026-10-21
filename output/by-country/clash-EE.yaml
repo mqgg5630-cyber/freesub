@@ -18,28 +18,6 @@ proxies:
   port: 449
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   udp: true
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 EE 03 - mqgg5630-cyber
-  type: vless
-  server: 138.124.4.224
-  port: 443
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: login.sakhweb.fyi
-  client-fingerprint: firefox
-- name: 🇪🇪 EE 04 - mqgg5630-cyber
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  udp: true
   sni: 109.206.241.10
   skip-cert-verify: true
 proxy-groups:
@@ -49,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
-  - 🇪🇪 EE 03 - mqgg5630-cyber
-  - 🇪🇪 EE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
-  - 🇪🇪 EE 03 - mqgg5630-cyber
-  - 🇪🇪 EE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
