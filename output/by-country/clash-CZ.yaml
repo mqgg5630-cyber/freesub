@@ -5,38 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
-  type: ss
-  server: 67.159.18.34
-  port: 17001
-  cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
+  type: vless
+  server: server.slavkiti.monster
+  port: 443
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
+  client-fingerprint: chrome
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
+  type: vless
+  server: 162.159.153.4
   port: 443
-  password: mitivpn
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
-  sni: de.mitivpn.in.net
+  tls: true
   skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: de.mitivpn.in.net
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: de.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: de.mitivpn.in.net
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
-  - 🇨🇿 CZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
-  - 🇨🇿 CZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

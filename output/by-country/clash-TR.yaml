@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: trojan
-  server: 172.67.176.3
+  server: 104.21.48.18
   port: 2053
   password: e309e031-991e-4656-9934-44d10deb8fd8
   udp: true
@@ -18,6 +18,19 @@ proxies:
     headers:
       Host: nimm.mpd.cc.cd
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  type: trojan
+  server: 172.67.176.3
+  port: 2053
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  udp: true
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /0962
+    headers:
+      Host: nimm.mpd.cc.cd
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   type: vless
   server: 155.103.71.142
   port: 443
@@ -31,7 +44,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -44,7 +70,7 @@ proxies:
     path: /0962
     headers:
       Host: nimm.mpd.cc.cd
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
   type: trojan
   server: 172.67.74.2
   port: 2053
@@ -66,6 +92,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +103,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

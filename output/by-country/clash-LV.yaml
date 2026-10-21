@@ -4,30 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - mqgg5630-cyber
+- name: 🇱🇻 LV 01 - mqgg5630-cyber
   type: trojan
-  server: 188.42.145.180
+  server: lv1.dedushka.top
   port: 443
-  password: humanity
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: wWw.Volumeroot.cOm.
+  sni: lv1.dedushka.top
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumerOot.coM.
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - mqgg5630-cyber
+  - 🇱🇻 LV 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - mqgg5630-cyber
+  - 🇱🇻 LV 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
