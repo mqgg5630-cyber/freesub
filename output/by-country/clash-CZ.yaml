@@ -18,17 +18,32 @@ proxies:
     short-id: ee1716767f9b
   servername: www.tradingview.com
   client-fingerprint: chrome
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: de.mitivpn.in.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: de.mitivpn.in.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
