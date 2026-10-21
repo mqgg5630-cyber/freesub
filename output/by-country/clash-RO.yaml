@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: trojan
+  server: de1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  tls: false
+  sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: trojan
@@ -21,14 +21,6 @@ proxies:
   sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - mqgg5630-cyber
-  type: trojan
-  server: de1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de1.dedushka.top
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
   type: trojan
   server: it1.dedushka.top
   port: 443
@@ -44,7 +36,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
   - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
   - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

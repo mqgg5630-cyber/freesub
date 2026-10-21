@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,21 +25,23 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "185.141.227.223",
-      "server_port": 443,
-      "uuid": "a443d7bf-f506-46ce-b64d-cf8891c0a9f7",
+      "server": "185.147.27.183",
+      "server_port": 8443,
+      "uuid": "379998c5-2a71-4202-9c74-522e0c3c5404",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "z1q3pv4g78.rucdncomp.pro",
+        "server_name": "user-6a917f32.noooo.win",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/useraction/events/b892639b7195/",
-        "headers": {
-          "Host": "z1q3pv4g78.rucdncomp.pro"
-        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+      "server": "46.17.44.216",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
     },
     {
       "type": "direct",

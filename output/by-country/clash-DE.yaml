@@ -5,36 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.235
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de9.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
-  type: trojan
-  server: de2.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de2.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
   type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  server: 2.27.35.55
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hoert1rert.localip.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: d-e.mitivpn.in.net
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /hokm
+    path: /
     headers:
-      Host: hoert1rert.localip.ir
+      Host: d-e.mitivpn.in.net
+- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
+  type: vless
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 - name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
+  type: trojan
+  server: de8.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de8.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.117
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de8.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.117
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de8.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.236
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de10.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
   type: vless
   server: 188.114.98.0
   port: 443
@@ -48,182 +91,28 @@ proxies:
     path: /9d9fdbc18c834cffab4276811501fbae
     headers:
       Host: alman.5f2vvtqh5syot.info
-- name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.122
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de2.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: d-e.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d-e.mitivpn.in.net
-- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  udp: true
-  sni: t.me/fuckthewall
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
-  type: trojan
-  server: de7.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.236
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de10.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
-  type: trojan
-  server: de5.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de5.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
-  type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
   type: ss
   server: 213.202.208.199
   port: 5000
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
-  type: trojan
-  server: de2.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de2.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
-  type: vmess
-  server: 45.131.153.149
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
-  type: trojan
-  server: de7.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.235
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de9.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.236
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de10.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
   type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: 146.75.59.186
+  port: 443
+  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: firefox.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.102
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de4.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.117
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de8.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
+      Host: copy_az_channel_NUFiLTER_a1i.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
   type: vless
   server: 89.127.210.40
   port: 443
@@ -237,6 +126,121 @@ proxies:
     short-id: 54f1c973
   servername: onlycats.photos
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.236
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de10.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.122
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de2.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.122
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de2.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
+  type: vless
+  server: 2.27.35.55
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.236
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de10.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.236
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de10.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
+  type: vmess
+  server: 45.131.153.149
+  port: 443
+  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: de.zhou-yufan.com
+- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
+  type: vless
+  server: 130.12.242.106
+  port: 443
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: random
 - name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
   type: trojan
   server: 188.241.241.122
@@ -247,67 +251,13 @@ proxies:
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
   type: trojan
-  server: de9.dedushka.top
+  server: 188.241.241.117
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: de9.dedushka.top
+  sni: de8.dedushka.top
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: d-e.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d-e.mitivpn.in.net
-- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
-  type: vless
-  server: alman.5f2vvtqh5syot.info
-  port: 443
-  uuid: ed6c724c-435f-4f83-a781-f57579af320b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: alman.5f2vvtqh5syot.info
-  network: ws
-  ws-opts:
-    path: /9d9fdbc18c834cffab4276811501fbae
-    headers:
-      Host: alman.5f2vvtqh5syot.info
-- name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: d-e.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d-e.mitivpn.in.net
-- name: 🇩🇪 德国 (Germany) 29 - mqgg5630-cyber
-  type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
   type: vless
   server: 57.129.41.216
   port: 80
@@ -320,21 +270,58 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
   type: trojan
-  server: 188.241.241.200
+  server: 188.241.241.235
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: de7.dedushka.top
+  sni: de9.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 29 - mqgg5630-cyber
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
+  type: trojan
+  server: de4.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de4.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
+  type: trojan
+  server: de2.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de2.dedushka.top
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  type: trojan
+  server: 179.254.115.148
+  port: 25267
+  password: happybirthdaydaniel
   udp: true
-  tls: false
+  sni: t.me/fuckthewall
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
   type: vless
@@ -349,8 +336,45 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 91.107.247.173
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.122
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de2.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
+  type: trojan
+  server: de8.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de8.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.122
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de2.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -363,145 +387,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/--@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: d-e.mitivpn.in.net
-- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
-  type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
-  type: trojan
-  server: de6.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de6.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
-  type: trojan
-  server: de4.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de4.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
-  type: trojan
-  server: de10.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de10.dedushka.top
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.235
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de9.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
-  type: trojan
-  server: 172.67.71.122
-  port: 443
-  password: bpb-trojan
-  udp: true
-  sni: 6982410.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tr
-    headers:
-      Host: 6982410.xyz
-- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
-  type: trojan
-  server: 104.26.4.57
-  port: 443
-  password: bpb-trojan
-  udp: true
-  sni: 6982410.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tr
-    headers:
-      Host: 6982410.xyz
-- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.117
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de8.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
-  type: trojan
-  server: de3.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de3.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.117
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
   type: trojan
   server: 188.241.241.122
   port: 443
@@ -509,39 +395,23 @@ proxies:
   udp: true
   sni: de2.dedushka.top
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.49
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de6.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
   type: vless
-  server: 188.114.98.0
+  server: alman.5f2vvtqh5syot.info
   port: 443
-  uuid: a8a6aba0-bbe4-4eaa-8bb7-98601ef162bc
+  uuid: ed6c724c-435f-4f83-a781-f57579af320b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: omid-3x-ui.abolfzlllll.us.ci
+  servername: alman.5f2vvtqh5syot.info
   network: ws
   ws-opts:
-    path: /ws
+    path: /9d9fdbc18c834cffab4276811501fbae
     headers:
-      Host: omid-3x-ui.abolfzlllll.us.ci
-- name: 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
+      Host: alman.5f2vvtqh5syot.info
+- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
   type: vless
-  server: test.wecantos.site
-  port: 20000
-  uuid: ca59a503-db23-44af-9879-49747d8da98f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.117
+  server: 2.27.35.55
   port: 443
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   udp: true
@@ -549,56 +419,11 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
-  type: trojan
-  server: de8.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de8.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
-  type: trojan
-  server: de7.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 56 - mqgg5630-cyber
-  type: vless
-  server: 5.252.179.15
-  port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 57 - mqgg5630-cyber
-  type: trojan
-  server: de4.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de4.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 58 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -612,20 +437,140 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
   type: trojan
-  server: 104.26.5.57
+  server: de10.dedushka.top
   port: 443
-  password: bpb-trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: 6982410.xyz
+  sni: de10.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
+- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
+  type: trojan
+  server: de6.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de6.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
+  type: trojan
+  server: de6.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de6.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
+  type: vless
+  server: test.wecantos.site
+  port: 20000
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.200
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de7.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
+  type: vless
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.200
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de7.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
+  type: vless
+  server: 2.27.69.117
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
+  type: vless
+  server: 130.12.242.106
+  port: 443
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
+  type: trojan
+  server: de6.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de6.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
+  type: trojan
+  server: de-bots4.h1cloud.net
+  port: 25267
+  password: happybirthdaydaniel
+  udp: true
+  sni: t.me/fuckthewall
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: d-e.mitivpn.in.net
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tr
+    path: /
     headers:
-      Host: 6982410.xyz
-- name: 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
+      Host: d-e.mitivpn.in.net
+- name: 🇩🇪 德国 (Germany) 56 - mqgg5630-cyber
   type: vless
   server: 177.3.222.100
   port: 443
@@ -639,7 +584,43 @@ proxies:
     short-id: 2c9a2790ad5900b2
   servername: ge-s-1.pythonmakemigreat.wiki
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 57 - mqgg5630-cyber
+  type: trojan
+  server: 188.241.241.235
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de9.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 58 - mqgg5630-cyber
+  type: vless
+  server: 130.17.25.67
+  port: 443
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -652,143 +633,19 @@ proxies:
     path: /
     headers:
       Host: d-e.mitivpn.in.net
-- name: 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
   type: trojan
-  server: de6.dedushka.top
+  server: 188.114.97.6
   port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  password: mitivpn
   udp: true
-  sni: de6.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.122
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de2.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 64 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.200
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 65 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.117
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de8.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 66 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.102
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de4.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 67 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.122
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de2.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 68 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.122
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de2.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 69 - mqgg5630-cyber
-  type: trojan
-  server: 179.254.115.148
-  port: 25267
-  password: happybirthdaydaniel
-  udp: true
-  sni: t.me/fuckthewall
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 70 - mqgg5630-cyber
-  type: trojan
-  server: de10.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de10.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 71 - mqgg5630-cyber
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  udp: true
-  sni: de-bots4.h1cloud.net
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 72 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.236
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de10.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 73 - mqgg5630-cyber
-  type: vless
-  server: 2.27.69.128
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 74 - mqgg5630-cyber
-  type: trojan
-  server: 188.241.241.117
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de8.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 75 - mqgg5630-cyber
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
+  sni: d-e.mitivpn.in.net
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 76 - mqgg5630-cyber
-  type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
+      Host: d-e.mitivpn.in.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -855,21 +712,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 64 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 65 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 66 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 67 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 68 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 69 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 70 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 71 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 72 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 73 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 74 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 75 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 76 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -936,20 +778,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 64 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 65 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 66 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 67 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 68 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 69 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 70 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 71 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 72 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 73 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 74 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 75 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 76 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

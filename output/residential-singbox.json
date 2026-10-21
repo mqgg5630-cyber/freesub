@@ -8,25 +8,39 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
+        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
+        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
+      "server": "176.122.162.190",
+      "server_port": 443,
+      "password": "35fd040b3a765ffff6dda3029eb36eee",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
-      "server": "103.180.20.108",
-      "server_port": 8443,
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "60.248.219.78",
+      "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
@@ -43,9 +57,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-      "server": "60.248.219.78",
-      "server_port": 443,
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber",
+      "server": "103.180.20.108",
+      "server_port": 8443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
