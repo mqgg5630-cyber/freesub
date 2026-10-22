@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: de.mitivpn.in.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: de.mitivpn.in.net
+- name: 🇨🇾 CY 02 - mqgg5630-cyber
   type: vless
   server: 5.253.29.254
   port: 14430
@@ -23,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 CY 01 - mqgg5630-cyber
+  - 🇨🇾 CY 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 CY 01 - mqgg5630-cyber
+  - 🇨🇾 CY 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -8,21 +8,42 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - mqgg5630-cyber"
+        "🇨🇾 CY 01 - mqgg5630-cyber",
+        "🇨🇾 CY 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - mqgg5630-cyber"
+        "🇨🇾 CY 01 - mqgg5630-cyber",
+        "🇨🇾 CY 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇾 CY 01 - mqgg5630-cyber",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.mitivpn.in.net",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "de.mitivpn.in.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 CY 02 - mqgg5630-cyber",
       "server": "5.253.29.254",
       "server_port": 14430,
       "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",

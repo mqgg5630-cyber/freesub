@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ 01 - mqgg5630-cyber",
-        "🇨🇿 CZ 02 - mqgg5630-cyber"
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 CZ 01 - mqgg5630-cyber",
-        "🇨🇿 CZ 02 - mqgg5630-cyber"
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -51,6 +53,25 @@
       "server_port": 17001,
       "method": "aes-256-gcm",
       "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 CZ 03 - mqgg5630-cyber",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.mitivpn.in.net",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "de.mitivpn.in.net"
+        }
+      }
     },
     {
       "type": "direct",
