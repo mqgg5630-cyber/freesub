@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+- name: 🇲🇾 MY 01 - mqgg5630-cyber
   type: vless
-  server: 212.87.222.10
-  port: 8443
-  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  server: my2.frnhk.xyz
+  port: 443
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
-    short-id: ''
-  servername: www.nokia.com
-  client-fingerprint: safari
+    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
+    short-id: 6b7a8c9d
+  servername: www.waseda.jp
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+  - 🇲🇾 MY 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+  - 🇲🇾 MY 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

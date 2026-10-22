@@ -6,6 +6,79 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: trojan
+  server: pl2.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: trojan
+  server: 31.133.0.186
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: trojan
+  server: pl1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl1.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
+  type: trojan
+  server: 31.133.0.182
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl1.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
+  type: trojan
+  server: pl2.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 08 - mqgg5630-cyber
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 09 - mqgg5630-cyber
+  type: trojan
+  server: 31.133.0.182
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl1.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 10 - mqgg5630-cyber
+  type: vless
   server: 144.31.0.140
   port: 443
   uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
@@ -18,94 +91,21 @@ proxies:
     short-id: 7271129440ade8fa
   servername: api.sakhalin.fyi
   client-fingerprint: firefox
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: trojan
-  server: pl1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl1.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: trojan
-  server: pl1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl1.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: trojan
-  server: 31.133.0.186
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: trojan
-  server: pl2.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
-  type: trojan
-  server: 31.133.0.182
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl1.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: trojan
-  server: 31.133.0.186
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: trojan
-  server: pl2.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
 - name: 🇵🇱 PL 11 - mqgg5630-cyber
   type: trojan
-  server: pl1.dedushka.top
+  server: 31.133.0.186
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: pl1.dedushka.top
+  sni: pl2.dedushka.top
   skip-cert-verify: true
 - name: 🇵🇱 PL 12 - mqgg5630-cyber
   type: trojan
-  server: 31.133.0.186
+  server: pl1.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: pl2.dedushka.top
+  sni: pl1.dedushka.top
   skip-cert-verify: true
 - name: 🇵🇱 PL 13 - mqgg5630-cyber
   type: trojan
@@ -117,11 +117,41 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 14 - mqgg5630-cyber
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 144.31.0.140
+  port: 443
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
   udp: true
-  tls: false
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: api.sakhalin.fyi
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 15 - mqgg5630-cyber
+  type: trojan
+  server: pl1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl1.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 16 - mqgg5630-cyber
+  type: trojan
+  server: pl2.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 PL 17 - mqgg5630-cyber
+  type: trojan
+  server: pl1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: pl1.dedushka.top
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -142,6 +172,9 @@ proxy-groups:
   - 🇵🇱 PL 12 - mqgg5630-cyber
   - 🇵🇱 PL 13 - mqgg5630-cyber
   - 🇵🇱 PL 14 - mqgg5630-cyber
+  - 🇵🇱 PL 15 - mqgg5630-cyber
+  - 🇵🇱 PL 16 - mqgg5630-cyber
+  - 🇵🇱 PL 17 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -161,5 +194,8 @@ proxy-groups:
   - 🇵🇱 PL 12 - mqgg5630-cyber
   - 🇵🇱 PL 13 - mqgg5630-cyber
   - 🇵🇱 PL 14 - mqgg5630-cyber
+  - 🇵🇱 PL 15 - mqgg5630-cyber
+  - 🇵🇱 PL 16 - mqgg5630-cyber
+  - 🇵🇱 PL 17 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

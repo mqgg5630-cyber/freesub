@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
+  type: vmess
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: d-e.mitivpn.in.net
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d-e.mitivpn.in.net
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - mqgg5630-cyber
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -6,19 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
   type: trojan
-  server: it1.dedushka.top
+  server: de1.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: it1.dedushka.top
+  sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: trojan
+  server: de1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  tls: false
+  sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: ss
@@ -29,12 +29,42 @@ proxies:
   udp: true
 - name: 🇷🇴 RO 04 - mqgg5630-cyber
   type: trojan
-  server: de1.dedushka.top
+  server: it1.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-  sni: de1.dedushka.top
+  sni: it1.dedushka.top
   skip-cert-verify: true
+- name: 🇷🇴 RO 05 - mqgg5630-cyber
+  type: trojan
+  server: it1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: it1.dedushka.top
+  skip-cert-verify: true
+- name: 🇷🇴 RO 06 - mqgg5630-cyber
+  type: trojan
+  server: it1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: it1.dedushka.top
+  skip-cert-verify: true
+- name: 🇷🇴 RO 07 - mqgg5630-cyber
+  type: vless
+  server: 46.28.67.55
+  port: 443
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +74,9 @@ proxy-groups:
   - 🇷🇴 RO 02 - mqgg5630-cyber
   - 🇷🇴 RO 03 - mqgg5630-cyber
   - 🇷🇴 RO 04 - mqgg5630-cyber
+  - 🇷🇴 RO 05 - mqgg5630-cyber
+  - 🇷🇴 RO 06 - mqgg5630-cyber
+  - 🇷🇴 RO 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +86,8 @@ proxy-groups:
   - 🇷🇴 RO 02 - mqgg5630-cyber
   - 🇷🇴 RO 03 - mqgg5630-cyber
   - 🇷🇴 RO 04 - mqgg5630-cyber
+  - 🇷🇴 RO 05 - mqgg5630-cyber
+  - 🇷🇴 RO 06 - mqgg5630-cyber
+  - 🇷🇴 RO 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

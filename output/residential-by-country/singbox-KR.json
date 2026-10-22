@@ -8,34 +8,31 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - mqgg5630-cyber"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - mqgg5630-cyber"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-e.mitivpn.in.net",
-        "insecure": true
-      },
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - mqgg5630-cyber",
+      "server": "183.109.131.75",
+      "server_port": 20086,
+      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+      "security": "auto",
+      "alter_id": 0,
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "d-e.mitivpn.in.net"
+          "Host": ""
         }
       }
     },

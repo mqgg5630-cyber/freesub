@@ -19,18 +19,12 @@ proxies:
   servername: www.tradingview.com
   client-fingerprint: chrome
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
+  type: ss
+  server: 67.159.18.34
+  port: 17001
+  cipher: aes-256-gcm
+  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
-  sni: d-e.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d-e.mitivpn.in.net
 proxy-groups:
 - name: PROXIES
   type: select
