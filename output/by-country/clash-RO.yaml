@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  type: trojan
+  server: it1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
+  sni: it1.dedushka.top
+  skip-cert-verify: true
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: trojan
   server: it1.dedushka.top
@@ -19,29 +20,6 @@ proxies:
   udp: true
   sni: it1.dedushka.top
   skip-cert-verify: true
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
-  type: trojan
-  server: de1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de1.dedushka.top
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - mqgg5630-cyber
-  type: trojan
-  server: de1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: de1.dedushka.top
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,9 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
-  - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
-  - 🇷🇴 RO 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,8 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
-  - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
-  - 🇷🇴 RO 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

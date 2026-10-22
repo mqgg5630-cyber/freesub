@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: de.mitivpn.in.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: de.mitivpn.in.net
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: vless
   server: server.slavkiti.monster
   port: 443
@@ -18,26 +31,27 @@ proxies:
     short-id: ee1716767f9b
   servername: www.tradingview.com
   client-fingerprint: chrome
-- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
   type: ss
   server: 67.159.18.34
   port: 17001
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
+- name: 🇨🇿 CZ 04 - mqgg5630-cyber
+  type: vless
+  server: 89.125.237.24
   port: 443
-  password: mitivpn
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
   udp: true
-  sni: de.mitivpn.in.net
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: de.mitivpn.in.net
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: web.stride.surf
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +60,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
+  - 🇨🇿 CZ 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +69,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
+  - 🇨🇿 CZ 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

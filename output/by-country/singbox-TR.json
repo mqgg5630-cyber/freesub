@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -33,9 +37,49 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/fp=chromefp=chrome",
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+      "server": "155.103.71.142",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
         "path": "/fp=chrome",
         "headers": {
           "Host": "ccc.010304.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+      "server": "45.144.214.144",
+      "server_port": 8446,
+      "uuid": "633c1bb0-60d5-41fb-a9c4-11f408b264ec",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage-p2.googleapis.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04",
+          "short_id": "73da8baa63f8d537"
         }
       }
     },

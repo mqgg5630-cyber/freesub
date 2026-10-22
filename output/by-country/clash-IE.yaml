@@ -13,14 +13,20 @@ proxies:
   sni: ie1.dedushka.top
   skip-cert-verify: true
 - name: 🇮🇪 IE 02 - mqgg5630-cyber
-  type: trojan
-  server: ie1.dedushka.top
+  type: ss
+  server: 20.166.51.228
   port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  cipher: chacha20-ietf-poly1305
+  password: LVMlhvK82To1FGsy
   udp: true
-  sni: ie1.dedushka.top
-  skip-cert-verify: true
 - name: 🇮🇪 IE 03 - mqgg5630-cyber
+  type: ss
+  server: 20.166.51.228
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LVMlhvK82To1FGsy
+  udp: true
+- name: 🇮🇪 IE 04 - mqgg5630-cyber
   type: ss
   server: 20.166.51.228
   port: 443
@@ -35,6 +41,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -43,5 +50,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - mqgg5630-cyber
   - 🇮🇪 IE 02 - mqgg5630-cyber
   - 🇮🇪 IE 03 - mqgg5630-cyber
+  - 🇮🇪 IE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
