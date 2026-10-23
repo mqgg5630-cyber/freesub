@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
-  type: trojan
-  server: 46.62.204.134
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -30,6 +17,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: budulai.himoy.space
+  port: 443
+  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mk-wqC8YgfjMc89oFsT2HSpBMYB23kMURVBiXkeFHzg
+    short-id: 98c76776ef3d1f71
+  servername: budulai.himoy.space
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 188.114.98.0

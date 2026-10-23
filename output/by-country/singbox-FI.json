@@ -25,27 +25,8 @@
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -54,6 +35,28 @@
         "path": "/vless",
         "headers": {
           "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
+      "server": "budulai.himoy.space",
+      "server_port": 443,
+      "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "budulai.himoy.space",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mk-wqC8YgfjMc89oFsT2HSpBMYB23kMURVBiXkeFHzg",
+          "short_id": "98c76776ef3d1f71"
         }
       }
     },
