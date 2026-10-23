@@ -5,28 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - mqgg5630-cyber
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
+  type: trojan
+  server: 92.42.100.132
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
-- name: 🇷🇴 RO 02 - mqgg5630-cyber
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
+  sni: it1.dedushka.top
   skip-cert-verify: true
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
+- name: 🇷🇴 RO 02 - mqgg5630-cyber
+  type: trojan
+  server: it1.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: it1.dedushka.top
+  skip-cert-verify: true
+- name: 🇷🇴 RO 03 - mqgg5630-cyber
   type: trojan
   server: de1.dedushka.top
   port: 443
@@ -34,6 +28,13 @@ proxies:
   udp: true
   sni: de1.dedushka.top
   skip-cert-verify: true
+- name: 🇷🇴 RO 04 - mqgg5630-cyber
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
 - name: 🇷🇴 RO 05 - mqgg5630-cyber
   type: trojan
   server: it1.dedushka.top
@@ -44,20 +45,19 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 06 - mqgg5630-cyber
   type: trojan
-  server: it1.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  udp: true
-  sni: it1.dedushka.top
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - mqgg5630-cyber
-  type: trojan
   server: de1.dedushka.top
   port: 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   udp: true
   sni: de1.dedushka.top
   skip-cert-verify: true
+- name: 🇷🇴 RO 07 - mqgg5630-cyber
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 - name: 🇷🇴 RO 08 - mqgg5630-cyber
   type: trojan
   server: it1.dedushka.top

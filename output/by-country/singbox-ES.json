@@ -8,21 +8,33 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber"
+        "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
+        "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber",
+      "server": "108.181.71.5",
+      "server_port": 15995,
+      "method": "aes-128-gcm",
+      "password": "882dd5b0e0f2cf05bb5de75f59bbe953"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -40,6 +52,14 @@
           "short_id": "29e8dcd2b37aaa7f"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber",
+      "server": "193.148.19.212",
+      "server_port": 12796,
+      "method": "aes-128-gcm",
+      "password": "905470106f6c49d68e90a5c55c020190"
     },
     {
       "type": "direct",
