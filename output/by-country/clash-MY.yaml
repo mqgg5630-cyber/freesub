@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: 47.250.84.25
-  skip-cert-verify: true
-- name: 🇲🇾 MY 02 - mqgg5630-cyber
   type: vless
   server: 216.173.67.59
   port: 443
@@ -26,6 +18,27 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇲🇾 MY 02 - mqgg5630-cyber
+  type: vless
+  server: forwarded.frnhk.xyz
+  port: 46003
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /my1023
+    headers:
+      Host: forwarded.frnhk.xyz
+- name: 🇲🇾 MY 03 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: 47.250.84.25
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
+  - 🇲🇾 MY 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - mqgg5630-cyber
   - 🇲🇾 MY 02 - mqgg5630-cyber
+  - 🇲🇾 MY 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
