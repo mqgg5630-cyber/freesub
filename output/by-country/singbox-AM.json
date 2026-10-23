@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - mqgg5630-cyber"
+        "🇦🇲 AM 01 - mqgg5630-cyber",
+        "🇦🇲 AM 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - mqgg5630-cyber"
+        "🇦🇲 AM 01 - mqgg5630-cyber",
+        "🇦🇲 AM 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,20 @@
     {
       "type": "vless",
       "tag": "🇦🇲 AM 01 - mqgg5630-cyber",
+      "server": "194.36.37.59",
+      "server_port": 10004,
+      "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit",
+        "headers": {
+          "Host": "194.36.37.59"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇲 AM 02 - mqgg5630-cyber",
       "server": "194.36.37.59",
       "server_port": 10004,
       "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",

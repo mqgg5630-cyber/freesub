@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 MX 01 - mqgg5630-cyber
-  type: trojan
-  server: 131.196.254.151
-  port: 443
-  password: humanity
+- name: 🇱🇰 LK 01 - mqgg5630-cyber
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
-  sni: www.pleadcourt.org
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.pleadcourt.org
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 MX 01 - mqgg5630-cyber
+  - 🇱🇰 LK 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 MX 01 - mqgg5630-cyber
+  - 🇱🇰 LK 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
