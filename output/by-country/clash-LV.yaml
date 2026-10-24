@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - mqgg5630-cyber
-  type: vless
-  server: 138.124.180.137
+  type: trojan
+  server: 185.22.172.249
   port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  password: humanity
   udp: true
-  tls: true
+  sni: www.pleadcourt.org
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,33 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - mqgg5630-cyber
   type: vless
-  server: 5.253.42.164
-  port: 40443
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - mqgg5630-cyber
-  type: vless
-  server: 5.253.28.240
-  port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 CY 03 - mqgg5630-cyber
   type: vless
   server: 5.253.29.254
   port: 14430
@@ -45,14 +30,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 04 - mqgg5630-cyber
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - mqgg5630-cyber
   - 🇨🇾 CY 02 - mqgg5630-cyber
-  - 🇨🇾 CY 03 - mqgg5630-cyber
-  - 🇨🇾 CY 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - mqgg5630-cyber
   - 🇨🇾 CY 02 - mqgg5630-cyber
-  - 🇨🇾 CY 03 - mqgg5630-cyber
-  - 🇨🇾 CY 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -9,9 +9,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,31 +17,21 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "176.32.33.153",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "vena.solomon-planet.ru",
-      "server_port": 443,
-      "uuid": "0ce6e041-b701-4dd0-a82a-96b287abc4bf",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+      "server": "45.9.118.177",
+      "server_port": 8443,
+      "uuid": "88c4ce99-31f1-4329-912d-2a3564b3d58b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vena.solomon-planet.ru",
+        "server_name": "apple.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -51,35 +39,22 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-      "server": "195.133.5.194",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
-      "server": "xsru2.freeddns.org",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "type": "vmess",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+      "server": "158.160.180.165",
+      "server_port": 24212,
+      "uuid": "c58c1205-b308-416f-8503-c04557abf93d",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "xsru2.freeddns.org",
+        "server_name": "158.160.180.165",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsru",
-        "headers": {
-          "Host": "xsru2.freeddns.org"
-        }
       }
     },
     {

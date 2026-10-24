@@ -29,8 +29,16 @@
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -51,28 +59,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
-      "server": "lv1.himoy.space",
-      "server_port": 443,
-      "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lv1.himoy.space",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aow1gjMhnsFXqOuIulX3HBWiGI7m488euLPH6G5fcFA",
-          "short_id": "3446a8095e1788b4"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
       "server": "208.69.78.217",
       "server_port": 2053,
@@ -83,7 +69,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -101,12 +87,26 @@
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 CH 05 - mqgg5630-cyber",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "server": "lv4.himoy.space",
+      "server_port": 443,
+      "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv4.himoy.space",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EqhP9_DUChTnqqWCZ1b7i6WXxNtn1K7Yd-6lFVEPlUQ",
+          "short_id": "65ffcb37dda77fc5"
+        }
+      }
     },
     {
       "type": "direct",
