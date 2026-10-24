@@ -8,31 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - mqgg5630-cyber"
+        "🇺🇿 UZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - mqgg5630-cyber"
+        "🇺🇿 UZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇿 KZ 01 - mqgg5630-cyber",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "vless",
+      "tag": "🇺🇿 UZ 01 - mqgg5630-cyber",
+      "server": "157.22.128.7",
+      "server_port": 443,
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.cndyw.ggff.net",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "pyip=bpb.yousef.isegaro.comfp=random",
         "headers": {
-          "Host": "38.107.234.57"
+          "Host": "free.cndyw.ggff.net"
         }
       }
     },

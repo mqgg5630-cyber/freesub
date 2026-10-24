@@ -6,22 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
   server: pl1.h1cloud.net
   port: 27591
   uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
@@ -33,29 +17,7 @@ proxies:
     short-id: 6c5c7900406a1ae7
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: pl3.himoy.space
-  port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Smu2KKOBtbIEX1mL4t6_-aRTM-bAnjxTuMtWI_hwdBo
-    short-id: 9f986e5d07683c45
-  servername: pl3.himoy.space
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -70,10 +32,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
-  - 🇵🇱 PL 03 - mqgg5630-cyber
-  - 🇵🇱 PL 04 - mqgg5630-cyber
-  - 🇵🇱 PL 05 - mqgg5630-cyber
-  - 🇵🇱 PL 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,9 +39,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
-  - 🇵🇱 PL 03 - mqgg5630-cyber
-  - 🇵🇱 PL 04 - mqgg5630-cyber
-  - 🇵🇱 PL 05 - mqgg5630-cyber
-  - 🇵🇱 PL 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

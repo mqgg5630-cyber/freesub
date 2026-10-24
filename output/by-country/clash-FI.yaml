@@ -6,30 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: budulai.himoy.space
+  port: 443
+  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: mk-wqC8YgfjMc89oFsT2HSpBMYB23kMURVBiXkeFHzg
+    short-id: 98c76776ef3d1f71
+  servername: budulai.himoy.space
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 199.232.239.239
+  port: 443
+  uuid: 49883404-5bd4-42fc-9cb4-913980e278ad
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
@@ -45,19 +47,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
-  type: vless
   server: 188.114.98.0
   port: 443
   uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
@@ -70,22 +59,9 @@ proxies:
     path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
       Host: server8.9966338.xyz
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
+- name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
-  type: vless
-  server: budulai.himoy.space
+  server: fin4.himoy.space
   port: 443
   uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
   udp: true
@@ -93,24 +69,47 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: mk-wqC8YgfjMc89oFsT2HSpBMYB23kMURVBiXkeFHzg
-    short-id: 98c76776ef3d1f71
-  servername: budulai.himoy.space
+    public-key: 36MwbI8-ScG1RGaNp7jGe-NMOm9HfvmdMP5vfY4_P3k
+    short-id: 0c3c7a686e566de2
+  servername: fin4.himoy.space
   client-fingerprint: firefox
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
-  server: 199.232.239.239
+  server: static.86.39.13.49.clients.your-server.de
   port: 443
-  uuid: 49883404-5bd4-42fc-9cb4-913980e278ad
+  uuid: 6c688f63-fad4-45d8-a6a1-1e978ed26b8b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  flow: xtls-rprx-vision
+  servername: static.75.209.109.65.clients.your-server.de
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    path: /
     headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
@@ -124,19 +123,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 10 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,7 +137,6 @@ proxy-groups:
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
   - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -166,6 +151,5 @@ proxy-groups:
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
   - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

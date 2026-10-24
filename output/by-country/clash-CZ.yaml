@@ -12,25 +12,25 @@ proxies:
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: firefox.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: mitivpn.ac.ir
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
   type: ss
   server: 67.159.18.34
   port: 17001
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: de.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: de.mitivpn.in.net
 proxy-groups:
 - name: PROXIES
   type: select
