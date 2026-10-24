@@ -10,8 +10,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
         "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,74 +19,23 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
         "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
-        "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-      "server": "155.103.71.142",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chromefp=chrome",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      }
+      "server": "206.1.99.36",
+      "server_port": 58202,
+      "uuid": "482e7f58-e8e8-418d-accd-0a94bdf090ae",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
-      "server": "203.202.232.110",
-      "server_port": 443,
-      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
-      "tls": {
-        "enabled": true,
-        "server_name": "vlso5.1d.mom",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/socks5=888:888@hkip.1d.mom:1080fp=chrome",
-        "headers": {
-          "Host": "vlso5.1d.mom"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber",
       "server": "155.103.71.142",
       "server_port": 443,
       "uuid": "d342d11e-d224-4463-b982-532309285094",
@@ -99,6 +47,25 @@
       "transport": {
         "type": "ws",
         "path": "/fp=chrome",
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber",
+      "server": "155.103.71.142",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chromefp=chrome",
         "headers": {
           "Host": "ccc.010304.xyz"
         }
