@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
   server: 45.9.118.177
   port: 8443
@@ -18,17 +29,6 @@ proxies:
     short-id: ''
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 158.160.180.165
 proxy-groups:
 - name: PROXIES
   type: select

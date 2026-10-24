@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -24,27 +17,7 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 03 - mqgg5630-cyber
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 04 - mqgg5630-cyber
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 05 - mqgg5630-cyber
+- name: 🇨🇭 CH 02 - mqgg5630-cyber
   type: vless
   server: lv4.himoy.space
   port: 443
@@ -58,6 +31,46 @@ proxies:
     short-id: 65ffcb37dda77fc5
   servername: lv4.himoy.space
   client-fingerprint: firefox
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇨🇭 CH 05 - mqgg5630-cyber
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 06 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +81,7 @@ proxy-groups:
   - 🇨🇭 CH 03 - mqgg5630-cyber
   - 🇨🇭 CH 04 - mqgg5630-cyber
   - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +92,6 @@ proxy-groups:
   - 🇨🇭 CH 03 - mqgg5630-cyber
   - 🇨🇭 CH 04 - mqgg5630-cyber
   - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
