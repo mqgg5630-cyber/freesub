@@ -6,31 +6,61 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
-  server: tlokexcm.himoy.space
+  server: ee1.mycloud1.org
   port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: Pb37t99NiJqm-lsTi4tucPFqRXIsek-5G5dqjIqVfxE
-    short-id: 15c87d0b99c0d132
-  servername: tlokexcm.himoy.space
-  client-fingerprint: firefox
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: chrome
 - name: 🇪🇪 EE 02 - mqgg5630-cyber
   type: vless
-  server: 13.143.239.119
+  server: 194.26.141.223
   port: 443
-  uuid: f36c82e2-e33e-4054-960a-34619d9fdd5b
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: kYbLeoF13TKNPtlYwRsAqFQR3l7v6NMe6ydARMIfEC0
-    short-id: 7230e3b3f137543c
-  servername: www.transip.nl
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: firefox
+- name: 🇪🇪 EE 03 - mqgg5630-cyber
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 04 - mqgg5630-cyber
+  type: vless
+  server: ee1.mycloud1.org
+  port: 443
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -39,6 +69,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
+  - 🇪🇪 EE 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +78,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - mqgg5630-cyber
   - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
+  - 🇪🇪 EE 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

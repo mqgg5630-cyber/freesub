@@ -9,9 +9,7 @@
       "outbounds": [
         "auto",
         "🇱🇹 LT 01 - mqgg5630-cyber",
-        "🇱🇹 LT 02 - mqgg5630-cyber",
-        "🇱🇹 LT 03 - mqgg5630-cyber",
-        "🇱🇹 LT 04 - mqgg5630-cyber"
+        "🇱🇹 LT 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,9 +17,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 LT 01 - mqgg5630-cyber",
-        "🇱🇹 LT 02 - mqgg5630-cyber",
-        "🇱🇹 LT 03 - mqgg5630-cyber",
-        "🇱🇹 LT 04 - mqgg5630-cyber"
+        "🇱🇹 LT 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,14 +25,19 @@
     {
       "type": "vless",
       "tag": "🇱🇹 LT 01 - mqgg5630-cyber",
-      "server": "88.216.69.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "server": "88.216.69.253",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/fp=chrome",
         "headers": {
-          "Host": "vms.lifetime06.workers.dev"
+          "Host": "ccc.010304.xyz"
         }
       }
     },
@@ -56,44 +57,6 @@
         "path": "/fp",
         "headers": {
           "Host": "ccc.010304.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 LT 03 - mqgg5630-cyber",
-      "server": "88.216.69.253",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 LT 04 - mqgg5630-cyber",
-      "server": "88.216.69.253",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
         }
       }
     },

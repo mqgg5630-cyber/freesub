@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
   type: vless
+  server: forwarded.frnhk.xyz
+  port: 53002
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 3lswNoHV1RqK6yO--0ZWoYh1WqHkfhKQph3onxE_1So
+    short-id: fc04
+  servername: www.ens.psl.eu
+  client-fingerprint: chrome
+- name: 🇲🇾 MY 02 - mqgg5630-cyber
+  type: vless
   server: platform128.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -17,7 +31,7 @@ proxies:
     path: /platform128
     headers:
       Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 02 - mqgg5630-cyber
+- name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: trojan
   server: 47.250.84.25
   port: 443
@@ -25,19 +39,6 @@ proxies:
   udp: true
   sni: 47.250.84.25
   skip-cert-verify: true
-- name: 🇲🇾 MY 03 - mqgg5630-cyber
-  type: vless
-  server: 111.90.143.184
-  port: 61111
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
-    short-id: 1378f725da558887
-  servername: github.com
-  client-fingerprint: chrome
 - name: 🇲🇾 MY 04 - mqgg5630-cyber
   type: vless
   server: 216.173.67.59
@@ -52,6 +53,19 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇲🇾 MY 05 - mqgg5630-cyber
+  type: vless
+  server: 111.90.143.184
+  port: 61111
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
+    short-id: 1378f725da558887
+  servername: github.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +75,7 @@ proxy-groups:
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +85,6 @@ proxy-groups:
   - 🇲🇾 MY 02 - mqgg5630-cyber
   - 🇲🇾 MY 03 - mqgg5630-cyber
   - 🇲🇾 MY 04 - mqgg5630-cyber
+  - 🇲🇾 MY 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
