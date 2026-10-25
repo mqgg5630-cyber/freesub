@@ -8,21 +8,45 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber",
+        "🇸🇨 SC 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber",
+        "🇸🇨 SC 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
+      "server": "hk1.frnhk.xyz",
+      "server_port": 443,
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.uni-frankfurt.de",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gXOQOlynAB6Znbp902LRyX7eYSxTWrj7D2nRCB1gNmE",
+          "short_id": "6b7a8c9d"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 SC 02 - mqgg5630-cyber",
       "server": "45.128.76.242",
       "server_port": 443,
       "password": "humanity",

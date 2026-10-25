@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - mqgg5630-cyber
-  type: trojan
+  type: vless
   server: 88.216.69.253
   port: 443
-  password: humanity
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  sni: www.pleadcourt.org
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /assignment
+    path: /fp=chrome
     headers:
-      Host: www.pleadcourt.org
+      Host: ccc.010304.xyz
 - name: 🇱🇹 LT 02 - mqgg5630-cyber
   type: vless
   server: 88.216.69.253
@@ -32,19 +33,18 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 03 - mqgg5630-cyber
-  type: vless
+  type: trojan
   server: 88.216.69.253
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  password: humanity
   udp: true
-  tls: true
+  sni: www.pleadcourt.org
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /assignment
     headers:
-      Host: ccc.010304.xyz
+      Host: www.pleadcourt.org
 proxy-groups:
 - name: PROXIES
   type: select

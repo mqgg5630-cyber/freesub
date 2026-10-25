@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
+  type: vless
+  server: hk1.frnhk.xyz
+  port: 443
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: gXOQOlynAB6Znbp902LRyX7eYSxTWrj7D2nRCB1gNmE
+    short-id: 6b7a8c9d
+  servername: www.uni-frankfurt.de
+  client-fingerprint: chrome
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
   type: trojan
   server: 45.128.76.242
   port: 443
@@ -23,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
+  - 🇸🇨 SC 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
