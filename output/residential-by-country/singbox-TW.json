@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -35,8 +37,20 @@
         "type": "ws",
         "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
         "headers": {
-          "Host": "ty986gfazs.cainiaohub.xyz"
+          "Host": "60.248.219.78"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
+      "server": "gu232.izzzzzi.com",
+      "server_port": 20052,
+      "password": "e56e752c86a640cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "gu232.izzzzzi.com",
+        "insecure": true
       }
     },
     {

@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
-  type: trojan
-  server: 46.62.204.134
+  type: vless
+  server: 177.3.220.124
   port: 443
-  password: humanity
+  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
   udp: true
-  sni: www.pleadcourt.org
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4tMWqgTFL_uavocMXmgIWvB0rZvFQCOYQQIDZlJmaVQ
+    short-id: fe5a2e4bb97c5331
+  servername: gcach6lm.himoy.space
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
   server: hw3.divarkhaghazi.com
@@ -33,17 +34,18 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 199.232.239.239
+  port: 443
+  uuid: 8e6efaba-ba3d-49ec-98aa-c8f9baaf1d17
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056fp=chrome
     headers:
-      Host: 45.144.234.157
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
@@ -59,61 +61,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 185.119.81.7
-  port: 443
-  uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9BUlinkTIxNgD2Em4KShtEbXOjBKvz2mDwT1VqoeR1k
-    short-id: 80c4e0bda641d6c9
-  servername: ht689zw45oor.cloudydigital.net
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
-  type: vless
-  server: 177.3.214.156
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-    short-id: ''
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 09 - mqgg5630-cyber
-  type: vless
   server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -126,6 +73,19 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,9 +97,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - mqgg5630-cyber
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
-  - 🇫🇮 FI 07 - mqgg5630-cyber
-  - 🇫🇮 FI 08 - mqgg5630-cyber
-  - 🇫🇮 FI 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,8 +108,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - mqgg5630-cyber
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
-  - 🇫🇮 FI 07 - mqgg5630-cyber
-  - 🇫🇮 FI 08 - mqgg5630-cyber
-  - 🇫🇮 FI 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
