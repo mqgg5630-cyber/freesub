@@ -8,34 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - mqgg5630-cyber"
+        "🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - mqgg5630-cyber"
+        "🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇾 CY 01 - mqgg5630-cyber",
-      "server": "216.24.57.225",
-      "server_port": 2083,
-      "password": "8yup05o4lz0csoxb",
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber",
+      "server": "122.176.216.52",
+      "server_port": 443,
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
       "tls": {
         "enabled": true,
-        "server_name": "fin.netvia.ir",
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/YaujaGsyr",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
         "headers": {
-          "Host": "fin.netvia.ir"
+          "Host": "app-6ada5023.deploy.meerasolution.com"
         }
       }
     },

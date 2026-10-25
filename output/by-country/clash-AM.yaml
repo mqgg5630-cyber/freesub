@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - mqgg5630-cyber
-  type: trojan
-  server: 216.24.57.225
-  port: 2083
-  password: 8yup05o4lz0csoxb
+- name: 🇦🇲 AM 01 - mqgg5630-cyber
+  type: vless
+  server: 194.36.37.59
+  port: 10004
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   udp: true
-  sni: fin.netvia.ir
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /YaujaGsyr
+    path: /vpnjantit
     headers:
-      Host: fin.netvia.ir
+      Host: 194.36.37.59
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - mqgg5630-cyber
+  - 🇦🇲 AM 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - mqgg5630-cyber
+  - 🇦🇲 AM 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

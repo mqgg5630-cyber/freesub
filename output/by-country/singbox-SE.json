@@ -10,8 +10,7 @@
         "auto",
         "🇸🇪 SE 01 - mqgg5630-cyber",
         "🇸🇪 SE 02 - mqgg5630-cyber",
-        "🇸🇪 SE 03 - mqgg5630-cyber",
-        "🇸🇪 SE 04 - mqgg5630-cyber"
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,8 +19,7 @@
       "outbounds": [
         "🇸🇪 SE 01 - mqgg5630-cyber",
         "🇸🇪 SE 02 - mqgg5630-cyber",
-        "🇸🇪 SE 03 - mqgg5630-cyber",
-        "🇸🇪 SE 04 - mqgg5630-cyber"
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,14 +27,19 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "server": "se13-node.rumedia-cdn.com",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "st5ff8a.rumedia-cdn.com",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/cdn/v3/live",
         "headers": {
-          "Host": "5.178.109.174"
+          "Host": "st5ff8a.rumedia-cdn.com"
         }
       }
     },
@@ -57,41 +60,19 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
-      "server": "77.110.97.245",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "server": "191.44.114.179",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
+        "server_name": "st33614.rumedia-cdn.com",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chromefp=chrome",
+        "path": "/cdn/v3/live",
         "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
-      "server": "91.242.228.29",
-      "server_port": 443,
-      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "se1.mycloud1.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-          "short_id": "afee962d"
+          "Host": "st33614.rumedia-cdn.com"
         }
       }
     },
