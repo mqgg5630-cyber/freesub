@@ -5,19 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
+  type: trojan
+  server: 104.25.239.113
   port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  password: gHQP0D7D15
+  udp: true
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: marvdasht.phonecomparisonblog.org
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -30,19 +44,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
@@ -55,22 +56,90 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 177.3.214.156
+  server: 2.27.203.251
   port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
     short-id: ''
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
+  servername: edge-fi2.lovely.my
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
+  type: trojan
+  server: 104.25.239.113
+  port: 2053
+  password: gHQP0D7D15
+  udp: true
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: marvdasht.phonecomparisonblog.org
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 79f3da36-cf1b-47a8-d60a-2e124cbb1739
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 09 - mqgg5630-cyber
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 10 - mqgg5630-cyber
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 11 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -94,6 +163,11 @@ proxy-groups:
   - 🇫🇮 FI 04 - mqgg5630-cyber
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
+  - 🇫🇮 FI 07 - mqgg5630-cyber
+  - 🇫🇮 FI 08 - mqgg5630-cyber
+  - 🇫🇮 FI 09 - mqgg5630-cyber
+  - 🇫🇮 FI 10 - mqgg5630-cyber
+  - 🇫🇮 FI 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +179,10 @@ proxy-groups:
   - 🇫🇮 FI 04 - mqgg5630-cyber
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
+  - 🇫🇮 FI 07 - mqgg5630-cyber
+  - 🇫🇮 FI 08 - mqgg5630-cyber
+  - 🇫🇮 FI 09 - mqgg5630-cyber
+  - 🇫🇮 FI 10 - mqgg5630-cyber
+  - 🇫🇮 FI 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

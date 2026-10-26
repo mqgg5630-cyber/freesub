@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mqgg5630-cyber
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: trojan
+  server: kw119.zxmm.eu.org
+  port: 20031
+  password: 00a72bf349e6479b
   udp: true
-  tls: true
+  sni: kw119.zxmm.eu.org
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-    short-id: ''
-  servername: addons.mozilla.org
-  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
   type: vless
   server: 60.248.219.54
