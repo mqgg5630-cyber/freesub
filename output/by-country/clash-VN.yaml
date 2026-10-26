@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - mqgg5630-cyber
   type: vless
+  server: 163.61.182.194
+  port: 34646
+  uuid: 608af979-75ff-4480-b1fd-9c4a36962835
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA
+    short-id: 4710d669
+  servername: api.receptivity.io
+  client-fingerprint: chrome
+- name: 🇻🇳 VN 02 - mqgg5630-cyber
+  type: vless
   server: 154.21.203.106
   port: 51279
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -18,7 +31,15 @@ proxies:
     short-id: bb82c8
   servername: www.tesla.com
   client-fingerprint: random
-- name: 🇻🇳 VN 02 - mqgg5630-cyber
+- name: 🇻🇳 VN 03 - mqgg5630-cyber
+  type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇻🇳 VN 04 - mqgg5630-cyber
   type: vless
   server: funagfrdfs.alixxplay.com
   port: 55688
@@ -32,14 +53,6 @@ proxies:
     short-id: a46bb5972cf50671
   servername: bilibili-vn.biliimg.com
   client-fingerprint: chrome
-- name: 🇻🇳 VN 03 - mqgg5630-cyber
-  type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +61,7 @@ proxy-groups:
   - 🇻🇳 VN 01 - mqgg5630-cyber
   - 🇻🇳 VN 02 - mqgg5630-cyber
   - 🇻🇳 VN 03 - mqgg5630-cyber
+  - 🇻🇳 VN 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +70,6 @@ proxy-groups:
   - 🇻🇳 VN 01 - mqgg5630-cyber
   - 🇻🇳 VN 02 - mqgg5630-cyber
   - 🇻🇳 VN 03 - mqgg5630-cyber
+  - 🇻🇳 VN 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

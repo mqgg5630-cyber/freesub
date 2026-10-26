@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - mqgg5630-cyber"
+        "🇺🇦 UA 01 - mqgg5630-cyber",
+        "🇺🇦 UA 02 - mqgg5630-cyber",
+        "🇺🇦 UA 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - mqgg5630-cyber"
+        "🇺🇦 UA 01 - mqgg5630-cyber",
+        "🇺🇦 UA 02 - mqgg5630-cyber",
+        "🇺🇦 UA 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,6 +31,33 @@
       "server_port": 49917,
       "method": "chacha20-ietf-poly1305",
       "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇦 UA 02 - mqgg5630-cyber",
+      "server": "staging.lastilhame.monster",
+      "server_port": 49917,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 UA 03 - mqgg5630-cyber",
+      "server": "213.111.148.137",
+      "server_port": 443,
+      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
+      "tls": {
+        "enabled": true,
+        "server_name": "proxy-1cu.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=android",
+        "headers": {
+          "Host": "proxy-1cu.pages.dev"
+        }
+      }
     },
     {
       "type": "direct",

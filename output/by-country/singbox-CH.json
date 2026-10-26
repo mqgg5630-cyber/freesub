@@ -10,7 +10,9 @@
         "auto",
         "🇨🇭 CH 01 - mqgg5630-cyber",
         "🇨🇭 CH 02 - mqgg5630-cyber",
-        "🇨🇭 CH 03 - mqgg5630-cyber"
+        "🇨🇭 CH 03 - mqgg5630-cyber",
+        "🇨🇭 CH 04 - mqgg5630-cyber",
+        "🇨🇭 CH 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,14 +21,35 @@
       "outbounds": [
         "🇨🇭 CH 01 - mqgg5630-cyber",
         "🇨🇭 CH 02 - mqgg5630-cyber",
-        "🇨🇭 CH 03 - mqgg5630-cyber"
+        "🇨🇭 CH 03 - mqgg5630-cyber",
+        "🇨🇭 CH 04 - mqgg5630-cyber",
+        "🇨🇭 CH 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 CH 01 - mqgg5630-cyber",
+      "server": "128.241.25.3",
+      "server_port": 30021,
+      "uuid": "afec813e-a5c7-432d-be48-2803c30eea4e",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -34,7 +57,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH 02 - mqgg5630-cyber",
+      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -44,7 +67,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -55,11 +78,30 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 CH 03 - mqgg5630-cyber",
+      "tag": "🇨🇭 CH 04 - mqgg5630-cyber",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH 05 - mqgg5630-cyber",
+      "server": "185.18.250.245",
+      "server_port": 443,
+      "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
+      "tls": {
+        "enabled": true,
+        "server_name": "edu.ruangguru.com.r3xxe.eu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nl-tw",
+        "headers": {
+          "Host": "edu.ruangguru.com.r3xxe.eu.cc"
+        }
+      }
     },
     {
       "type": "direct",
