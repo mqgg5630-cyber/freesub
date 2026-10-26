@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
+- name: 🇲🇾 MY 02 - mqgg5630-cyber
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: 47.250.84.25
+  skip-cert-verify: true
+- name: 🇲🇾 MY 03 - mqgg5630-cyber
   type: vless
   server: 216.173.67.59
   port: 443
@@ -18,22 +34,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: moltbot.doctoroyy.net
-  skip-cert-verify: true
-- name: 🇲🇾 MY 03 - mqgg5630-cyber
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: 47.250.84.25
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

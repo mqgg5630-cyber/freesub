@@ -8,14 +8,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber",
+        "🇸🇨 SC 02 - mqgg5630-cyber",
+        "🇸🇨 SC 03 - mqgg5630-cyber",
+        "🇸🇨 SC 04 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber",
+        "🇸🇨 SC 02 - mqgg5630-cyber",
+        "🇸🇨 SC 03 - mqgg5630-cyber",
+        "🇸🇨 SC 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,7 +29,61 @@
     {
       "type": "trojan",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "154.81.141.42",
+      "server": "45.128.76.242",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇨 SC 02 - mqgg5630-cyber",
+      "server": "156.239.224.107",
+      "server_port": 57278,
+      "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 SC 03 - mqgg5630-cyber",
+      "server": "45.128.76.242",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 SC 04 - mqgg5630-cyber",
+      "server": "45.128.76.242",
       "server_port": 443,
       "password": "humanity",
       "tls": {

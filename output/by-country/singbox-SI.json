@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇮 SI 01 - mqgg5630-cyber"
+        "🇸🇮 SI 01 - mqgg5630-cyber",
+        "🇸🇮 SI 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇮 SI 01 - mqgg5630-cyber"
+        "🇸🇮 SI 01 - mqgg5630-cyber",
+        "🇸🇮 SI 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,28 @@
     {
       "type": "vless",
       "tag": "🇸🇮 SI 01 - mqgg5630-cyber",
+      "server": "92.42.201.102",
+      "server_port": 443,
+      "uuid": "d0c8aa8d-a535-432a-b521-21f0e561f643",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-slo01.rkitman.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
+          "short_id": "88d9dc52ef39c8bd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇮 SI 02 - mqgg5630-cyber",
       "server": "92.42.201.107",
       "server_port": 443,
       "uuid": "d0c8aa8d-a535-432a-b521-21f0e561f643",
