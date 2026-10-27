@@ -32,6 +32,16 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.148.73.173
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
+  type: vless
+  server: loudarch.net
+  port: 443
+  uuid: ef328563-cda1-4530-9b0a-988cc5a74d78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: loudarch.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
