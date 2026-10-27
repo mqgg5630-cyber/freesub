@@ -6,32 +6,31 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - mqgg5630-cyber
   type: vless
-  server: 138.124.180.137
+  server: 195.123.213.28
   port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - mqgg5630-cyber
   type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  server: 45.38.143.210
+  port: 30584
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+    short-id: 67ece882d65d0f1a
+  servername: m.vk.com
+  client-fingerprint: chrome
 - name: 🇱🇻 LV 03 - mqgg5630-cyber
   type: vless
   server: 138.124.180.137
@@ -45,7 +44,35 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇱🇻 LV 04 - mqgg5630-cyber
+  type: vless
+  server: 45.43.79.92
+  port: 443
+  uuid: 042b12d8-bac4-4b3a-b661-79e333f08e4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
+    short-id: af4ca5d16438c938
+  servername: vikt659.isgood.host
+  client-fingerprint: firefox
+- name: 🇱🇻 LV 05 - mqgg5630-cyber
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +81,8 @@ proxy-groups:
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
   - 🇱🇻 LV 03 - mqgg5630-cyber
+  - 🇱🇻 LV 04 - mqgg5630-cyber
+  - 🇱🇻 LV 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +91,7 @@ proxy-groups:
   - 🇱🇻 LV 01 - mqgg5630-cyber
   - 🇱🇻 LV 02 - mqgg5630-cyber
   - 🇱🇻 LV 03 - mqgg5630-cyber
+  - 🇱🇻 LV 04 - mqgg5630-cyber
+  - 🇱🇻 LV 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

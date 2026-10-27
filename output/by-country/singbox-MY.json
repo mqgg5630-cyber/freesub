@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇲🇾 MY 01 - mqgg5630-cyber",
-        "🇲🇾 MY 02 - mqgg5630-cyber"
+        "🇲🇾 MY 02 - mqgg5630-cyber",
+        "🇲🇾 MY 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,14 +18,49 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇾 MY 01 - mqgg5630-cyber",
-        "🇲🇾 MY 02 - mqgg5630-cyber"
+        "🇲🇾 MY 02 - mqgg5630-cyber",
+        "🇲🇾 MY 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇲🇾 MY 01 - mqgg5630-cyber",
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "tls": {
+        "enabled": true,
+        "server_name": "47.250.84.25",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇾 MY 02 - mqgg5630-cyber",
+      "server": "my.wawojk.dpdns.org",
+      "server_port": 8443,
+      "uuid": "264bee07-e004-41c7-812f-aaf2daaad2c9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.asus.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "akVbcyv-ypq-YT4-bsi_ts85pkDwhAIapn5bCb_hj28",
+          "short_id": "85f609aa0f0bead8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇾 MY 03 - mqgg5630-cyber",
       "server": "216.173.67.59",
       "server_port": 443,
       "uuid": "d342d11e-d224-4463-b982-532309285094",
@@ -39,18 +75,6 @@
         "headers": {
           "Host": "ccc.010304.xyz"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇲🇾 MY 02 - mqgg5630-cyber",
-      "server": "47.250.84.25",
-      "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "47.250.84.25",
-        "insecure": true
       }
     },
     {

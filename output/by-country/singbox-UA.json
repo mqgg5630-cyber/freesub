@@ -23,12 +23,23 @@
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇦 UA 01 - mqgg5630-cyber",
-      "server": "104.253.216.227",
-      "server_port": 49917,
-      "method": "chacha20-ietf-poly1305",
-      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+      "server": "216.24.57.225",
+      "server_port": 2083,
+      "uuid": "3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6",
+      "tls": {
+        "enabled": true,
+        "server_name": "pol.netvia.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wss",
+        "headers": {
+          "Host": "pol.netvia.ir"
+        }
+      }
     },
     {
       "type": "shadowsocks",
