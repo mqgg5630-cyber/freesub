@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇺🇦 UA 01 - mqgg5630-cyber",
-        "🇺🇦 UA 02 - mqgg5630-cyber"
+        "🇺🇦 UA 02 - mqgg5630-cyber",
+        "🇺🇦 UA 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,14 +18,23 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇦 UA 01 - mqgg5630-cyber",
-        "🇺🇦 UA 02 - mqgg5630-cyber"
+        "🇺🇦 UA 02 - mqgg5630-cyber",
+        "🇺🇦 UA 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇺🇦 UA 01 - mqgg5630-cyber",
+      "server": "104.253.216.227",
+      "server_port": 49917,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 UA 02 - mqgg5630-cyber",
       "server": "216.24.57.225",
       "server_port": 2083,
       "uuid": "3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6",
@@ -43,7 +53,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇦 UA 02 - mqgg5630-cyber",
+      "tag": "🇺🇦 UA 03 - mqgg5630-cyber",
       "server": "104.253.216.227",
       "server_port": 49917,
       "method": "chacha20-ietf-poly1305",

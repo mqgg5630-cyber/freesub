@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 AZ 01 - mqgg5630-cyber"
+        "🇦🇿 AZ 01 - mqgg5630-cyber",
+        "🇦🇿 AZ 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 AZ 01 - mqgg5630-cyber"
+        "🇦🇿 AZ 01 - mqgg5630-cyber",
+        "🇦🇿 AZ 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +25,27 @@
     {
       "type": "vless",
       "tag": "🇦🇿 AZ 01 - mqgg5630-cyber",
+      "server": "94.20.141.53",
+      "server_port": 443,
+      "uuid": "f439e4fe-139b-4882-ad8b-a16176d09c88",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu63.cdn77.icu",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+          "short_id": "1ed136481e0ede74"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇿 AZ 02 - mqgg5630-cyber",
       "server": "94.20.141.53",
       "server_port": 443,
       "uuid": "f439e4fe-139b-4882-ad8b-a16176d09c88",

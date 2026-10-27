@@ -1,0 +1,40 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇦🇱 AL 01 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇦🇱 AL 01 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇱 AL 01 - mqgg5630-cyber",
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1348,
+      "method": "chacha20-ietf-poly1305",
+      "password": "LzEeLj2OP0DQmpPDtVTazdGC0cHcT0Kn"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
