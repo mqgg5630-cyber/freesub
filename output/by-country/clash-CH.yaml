@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
   type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 02 - mqgg5630-cyber
+  type: vless
   server: 45.90.59.15
   port: 443
   uuid: 3950b45e-740d-4dca-ac95-505ec8534592
@@ -18,14 +32,14 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 02 - mqgg5630-cyber
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 03 - mqgg5630-cyber
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -37,14 +51,7 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 CH 04 - mqgg5630-cyber
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 05 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
@@ -58,6 +65,81 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇨🇭 CH 06 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇨🇭 CH 07 - mqgg5630-cyber
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇨🇭 CH 08 - mqgg5630-cyber
+  type: vless
+  server: 79.137.199.52
+  port: 21
+  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇨🇭 CH 09 - mqgg5630-cyber
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 10 - mqgg5630-cyber
+  type: vless
+  server: 37.120.222.70
+  port: 8082
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇨🇭 CH 11 - mqgg5630-cyber
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +150,12 @@ proxy-groups:
   - 🇨🇭 CH 03 - mqgg5630-cyber
   - 🇨🇭 CH 04 - mqgg5630-cyber
   - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
+  - 🇨🇭 CH 07 - mqgg5630-cyber
+  - 🇨🇭 CH 08 - mqgg5630-cyber
+  - 🇨🇭 CH 09 - mqgg5630-cyber
+  - 🇨🇭 CH 10 - mqgg5630-cyber
+  - 🇨🇭 CH 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +166,11 @@ proxy-groups:
   - 🇨🇭 CH 03 - mqgg5630-cyber
   - 🇨🇭 CH 04 - mqgg5630-cyber
   - 🇨🇭 CH 05 - mqgg5630-cyber
+  - 🇨🇭 CH 06 - mqgg5630-cyber
+  - 🇨🇭 CH 07 - mqgg5630-cyber
+  - 🇨🇭 CH 08 - mqgg5630-cyber
+  - 🇨🇭 CH 09 - mqgg5630-cyber
+  - 🇨🇭 CH 10 - mqgg5630-cyber
+  - 🇨🇭 CH 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

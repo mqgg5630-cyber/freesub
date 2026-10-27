@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇮 SI 01 - mqgg5630-cyber
   type: vless
-  server: 92.42.201.102
-  port: 443
-  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-  servername: node-slo01.rkitman.ru
-  client-fingerprint: firefox
-- name: 🇸🇮 SI 02 - mqgg5630-cyber
-  type: vless
   server: 92.42.201.107
   port: 443
   uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
@@ -32,6 +18,34 @@ proxies:
     short-id: 88d9dc52ef39c8bd
   servername: node-slo02.rkitman.ru
   client-fingerprint: firefox
+- name: 🇸🇮 SI 02 - mqgg5630-cyber
+  type: vless
+  server: 92.42.201.102
+  port: 443
+  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  servername: node-slo01.rkitman.ru
+  client-fingerprint: firefox
+- name: 🇸🇮 SI 03 - mqgg5630-cyber
+  type: vless
+  server: 92.42.201.102
+  port: 443
+  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  servername: node-slo01.rkitman.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇸🇮 SI 01 - mqgg5630-cyber
   - 🇸🇮 SI 02 - mqgg5630-cyber
+  - 🇸🇮 SI 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇸🇮 SI 01 - mqgg5630-cyber
   - 🇸🇮 SI 02 - mqgg5630-cyber
+  - 🇸🇮 SI 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 94.228.167.12
+  port: 443
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  servername: washingphonicseatable.solsticedigest.me
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 196.196.204.174
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
+    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
+    short-id: 2892e611785bafd1
+  servername: 263651t.fi3.h1clayd.click
   client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: trojan
   server: 104.25.239.113
   port: 2053
@@ -30,72 +44,34 @@ proxies:
     path: /
     headers:
       Host: marvdasht.phonecomparisonblog.org
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 31.76.89.226
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+    short-id: ''
+  servername: ai.eosshop.net
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
   server: 65.109.212.193
   port: 465
@@ -109,7 +85,21 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 09 - mqgg5630-cyber
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: trojan
   server: 104.25.239.113
   port: 2053
@@ -122,48 +112,35 @@ proxies:
     path: /
     headers:
       Host: marvdasht.phonecomparisonblog.org
+- name: 🇫🇮 FI 09 - mqgg5630-cyber
+  type: vless
+  server: 94.228.167.12
+  port: 443
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  servername: washingphonicseatable.solsticedigest.me
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 10 - mqgg5630-cyber
   type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 94.228.167.12
+  port: 443
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  servername: washingphonicseatable.solsticedigest.me
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 11 - mqgg5630-cyber
-  type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 12 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 13 - mqgg5630-cyber
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -176,6 +153,33 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 12 - mqgg5630-cyber
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 13 - mqgg5630-cyber
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select

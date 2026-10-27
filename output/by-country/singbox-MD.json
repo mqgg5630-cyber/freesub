@@ -8,29 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - mqgg5630-cyber"
+        "🇲🇩 MD 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇦🇲 AM 01 - mqgg5630-cyber",
-      "server": "194.36.37.59",
-      "server_port": 10004,
-      "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
+      "tag": "🇲🇩 MD 01 - mqgg5630-cyber",
+      "server": "185.153.198.86",
+      "server_port": 443,
+      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "vlso5.1d.mom",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/vpnjantit",
+        "path": "/socks5=888:888@hkip.1d.mom:1080fp=chrome",
         "headers": {
-          "Host": "194.36.37.59"
+          "Host": "vlso5.1d.mom"
         }
       }
     },
