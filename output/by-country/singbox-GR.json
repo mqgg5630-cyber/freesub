@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 GR 01 - mqgg5630-cyber"
+        "🇬🇷 GR 01 - mqgg5630-cyber",
+        "🇬🇷 GR 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 GR 01 - mqgg5630-cyber"
+        "🇬🇷 GR 01 - mqgg5630-cyber",
+        "🇬🇷 GR 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,6 +29,28 @@
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇷 GR 02 - mqgg5630-cyber",
+      "server": "85.90.197.220",
+      "server_port": 443,
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
+        }
+      }
     },
     {
       "type": "direct",

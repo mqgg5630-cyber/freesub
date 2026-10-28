@@ -11,17 +11,33 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: x2A6AsyZ-rAllz0wbKHzWA
   udp: true
+- name: 🇬🇷 GR 02 - mqgg5630-cyber
+  type: vless
+  server: 85.90.197.220
+  port: 443
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇬🇷 GR 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
