@@ -25,13 +25,6 @@ proxies:
     path: /wss
     headers:
       Host: pol.netvia.ir
-- name: 🇺🇦 UA 03 - mqgg5630-cyber
-  type: ss
-  server: 104.253.216.227
-  port: 49917
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - mqgg5630-cyber
   - 🇺🇦 UA 02 - mqgg5630-cyber
-  - 🇺🇦 UA 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - mqgg5630-cyber
   - 🇺🇦 UA 02 - mqgg5630-cyber
-  - 🇺🇦 UA 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

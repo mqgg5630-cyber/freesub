@@ -19,18 +19,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - mqgg5630-cyber
-  type: trojan
-  server: 85.31.102.163
+  type: vless
+  server: 45.43.79.92
   port: 443
-  password: humanity
+  uuid: 042b12d8-bac4-4b3a-b661-79e333f08e4e
   udp: true
-  sni: www.calmlunch.com
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
+    short-id: af4ca5d16438c938
+  servername: vikt659.isgood.host
+  client-fingerprint: chrome
 - name: 🇱🇻 LV 03 - mqgg5630-cyber
   type: vless
   server: 138.124.180.137
@@ -61,20 +62,6 @@ proxies:
   client-fingerprint: random
 - name: 🇱🇻 LV 05 - mqgg5630-cyber
   type: vless
-  server: 45.43.79.92
-  port: 443
-  uuid: 042b12d8-bac4-4b3a-b661-79e333f08e4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
-    short-id: af4ca5d16438c938
-  servername: vikt659.isgood.host
-  client-fingerprint: chrome
-- name: 🇱🇻 LV 06 - mqgg5630-cyber
-  type: vless
   server: 138.124.180.137
   port: 443
   uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
@@ -87,7 +74,7 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 LV 07 - mqgg5630-cyber
+- name: 🇱🇻 LV 06 - mqgg5630-cyber
   type: vless
   server: 138.124.180.137
   port: 443
@@ -112,7 +99,6 @@ proxy-groups:
   - 🇱🇻 LV 04 - mqgg5630-cyber
   - 🇱🇻 LV 05 - mqgg5630-cyber
   - 🇱🇻 LV 06 - mqgg5630-cyber
-  - 🇱🇻 LV 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,6 +110,5 @@ proxy-groups:
   - 🇱🇻 LV 04 - mqgg5630-cyber
   - 🇱🇻 LV 05 - mqgg5630-cyber
   - 🇱🇻 LV 06 - mqgg5630-cyber
-  - 🇱🇻 LV 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
