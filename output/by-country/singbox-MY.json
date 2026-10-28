@@ -47,19 +47,22 @@
     {
       "type": "vless",
       "tag": "🇲🇾 MY 02 - mqgg5630-cyber",
-      "server": "216.173.67.59",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "server": "my.wawojk.dpdns.org",
+      "server_port": 8443,
+      "uuid": "264bee07-e004-41c7-812f-aaf2daaad2c9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "ccc.010304.xyz"
+        "server_name": "www.asus.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "akVbcyv-ypq-YT4-bsi_ts85pkDwhAIapn5bCb_hj28",
+          "short_id": "85f609aa0f0bead8"
         }
       }
     },

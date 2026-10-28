@@ -4,25 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - mqgg5630-cyber
-  type: trojan
-  server: 64.176.7.205
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: 🇮🇩 ID 01 - mqgg5630-cyber
+  type: vless
+  server: in001.zestapp778.com
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
-  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
+  tls: true
   skip-cert-verify: true
+  servername: in001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - mqgg5630-cyber
+  - 🇮🇩 ID 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - mqgg5630-cyber
+  - 🇮🇩 ID 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

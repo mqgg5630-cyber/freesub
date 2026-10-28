@@ -5,29 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  type: ss
-  server: 195.133.5.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  server: gb.puflino.com
+  port: 443
+  uuid: c7270753-bd18-4696-956d-57dbde1183fe
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: user-6a917f32.noooo.win
+  reality-opts:
+    public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
+    short-id: ee169e93d3c277a1
+  servername: edge-uk2.mystatic-cdn.ru
+  client-fingerprint: edge
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: ss
-  server: 91.206.92.238
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  type: vless
+  server: 45.9.12.110
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: myIjvlXZS0rm1eg4q2w5WsQBuj80i2rBA0HpRGCUg1w
+    short-id: 86d1efde
+  servername: ru.letsconnectpoint.com
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
   server: 194.87.143.165
@@ -43,13 +61,34 @@ proxies:
     headers:
       Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: ss
-  server: alb.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  type: vless
+  server: gb.puflino.com
+  port: 443
+  uuid: c7270753-bd18-4696-956d-57dbde1183fe
   udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
+    short-id: ee169e93d3c277a1
+  servername: edge-uk2.mystatic-cdn.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: xsru2.freeddns.org
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   type: vless
   server: 147.45.46.157
   port: 8443
@@ -63,14 +102,49 @@ proxies:
     short-id: ''
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: ss
+  server: alb.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  type: vless
+  server: 194.55.239.89
+  port: 443
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: broadcast.liveflow.space
+  network: ws
+  ws-opts:
+    path: /live.stream.v1.Broadcast/
+    headers:
+      Host: broadcast.liveflow.space
+- name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  type: vless
+  server: 45.9.12.110
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: myIjvlXZS0rm1eg4q2w5WsQBuj80i2rBA0HpRGCUg1w
+    short-id: 86d1efde
+  servername: ru.letsconnectpoint.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   type: vless
   server: 193.160.141.81
   port: 8443
@@ -97,6 +171,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +188,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
