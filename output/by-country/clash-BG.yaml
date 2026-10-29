@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
+  server: p11real3.greewebservices.ir
+  port: 2202
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4fc679ba12
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇧🇬 BG 02 - mqgg5630-cyber
+  type: vless
   server: 93.152.223.244
   port: 443
   uuid: 706bce83-91db-4260-b175-cba29145cd56
@@ -24,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - mqgg5630-cyber
+  - 🇧🇬 BG 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - mqgg5630-cyber
+  - 🇧🇬 BG 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
