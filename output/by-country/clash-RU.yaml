@@ -5,46 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
-  type: vless
-  server: 185.147.27.164
-  port: 8443
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: user-6a8d949a.noooo.win
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: ss
-  server: 46.17.41.61
+  server: 195.58.49.167
   port: 18443
   cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
-  server: 147.45.175.81
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: vless
-  server: 185.147.27.183
+  server: 147.45.46.157
   port: 8443
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: ekb.eg
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   type: vless
   server: 193.160.141.81
@@ -61,9 +55,9 @@ proxies:
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   type: vless
-  server: 193.160.140.168
+  server: 193.160.141.81
   port: 8443
-  uuid: 5ce803ae-a81c-4276-b1f8-ee3b845c5c4b
+  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
   udp: true
   tls: true
   skip-cert-verify: true
@@ -72,12 +66,12 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   type: vless
-  server: 193.160.140.159
+  server: 193.160.140.168
   port: 8443
-  uuid: d4353076-3ec7-47dc-88b0-f21eb59fbfb8
+  uuid: 5ce803ae-a81c-4276-b1f8-ee3b845c5c4b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -102,6 +96,13 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: ss
+  server: 159.194.251.76
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
   type: vless
   server: 193.160.140.159
   port: 8443
@@ -115,32 +116,11 @@ proxies:
     short-id: ''
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
-  type: ss
-  server: 91.206.92.238
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
   type: vless
-  server: 147.45.46.157
+  server: 193.160.140.159
   port: 8443
-  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
-  type: vless
-  server: 193.160.141.138
-  port: 8443
-  uuid: b4a1200a-9765-4649-94f2-c26e0a37dffb
+  uuid: d4353076-3ec7-47dc-88b0-f21eb59fbfb8
   udp: true
   tls: true
   skip-cert-verify: true
@@ -150,6 +130,20 @@ proxies:
     short-id: ''
   servername: apple.com
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  type: vless
+  server: 193.160.141.81
+  port: 8443
+  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  servername: apple.com
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
   type: vless
   server: 193.160.141.138
@@ -166,9 +160,9 @@ proxies:
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
   type: vless
-  server: 193.160.141.81
+  server: 193.160.141.138
   port: 8443
-  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
+  uuid: b4a1200a-9765-4649-94f2-c26e0a37dffb
   udp: true
   tls: true
   skip-cert-verify: true
@@ -177,21 +171,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
   servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
-  type: vless
-  server: 193.160.141.81
-  port: 8443
-  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  servername: apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -211,7 +191,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -231,6 +210,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -13,6 +13,20 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: true
 - name: 🇧🇷 BR 02 - mqgg5630-cyber
+  type: vless
+  server: 177.7.51.29
+  port: 8443
+  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
+    short-id: 14fbf992
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 03 - mqgg5630-cyber
   type: trojan
   server: 216.238.104.154
   port: 443
@@ -20,15 +34,34 @@ proxies:
   udp: true
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: true
-- name: 🇧🇷 BR 03 - mqgg5630-cyber
+- name: 🇧🇷 BR 04 - mqgg5630-cyber
   type: vless
-  server: br001.zestapp778.com
-  port: 15040
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  server: 177.7.51.29
+  port: 8443
+  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: br.zestapp778.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
+    short-id: 14fbf992
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 05 - mqgg5630-cyber
+  type: vless
+  server: 177.7.51.29
+  port: 8443
+  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
+    short-id: 14fbf992
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +70,8 @@ proxy-groups:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
   - 🇧🇷 BR 03 - mqgg5630-cyber
+  - 🇧🇷 BR 04 - mqgg5630-cyber
+  - 🇧🇷 BR 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +80,7 @@ proxy-groups:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
   - 🇧🇷 BR 03 - mqgg5630-cyber
+  - 🇧🇷 BR 04 - mqgg5630-cyber
+  - 🇧🇷 BR 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

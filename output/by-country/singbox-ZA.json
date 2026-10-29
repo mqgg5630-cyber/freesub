@@ -10,7 +10,8 @@
         "auto",
         "🇿🇦 ZA 01 - mqgg5630-cyber",
         "🇿🇦 ZA 02 - mqgg5630-cyber",
-        "🇿🇦 ZA 03 - mqgg5630-cyber"
+        "🇿🇦 ZA 03 - mqgg5630-cyber",
+        "🇿🇦 ZA 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +20,8 @@
       "outbounds": [
         "🇿🇦 ZA 01 - mqgg5630-cyber",
         "🇿🇦 ZA 02 - mqgg5630-cyber",
-        "🇿🇦 ZA 03 - mqgg5630-cyber"
+        "🇿🇦 ZA 03 - mqgg5630-cyber",
+        "🇿🇦 ZA 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -27,6 +29,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 ZA 01 - mqgg5630-cyber",
+      "server": "20.164.216.117",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qJo9gTes7nI3Alxi"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 ZA 02 - mqgg5630-cyber",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
@@ -34,19 +44,30 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 ZA 02 - mqgg5630-cyber",
+      "tag": "🇿🇦 ZA 03 - mqgg5630-cyber",
       "server": "102.37.156.224",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 ZA 03 - mqgg5630-cyber",
-      "server": "20.164.216.117",
+      "type": "vless",
+      "tag": "🇿🇦 ZA 04 - mqgg5630-cyber",
+      "server": "139.84.242.103",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qJo9gTes7nI3Alxi"
+      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "vlso5.1d.mom",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5=888:888@hkip.1d.mom:1080fp=chrome",
+        "headers": {
+          "Host": "vlso5.1d.mom"
+        }
+      }
     },
     {
       "type": "direct",
