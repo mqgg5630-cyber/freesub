@@ -14,17 +14,16 @@ proxies:
   skip-cert-verify: true
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 02 - mqgg5630-cyber
-  type: vless
+  type: trojan
   server: ph001.zestapp778.com
-  port: 15656
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  port: 46293
+  password: 5t6i121em5lkmsmk
   udp: true
-  tls: true
+  sni: ph001.zestapp778.com
   skip-cert-verify: true
-  servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 03 - mqgg5630-cyber
   type: vless
-  server: ph001.zestapp778.com
+  server: 130.94.53.13
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -41,6 +40,24 @@ proxies:
   skip-cert-verify: true
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 05 - mqgg5630-cyber
+  type: vless
+  server: 130.94.53.13
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 06 - mqgg5630-cyber
+  type: vless
+  server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 07 - mqgg5630-cyber
   type: trojan
   server: ph001.zestapp778.com
   port: 46293
@@ -48,6 +65,33 @@ proxies:
   udp: true
   sni: ph001.zestapp778.com
   skip-cert-verify: true
+- name: 🇵🇭 PH 08 - mqgg5630-cyber
+  type: vless
+  server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 09 - mqgg5630-cyber
+  type: vless
+  server: 130.94.53.13
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 10 - mqgg5630-cyber
+  type: vless
+  server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +102,11 @@ proxy-groups:
   - 🇵🇭 PH 03 - mqgg5630-cyber
   - 🇵🇭 PH 04 - mqgg5630-cyber
   - 🇵🇭 PH 05 - mqgg5630-cyber
+  - 🇵🇭 PH 06 - mqgg5630-cyber
+  - 🇵🇭 PH 07 - mqgg5630-cyber
+  - 🇵🇭 PH 08 - mqgg5630-cyber
+  - 🇵🇭 PH 09 - mqgg5630-cyber
+  - 🇵🇭 PH 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +117,10 @@ proxy-groups:
   - 🇵🇭 PH 03 - mqgg5630-cyber
   - 🇵🇭 PH 04 - mqgg5630-cyber
   - 🇵🇭 PH 05 - mqgg5630-cyber
+  - 🇵🇭 PH 06 - mqgg5630-cyber
+  - 🇵🇭 PH 07 - mqgg5630-cyber
+  - 🇵🇭 PH 08 - mqgg5630-cyber
+  - 🇵🇭 PH 09 - mqgg5630-cyber
+  - 🇵🇭 PH 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

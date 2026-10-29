@@ -10,9 +10,17 @@ proxies:
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
+  sni: 64.176.7.205
   skip-cert-verify: true
 - name: 🇨🇱 CL 02 - mqgg5630-cyber
+  type: trojan
+  server: 64.176.7.205
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
+  skip-cert-verify: true
+- name: 🇨🇱 CL 03 - mqgg5630-cyber
   type: trojan
   server: 64.176.7.205
   port: 443
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇨🇱 CL 01 - mqgg5630-cyber
   - 🇨🇱 CL 02 - mqgg5630-cyber
+  - 🇨🇱 CL 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇨🇱 CL 01 - mqgg5630-cyber
   - 🇨🇱 CL 02 - mqgg5630-cyber
+  - 🇨🇱 CL 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
