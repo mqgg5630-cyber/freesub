@@ -5,17 +5,9 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - mqgg5630-cyber
-  type: trojan
-  server: kr002.zestapp778.com
-  port: 48851
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: kr002.zestapp778.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
-  port: 18967
+  port: 13672
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -26,24 +18,49 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
+  type: trojan
+  server: kr002.zestapp778.com
+  port: 48851
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: kr002.zestapp778.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
   type: vless
-  server: 104.18.45.184
+  server: sg2-xr.zgrelay.com
   port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  uuid: e221699d-e705-4664-9162-a75a82aa3997
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+  servername: sg2-xr.zgrelay.com
   network: ws
   ws-opts:
-    path: /ranking/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    path: /700gvl-kr3
     headers:
-      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
-  port: 18967
+  port: 13672
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   tls: true
@@ -54,33 +71,6 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
-  type: vless
-  server: 172.64.159.157
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -107,259 +97,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  type: vless
-  server: 172.64.155.111
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 12 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 13 - mqgg5630-cyber
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 14 - mqgg5630-cyber
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 15 - mqgg5630-cyber
-  type: vless
-  server: 172.64.155.111
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 16 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 17 - mqgg5630-cyber
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 18 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 19 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 20 - mqgg5630-cyber
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: e221699d-e705-4664-9162-a75a82aa3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 21 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 22 - mqgg5630-cyber
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 23 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇰🇷 韩国 (South Korea) 24 - mqgg5630-cyber
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 25 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 26 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 27 - mqgg5630-cyber
-  type: vless
-  server: 104.18.45.184
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /ranking/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 28 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 18967
@@ -373,7 +112,41 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 29 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 12 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 13 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -386,32 +159,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 30 - mqgg5630-cyber
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 31 - mqgg5630-cyber
-  type: vless
-  server: 104.18.37.0
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 32 - mqgg5630-cyber
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 14 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -425,21 +174,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 33 - mqgg5630-cyber
-  type: vless
-  server: 172.64.159.157
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 34 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 15 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 13672
@@ -453,28 +188,20 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 35 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 16 - mqgg5630-cyber
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 36 - mqgg5630-cyber
-  type: trojan
-  server: 158.247.227.152
-  port: 48851
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: kr002.zestapp778.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 37 - mqgg5630-cyber
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 17 - mqgg5630-cyber
   type: vmess
   server: nickgus.cc.cd
   port: 443
@@ -490,21 +217,7 @@ proxies:
     path: /photos
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 38 - mqgg5630-cyber
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 39 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 18 - mqgg5630-cyber
   type: vless
   server: 3.39.4.109
   port: 18967
@@ -518,133 +231,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 40 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 41 - mqgg5630-cyber
-  type: trojan
-  server: kr002.zestapp778.com
-  port: 48851
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: kr002.zestapp778.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 42 - mqgg5630-cyber
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: e221699d-e705-4664-9162-a75a82aa3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 43 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇰🇷 韩国 (South Korea) 44 - mqgg5630-cyber
-  type: vless
-  server: 104.18.37.0
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 45 - mqgg5630-cyber
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 46 - mqgg5630-cyber
-  type: vless
-  server: 172.64.158.47
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 47 - mqgg5630-cyber
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 48 - mqgg5630-cyber
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 49 - mqgg5630-cyber
-  type: vless
-  server: 172.64.158.47
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 50 - mqgg5630-cyber
+- name: 🇰🇷 韩国 (South Korea) 19 - mqgg5630-cyber
   type: vless
   server: sg2-xr.zgrelay.com
   port: 443
@@ -658,6 +245,343 @@ proxies:
     path: /700gvl-kr3
     headers:
       Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 20 - mqgg5630-cyber
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 21 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 22 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: safari
+- name: 🇰🇷 韩国 (South Korea) 23 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 24 - mqgg5630-cyber
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 25 - mqgg5630-cyber
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 26 - mqgg5630-cyber
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 27 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 28 - mqgg5630-cyber
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nickgus.cc.cd
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: nickgus.cc.cd
+- name: 🇰🇷 韩国 (South Korea) 29 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 30 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 31 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 32 - mqgg5630-cyber
+  type: trojan
+  server: kr002.zestapp778.com
+  port: 48851
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: kr002.zestapp778.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 33 - mqgg5630-cyber
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 34 - mqgg5630-cyber
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 35 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 36 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 37 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 38 - mqgg5630-cyber
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 39 - mqgg5630-cyber
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 40 - mqgg5630-cyber
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 41 - mqgg5630-cyber
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 42 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 43 - mqgg5630-cyber
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 44 - mqgg5630-cyber
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 45 - mqgg5630-cyber
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -708,11 +632,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 43 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 44 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 45 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 46 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 47 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 48 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 49 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 50 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -763,10 +682,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 43 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 44 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 45 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 46 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 47 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 48 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 49 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 50 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

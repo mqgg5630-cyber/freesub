@@ -20,24 +20,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇭 TH 02 - mqgg5630-cyber
   type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 03 - mqgg5630-cyber
-  type: vless
-  server: 38.60.233.38
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 04 - mqgg5630-cyber
-  type: vless
   server: 45.154.26.63
   port: 443
   uuid: ff85e702-b605-4109-884d-2c1f065d0954
@@ -50,34 +32,7 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 05 - mqgg5630-cyber
-  type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 06 - mqgg5630-cyber
-  type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 07 - mqgg5630-cyber
-  type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 08 - mqgg5630-cyber
+- name: 🇹🇭 TH 03 - mqgg5630-cyber
   type: trojan
   server: th001.zestapp778.com
   port: 33079
@@ -85,15 +40,6 @@ proxies:
   udp: true
   sni: th001.zestapp778.com
   skip-cert-verify: true
-- name: 🇹🇭 TH 09 - mqgg5630-cyber
-  type: vless
-  server: 38.60.233.38
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,12 +48,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - mqgg5630-cyber
   - 🇹🇭 TH 02 - mqgg5630-cyber
   - 🇹🇭 TH 03 - mqgg5630-cyber
-  - 🇹🇭 TH 04 - mqgg5630-cyber
-  - 🇹🇭 TH 05 - mqgg5630-cyber
-  - 🇹🇭 TH 06 - mqgg5630-cyber
-  - 🇹🇭 TH 07 - mqgg5630-cyber
-  - 🇹🇭 TH 08 - mqgg5630-cyber
-  - 🇹🇭 TH 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -116,11 +56,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - mqgg5630-cyber
   - 🇹🇭 TH 02 - mqgg5630-cyber
   - 🇹🇭 TH 03 - mqgg5630-cyber
-  - 🇹🇭 TH 04 - mqgg5630-cyber
-  - 🇹🇭 TH 05 - mqgg5630-cyber
-  - 🇹🇭 TH 06 - mqgg5630-cyber
-  - 🇹🇭 TH 07 - mqgg5630-cyber
-  - 🇹🇭 TH 08 - mqgg5630-cyber
-  - 🇹🇭 TH 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

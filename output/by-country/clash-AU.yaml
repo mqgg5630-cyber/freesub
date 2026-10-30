@@ -10,7 +10,7 @@ proxies:
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: connectwithemployerstohireyouridealteam.com
+  sni: 45.63.30.142
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - mqgg5630-cyber
   type: trojan
@@ -22,25 +22,25 @@ proxies:
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - mqgg5630-cyber
   type: vless
-  server: 51.161.204.244
+  server: 51.161.204.242
   port: 443
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
+    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
+    short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 04 - mqgg5630-cyber
   type: trojan
   server: 45.63.30.142
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: connectwithemployerstohireyouridealteam.com
+  sni: 45.63.30.142
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 05 - mqgg5630-cyber
   type: trojan
@@ -48,26 +48,9 @@ proxies:
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: 45.63.30.142
+  sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber
-  type: trojan
-  server: 45.63.30.142
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
-  type: vless
-  server: au001.zestapp778.com
-  port: 35652
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: au001.zestapp778.com
-- name: 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
   type: vless
   server: 51.161.204.242
   port: 443
@@ -81,7 +64,7 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 09 - mqgg5630-cyber
+- name: 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
   type: trojan
   server: 45.63.30.142
   port: 443
@@ -89,20 +72,14 @@ proxies:
   udp: true
   sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 10 - mqgg5630-cyber
-  type: vless
-  server: 51.161.204.242
+- name: 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
+  type: trojan
+  server: 45.63.30.142
   port: 443
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
-    short-id: d15c17cef9b2e456
-  servername: www.cloudflare.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,8 +93,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 09 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -131,7 +106,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 07 - mqgg5630-cyber
   - 🇦🇺 澳大利亚 (Australia) 08 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 09 - mqgg5630-cyber
-  - 🇦🇺 澳大利亚 (Australia) 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

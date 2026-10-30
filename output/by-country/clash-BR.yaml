@@ -5,20 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
-  type: trojan
-  server: 216.238.104.154
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 177.7.51.29
+  port: 8443
+  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
   udp: true
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
+    short-id: 14fbf992
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: trojan
   server: 216.238.104.154
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  sni: 216.238.104.154
   skip-cert-verify: true
 - name: 🇧🇷 BR 03 - mqgg5630-cyber
   type: trojan
@@ -26,7 +32,7 @@ proxies:
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: 216.238.104.154
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: true
 - name: 🇧🇷 BR 04 - mqgg5630-cyber
   type: vless

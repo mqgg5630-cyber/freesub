@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber",
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,6 +27,25 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
+      "server": "77.110.97.245",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chromefp=chrome",
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -31,6 +54,28 @@
         "path": "/vless",
         "headers": {
           "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
+      "server": "31.172.65.4",
+      "server_port": 8443,
+      "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU",
+          "short_id": "0e7741edc378622f"
         }
       }
     },

@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ 01 - mqgg5630-cyber",
-        "🇨🇿 CZ 02 - mqgg5630-cyber"
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 CZ 01 - mqgg5630-cyber",
-        "🇨🇿 CZ 02 - mqgg5630-cyber"
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -44,22 +46,38 @@
     {
       "type": "vless",
       "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
-      "server": "195.123.245.241",
+      "server": "188.114.98.0",
       "server_port": 443,
-      "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
-      "flow": "xtls-rprx-vision",
+      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
-          "short_id": "23d0950d60bc0d5b"
+        "server_name": "n.bitpulse.me",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560",
+        "headers": {
+          "Host": "n.bitpulse.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 03 - mqgg5630-cyber",
+      "server": "155.212.240.10",
+      "server_port": 443,
+      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
+      "tls": {
+        "enabled": true,
+        "server_name": "n.bitpulse.me",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560",
+        "headers": {
+          "Host": "n.bitpulse.me"
         }
       }
     },

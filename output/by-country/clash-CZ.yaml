@@ -20,18 +20,32 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: vless
-  server: 195.123.245.241
+  server: 188.114.98.0
   port: 443
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
+  type: vless
+  server: 155.212.240.10
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
+  - 🇨🇿 CZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
