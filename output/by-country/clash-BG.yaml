@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
   type: vless
-  server: gb.privatevip.ir
-  port: 449
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  server: 93.152.223.244
+  port: 443
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gb.privatevip.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
+    short-id: ''
+  servername: ddk5-ger.newagetechnologies.live
+  client-fingerprint: qq
 - name: 🇧🇬 BG 02 - mqgg5630-cyber
   type: vless
   server: 93.152.223.244
@@ -30,7 +31,7 @@ proxies:
     public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
     short-id: ''
   servername: ddk5-ger.newagetechnologies.live
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇧🇬 BG 03 - mqgg5630-cyber
   type: vless
   server: 93.152.223.244
@@ -45,20 +46,6 @@ proxies:
     short-id: ''
   servername: ddk5-ger.newagetechnologies.live
   client-fingerprint: chrome
-- name: 🇧🇬 BG 04 - mqgg5630-cyber
-  type: vless
-  server: 93.152.223.244
-  port: 443
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
-    short-id: ''
-  servername: ddk5-ger.newagetechnologies.live
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇧🇬 BG 01 - mqgg5630-cyber
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
-  - 🇧🇬 BG 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇧🇬 BG 01 - mqgg5630-cyber
   - 🇧🇬 BG 02 - mqgg5630-cyber
   - 🇧🇬 BG 03 - mqgg5630-cyber
-  - 🇧🇬 BG 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

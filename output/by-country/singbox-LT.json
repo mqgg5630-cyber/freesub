@@ -46,8 +46,27 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇱🇹 LT 02 - mqgg5630-cyber",
+      "server": "88.216.69.253",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT 03 - mqgg5630-cyber",
       "server": "88.216.69.253",
       "server_port": 443,
       "uuid": "d342d11e-d224-4463-b982-532309285094",
@@ -66,7 +85,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 LT 03 - mqgg5630-cyber",
+      "tag": "🇱🇹 LT 04 - mqgg5630-cyber",
       "server": "88.216.69.253",
       "server_port": 443,
       "uuid": "d342d11e-d224-4463-b982-532309285094",
@@ -80,25 +99,6 @@
         "path": "/fp",
         "headers": {
           "Host": "ccc.010304.xyz"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇹 LT 04 - mqgg5630-cyber",
-      "server": "195.181.244.216",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
         }
       }
     },
