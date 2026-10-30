@@ -6,17 +6,12 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - mqgg5630-cyber
   type: trojan
-  server: 131.196.254.151
-  port: 443
-  password: humanity
+  server: mx001.zestapp778.com
+  port: 15083
+  password: 5t6i121em5lkmsmk
   udp: true
-  sni: www.pleadcourt.org
+  sni: mx001.zestapp778.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
 - name: 🇲🇽 MX 02 - mqgg5630-cyber
   type: trojan
   server: 216.238.80.100
@@ -59,12 +54,17 @@ proxies:
   skip-cert-verify: true
 - name: 🇲🇽 MX 07 - mqgg5630-cyber
   type: trojan
-  server: mx001.zestapp778.com
-  port: 15083
-  password: 5t6i121em5lkmsmk
+  server: 131.196.254.151
+  port: 443
+  password: humanity
   udp: true
-  sni: mx001.zestapp778.com
+  sni: www.pleadcourt.org
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
 proxy-groups:
 - name: PROXIES
   type: select

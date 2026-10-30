@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇦🇹 AT 01 - mqgg5630-cyber",
-        "🇦🇹 AT 02 - mqgg5630-cyber"
+        "🇦🇹 AT 02 - mqgg5630-cyber",
+        "🇦🇹 AT 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,36 +18,42 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 AT 01 - mqgg5630-cyber",
-        "🇦🇹 AT 02 - mqgg5630-cyber"
+        "🇦🇹 AT 02 - mqgg5630-cyber",
+        "🇦🇹 AT 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 AT 01 - mqgg5630-cyber",
-      "server": "178.236.245.59",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 AT 02 - mqgg5630-cyber",
+      "server": "212.183.88.136",
       "server_port": 443,
-      "uuid": "ca14493b-b984-4ffb-bc0e-9cb5da969e15",
-      "flow": "xtls-rprx-vision",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "tau1.freerunet.online",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg",
-          "short_id": "4a7b1c8d"
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "//assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 AT 02 - mqgg5630-cyber",
+      "tag": "🇦🇹 AT 03 - mqgg5630-cyber",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",

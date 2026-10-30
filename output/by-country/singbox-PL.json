@@ -17,9 +17,7 @@
         "🇵🇱 PL 07 - mqgg5630-cyber",
         "🇵🇱 PL 08 - mqgg5630-cyber",
         "🇵🇱 PL 09 - mqgg5630-cyber",
-        "🇵🇱 PL 10 - mqgg5630-cyber",
-        "🇵🇱 PL 11 - mqgg5630-cyber",
-        "🇵🇱 PL 12 - mqgg5630-cyber"
+        "🇵🇱 PL 10 - mqgg5630-cyber"
       ]
     },
     {
@@ -35,9 +33,7 @@
         "🇵🇱 PL 07 - mqgg5630-cyber",
         "🇵🇱 PL 08 - mqgg5630-cyber",
         "🇵🇱 PL 09 - mqgg5630-cyber",
-        "🇵🇱 PL 10 - mqgg5630-cyber",
-        "🇵🇱 PL 11 - mqgg5630-cyber",
-        "🇵🇱 PL 12 - mqgg5630-cyber"
+        "🇵🇱 PL 10 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -45,40 +41,30 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
       "server": "site.teslamotor.site",
       "server_port": 20001,
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
+      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
       "server": "168.222.43.53",
       "server_port": 2052,
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "server": "155.117.5.208",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
       "type": "vless",
@@ -100,8 +86,34 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇵🇱 PL 07 - mqgg5630-cyber",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 08 - mqgg5630-cyber",
+      "server": "146.75.57.238",
+      "server_port": 443,
+      "uuid": "c1a3a6ee-34d3-4fcd-8763-c2231adabed6",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "polandboijji.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 PL 09 - mqgg5630-cyber",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -113,50 +125,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 08 - mqgg5630-cyber",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 09 - mqgg5630-cyber",
-      "server": "155.117.5.208",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
       "tag": "🇵🇱 PL 10 - mqgg5630-cyber",
-      "server": "201.58.181.231",
-      "server_port": 4443,
-      "uuid": "fafc7c16-f890-45ee-a856-02df225172dd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.kinopoisk.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kn7Lh0yi6CYrHW5KpiQrfrs9FED-mbbEEKgOoiDkx2M",
-          "short_id": "858affa9443ebac6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 11 - mqgg5630-cyber",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 12 - mqgg5630-cyber",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
