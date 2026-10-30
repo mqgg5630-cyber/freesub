@@ -8,34 +8,37 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - mqgg5630-cyber"
+        "🇱🇻 LV 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - mqgg5630-cyber"
+        "🇱🇻 LV 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 - mqgg5630-cyber",
-      "server": "8.35.211.242",
+      "tag": "🇱🇻 LV 01 - mqgg5630-cyber",
+      "server": "31.58.171.53",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
+        "server_name": "dl.google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo",
+          "short_id": "f77f3068"
         }
       }
     },

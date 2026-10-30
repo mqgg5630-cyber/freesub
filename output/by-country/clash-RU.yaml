@@ -6,6 +6,27 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
+  server: 72.56.38.83
+  port: 443
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
+    short-id: ''
+  servername: absolute-disaster.org
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.54
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
   server: 130.49.177.193
   port: 443
   uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
@@ -18,24 +39,34 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: ss
-  server: 159.194.251.76
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  server: 130.49.177.193
+  port: 443
+  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: ekb.eg
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  reality-opts:
+    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+    short-id: 681fc2dd643bc2f3
+  servername: de-2.ffpn.pro
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: 186.246.9.29
+  port: 443
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+    short-id: 50ad5564
+  servername: wordpress.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -49,20 +80,6 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: vless
-  server: 130.49.177.193
-  port: 443
-  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
-    short-id: 681fc2dd643bc2f3
-  servername: de-2.ffpn.pro
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +90,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +101,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

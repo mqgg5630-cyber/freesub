@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
+  type: trojan
+  server: 216.238.104.154
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 216.238.104.154
+  skip-cert-verify: true
+- name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: vless
   server: 177.7.51.29
   port: 8443
@@ -18,14 +26,6 @@ proxies:
     short-id: 14fbf992
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇷 BR 02 - mqgg5630-cyber
-  type: trojan
-  server: 216.238.104.154
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 216.238.104.154
-  skip-cert-verify: true
 - name: 🇧🇷 BR 03 - mqgg5630-cyber
   type: trojan
   server: 216.238.104.154
@@ -61,7 +61,7 @@ proxies:
     public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
     short-id: 14fbf992
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

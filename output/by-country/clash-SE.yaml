@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 31.172.65.4
+  port: 8443
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU
+    short-id: 0e7741edc378622f
+  servername: www.bing.com
+  client-fingerprint: qq
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: 5.178.109.174
