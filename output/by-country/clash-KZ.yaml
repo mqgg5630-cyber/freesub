@@ -18,17 +18,33 @@ proxies:
     short-id: ae97223a8f799877
   servername: kz1.waspnest.space
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+  type: vless
+  server: 95.56.251.12
+  port: 47443
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
+    short-id: ae97223a8f799877
+  servername: kz1.waspnest.space
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
