@@ -19,14 +19,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 IL 02 - mqgg5630-cyber
-  type: trojan
-  server: 64.176.163.182
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: true
-- name: 🇮🇱 IL 03 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
   port: 443
@@ -40,6 +32,14 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇱 IL 03 - mqgg5630-cyber
+  type: trojan
+  server: 64.176.163.182
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  skip-cert-verify: true
 - name: 🇮🇱 IL 04 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
@@ -53,15 +53,21 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇱 IL 05 - mqgg5630-cyber
-  type: trojan
-  server: 64.176.163.182
+  type: vless
+  server: 185.95.231.156
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   udp: true
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇱 IL 06 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
@@ -75,16 +81,8 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇱 IL 07 - mqgg5630-cyber
-  type: trojan
-  server: 64.176.163.182
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: true
-- name: 🇮🇱 IL 08 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
   port: 443
@@ -98,20 +96,22 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇱 IL 09 - mqgg5630-cyber
-  type: vless
-  server: 185.95.231.156
+- name: 🇮🇱 IL 08 - mqgg5630-cyber
+  type: trojan
+  server: 64.176.163.182
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: random
+- name: 🇮🇱 IL 09 - mqgg5630-cyber
+  type: trojan
+  server: 64.176.163.182
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  skip-cert-verify: true
 - name: 🇮🇱 IL 10 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
@@ -125,7 +125,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

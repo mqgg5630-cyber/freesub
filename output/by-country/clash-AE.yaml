@@ -58,7 +58,7 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -71,46 +71,6 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - mqgg5630-cyber
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
-  type: vless
-  server: 140.225.208.60
-  port: 2083
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speedtestmark.com
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 140.225.208.60
-- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
-  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -122,7 +82,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 07 - mqgg5630-cyber
   type: vless
   server: app-mi-26.spbstudentlife.com
   port: 443
@@ -136,7 +96,7 @@ proxies:
     short-id: a7856800c2deb7b2
   servername: assets-mi-26.spbstudentlife.com
   client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 08 - mqgg5630-cyber
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -149,7 +109,20 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -162,20 +135,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 14 - mqgg5630-cyber
+- name: 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -204,9 +164,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 14 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -223,8 +180,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 10 - mqgg5630-cyber
   - 🇦🇪 阿联酋 (UAE) 11 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 12 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 13 - mqgg5630-cyber
-  - 🇦🇪 阿联酋 (UAE) 14 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
