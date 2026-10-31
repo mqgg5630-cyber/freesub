@@ -19,33 +19,19 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
-  server: 155.103.71.142
+  server: 146.75.59.186
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: e3425eb4-e9be-4568-8740-529a031c9315
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: looabturkeyeoijji.global.ssl.fastly.net.
 - name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -58,6 +44,34 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  type: vless
+  server: tr2.h1cloud.net
+  port: 25021
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+    short-id: 17fa3af0924c88b3
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +81,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +91,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

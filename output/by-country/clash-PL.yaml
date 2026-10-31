@@ -6,18 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 31.59.143.147
-  port: 443
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk
-    short-id: ae97223a8f799889
-  servername: pl2.waspnest.space
-  client-fingerprint: firefox
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
@@ -27,40 +22,6 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  udp: true
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -77,10 +38,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
-  - 🇵🇱 PL 04 - mqgg5630-cyber
-  - 🇵🇱 PL 05 - mqgg5630-cyber
-  - 🇵🇱 PL 06 - mqgg5630-cyber
-  - 🇵🇱 PL 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,9 +46,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
-  - 🇵🇱 PL 04 - mqgg5630-cyber
-  - 🇵🇱 PL 05 - mqgg5630-cyber
-  - 🇵🇱 PL 06 - mqgg5630-cyber
-  - 🇵🇱 PL 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
