@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: true
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -13,14 +21,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.252.255
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: true
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
   type: vless
   server: 2.26.6.1
@@ -30,6 +30,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +46,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
+  - 🇵🇱 PL 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +55,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
+  - 🇵🇱 PL 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
