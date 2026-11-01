@@ -6,20 +6,26 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - mqgg5630-cyber
   type: trojan
-  server: th001.zestapp778.com
-  port: 33079
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: th001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇹🇭 TH 02 - mqgg5630-cyber
-  type: trojan
   server: 38.60.200.237
   port: 33079
   password: 5t6i121em5lkmsmk
   udp: true
   sni: th001.zestapp778.com
   skip-cert-verify: true
+- name: 🇹🇭 TH 02 - mqgg5630-cyber
+  type: vless
+  server: 45.154.26.63
+  port: 443
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 03 - mqgg5630-cyber
   type: vless
   server: 45.154.26.63
@@ -35,19 +41,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 TH 04 - mqgg5630-cyber
-  type: vless
-  server: 45.154.26.63
-  port: 443
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  type: trojan
+  server: th001.zestapp778.com
+  port: 33079
+  password: 5t6i121em5lkmsmk
   udp: true
-  tls: true
+  sni: th001.zestapp778.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇹🇭 TH 05 - mqgg5630-cyber
   type: trojan
   server: th001.zestapp778.com
