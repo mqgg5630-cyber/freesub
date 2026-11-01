@@ -5,22 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 PH 01 - mqgg5630-cyber
-  type: trojan
-  server: 130.94.52.157
-  port: 46298
-  password: 5t6i121em5lkmsmk
+  type: ss
+  server: 149.104.109.252
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
-  sni: ph001.zestapp778.com
-  skip-cert-verify: true
 - name: 🇵🇭 PH 02 - mqgg5630-cyber
-  type: trojan
-  server: ph001.zestapp778.com
-  port: 46298
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: ph001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇵🇭 PH 03 - mqgg5630-cyber
   type: trojan
   server: 130.94.52.157
   port: 46298
@@ -35,7 +26,6 @@ proxy-groups:
   - AUTO
   - 🇵🇭 PH 01 - mqgg5630-cyber
   - 🇵🇭 PH 02 - mqgg5630-cyber
-  - 🇵🇭 PH 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -43,6 +33,5 @@ proxy-groups:
   proxies:
   - 🇵🇭 PH 01 - mqgg5630-cyber
   - 🇵🇭 PH 02 - mqgg5630-cyber
-  - 🇵🇭 PH 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
