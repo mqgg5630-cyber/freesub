@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - mqgg5630-cyber
+- name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
-  server: 31.58.171.53
-  port: 443
-  uuid: 4d259556-57f7-4e5a-9a4a-48868787fb38
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo
-    short-id: f77f3068
-  servername: dl.google.com
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - mqgg5630-cyber
+  - 🇪🇪 EE 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - mqgg5630-cyber
+  - 🇪🇪 EE 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

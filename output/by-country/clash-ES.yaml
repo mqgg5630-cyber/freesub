@@ -6,24 +6,24 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - mqgg5630-cyber
   type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  server: 156.252.229.11
+  port: 8443
+  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - mqgg5630-cyber
   type: trojan
-  server: 66.163.118.62
+  server: 66.163.118.166
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 03 - mqgg5630-cyber
   type: vless
@@ -37,7 +37,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - mqgg5630-cyber
   type: vless
   server: 212.227.235.66
@@ -50,7 +50,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - mqgg5630-cyber
   type: vless
   server: 212.227.235.66
@@ -63,20 +63,15 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 06 - mqgg5630-cyber
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  type: trojan
+  server: 66.163.118.62
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 07 - mqgg5630-cyber
   type: vless
   server: 212.227.235.66
@@ -91,13 +86,18 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 08 - mqgg5630-cyber
-  type: trojan
-  server: 66.163.118.166
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   udp: true
-  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 09 - mqgg5630-cyber
   type: vless
   server: 156.252.229.30
@@ -120,20 +120,25 @@ proxies:
   sni: api.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 11 - mqgg5630-cyber
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 12 - mqgg5630-cyber
   type: trojan
   server: 66.163.118.62
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: courses.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 12 - mqgg5630-cyber
-  type: trojan
-  server: ench-snet-app.w-ctrip.cn
-  port: 22100
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  udp: true
-  sni: cm.g.doubleclick.net
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 13 - mqgg5630-cyber
   type: vless
@@ -147,20 +152,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 14 - mqgg5630-cyber
-  type: vless
-  server: 156.252.229.11
-  port: 8443
-  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  servername: play.googleapis.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -179,7 +171,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 11 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 12 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 13 - mqgg5630-cyber
-  - 🇪🇸 西班牙 (Spain) 14 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -198,6 +189,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 11 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 12 - mqgg5630-cyber
   - 🇪🇸 西班牙 (Spain) 13 - mqgg5630-cyber
-  - 🇪🇸 西班牙 (Spain) 14 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -17,7 +17,7 @@ proxies:
     public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
     short-id: 38d72071
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇵🇪 PE 02 - mqgg5630-cyber
   type: vless
   server: 134.185.81.5
@@ -31,7 +31,7 @@ proxies:
     public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
     short-id: 38d72071
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇵🇪 PE 03 - mqgg5630-cyber
   type: vless
   server: 134.185.81.5
@@ -45,7 +45,7 @@ proxies:
     public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
     short-id: 38d72071
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇵🇪 PE 04 - mqgg5630-cyber
   type: vless
   server: 134.185.81.5
@@ -59,7 +59,7 @@ proxies:
     public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
     short-id: 38d72071
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇵🇪 PE 05 - mqgg5630-cyber
   type: vless
   server: 134.185.81.5
@@ -73,7 +73,21 @@ proxies:
     public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
     short-id: 38d72071
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇵🇪 PE 06 - mqgg5630-cyber
+  type: vless
+  server: 134.185.81.5
+  port: 47881
+  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
+    short-id: 38d72071
+  servername: www.tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇵🇪 PE 03 - mqgg5630-cyber
   - 🇵🇪 PE 04 - mqgg5630-cyber
   - 🇵🇪 PE 05 - mqgg5630-cyber
+  - 🇵🇪 PE 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇵🇪 PE 03 - mqgg5630-cyber
   - 🇵🇪 PE 04 - mqgg5630-cyber
   - 🇵🇪 PE 05 - mqgg5630-cyber
+  - 🇵🇪 PE 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

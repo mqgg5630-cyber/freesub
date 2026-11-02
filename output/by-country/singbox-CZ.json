@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -40,6 +42,14 @@
           "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
+      "server": "b2friday.buzrel.ir",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "6lb9wr4ibspbl022"
     },
     {
       "type": "direct",

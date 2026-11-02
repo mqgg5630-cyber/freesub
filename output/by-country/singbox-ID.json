@@ -8,37 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - mqgg5630-cyber"
+        "🇮🇩 ID 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - mqgg5630-cyber"
+        "🇮🇩 ID 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 LV 01 - mqgg5630-cyber",
-      "server": "31.58.171.53",
+      "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
+      "server": "188.114.98.0",
       "server_port": 443,
-      "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
-      "flow": "xtls-rprx-vision",
+      "uuid": "dffb7646-1656-427a-8187-9c056a6a5fd5",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo",
-          "short_id": "f77f3068"
+        "server_name": "vff67.eu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/id-dnva",
+        "headers": {
+          "Host": "vff67.eu.cc"
         }
       }
     },

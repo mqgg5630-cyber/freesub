@@ -18,17 +18,26 @@ proxies:
     short-id: ''
   servername: rusbid.de
   client-fingerprint: firefox
+- name: 🇨🇿 CZ 02 - mqgg5630-cyber
+  type: ss
+  server: b2friday.buzrel.ir
+  port: 443
+  cipher: aes-256-gcm
+  password: 6lb9wr4ibspbl022
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
+  - 🇨🇿 CZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
