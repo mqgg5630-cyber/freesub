@@ -12,17 +12,37 @@ proxies:
   udp: true
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: true
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.207.14
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: true
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.207.14
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
+  - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
+  - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

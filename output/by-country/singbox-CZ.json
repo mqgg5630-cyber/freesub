@@ -8,16 +8,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber",
-        "🇨🇿 CZ 02 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber",
-        "🇨🇿 CZ 02 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,31 +23,15 @@
     {
       "type": "vless",
       "tag": "🇨🇿 CZ 01 - mqgg5630-cyber",
-      "server": "31.77.13.22",
-      "server_port": 2063,
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "server": "178.208.89.190",
+      "server_port": 443,
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rusbid.de",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
-        }
+        "server_name": "prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link",
+        "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
-      "server": "b2friday.buzrel.ir",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "6lb9wr4ibspbl022"
     },
     {
       "type": "direct",
