@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -17,7 +31,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   type: vless
   server: 155.103.71.142
   port: 443
@@ -31,7 +45,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -52,6 +66,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +75,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

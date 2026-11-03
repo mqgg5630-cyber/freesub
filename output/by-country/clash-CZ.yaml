@@ -6,47 +6,19 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
   type: vless
-  server: server.slavkiti.monster
-  port: 443
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  server: 153.76.190.31
+  port: 2083
+  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 153.76.190.31
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
-  type: vless
-  server: 193.124.17.190
-  port: 443
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
-  client-fingerprint: firefox
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: vless
-  server: server.slavkiti.monster
-  port: 443
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇨🇿 CZ 04 - mqgg5630-cyber
   type: vless
   server: server.slavkiti.monster
   port: 443
@@ -60,6 +32,20 @@ proxies:
     short-id: 73a9e631a09b
   servername: www.microsoft.com
   client-fingerprint: chrome
+- name: 🇨🇿 CZ 03 - mqgg5630-cyber
+  type: vless
+  server: 193.124.17.190
+  port: 443
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 8325360e8bd2
+  servername: www.foxsports.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
-  - 🇨🇿 CZ 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
   - 🇨🇿 CZ 03 - mqgg5630-cyber
-  - 🇨🇿 CZ 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -32,20 +32,6 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 03 - mqgg5630-cyber
-  type: vless
-  server: 45.154.26.63
-  port: 443
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - mqgg5630-cyber
   - 🇹🇭 TH 02 - mqgg5630-cyber
-  - 🇹🇭 TH 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - mqgg5630-cyber
   - 🇹🇭 TH 02 - mqgg5630-cyber
-  - 🇹🇭 TH 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

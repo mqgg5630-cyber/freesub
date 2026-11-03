@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: de-2.ffpn.pro
+  server: 130.49.177.193
   port: 443
   uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
   udp: true
@@ -20,7 +20,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
-  server: 87.120.166.160
+  server: lvi.su
   port: 443
   uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
@@ -33,74 +33,15 @@ proxies:
     headers:
       Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
-  server: 91.185.83.44
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  type: ss
+  server: 46.17.46.27
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nguyxejonb.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /service/telemetry/0294da469190/
-    headers:
-      Host: nguyxejonb.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
-  server: 185.147.27.164
-  port: 8443
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: ekb.eg
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: vless
-  server: 91.185.83.44
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nguyxejonb.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /service/telemetry/0294da469190/
-    headers:
-      Host: nguyxejonb.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: vless
-  server: 157.22.240.20
-  port: 443
-  uuid: f28ce4eb-62cd-45f5-b3b3-be1c1a95e335
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: T1BWBw3lq9G1LiQ7eQSPfdNQic7bUMEbdFNJBewAwB8
-    short-id: 6ad3c0f1e9b2478a
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  type: vless
-  server: 91.185.83.44
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nguyxejonb.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /service/telemetry/0294da469190/
-    headers:
-      Host: nguyxejonb.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  type: vless
-  server: 130.49.177.193
+  server: de-2.ffpn.pro
   port: 443
   uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
   udp: true
@@ -112,9 +53,23 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   type: vless
-  server: lvi.su
+  server: 87.120.166.160
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lvi.su
+  network: ws
+  ws-opts:
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    headers:
+      Host: lvi.su
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: 87.120.166.160
   port: 443
   uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
@@ -137,9 +92,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,8 +103,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

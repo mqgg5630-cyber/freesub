@@ -60,20 +60,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇱🇹 LT 05 - mqgg5630-cyber
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +69,6 @@ proxy-groups:
   - 🇱🇹 LT 02 - mqgg5630-cyber
   - 🇱🇹 LT 03 - mqgg5630-cyber
   - 🇱🇹 LT 04 - mqgg5630-cyber
-  - 🇱🇹 LT 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +78,5 @@ proxy-groups:
   - 🇱🇹 LT 02 - mqgg5630-cyber
   - 🇱🇹 LT 03 - mqgg5630-cyber
   - 🇱🇹 LT 04 - mqgg5630-cyber
-  - 🇱🇹 LT 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
