@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber"
+        "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber",
+        "🇹🇼 中国台湾 (Taiwan) 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -36,6 +38,25 @@
         "path": "/",
         "headers": {
           "Host": "api.85s.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - mqgg5630-cyber",
+      "server": "n04.jinggai.online",
+      "server_port": 8443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "n04.jinggai.online",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
         }
       }
     },

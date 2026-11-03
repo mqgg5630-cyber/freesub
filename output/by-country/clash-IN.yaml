@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   type: vless
-  server: in.smrtai.top
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
-  type: vless
   server: 13.140.56.100
   port: 14430
   uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
@@ -30,6 +17,19 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
   type: vless
   server: 194.61.31.126
@@ -44,31 +44,26 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: trojan
+  server: in002.zestapp778.com
+  port: 42733
+  password: 5t6i121em5lkmsmk
   udp: true
-  tls: false
+  sni: in002.zestapp778.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
   type: vless
-  server: in.smrtai.top
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 06 - mqgg5630-cyber
   type: vless
   server: 13.140.56.100
@@ -83,19 +78,6 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 07 - mqgg5630-cyber
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 08 - mqgg5630-cyber
   type: trojan
   server: in002.zestapp778.com
   port: 42733
@@ -103,6 +85,19 @@ proxies:
   udp: true
   sni: in002.zestapp778.com
   skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 08 - mqgg5630-cyber
+  type: vless
+  server: in.smrtai.top
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 09 - mqgg5630-cyber
   type: trojan
   server: in002.zestapp778.com
@@ -112,6 +107,45 @@ proxies:
   sni: in002.zestapp778.com
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 10 - mqgg5630-cyber
+  type: vless
+  server: in.smrtai.top
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 11 - mqgg5630-cyber
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 12 - mqgg5630-cyber
+  type: vless
+  server: in.smrtai.top
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 13 - mqgg5630-cyber
   type: vless
   server: 178.212.35.198
   port: 443
@@ -124,7 +158,15 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 11 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 14 - mqgg5630-cyber
+  type: trojan
+  server: in002.zestapp778.com
+  port: 42733
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: in002.zestapp778.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 15 - mqgg5630-cyber
   type: vless
   server: 122.176.216.52
   port: 443
@@ -138,7 +180,7 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇮🇳 印度 (India) 12 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 16 - mqgg5630-cyber
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -151,7 +193,15 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 13 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 17 - mqgg5630-cyber
+  type: trojan
+  server: in002.zestapp778.com
+  port: 42733
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: in002.zestapp778.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 18 - mqgg5630-cyber
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -164,7 +214,7 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 14 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 19 - mqgg5630-cyber
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -177,19 +227,20 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 15 - mqgg5630-cyber
+- name: 🇮🇳 印度 (India) 20 - mqgg5630-cyber
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 122.176.216.52
+  port: 443
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: app-6ada5023.deploy.meerasolution.com
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -210,6 +261,11 @@ proxy-groups:
   - 🇮🇳 印度 (India) 13 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 14 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 15 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 16 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 17 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 18 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 19 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 20 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -230,5 +286,10 @@ proxy-groups:
   - 🇮🇳 印度 (India) 13 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 14 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 15 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 16 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 17 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 18 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 19 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 20 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
