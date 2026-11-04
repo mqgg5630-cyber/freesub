@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - mqgg5630-cyber"
+        "🇪🇪 EE 01 - mqgg5630-cyber",
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - mqgg5630-cyber"
+        "🇪🇪 EE 01 - mqgg5630-cyber",
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -39,6 +43,50 @@
           "enabled": true,
           "public_key": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
           "short_id": "b9120cd53ffd7bba"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "147.45.245.17",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "defs-64.topp-con.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4GpOXPkTdvuF1mgBH6n9AFYRvGEh7K2ETgE8asmNASY",
+          "short_id": "38146bd64aece7a5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
+      "server": "31.77.236.114",
+      "server_port": 443,
+      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.porsche.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "short_id": "1a2b3c4d"
         }
       }
     },

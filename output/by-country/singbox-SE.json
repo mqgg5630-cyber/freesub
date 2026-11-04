@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - mqgg5630-cyber"
+        "🇸🇪 SE 01 - mqgg5630-cyber",
+        "🇸🇪 SE 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,6 +31,18 @@
       "tls": {
         "enabled": true,
         "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "server": "se3.shtil.io",
+      "server_port": 443,
+      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "se3.shtil.io",
         "insecure": true
       }
     },

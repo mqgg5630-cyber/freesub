@@ -10,8 +10,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -20,56 +19,14 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
-      "server": "217.19.122.156",
-      "server_port": 443,
-      "uuid": "c720cb74-4c84-4fce-b8ae-637dbaa16199",
-      "tls": {
-        "enabled": true,
-        "server_name": "z1q3pv4g78.rucdncomp.pro",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/useraction/events/b892639b7195/",
-        "headers": {
-          "Host": "z1q3pv4g78.rucdncomp.pro"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "147.45.245.17",
-      "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "defs-64.topp-con.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4GpOXPkTdvuF1mgBH6n9AFYRvGEh7K2ETgE8asmNASY",
-          "short_id": "38146bd64aece7a5"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
       "server": "46.17.46.27",
       "server_port": 18443,
       "method": "aes-256-gcm",
@@ -77,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
       "server": "130.49.177.193",
       "server_port": 443,
       "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0",
@@ -94,6 +51,25 @@
           "enabled": true,
           "public_key": "DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc",
           "short_id": "681fc2dd643bc2f3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "87.120.166.160",
+      "server_port": 443,
+      "uuid": "7b91b2c3-8af3-449b-a555-00c9460989f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "lvi.su",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2",
+        "headers": {
+          "Host": "lvi.su"
         }
       }
     },

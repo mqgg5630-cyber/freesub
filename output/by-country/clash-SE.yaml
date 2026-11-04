@@ -12,17 +12,28 @@ proxies:
   udp: true
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: true
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
+  - 🇸🇪 SE 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
+  - 🇸🇪 SE 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

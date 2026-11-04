@@ -18,17 +18,49 @@ proxies:
     short-id: b9120cd53ffd7bba
   servername: static-47.topp-con.xyz
   client-fingerprint: ios
+- name: 🇪🇪 EE 02 - mqgg5630-cyber
+  type: vless
+  server: 147.45.245.17
+  port: 443
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 4GpOXPkTdvuF1mgBH6n9AFYRvGEh7K2ETgE8asmNASY
+    short-id: 38146bd64aece7a5
+  servername: defs-64.topp-con.xyz
+  client-fingerprint: firefox
+- name: 🇪🇪 EE 03 - mqgg5630-cyber
+  type: vless
+  server: 31.77.236.114
+  port: 443
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: files.porsche.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 EE 01 - mqgg5630-cyber
+  - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 EE 01 - mqgg5630-cyber
+  - 🇪🇪 EE 02 - mqgg5630-cyber
+  - 🇪🇪 EE 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
