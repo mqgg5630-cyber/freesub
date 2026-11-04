@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber
+- name: 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+  type: vless
+  server: 89.144.53.4
+  port: 8445
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: videos.porsche.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 02 (家宽) - mqgg5630-cyber
   type: vless
   server: 122.176.216.52
   port: 443
@@ -18,7 +32,7 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
   type: vless
   server: 60.248.219.78
   port: 443
@@ -37,14 +51,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber
+  - 🇫🇮 FI 01 (家宽) - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 02 (家宽) - mqgg5630-cyber
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

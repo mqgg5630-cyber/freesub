@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.207.14
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: true
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -25,6 +17,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.207.14
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
