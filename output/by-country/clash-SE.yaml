@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -14,13 +14,19 @@ proxies:
   skip-cert-verify: true
   servername: se3.shtil.io
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.207.14
+  type: vless
+  server: se-sto.862400.xyz
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: ea81763f-e534-4700-aa28-9ac98156771b
   udp: true
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  tls: true
   skip-cert-verify: true
+  servername: se-sto.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
   server: 5.178.109.174
@@ -42,7 +48,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.104.94.141
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
