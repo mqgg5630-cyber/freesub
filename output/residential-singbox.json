@@ -8,41 +8,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 (家宽) - mqgg5630-cyber",
+        "🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-        "🇮🇳 印度 (India) 03 (家宽) - mqgg5630-cyber"
+        "🇫🇮 FI 03 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 (家宽) - mqgg5630-cyber",
+        "🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mqgg5630-cyber",
-        "🇮🇳 印度 (India) 03 (家宽) - mqgg5630-cyber"
+        "🇫🇮 FI 03 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI 01 (家宽) - mqgg5630-cyber",
-      "server": "89.144.53.4",
-      "server_port": 8445,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇮🇳 印度 (India) 01 (家宽) - mqgg5630-cyber",
+      "server": "122.176.216.52",
+      "server_port": 443,
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
       "tls": {
         "enabled": true,
-        "server_name": "videos.porsche.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "headers": {
+          "Host": "app-6ada5023.deploy.meerasolution.com"
         }
       }
     },
@@ -67,20 +64,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 (家宽) - mqgg5630-cyber",
-      "server": "122.176.216.52",
-      "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tag": "🇫🇮 FI 03 (家宽) - mqgg5630-cyber",
+      "server": "89.144.53.4",
+      "server_port": 8445,
+      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+        "server_name": "videos.porsche.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "short_id": "1a2b3c4d"
         }
       }
     },

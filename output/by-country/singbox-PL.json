@@ -10,7 +10,10 @@
         "auto",
         "🇵🇱 PL 01 - mqgg5630-cyber",
         "🇵🇱 PL 02 - mqgg5630-cyber",
-        "🇵🇱 PL 03 - mqgg5630-cyber"
+        "🇵🇱 PL 03 - mqgg5630-cyber",
+        "🇵🇱 PL 04 - mqgg5630-cyber",
+        "🇵🇱 PL 05 - mqgg5630-cyber",
+        "🇵🇱 PL 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,7 +22,10 @@
       "outbounds": [
         "🇵🇱 PL 01 - mqgg5630-cyber",
         "🇵🇱 PL 02 - mqgg5630-cyber",
-        "🇵🇱 PL 03 - mqgg5630-cyber"
+        "🇵🇱 PL 03 - mqgg5630-cyber",
+        "🇵🇱 PL 04 - mqgg5630-cyber",
+        "🇵🇱 PL 05 - mqgg5630-cyber",
+        "🇵🇱 PL 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -37,8 +43,39 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
+      "server": "84.23.52.120",
+      "server_port": 28450,
+      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.sparxiecn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lovelive",
+        "headers": {
+          "Host": "84.23.52.120"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
+      "tls": {
+        "enabled": true,
+        "server_name": "2.26.6.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -50,7 +87,19 @@
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "tag": "🇵🇱 PL 05 - mqgg5630-cyber",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 PL 06 - mqgg5630-cyber",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",

@@ -13,6 +13,29 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
+  server: 84.23.52.120
+  port: 28450
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
   port: 443
@@ -20,7 +43,15 @@ proxies:
   udp: true
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
   port: 443
@@ -36,6 +67,9 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
+  - 🇵🇱 PL 04 - mqgg5630-cyber
+  - 🇵🇱 PL 05 - mqgg5630-cyber
+  - 🇵🇱 PL 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +78,8 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
+  - 🇵🇱 PL 04 - mqgg5630-cyber
+  - 🇵🇱 PL 05 - mqgg5630-cyber
+  - 🇵🇱 PL 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

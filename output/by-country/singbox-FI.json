@@ -39,24 +39,21 @@
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "6.bmi.ir.asopardaz.ir",
-      "server_port": 8443,
-      "uuid": "875942c6-1d42-4681-b49b-521a2bf10e8c",
-      "flow": "xtls-rprx-vision",
+      "server": "172.66.0.1",
+      "server_port": 2053,
+      "password": "gHQP0D7D15",
       "tls": {
         "enabled": true,
-        "server_name": "timeline.www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
+        "server_name": "marvdasht.phonecomparisonblog.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "marvdasht.phonecomparisonblog.org"
         }
       }
     },
@@ -80,22 +77,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
       "server": "104.24.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
@@ -113,9 +96,23 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
-      "server": "104.16.186.130",
+      "server": "104.18.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -151,21 +148,16 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇫🇮 FI 07 - mqgg5630-cyber",
-      "server": "172.66.0.1",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
-      "tls": {
-        "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": true
-      },
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
+          "Host": "45.144.234.157"
         }
       }
     },
@@ -205,7 +197,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇮 FI 10 - mqgg5630-cyber",
-      "server": "104.18.0.1",
+      "server": "104.16.186.130",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {

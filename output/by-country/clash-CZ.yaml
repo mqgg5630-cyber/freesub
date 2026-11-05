@@ -20,20 +20,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇿 CZ 02 - mqgg5630-cyber
   type: vless
-  server: 193.124.17.190
-  port: 443
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
-  client-fingerprint: firefox
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: vless
   server: 178.208.89.21
   port: 443
   uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
@@ -49,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
-  - 🇨🇿 CZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
   - 🇨🇿 CZ 02 - mqgg5630-cyber
-  - 🇨🇿 CZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
