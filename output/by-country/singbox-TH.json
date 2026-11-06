@@ -1,0 +1,58 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇭 TH 01 - mqgg5630-cyber",
+        "🇹🇭 TH 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇭 TH 01 - mqgg5630-cyber",
+        "🇹🇭 TH 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 TH 01 - mqgg5630-cyber",
+      "server": "th001.zestapp778.com",
+      "server_port": 33079,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 TH 02 - mqgg5630-cyber",
+      "server": "th001.zestapp778.com",
+      "server_port": 33079,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -5,13 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
-  type: trojan
-  server: 216.238.104.154
+  type: vless
+  server: 43.174.195.1
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
   udp: true
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  tls: true
   skip-cert-verify: true
+  servername: kv.074167.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kv.074167.xyz
 - name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: trojan
   server: 216.238.104.154
@@ -20,6 +26,25 @@ proxies:
   udp: true
   sni: 216.238.104.154
   skip-cert-verify: true
+- name: 🇧🇷 BR 03 - mqgg5630-cyber
+  type: trojan
+  server: 216.238.104.154
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  skip-cert-verify: true
+- name: 🇧🇷 BR 04 - mqgg5630-cyber
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
+  - 🇧🇷 BR 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
+  - 🇧🇷 BR 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
