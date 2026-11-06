@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
+  server: prvtch.titun.su
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: vless
   server: 130.49.177.193
   port: 443
   uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
@@ -18,20 +32,62 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
-  server: xsru2.freeddns.org
+  server: novonl.subv.ru
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  type: vless
+  server: fduknew.titun.su
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: bizorg.su
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: ee.subv.ru
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: 130.49.177.193
+  port: 443
+  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+    short-id: 681fc2dd643bc2f3
+  servername: de-2.ffpn.pro
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +95,10 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +106,9 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

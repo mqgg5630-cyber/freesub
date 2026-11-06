@@ -13,42 +13,15 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.252.255
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
   port: 443
@@ -56,30 +29,15 @@ proxies:
   udp: true
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - mqgg5630-cyber
-  type: vless
-  server: 145.63.143.205
-  port: 8444
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl1.meshbeat.online
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
-    headers:
-      Host: pl1.meshbeat.online
-- name: 🇵🇱 PL 08 - mqgg5630-cyber
+- name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
   server: 129.101.100.126
   port: 8443
@@ -93,44 +51,7 @@ proxies:
     path: /static/js/runtime.9d03c7.js
     headers:
       Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 09 - mqgg5630-cyber
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 10 - mqgg5630-cyber
-  type: vless
-  server: 212.119.43.76
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇵🇱 PL 11 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 12 - mqgg5630-cyber
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -150,12 +71,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
   - 🇵🇱 PL 06 - mqgg5630-cyber
-  - 🇵🇱 PL 07 - mqgg5630-cyber
-  - 🇵🇱 PL 08 - mqgg5630-cyber
-  - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
-  - 🇵🇱 PL 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -167,11 +82,5 @@ proxy-groups:
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
   - 🇵🇱 PL 06 - mqgg5630-cyber
-  - 🇵🇱 PL 07 - mqgg5630-cyber
-  - 🇵🇱 PL 08 - mqgg5630-cyber
-  - 🇵🇱 PL 09 - mqgg5630-cyber
-  - 🇵🇱 PL 10 - mqgg5630-cyber
-  - 🇵🇱 PL 11 - mqgg5630-cyber
-  - 🇵🇱 PL 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

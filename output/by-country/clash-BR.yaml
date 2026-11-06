@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
-  type: vmess
-  server: 103.88.232.55
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: None
-- name: 🇧🇷 BR 02 - mqgg5630-cyber
-  type: trojan
-  server: br001.zestapp778.com
-  port: 39533
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: br001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇧🇷 BR 03 - mqgg5630-cyber
   type: trojan
   server: 216.238.104.154
   port: 443
@@ -31,7 +12,7 @@ proxies:
   udp: true
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: true
-- name: 🇧🇷 BR 04 - mqgg5630-cyber
+- name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: trojan
   server: 216.238.104.154
   port: 443
@@ -46,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
-  - 🇧🇷 BR 03 - mqgg5630-cyber
-  - 🇧🇷 BR 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
-  - 🇧🇷 BR 03 - mqgg5630-cyber
-  - 🇧🇷 BR 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
