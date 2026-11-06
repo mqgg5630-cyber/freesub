@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
   type: vless
-  server: 155.212.240.10
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 02 - mqgg5630-cyber
-  type: vless
   server: server.slavkiti.monster
   port: 443
   uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
@@ -32,115 +18,17 @@ proxies:
     short-id: ee1716767f9b
   servername: www.tradingview.com
   client-fingerprint: chrome
-- name: 🇨🇿 CZ 03 - mqgg5630-cyber
-  type: vless
-  server: 193.124.17.190
-  port: 443
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
-  client-fingerprint: firefox
-- name: 🇨🇿 CZ 04 - mqgg5630-cyber
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 05 - mqgg5630-cyber
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 06 - mqgg5630-cyber
-  type: vless
-  server: 155.212.240.10
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 07 - mqgg5630-cyber
-  type: vless
-  server: 104.18.51.110
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 08 - mqgg5630-cyber
-  type: vless
-  server: 104.21.29.192
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
-  - 🇨🇿 CZ 02 - mqgg5630-cyber
-  - 🇨🇿 CZ 03 - mqgg5630-cyber
-  - 🇨🇿 CZ 04 - mqgg5630-cyber
-  - 🇨🇿 CZ 05 - mqgg5630-cyber
-  - 🇨🇿 CZ 06 - mqgg5630-cyber
-  - 🇨🇿 CZ 07 - mqgg5630-cyber
-  - 🇨🇿 CZ 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
-  - 🇨🇿 CZ 02 - mqgg5630-cyber
-  - 🇨🇿 CZ 03 - mqgg5630-cyber
-  - 🇨🇿 CZ 04 - mqgg5630-cyber
-  - 🇨🇿 CZ 05 - mqgg5630-cyber
-  - 🇨🇿 CZ 06 - mqgg5630-cyber
-  - 🇨🇿 CZ 07 - mqgg5630-cyber
-  - 🇨🇿 CZ 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
