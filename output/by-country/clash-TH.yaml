@@ -36,6 +36,14 @@ proxies:
   udp: true
   sni: th001.zestapp778.com
   skip-cert-verify: true
+- name: 🇹🇭 TH 05 - mqgg5630-cyber
+  type: trojan
+  server: 38.60.233.126
+  port: 33079
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: th001.zestapp778.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +53,7 @@ proxy-groups:
   - 🇹🇭 TH 02 - mqgg5630-cyber
   - 🇹🇭 TH 03 - mqgg5630-cyber
   - 🇹🇭 TH 04 - mqgg5630-cyber
+  - 🇹🇭 TH 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇹🇭 TH 02 - mqgg5630-cyber
   - 🇹🇭 TH 03 - mqgg5630-cyber
   - 🇹🇭 TH 04 - mqgg5630-cyber
+  - 🇹🇭 TH 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
