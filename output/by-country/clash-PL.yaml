@@ -5,31 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.252.255
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: true
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.252.255
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: vless
   server: pl3.japancase.site
   port: 443
@@ -43,6 +18,38 @@ proxies:
     short-id: 5037f0423dc4e4ff
   servername: pl3.japancase.site
   client-fingerprint: edge
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: true
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: mhzedir.qzz.io
+  port: 2059
+  uuid: 74e155ef-1a8d-42db-8c20-7aaa62ca5998
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: angelvpn.angelmh.cv
+- name: 🇵🇱 PL 04 - mqgg5630-cyber
+  type: vless
+  server: 2.26.255.215
+  port: 443
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
@@ -51,6 +58,23 @@ proxies:
   udp: true
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
+- name: 🇵🇱 PL 06 - mqgg5630-cyber
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: true
+- name: 🇵🇱 PL 07 - mqgg5630-cyber
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +85,8 @@ proxy-groups:
   - 🇵🇱 PL 03 - mqgg5630-cyber
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
+  - 🇵🇱 PL 06 - mqgg5630-cyber
+  - 🇵🇱 PL 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +97,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - mqgg5630-cyber
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
+  - 🇵🇱 PL 06 - mqgg5630-cyber
+  - 🇵🇱 PL 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

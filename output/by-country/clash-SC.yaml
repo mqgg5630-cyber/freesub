@@ -18,26 +18,17 @@ proxies:
     short-id: ''
   servername: cloudflare-dns.com
   client-fingerprint: firefox
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: ss
-  server: 45.207.207.25
-  port: 443
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
-  - 🇸🇨 SC 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
-  - 🇸🇨 SC 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
