@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: prvtch.titun.su
+  server: fduknew.titun.su
   port: 443
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
@@ -16,9 +16,37 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: firefox
+  servername: bizorg.su
+  client-fingerprint: edge
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
+  type: vless
+  server: xsru2.freeddns.org
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
+  server: 92.243.66.79
+  port: 443
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
+    short-id: 8d03c10b6a874a9c
+  servername: ru-mow.probe.geomyip.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
   server: 130.49.177.193
   port: 443
@@ -32,7 +60,21 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: 89.105.218.138
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   type: vless
   server: novonl.subv.ru
   port: 443
@@ -46,9 +88,9 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: golos.mail.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   type: vless
-  server: fduknew.titun.su
+  server: prvtch.titun.su
   port: 443
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
@@ -58,23 +100,9 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: bizorg.su
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: vless
-  server: ee.subv.ru
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  servername: perevodchiki.su
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   type: vless
   server: 130.49.177.193
   port: 443
@@ -88,6 +116,34 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: vless
+  server: ee.subv.ru
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  type: vless
+  server: prvtch.titun.su
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +155,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +170,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

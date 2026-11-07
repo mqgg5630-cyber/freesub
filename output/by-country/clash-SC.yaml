@@ -5,6 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  udp: true
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
+  type: vless
+  server: 154.218.15.250
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
+- name: 🇸🇨 SC 03 - mqgg5630-cyber
+  type: vless
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-34l.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-34l.pages.dev
+- name: 🇸🇨 SC 04 - mqgg5630-cyber
   type: vless
   server: 46.29.255.123
   port: 59539
@@ -18,13 +53,6 @@ proxies:
     short-id: ''
   servername: cloudflare-dns.com
   client-fingerprint: firefox
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: ss
-  server: 45.207.207.25
-  port: 443
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
+  - 🇸🇨 SC 03 - mqgg5630-cyber
+  - 🇸🇨 SC 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
+  - 🇸🇨 SC 03 - mqgg5630-cyber
+  - 🇸🇨 SC 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

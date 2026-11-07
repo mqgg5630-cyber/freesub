@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.252.255
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: true
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -21,7 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
   port: 443
@@ -29,6 +21,15 @@ proxies:
   udp: true
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - mqgg5630-cyber
   type: trojan
   server: 70.34.252.255
@@ -38,28 +39,13 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
 - name: 🇵🇱 PL 05 - mqgg5630-cyber
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 06 - mqgg5630-cyber
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +56,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - mqgg5630-cyber
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
-  - 🇵🇱 PL 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,6 +66,5 @@ proxy-groups:
   - 🇵🇱 PL 03 - mqgg5630-cyber
   - 🇵🇱 PL 04 - mqgg5630-cyber
   - 🇵🇱 PL 05 - mqgg5630-cyber
-  - 🇵🇱 PL 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
