@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 BG 01 - mqgg5630-cyber
+  type: trojan
+  server: 167.82.64.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: MiTiVPN-1-mitivpn.ac.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 BG 01 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 BG 01 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

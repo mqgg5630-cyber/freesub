@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - mqgg5630-cyber
   type: vless
-  server: kz-cdn-prsv-forum.keno.su
-  port: 443
-  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
-    short-id: '14324280'
-  servername: kz-cdn-prsv-forum.keno.su
-  client-fingerprint: firefox
-- name: 🇰🇿 KZ 02 - mqgg5630-cyber
-  type: vless
-  server: 90.156.230.179
-  port: 443
-  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
-    short-id: '14324280'
-  servername: kz-cdn-prsv-forum.keno.su
-  client-fingerprint: firefox
-- name: 🇰🇿 KZ 03 - mqgg5630-cyber
-  type: vless
   server: 38.107.234.57
   port: 8443
   uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
@@ -52,15 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - mqgg5630-cyber
-  - 🇰🇿 KZ 02 - mqgg5630-cyber
-  - 🇰🇿 KZ 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
-  - 🇰🇿 KZ 02 - mqgg5630-cyber
-  - 🇰🇿 KZ 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
