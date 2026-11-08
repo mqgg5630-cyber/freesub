@@ -21,28 +21,6 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - mqgg5630-cyber
-  type: trojan
-  server: 70.34.252.255
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - mqgg5630-cyber
-  type: vless
-  server: 8.6.112.0
-  port: 8443
-  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
-- name: 🇵🇱 PL 05 - mqgg5630-cyber
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -59,8 +37,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
-  - 🇵🇱 PL 04 - mqgg5630-cyber
-  - 🇵🇱 PL 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +45,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
   - 🇵🇱 PL 03 - mqgg5630-cyber
-  - 🇵🇱 PL 04 - mqgg5630-cyber
-  - 🇵🇱 PL 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

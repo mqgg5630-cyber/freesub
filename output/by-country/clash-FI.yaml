@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: trojan
-  server: 104.25.239.113
+  server: 104.16.186.130
   port: 2053
   password: gHQP0D7D15
   udp: true
@@ -19,7 +19,7 @@ proxies:
       Host: marvdasht.phonecomparisonblog.org
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: trojan
-  server: 188.114.96.3
+  server: 104.25.239.113
   port: 2053
   password: gHQP0D7D15
   udp: true
@@ -31,21 +31,21 @@ proxies:
     headers:
       Host: marvdasht.phonecomparisonblog.org
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: trojan
-  server: 208.103.161.16
-  port: 2096
-  password: hWsj5AwIRPF8
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /vless
     headers:
-      Host: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: trojan
-  server: 172.67.118.45
+  server: 104.25.239.113
   port: 2053
   password: gHQP0D7D15
   udp: true
@@ -71,7 +71,7 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: trojan
-  server: 104.16.186.130
+  server: 172.67.118.45
   port: 2053
   password: gHQP0D7D15
   udp: true
@@ -83,6 +83,19 @@ proxies:
     headers:
       Host: marvdasht.phonecomparisonblog.org
 - name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: trojan
   server: 172.66.0.1
   port: 2053
@@ -95,71 +108,6 @@ proxies:
     path: /
     headers:
       Host: marvdasht.phonecomparisonblog.org
-- name: 🇫🇮 FI 08 - mqgg5630-cyber
-  type: trojan
-  server: 104.16.186.130
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-- name: 🇫🇮 FI 09 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 10 - mqgg5630-cyber
-  type: trojan
-  server: 104.25.239.113
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-- name: 🇫🇮 FI 11 - mqgg5630-cyber
-  type: trojan
-  server: 172.67.118.45
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-- name: 🇫🇮 FI 12 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -173,10 +121,6 @@ proxy-groups:
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
-  - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
-  - 🇫🇮 FI 12 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -190,9 +134,5 @@ proxy-groups:
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
-  - 🇫🇮 FI 09 - mqgg5630-cyber
-  - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
-  - 🇫🇮 FI 12 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

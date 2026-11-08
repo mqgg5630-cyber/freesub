@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - mqgg5630-cyber
   type: vless
-  server: 104.18.133.94
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇨🇿 CZ 02 - mqgg5630-cyber
-  type: vless
   server: server.slavkiti.monster
   port: 443
   uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
-  - 🇨🇿 CZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
-  - 🇨🇿 CZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

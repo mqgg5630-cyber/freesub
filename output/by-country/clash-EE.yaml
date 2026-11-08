@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇴 JO 01 - mqgg5630-cyber
+- name: 🇪🇪 EE 01 - mqgg5630-cyber
   type: vless
-  server: dddz-3-z.473221.xyz
-  port: 13212
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  server: 185.215.184.85
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 4VguZbm-S2NkLpi7gLDsQMv2eDXP2LucxsvTiEt98yY
-    short-id: 961f7127a015ba
-  servername: v1-dy.ixigua.com
-  client-fingerprint: edge
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇴 JO 01 - mqgg5630-cyber
+  - 🇪🇪 EE 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇴 JO 01 - mqgg5630-cyber
+  - 🇪🇪 EE 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
