@@ -6,69 +6,45 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: fi-edge.gacvpn.site
-  port: 443
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
-    short-id: c59bb8af70d9db1e
-  servername: fi3-edge.gacvpn.site
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 129.101.102.168
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 146.103.118.189
   port: 443
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
-    short-id: c59bb8af70d9db1e
-  servername: fi3-edge.gacvpn.site
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 03 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: nl2.574ck.xyz
   network: ws
   ws-opts:
-    path: /vless
+    path: /574ck-finland
     headers:
-      Host: 45.144.234.157
+      Host: nl2.574ck.xyz
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -90,8 +66,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
-  - 🇫🇮 FI 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,7 +75,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
-  - 🇫🇮 FI 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

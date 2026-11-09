@@ -8,20 +8,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber",
-        "🇸🇨 SC 03 - mqgg5630-cyber",
-        "🇸🇨 SC 04 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber",
-        "🇸🇨 SC 03 - mqgg5630-cyber",
-        "🇸🇨 SC 04 - mqgg5630-cyber"
+        "🇸🇨 SC 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -29,44 +23,6 @@
     {
       "type": "vless",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "154.218.15.250",
-      "server_port": 2083,
-      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy-1cu.pages.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "proxy-1cu.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC 02 - mqgg5630-cyber",
-      "server": "104.24.0.193",
-      "server_port": 443,
-      "uuid": "0192e468-ddb2-48f5-9450-e33608d299c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "net-bridge-4126e7-gw.wallweb3obtar.workers.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/dbb0764aca00c946?ed=2560",
-        "headers": {
-          "Host": "net-bridge-4126e7-gw.wallweb3obtar.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC 03 - mqgg5630-cyber",
       "server": "46.29.255.123",
       "server_port": 59539,
       "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
@@ -82,25 +38,6 @@
         "reality": {
           "enabled": true,
           "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC 04 - mqgg5630-cyber",
-      "server": "154.211.8.227",
-      "server_port": 2087,
-      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy-34l.pages.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "proxy-34l.pages.dev"
         }
       }
     },

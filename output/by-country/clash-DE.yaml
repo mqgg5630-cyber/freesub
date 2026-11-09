@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - mqgg5630-cyber
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.15
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.78
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
   type: vless
   server: 5.252.179.15
   port: 443
@@ -18,37 +41,15 @@ proxies:
     short-id: 296f27de82dad7ff
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 02 - mqgg5630-cyber
-  type: trojan
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  port: 443
-  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
-  udp: true
-  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 03 - mqgg5630-cyber
-  type: vless
-  server: 167.233.129.126
-  port: 2474
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 04 - mqgg5630-cyber
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 - name: 🇩🇪 德国 (Germany) 05 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.193
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: resources.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
   type: vless
   server: 5.252.179.15
   port: 443
@@ -61,131 +62,9 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 06 - mqgg5630-cyber
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
+  client-fingerprint: random
 - name: 🇩🇪 德国 (Germany) 07 - mqgg5630-cyber
   type: vless
-  server: 172.67.116.212
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.96
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 193.108.119.96
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
-  type: vless
-  server: 130.12.242.106
-  port: 443
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.96
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
-  type: vless
-  server: 94.249.195.239
-  port: 43000
-  uuid: 0809eed6-5204-49b8-8312-b82a10024022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: U_dxFnbfesmgSwL-SlpvGYFbpY5vlJ1kb52knlCXkkI
-    short-id: 8cfe1563
-  servername: 94.249.195.239
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
-  type: vless
-  server: 172.237.91.206
-  port: 443
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.29
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.78
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
-  type: vless
-  server: 169.40.42.202
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
-  type: vless
   server: 5.252.179.15
   port: 443
   uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
@@ -198,15 +77,7 @@ proxies:
     short-id: 296f27de82dad7ff
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.15
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 08 - mqgg5630-cyber
   type: vmess
   server: 2.26.54.200
   port: 8018
@@ -221,7 +92,14 @@ proxies:
     path: /websocket/transfer/gayporn
     headers:
       Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 09 - mqgg5630-cyber
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - mqgg5630-cyber
   type: trojan
   server: 193.108.119.29
   port: 443
@@ -229,78 +107,162 @@ proxies:
   udp: true
   sni: blog.iloverussia2026.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
+- name: 🇩🇪 德国 (Germany) 11 - mqgg5630-cyber
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   udp: true
-  sni: de-bots4.h1cloud.net
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 12 - mqgg5630-cyber
   type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
+  server: 193.108.119.134
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: de-bots4.h1cloud.net
+  sni: api.iloverussia2026.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 13 - mqgg5630-cyber
+  type: trojan
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  port: 443
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  udp: true
+  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - mqgg5630-cyber
   type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 15 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.15
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 16 - mqgg5630-cyber
+  type: vless
+  server: 167.233.129.126
+  port: 2474
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 17 - mqgg5630-cyber
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 18 - mqgg5630-cyber
   type: ss
   server: 193.108.119.2
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
-  type: vless
-  server: 188.114.98.0
+- name: 🇩🇪 德国 (Germany) 19 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.78
   port: 443
-  uuid: 8f317272-36ed-4235-9c19-94c5a4dc9d21
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: 193.108.119.78
   skip-cert-verify: true
-  servername: gem.hilaxjenu.cv
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gem.hilaxjenu.cv
-- name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
-  type: vless
-  server: 172.67.170.148
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 20 - mqgg5630-cyber
   type: ss
-  server: 185.176.204.18
+  server: 23.157.88.43
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇩🇪 德国 (Germany) 21 - mqgg5630-cyber
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 22 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.74
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 23 - mqgg5630-cyber
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 24 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.96
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 193.108.119.96
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 25 - mqgg5630-cyber
+  type: vless
+  server: 169.40.42.168
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 26 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.15
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 27 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.96
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 28 - mqgg5630-cyber
   type: vless
   server: 5.252.179.15
@@ -314,209 +276,22 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 29 - mqgg5630-cyber
   type: vless
-  server: 188.130.154.204
+  server: 169.40.42.168
   port: 443
-  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn2.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: cdn2.zovip2.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 30 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.29
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
-  type: vless
-  server: 94.249.195.155
-  port: 43000
-  uuid: e6fd9735-069d-478f-a237-05a0571825e3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE
-    short-id: b62ac375
-  servername: 94.249.195.155
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
-  type: vless
-  server: 104.27.197.129
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
-  type: vless
-  server: 5.252.179.15
-  port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
-  type: vless
-  server: 172.237.91.206
-  port: 443
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.15
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.96
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
-  type: vless
-  server: 130.12.242.106
-  port: 443
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
-  type: vless
-  server: 130.12.242.106
-  port: 443
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.193
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: resources.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
-  type: vless
-  server: 5.252.179.15
-  port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
-  type: vless
-  server: 85.237.207.141
-  port: 443
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560fp=chrome
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
   type: trojan
   server: 193.108.119.78
   port: 443
@@ -524,50 +299,91 @@ proxies:
   udp: true
   sni: www.iloverussia2026.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 31 - mqgg5630-cyber
   type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 32 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.96
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 33 - mqgg5630-cyber
+  type: vless
+  server: 177.202.71.55
+  port: 2059
+  uuid: aada3b83-8862-484e-8ac4-31343acba3e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
-  type: vless
-  server: 130.12.242.106
+  flow: xtls-rprx-vision
+  servername: angelvpn.angelmh.cv
+- name: 🇩🇪 德国 (Germany) 34 - mqgg5630-cyber
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 35 - mqgg5630-cyber
+  type: trojan
+  server: 104.105.23.170
   port: 443
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  udp: true
+  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 36 - mqgg5630-cyber
+  type: vless
+  server: 5.252.179.15
+  port: 443
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
   client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 37 - mqgg5630-cyber
   type: trojan
-  server: 79.182.70.207
+  server: 153.52.85.66
   port: 25267
   password: happybirthdaydaniel
   udp: true
   sni: de-bots4.h1cloud.net
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 38 - mqgg5630-cyber
+  type: trojan
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  port: 443
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
   udp: true
-- name: 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
+  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 39 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.29
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: blog.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 40 - mqgg5630-cyber
   type: vless
   server: 82.39.171.12
   port: 443
@@ -581,7 +397,16 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 41 - mqgg5630-cyber
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 42 - mqgg5630-cyber
   type: vless
   server: 5.252.179.15
   port: 443
@@ -595,21 +420,14 @@ proxies:
     short-id: 296f27de82dad7ff
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+- name: 🇩🇪 德国 (Germany) 43 - mqgg5630-cyber
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 44 - mqgg5630-cyber
   type: vless
   server: 5.252.179.15
   port: 443
@@ -623,59 +441,37 @@ proxies:
     short-id: 296f27de82dad7ff
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 56 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 45 - mqgg5630-cyber
   type: trojan
-  server: 193.108.119.78
+  server: 193.108.119.193
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: 193.108.119.78
+  sni: resources.iloverussia2026.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 57 - mqgg5630-cyber
-  type: vless
-  server: 130.12.242.106
+- name: 🇩🇪 德国 (Germany) 46 - mqgg5630-cyber
+  type: trojan
+  server: 193.108.119.29
   port: 443
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: blog.iloverussia2026.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 58 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
   type: vless
-  server: 46.101.253.244
+  server: 91.107.247.173
   port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edge.yzkvm.top
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.15
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.96
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
   type: trojan
   server: 193.108.119.193
   port: 443
@@ -683,15 +479,7 @@ proxies:
   udp: true
   sni: resources.iloverussia2026.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
-  type: trojan
-  server: 193.108.119.193
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: resources.iloverussia2026.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
+- name: 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
   type: trojan
   server: 193.108.119.29
   port: 443
@@ -753,20 +541,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 56 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 57 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 58 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -821,19 +595,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 47 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 48 - mqgg5630-cyber
   - 🇩🇪 德国 (Germany) 49 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 50 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 51 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 52 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 53 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 54 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 55 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 56 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 57 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 58 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 59 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 60 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 61 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 62 - mqgg5630-cyber
-  - 🇩🇪 德国 (Germany) 63 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

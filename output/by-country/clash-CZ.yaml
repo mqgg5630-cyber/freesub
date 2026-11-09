@@ -18,33 +18,17 @@ proxies:
     short-id: ee1716767f9b
   servername: www.tradingview.com
   client-fingerprint: chrome
-- name: 🇨🇿 CZ 02 - mqgg5630-cyber
-  type: vless
-  server: 129.101.103.211
-  port: 443
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
-    short-id: 53d0d0611a
-  servername: de2.gacvpn.site
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - mqgg5630-cyber
-  - 🇨🇿 CZ 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - mqgg5630-cyber
-  - 🇨🇿 CZ 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
