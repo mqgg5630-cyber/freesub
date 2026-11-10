@@ -8,37 +8,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - mqgg5630-cyber"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - mqgg5630-cyber"
+        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
-      "server": "ee.subv.ru",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mqgg5630-cyber",
+      "server": "162.159.153.4",
       "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "dvizhok.su",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
         }
       }
     },

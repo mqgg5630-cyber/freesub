@@ -16,9 +16,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber"
       ]
     },
     {
@@ -33,9 +31,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
         "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber",
-        "🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber"
+        "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -43,6 +39,55 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber",
+      "server": "179.43.166.190",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "perevodchiki.su",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
+      "server": "172.64.145.202",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "newwk1.f1w.de5.net",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "server": "38.60.223.125",
+      "server_port": 13108,
+      "method": "aes-128-gcm",
+      "password": "8722de56b6c0b3f6a4d01cf91c07e6aa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
       "server": "179.43.166.190",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -63,16 +108,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber",
-      "server": "38.60.223.125",
-      "server_port": 13108,
-      "method": "aes-128-gcm",
-      "password": "8722de56b6c0b3f6a4d01cf91c07e6aa"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
       "server": "89.105.218.148",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -94,7 +131,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
       "server": "46.19.138.214",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -115,8 +152,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
+      "server": "46.17.47.58",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
       "server": "185.215.184.85",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -135,101 +188,6 @@
           "short_id": "428ef87fd47a3a32"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber",
-      "server": "185.86.147.175",
-      "server_port": 443,
-      "uuid": "7955bf18-35c4-412d-aabd-c0b36c793063",
-      "tls": {
-        "enabled": true,
-        "server_name": "bhjolq0d0l.flowersgood.top",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/service/telemetry/045d381f1166/",
-        "headers": {
-          "Host": "bhjolq0d0l.flowersgood.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber",
-      "server": "185.86.147.175",
-      "server_port": 443,
-      "uuid": "7955bf18-35c4-412d-aabd-c0b36c793063",
-      "tls": {
-        "enabled": true,
-        "server_name": "bhjolq0d0l.flowersgood.top",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/service/telemetry/045d381f1166/",
-        "headers": {
-          "Host": "bhjolq0d0l.flowersgood.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber",
-      "server": "ee.subv.ru",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dvizhok.su",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber",
-      "server": "xsru2.freeddns.org",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xsru2.freeddns.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsru",
-        "headers": {
-          "Host": "xsru2.freeddns.org"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber",
-      "server": "46.17.47.58",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
     },
     {
       "type": "direct",

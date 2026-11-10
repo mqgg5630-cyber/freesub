@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇷🇴 RO 01 - mqgg5630-cyber",
-        "🇷🇴 RO 02 - mqgg5630-cyber"
+        "🇷🇴 RO 02 - mqgg5630-cyber",
+        "🇷🇴 RO 03 - mqgg5630-cyber",
+        "🇷🇴 RO 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,14 +19,24 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 RO 01 - mqgg5630-cyber",
-        "🇷🇴 RO 02 - mqgg5630-cyber"
+        "🇷🇴 RO 02 - mqgg5630-cyber",
+        "🇷🇴 RO 03 - mqgg5630-cyber",
+        "🇷🇴 RO 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇴 RO 01 - mqgg5630-cyber",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -45,8 +57,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 RO 03 - mqgg5630-cyber",
+      "server": "cdn-rum-keno-prsv.keno.su",
+      "server_port": 443,
+      "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-rum-keno-prsv.keno.su",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Cw04nkURk7InPCPZl-0PovP44rh5o74dMHBUFOsjFig",
+          "short_id": "a1b2c3d4e5f60718"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇷🇴 RO 02 - mqgg5630-cyber",
+      "tag": "🇷🇴 RO 04 - mqgg5630-cyber",
       "server": "194.68.44.42",
       "server_port": 64546,
       "method": "chacha20-ietf-poly1305",

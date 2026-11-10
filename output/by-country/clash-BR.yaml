@@ -20,6 +20,20 @@ proxies:
   udp: true
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: true
+- name: 🇧🇷 BR 03 - mqgg5630-cyber
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kv.074167.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kv.074167.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
