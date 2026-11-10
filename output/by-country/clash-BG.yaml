@@ -5,30 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - mqgg5630-cyber
-  type: vless
-  server: 66.bmi.ir.asopardaz.ir
-  port: 8443
-  uuid: aabfa4e8-c32b-4f41-b980-36819d9d8ed5
+  type: trojan
+  server: 191.44.112.170
+  port: 443
+  password: 46d221fa-e9b4-748c-4eae-019a88e42991
   udp: true
-  tls: true
+  sni: orbylume.my.to
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: timeline.www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tvpn-trojan/bg
+    headers:
+      Host: orbylume.my.to
+- name: 🇧🇬 BG 02 - mqgg5630-cyber
+  type: trojan
+  server: 191.44.112.170.sslip.io
+  port: 443
+  password: 46d221fa-e9b4-748c-4eae-019a88e42991
+  udp: true
+  sni: orbylume.my.to
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tvpn-trojan/bg
+    headers:
+      Host: orbylume.my.to
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - mqgg5630-cyber
+  - 🇧🇬 BG 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - mqgg5630-cyber
+  - 🇧🇬 BG 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

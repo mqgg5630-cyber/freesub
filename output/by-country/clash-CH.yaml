@@ -6,56 +6,35 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - mqgg5630-cyber
   type: vless
-  server: 185.18.250.245
+  server: 179.43.166.190
   port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 02 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.222
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 03 - mqgg5630-cyber
-  type: ss
-  server: 79.127.184.104
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 CH 04 - mqgg5630-cyber
-  type: vless
-  server: 185.18.250.252
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 05 - mqgg5630-cyber
   type: trojan
   server: 208.69.78.208
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: 208.69.78.208
+  sni: resources.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
-- name: 🇨🇭 CH 06 - mqgg5630-cyber
+- name: 🇨🇭 CH 03 - mqgg5630-cyber
+  type: trojan
+  server: 208.69.78.158
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
+- name: 🇨🇭 CH 04 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -67,36 +46,44 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 07 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.33
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  client-fingerprint: random
+- name: 🇨🇭 CH 05 - mqgg5630-cyber
+  type: ss
+  server: 23.166.88.127
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  sni: courses.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 08 - mqgg5630-cyber
-  type: vless
-  server: 45.90.59.15
-  port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 09 - mqgg5630-cyber
+- name: 🇨🇭 CH 06 - mqgg5630-cyber
   type: trojan
   server: 208.69.78.19
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
+- name: 🇨🇭 CH 07 - mqgg5630-cyber
+  type: trojan
+  server: 208.69.78.60
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
+- name: 🇨🇭 CH 08 - mqgg5630-cyber
+  type: ss
+  server: 186.190.215.251
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇭 CH 09 - mqgg5630-cyber
+  type: trojan
+  server: 208.69.78.29
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
 - name: 🇨🇭 CH 10 - mqgg5630-cyber
   type: vless
@@ -112,13 +99,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇨🇭 CH 11 - mqgg5630-cyber
-  type: ss
-  server: 23.166.88.127
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 CH 12 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -131,22 +111,40 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇭 CH 12 - mqgg5630-cyber
+  type: ss
+  server: 79.127.184.104
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇨🇭 CH 13 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.158
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
-  sni: api.yourultimateprofessionalcareerhub.com
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 14 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.29
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 157.22.185.68
+  port: 2058
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
   udp: true
-  sni: learn.yourultimateprofessionalcareerhub.com
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: 937255313d6ce673
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 15 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
@@ -159,82 +157,30 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 16 - mqgg5630-cyber
   type: trojan
-  server: 208.69.78.29
+  server: 208.69.78.208
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: learn.yourultimateprofessionalcareerhub.com
+  sni: 208.69.78.208
   skip-cert-verify: true
 - name: 🇨🇭 CH 17 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.29
+  type: vless
+  server: 45.90.59.15
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
   udp: true
-  sni: learn.yourultimateprofessionalcareerhub.com
+  tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 18 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.158
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: api.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 19 - mqgg5630-cyber
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇨🇭 CH 20 - mqgg5630-cyber
-  type: vless
-  server: 57.129.130.63
-  port: 52014
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 21 - mqgg5630-cyber
-  type: vless
-  server: 8.6.112.0
-  port: 8443
-  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
-- name: 🇨🇭 CH 22 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.29
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 23 - mqgg5630-cyber
   type: trojan
   server: 208.69.78.222
   port: 443
@@ -242,27 +188,15 @@ proxies:
   udp: true
   sni: yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
-- name: 🇨🇭 CH 24 - mqgg5630-cyber
-  type: ss
-  server: 186.190.215.251
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇭 CH 19 - mqgg5630-cyber
+  type: trojan
+  server: 208.69.78.158
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-- name: 🇨🇭 CH 25 - mqgg5630-cyber
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
+  sni: api.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 26 - mqgg5630-cyber
+- name: 🇨🇭 CH 20 - mqgg5630-cyber
   type: trojan
   server: 208.69.78.33
   port: 443
@@ -270,7 +204,23 @@ proxies:
   udp: true
   sni: courses.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
-- name: 🇨🇭 CH 27 - mqgg5630-cyber
+- name: 🇨🇭 CH 21 - mqgg5630-cyber
+  type: trojan
+  server: 208.69.78.29
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
+- name: 🇨🇭 CH 22 - mqgg5630-cyber
+  type: trojan
+  server: 208.69.78.208
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: resources.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
+- name: 🇨🇭 CH 23 - mqgg5630-cyber
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -283,37 +233,13 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇨🇭 CH 28 - mqgg5630-cyber
+- name: 🇨🇭 CH 24 - mqgg5630-cyber
   type: trojan
-  server: 208.69.78.208
+  server: 208.69.78.29
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: resources.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 29 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.158
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: api.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 30 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.208
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: resources.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 CH 31 - mqgg5630-cyber
-  type: trojan
-  server: 208.69.78.60
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.yourultimateprofessionalcareerhub.com
+  sni: learn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -344,13 +270,6 @@ proxy-groups:
   - 🇨🇭 CH 22 - mqgg5630-cyber
   - 🇨🇭 CH 23 - mqgg5630-cyber
   - 🇨🇭 CH 24 - mqgg5630-cyber
-  - 🇨🇭 CH 25 - mqgg5630-cyber
-  - 🇨🇭 CH 26 - mqgg5630-cyber
-  - 🇨🇭 CH 27 - mqgg5630-cyber
-  - 🇨🇭 CH 28 - mqgg5630-cyber
-  - 🇨🇭 CH 29 - mqgg5630-cyber
-  - 🇨🇭 CH 30 - mqgg5630-cyber
-  - 🇨🇭 CH 31 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -380,12 +299,5 @@ proxy-groups:
   - 🇨🇭 CH 22 - mqgg5630-cyber
   - 🇨🇭 CH 23 - mqgg5630-cyber
   - 🇨🇭 CH 24 - mqgg5630-cyber
-  - 🇨🇭 CH 25 - mqgg5630-cyber
-  - 🇨🇭 CH 26 - mqgg5630-cyber
-  - 🇨🇭 CH 27 - mqgg5630-cyber
-  - 🇨🇭 CH 28 - mqgg5630-cyber
-  - 🇨🇭 CH 29 - mqgg5630-cyber
-  - 🇨🇭 CH 30 - mqgg5630-cyber
-  - 🇨🇭 CH 31 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

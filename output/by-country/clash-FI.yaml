@@ -6,60 +6,34 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /fp=chrome
     headers:
-      Host: 45.144.234.157
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 146.103.118.189
+  server: 109.120.134.181
   port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nl2.574ck.xyz
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /fp=chrome
     headers:
-      Host: nl2.574ck.xyz
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
-  type: vless
   server: 146.103.118.189
   port: 443
   uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
@@ -72,7 +46,7 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 06 - mqgg5630-cyber
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -85,7 +59,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - mqgg5630-cyber
+- name: 🇫🇮 FI 05 - mqgg5630-cyber
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vmess
   server: 65.108.240.210
   port: 39018
@@ -95,6 +82,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 FI 07 - mqgg5630-cyber
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 08 - mqgg5630-cyber
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +121,7 @@ proxy-groups:
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
+  - 🇫🇮 FI 08 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +134,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - mqgg5630-cyber
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
+  - 🇫🇮 FI 08 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
