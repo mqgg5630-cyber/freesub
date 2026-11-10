@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - mqgg5630-cyber
+  type: ss
+  server: 64.177.90.30
+  port: 8388
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
+  udp: true
+- name: 🇲🇽 MX 02 - mqgg5630-cyber
   type: trojan
   server: mx001.zestapp778.com
   port: 15083
@@ -12,13 +19,6 @@ proxies:
   udp: true
   sni: mx001.zestapp778.com
   skip-cert-verify: true
-- name: 🇲🇽 MX 02 - mqgg5630-cyber
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-  udp: true
 - name: 🇲🇽 MX 03 - mqgg5630-cyber
   type: trojan
   server: mx001.zestapp778.com
