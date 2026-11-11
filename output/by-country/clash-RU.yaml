@@ -6,40 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: 89.105.218.148
+  server: 185.178.208.167
   port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: firefox
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vless
-  server: 89.105.218.133
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
   server: 185.215.184.85
   port: 443
@@ -53,9 +32,9 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: dvizhok.su
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
-  server: 179.43.166.190
+  server: 89.105.218.148
   port: 443
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
@@ -65,37 +44,9 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
+  servername: golos.mail.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: vless
-  server: 46.19.138.214
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  type: vless
-  server: prvtch.titun.su
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
   server: 185.178.208.167
   port: 443
@@ -109,30 +60,9 @@ proxies:
     path: /session
     headers:
       Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   type: vless
-  server: lvi.su
-  port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lvi.su
-  network: ws
-  ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
-    headers:
-      Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
-  type: vless
-  server: 185.215.184.53
+  server: 46.19.138.214
   port: 443
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
@@ -142,23 +72,9 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
-  type: vless
-  server: 185.215.184.53
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
+  servername: perevodchiki.su
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   type: vless
   server: 89.105.218.133
   port: 443
@@ -172,7 +88,35 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: golos.mail.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: vless
+  server: 89.105.218.143
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  type: vless
+  server: 46.19.138.214
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
   type: vless
   server: 185.215.184.85
   port: 443
@@ -186,7 +130,35 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: dvizhok.su
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  type: ss
+  server: 38.60.223.125
+  port: 13108
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  type: vless
+  server: prvtch.titun.su
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -211,8 +183,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -231,7 +201,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

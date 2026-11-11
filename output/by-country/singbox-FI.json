@@ -17,7 +17,8 @@
         "🇫🇮 FI 07 - mqgg5630-cyber",
         "🇫🇮 FI 08 - mqgg5630-cyber",
         "🇫🇮 FI 09 - mqgg5630-cyber",
-        "🇫🇮 FI 10 - mqgg5630-cyber"
+        "🇫🇮 FI 10 - mqgg5630-cyber",
+        "🇫🇮 FI 11 - mqgg5630-cyber"
       ]
     },
     {
@@ -33,7 +34,8 @@
         "🇫🇮 FI 07 - mqgg5630-cyber",
         "🇫🇮 FI 08 - mqgg5630-cyber",
         "🇫🇮 FI 09 - mqgg5630-cyber",
-        "🇫🇮 FI 10 - mqgg5630-cyber"
+        "🇫🇮 FI 10 - mqgg5630-cyber",
+        "🇫🇮 FI 11 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -41,6 +43,20 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
       "server": "169.40.34.41",
       "server_port": 443,
       "uuid": "622654a4-b666-000b-9260-fb717e05154f",
@@ -57,25 +73,6 @@
           "enabled": true,
           "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
           "short_id": "1c3e8241a8743df9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "146.103.118.189",
-      "server_port": 443,
-      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl2.574ck.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/574ck-finland",
-        "headers": {
-          "Host": "nl2.574ck.xyz"
         }
       }
     },
@@ -92,7 +89,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -104,28 +101,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "72.35.246.39",
-      "server_port": 2053,
-      "uuid": "b6c29ae7-4748-4049-b642-b695c0d2c776",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg",
-          "short_id": "5e39e518bfac6392"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -138,21 +113,29 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
+      "server": "oztq9osla2ad.dop15.com",
+      "server_port": 26412,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
+    },
+    {
       "type": "vless",
       "tag": "🇫🇮 FI 06 - mqgg5630-cyber",
-      "server": "109.120.134.181",
+      "server": "146.103.118.189",
       "server_port": 443,
-      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
       "tls": {
         "enabled": true,
-        "server_name": "fs.qicai99.com",
+        "server_name": "nl2.574ck.xyz",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome",
+        "path": "/574ck-finland",
         "headers": {
-          "Host": "fs.qicai99.com"
+          "Host": "nl2.574ck.xyz"
         }
       }
     },
@@ -181,14 +164,19 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 08 - mqgg5630-cyber",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "138.124.124.157",
+      "server_port": 443,
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/fp=chrome",
         "headers": {
-          "Host": "45.144.234.157"
+          "Host": "fs.qicai99.com"
         }
       }
     },
@@ -205,7 +193,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -217,6 +205,25 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 10 - mqgg5630-cyber",
+      "server": "138.124.49.108",
+      "server_port": 8443,
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "fs.qicai99.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 11 - mqgg5630-cyber",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",

@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - mqgg5630-cyber"
+        "🇭🇺 HU 01 - mqgg5630-cyber",
+        "🇭🇺 HU 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - mqgg5630-cyber"
+        "🇭🇺 HU 01 - mqgg5630-cyber",
+        "🇭🇺 HU 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -34,6 +36,25 @@
       "transport": {
         "type": "ws",
         "path": "/fp=chrome",
+        "headers": {
+          "Host": "fs.qicai99.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇺 HU 02 - mqgg5630-cyber",
+      "server": "38.180.225.247",
+      "server_port": 2053,
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "fs.qicai99.com"
         }
