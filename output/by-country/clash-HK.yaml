@@ -6,6 +6,21 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+  type: vmess
   server: 156.245.232.239
   port: 35043
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
@@ -19,7 +34,21 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  type: vless
+  server: 39.109.111.23
+  port: 28675
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
+    short-id: 9a79807253c040
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   type: vmess
   server: 47.244.120.197
   port: 23026
@@ -34,21 +63,20 @@ proxies:
     path: /arki
     headers:
       Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
+  type: vless
+  server: 154.21.203.106
+  port: 51279
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +85,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,5 +95,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

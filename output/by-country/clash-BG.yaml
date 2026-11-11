@@ -4,18 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - mqgg5630-cyber
-  type: vless
-  server: 191.44.112.170
+- name: 🇧🇬 BG 01 - mqgg5630-cyber
+  type: trojan
+  server: 191.44.112.170.sslip.io
   port: 443
-  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  password: 46d221fa-e9b4-748c-4eae-019a88e42991
   udp: true
-  tls: true
+  sni: orbylume.my.to
   skip-cert-verify: true
-  servername: orbylume.my.to
   network: ws
   ws-opts:
-    path: /tvpn-tor/is
+    path: /tvpn-trojan/bg
     headers:
       Host: orbylume.my.to
 proxy-groups:
@@ -23,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - mqgg5630-cyber
+  - 🇧🇬 BG 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - mqgg5630-cyber
+  - 🇧🇬 BG 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
