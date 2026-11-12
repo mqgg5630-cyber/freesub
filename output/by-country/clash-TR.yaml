@@ -31,33 +31,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 45.92.219.47
-  port: 443
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20028
+  password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
-  tls: true
+  sni: hk.catxstar.com
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-    short-id: ''
-  servername: ty.galactichub.online
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  type: vless
-  server: 188.225.37.43
-  port: 443
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torvani.cyou
-  network: ws
-  ws-opts:
-    path: /api/boards/live
-    headers:
-      Host: torvani.cyou
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +46,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +54,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -20,39 +20,11 @@ proxies:
   client-fingerprint: firefox
 - name: 🇷🇴 RO 02 - mqgg5630-cyber
   type: ss
-  server: 194.68.44.42
-  port: 64546
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 03 - mqgg5630-cyber
-  type: vless
-  server: 82.152.132.74
-  port: 443
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 82.152.132.74
-  network: ws
-  ws-opts:
-    path: /assets/sync-8f3a71
-    headers:
-      Host: 82.152.132.74
-- name: 🇷🇴 RO 04 - mqgg5630-cyber
-  type: vless
-  server: 82.152.132.74
-  port: 443
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 82.152.132.74
-  network: ws
-  ws-opts:
-    path: /assets/sync-8f3a71
-    headers:
-      Host: 82.152.132.74
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
-  - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - mqgg5630-cyber
   - 🇷🇴 RO 02 - mqgg5630-cyber
-  - 🇷🇴 RO 03 - mqgg5630-cyber
-  - 🇷🇴 RO 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

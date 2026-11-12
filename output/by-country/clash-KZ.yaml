@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇿 KZ 01 - mqgg5630-cyber
+  type: vless
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+  type: trojan
+  server: 172.67.220.103
+  port: 2087
+  password: 80d4cb87-ac70-e074-bc82-6313d2d1b539
+  udp: true
+  sni: ayhanmansur-zedmeli.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZXJaQklLRUh1R0UiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ==
+    headers:
+      Host: ayhanmansur-zedmeli.kdns.fr
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇿 KZ 01 - mqgg5630-cyber
+  - 🇰🇿 KZ 02 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES
