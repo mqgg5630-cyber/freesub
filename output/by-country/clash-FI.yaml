@@ -6,26 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless#Farah_VPN-178
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 02 - mqgg5630-cyber
-  type: vless
-  server: 65.109.208.183
+  server: 138.124.124.157
   port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: 169.40.34.41
+  port: 443
+  uuid: 622654a4-b666-000b-9260-fb717e05154f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: key-master-saver.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 169.40.34.41
@@ -56,32 +62,30 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 66.bmi.ir.asopardaz.ir
-  port: 8443
-  uuid: a564987a-380a-4c21-a462-a011863ca9be
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
-  server: 169.40.34.41
-  port: 443
-  uuid: 622654a4-b666-000b-9260-fb717e05154f
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /vless#Farah_VPN-178
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 07 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
@@ -97,58 +101,40 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: vless
-  server: 169.40.34.41
-  port: 443
-  uuid: 622654a4-b666-000b-9260-fb717e05154f
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 09 - mqgg5630-cyber
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 10 - mqgg5630-cyber
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 11 - mqgg5630-cyber
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 10 - mqgg5630-cyber
+  type: vless
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /fp=chrome
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -164,7 +150,6 @@ proxy-groups:
   - 🇫🇮 FI 08 - mqgg5630-cyber
   - 🇫🇮 FI 09 - mqgg5630-cyber
   - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -180,6 +165,5 @@ proxy-groups:
   - 🇫🇮 FI 08 - mqgg5630-cyber
   - 🇫🇮 FI 09 - mqgg5630-cyber
   - 🇫🇮 FI 10 - mqgg5630-cyber
-  - 🇫🇮 FI 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
