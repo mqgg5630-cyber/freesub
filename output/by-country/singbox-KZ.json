@@ -8,28 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - mqgg5630-cyber"
+        "🇰🇿 KZ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇲🇾 MY 01 - mqgg5630-cyber",
-      "server": "47.250.84.25",
-      "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "type": "vless",
+      "tag": "🇰🇿 KZ 01 - mqgg5630-cyber",
+      "server": "38.107.234.57",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
       "tls": {
         "enabled": true,
-        "server_name": "47.250.84.25",
+        "server_name": "3h-kazakhstan1.09vpn.com",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
       }
     },
     {

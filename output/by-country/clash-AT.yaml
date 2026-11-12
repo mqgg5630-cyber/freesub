@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - mqgg5630-cyber
-  type: vless
-  server: 193.219.97.198
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
+  servername: ''
 - name: 🇦🇹 AT 02 - mqgg5630-cyber
   type: ss
   server: 82.110.60.9
@@ -39,6 +36,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
+- name: 🇦🇹 AT 05 - mqgg5630-cyber
+  type: vless
+  server: 193.219.97.198
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +59,7 @@ proxy-groups:
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
   - 🇦🇹 AT 04 - mqgg5630-cyber
+  - 🇦🇹 AT 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +69,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - mqgg5630-cyber
   - 🇦🇹 AT 03 - mqgg5630-cyber
   - 🇦🇹 AT 04 - mqgg5630-cyber
+  - 🇦🇹 AT 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

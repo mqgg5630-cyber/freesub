@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 EE 01 - mqgg5630-cyber",
-        "🇪🇪 EE 02 - mqgg5630-cyber"
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -47,7 +49,29 @@
     {
       "type": "vless",
       "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
-      "server": "185.215.184.86",
+      "server": "5.129.202.80",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mirror-50.topp-con.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8",
+          "short_id": "2ef2b10d5143d798"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
+      "server": "185.215.184.54",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",

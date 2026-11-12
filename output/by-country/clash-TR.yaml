@@ -7,7 +7,7 @@ proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: trojan
   server: sclass-b1.catcat321.com
-  port: 20028
+  port: 20027
   password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
   sni: hk.catxstar.com
@@ -28,7 +28,7 @@ proxies:
 - name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   type: trojan
   server: sclass-b1.catcat321.com
-  port: 20027
+  port: 20028
   password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
   sni: hk.catxstar.com
@@ -46,6 +46,42 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  type: trojan
+  server: 157.254.38.210
+  port: 20027
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+  type: vless
+  server: 188.225.37.43
+  port: 443
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torvani.cyou
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
+- name: 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
+  type: vless
+  server: 188.225.37.43
+  port: 443
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torvani.cyou
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +91,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +103,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 06 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
