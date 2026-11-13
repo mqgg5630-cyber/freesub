@@ -29,20 +29,6 @@ proxies:
   sni: mx001.zestapp778.com
   skip-cert-verify: true
 - name: 🇲🇽 MX 04 - mqgg5630-cyber
-  type: vless
-  server: 147.78.1.253
-  port: 443
-  uuid: 39a390af-1f90-4c0e-89e4-4e2023732e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TefL2KtNcNLPmUY8TKlu5pA7ffipqgmbBN6gpyzyklk
-    short-id: ''
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇲🇽 MX 05 - mqgg5630-cyber
   type: ss
   server: 64.177.90.30
   port: 8388
@@ -58,7 +44,6 @@ proxy-groups:
   - 🇲🇽 MX 02 - mqgg5630-cyber
   - 🇲🇽 MX 03 - mqgg5630-cyber
   - 🇲🇽 MX 04 - mqgg5630-cyber
-  - 🇲🇽 MX 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,6 +53,5 @@ proxy-groups:
   - 🇲🇽 MX 02 - mqgg5630-cyber
   - 🇲🇽 MX 03 - mqgg5630-cyber
   - 🇲🇽 MX 04 - mqgg5630-cyber
-  - 🇲🇽 MX 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
