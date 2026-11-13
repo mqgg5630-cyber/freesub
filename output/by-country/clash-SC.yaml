@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
   type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  server: 46.29.255.123
+  port: 59539
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
+    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
+    short-id: ''
+  servername: cloudflare-dns.com
   client-fingerprint: chrome
 - name: 🇸🇨 SC 02 - mqgg5630-cyber
   type: vless
@@ -31,7 +31,7 @@ proxies:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
     short-id: ''
   servername: cloudflare-dns.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇸🇨 SC 03 - mqgg5630-cyber
   type: vless
   server: 46.29.255.123
@@ -45,7 +45,7 @@ proxies:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
     short-id: ''
   servername: cloudflare-dns.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
