@@ -17,7 +17,8 @@
         "🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber"
+        "🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber"
       ]
     },
     {
@@ -33,7 +34,8 @@
         "🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber",
         "🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber",
-        "🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber"
+        "🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber",
+        "🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -41,6 +43,20 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01 - mqgg5630-cyber",
+      "server": "152.69.226.63",
+      "server_port": 25555,
+      "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.69.226.63"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -50,26 +66,12 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
           "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber",
-      "server": "152.69.226.63",
-      "server_port": 25555,
-      "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.69.226.63"
         }
       }
     },
@@ -99,7 +101,7 @@
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -151,14 +153,21 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber",
-      "server": "152.69.226.63",
-      "server_port": 25555,
-      "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.69.226.63"
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
         }
       }
     },
@@ -179,21 +188,33 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "server": "152.69.226.63",
+      "server_port": 25555,
+      "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.69.226.63"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber",
+      "server": "64.110.79.66",
+      "server_port": 8443,
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
+        "server_name": "fs.qicai99.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "fs.qicai99.com"
         }
       }
     },

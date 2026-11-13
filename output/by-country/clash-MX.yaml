@@ -5,6 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - mqgg5630-cyber
+  type: trojan
+  server: mx001.zestapp778.com
+  port: 15083
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: mx001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇲🇽 MX 02 - mqgg5630-cyber
+  type: trojan
+  server: mx001.zestapp778.com
+  port: 15083
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: mx001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇲🇽 MX 03 - mqgg5630-cyber
+  type: trojan
+  server: mx001.zestapp778.com
+  port: 15083
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: mx001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇲🇽 MX 04 - mqgg5630-cyber
   type: vless
   server: 147.78.1.253
   port: 443
@@ -18,7 +42,7 @@ proxies:
     short-id: ''
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇲🇽 MX 02 - mqgg5630-cyber
+- name: 🇲🇽 MX 05 - mqgg5630-cyber
   type: ss
   server: 64.177.90.30
   port: 8388
@@ -32,6 +56,9 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - mqgg5630-cyber
   - 🇲🇽 MX 02 - mqgg5630-cyber
+  - 🇲🇽 MX 03 - mqgg5630-cyber
+  - 🇲🇽 MX 04 - mqgg5630-cyber
+  - 🇲🇽 MX 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +66,8 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - mqgg5630-cyber
   - 🇲🇽 MX 02 - mqgg5630-cyber
+  - 🇲🇽 MX 03 - mqgg5630-cyber
+  - 🇲🇽 MX 04 - mqgg5630-cyber
+  - 🇲🇽 MX 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

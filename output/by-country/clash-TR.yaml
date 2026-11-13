@@ -5,22 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20028
+  password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
-  tls: true
+  sni: hk.catxstar.com
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: trojan
   server: sclass-b1.catcat321.com
-  port: 20027
+  port: 20028
   password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
   sni: hk.catxstar.com
@@ -39,17 +34,22 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
-  type: trojan
-  server: sclass-b1.catcat321.com
-  port: 20028
-  password: d7563108-615c-4338-a7bd-77f359869a4a
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
-  sni: hk.catxstar.com
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
   type: trojan
   server: sclass-b1.catcat321.com
-  port: 20028
+  port: 20027
   password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
   sni: hk.catxstar.com
