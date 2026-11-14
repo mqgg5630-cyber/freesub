@@ -5,10 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
+  type: ss
+  server: 213.176.92.148
+  port: 40647
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+  type: trojan
+  server: 16.106.7.232
+  port: 20086
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   type: vmess
   server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   udp: true
@@ -19,7 +34,7 @@ proxies:
     path: /arki
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -34,29 +49,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: trojan
-  server: 16.106.7.232
-  port: 20086
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  udp: true
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: trojan
-  server: sclass-00.catcat321.com
-  port: 20123
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  udp: true
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: ss
-  server: 213.176.92.148
-  port: 40647
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +58,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +67,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

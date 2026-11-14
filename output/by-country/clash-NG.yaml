@@ -14,8 +14,8 @@ proxies:
   skip-cert-verify: true
 - name: 🇳🇬 NG 02 - mqgg5630-cyber
   type: trojan
-  server: sclass-b1.catcat321.com
-  port: 20051
+  server: 157.254.38.210
+  port: 20103
   password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
   sni: hk.catxstar.com
@@ -28,22 +28,6 @@ proxies:
   udp: true
   sni: hk.catxstar.com
   skip-cert-verify: true
-- name: 🇳🇬 NG 04 - mqgg5630-cyber
-  type: trojan
-  server: 157.254.38.210
-  port: 20051
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  udp: true
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇳🇬 NG 05 - mqgg5630-cyber
-  type: trojan
-  server: sclass-c2.catcat321.com
-  port: 20051
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  udp: true
-  sni: hk.catxstar.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +36,6 @@ proxy-groups:
   - 🇳🇬 NG 01 - mqgg5630-cyber
   - 🇳🇬 NG 02 - mqgg5630-cyber
   - 🇳🇬 NG 03 - mqgg5630-cyber
-  - 🇳🇬 NG 04 - mqgg5630-cyber
-  - 🇳🇬 NG 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,7 +44,5 @@ proxy-groups:
   - 🇳🇬 NG 01 - mqgg5630-cyber
   - 🇳🇬 NG 02 - mqgg5630-cyber
   - 🇳🇬 NG 03 - mqgg5630-cyber
-  - 🇳🇬 NG 04 - mqgg5630-cyber
-  - 🇳🇬 NG 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
