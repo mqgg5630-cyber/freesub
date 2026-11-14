@@ -8,14 +8,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber",
+        "🇨🇿 CZ 04 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - mqgg5630-cyber"
+        "🇨🇿 CZ 01 - mqgg5630-cyber",
+        "🇨🇿 CZ 02 - mqgg5630-cyber",
+        "🇨🇿 CZ 03 - mqgg5630-cyber",
+        "🇨🇿 CZ 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -36,6 +42,56 @@
         "path": "/fp=chrome",
         "headers": {
           "Host": "fs.qicai99.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 02 - mqgg5630-cyber",
+      "server": "188.137.178.174",
+      "server_port": 8443,
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "fs.qicai99.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 03 - mqgg5630-cyber",
+      "server": "194.87.109.106",
+      "server_port": 443,
+      "uuid": "d9274255-edf4-4944-bc62-6ef35cd2de40",
+      "tls": {
+        "enabled": true,
+        "server_name": "currant.asynchronous.site",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ 04 - mqgg5630-cyber",
+      "server": "104.21.29.38",
+      "server_port": 443,
+      "uuid": "ac532d5e-2b9c-45a2-85df-37b3b74cffde",
+      "tls": {
+        "enabled": true,
+        "server_name": "fast-route-4aa49d-gw.staging-api-05a87c.workers.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/9dffa10cc2d3b317?ed=2560",
+        "headers": {
+          "Host": "fast-route-4aa49d-gw.staging-api-05a87c.workers.dev"
         }
       }
     },

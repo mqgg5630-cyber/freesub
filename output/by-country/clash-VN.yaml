@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - mqgg5630-cyber
   type: vless
+  server: zfapi.zalolink.com
+  port: 55688
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
+- name: 🇻🇳 VN 02 - mqgg5630-cyber
+  type: vless
   server: 150.95.109.109
   port: 2086
   uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
@@ -18,11 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇻🇳 VN 01 - mqgg5630-cyber
+  - 🇻🇳 VN 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 VN 01 - mqgg5630-cyber
+  - 🇻🇳 VN 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
