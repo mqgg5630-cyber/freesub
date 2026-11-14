@@ -5,24 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  type: trojan
+  server: 95.143.196.97
+  port: 443
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   udp: true
-  tls: false
+  sni: connect-se.mimowhat.online
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
   type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
   udp: true
 - name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: trojan
@@ -33,21 +28,6 @@ proxies:
   sni: connect-se.mimowhat.online
   skip-cert-verify: true
 - name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: ss
-  server: 62.182.193.228
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-  udp: true
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
-  type: trojan
-  server: 95.143.196.97
-  port: 443
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  udp: true
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: true
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -60,6 +40,13 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +57,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
   - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,6 +67,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
   - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
