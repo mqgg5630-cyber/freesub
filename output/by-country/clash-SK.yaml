@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - mqgg5630-cyber
+- name: 🇸🇰 SK 01 - mqgg5630-cyber
   type: vless
-  server: 13.143.176.250
+  server: b998f03d.de-p2.h1clayd.click
   port: 443
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  uuid: 474638a5-dc58-4453-9e40-70bcaa4ef74c
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: images.porsche.com
-  client-fingerprint: firefox
+    public-key: RjoTK5x2_y3hb4nsOUnjii7IAu6gy5GrC-VN-H_AIh0
+    short-id: c10f4100fa3a8d47
+  servername: b998f03d.de-p2.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - mqgg5630-cyber
+  - 🇸🇰 SK 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - mqgg5630-cyber
+  - 🇸🇰 SK 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
