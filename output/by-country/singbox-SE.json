@@ -14,7 +14,9 @@
         "🇸🇪 SE 04 - mqgg5630-cyber",
         "🇸🇪 SE 05 - mqgg5630-cyber",
         "🇸🇪 SE 06 - mqgg5630-cyber",
-        "🇸🇪 SE 07 - mqgg5630-cyber"
+        "🇸🇪 SE 07 - mqgg5630-cyber",
+        "🇸🇪 SE 08 - mqgg5630-cyber",
+        "🇸🇪 SE 09 - mqgg5630-cyber"
       ]
     },
     {
@@ -27,7 +29,9 @@
         "🇸🇪 SE 04 - mqgg5630-cyber",
         "🇸🇪 SE 05 - mqgg5630-cyber",
         "🇸🇪 SE 06 - mqgg5630-cyber",
-        "🇸🇪 SE 07 - mqgg5630-cyber"
+        "🇸🇪 SE 07 - mqgg5630-cyber",
+        "🇸🇪 SE 08 - mqgg5630-cyber",
+        "🇸🇪 SE 09 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -41,26 +45,24 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
+      "server": "194.59.250.52",
+      "server_port": 18501,
+      "method": "aes-128-gcm",
+      "password": "517403753b63fd4fac88986bf98b11e0"
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "tls": {
+        "enabled": true,
+        "server_name": "connect-se.mimowhat.online",
+        "insecure": true
+      }
     },
     {
       "type": "shadowsocks",
@@ -71,14 +73,16 @@
       "password": "2e555e46dbc421452416834962fd014f"
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇸🇪 SE 05 - mqgg5630-cyber",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
+        "server_name": "xmfhlpy.com",
         "insecure": true
       }
     },
@@ -97,15 +101,36 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE 07 - mqgg5630-cyber",
-      "server": "136.148.213.96",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇪 SE 08 - mqgg5630-cyber",
+      "server": "95.143.196.97",
       "server_port": 443,
-      "uuid": "beda6bd0-7ce4-477a-91f1-860d018dbfcb",
-      "flow": "xtls-rprx-vision",
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "lodizu.hagrid-connected.com",
+        "server_name": "connect-se.mimowhat.online",
         "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 SE 09 - mqgg5630-cyber",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "direct",

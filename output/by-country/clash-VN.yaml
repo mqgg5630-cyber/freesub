@@ -12,17 +12,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇻🇳 VN 02 - mqgg5630-cyber
+  type: vless
+  server: zfapi.zalolink.com
+  port: 55688
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇻🇳 VN 01 - mqgg5630-cyber
+  - 🇻🇳 VN 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 VN 01 - mqgg5630-cyber
+  - 🇻🇳 VN 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

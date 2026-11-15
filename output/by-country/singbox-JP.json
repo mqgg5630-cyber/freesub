@@ -41,7 +41,14 @@
         "🇯🇵 日本 (Japan) 31 - mqgg5630-cyber",
         "🇯🇵 日本 (Japan) 32 - mqgg5630-cyber",
         "🇯🇵 日本 (Japan) 33 - mqgg5630-cyber",
-        "🇯🇵 日本 (Japan) 34 - mqgg5630-cyber"
+        "🇯🇵 日本 (Japan) 34 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 35 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 36 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 37 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 38 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 39 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 40 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 41 - mqgg5630-cyber"
       ]
     },
     {
@@ -81,7 +88,14 @@
         "🇯🇵 日本 (Japan) 31 - mqgg5630-cyber",
         "🇯🇵 日本 (Japan) 32 - mqgg5630-cyber",
         "🇯🇵 日本 (Japan) 33 - mqgg5630-cyber",
-        "🇯🇵 日本 (Japan) 34 - mqgg5630-cyber"
+        "🇯🇵 日本 (Japan) 34 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 35 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 36 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 37 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 38 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 39 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 40 - mqgg5630-cyber",
+        "🇯🇵 日本 (Japan) 41 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -89,7 +103,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 - mqgg5630-cyber",
-      "server": "104.18.42.98",
+      "server": "104.24.31.89",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -106,29 +120,18 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 02 - mqgg5630-cyber",
-      "server": "104.24.0.1",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 03 - mqgg5630-cyber",
-      "server": "104.19.164.155",
-      "server_port": 443,
+      "server": "154.31.114.162",
+      "server_port": 8443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
@@ -142,11 +145,19 @@
           "Host": "jp3.yohototo.top"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 04 - mqgg5630-cyber",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 04 - mqgg5630-cyber",
-      "server": "162.159.254.3",
+      "tag": "🇯🇵 日本 (Japan) 05 - mqgg5630-cyber",
+      "server": "104.16.111.102",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -159,34 +170,13 @@
         "path": "/tyxyws",
         "headers": {
           "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 05 - mqgg5630-cyber",
-      "server": "JP032001.ssgreen.org",
-      "server_port": 443,
-      "uuid": "16586ea9-a30d-4323-97f3-1907b27f439f",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "JP032001.ssgreen.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wes",
-        "headers": {
-          "Host": "JP032001.ssgreen.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 06 - mqgg5630-cyber",
-      "server": "62.106.75.37",
+      "server": "104.21.70.21",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -205,10 +195,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 07 - mqgg5630-cyber",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "server": "168.138.205.100",
+      "server_port": 53758,
+      "method": "aes-128-gcm",
+      "password": "Bwlqh7GcFB"
     },
     {
       "type": "shadowsocks",
@@ -221,7 +211,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 09 - mqgg5630-cyber",
-      "server": "104.17.50.53",
+      "server": "172.67.156.147",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -240,7 +230,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 10 - mqgg5630-cyber",
-      "server": "104.19.164.155",
+      "server": "104.27.46.35",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -259,7 +249,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 11 - mqgg5630-cyber",
-      "server": "104.17.210.74",
+      "server": "104.21.33.59",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -278,7 +268,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 12 - mqgg5630-cyber",
-      "server": "104.16.10.22",
+      "server": "104.16.10.72",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -297,7 +287,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 13 - mqgg5630-cyber",
-      "server": "104.16.10.104",
+      "server": "104.16.111.102",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -314,17 +304,28 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 14 - mqgg5630-cyber",
-      "server": "84.247.155.196",
+      "server": "172.67.217.240",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 15 - mqgg5630-cyber",
-      "server": "104.18.42.98",
+      "server": "104.16.0.1",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -343,7 +344,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 16 - mqgg5630-cyber",
-      "server": "104.21.0.87",
+      "server": "104.19.12.94",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -362,7 +363,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 17 - mqgg5630-cyber",
-      "server": "43.156.62.218",
+      "server": "104.17.50.227",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -400,7 +401,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 19 - mqgg5630-cyber",
-      "server": "188.114.97.6",
+      "server": "172.64.190.13",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -419,7 +420,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 20 - mqgg5630-cyber",
-      "server": "104.21.70.21",
+      "server": "104.21.219.160",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -438,7 +439,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 21 - mqgg5630-cyber",
-      "server": "104.16.111.195",
+      "server": "104.16.10.48",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -457,7 +458,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 22 - mqgg5630-cyber",
-      "server": "62.106.70.68",
+      "server": "152.69.200.216",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -476,7 +477,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 23 - mqgg5630-cyber",
-      "server": "43.170.8.95",
+      "server": "64.178.113.127",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -495,7 +496,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 24 - mqgg5630-cyber",
-      "server": "104.16.0.1",
+      "server": "62.106.75.37",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -512,23 +513,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 25 - mqgg5630-cyber",
-      "server": "104.19.164.155",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
@@ -552,6 +542,25 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 27 - mqgg5630-cyber",
+      "server": "162.159.254.3",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 28 - mqgg5630-cyber",
       "server": "154.31.114.162",
       "server_port": 8443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
@@ -569,17 +578,9 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 28 - mqgg5630-cyber",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 29 - mqgg5630-cyber",
-      "server": "104.16.0.1",
+      "server": "104.21.6.186",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -598,29 +599,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 30 - mqgg5630-cyber",
-      "server": "zfapi.zalolink.com",
-      "server_port": 55688,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bilibili-vn.biliimg.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ",
-          "short_id": "865c1b2c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 31 - mqgg5630-cyber",
-      "server": "104.24.0.1",
+      "server": "104.18.42.98",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -637,30 +616,47 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 32 - mqgg5630-cyber",
-      "server": "JP032001.ssgreen.org",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 31 - mqgg5630-cyber",
+      "server": "104.16.10.185",
       "server_port": 443,
-      "uuid": "16586ea9-a30d-4323-97f3-1907b27f439f",
-      "security": "auto",
-      "alter_id": 0,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "JP032001.ssgreen.org",
+        "server_name": "jp3.yohototo.top",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/wes",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "JP032001.ssgreen.org"
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 32 - mqgg5630-cyber",
+      "server": "104.17.50.53",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 33 - mqgg5630-cyber",
-      "server": "104.19.12.94",
+      "server": "104.21.70.21",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -679,7 +675,140 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 34 - mqgg5630-cyber",
-      "server": "104.24.31.89",
+      "server": "104.24.0.1",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 35 - mqgg5630-cyber",
+      "server": "45.142.126.184",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 36 - mqgg5630-cyber",
+      "server": "104.19.164.155",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 37 - mqgg5630-cyber",
+      "server": "172.64.190.13",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 38 - mqgg5630-cyber",
+      "server": "104.16.0.1",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 39 - mqgg5630-cyber",
+      "server": "104.16.0.1",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 40 - mqgg5630-cyber",
+      "server": "104.16.10.135",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 41 - mqgg5630-cyber",
+      "server": "152.69.200.216",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
