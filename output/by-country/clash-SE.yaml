@@ -6,12 +6,33 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: ss
-  server: 194.59.250.52
-  port: 18501
-  cipher: aes-128-gcm
-  password: 517403753b63fd4fac88986bf98b11e0
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: vless
+  server: 195.72.62.7
+  port: 443
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GQC47B2ZbBygpgJap7Em9lZmCZZkzlckiadXWXlVxGU
+    short-id: 2a67748b0d641e16
+  servername: fexzoo.net
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: trojan
   server: 95.143.196.97
   port: 443
@@ -19,18 +40,15 @@ proxies:
   udp: true
   sni: connect-se.mimowhat.online
   skip-cert-verify: true
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: trojan
+  server: 95.143.196.97
+  port: 443
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   udp: true
-  tls: true
+  sni: connect-se.mimowhat.online
   skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -43,22 +61,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
-  type: trojan
-  server: 95.143.196.97
-  port: 443
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  udp: true
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: true
 - name: 🇸🇪 SE 07 - mqgg5630-cyber
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 08 - mqgg5630-cyber
   type: trojan
   server: 95.143.196.97
   port: 443
@@ -66,13 +76,31 @@ proxies:
   udp: true
   sni: connect-se.mimowhat.online
   skip-cert-verify: true
-- name: 🇸🇪 SE 08 - mqgg5630-cyber
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 SE 09 - mqgg5630-cyber
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 10 - mqgg5630-cyber
+  type: vless
+  server: 143.246.195.46
+  port: 443
+  uuid: 5311859f-0b5d-4c26-a8bf-2648f113e4ea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM
+    short-id: 4e1682
+  servername: sweden13.clearorbitllc.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +114,8 @@ proxy-groups:
   - 🇸🇪 SE 06 - mqgg5630-cyber
   - 🇸🇪 SE 07 - mqgg5630-cyber
   - 🇸🇪 SE 08 - mqgg5630-cyber
+  - 🇸🇪 SE 09 - mqgg5630-cyber
+  - 🇸🇪 SE 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +129,7 @@ proxy-groups:
   - 🇸🇪 SE 06 - mqgg5630-cyber
   - 🇸🇪 SE 07 - mqgg5630-cyber
   - 🇸🇪 SE 08 - mqgg5630-cyber
+  - 🇸🇪 SE 09 - mqgg5630-cyber
+  - 🇸🇪 SE 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
