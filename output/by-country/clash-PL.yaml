@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 212.87.190.249
-  port: 443
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
-    short-id: b545243c33282b73
-  servername: d4a338t.pl8.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
   server: 80.47.10.106
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
@@ -31,20 +17,30 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: pl8.galioncc.com
   client-fingerprint: firefox
-- name: 🇵🇱 PL 03 - mqgg5630-cyber
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
-  server: 185.253.7.22
+  server: 45.194.66.177
   port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: clover.filnex.baby
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
+  flow: xtls-rprx-vision
+  servername: 31tawwo0.virtual-network.lol
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 82.118.22.161
+  port: 443
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

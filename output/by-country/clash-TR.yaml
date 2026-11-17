@@ -6,13 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 188.132.174.69
-  port: 12830
-  uuid: 10af09cf-dc4c-4c08-b524-10e7ef4667d6
+  server: 185.39.204.117
+  port: 10002
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fpnshoping.ir
+  servername: tr2.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 185.39.204.117
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
   server: 185.39.204.117
@@ -28,20 +33,6 @@ proxies:
     headers:
       Host: 185.39.204.117
 - name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 212.98.224.35
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9_UhwEt_9pf8WahM1K9O6-_0vAK6q0uiNGFoHBO7s3A
-    short-id: 0e3e4d96
-  servername: tr1.gofizzin.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
   server: 185.39.204.117
   port: 10002
@@ -63,7 +54,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +62,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

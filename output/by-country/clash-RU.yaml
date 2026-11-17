@@ -9,59 +9,14 @@ proxies:
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
-  server: 81.171.14.72
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: OH9jKzqAqEg98VDxmxReqrC_jbJWNwr-ipj2cNRgazc
-    short-id: 2237b916
-  servername: zovira.me
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: vless
-  server: 185.231.101.94
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
-    short-id: 51057fb54d2364f4
-  servername: fuzora.net
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: vless
-  server: 178.130.46.226
-  port: 443
-  uuid: 3619ae0e-bd3a-458c-bb0a-c0479019d9ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: serv1.fishtohome.ru
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: ss
-  server: 185.22.153.117
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -70,10 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,9 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

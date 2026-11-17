@@ -5,63 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
-  type: vless
-  server: 195.72.62.7
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GQC47B2ZbBygpgJap7Em9lZmCZZkzlckiadXWXlVxGU
-    short-id: 2a67748b0d641e16
-  servername: fexzoo.net
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 03 - mqgg5630-cyber
-  type: vless
-  server: 56.228.115.67
-  port: 443
-  uuid: f39ff3a5-cf86-4514-88ee-006aa4b6f883
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HjBtew1EYyAA5EnDBuZu4GR2u0OvitC5xp2fvqiYOwQ
-    short-id: 4c36b466
-  servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 04 - mqgg5630-cyber
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
   type: vmess
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -70,31 +15,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 07 - mqgg5630-cyber
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 08 - mqgg5630-cyber
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 09 - mqgg5630-cyber
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: vless
   server: 88.216.60.73
   port: 443
@@ -107,15 +35,38 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: ns-api-gw.galioncc.com
   client-fingerprint: ios
-- name: 🇸🇪 SE 10 - mqgg5630-cyber
-  type: trojan
-  server: 95.143.196.97
-  port: 443
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  sni: connect-se.mimowhat.online
+  tls: false
   skip-cert-verify: true
-- name: 🇸🇪 SE 11 - mqgg5630-cyber
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 07 - mqgg5630-cyber
   type: vless
   server: 88.216.214.159
   port: 443
@@ -128,7 +79,18 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: firefox
-- name: 🇸🇪 SE 12 - mqgg5630-cyber
+- name: 🇸🇪 SE 08 - mqgg5630-cyber
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 09 - mqgg5630-cyber
   type: trojan
   server: 95.143.196.97
   port: 443
@@ -136,16 +98,14 @@ proxies:
   udp: true
   sni: connect-se.mimowhat.online
   skip-cert-verify: true
-- name: 🇸🇪 SE 13 - mqgg5630-cyber
-  type: vless
-  server: 84.32.154.74
+- name: 🇸🇪 SE 10 - mqgg5630-cyber
+  type: trojan
+  server: 95.143.196.97
   port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   udp: true
-  tls: true
+  sni: connect-se.mimowhat.online
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: app.streamru10.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,9 +121,6 @@ proxy-groups:
   - 🇸🇪 SE 08 - mqgg5630-cyber
   - 🇸🇪 SE 09 - mqgg5630-cyber
   - 🇸🇪 SE 10 - mqgg5630-cyber
-  - 🇸🇪 SE 11 - mqgg5630-cyber
-  - 🇸🇪 SE 12 - mqgg5630-cyber
-  - 🇸🇪 SE 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -179,8 +136,5 @@ proxy-groups:
   - 🇸🇪 SE 08 - mqgg5630-cyber
   - 🇸🇪 SE 09 - mqgg5630-cyber
   - 🇸🇪 SE 10 - mqgg5630-cyber
-  - 🇸🇪 SE 11 - mqgg5630-cyber
-  - 🇸🇪 SE 12 - mqgg5630-cyber
-  - 🇸🇪 SE 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

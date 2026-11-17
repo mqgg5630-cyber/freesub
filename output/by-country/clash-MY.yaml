@@ -5,19 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - mqgg5630-cyber
-  type: vless
-  server: 382218.xyz
+  type: trojan
+  server: 47.250.84.25
   port: 443
-  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+  password: 5931134d1cde66bf83a54acdfebe7ab2
   udp: true
-  tls: true
+  sni: 47.250.84.25
   skip-cert-verify: true
-  servername: 382218.xyz
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 382218.xyz
 proxy-groups:
 - name: PROXIES
   type: select
