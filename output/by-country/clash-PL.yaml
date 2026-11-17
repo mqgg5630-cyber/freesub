@@ -6,29 +6,60 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 20.215.66.17
-  port: 2083
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  server: 212.87.190.249
+  port: 443
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
+    short-id: b545243c33282b73
+  servername: d4a338t.pl8.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: vless
+  server: 80.47.10.106
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: pl8.galioncc.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 185.253.7.22
+  port: 443
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: clover.filnex.baby
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - mqgg5630-cyber
+  - 🇵🇱 PL 02 - mqgg5630-cyber
+  - 🇵🇱 PL 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - mqgg5630-cyber
+  - 🇵🇱 PL 02 - mqgg5630-cyber
+  - 🇵🇱 PL 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

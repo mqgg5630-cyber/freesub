@@ -19,30 +19,30 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -71,44 +71,18 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
   type: trojan
   server: 158.247.253.243
   port: 443
@@ -116,19 +90,6 @@ proxies:
   udp: true
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,9 +102,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,8 +114,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -32,25 +32,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
-  server: 104.171.133.213
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: mirror-75.topp-con.xyz
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
-  server: 104.171.133.213
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: mirror-75.topp-con.xyz
-- name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -72,7 +65,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,6 +74,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
   - 🇫🇮 FI 04 - mqgg5630-cyber
-  - 🇫🇮 FI 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

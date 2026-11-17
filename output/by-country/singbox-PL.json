@@ -8,14 +8,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - mqgg5630-cyber"
+        "🇵🇱 PL 01 - mqgg5630-cyber",
+        "🇵🇱 PL 02 - mqgg5630-cyber",
+        "🇵🇱 PL 03 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - mqgg5630-cyber"
+        "🇵🇱 PL 01 - mqgg5630-cyber",
+        "🇵🇱 PL 02 - mqgg5630-cyber",
+        "🇵🇱 PL 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,22 +27,62 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
-      "server": "20.215.66.17",
-      "server_port": 2083,
-      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
+      "server": "212.87.190.249",
+      "server_port": 443,
+      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "d4a338t.pl8.h1clayd.click",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "short_id": "0123456789abcdef"
+          "public_key": "0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA",
+          "short_id": "b545243c33282b73"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
+      "server": "80.47.10.106",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl8.galioncc.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7c92e4b10d6f835"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "server": "185.253.7.22",
+      "server_port": 443,
+      "uuid": "80a06811-f74b-4b82-ac99-7e66c2a98e1c",
+      "tls": {
+        "enabled": true,
+        "server_name": "clover.filnex.baby",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de6/stream",
+        "headers": {
+          "Host": "clover.filnex.baby"
         }
       }
     },

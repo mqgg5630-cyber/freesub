@@ -8,28 +8,29 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇩🇪 德国 (Germany) 02 (家宽) - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+        "🇩🇪 德国 (Germany) 02 (家宽) - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mqgg5630-cyber",
-      "server": "69.17.3.150",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - mqgg5630-cyber",
+      "server": "9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com",
       "server_port": 443,
-      "uuid": "140d6fc9-2c6d-41bd-a487-182b52c0184f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "caissuers.microsoft.com",
+        "server_name": "download.windowsupdate.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -37,8 +38,26 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "zUbdpLqoZN7kSFDrHgGnAcZqJzKilme_rIJwI3FPGCA",
-          "short_id": "d898752d58acbfe0"
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 (家宽) - mqgg5630-cyber",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
+        "headers": {
+          "Host": "1v5vp5jsq611a5dsm.pages.dev"
         }
       }
     },

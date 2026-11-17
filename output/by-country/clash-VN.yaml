@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - mqgg5630-cyber
+- name: 🇻🇳 VN 01 - mqgg5630-cyber
   type: vless
-  server: 170.114.45.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: pcloud.z-tas.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pcloud.z-tas.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - mqgg5630-cyber
+  - 🇻🇳 VN 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - mqgg5630-cyber
+  - 🇻🇳 VN 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
