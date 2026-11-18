@@ -9,7 +9,8 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber"
+        "🇸🇨 SC 02 - mqgg5630-cyber",
+        "🇸🇨 SC 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber"
+        "🇸🇨 SC 02 - mqgg5630-cyber",
+        "🇸🇨 SC 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -25,22 +27,19 @@
     {
       "type": "vless",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "196.196.148.76",
-      "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
+      "server": "154.211.8.227",
+      "server_port": 2087,
+      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
       "tls": {
         "enabled": true,
-        "server_name": "8a2e72t.nl20.h1clayd.shop",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
-          "short_id": "8d0d0679f42ffd98"
+        "server_name": "proxy-34l.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "proxy-34l.pages.dev"
         }
       }
     },
@@ -62,6 +61,25 @@
         "reality": {
           "enabled": true,
           "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC 03 - mqgg5630-cyber",
+      "server": "154.218.15.250",
+      "server_port": 2083,
+      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
+      "tls": {
+        "enabled": true,
+        "server_name": "proxy-1cu.pages.dev",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "proxy-1cu.pages.dev"
         }
       }
     },
