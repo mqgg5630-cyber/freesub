@@ -15,7 +15,9 @@
         "🇫🇮 FI 05 - mqgg5630-cyber",
         "🇫🇮 FI 06 - mqgg5630-cyber",
         "🇫🇮 FI 07 - mqgg5630-cyber",
-        "🇫🇮 FI 08 - mqgg5630-cyber"
+        "🇫🇮 FI 08 - mqgg5630-cyber",
+        "🇫🇮 FI 09 - mqgg5630-cyber",
+        "🇫🇮 FI 10 - mqgg5630-cyber"
       ]
     },
     {
@@ -29,7 +31,9 @@
         "🇫🇮 FI 05 - mqgg5630-cyber",
         "🇫🇮 FI 06 - mqgg5630-cyber",
         "🇫🇮 FI 07 - mqgg5630-cyber",
-        "🇫🇮 FI 08 - mqgg5630-cyber"
+        "🇫🇮 FI 08 - mqgg5630-cyber",
+        "🇫🇮 FI 09 - mqgg5630-cyber",
+        "🇫🇮 FI 10 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -37,42 +41,38 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "45.144.52.252",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
+      "server": "198.202.24.142",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
       "tls": {
         "enabled": true,
-        "server_name": "wergmb.wey-land.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI"
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 FI 02 - mqgg5630-cyber",
-      "server": "45.144.53.18",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
+      "server": "198.202.24.142",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
       "tls": {
         "enabled": true,
-        "server_name": "gsdfmb.wey-land.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc"
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
         }
       }
     },
@@ -100,38 +100,42 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
-      "server": "198.202.24.142",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "server": "45.144.52.252",
+      "server_port": 443,
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
+        "server_name": "wergmb.wey-land.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 FI 05 - mqgg5630-cyber",
-      "server": "198.202.24.142",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "server": "45.144.53.18",
+      "server_port": 443,
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
+        "server_name": "gsdfmb.wey-land.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc"
         }
       }
     },
@@ -166,6 +170,25 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI 08 - mqgg5630-cyber",
+      "server": "172.64.79.163",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "tls": {
+        "enabled": true,
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 09 - mqgg5630-cyber",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -174,6 +197,25 @@
         "path": "/vless",
         "headers": {
           "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 10 - mqgg5630-cyber",
+      "server": "104.17.145.145",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "tls": {
+        "enabled": true,
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
         }
       }
     },

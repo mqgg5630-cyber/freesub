@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 45.144.52.252
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI
-    short-id: ''
-  servername: wergmb.wey-land.net
-  client-fingerprint: firefox
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 45.144.53.18
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc
-    short-id: ''
-  servername: gsdfmb.wey-land.net
-  client-fingerprint: chrome
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 03 - mqgg5630-cyber
   type: vless
   server: 45.144.52.195
@@ -48,32 +48,32 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - mqgg5630-cyber
   type: vless
-  server: 198.202.24.142
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  server: 45.144.52.252
+  port: 443
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI
+    short-id: ''
+  servername: wergmb.wey-land.net
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 05 - mqgg5630-cyber
   type: vless
-  server: 198.202.24.142
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  server: 45.144.53.18
+  port: 443
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc
+    short-id: ''
+  servername: gsdfmb.wey-land.net
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - mqgg5630-cyber
   type: vless
   server: 45.144.234.157
@@ -102,6 +102,20 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 08 - mqgg5630-cyber
   type: vless
+  server: 172.64.79.163
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 09 - mqgg5630-cyber
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -113,6 +127,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 10 - mqgg5630-cyber
+  type: vless
+  server: 104.17.145.145
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,6 +154,8 @@ proxy-groups:
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
+  - 🇫🇮 FI 09 - mqgg5630-cyber
+  - 🇫🇮 FI 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,5 +169,7 @@ proxy-groups:
   - 🇫🇮 FI 06 - mqgg5630-cyber
   - 🇫🇮 FI 07 - mqgg5630-cyber
   - 🇫🇮 FI 08 - mqgg5630-cyber
+  - 🇫🇮 FI 09 - mqgg5630-cyber
+  - 🇫🇮 FI 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

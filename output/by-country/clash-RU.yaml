@@ -20,6 +20,20 @@ proxies:
   client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
+  server: 89.223.124.93
+  port: 443
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4
+    short-id: ''
+  servername: dfgdfgb.wey-land.net
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
   server: 178.130.46.188
   port: 443
   uuid: a346c521-7a7f-452b-9356-a4893feb5982
@@ -32,35 +46,7 @@ proxies:
     short-id: ''
   servername: nl16-r.bankai.party
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
-  server: 81.200.152.153
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM
-    short-id: ''
-  servername: gmbasdasd.wey-land.net
-  client-fingerprint: ios
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: vless
-  server: 81.200.152.153
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM
-    short-id: ''
-  servername: gmbasdasd.wey-land.net
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   type: vless
   server: 147.45.47.101
   port: 8443
@@ -74,27 +60,6 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  type: vless
-  server: 193.233.219.98
-  port: 443
-  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: daily-author.ru
-  network: ws
-  ws-opts:
-    path: /api/vless
-    headers:
-      Host: vpn-rating.space
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,9 +69,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -116,8 +78,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
