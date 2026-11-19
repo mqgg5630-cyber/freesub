@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mqgg5630-cyber
   type: vless
-  server: 94.228.123.26
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg
-    short-id: ''
-  servername: ghjgdfgdfghjmb.wey-land.net
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vless
-  server: 89.223.124.93
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4
-    short-id: ''
-  servername: dfgdfgb.wey-land.net
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
-  type: vless
   server: 178.130.46.188
   port: 443
   uuid: a346c521-7a7f-452b-9356-a4893feb5982
@@ -46,7 +18,7 @@ proxies:
     short-id: ''
   servername: nl16-r.bankai.party
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
   server: 147.45.47.101
   port: 8443
@@ -60,6 +32,62 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
+  type: vless
+  server: bookend.filnex.baby
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hollowreed.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  type: vless
+  server: 5.129.202.80
+  port: 443
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  servername: mirror-50.topp-con.xyz
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: vellum.merlano.monster
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sequoia.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: vellum.merlano.monster
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: ws3.falmero.store
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: canvas.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: ws3.falmero.store
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +97,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +108,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

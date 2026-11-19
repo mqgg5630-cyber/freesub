@@ -1,0 +1,72 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇩 ID 01 - mqgg5630-cyber",
+        "🇮🇩 ID 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇩 ID 01 - mqgg5630-cyber",
+        "🇮🇩 ID 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
+      "server": "104.17.3.81",
+      "server_port": 443,
+      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
+      "tls": {
+        "enabled": true,
+        "server_name": "natan.srpcom.cloud",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "natan.srpcom.cloud"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 02 - mqgg5630-cyber",
+      "server": "104.17.3.81",
+      "server_port": 443,
+      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
+      "tls": {
+        "enabled": true,
+        "server_name": "natan.srpcom.cloud",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "natan.srpcom.cloud"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
