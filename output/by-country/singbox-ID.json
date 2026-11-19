@@ -8,28 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - mqgg5630-cyber"
+        "🇮🇩 ID 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - mqgg5630-cyber"
+        "🇮🇩 ID 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
-      "server": "194.60.228.97",
+      "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
+      "server": "104.17.3.81",
       "server_port": 443,
-      "uuid": "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec",
+      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
       "tls": {
         "enabled": true,
-        "server_name": "base.hosamobenl.co.uk",
+        "server_name": "natan.srpcom.cloud",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "natan.srpcom.cloud"
+        }
       }
     },
     {
