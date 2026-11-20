@@ -8,34 +8,55 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber",
+        "🇱🇺 LU 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU 01 - mqgg5630-cyber"
+        "🇱🇺 LU 01 - mqgg5630-cyber",
+        "🇱🇺 LU 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇱🇺 LU 01 - mqgg5630-cyber",
-      "server": "subgift.gcorecdn.com",
-      "server_port": 443,
-      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
+      "server": "193.57.88.100",
+      "server_port": 16200,
+      "password": "4mq9w5ckqw3ewbdg",
       "tls": {
         "enabled": true,
-        "server_name": "subgift.gcorecdn.com",
+        "server_name": "staticxfastline.taymaztest.ir",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/t.me-SubGift",
+        "path": "/biyasd",
         "headers": {
-          "Host": "subgift.gcorecdn.com"
+          "Host": "staticxfastline.taymaztest.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇺 LU 02 - mqgg5630-cyber",
+      "server": "staticxfastline.taymaztest.ir",
+      "server_port": 16200,
+      "password": "4mq9w5ckqw3ewbdg",
+      "tls": {
+        "enabled": true,
+        "server_name": "staticxfastline.taymaztest.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/biyasd",
+        "headers": {
+          "Host": "staticxfastline.taymaztest.ir"
         }
       }
     },
