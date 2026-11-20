@@ -12,29 +12,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇾 CY 02 - mqgg5630-cyber
-  type: vless
-  server: 132.243.212.204
-  port: 443
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: 10w0wjw.virtual-network.lol
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 CY 01 - mqgg5630-cyber
-  - 🇨🇾 CY 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 CY 01 - mqgg5630-cyber
-  - 🇨🇾 CY 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
