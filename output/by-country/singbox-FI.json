@@ -9,7 +9,9 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI 01 - mqgg5630-cyber",
-        "🇫🇮 FI 02 - mqgg5630-cyber"
+        "🇫🇮 FI 02 - mqgg5630-cyber",
+        "🇫🇮 FI 03 - mqgg5630-cyber",
+        "🇫🇮 FI 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -47,6 +51,39 @@
         "path": "/vless",
         "headers": {
           "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 03 - mqgg5630-cyber",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI 04 - mqgg5630-cyber",
+      "server": "104.17.145.145",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "tls": {
+        "enabled": true,
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
         }
       }
     },

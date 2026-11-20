@@ -5,6 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
+  type: trojan
+  server: 47.242.93.89
+  port: 12012
+  password: '12012'
+  udp: true
+  sni: ali-hk.b-gfw.cfd
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
+  type: vless
+  server: 103.219.195.65
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  type: ss
+  server: 213.176.92.148
+  port: 40647
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  type: trojan
+  server: 38.175.223.122
+  port: 49213
+  password: 838636c8-18b0-4324-b747-99ef748181c5
+  udp: true
+  sni: www.itunes.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -19,35 +56,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: ss
-  server: 213.176.92.148
-  port: 40647
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: vless
-  server: 103.219.195.65
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: trojan
-  server: 47.242.93.89
-  port: 12012
-  password: '12012'
-  udp: true
-  sni: ali-hk.b-gfw.cfd
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +65,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,5 +75,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

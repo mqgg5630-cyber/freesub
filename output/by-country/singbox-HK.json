@@ -11,7 +11,8 @@
         "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber"
       ]
     },
     {
@@ -21,38 +22,27 @@
         "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
-      "server": "156.245.232.239",
-      "server_port": 35043,
-      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": ""
-        }
+      "server": "47.242.93.89",
+      "server_port": 12012,
+      "password": "12012",
+      "tls": {
+        "enabled": true,
+        "server_name": "ali-hk.b-gfw.cfd",
+        "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
       "server": "103.219.195.65",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
@@ -70,15 +60,39 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+    },
+    {
       "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
-      "server": "47.242.93.89",
-      "server_port": 12012,
-      "password": "12012",
+      "server": "38.175.223.122",
+      "server_port": 49213,
+      "password": "838636c8-18b0-4324-b747-99ef748181c5",
       "tls": {
         "enabled": true,
-        "server_name": "ali-hk.b-gfw.cfd",
+        "server_name": "www.itunes.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
+      "server": "156.245.232.239",
+      "server_port": 35043,
+      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
       }
     },
     {
