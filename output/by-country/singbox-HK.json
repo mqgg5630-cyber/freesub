@@ -15,8 +15,7 @@
         "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -30,15 +29,87 @@
         "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
+      "server": "47.244.120.197",
+      "server_port": 36703,
+      "uuid": "45b83519-9c4f-4052-a11b-02e017b636d4",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/arki?ed=2048",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
+      "server": "156.245.232.239",
+      "server_port": 35043,
+      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
+      "server": "47.242.93.89",
+      "server_port": 12012,
+      "password": "12012",
+      "tls": {
+        "enabled": true,
+        "server_name": "ali-hk.b-gfw.cfd",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
+      "server": "45.192.193.54",
+      "server_port": 35600,
+      "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.iij.ad.jp",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber",
       "server": "8.217.1.203",
       "server_port": 8443,
       "uuid": "8b17beac-b143-447d-aa68-14cbb121a602",
@@ -60,26 +131,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
-      "server": "172.66.132.196",
-      "server_port": 443,
-      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber",
+      "server": "free.fugui.lol",
+      "server_port": 47396,
+      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/a8b8606819ef",
-        "headers": {
-          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
+        "server_name": "swdist.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+          "short_id": "fa514b83"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber",
       "server": "156.245.234.97",
       "server_port": 2096,
       "uuid": "93c0244e-6eb2-41bc-ad9c-1a7606747e13",
@@ -89,81 +163,6 @@
         "server_name": "lyhk.mihoyo.site",
         "insecure": true
       }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
-      "server": "sclass-00.catcat321.com",
-      "server_port": 20123,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
-      "server": "47.242.93.89",
-      "server_port": 12012,
-      "password": "12012",
-      "tls": {
-        "enabled": true,
-        "server_name": "ali-hk.b-gfw.cfd",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber",
-      "server": "sclass-00.catcat321.com",
-      "server_port": 20103,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber",
-      "server": "sclass-00.catcat321.com",
-      "server_port": 20103,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber",
-      "server": "104.21.56.202",
-      "server_port": 443,
-      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
-      "tls": {
-        "enabled": true,
-        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/a8b8606819ef",
-        "headers": {
-          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
       "type": "direct",

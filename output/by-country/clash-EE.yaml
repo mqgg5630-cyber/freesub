@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 EE 01 - mqgg5630-cyber
+  type: vless
+  server: 191.217.238.38
+  port: 443
+  uuid: 097eae28-f0e7-4b18-bce2-16cf7d9deb05
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: vq0Fi871QaDVmxY7F0XWByt9muX3-16E31XfHWZj9D8
+    short-id: 28138197d12e8e38
+  servername: www.bmw.de
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 EE 01 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 EE 01 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - mqgg5630-cyber
-  type: trojan
-  server: 158.247.253.243
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -26,13 +31,18 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
-  type: trojan
-  server: 158.247.253.243
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -47,18 +57,13 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: trojan
+  server: 158.247.253.243
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: false
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -73,18 +78,13 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: trojan
+  server: 158.247.253.243
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: false
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -100,11 +100,11 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
   type: trojan
-  server: 158.247.253.243
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  server: ikr200.zxom.eu.org
+  port: 20045
+  password: 463f7453753f4d47
   udp: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  sni: ikr200.zxom.eu.org
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
