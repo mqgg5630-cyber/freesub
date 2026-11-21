@@ -10,7 +10,7 @@ proxies:
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: 216.238.104.154
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: true
 - name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: trojan
@@ -18,8 +18,19 @@ proxies:
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  sni: 216.238.104.154
   skip-cert-verify: true
+- name: 🇧🇷 BR 03 - mqgg5630-cyber
+  type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

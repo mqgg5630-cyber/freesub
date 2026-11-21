@@ -37,34 +37,12 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - mqgg5630-cyber
   type: trojan
-  server: 95.143.196.97
+  server: 95.143.196.32
   port: 443
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   udp: true
   sni: connect-se.mimowhat.online
   skip-cert-verify: true
-- name: 🇸🇪 SE 05 - mqgg5630-cyber
-  type: trojan
-  server: 95.143.196.97
-  port: 443
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  udp: true
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: true
-- name: 🇸🇪 SE 06 - mqgg5630-cyber
-  type: vless
-  server: 92.223.84.254
-  port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: subgift.gcorecdn.com
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +52,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,7 +61,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - mqgg5630-cyber
   - 🇸🇪 SE 03 - mqgg5630-cyber
   - 🇸🇪 SE 04 - mqgg5630-cyber
-  - 🇸🇪 SE 05 - mqgg5630-cyber
-  - 🇸🇪 SE 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

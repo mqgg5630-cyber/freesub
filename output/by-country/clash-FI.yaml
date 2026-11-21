@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 162.159.237.118
+  server: 172.67.67.89
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 02 - mqgg5630-cyber
   type: vless
-  server: 172.64.79.163
+  server: 198.202.24.142
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -32,6 +32,20 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 144.31.90.235
+  port: 8445
+  uuid: cac10246-5b76-4809-9fd0-417c58a3ca90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 32eua16pKE179lLHv-VNZGrX287qQFMXA3n0VgEzNTQ
+    short-id: b3a633bc754b648d
+  servername: portal.gifmems.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
