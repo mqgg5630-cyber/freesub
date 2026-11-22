@@ -5,26 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - mqgg5630-cyber
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - mqgg5630-cyber
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 03 - mqgg5630-cyber
   type: trojan
-  server: 216.152.147.85
+  server: 216.152.147.152
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: cdn.connectingpeoplewithgreatjobs.com
+  sni: learn.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 02 - mqgg5630-cyber
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 03 - mqgg5630-cyber
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 04 - mqgg5630-cyber
   type: vmess
@@ -37,16 +43,32 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 05 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 66.163.113.9
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: kuruish.org
 - name: 🇨🇦 加拿大 (Canada) 06 - mqgg5630-cyber
+  type: vless
+  server: 66.163.113.9
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kuruish.org
+- name: 🇨🇦 加拿大 (Canada) 07 - mqgg5630-cyber
+  type: trojan
+  server: 216.152.147.74
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 08 - mqgg5630-cyber
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -56,39 +78,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 07 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.89
+- name: 🇨🇦 加拿大 (Canada) 09 - mqgg5630-cyber
+  type: ss
+  server: 149.22.95.183
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  sni: www.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 08 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 10 - mqgg5630-cyber
   type: trojan
   server: 216.152.147.79
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 09 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.48
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.connectingpeoplewithgreatjobs.com
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 11 - mqgg5630-cyber
   type: vmess
@@ -101,6 +104,29 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12 - mqgg5630-cyber
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 13 - mqgg5630-cyber
+  type: trojan
+  server: 216.152.147.79
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: blog.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 14 - mqgg5630-cyber
+  type: trojan
+  server: 216.152.147.74
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 15 - mqgg5630-cyber
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -110,44 +136,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.85
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 14 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.152
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 15 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.93
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 16 - mqgg5630-cyber
-  type: vless
-  server: 172.67.219.189
-  port: 443
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn4.salamfox.ir
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
 - name: 🇨🇦 加拿大 (Canada) 17 - mqgg5630-cyber
   type: vmess
   server: 134.195.196.211
@@ -159,14 +157,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 18 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: trojan
+  server: 216.152.147.48
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: false
+  sni: courses.connectingpeoplewithgreatjobs.com
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 19 - mqgg5630-cyber
   type: vmess
@@ -179,24 +175,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 20 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.74
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: api.connectingpeoplewithgreatjobs.com
+  tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 21 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.201
+  type: ss
+  server: 134.195.198.163
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  cipher: chacha20-ietf-poly1305
+  password: PmCqK98WqhSC
   udp: true
-  sni: resources.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 22 - mqgg5630-cyber
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -216,43 +213,13 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 24 - mqgg5630-cyber
   type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - mqgg5630-cyber
-  type: vless
-  server: 172.67.219.189
-  port: 443
-  uuid: d027b485-4e11-4485-9d0f-2ef1f1129eff
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn4.salamfox.ir
-  network: ws
-  ws-opts:
-    path: /d027b485-4e11-4485-9d0f-2ef1f1129eff
-    headers:
-      Host: cdn4.salamfox.ir
-- name: 🇨🇦 加拿大 (Canada) 26 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 27 - mqgg5630-cyber
-  type: trojan
   server: 216.152.147.152
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: 216.152.147.152
+  sni: learn.connectingpeoplewithgreatjobs.com
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 28 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 25 - mqgg5630-cyber
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -262,7 +229,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 29 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 26 - mqgg5630-cyber
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -272,48 +239,47 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 30 - mqgg5630-cyber
-  type: ss
-  server: 134.195.198.163
+- name: 🇨🇦 加拿大 (Canada) 27 - mqgg5630-cyber
+  type: trojan
+  server: 216.152.147.93
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: PmCqK98WqhSC
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 31 - mqgg5630-cyber
+  sni: connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 28 - mqgg5630-cyber
   type: trojan
   server: 216.152.147.74
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: api.connectingpeoplewithgreatjobs.com
+  sni: 216.152.147.74
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 32 - mqgg5630-cyber
-  type: vless
-  server: 66.163.113.9
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kuruish.org
-- name: 🇨🇦 加拿大 (Canada) 33 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 34 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 29 - mqgg5630-cyber
   type: ss
   server: 51.222.12.127
   port: 445
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 35 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 30 - mqgg5630-cyber
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 31 - mqgg5630-cyber
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 32 - mqgg5630-cyber
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -323,21 +289,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 36 - mqgg5630-cyber
-  type: vless
-  server: 184.107.179.150
-  port: 8443
-  uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
-    short-id: 40a4615253b8f75d
-  servername: www.kpn.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 37 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 33 - mqgg5630-cyber
   type: vless
   server: 209.200.246.148
   port: 443
@@ -350,10 +302,50 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 38 - mqgg5630-cyber
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 34 - mqgg5630-cyber
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 35 - mqgg5630-cyber
   type: vmess
   server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 36 - mqgg5630-cyber
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 37 - mqgg5630-cyber
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 38 - mqgg5630-cyber
+  type: vmess
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -362,24 +354,27 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 39 - mqgg5630-cyber
-  type: vless
-  server: 66.163.113.9
+  type: trojan
+  server: 216.152.147.85
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 40 - mqgg5630-cyber
+  type: vless
+  server: 148.113.196.75
+  port: 8443
+  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kuruish.org
-- name: 🇨🇦 加拿大 (Canada) 40 - mqgg5630-cyber
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: ov-canada1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 148.113.196.75
 - name: 🇨🇦 加拿大 (Canada) 41 - mqgg5630-cyber
   type: vmess
   server: 134.195.196.211
@@ -401,16 +396,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 43 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
   udp: true
-  sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 44 - mqgg5630-cyber
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -420,7 +414,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 45 - mqgg5630-cyber
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -449,141 +443,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 48 - mqgg5630-cyber
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 49 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.74
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 216.152.147.74
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 50 - mqgg5630-cyber
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 51 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 52 - mqgg5630-cyber
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 53 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.85
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 54 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 55 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.74
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: api.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 56 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.48
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 57 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 58 - mqgg5630-cyber
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 59 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.48
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 60 - mqgg5630-cyber
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 61 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.201
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: resources.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 62 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 63 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 64 - mqgg5630-cyber
   type: trojan
   server: 216.152.147.152
   port: 443
@@ -591,45 +450,9 @@ proxies:
   udp: true
   sni: learn.connectingpeoplewithgreatjobs.com
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 65 - mqgg5630-cyber
-  type: vless
-  server: 209.200.246.148
-  port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 66 - mqgg5630-cyber
-  type: trojan
-  server: 216.152.147.93
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: connectingpeoplewithgreatjobs.com
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 67 - mqgg5630-cyber
-  type: vless
-  server: 209.200.246.148
-  port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 68 - mqgg5630-cyber
+- name: 🇨🇦 加拿大 (Canada) 49 - mqgg5630-cyber
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -637,47 +460,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 69 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 70 - mqgg5630-cyber
-  type: vless
-  server: 148.113.196.75
-  port: 8443
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ov-canada1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 71 - mqgg5630-cyber
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 72 - mqgg5630-cyber
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -732,29 +514,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 47 - mqgg5630-cyber
   - 🇨🇦 加拿大 (Canada) 48 - mqgg5630-cyber
   - 🇨🇦 加拿大 (Canada) 49 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 50 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 51 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 52 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 53 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 54 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 55 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 56 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 57 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 58 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 59 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 60 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 61 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 62 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 63 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 64 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 65 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 66 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 67 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 68 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 69 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 70 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 71 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 72 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -809,28 +568,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 47 - mqgg5630-cyber
   - 🇨🇦 加拿大 (Canada) 48 - mqgg5630-cyber
   - 🇨🇦 加拿大 (Canada) 49 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 50 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 51 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 52 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 53 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 54 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 55 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 56 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 57 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 58 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 59 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 60 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 61 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 62 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 63 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 64 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 65 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 66 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 67 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 68 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 69 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 70 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 71 - mqgg5630-cyber
-  - 🇨🇦 加拿大 (Canada) 72 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

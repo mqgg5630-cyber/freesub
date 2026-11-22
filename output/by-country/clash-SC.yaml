@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
   type: vless
-  server: f0d7aft.nl13.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-    short-id: 8956c57cb4c4f8d2
-  servername: f0d7aft.nl13.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: vless
   server: 46.29.255.123
   port: 59539
   uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
@@ -31,7 +18,7 @@ proxies:
     short-id: ''
   servername: cloudflare-dns.com
   client-fingerprint: chrome
-- name: 🇸🇨 SC 03 - mqgg5630-cyber
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
   type: vless
   server: 46.29.255.123
   port: 59539
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
-  - 🇸🇨 SC 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
-  - 🇸🇨 SC 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
