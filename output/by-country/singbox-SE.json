@@ -10,10 +10,7 @@
         "auto",
         "🇸🇪 SE 01 - mqgg5630-cyber",
         "🇸🇪 SE 02 - mqgg5630-cyber",
-        "🇸🇪 SE 03 - mqgg5630-cyber",
-        "🇸🇪 SE 04 - mqgg5630-cyber",
-        "🇸🇪 SE 05 - mqgg5630-cyber",
-        "🇸🇪 SE 06 - mqgg5630-cyber"
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ]
     },
     {
@@ -22,17 +19,28 @@
       "outbounds": [
         "🇸🇪 SE 01 - mqgg5630-cyber",
         "🇸🇪 SE 02 - mqgg5630-cyber",
-        "🇸🇪 SE 03 - mqgg5630-cyber",
-        "🇸🇪 SE 04 - mqgg5630-cyber",
-        "🇸🇪 SE 05 - mqgg5630-cyber",
-        "🇸🇪 SE 06 - mqgg5630-cyber"
+        "🇸🇪 SE 03 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
+      "server": "62.93.166.184",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "62.93.166.184",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -46,74 +54,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 SE 02 - mqgg5630-cyber",
+      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
       "server": "138.199.55.243",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE 03 - mqgg5630-cyber",
-      "server": "sonau.yaremonta.loc.cc",
-      "server_port": 8080,
-      "uuid": "c5468915-f60c-4134-b4d3-eb24501d7c65",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "sonau.yaremonta.loc.cc"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "62.93.166.184",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 SE 05 - mqgg5630-cyber",
-      "server": "sonau.yaremonta.loc.cc",
-      "server_port": 8081,
-      "uuid": "c5468915-f60c-4134-b4d3-eb24501d7c65",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/vmess",
-        "headers": {
-          "Host": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE 06 - mqgg5630-cyber",
-      "server": "77.232.143.142",
-      "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "volumestyle.komediyatorg.net",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/",
-        "headers": {
-          "Host": "77.232.143.142"
-        }
-      }
     },
     {
       "type": "direct",

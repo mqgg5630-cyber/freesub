@@ -20,18 +20,18 @@ proxies:
       Host: tochkacdn.top
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
   type: vless
-  server: 147.45.175.81
+  server: 185.178.208.167
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xsru2.freeddns.org
+  servername: unlik.club
   network: ws
   ws-opts:
-    path: /wsru
+    path: /static/telemetry/3c9aaef00005/
     headers:
-      Host: xsru2.freeddns.org
+      Host: tochkacdn.top
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
   server: 37.235.247.81
@@ -47,21 +47,26 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   type: vless
-  server: 136.148.83.69
+  server: 147.45.175.81
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: ss
+  server: 48.103.218.77
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   type: vless
   server: 136.148.83.69
@@ -73,19 +78,84 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   type: vless
-  server: 48.103.133.47
-  port: 8443
-  uuid: 2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25
+  server: 168.113.253.178
+  port: 443
+  uuid: 608172ed-68e4-0001-85dc-f92c25d0eb92
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: firefox
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
 - name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: vless
+  server: 168.113.253.178
+  port: 443
+  uuid: 58708e38-dd5a-0001-902d-93621ee2bd83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  type: vless
+  server: 168.113.253.178
+  port: 443
+  uuid: d6d40100-9442-0001-b5b9-6d259318c421
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+- name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  type: vless
+  server: 168.113.253.178
+  port: 443
+  uuid: eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+- name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
   type: vless
   server: 48.103.133.47
   port: 8443
@@ -99,7 +169,21 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
+  type: vless
+  server: 48.103.133.47
+  port: 8443
+  uuid: 2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 18 - mqgg5630-cyber
   type: vless
   server: 48.103.133.47
   port: 8443
@@ -127,6 +211,15 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 18 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,5 +234,14 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 17 - mqgg5630-cyber
+  - 🇷🇺 俄罗斯 (Russia) 18 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

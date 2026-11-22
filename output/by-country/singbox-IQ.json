@@ -8,34 +8,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - mqgg5630-cyber"
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - mqgg5630-cyber"
+        "🇮🇶 IQ 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
-      "server": "144.31.3.89",
+      "tag": "🇮🇶 IQ 01 - mqgg5630-cyber",
+      "server": "5d0319t.nl7.h1clayd.click",
       "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "clearingmatch.melodramaonline.net",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/",
-        "headers": {
-          "Host": "144.31.3.89"
+        "server_name": "5d0319t.nl7.h1clayd.click",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
+          "short_id": "361d0dd59c70516f"
         }
       }
     },
