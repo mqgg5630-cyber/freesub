@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -17,7 +31,60 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 02 - mqgg5630-cyber
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
+  type: vless
+  server: 92.223.84.254
+  port: 443
+  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: subgift.gcorecdn.com
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vless
+  server: 185.117.88.9
+  port: 8443
+  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
+    short-id: f8d0271b4b5f9efc
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 06 - mqgg5630-cyber
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 07 - mqgg5630-cyber
   type: ss
   server: 138.199.55.243
   port: 19999
@@ -31,6 +98,11 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
+  - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
+  - 🇸🇪 SE 06 - mqgg5630-cyber
+  - 🇸🇪 SE 07 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +110,10 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
+  - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
+  - 🇸🇪 SE 06 - mqgg5630-cyber
+  - 🇸🇪 SE 07 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,19 +25,38 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-      "server": "194.135.34.118",
-      "server_port": 8443,
-      "uuid": "020f7f86-a559-4366-8d2d-c6f81d6bbe5f",
+      "server": "104.18.32.47",
+      "server_port": 443,
+      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
       "tls": {
         "enabled": true,
-        "server_name": "web.hosttcp.fun",
+        "server_name": "sinavm3.soft10.ir",
         "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v4/media/session",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
         "headers": {
-          "Host": "194.135.34.118"
+          "Host": "sinavm3.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
+      "tls": {
+        "enabled": true,
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
         }
       }
     },

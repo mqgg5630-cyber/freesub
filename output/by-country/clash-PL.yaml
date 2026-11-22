@@ -6,32 +6,28 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 144.31.4.18
+  server: 45.194.66.177
   port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: marginbirch.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.4.18
+  flow: xtls-rprx-vision
+  servername: 31tawwo0.virtual-network.lol
 - name: 🇵🇱 PL 02 - mqgg5630-cyber
   type: vless
-  server: 144.31.4.18
+  server: 191.217.253.12
   port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 6dd17e9f-5b7c-466d-a53a-7c30f5dc8338
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: marginbirch.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.4.18
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: 191.217.253.12
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
