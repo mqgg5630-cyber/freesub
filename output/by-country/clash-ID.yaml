@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - mqgg5630-cyber
   type: trojan
+  server: i1tr.mateflora.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  sni: i1tr.mateflora.com
+  skip-cert-verify: true
+- name: 🇮🇩 ID 02 - mqgg5630-cyber
+  type: trojan
   server: 149.33.27.162
   port: 443
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -18,11 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - mqgg5630-cyber
+  - 🇮🇩 ID 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - mqgg5630-cyber
+  - 🇮🇩 ID 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

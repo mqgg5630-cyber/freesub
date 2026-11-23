@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇭 TH 01 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇭 TH 01 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 TH 01 - mqgg5630-cyber",
+      "server": "45.133.73.167",
+      "server_port": 443,
+      "uuid": "0fc0ded7-32b3-4e36-a623-6e7670225247",
+      "tls": {
+        "enabled": true,
+        "server_name": "zmxoo.de5.net",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/html/order/torrentfp=chrome",
+        "headers": {
+          "Host": "zmxoo.de5.net"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
