@@ -18,18 +18,15 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - mqgg5630-cyber
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 03 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
@@ -57,42 +54,6 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 05 - mqgg5630-cyber
-  type: trojan
-  server: 158.247.253.243
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
-  type: trojan
-  server: 158.247.253.243
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -105,15 +66,30 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
-  type: trojan
-  server: 158.247.253.243
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -139,9 +115,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,8 +128,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 07 - mqgg5630-cyber
   - 🇰🇷 韩国 (South Korea) 08 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 09 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 10 - mqgg5630-cyber
-  - 🇰🇷 韩国 (South Korea) 11 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

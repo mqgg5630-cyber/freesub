@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - mqgg5630-cyber
+  type: vless
+  server: dtt4.toe.qd.je
+  port: 2109
+  uuid: 06dd972d-3916-4ac3-a1de-6def65c751e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY
+    short-id: cdba94063c08331c
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

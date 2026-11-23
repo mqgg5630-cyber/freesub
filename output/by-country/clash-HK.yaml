@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber
   type: vless
-  server: 156.245.234.97
-  port: 2096
-  uuid: 93c0244e-6eb2-41bc-ad9c-1a7606747e13
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: lyhk.mihoyo.site
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
-  type: vless
   server: 116.213.43.43
   port: 11106
   uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
@@ -28,97 +18,7 @@ proxies:
     short-id: da12e31124830d42
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
-  type: vmess
-  server: pdmv4.xiaoyan.io
-  port: 16632
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
-  type: vless
-  server: 45.192.193.54
-  port: 35600
-  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4
-    short-id: ''
-  servername: www.iij.ad.jp
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  type: trojan
-  server: 64.118.130.152
-  port: 443
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  sni: nb1hk.hikigo.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  type: trojan
-  server: nb1hk.hikigo.com
-  port: 443
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  sni: nb1hk.hikigo.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber
   type: vless
   server: 156.245.234.97
   port: 2096
@@ -128,32 +28,35 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: lyhk.mihoyo.site
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  type: vmess
-  server: pdmv4.xiaoyan.io
-  port: 16632
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
+  type: vless
+  server: 216.23.93.27
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
+      Host: jp3.yohototo.top
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   type: vless
-  server: 62.60.232.226
-  port: 2096
-  uuid: 3d409814-b663-411e-8f54-a112ecba7ddd
+  server: 8.217.1.203
+  port: 8443
+  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: nova-house.justext.space
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
+  reality-opts:
+    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
+    short-id: 0bf55f64
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
   type: ss
   server: 213.176.92.148
   port: 40647
@@ -170,14 +73,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -188,13 +83,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber
   - 🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 07 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 08 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 09 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 10 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 11 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 12 - mqgg5630-cyber
-  - 🇭🇰 中国香港 (Hong Kong) 13 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

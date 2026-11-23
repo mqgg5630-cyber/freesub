@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - mqgg5630-cyber
   type: vless
-  server: 45.194.66.177
-  port: 443
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: 31tawwo0.virtual-network.lol
-- name: 🇵🇱 PL 02 - mqgg5630-cyber
-  type: vless
   server: 191.217.253.12
   port: 443
   uuid: 6dd17e9f-5b7c-466d-a53a-7c30f5dc8338
@@ -28,6 +18,33 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: 191.217.253.12
   client-fingerprint: chrome
+- name: 🇵🇱 PL 02 - mqgg5630-cyber
+  type: trojan
+  server: 78.17.171.140
+  port: 2053
+  password: t5ZTZ0bYgRLNmJKv-Wg2wmsMx21s6RhX
+  udp: true
+  sni: ra-p1.victorycloud.ru
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /2fc2ec03a65d451dffa4592d68c43a29
+    headers:
+      Host: ra-p1.victorycloud.ru
+- name: 🇵🇱 PL 03 - mqgg5630-cyber
+  type: vless
+  server: 144.31.1.172
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: harbortarget.newbuzideas.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 144.31.1.172
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
+  - 🇵🇱 PL 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - mqgg5630-cyber
   - 🇵🇱 PL 02 - mqgg5630-cyber
+  - 🇵🇱 PL 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
