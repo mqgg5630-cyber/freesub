@@ -10,7 +10,8 @@
         "auto",
         "🇵🇱 PL 01 - mqgg5630-cyber",
         "🇵🇱 PL 02 - mqgg5630-cyber",
-        "🇵🇱 PL 03 - mqgg5630-cyber"
+        "🇵🇱 PL 03 - mqgg5630-cyber",
+        "🇵🇱 PL 04 - mqgg5630-cyber"
       ]
     },
     {
@@ -19,36 +20,15 @@
       "outbounds": [
         "🇵🇱 PL 01 - mqgg5630-cyber",
         "🇵🇱 PL 02 - mqgg5630-cyber",
-        "🇵🇱 PL 03 - mqgg5630-cyber"
+        "🇵🇱 PL 03 - mqgg5630-cyber",
+        "🇵🇱 PL 04 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
-      "server": "191.217.253.12",
-      "server_port": 443,
-      "uuid": "6dd17e9f-5b7c-466d-a53a-7c30f5dc8338",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "191.217.253.12",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
+      "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
       "server": "78.17.171.140",
       "server_port": 2053,
       "password": "t5ZTZ0bYgRLNmJKv-Wg2wmsMx21s6RhX",
@@ -67,14 +47,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
-      "server": "03e488t.es12.h1clayd.shop",
+      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
+      "server": "45.194.66.177",
       "server_port": 443,
-      "uuid": "c5470a56-1b9b-451c-b075-02c82ee4aa6c",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "03e488t.es12.h1clayd.shop",
+        "server_name": "31tawwo0.virtual-network.lol",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -82,8 +75,27 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo",
-          "short_id": "bd35558b17a4930b"
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
+      "server": "78.17.171.140",
+      "server_port": 2053,
+      "password": "t5ZTZ0bYgRLNmJKv-Wg2wmsMx21s6RhX",
+      "tls": {
+        "enabled": true,
+        "server_name": "ra-p1.victorycloud.ru",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/2fc2ec03a65d451dffa4592d68c43a29",
+        "headers": {
+          "Host": "ra-p1.victorycloud.ru"
         }
       }
     },

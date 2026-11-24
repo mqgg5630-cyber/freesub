@@ -6,44 +6,24 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 194.135.34.118
-  port: 8443
-  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web.hosttcp.fun
-  network: ws
-  ws-opts:
-    path: /api/v4/media/session
-    headers:
-      Host: 194.135.34.118
-- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
-  type: vless
-  server: 130.94.2.227
-  port: 443
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
+  servername: turkey-ip1.mmdaqaorg.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
-  - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

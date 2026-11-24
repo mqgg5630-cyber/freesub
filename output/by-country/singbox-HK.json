@@ -11,7 +11,9 @@
         "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber"
       ]
     },
     {
@@ -21,22 +23,73 @@
         "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
         "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
-        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber"
+        "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
+        "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - mqgg5630-cyber",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+      "server": "156.245.232.239",
+      "server_port": 35043,
+      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
+      "server": "47.86.90.31",
+      "server_port": 443,
+      "uuid": "234a8041-2b4d-44a3-a8d8-523cbfd58dc4",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "bywxdhirqkjj8xaz.v.3dns.vip",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "bywxdhirqkjj8xaz.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
+      "server": "sclass-00.catcat321.com",
+      "server_port": 20123,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
+      "server": "27.124.5.86",
+      "server_port": 8388,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A="
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - mqgg5630-cyber",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - mqgg5630-cyber",
       "server": "45.192.193.54",
       "server_port": 35600,
       "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
@@ -57,32 +110,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - mqgg5630-cyber",
-      "server": "27.124.5.86",
-      "server_port": 8388,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A="
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - mqgg5630-cyber",
-      "server": "47.86.90.31",
-      "server_port": 443,
-      "uuid": "234a8041-2b4d-44a3-a8d8-523cbfd58dc4",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "bywxdhirqkjj8xaz.v.3dns.vip",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "bywxdhirqkjj8xaz.v.3dns.vip"
-        }
-      }
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - mqgg5630-cyber",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
       "type": "direct",
