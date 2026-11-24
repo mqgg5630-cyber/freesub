@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 UA 01 - mqgg5630-cyber
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇳🇬 NG 01 - mqgg5630-cyber
+  type: trojan
+  server: 157.254.38.210
+  port: 20103
+  password: d7563108-615c-4338-a7bd-77f359869a4a
   udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 UA 01 - mqgg5630-cyber
+  - 🇳🇬 NG 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 UA 01 - mqgg5630-cyber
+  - 🇳🇬 NG 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

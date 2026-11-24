@@ -6,17 +6,30 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 185.71.216.177
-  port: 2092
-  uuid: ca21222b-caf1-4418-b404-345ea713daa4
+  server: 194.135.34.118
+  port: 8443
+  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
+  servername: web.hosttcp.fun
+  network: ws
+  ws-opts:
+    path: /api/v4/media/session
+    headers:
+      Host: 194.135.34.118
+- name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
+  type: vless
+  server: 130.94.2.227
+  port: 443
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
   reality-opts:
-    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-    short-id: 716b7eba38125f3a
-  servername: www.apple.com
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  servername: navi.bankrate.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -24,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

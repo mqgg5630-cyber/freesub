@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - mqgg5630-cyber
+  type: vless
+  server: dddz-4-z.473221.xyz
+  port: 33161
+  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BECARsUsTAoGzHFcGEquyFHKnI_LVL5FL6s1jZbLhVk
+    short-id: 6dbd86dc61ccb46d
+  servername: v1-dy.ixigua.com
+  client-fingerprint: firefox
+- name: 🇧🇷 BR 02 - mqgg5630-cyber
   type: vmess
   server: 103.88.232.55
   port: 1270
@@ -15,7 +29,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇧🇷 BR 02 - mqgg5630-cyber
+- name: 🇧🇷 BR 03 - mqgg5630-cyber
   type: vmess
   server: 103.14.27.207
   port: 1270
@@ -33,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - mqgg5630-cyber
   - 🇧🇷 BR 02 - mqgg5630-cyber
+  - 🇧🇷 BR 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

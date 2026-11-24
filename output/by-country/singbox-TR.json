@@ -8,14 +8,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber"
+        "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
+        "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -23,13 +25,31 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber",
-      "server": "185.71.216.177",
-      "server_port": 2092,
-      "uuid": "ca21222b-caf1-4418-b404-345ea713daa4",
-      "flow": "xtls-rprx-vision",
+      "server": "194.135.34.118",
+      "server_port": 8443,
+      "uuid": "020f7f86-a559-4366-8d2d-c6f81d6bbe5f",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "web.hosttcp.fun",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v4/media/session",
+        "headers": {
+          "Host": "194.135.34.118"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber",
+      "server": "130.94.2.227",
+      "server_port": 443,
+      "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "navi.bankrate.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -37,8 +57,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI",
-          "short_id": "716b7eba38125f3a"
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
         }
       }
     },
