@@ -1,0 +1,65 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇩 ID 01 - mqgg5630-cyber",
+        "🇮🇩 ID 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇩 ID 01 - mqgg5630-cyber",
+        "🇮🇩 ID 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
+      "server": "i1tr.mateflora.com",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "i1tr.mateflora.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 02 - mqgg5630-cyber",
+      "server": "kozel.cc.cd",
+      "server_port": 443,
+      "uuid": "3b01a777-55e7-49f6-8637-d94ee69607c6",
+      "tls": {
+        "enabled": true,
+        "server_name": "kozel.cc.cd",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/118.151.222.66=17317fp=chrome",
+        "headers": {
+          "Host": "kozel.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

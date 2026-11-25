@@ -8,94 +8,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - mqgg5630-cyber",
-        "🇵🇱 PL 02 - mqgg5630-cyber",
-        "🇵🇱 PL 03 - mqgg5630-cyber",
-        "🇵🇱 PL 04 - mqgg5630-cyber"
+        "🇵🇱 PL 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - mqgg5630-cyber",
-        "🇵🇱 PL 02 - mqgg5630-cyber",
-        "🇵🇱 PL 03 - mqgg5630-cyber",
-        "🇵🇱 PL 04 - mqgg5630-cyber"
+        "🇵🇱 PL 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇵🇱 PL 01 - mqgg5630-cyber",
-      "server": "78.17.171.140",
-      "server_port": 2053,
-      "password": "t5ZTZ0bYgRLNmJKv-Wg2wmsMx21s6RhX",
-      "tls": {
-        "enabled": true,
-        "server_name": "ra-p1.victorycloud.ru",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/2fc2ec03a65d451dffa4592d68c43a29",
-        "headers": {
-          "Host": "ra-p1.victorycloud.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 02 - mqgg5630-cyber",
-      "server": "45.194.66.177",
+      "server": "171.22.129.227",
       "server_port": 443,
-      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "uuid": "42c83523-9f96-41b2-82d6-2edb71a4ac19",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "31tawwo0.virtual-network.lol",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL 03 - mqgg5630-cyber",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "nujd35aknu.static-mirror.site",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 PL 04 - mqgg5630-cyber",
-      "server": "78.17.171.140",
-      "server_port": 2053,
-      "password": "t5ZTZ0bYgRLNmJKv-Wg2wmsMx21s6RhX",
-      "tls": {
-        "enabled": true,
-        "server_name": "ra-p1.victorycloud.ru",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/2fc2ec03a65d451dffa4592d68c43a29",
-        "headers": {
-          "Host": "ra-p1.victorycloud.ru"
+          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA"
         }
       }
     },
