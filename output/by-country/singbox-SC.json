@@ -9,8 +9,7 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber",
-        "🇸🇨 SC 03 - mqgg5630-cyber"
+        "🇸🇨 SC 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -18,62 +17,36 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 SC 01 - mqgg5630-cyber",
-        "🇸🇨 SC 02 - mqgg5630-cyber",
-        "🇸🇨 SC 03 - mqgg5630-cyber"
+        "🇸🇨 SC 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "46.29.255.123",
-      "server_port": 59539,
-      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare-dns.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ"
+      "server": "156.239.224.107",
+      "server_port": 57278,
+      "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇨 SC 02 - mqgg5630-cyber",
-      "server": "154.211.8.227",
-      "server_port": 2087,
-      "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
+      "server": "196.245.52.187",
+      "server_port": 443,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "proxy-34l.pages.dev",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "proxy-34l.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC 03 - mqgg5630-cyber",
-      "server": "116.213.43.43",
-      "server_port": 11103,
-      "uuid": "bb836d81-d0c5-4f01-a584-806cdf65e36a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "04535dt.us8.h1clayd.click",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -81,8 +54,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4",
-          "short_id": "9564e1a7a1cf8b3a"
+          "public_key": "UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY",
+          "short_id": "ba2a3dce62b99092"
         }
       }
     },

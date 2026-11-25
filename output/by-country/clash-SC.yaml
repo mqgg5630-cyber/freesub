@@ -5,46 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - mqgg5630-cyber
-  type: vless
-  server: 46.29.255.123
-  port: 59539
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
-    short-id: ''
-  servername: cloudflare-dns.com
-  client-fingerprint: firefox
-- name: 🇸🇨 SC 02 - mqgg5630-cyber
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 03 - mqgg5630-cyber
+      Host: ''
+- name: 🇸🇨 SC 02 - mqgg5630-cyber
   type: vless
-  server: 116.213.43.43
-  port: 11103
-  uuid: bb836d81-d0c5-4f01-a584-806cdf65e36a
+  server: 196.245.52.187
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4
-    short-id: 9564e1a7a1cf8b3a
-  servername: www.apple.com
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+  servername: 04535dt.us8.h1clayd.click
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
-  - 🇸🇨 SC 03 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - mqgg5630-cyber
   - 🇸🇨 SC 02 - mqgg5630-cyber
-  - 🇸🇨 SC 03 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
