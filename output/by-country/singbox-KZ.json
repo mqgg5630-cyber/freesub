@@ -9,8 +9,7 @@
       "outbounds": [
         "auto",
         "🇰🇿 KZ 01 - mqgg5630-cyber",
-        "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber"
+        "🇰🇿 KZ 02 - mqgg5630-cyber"
       ]
     },
     {
@@ -18,8 +17,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 KZ 01 - mqgg5630-cyber",
-        "🇰🇿 KZ 02 - mqgg5630-cyber",
-        "🇰🇿 KZ 03 - mqgg5630-cyber"
+        "🇰🇿 KZ 02 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
@@ -44,34 +42,21 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 KZ 02 - mqgg5630-cyber",
       "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "alter_id": 0,
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/vless/",
         "headers": {
-          "Host": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 KZ 03 - mqgg5630-cyber",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": ""
+          "Host": "38.107.234.57"
         }
       }
     },

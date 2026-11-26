@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - mqgg5630-cyber
+- name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: 85.90.197.220
+  server: 31.76.77.231
   port: 443
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
+    public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
+    short-id: cc85fc7134024405
+  servername: www.google.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇫🇮 FI 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - mqgg5630-cyber
+  - 🇫🇮 FI 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
