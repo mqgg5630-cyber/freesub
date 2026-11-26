@@ -23,30 +23,36 @@
       "interval": "5m"
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇨 SC 01 - mqgg5630-cyber",
-      "server": "156.239.224.107",
-      "server_port": 57278,
-      "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": ""
+      "server": "46.29.255.123",
+      "server_port": 59539,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare-dns.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇨 SC 02 - mqgg5630-cyber",
-      "server": "196.245.52.187",
-      "server_port": 443,
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "server": "46.29.255.123",
+      "server_port": 59539,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "04535dt.us8.h1clayd.click",
+        "server_name": "cloudflare-dns.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -54,8 +60,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY",
-          "short_id": "ba2a3dce62b99092"
+          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ"
         }
       }
     },

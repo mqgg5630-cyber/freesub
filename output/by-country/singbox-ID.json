@@ -8,28 +8,35 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber"
+        "🇮🇩 ID 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber"
+        "🇮🇩 ID 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - mqgg5630-cyber",
-      "server": "34.80.15.95",
+      "type": "vless",
+      "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
+      "server": "kozel.cc.cd",
       "server_port": 443,
-      "password": "123456",
+      "uuid": "3b01a777-55e7-49f6-8637-d94ee69607c6",
       "tls": {
         "enabled": true,
-        "server_name": "tw.ctt25.uk",
+        "server_name": "kozel.cc.cd",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/118.151.222.66=17317fp=chrome",
+        "headers": {
+          "Host": "kozel.cc.cd"
+        }
       }
     },
     {

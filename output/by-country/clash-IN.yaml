@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   type: vless
-  server: in.smrtai.top
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
-  type: vless
   server: 178.212.35.198
   port: 443
   uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
@@ -30,7 +17,34 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 02 - mqgg5630-cyber
+  type: vless
+  server: 13.140.253.35
+  port: 443
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  network: ws
+  ws-opts:
+    path: /c54a815e676d9acc
+    headers:
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
 - name: 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - mqgg5630-cyber
   type: vless
   server: in.smrtai.top
   port: 443
@@ -43,6 +57,19 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇮🇳 印度 (India) 05 - mqgg5630-cyber
+  type: vless
+  server: in.smrtai.top
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +78,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +88,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 02 - mqgg5630-cyber
   - 🇮🇳 印度 (India) 03 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 04 - mqgg5630-cyber
+  - 🇮🇳 印度 (India) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
