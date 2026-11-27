@@ -6,6 +6,16 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - mqgg5630-cyber
   type: vless
+  server: 196.198.111.165
+  port: 8443
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: api-6b04608f.adhil.uk
+- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+  type: vless
   server: 38.107.234.57
   port: 8443
   uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
@@ -15,10 +25,10 @@ proxies:
   servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
       Host: 38.107.234.57
-- name: 🇰🇿 KZ 02 - mqgg5630-cyber
+- name: 🇰🇿 KZ 03 - mqgg5630-cyber
   type: vless
   server: 3h-kazakhstan1.09vpn.com
   port: 8443
@@ -32,7 +42,36 @@ proxies:
     path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
       Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 KZ 03 - mqgg5630-cyber
+- name: 🇰🇿 KZ 04 - mqgg5630-cyber
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 05 - mqgg5630-cyber
+  type: vless
+  server: 38.107.234.57
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 06 - mqgg5630-cyber
   type: vless
   server: 38.107.234.57
   port: 8443
@@ -54,6 +93,9 @@ proxy-groups:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
+  - 🇰🇿 KZ 04 - mqgg5630-cyber
+  - 🇰🇿 KZ 05 - mqgg5630-cyber
+  - 🇰🇿 KZ 06 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +104,8 @@ proxy-groups:
   - 🇰🇿 KZ 01 - mqgg5630-cyber
   - 🇰🇿 KZ 02 - mqgg5630-cyber
   - 🇰🇿 KZ 03 - mqgg5630-cyber
+  - 🇰🇿 KZ 04 - mqgg5630-cyber
+  - 🇰🇿 KZ 05 - mqgg5630-cyber
+  - 🇰🇿 KZ 06 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

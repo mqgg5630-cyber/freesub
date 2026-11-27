@@ -1,0 +1,58 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇷 IR 01 - mqgg5630-cyber",
+        "🇮🇷 IR 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇷 IR 01 - mqgg5630-cyber",
+        "🇮🇷 IR 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR 01 - mqgg5630-cyber",
+      "server": "37.202.228.219",
+      "server_port": 443,
+      "uuid": "ff1906a5-a446-44e4-8e72-4e2d61775fa0",
+      "tls": {
+        "enabled": true,
+        "server_name": "ns2.irts.lol",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR 02 - mqgg5630-cyber",
+      "server": "ns2.irts.lol",
+      "server_port": 443,
+      "uuid": "ff1906a5-a446-44e4-8e72-4e2d61775fa0",
+      "tls": {
+        "enabled": true,
+        "server_name": "ns2.irts.lol",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

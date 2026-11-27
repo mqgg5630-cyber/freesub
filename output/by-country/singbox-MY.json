@@ -8,35 +8,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - mqgg5630-cyber"
+        "🇲🇾 MY 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - mqgg5630-cyber"
+        "🇲🇾 MY 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 LV 01 - mqgg5630-cyber",
-      "server": "213.183.45.23",
-      "server_port": 8450,
-      "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
+      "type": "trojan",
+      "tag": "🇲🇾 MY 01 - mqgg5630-cyber",
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "fonts.plumstatic.com",
+        "server_name": "47.250.84.25",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "213.183.45.23"
-        }
       }
     },
     {

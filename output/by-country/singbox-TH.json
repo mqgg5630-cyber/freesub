@@ -8,30 +8,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - mqgg5630-cyber"
+        "🇹🇭 TH 01 - mqgg5630-cyber"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - mqgg5630-cyber"
+        "🇹🇭 TH 01 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI 01 - mqgg5630-cyber",
-      "server": "mail1.besttotaldns.com",
-      "server_port": 443,
-      "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mail1.besttotaldns.com",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇹🇭 TH 01 - mqgg5630-cyber",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",

@@ -4,27 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - mqgg5630-cyber
+- name: 🇬🇷 GR 01 - mqgg5630-cyber
   type: vless
-  server: mail1.besttotaldns.com
+  server: leviko-gr9245.shopingggg.ir
   port: 443
-  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
   udp: true
   tls: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
-  servername: mail1.besttotaldns.com
+  reality-opts:
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇬🇷 GR 01 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇬🇷 GR 01 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

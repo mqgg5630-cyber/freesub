@@ -1,0 +1,75 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇪🇪 EE 01 - mqgg5630-cyber",
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇪🇪 EE 01 - mqgg5630-cyber",
+        "🇪🇪 EE 02 - mqgg5630-cyber",
+        "🇪🇪 EE 03 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 01 - mqgg5630-cyber",
+      "server": "one.alpheratzz.org",
+      "server_port": 8443,
+      "uuid": "0173d52e-8e1b-4681-831e-11529677b72f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-6b04608f.adhil.uk",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 02 - mqgg5630-cyber",
+      "server": "165.231.157.150",
+      "server_port": 8443,
+      "uuid": "0173d52e-8e1b-4681-831e-11529677b72f",
+      "flow": "xtls-rprx-vision-udp443",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-6b04608f.adhil.uk",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE 03 - mqgg5630-cyber",
+      "server": "196.198.111.166",
+      "server_port": 8443,
+      "uuid": "0173d52e-8e1b-4681-831e-11529677b72f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-6b04608f.adhil.uk",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
