@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 194.26.229.207
   port: 2200
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
+  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,22 +16,8 @@ proxies:
   ws-opts:
     path: /v1
     headers:
-      Host: rzd.ru
+      Host: 194.26.229.207
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vless
-  server: 188.225.33.67
-  port: 443
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e2.cdnwh.icu
-  network: ws
-  ws-opts:
-    path: /stream/segment/3078a41dd7eb/
-    headers:
-      Host: e2.cdnwh.icu
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
   server: 147.45.175.81
   port: 443
@@ -45,20 +31,7 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
-  type: vless
-  server: 194.26.229.207
-  port: 4100
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
   server: 136.148.83.71
   port: 443
@@ -67,29 +40,35 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+- name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
-  server: 194.26.229.207
-  port: 2200
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 194.26.229.207
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  type: vless
-  server: 136.148.83.70
+  server: 188.225.33.67
   port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  servername: e2.cdnwh.icu
+  network: ws
+  ws-opts:
+    path: /stream/segment/3078a41dd7eb/
+    headers:
+      Host: e2.cdnwh.icu
+- name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
+  type: vless
+  server: leviko-al2006.shopingggg.ir
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: leviko-al2006.shopingggg.ir
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   type: vless
   server: 147.45.221.225
   port: 443
@@ -103,13 +82,41 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
-  type: ss
-  server: 194.87.69.12
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: vless
+  server: 194.26.229.207
+  port: 4100
+  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
+  type: vless
+  server: 79.182.70.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
   type: ss
   server: 194.87.69.12
@@ -118,18 +125,12 @@ proxies:
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
-  type: vless
-  server: 194.26.229.207
-  port: 2200
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 194.26.229.207
 - name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
   type: vless
   server: 194.26.229.207
@@ -144,24 +145,40 @@ proxies:
     headers:
       Host: rzd.ru
 - name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  type: ss
+  server: 185.22.152.168
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
   type: vless
-  server: 136.148.83.70
+  server: 196.196.148.85
   port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 15 - mqgg5630-cyber
+  type: vless
+  server: 188.225.33.67
+  port: 443
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: e2.cdnwh.icu
+  network: ws
+  ws-opts:
+    path: /stream/segment/3078a41dd7eb/
+    headers:
+      Host: e2.cdnwh.icu
+- name: 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
   type: vless
   server: 136.148.83.71
   port: 443
@@ -170,19 +187,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 16 - mqgg5630-cyber
-  type: vless
-  server: 194.26.229.207
-  port: 4100
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
 proxy-groups:
 - name: PROXIES
   type: select

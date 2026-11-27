@@ -6,21 +6,25 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - mqgg5630-cyber
   type: vless
-  server: 104.21.44.113
-  port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+  servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   type: vless
-  server: 185.71.216.177
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
+  type: vless
+  server: leviko-tr6642.shopingggg.ir
   port: 2092
   uuid: ca21222b-caf1-4418-b404-345ea713daa4
   udp: true
@@ -32,24 +36,34 @@ proxies:
     short-id: 716b7eba38125f3a
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
-  type: vless
-  server: 143.246.136.128
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
   type: vless
-  server: 143.246.136.128
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  server: 172.67.199.12
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
+  type: vless
+  server: 172.67.199.12
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +73,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +83,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 03 - mqgg5630-cyber
   - 🇹🇷 土耳其 (Turkey) 04 - mqgg5630-cyber
+  - 🇹🇷 土耳其 (Turkey) 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

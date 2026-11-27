@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mqgg5630-cyber
   type: vmess
-  server: 62.93.166.184
+  server: leviko-se3307.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -16,12 +16,46 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 02 - mqgg5630-cyber
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - mqgg5630-cyber
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇸🇪 SE 04 - mqgg5630-cyber
+  type: vless
+  server: sw6.yndx-game.com
+  port: 443
+  uuid: eb83b44c-ad8c-4658-9923-313e59bb4d5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: sw6.yndx-game.com
+- name: 🇸🇪 SE 05 - mqgg5630-cyber
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +63,9 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
+  - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +73,8 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - mqgg5630-cyber
   - 🇸🇪 SE 02 - mqgg5630-cyber
+  - 🇸🇪 SE 03 - mqgg5630-cyber
+  - 🇸🇪 SE 04 - mqgg5630-cyber
+  - 🇸🇪 SE 05 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES
