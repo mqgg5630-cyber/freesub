@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mqgg5630-cyber
   type: vless
-  server: mail1.besttotaldns.com
+  server: 65.109.171.194
   port: 443
   uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
   udp: true
@@ -34,16 +34,6 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   servername: mail1.besttotaldns.com
-- name: 🇫🇮 FI 04 - mqgg5630-cyber
-  type: vless
-  server: 65.109.171.194
-  port: 443
-  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: mail1.besttotaldns.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +42,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
-  - 🇫🇮 FI 04 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +50,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - mqgg5630-cyber
   - 🇫🇮 FI 02 - mqgg5630-cyber
   - 🇫🇮 FI 03 - mqgg5630-cyber
-  - 🇫🇮 FI 04 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

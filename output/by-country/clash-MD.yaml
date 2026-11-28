@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇩 MD 01 - mqgg5630-cyber
+  type: trojan
+  server: 104.21.44.113
+  port: 443
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
+  sni: dry-snowflake-b29f.vpnetwork3567.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-snowflake-b29f.vpnetwork3567.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇩 MD 01 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇩 MD 01 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES

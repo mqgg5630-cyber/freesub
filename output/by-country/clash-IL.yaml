@@ -31,7 +31,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 IL 03 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
@@ -45,7 +45,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 IL 04 - mqgg5630-cyber
   type: vless
   server: 185.95.231.156
@@ -59,19 +59,20 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇱 IL 05 - mqgg5630-cyber
   type: vless
-  server: 153.56.229.218
+  server: 185.95.231.156
   port: 443
-  uuid: ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-  servername: 71b840t.de7.h1clayd.click
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 IL 06 - mqgg5630-cyber
   type: vless
@@ -89,16 +90,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇱 IL 07 - mqgg5630-cyber
   type: vless
-  server: 164.37.224.238
+  server: 185.95.231.156
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   udp: true
   tls: true
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-    short-id: 8956c57cb4c4f8d2
-  servername: f0d7aft.nl13.h1clayd.click
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 IL 08 - mqgg5630-cyber
   type: vless
@@ -113,35 +115,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇱 IL 09 - mqgg5630-cyber
-  type: vless
-  server: 185.95.231.156
-  port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇱 IL 10 - mqgg5630-cyber
-  type: vless
-  server: 185.95.231.156
-  port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -155,8 +129,6 @@ proxy-groups:
   - 🇮🇱 IL 06 - mqgg5630-cyber
   - 🇮🇱 IL 07 - mqgg5630-cyber
   - 🇮🇱 IL 08 - mqgg5630-cyber
-  - 🇮🇱 IL 09 - mqgg5630-cyber
-  - 🇮🇱 IL 10 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -170,7 +142,5 @@ proxy-groups:
   - 🇮🇱 IL 06 - mqgg5630-cyber
   - 🇮🇱 IL 07 - mqgg5630-cyber
   - 🇮🇱 IL 08 - mqgg5630-cyber
-  - 🇮🇱 IL 09 - mqgg5630-cyber
-  - 🇮🇱 IL 10 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

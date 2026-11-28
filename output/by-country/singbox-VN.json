@@ -23,9 +23,21 @@
     {
       "type": "vless",
       "tag": "🇻🇳 VN 01 - mqgg5630-cyber",
-      "server": "150.95.109.109",
-      "server_port": 2086,
-      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
+      "server": "221.133.21.135",
+      "server_port": 8444,
+      "uuid": "2144e802-a64f-4261-af53-41309fee1d99",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tk",
+        "headers": {
+          "Host": "221.133.21.135"
+        }
+      }
     },
     {
       "type": "direct",

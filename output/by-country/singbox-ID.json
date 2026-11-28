@@ -1,0 +1,74 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇩 ID 01 - mqgg5630-cyber",
+        "🇮🇩 ID 02 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇩 ID 01 - mqgg5630-cyber",
+        "🇮🇩 ID 02 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 01 - mqgg5630-cyber",
+      "server": "110.232.84.214",
+      "server_port": 443,
+      "uuid": "c3d91e48-6d7c-406d-aea3-b99c575dcd80",
+      "tls": {
+        "enabled": true,
+        "server_name": "id1vpn.jagoanip.my.id",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "id1vpn.jagoanip.my.id"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 ID 02 - mqgg5630-cyber",
+      "server": "130.94.95.126",
+      "server_port": 443,
+      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+      "tls": {
+        "enabled": true,
+        "server_name": "navi.bankrate.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

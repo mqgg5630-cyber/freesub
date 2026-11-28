@@ -15,8 +15,7 @@
         "🇸🇪 SE 05 - mqgg5630-cyber",
         "🇸🇪 SE 06 - mqgg5630-cyber",
         "🇸🇪 SE 07 - mqgg5630-cyber",
-        "🇸🇪 SE 08 - mqgg5630-cyber",
-        "🇸🇪 SE 09 - mqgg5630-cyber"
+        "🇸🇪 SE 08 - mqgg5630-cyber"
       ]
     },
     {
@@ -30,19 +29,24 @@
         "🇸🇪 SE 05 - mqgg5630-cyber",
         "🇸🇪 SE 06 - mqgg5630-cyber",
         "🇸🇪 SE 07 - mqgg5630-cyber",
-        "🇸🇪 SE 08 - mqgg5630-cyber",
-        "🇸🇪 SE 09 - mqgg5630-cyber"
+        "🇸🇪 SE 08 - mqgg5630-cyber"
       ],
       "url": "https://www.google.com/generate_204",
       "interval": "5m"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇸🇪 SE 01 - mqgg5630-cyber",
-      "server": "138.199.55.243",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "62.93.166.184",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "62.93.166.184",
+        "insecure": true
+      }
     },
     {
       "type": "vmess",
@@ -75,14 +79,14 @@
     {
       "type": "vmess",
       "tag": "🇸🇪 SE 04 - mqgg5630-cyber",
-      "server": "62.93.166.184",
+      "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
       "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "62.93.166.184",
+        "server_name": "138.199.55.230",
         "insecure": true
       }
     },
@@ -101,8 +105,30 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 SE 06 - mqgg5630-cyber",
+      "server": "138.199.55.243",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 SE 07 - mqgg5630-cyber",
+      "server": "62.93.166.184",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE 08 - mqgg5630-cyber",
       "server": "ws.dhafhdtjdti.site",
       "server_port": 2053,
       "uuid": "9f749472-c636-4c5a-af51-7f8feefaac81",
@@ -117,48 +143,6 @@
         "headers": {
           "Host": "ws.dhafhdtjdti.site"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE 07 - mqgg5630-cyber",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 SE 08 - mqgg5630-cyber",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "138.199.55.230",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 SE 09 - mqgg5630-cyber",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "62.93.166.184",
-        "insecure": true
       }
     },
     {
