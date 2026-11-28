@@ -1,0 +1,120 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇷 BR 01 - mqgg5630-cyber",
+        "🇧🇷 BR 02 - mqgg5630-cyber",
+        "🇧🇷 BR 03 - mqgg5630-cyber",
+        "🇧🇷 BR 04 - mqgg5630-cyber",
+        "🇧🇷 BR 05 - mqgg5630-cyber"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇷 BR 01 - mqgg5630-cyber",
+        "🇧🇷 BR 02 - mqgg5630-cyber",
+        "🇧🇷 BR 03 - mqgg5630-cyber",
+        "🇧🇷 BR 04 - mqgg5630-cyber",
+        "🇧🇷 BR 05 - mqgg5630-cyber"
+      ],
+      "url": "https://www.google.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 BR 01 - mqgg5630-cyber",
+      "server": "103.14.27.207",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "103.14.27.207",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 BR 02 - mqgg5630-cyber",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 BR 03 - mqgg5630-cyber",
+      "server": "43.174.195.1",
+      "server_port": 443,
+      "uuid": "24916ad0-847d-4522-9e17-f4347dee57fd",
+      "tls": {
+        "enabled": true,
+        "server_name": "kv.074167.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "kv.074167.xyz"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇷 BR 04 - mqgg5630-cyber",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "password": "ff5aeddc-8fea-4d17-b504-1a9fdacca802",
+      "tls": {
+        "enabled": true,
+        "server_name": "go.appsflyer.com.r3xxe.eu.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/br-orcl",
+        "headers": {
+          "Host": "go.appsflyer.com.r3xxe.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 BR 05 - mqgg5630-cyber",
+      "server": "103.88.232.55",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "103.88.232.55",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

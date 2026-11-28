@@ -14,19 +14,12 @@ proxies:
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mqgg5630-cyber
-  type: vless
-  server: 147.45.175.81
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mqgg5630-cyber
   type: vless
   server: 136.148.83.70
@@ -38,112 +31,14 @@ proxies:
   servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mqgg5630-cyber
   type: vless
-  server: 196.196.148.85
+  server: 136.148.83.71
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
+  servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
-  type: vless
-  server: 165.231.157.126
-  port: 8443
-  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: api-6b04608f.adhil.uk
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
-  type: vless
-  server: 188.225.56.100
-  port: 443
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e2.cdnwh.icu
-  network: ws
-  ws-opts:
-    path: /stream/segment/3078a41dd7eb/
-    headers:
-      Host: e2.cdnwh.icu
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  type: ss
-  server: 185.22.152.168
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  type: vless
-  server: 176.98.176.60
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: mosaic.topp-con.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
-  type: ss
-  server: 194.87.69.12
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
-  type: vless
-  server: 165.231.157.150
-  port: 8443
-  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision-udp443
-  servername: api-6b04608f.adhil.uk
-- name: 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
-  type: vless
-  server: 201.51.11.65
-  port: 443
-  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
-    short-id: ''
-  servername: absolute-disaster.org
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
-  type: vless
-  server: 79.182.70.232
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
   type: vless
   server: 136.148.83.69
   port: 443
@@ -152,6 +47,22 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
+  type: ss
+  server: 194.87.69.12
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -164,13 +75,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -183,12 +87,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 06 - mqgg5630-cyber
   - 🇷🇺 俄罗斯 (Russia) 07 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 08 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 09 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 10 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 11 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 12 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 13 - mqgg5630-cyber
-  - 🇷🇺 俄罗斯 (Russia) 14 - mqgg5630-cyber
 rules:
 - MATCH,PROXIES

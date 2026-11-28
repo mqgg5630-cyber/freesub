@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 FI 01 - mqgg5630-cyber
+  type: vless
+  server: mail1.besttotaldns.com
+  port: 443
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: mail1.besttotaldns.com
+- name: 🇫🇮 FI 02 - mqgg5630-cyber
+  type: vless
+  server: mail1.besttotaldns.com
+  port: 443
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: mail1.besttotaldns.com
+- name: 🇫🇮 FI 03 - mqgg5630-cyber
+  type: vless
+  server: 65.109.171.194
+  port: 443
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: mail1.besttotaldns.com
+- name: 🇫🇮 FI 04 - mqgg5630-cyber
+  type: vless
+  server: 65.109.171.194
+  port: 443
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: mail1.besttotaldns.com
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 FI 01 - mqgg5630-cyber
+  - 🇫🇮 FI 02 - mqgg5630-cyber
+  - 🇫🇮 FI 03 - mqgg5630-cyber
+  - 🇫🇮 FI 04 - mqgg5630-cyber
+rules:
+- MATCH,PROXIES
